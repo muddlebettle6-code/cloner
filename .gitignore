@@ -51,3 +51,9 @@ temp/
 # Python
 __pycache__/
 *.pyc
+
+# autonomous article builds + job logs
+.article-builds/
+scripts/*.log
+scripts/*.out.log
+scripts/*.err.log
