@@ -70,25 +70,36 @@ JSON_SPEC = (
 
 
 def main() -> None:
-    out = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("article_out")
+    args = sys.argv[1:]
+    seed_event = None
+    if "--event" in args:
+        i = args.index("--event")
+        seed_event = args[i + 1]
+        del args[i : i + 2]
+    out = Path(args[0]) if args else Path("article_out")
     out.mkdir(parents=True, exist_ok=True)
     log = lambda m: print(f"[{_dt.datetime.now():%H:%M:%S}] {m}", flush=True)  # noqa: E731
 
-    log("scout")
-    scout = claude(STANDARD + "Use web search to find 4 SPECIFIC events from TODAY or the last 7 days (prefer "
-        "the most recent; check the dates) suitable for a deep data article in markets, finance, IPOs/offerings, "
-        "tariffs/trade, AI investment, disclosure, or economic policy. For each: event, date, why it matters, "
-        "the main public claim, primary sources (URLs), "
-        "available datasets, historical comparison opportunities, what remains unknown, and 1-5 scores for "
-        "research value, visual potential, and public interest. Reject broad, speculative, or unsourced events. "
-        "Return a clear report.")
-
-    log("frame")
-    frame = claude(STANDARD + "From this scouting report, SELECT the one event where original analysis adds the "
-        "most evidence and is most likely to yield a NON-OBVIOUS conclusion (not just the most popular topic). "
-        "Frame the investigation: one narrow research question, one falsifiable claim, one expected historical "
-        "comparison, one evidence base, one lead visual, one plausible alternative explanation, and why it "
-        f"matters now.\n\nREPORT:\n{scout}")
+    if seed_event:
+        log("frame (seeded event)")
+        frame = claude(STANDARD + "Frame an investigation of THIS specific current event for a deep data article. "
+            "Use web search to confirm the details, dates, and figures. Provide: one narrow research question, one "
+            "falsifiable claim, one expected historical comparison, one evidence base, one lead visual, one "
+            "plausible alternative explanation, and why it matters now.\n\nEVENT:\n" + seed_event)
+    else:
+        log("scout")
+        scout = claude(STANDARD + "Use web search to find 4 SPECIFIC events from TODAY or the last 7 days (prefer "
+            "the most recent; check the dates) suitable for a deep data article in markets, finance, "
+            "IPOs/offerings, tariffs/trade, AI investment, disclosure, or economic policy. For each: event, date, "
+            "why it matters, the main public claim, primary sources (URLs), available datasets, historical "
+            "comparison opportunities, what remains unknown, and 1-5 scores for research value, visual potential, "
+            "and public interest. Reject broad, speculative, or unsourced events. Return a clear report.")
+        log("frame")
+        frame = claude(STANDARD + "From this scouting report, SELECT the one event where original analysis adds "
+            "the most evidence and is most likely to yield a NON-OBVIOUS conclusion (not just the most popular "
+            "topic). Frame the investigation: one narrow research question, one falsifiable claim, one expected "
+            "historical comparison, one evidence base, one lead visual, one plausible alternative explanation, "
+            f"and why it matters now.\n\nREPORT:\n{scout}")
 
     log("field study")
     dossier = claude(STANDARD + "Build a reporting dossier. Use web search/fetch for REAL material: primary "
