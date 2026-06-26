@@ -1,0 +1,461 @@
+{
+  "published": true,
+  "slug": "apple-memory-hikes-tested-against-arithmetic",
+  "headline": "Apple's memory-shortage price hikes, tested against the arithmetic: mostly real cost, with the one markup it cannot explain landing on the cheapest iPad",
+  "deck": "On 25 June Apple raised prices across Macs, iPads, HomePod and Vision Pro, blaming a memory-chip shortage. A per-SKU teardown of Apple's own price list finds the dollar increases scale with onboard memory rather than list price, so most of the rise is consistent with a genuine component-cost pass-through. But the test is generous, the evidence rests largely on one matched pair, and the one increase that clearly exceeds even the high end of implied memory cost falls on the $349 entry iPad, the device with the least memory to blame.",
+  "event": "On Thursday 25 June 2026 Apple raised prices across its Mac, iPad, HomePod and Vision Pro lines, citing a shortage of memory chips and storage; iPhone, Apple Watch and AirPods were left unchanged. Apple shares fell about 6% on the day. (Both the wording of Apple's statement and the exact share move are drawn from contemporaneous reporting and flagged for editorial re-verification; see limitations.)",
+  "question": "Of Apple's June 2026 price increases, do the per-SKU dollar hikes scale with each device's onboard memory capacity (the supply story) or with its total price (a markup dressed as a shortage), and where, if anywhere, does the increase exceed what memory cost can account for?",
+  "readingMinutes": 8,
+  "tags": [
+    "Apple",
+    "memory prices",
+    "DRAM",
+    "NAND",
+    "consumer electronics",
+    "AI supply chain",
+    "pricing"
+  ],
+  "leadChartId": "hike-vs-price",
+  "charts": [
+    {
+      "id": "hike-vs-price",
+      "kind": "table",
+      "title": "The one matched pair: identical memory, identical hike, triple the price",
+      "subtitle": "The MacBook Air and Vision Pro ship the same 16GB/256GB memory and both rose exactly $200, despite the Vision Pro costing more than three times as much. This single decoupled pair is the strongest evidence that the increases track gigabytes, not list price; the rest of the lineup confounds the two (pricier devices also carry more memory).",
+      "source": "Apple published price list, 25 June 2026 (apple.com), via contemporaneous reporting (Bloomberg)",
+      "units": "USD",
+      "period": "Pre- vs post-25 June 2026",
+      "note": "A uniform-percentage markup cannot produce identical dollar increases at 3x the price; a per-gigabyte cost pass-through can. This is one data point, not a regression.",
+      "alt": "Table comparing MacBook Air (start $1,099, +$200, 18.2%) and Vision Pro (start $3,499, +$200, 5.7%), both 16GB/256GB, showing identical dollar hikes despite very different prices.",
+      "data": {
+        "columns": [
+          "SKU",
+          "Memory",
+          "Start price",
+          "Hike",
+          "Hike %"
+        ],
+        "rows": [
+          [
+            "MacBook Air",
+            "16GB / 256GB",
+            "$1,099",
+            "+$200",
+            "18.2%"
+          ],
+          [
+            "Vision Pro",
+            "16GB / 256GB",
+            "$3,499",
+            "+$200",
+            "5.7%"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hike-vs-capacity-band",
+      "kind": "range",
+      "title": "The hikes mostly sit inside a (wide) implied memory-cost band",
+      "subtitle": "For each SKU the low-high range is the implied incremental memory cost since early-2025 ($8-14/GB DRAM plus ~$0.04/GB NAND); the 'mid' field is the ACTUAL dollar hike drawn as a marker, not the midpoint of the band. The band is deliberately wide, so 'fits inside' is weak proof. The entry iPad is the one case where the actual hike clears even the top of its band.",
+      "source": "Cumulant Research per-SKU analysis of Apple's price list; cost band from Counterpoint Research server-DDR5 ladder and LPDDR5 mobile contract reads (Tom's Hardware)",
+      "units": "USD increase per SKU",
+      "period": "Early-2025 pricing to 25 June 2026",
+      "note": "Read 'mid' as the actual hike marker. Where the marker exceeds 'high', the hike exceeds the generous top of implied memory cost. The MacBook Pro 14 row is shown for context only and excluded from the within-band tally because its base spec changed (see methodology).",
+      "alt": "Range chart of Apple SKUs showing an implied memory-cost band (low to high) with the actual hike marked. The entry iPad's marker sits above the top of its band; the iPad Pro's sits marginally above; the others fall inside.",
+      "data": {
+        "items": [
+          {
+            "label": "iPad entry (6GB/128GB) - above band",
+            "low": 53,
+            "mid": 100,
+            "high": 89
+          },
+          {
+            "label": "iPad mini (8GB/128GB)",
+            "low": 69,
+            "mid": 100,
+            "high": 117
+          },
+          {
+            "label": "iPad Air M4 (12GB/128GB)",
+            "low": 101,
+            "mid": 150,
+            "high": 173
+          },
+          {
+            "label": "iPad Pro (12GB/256GB) - marginal",
+            "low": 106,
+            "mid": 200,
+            "high": 178
+          },
+          {
+            "label": "MacBook Air (16GB/256GB)",
+            "low": 138,
+            "mid": 200,
+            "high": 234
+          },
+          {
+            "label": "Vision Pro (16GB/256GB)",
+            "low": 138,
+            "mid": 200,
+            "high": 234
+          },
+          {
+            "label": "MacBook Pro 14 (32GB/1TB, spec changed)",
+            "low": 297,
+            "mid": 300,
+            "high": 489
+          }
+        ]
+      }
+    },
+    {
+      "id": "proportional-burden",
+      "kind": "bar",
+      "title": "Share of price is a different question from unexplained markup",
+      "subtitle": "Hike as a percent of list price, sorted. This measures who pays most proportionally, NOT who was overcharged. Note the divergence: the iPad Air's 25% is a bigger proportional hit than the iPad Pro's 20%, yet the iPad Air sits inside its cost band and the iPad Pro sits just above it. Only the entry iPad is both the steepest proportional hike and clearly above its band.",
+      "source": "Cumulant Research analysis of Apple's price list, 25 June 2026",
+      "units": "% of list price",
+      "alt": "Horizontal bar chart of hike as percent of list price, from Vision Pro at 5.7% up to the entry iPad at 28.7%. The entry iPad is highlighted as the one case that is both the steepest and above its implied cost band.",
+      "data": {
+        "bars": [
+          {
+            "label": "Vision Pro",
+            "value": 5.7
+          },
+          {
+            "label": "MacBook Pro 14 (spec changed)",
+            "value": 17.7
+          },
+          {
+            "label": "MacBook Air",
+            "value": 18.2
+          },
+          {
+            "label": "iPad mini",
+            "value": 20
+          },
+          {
+            "label": "iPad Pro (marginally above band)",
+            "value": 20
+          },
+          {
+            "label": "iPad Air (within band)",
+            "value": 25
+          },
+          {
+            "label": "iPad entry (above band)",
+            "value": 28.7,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "memory-supply-shock",
+      "kind": "line",
+      "title": "The backdrop: server DRAM roughly 3.5x in three quarters (Q2 estimated)",
+      "subtitle": "64GB DDR5 server RDIMM contract price, Q3 2025 to Q1 2026, with a Q2 2026 estimate. This is server memory, not the LPDDR5 unified memory Apple ships; it is the most-cited public price series and is used here as a directional backdrop, not as Apple's actual cost.",
+      "source": "Counterpoint Research DDR5 RDIMM contract-price ladder, via Slashdot",
+      "units": "USD per 64GB DDR5 RDIMM",
+      "period": "Q3 2025 - Q2 2026 (Q2 estimated)",
+      "note": "The Q2 2026 point ($1,000) is an estimate; the verified series runs through Q1 2026 (~$900, about 3.5x the Q3 2025 level). The 'quadrupling' read depends on the unverified Q2 estimate and is not load-bearing for the article's finding.",
+      "alt": "Line chart of 64GB DDR5 server RDIMM contract prices rising from $255 in Q3 2025 to $450 in Q4 2025, about $900 in Q1 2026, and an estimated $1,000 in Q2 2026.",
+      "data": {
+        "series": [
+          {
+            "name": "64GB DDR5 RDIMM contract price",
+            "points": [
+              {
+                "x": "Q3 2025",
+                "y": 255
+              },
+              {
+                "x": "Q4 2025",
+                "y": 450
+              },
+              {
+                "x": "Q1 2026",
+                "y": 900
+              },
+              {
+                "x": "Q2 2026 est.",
+                "y": 1000
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "bom-share",
+      "kind": "comparison",
+      "title": "Why OEMs say they cannot absorb it this time",
+      "subtitle": "Memory as a share of a PC's bill of materials, per a single estimate attributed to HP's CFO: from roughly 15-18% to about 35% in a year. Shown with the lower-bound and a caveat; this is one company's estimate, not a measured industry figure, and the 2017-18 comparison also reflects different demand conditions.",
+      "source": "Estimate attributed to HP's CFO, Feb 2026 earnings call, via Tom's Hardware and The Register (name, date and exact wording flagged for re-verification)",
+      "units": "% of PC bill of materials",
+      "alt": "Comparison bars showing memory at roughly 15-18% of a PC bill of materials in 2025 versus about 35% in 2026, with the 2025 bar labeled as a range.",
+      "data": {
+        "bars": [
+          {
+            "label": "2025 share of BoM (~15-18%)",
+            "value": 16.5
+          },
+          {
+            "label": "2026 share of BoM (~35%)",
+            "value": 35,
+            "highlight": true
+          }
+        ],
+        "max": 50
+      }
+    },
+    {
+      "id": "cpi-baseline",
+      "kind": "keynumber",
+      "title": "A two-decade decline that this data cannot yet show reversing",
+      "source": "BLS via FRED series CUUR0000SEEE01 (CPI: computers, peripherals and smart home assistants)",
+      "period": "Latest data through March 2026",
+      "alt": "Key number showing the CPI for computers, peripherals and smart home assistants near a record low in late 2025, with data running only through March 2026, before the June hikes.",
+      "data": {
+        "value": "~33.7",
+        "label": "CPI for computers, peripherals and smart home assistants, near record low, late 2025",
+        "sub": "The index has fallen for roughly two decades; the published series runs only through March 2026 and therefore predates these June hikes. It cannot yet confirm a reversal."
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news, and the test",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On Thursday 25 June Apple raised prices across its Macs, iPads, HomePod and Vision Pro, citing a shortage of memory chips and storage. It left iPhone, Apple Watch and AirPods untouched. Apple shares fell about 6% on the day."
+        },
+        {
+          "type": "p",
+          "text": "Markets and economics are separate questions, and we will not put a motive in the mouth of the tape. A price increase that passes through real costs protects margins, so a falling stock is at least as consistent with fear of demand destruction, or doubt that Apple can fully pass the cost on, as with a belief that the company is padding margins. We make no claim about why the stock moved; we test only the economic question, which Apple's published price list lets us answer directly."
+        },
+        {
+          "type": "callout",
+          "label": "The falsification test",
+          "text": "If the dollar increase is a price-scaled markup, it should rise with list price (a roughly uniform percentage skim). If it is a genuine component pass-through, it should rise with onboard memory capacity (gigabytes of DRAM and NAND), regardless of what the device costs. These make opposite predictions on the one pair of devices that share memory but not price."
+        },
+        {
+          "type": "callout",
+          "label": "The result, stated honestly",
+          "text": "The increases track memory capacity, not price, on the evidence available, which is mostly one matched pair plus a generous cost band. Most of the lineup falls inside that band. But the band is wide, several hikes cluster at its expensive end, and one device, the $349 entry iPad, clears the top of its band outright."
+        }
+      ]
+    },
+    {
+      "heading": "The one clean test",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Across the lineup, price and memory are confounded: Macs cost more and carry more memory, so a hike that rose with either would look the same. Exactly one pair breaks that tie. The MacBook Air and the Vision Pro ship the identical 16GB/256GB configuration. The Air started at $1,099; the Vision Pro at $3,499, more than three times the price."
+        },
+        {
+          "type": "p",
+          "text": "Both received the same $200 increase."
+        },
+        {
+          "type": "chart",
+          "chartId": "hike-vs-price"
+        },
+        {
+          "type": "pullquote",
+          "text": "Same memory, same dollar hike, three times the price. A uniform percentage markup cannot produce that. A per-gigabyte cost pass-through is the simplest model that does."
+        },
+        {
+          "type": "p",
+          "text": "A percentage markup would have lifted the Vision Pro about $630 to match the Air's 18%. It rose 5.7% instead. That is a strong anecdote, not a proof. With eight repriced SKUs we cannot run a clean regression because capacity and price move together everywhere else; we lean on this pair and on the cost arithmetic below, and we flag that as a limitation rather than dress one matched pair as a fitted slope."
+        }
+      ]
+    },
+    {
+      "heading": "The arithmetic, and how generous it is",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To turn 'shortage' into dollars we need the incremental memory cost since these products were last priced, in early-to-mid 2025. We use a band: roughly $8 to $14 per incremental gigabyte of DRAM, plus about $0.04 per gigabyte of NAND. The low end is anchored to Counterpoint's 64GB server DDR5 ladder ($255 in Q3 2025, $450 in Q4, about $900 in Q1 2026); the high end to LPDDR5 mobile contract reads. The NAND figure is anchored to consumer 1TB SSDs roughly doubling, from about $45 to $90."
+        },
+        {
+          "type": "callout",
+          "label": "What we removed",
+          "text": "An earlier draft cited a TechInsights teardown of the iPhone 18 Pro as an independent check on the band. That phone does not ship until autumn 2026 and cannot have been torn down on 26 June; we have removed the claim and the high end of the band now rests only on the server and mobile contract reads. We also removed unverifiable Micron quarterly revenue and margin figures that did not survive a basic sanity check."
+        },
+        {
+          "type": "p",
+          "text": "Be clear about the test's power. An $8-14/GB band is a 75% spread. 'Fits inside the band' is therefore a weak bar to clear, and it should be read as 'not contradicted by memory cost,' not as 'proven to be pure cost.'"
+        },
+        {
+          "type": "chart",
+          "chartId": "hike-vs-capacity-band"
+        },
+        {
+          "type": "p",
+          "text": "We exclude the 14-inch MacBook Pro from the tally. Its base became 32GB/1TB in March 2026 when Apple dropped the 512GB tier, so part of its $300 is buying more memory, not paying a shortage premium on the same memory. It is shown for context only; attributing a spec-upgrade delta to the shortage would be a confound, not a finding."
+        }
+      ]
+    },
+    {
+      "heading": "Where the model holds, and the best argument against it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On the like-for-like SKUs, the dollar hikes do rise with gigabytes: 8GB devices rose about $100, 16GB devices $200. That is the supply story's signature. But the honest counter-reading is visible in the same chart, and we did not bury it: most hikes sit near the TOP of their implied band, not the middle. The Air's $200 against a $138-234 band, the Vision Pro's $200 against the same, the mini's $100 against $69-117. Systematically pricing memory at the expensive end of a wide range is itself a mild, lineup-wide markup. The data is consistent with 'genuine cost, conservatively rounded up,' but it does not rule that out, and a skeptic is entitled to read the top-of-band clustering as a soft skim layered on a real shock."
+        },
+        {
+          "type": "pullquote",
+          "text": "The capacity model survives the test it can be given. It is not a clean acquittal, because the test it can be given is generous."
+        }
+      ]
+    },
+    {
+      "heading": "The one markup the shortage cannot explain",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two metrics get conflated easily, so separate them. 'Share of price' (the bar chart) measures who pays most proportionally. 'Above the cost band' (the range chart) measures who paid more than memory can account for. They are not the same, and the divergence matters: the iPad Air's 25% is a steeper proportional hit than the iPad Pro's 20%, yet the iPad Air sits inside its band while the iPad Pro sits just above it. A high percentage is not, by itself, evidence of a markup."
+        },
+        {
+          "type": "chart",
+          "chartId": "proportional-burden"
+        },
+        {
+          "type": "p",
+          "text": "Only one SKU is both the steepest proportional hike and above its cost band: the $349 entry iPad. It rose $100 on roughly $53-$89 of implied memory cost, a 28.7% increase, on the device with the least memory to blame. The mechanism is plain in the numbers: Apple rounded every increase to a clean $100 or $150, and rounding up bites hardest where the underlying cost is smallest."
+        },
+        {
+          "type": "p",
+          "text": "We narrow the claim deliberately. The iPad Pro also clears its band, but only by about $22 on a $999 device, well within rounding and not 'cheap and low-memory.' So the clean, defensible statement is not that the markup falls on cheap devices generally; it is that exactly one device, the entry iPad, shows an increase the shortage cannot fully explain, and on that device the effect is regressive. The dollars involved are small, on the order of $30-$50 across the whole lineup once you net out the within-band hikes; the distributional point is real even though the magnitude is not large."
+        },
+        {
+          "type": "pullquote",
+          "text": "The cynical read (a margin grab across the board) and the corporate read (pure shortage, everywhere) are both too strong. The unexplained residual is small, and it is concentrated on the cheapest iPad."
+        }
+      ]
+    },
+    {
+      "heading": "What was spared, and the wider shock",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "What did not move is also evidence. A tariff, currency or general-margin story predicts broad pass-through across the catalogue. A memory story predicts the hit lands on the highest-memory devices and spares low-memory ones. Apple left iPhone, Watch and AirPods unchanged, which fits the memory story better than the alternatives, though it is consistent rather than dispositive."
+        },
+        {
+          "type": "p",
+          "text": "The cost shock is corroborated outside Apple. Microsoft the same week raised Xbox and Surface prices, citing higher storage and memory costs, and OEMs say memory is now a far larger share of a PC's bill of materials than a year ago. That an industry moved together on the same component points to a shared input shock, not a firm-specific grab. The 2017-18 episode, when OEMs largely absorbed a memory spike, is the natural comparison, but it breaks in two ways: the share of BoM is reportedly much higher now (per a single HP estimate, not a measured figure), and demand conditions differ, so 'they absorbed it last time' is not proof they could now."
+        },
+        {
+          "type": "chart",
+          "chartId": "memory-supply-shock"
+        },
+        {
+          "type": "chart",
+          "chartId": "bom-share"
+        },
+        {
+          "type": "chart",
+          "chartId": "cpi-baseline"
+        }
+      ]
+    },
+    {
+      "heading": "What would settle it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Each reading makes a near-term, checkable prediction."
+        },
+        {
+          "type": "list",
+          "items": [
+            "If memory contract prices roll over in the second half of 2026 and Apple quietly reverses the hikes, that supports the pure cost-pass-through reading. Trigger: a sustained decline in DDR5/LPDDR5 contract prices followed by a price cut.",
+            "If the autumn iPhone 18 launches with its own memory-driven hike, that strengthens the broad cost-shock story, because iPhone carries significant memory and would be the next device to absorb a real shortage. Trigger: an iPhone 18 price above the iPhone 17 line attributed to components.",
+            "If the entry iPad stays elevated while everything else tracks falling memory costs, that confirms the small regressive markup is structural, not a temporary shortage premium. Trigger: entry iPad holds at $449 after DRAM prices ease.",
+            "If competitors do NOT follow on memory-heavy devices, the 'shared industry shock' reading weakens and a firm-specific element becomes more likely. Trigger: a major OEM holds prices flat on comparable configurations."
+          ]
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "We treated Apple's published 25 June 2026 price list as primary data and computed, for each repriced SKU, the dollar hike, the hike as a percent of starting price, and an implied incremental memory cost.",
+    "Implied memory cost per SKU = (incremental DRAM GB x $8-14/GB) + (NAND GB x ~$0.04/GB). The DRAM band's low end is anchored to the Counterpoint server-DDR5 ladder and the high end to LPDDR5 mobile contract reads; the NAND figure to consumer 1TB SSD prices roughly doubling. All band endpoints are derived from the cited price series, not from Apple disclosures.",
+    "The falsification test contrasts two predictions: a price-scaled markup (hike rises with list price) versus a capacity-scaled pass-through (hike rises with memory GB). These diverge only where memory and price are decoupled, which in this lineup is the single MacBook Air vs Vision Pro pair (both 16GB/256GB).",
+    "We did not run a regression: with the SKUs available, memory capacity and list price are collinear everywhere except the one matched pair, so a fitted slope would be uninformative. We rely on the matched pair plus the per-SKU cost band and say so.",
+    "We excluded the 14-inch MacBook Pro from the within-band tally because its base configuration changed from 16GB/512GB to 32GB/1TB in March 2026; its hike is not like-for-like.",
+    "We removed two claims from the prior draft as unverifiable or impossible: a TechInsights iPhone 18 Pro teardown (the device had not shipped as of 26 June 2026) and specific Micron quarterly revenue and gross-margin figures that failed a basic magnitude check.",
+    "Live web search and fetch were unavailable in this session, so figures and quotes carried from the source reporting could not be independently re-confirmed against live URLs; they are presented as attributed to the cited publishers and flagged for editorial verification before publication."
+  ],
+  "sources": [
+    {
+      "title": "Apple Mac and iPad pricing (published price list)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/shop/buy-mac",
+      "kind": "primary"
+    },
+    {
+      "title": "Apple iPad pricing (published price list)",
+      "publisher": "Apple",
+      "url": "https://www.apple.com/shop/buy-ipad",
+      "kind": "primary"
+    },
+    {
+      "title": "Reporting on Apple's 25 June 2026 price increases and share move",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com",
+      "kind": "secondary"
+    },
+    {
+      "title": "DDR5 server RDIMM contract-price ladder (Counterpoint Research data)",
+      "publisher": "Counterpoint Research via Slashdot",
+      "url": "https://www.counterpointresearch.com",
+      "kind": "data"
+    },
+    {
+      "title": "LPDDR5 mobile memory contract-price reporting and HP BoM commentary",
+      "publisher": "Tom's Hardware",
+      "url": "https://www.tomshardware.com",
+      "kind": "secondary"
+    },
+    {
+      "title": "Reporting on PC memory cost share and OEM pricing (HP, Microsoft)",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com",
+      "kind": "secondary"
+    },
+    {
+      "title": "CPI: Computers, peripherals, and smart home assistants in U.S. city average",
+      "publisher": "U.S. Bureau of Labor Statistics via FRED",
+      "url": "https://fred.stlouisfed.org/series/CUUR0000SEEE01",
+      "kind": "data"
+    },
+    {
+      "title": "Coverage of Apple SKU configuration changes (MacBook Pro 14 base spec)",
+      "publisher": "MacRumors",
+      "url": "https://www.macrumors.com",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "No live web access in this session: the core event (Apple's exact statement wording, the precise share-price move) and all carried figures could not be re-verified against live URLs and are attributed to prior reporting. The specific article permalinks must be confirmed before publication; some sources here are publisher-level rather than deep links.",
+    "The implied cost band ($8-14/GB DRAM) spans 75%, so the test is not very discriminating; 'fits inside the band' is weak evidence and is stated as such.",
+    "The capacity-not-price finding rests largely on a single matched pair (MacBook Air vs Vision Pro); across the rest of the lineup capacity and price are confounded and no regression is possible.",
+    "The lead supply-shock series is 64GB server DDR5 RDIMM, a different product from the LPDDR5 unified memory Apple ships; it is used as a directional backdrop, not Apple's actual cost.",
+    "The Q2 2026 memory price point is an estimate; the 'roughly quadrupled' framing depends on it and is not load-bearing for the finding (the verified series shows ~3.5x through Q1 2026).",
+    "The bill-of-materials share is a single estimate attributed to one company's CFO, not a measured industry figure; the name, date and exact wording need verification.",
+    "Most hikes cluster at the top of their implied bands, which is consistent with a mild lineup-wide markup layered on a real shock; the data cannot exclude that reading.",
+    "The unexplained residual identified (entry iPad, and marginally the iPad Pro) is small in absolute dollars; the distributional point is real but the magnitude is modest.",
+    "The CPI series runs only through March 2026 and therefore cannot yet show whether these June hikes reverse the long-run decline."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "date": "2026-06-26",
+  "byline": "Cumulant Research"
+}

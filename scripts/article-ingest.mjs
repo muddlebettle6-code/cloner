@@ -26,6 +26,22 @@ const a = JSON.parse(readFileSync(path, "utf8"));
 if (!a.date) a.date = new Date().toISOString().slice(0, 10);
 if (!a.byline) a.byline = "Cumulant Research";
 
+// House style: normalize em/en dashes (and minus signs) to plain hyphens
+// everywhere, so a stray dash never blocks an otherwise-good article.
+const declash = (o) => {
+  if (typeof o === "string") return o.replace(/[—–−]/g, "-");
+  if (Array.isArray(o)) {
+    for (let i = 0; i < o.length; i++) o[i] = declash(o[i]);
+    return o;
+  }
+  if (o && typeof o === "object") {
+    for (const k of Object.keys(o)) o[k] = declash(o[k]);
+    return o;
+  }
+  return o;
+};
+declash(a);
+
 const errs = [];
 const gate = []; // quality-gate failures (block a publish)
 for (const f of REQUIRED) {
