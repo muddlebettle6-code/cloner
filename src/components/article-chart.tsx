@@ -42,7 +42,7 @@ function KeyNumber({ data }: { data: { value?: string; label?: string; sub?: str
 }
 
 function Bars({ data }: { data: { bars?: { label: string; value: number; highlight?: boolean }[]; max?: number } }) {
-  const bars = Array.isArray(data?.bars) ? data.bars : [];
+  const bars = (Array.isArray(data?.bars) ? data.bars : []).slice(0, 12);
   const values = bars.map((b) => Number(b.value) || 0);
   const lo = Math.min(0, ...values);
   const hi = Math.max(0, data?.max ?? 0, ...values);
@@ -54,19 +54,18 @@ function Bars({ data }: { data: { bars?: { label: string; value: number; highlig
         const v = Number(b.value) || 0;
         const left = ((Math.min(v, 0) - lo) / span) * 100;
         const w = (Math.abs(v) / span) * 100;
+        // Fixed columns: label | bar track | value. Nothing can spill out.
         return (
-          <div key={i} className="grid grid-cols-[40%_1fr] items-center gap-[12px]">
-            <span className="truncate text-right text-[13px] text-ink">{b.label}</span>
-            <div className="relative h-[22px]">
+          <div key={i} className="grid grid-cols-[minmax(56px,32%)_1fr_auto] items-center gap-[10px]">
+            <span className="truncate text-right text-[12px] leading-[1.2] text-ink md:text-[13px]">{b.label}</span>
+            <div className="relative h-[20px]">
               <div className="absolute top-0 h-full w-px bg-clay" style={{ left: `${zero}%` }} />
               <div
-                className="absolute top-[3px] h-[16px] rounded-[2px]"
-                style={{ left: `${left}%`, width: `${Math.max(w, 0.5)}%`, background: b.highlight ? MAG : INK }}
+                className="absolute top-[2px] h-[16px] rounded-[2px]"
+                style={{ left: `${left}%`, width: `${Math.max(Math.min(w, 100 - left), 0.5)}%`, background: b.highlight ? MAG : INK }}
               />
-              <span className="absolute top-[2px] text-[12px] text-smoke" style={{ left: `calc(${left + w}% + 6px)` }}>
-                {fmt(v)}
-              </span>
             </div>
+            <span className="w-[52px] flex-none text-right font-mono text-[12px] tabular-nums text-smoke">{fmt(v)}</span>
           </div>
         );
       })}
@@ -109,11 +108,14 @@ function Line({ data }: { data: { series?: { name: string; points: { x: string; 
           const pts = (s.points || []).map((p, i) => `${x(i)},${y(Number(p.y) || 0)}`).join(" ");
           return <polyline key={si} points={pts} fill="none" stroke={colors[si % colors.length]} strokeWidth={2} />;
         })}
-        {labels.map((lab, i) =>
-          i % Math.ceil(labels.length / 6 || 1) === 0 ? (
-            <text key={i} x={x(i)} y={H - 8} textAnchor="middle" fontSize="11" fill={SMOKE}>{lab}</text>
-          ) : null
-        )}
+        {labels.map((lab, i) => {
+          const step = Math.ceil((labels.length || 1) / 6);
+          if (i % step !== 0 && i !== labels.length - 1) return null;
+          const anchor = i === 0 ? "start" : i === labels.length - 1 ? "end" : "middle";
+          return (
+            <text key={i} x={x(i)} y={H - 8} textAnchor={anchor} fontSize="11" fill={SMOKE}>{lab}</text>
+          );
+        })}
       </svg>
       {series.length > 1 && (
         <div className="mt-[8px] flex flex-wrap gap-[14px]">
@@ -146,7 +148,7 @@ function Timeline({ data }: { data: { events?: { date: string; title: string; de
 }
 
 function Range({ data }: { data: { items?: { label: string; low: number; mid: number; high: number }[] } }) {
-  const items = Array.isArray(data?.items) ? data.items : [];
+  const items = (Array.isArray(data?.items) ? data.items : []).slice(0, 10);
   const all = items.flatMap((it) => [Number(it.low) || 0, Number(it.high) || 0, Number(it.mid) || 0]);
   const lo = Math.min(...all, 0);
   const hi = Math.max(...all, 0);
@@ -158,13 +160,13 @@ function Range({ data }: { data: { items?: { label: string; low: number; mid: nu
         const h = ((Number(it.high) - lo) / span) * 100;
         const m = ((Number(it.mid) - lo) / span) * 100;
         return (
-          <div key={i} className="grid grid-cols-[34%_1fr] items-center gap-[12px]">
-            <span className="truncate text-right text-[13px] text-ink">{it.label}</span>
-            <div className="relative h-[22px]">
-              <div className="absolute top-[10px] h-[2px] rounded bg-clay" style={{ left: `${l}%`, width: `${Math.max(h - l, 0.5)}%` }} />
-              <div className="absolute top-[6px] h-[10px] w-[10px] rounded-full" style={{ left: `calc(${m}% - 5px)`, background: MAG }} />
-              <span className="absolute -top-[1px] text-[11px] text-smoke" style={{ left: `calc(${h}% + 6px)` }}>{fmt(Number(it.high))}</span>
+          <div key={i} className="grid grid-cols-[minmax(56px,30%)_1fr_auto] items-center gap-[10px]">
+            <span className="truncate text-right text-[12px] leading-[1.2] text-ink md:text-[13px]">{it.label}</span>
+            <div className="relative h-[20px]">
+              <div className="absolute top-[9px] h-[2px] rounded bg-clay" style={{ left: `${Math.max(l, 0)}%`, width: `${Math.max(Math.min(h - l, 100 - l), 0.5)}%` }} />
+              <div className="absolute top-[5px] h-[10px] w-[10px] rounded-full" style={{ left: `calc(${Math.min(Math.max(m, 1), 99)}% - 5px)`, background: MAG }} />
             </div>
+            <span className="flex-none text-right font-mono text-[11px] tabular-nums text-smoke">{fmt(Number(it.low))} to {fmt(Number(it.high))}</span>
           </div>
         );
       })}

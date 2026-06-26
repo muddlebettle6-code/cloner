@@ -70,6 +70,20 @@ function Block({ article, block }: { article: Article; block: ArticleBlock }) {
       const chart = article.charts.find((c) => c.id === block.chartId);
       return chart ? <div className="my-[28px]"><ArticleChartView chart={chart} /></div> : null;
     }
+    case "image":
+      return (
+        <figure className="my-[28px]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={block.src} alt={block.alt} loading="lazy" className="w-full rounded-[6px] border border-clay bg-stone" />
+          {(block.caption || block.credit) && (
+            <figcaption className="mt-[10px] text-[13px] leading-[1.5] text-smoke">
+              {block.caption}
+              {block.caption && block.credit ? "  " : ""}
+              {block.credit && <span className="text-smoke">{block.credit}</span>}
+            </figcaption>
+          )}
+        </figure>
+      );
     default:
       return null;
   }
@@ -113,7 +127,37 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <p className="mt-[22px] font-mono text-[11px] uppercase tracking-[0.04em] text-smoke">
               By {article.byline ?? "Cumulant Research"}
             </p>
+
+            {/* Quick version */}
+            {article.takeaways && article.takeaways.length > 0 && (
+              <div className="mt-[28px] rounded-[10px] border border-clay bg-stone p-[20px] md:p-[24px]">
+                <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke">The quick version</p>
+                <ul className="mt-[12px] flex flex-col gap-[10px]">
+                  {article.takeaways.map((t, i) => (
+                    <li key={i} className="flex gap-[12px] text-[15px] leading-[1.5] text-ink md:text-[16px]">
+                      <span className="mt-[9px] h-[5px] w-[5px] flex-none rounded-full" style={{ background: "#ff2d92" }} />
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </header>
+
+          {/* Hero image (optional, openly licensed) */}
+          {article.leadImage && (
+            <figure className="mx-auto mt-[36px] max-w-[980px]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={article.leadImage.src} alt={article.leadImage.alt} loading="lazy" className="w-full rounded-[6px] border border-clay bg-stone object-cover" />
+              {(article.leadImage.caption || article.leadImage.credit) && (
+                <figcaption className="mt-[10px] text-[13px] leading-[1.5] text-smoke">
+                  {article.leadImage.caption}
+                  {article.leadImage.caption && article.leadImage.credit ? "  " : ""}
+                  {article.leadImage.credit && <span className="text-smoke">{article.leadImage.credit}</span>}
+                </figcaption>
+              )}
+            </figure>
+          )}
 
           {/* Lead visual */}
           {lead && (

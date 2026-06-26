@@ -457,5 +457,12 @@
     "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
   ],
   "date": "2026-06-26",
-  "byline": "Cumulant Research"
+  "byline": "Cumulant Research",
+  "takeaways": [
+    "Apple raised prices on Macs, iPads, HomePod and Vision Pro on June 25, blaming a memory chip shortage.",
+    "For most products the price increases line up with how much memory each device has, which fits a real cost story rather than a cash grab.",
+    "The clearest sign is that two devices with the same memory got the same $200 increase even though one costs three times as much.",
+    "Most of the increases land at the high end of what the extra memory could cost, so there may be a small markup on top of the real shortage.",
+    "The one increase that memory cannot explain falls on the cheapest $349 iPad, the device with the least memory to blame."
+  ]
 }

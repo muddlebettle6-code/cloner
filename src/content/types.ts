@@ -235,11 +235,20 @@ export interface ArticleChart {
   data: any;
 }
 
+export interface ArticleImage {
+  src: string;
+  caption?: string;
+  /** Required attribution, e.g. "Photo: company press kit" or a Commons credit. */
+  credit: string;
+  alt: string;
+}
+
 export type ArticleBlock =
   | { type: "p"; text: string }
   | { type: "pullquote"; text: string }
   | { type: "callout"; label?: string; text: string }
   | { type: "chart"; chartId: string }
+  | { type: "image"; src: string; caption?: string; credit: string; alt: string }
   | { type: "list"; items: string[] };
 
 export interface ArticleSection {
@@ -267,10 +276,14 @@ export interface Article {
   date: string;
   readingMinutes: number;
   tags?: string[];
+  /** The quick-version bullets shown at the top of the article. */
+  takeaways?: string[];
   /** The current event the article hooks on. */
   event: string;
   /** The single research question. */
   question: string;
+  /** Optional hero image (openly licensed, with a credit). */
+  leadImage?: ArticleImage;
   /** Chart id used as the lead visual. */
   leadChartId?: string;
   charts: ArticleChart[];

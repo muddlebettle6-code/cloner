@@ -52,19 +52,32 @@ STANDARD = (
     f"Today is {TODAY}. Strongly prefer an event from today or the last 7 days; the fresher the better. "
     "Treat anything older than about 10 days as stale unless it is the essential backdrop to a development "
     "happening right now.\n"
+) + (
+    "Write for a MIXED audience - a curious general reader AND a finance professional. Explain every technical "
+    "term in plain language; use a concrete comparison or analogy where it makes a hard idea click; and walk the "
+    "reader through the research steps so a non-specialist can follow how you reached the finding, without losing "
+    "rigor. Prose should be clear and genuinely enjoyable to read, never stilted or awkward. "
+    "Design every chart to read cleanly: at most about 8 bars or rows, short clear labels, honest axes that start "
+    "at zero unless there is a stated reason, and a chart only when it answers a specific question (never "
+    "decoration). Numbers in a chart must be small, comparable, and sane (no value far off the axis).\n"
 )
 
 JSON_SPEC = (
     "Return ONLY a JSON object with keys: slug (kebab-case), headline (specific, matches the finding), deck "
-    "(1-2 sentences: what happened, what the analysis found, why it matters), event, question, readingMinutes "
-    "(int), tags (array), leadChartId, charts (array of {id, kind one of "
-    "[keynumber,bar,comparison,line,timeline,range,table], title, subtitle?, source, units?, period?, note?, "
-    "alt, data}), sections (array of {heading, blocks: array of {type one of [p,pullquote,callout,chart,list], "
-    "text?, label?, chartId?, items?}}), methodology (array), sources (array of {title, publisher?, url, kind "
-    "one of [primary,secondary,academic,data]}), limitations (array), honesty (array). "
+    "(1-2 sentences: what happened, what the analysis found, why it matters), takeaways (array of 3 to 5 short "
+    "plain-language bullets - the quick version a busy reader sees first), event, question, readingMinutes "
+    "(int), tags (array), leadChartId, "
+    "leadImage (OPTIONAL {src, caption, credit, alt}; include ONLY an openly-licensed image you verified - "
+    "Wikimedia Commons, public domain, a government source, or an official company press image - with a clear "
+    "credit; OMIT the key entirely if you cannot confirm the license), "
+    "charts (array of {id, kind one of [keynumber,bar,comparison,line,timeline,range,table], title, subtitle?, "
+    "source, units?, period?, note?, alt, data}), sections (array of {heading, blocks: array of {type one of "
+    "[p,pullquote,callout,chart,image,list], text?, label?, chartId?, items?, src?, caption?, credit?, alt?}}), "
+    "methodology (array), sources (array of {title, publisher?, url, kind one of [primary,secondary,academic,"
+    "data]}), limitations (array), honesty (array). "
     "Chart data shapes: keynumber {value,label,sub?}; bar/comparison {bars:[{label,value,highlight?}],max?}; "
     "line {series:[{name,points:[{x,y}]}]}; timeline {events:[{date,title,detail?}]}; range "
-    "{items:[{label,low,mid,high}]}; table {columns:[...],rows:[[...]]}. Every number must trace to a source in "
+    "{items:[{label,low,mid,high}]}; table {columns:[...],rows:[[...]]}. Every number traces to a source in "
     "sources[]. Output JSON only, no prose around it."
 )
 
@@ -123,16 +136,26 @@ def main() -> None:
         "center), competing explanations (>=2 with support for each), historical comparison (similar/different/"
         "where the analogy breaks), who is exposed (companies/regions/households/industries), what happens next "
         "(base/upside/downside scenarios, each with the evidence that would make it likelier), limitations, and "
-        "a conclusion that returns to the event. Use blocks p/pullquote/callout/chart/list; place charts where "
-        f"they answer a question; set leadChartId.\n\nFRAMING:\n{frame}\n\nANALYSIS + CHARTS:\n{analysis[:14000]}"
+        "a conclusion that returns to the event. Provide a 'quick version' of 3 to 5 takeaway bullets. If you can "
+        "confirm an openly-licensed image (Wikimedia Commons, public domain, government, or official press), add "
+        "a leadImage with its credit; otherwise omit it. Use blocks p/pullquote/callout/chart/image/list; place "
+        "charts where they answer a question; set leadChartId. Explain hard concepts with a plain analogy and "
+        f"walk the reader through the research steps.\n\nFRAMING:\n{frame}\n\nANALYSIS + CHARTS:\n{analysis[:14000]}"
         f"\n\n{JSON_SPEC}", web=False))
 
     log("critique")
     critique = claude(STANDARD + "Review this draft hard, simultaneously as an investigative editor, a data "
-        "journalist + statistician, a skeptical market analyst, and a general reader. List concrete required "
-        "fixes: unsupported claims, headline overreach beyond the evidence, a missing counterargument, a "
-        "dishonest visual, confusing market reaction with economic effect, a missing exposed group, jargon, or "
-        f"weak transitions.\n\nDRAFT:\n{json.dumps(draft)[:15000]}", web=False)
+        "journalist + statistician, a skeptical market analyst, a VISUAL EDITOR, and a curious general reader. "
+        "List concrete required fixes.\n"
+        "CHECK THE VISUALS (this matters): for every chart, does it answer a real question, are the numbers sane "
+        "and comparable (no value that would blow past the axis or dwarf the rest), are there at most ~8 "
+        "bars/rows, are labels short and clear, are axes honest. Flag any chart that is confusing, decorative, "
+        "mis-scaled, or has bad/overflowing data, and say exactly how to fix it or that it should be cut.\n"
+        "CHECK READABILITY: flag anything awkwardly phrased or jargon-heavy; require a plain-language analogy or "
+        "comparison wherever a hard concept appears; confirm a non-specialist can follow the research steps; "
+        "confirm the takeaways are a genuinely clear quick summary.\n"
+        "ALSO: unsupported claims, headline overreach beyond the evidence, a missing counterargument, confusing "
+        f"market reaction with economic effect, a missing exposed group.\n\nDRAFT:\n{json.dumps(draft)[:15000]}", web=False)
 
     # Save the (valid) draft so a revise-parse failure can fall back to it.
     (out / "draft.json").write_text(json.dumps(draft, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
