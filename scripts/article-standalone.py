@@ -123,12 +123,23 @@ def main() -> None:
         "dishonest visual, confusing market reaction with economic effect, a missing exposed group, jargon, or "
         f"weak transitions.\n\nDRAFT:\n{json.dumps(draft)[:15000]}", web=False)
 
+    # Save the (valid) draft so a revise-parse failure can fall back to it.
+    (out / "draft.json").write_text(json.dumps(draft, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
     log("revise")
-    final = extract_json(claude(STANDARD + "Produce the FINAL article addressing every critique: remove "
-        "unsupported claims, match the headline to the evidence, ensure >=2 competing explanations, note where "
-        "the historical comparison breaks, give each scenario its triggering evidence, make every chart honest "
-        f"and sourced, and make the limitations explicit.\n\nDRAFT:\n{json.dumps(draft)[:13000]}\n\nCRITIQUE:\n"
-        f"{critique[:8000]}\n\n{JSON_SPEC}", web=False))
+    final = draft
+    try:
+        revised = extract_json(claude(STANDARD + "Produce the FINAL article addressing every critique: remove "
+            "unsupported claims, match the headline to the evidence, ensure >=2 competing explanations, note where "
+            "the historical comparison breaks, give each scenario its triggering evidence, make every chart honest "
+            "and sourced, and make the limitations explicit. Output ONLY the JSON object, nothing before or after "
+            f"it.\n\nDRAFT:\n{json.dumps(draft)[:13000]}\n\nCRITIQUE:\n{critique[:8000]}\n\n{JSON_SPEC}", web=False))
+        if revised.get("headline") and revised.get("sections"):
+            final = revised
+        else:
+            log("revise output incomplete; using the critiqued draft")
+    except Exception as exc:  # noqa: BLE001 - never lose the article over a parse hiccup
+        log(f"revise parse failed ({exc}); using the critiqued draft")
 
     final["date"] = _dt.date.today().isoformat()
     final.setdefault("byline", "Cumulant Research")

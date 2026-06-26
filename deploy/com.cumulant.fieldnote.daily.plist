@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  Daily field-note generator (launchd, macOS).
+  Daily deep-article generator (launchd, macOS). Runs scripts/daily-article.sh.
 
   Install:
     cp deploy/com.cumulant.fieldnote.daily.plist ~/Library/LaunchAgents/
@@ -21,7 +21,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/aryanpatel/cloner/scripts/daily-field-note.sh</string>
+        <string>/Users/aryanpatel/cloner/scripts/daily-article.sh</string>
     </array>
 
     <!-- Run every day at 08:00 local time. -->
@@ -46,9 +46,9 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/aryanpatel/cloner/scripts/daily-field-note.out.log</string>
+    <string>/Users/aryanpatel/cloner/scripts/daily-article.out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/aryanpatel/cloner/scripts/daily-field-note.err.log</string>
+    <string>/Users/aryanpatel/cloner/scripts/daily-article.err.log</string>
 
     <key>RunAtLoad</key>
     <false/>
