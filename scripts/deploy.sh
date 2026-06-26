@@ -18,6 +18,14 @@ DEPLOY_REPO="${FIELDNOTE_DEPLOY_REPO:-muddlebettle6-code/cumulant}"
 DEPLOY_BRANCH="${FIELDNOTE_DEPLOY_BRANCH:-main}"
 MSG="${1:-Deploy $(date '+%Y-%m-%d %H:%M')}"
 
+# Use the deploy token from the environment, or fall back to the one already
+# stored for the daily job, so a plain `bash scripts/deploy.sh` pushes on its own.
+if [ -z "${GITHUB_TOKEN:-}" ]; then
+  _plist="$HOME/Library/LaunchAgents/com.cumulant.fieldnote.daily.plist"
+  [ -f "$_plist" ] && GITHUB_TOKEN=$(plutil -extract EnvironmentVariables.GITHUB_TOKEN raw "$_plist" 2>/dev/null || true)
+fi
+export GITHUB_TOKEN
+
 [ -d "$DEPLOY_DIR/.git" ] || { echo "deploy repo not found at $DEPLOY_DIR (set FIELDNOTE_DEPLOY_DIR)"; exit 1; }
 
 echo "Building the site..."
@@ -30,23 +38,22 @@ touch "$DEPLOY_DIR/.nojekyll"
 
 git -C "$DEPLOY_DIR" add -A
 if git -C "$DEPLOY_DIR" diff --cached --quiet; then
-  echo "No changes to deploy."
-  exit 0
+  echo "No new build changes."
+else
+  git -C "$DEPLOY_DIR" -c commit.gpgsign=false commit -m "$MSG" >/dev/null
+  echo "Committed to the cumulant repo."
 fi
-git -C "$DEPLOY_DIR" -c commit.gpgsign=false commit -m "$MSG" >/dev/null
-echo "Committed to the cumulant repo."
 
-if [ -n "${GITHUB_TOKEN:-}" ]; then
-  if git -C "$DEPLOY_DIR" push "https://${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}.git" "HEAD:${DEPLOY_BRANCH}" 2>/dev/null; then
-    echo "Pushed with token. Cloudflare will publish in ~1 min."
-    exit 0
-  fi
-  echo "Token push failed; trying normal credentials..."
-fi
-if git -C "$DEPLOY_DIR" push origin "$DEPLOY_BRANCH"; then
+# Push (sends any pending commits even if nothing new was built). Token first
+# (reliable, unattended), else your normal git credentials. Errors are silenced
+# so a token never leaks into the output.
+if [ -n "${GITHUB_TOKEN:-}" ] && git -C "$DEPLOY_DIR" push "https://${GITHUB_TOKEN}@github.com/${DEPLOY_REPO}.git" "HEAD:${DEPLOY_BRANCH}" >/dev/null 2>&1; then
+  git -C "$DEPLOY_DIR" update-ref "refs/remotes/origin/${DEPLOY_BRANCH}" HEAD 2>/dev/null || true
+  echo "Pushed. Cloudflare will publish in ~1 min."
+elif git -C "$DEPLOY_DIR" push origin "$DEPLOY_BRANCH" >/dev/null 2>&1; then
   echo "Pushed. Cloudflare will publish in ~1 min."
 else
   echo "Built + committed to the cumulant repo, but the push failed (auth)."
-  echo "Push it manually (GitHub Desktop -> cumulant -> Push) to go live."
+  echo "Run: bash scripts/setup-auto-deploy.sh   (or push once via GitHub Desktop)."
   exit 2
 fi
