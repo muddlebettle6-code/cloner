@@ -24,11 +24,32 @@ import hmac
 import json
 import os
 import secrets
+import subprocess
 import sys
 import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
+
+_CRED_KEYS = (
+    "X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET LINKEDIN_ACCESS_TOKEN LINKEDIN_AUTHOR "
+    "REDDIT_CLIENT_ID REDDIT_SECRET REDDIT_USERNAME REDDIT_PASSWORD FB_PAGE_ID FB_PAGE_TOKEN IG_USER_ID IG_TOKEN"
+).split()
+
+
+def _load_plist_env() -> None:
+    """Fill missing credentials from the daily job's launchd plist, so the same
+    creds power both the unattended run and a manual test."""
+    plist = Path.home() / "Library/LaunchAgents/com.cumulant.fieldnote.daily.plist"
+    if not plist.exists():
+        return
+    for k in _CRED_KEYS:
+        if os.environ.get(k):
+            continue
+        r = subprocess.run(["plutil", "-extract", f"EnvironmentVariables.{k}", "raw", str(plist)],
+                           capture_output=True, text=True)
+        if r.returncode == 0 and r.stdout.strip():
+            os.environ[k] = r.stdout.strip()
 
 
 def _post(url: str, *, data=None, headers=None, method="POST"):
@@ -193,6 +214,7 @@ def main() -> None:
     if len(sys.argv) < 2:
         print("usage: social-post.py <social.json>", file=sys.stderr)
         sys.exit(1)
+    _load_plist_env()
     pack = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     results = {}
     for name, fn in PLATFORMS.items():
