@@ -24,7 +24,13 @@ RP=$(asks "  reddit password")
 echo
 echo "== LinkedIn  (developer console -> your app -> Auth -> OAuth token w/ w_member_social) =="
 LT=$(asks "  access token")
-LA=$(ask  "  author URN  (urn:li:person:XXXX  or  urn:li:organization:XXXX)")
+LA=$(ask  "  author URN  (blank to auto-detect from the token)")
+
+if [ -n "$LT" ] && [ -z "$LA" ]; then
+  sub=$(curl -s -H "Authorization: Bearer $LT" https://api.linkedin.com/v2/userinfo \
+        | python3 -c "import sys,json;print(json.load(sys.stdin).get('sub',''))" 2>/dev/null)
+  [ -n "$sub" ] && LA="urn:li:person:$sub" && echo "  auto-detected author URN: $LA"
+fi
 
 store REDDIT_CLIENT_ID "$RC"; store REDDIT_SECRET "$RS"; store REDDIT_USERNAME "$RU"; store REDDIT_PASSWORD "$RP"
 store LINKEDIN_ACCESS_TOKEN "$LT"; store LINKEDIN_AUTHOR "$LA"
