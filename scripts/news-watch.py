@@ -139,6 +139,17 @@ def main() -> None:
                            cwd=str(SITE_DIR), env={**os.environ, "SITE_DIR": str(SITE_DIR)})
         record(slug, event, published=True)
         log(f"Published + deployed: {slug}")
+
+        # Distribution: generate platform-tailored posts and auto-post to every
+        # connected platform (each is skipped cleanly until you connect it).
+        try:
+            subprocess.run([sys.executable, str(SITE_DIR / "scripts" / "social-pack.py"), str(art), str(outdir)])
+            social = outdir / "social.json"
+            if social.exists():
+                log("posting to connected social platforms")
+                subprocess.run([sys.executable, str(SITE_DIR / "scripts" / "social-post.py"), str(social)])
+        except Exception as exc:  # noqa: BLE001 - distribution must not fail the publish
+            log(f"social step failed ({exc})")
     finally:
         if LOCK.exists():
             LOCK.unlink()
