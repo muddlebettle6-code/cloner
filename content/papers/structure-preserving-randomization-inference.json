@@ -1,0 +1,48 @@
+{
+  "published": true,
+  "order": 1,
+  "slug": "structure-preserving-randomization-inference",
+  "title": "Structure-Preserving Randomization Inference for Placement Effects on Exogenous Paths",
+  "subtitle": "A finite-sample-valid method to test whether the placement of a decision sequence on a timeline carries information, conditional on its realized structure.",
+  "authors": [
+    "Aryan Patel"
+  ],
+  "status": "Submitted · revising for a statistics journal",
+  "statusKind": "submitted",
+  "date": "2026",
+  "kind": "paper",
+  "oneLine": "A randomization test that separates the placement timing of a decision sequence from its structural properties (durations, gaps, magnitudes) and the exogenous path it runs on, giving finite-sample-valid inference without parametric assumptions.",
+  "abstract": "A finite sequence of decisions is often scored on a realized path that the decisions are assumed not to change. The resulting statistic confounds the path, the realized structure of the decision sequence, and the placement of that structure on the index set. We develop structure-preserving randomization inference for this question: the test holds the realized path and structural profile fixed, draws re-placements from a declared conditional law, and ranks the realized statistic against them. What distinguishes it from a standard permutation test is the re-randomized object: the calendar placement of a template whose ordered durations, gaps, sizes and signs are held fixed. Under the sharp null that the realized placement is exchangeable with draws from that law, the plus-one Monte Carlo p-value is finite-sample super-uniform; no return model or large-sample approximation is required. Because the conditioning law is analyst-declared rather than identified by the data, we report a sensitivity range and an intersection-union test over a declared finite menu. Simulations verify size and monotone power, and a financial validation shows no entry-placement discovery after multiplicity control. The conclusion is conditional: the method tests placement relative to the chosen law and does not assess skill absorbed into the held-fixed structure.",
+  "contributions": [
+    "A finite-sample-valid Monte Carlo p-value for placement effects: the test holds its nominal size under exchangeability alone, proven by rank arguments with no appeal to central limits.",
+    "Exposure robustness as a methodological property: unlike profitability benchmarks (Reality Check, Superior Predictive Ability), the method correctly holds size against profitable-but-untimed strategies that earn returns purely through exposure.",
+    "Monotone power at an N^(-1/2) detection rate: power rises monotonically with signal strength, consistent with a minimum detectable edge that shrinks with the number of decisions N.",
+    "Model-risk sensitivity via measure-invariance: because the conditioning law is not identified by data, the procedure reports a sensitivity range across a declared menu and treats invariance across measures as the standard for a claim.",
+    "A portable, reusable structure-preserving sampler (Algorithm 1) that draws from a declared conditional law while preserving exact durations and gap multisets, validated on both synthetic trading problems and a non-financial condition-monitoring setting.",
+    "Financial validation: across 322 strategy-by-asset combinations on 47 instruments, 13 rejections at 5% versus 16.1 expected by chance, with zero discoveries surviving Benjamini-Hochberg or Bonferroni control."
+  ],
+  "method": [
+    "The method partitions a realized decision sequence into three parts: the exogenous path (for example, observed prices), the structural profile (ordered durations, inter-decision gaps, weights, signs, and non-overlap constraints), and the calendar placement (where on the timeline the decisions fall). It holds the path and structure fixed and re-randomizes only placement by drawing from a declared conditional law, typically a gap-permutation measure that permutes internal gaps while preserving their multiset. For each re-placement, the outcome statistic is recomputed on the fixed path, and the realized outcome is ranked against the re-placed distribution.",
+    "Under the null that the realized placement is exchangeable with re-placements from the declared law, the plus-one Monte Carlo p-value controls Type I error at any nominal level without asymptotic normality or distributional assumptions. Because choosing the conditioning law is a modeling decision, the paper reports a sensitivity range across several admissible measures and enforces measure invariance, rejection under every defensible conditioning choice, as the standard for claiming placement skill."
+  ],
+  "figures": [
+    {
+      "src": "/papers/figures/synthetic_power_curve.png",
+      "caption": "Power curve: the rejection rate rises monotonically from the nominal size at zero signal to unit power as the injected placement effect grows, confirming the test detects placement information when it is present.",
+      "alt": "Power curve rising from nominal size to unit power as injected signal increases"
+    },
+    {
+      "src": "/papers/figures/synthetic_type1_calibration.png",
+      "caption": "Null p-value distribution under four no-skill worlds (i.i.d., volatility clustering, drift-only, structural exposure). The distributions are uniform, so the test holds its size when no placement information exists.",
+      "alt": "Null p-value distributions across four no-skill synthetic worlds"
+    }
+  ],
+  "dataNote": "Simulated synthetic data for calibration and power (known-truth designs); real financial data for validation across 322 strategy-by-asset tests on 47 instruments, with real price paths and re-randomized decision placements; plus a non-financial condition-monitoring validation.",
+  "honesty": [
+    "Validity is conditional: finite-sample guarantees hold under the sharp null that placement is exchangeable with the declared conditioning law; the test assesses placement, not skill absorbed into the held-fixed structure.",
+    "The financial finding is negative: zero discoveries survive Benjamini-Hochberg or Bonferroni control, indicating either no real entry-timing skill in the sample or insufficient statistical power.",
+    "At very small decision counts the feasible set is thin and placement is weakly identified; these cases are flagged as exploratory.",
+    "The measure-invariance standard is deliberately conservative: a rejection must hold under every admissible conditioning measure, not just one."
+  ],
+  "pdf": "/papers/pdfs/structure-preserving-randomization-inference.pdf"
+}

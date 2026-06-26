@@ -1,0 +1,18 @@
+{
+  "published": true,
+  "order": 4,
+  "slug": "diminishing-marginal-risk-reduction",
+  "title": "Diminishing Marginal Risk Reduction in Diversification",
+  "authors": [
+    "Aryan Patel"
+  ],
+  "status": "Research note",
+  "statusKind": "research-note",
+  "date": "2026",
+  "kind": "note",
+  "oneLine": "How quickly the risk-reduction benefit of adding another holding flattens out as a portfolio grows.",
+  "abstract": "A short analysis of how portfolio risk changes as holdings are added, and where the marginal benefit of further diversification begins to flatten. In the defined setup a previously reported difference of roughly 1.78 percentage points between 10-stock and 100-stock risk estimates is specific to the sample, market period, portfolio construction, and chosen risk measure, and is not presented as a universal figure.",
+  "honesty": [
+    "The headline figure is tied to the defined setup (sample, period, construction, and risk measure) and should not be generalized beyond it."
+  ]
+}

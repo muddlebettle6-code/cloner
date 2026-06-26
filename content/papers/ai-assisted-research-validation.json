@@ -1,0 +1,15 @@
+{
+  "published": true,
+  "order": 6,
+  "slug": "ai-assisted-research-validation",
+  "title": "AI-Assisted Research Validation",
+  "authors": [
+    "Aryan Patel"
+  ],
+  "status": "Experimental",
+  "statusKind": "experimental",
+  "date": "2026",
+  "kind": "note",
+  "oneLine": "Testing whether AI agents can reliably check citation validity, code reliability, and sensitivity inside a reproducible research workflow.",
+  "abstract": "A systems project testing whether AI agents can reliably check citation validity, code reliability, and sensitivity inside a reproducible research workflow, and where automation is safe versus where it introduces hidden risk. Findings are preliminary and depend on the specific systems studied; AI agents act as software roles under human approval, not as independent researchers."
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Daily field-note generator (launchd, macOS).
+
+  Install:
+    cp deploy/com.cumulant.fieldnote.daily.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.cumulant.fieldnote.daily.plist
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/com.cumulant.fieldnote.daily.plist
+
+  Adjust the paths, the run time (StartCalendarInterval), and PATH below to your
+  machine. No API key is needed: generation uses your logged-in `claude` CLI
+  (Claude Code), so make sure its directory (~/.local/bin) is on the PATH below.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cumulant.fieldnote.daily</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/aryanpatel/cloner/scripts/daily-field-note.sh</string>
+    </array>
+
+    <!-- Run every day at 08:00 local time. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>8</integer>
+        <key>Minute</key><integer>0</integer>
+    </dict>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>FCRI_DIR</key><string>/Users/aryanpatel/Desktop/cumulant/FCRI</string>
+        <key>SITE_DIR</key><string>/Users/aryanpatel/cloner</string>
+        <!-- Include the locations of node, python, and the claude CLI. -->
+        <key>PATH</key><string>/Users/aryanpatel/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/daily-field-note.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/daily-field-note.err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

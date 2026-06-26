@@ -1,30 +1,12 @@
 {
-  "name": "ai-website-clone-template",
-  "version": "0.3.1",
+  "name": "cumulant-website",
+  "version": "1.0.0",
   "private": true,
-  "description": "Clone any website into a clean, modern Next.js codebase using AI coding agents",
-  "author": "JCodesMore",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JCodesMore/ai-website-cloner-template.git"
-  },
-  "homepage": "https://github.com/JCodesMore/ai-website-cloner-template",
-  "bugs": {
-    "url": "https://github.com/JCodesMore/ai-website-cloner-template/issues"
-  },
-  "keywords": [
-    "claude-code",
-    "website-clone",
-    "reverse-engineering",
-    "nextjs",
-    "ai",
-    "template",
-    "tailwindcss",
-    "shadcn-ui"
-  ],
+  "description": "Cumulant Research — official website (Next.js, App Router).",
+  "homepage": "https://cumulant.org",
+  "license": "UNLICENSED",
   "engines": {
-    "node": ">=24"
+    "node": ">=20.9"
   },
   "scripts": {
     "dev": "next dev",
@@ -32,7 +14,14 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "check": "npm run lint && npm run typecheck && npm run build"
+    "check": "npm run lint && npm run typecheck && npm run build",
+    "paper:ingest": "node scripts/paper-ingest.mjs",
+    "paper:review": "node scripts/paper-review.mjs",
+    "paper:publish": "node scripts/paper-publish.mjs",
+    "note:ingest": "node scripts/note-ingest.mjs",
+    "note:review": "node scripts/note-review.mjs",
+    "note:publish": "node scripts/note-publish.mjs",
+    "console": "node scripts/console.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

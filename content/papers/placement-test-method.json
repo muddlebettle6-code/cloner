@@ -1,0 +1,36 @@
+{
+  "published": true,
+  "order": 3,
+  "slug": "placement-test-method",
+  "title": "Structure-Preserving Randomization for Testing Placement Effects on Exogenous Paths",
+  "subtitle": "A reusable method article: a finite-sample-valid conditional randomization test for whether a realized placement of decisions is unusually favorable on a fixed path.",
+  "authors": [
+    "Aryan Patel"
+  ],
+  "status": "Working paper · method article",
+  "statusKind": "working-paper",
+  "date": "2026",
+  "kind": "paper",
+  "oneLine": "A reusable, implementation-ready method for testing whether the realized placement of a decision sequence is unusually favorable on a fixed exogenous path, with finite-sample-valid p-values.",
+  "abstract": "Many studies score a fixed sequence of decisions on a realized path that the decisions are assumed not to change. The proposed method asks a narrower question: whether the realized placement of that sequence is unusually favorable after the path and the decision structure are held fixed. The method extracts a structural profile from a realized decision sequence, declares a placement law over feasible re-placements of that same structure, scores each re-placement on the same exogenous path, and reports a plus-one Monte Carlo p-value. The procedure is finite-sample valid under the declared exchangeability law and does not require a model for the path. It adds diagnostics, sensitivity analysis, and validation checks for reuse, and is intended for implementation-ready testing of placement effects rather than a general test of profitability or total decision quality.",
+  "contributions": [
+    "Separates placement from profitability: it holds the exogenous path and decision structure fixed and re-randomizes only the calendar placement under a declared law, so path-driven or structure-driven performance is not mistaken for timing skill.",
+    "Finite-sample validity without distributional assumptions: the plus-one Monte Carlo p-value is valid at any finite number of resamples under exchangeability of the realized placement with structure-preserving re-placements, confirmed by synthetic calibration.",
+    "Reusable diagnostics and sensitivity analysis: support checks, null dispersion, percentile summaries, small-sample warnings, measure-sensitivity ranges, and multiplicity corrections, so both rejections and non-rejections are reported honestly.",
+    "Applicability beyond finance: validation on synthetic worlds, exact enumeration, condition-monitoring windows, and trading strategies shows the method applies wherever an exogenous path and a fixed decision template can be separated.",
+    "Structured implementation guidance: required inputs, the gap-permutation sampler, the core workflow algorithm, a validation recipe, and an implementation checklist let practitioners apply the method without rebuilding the surrounding application."
+  ],
+  "method": [
+    "The method splits a realized decision sequence into three objects: the exogenous path (such as a price series or condition process), the structural profile (ordered durations, internal and external gaps, weights, and signs), and the calendar placement. Only the placement is re-randomized under a declared law, typically a gap-permutation law that permutes internal gaps while fixing the ordered durations, or alternative laws that add feasibility constraints.",
+    "The core workflow extracts the structural profile, checks that the realized placement lies in the support of the declared law, computes the test statistic on the fixed path, then draws many structure-preserving re-placements, scores each on the same path, and reports the plus-one Monte Carlo p-value (one plus the count of at-least-as-favorable re-placements, divided by the number of resamples plus one). It is valid at finite sample because the realized and simulated statistics are exchangeable under the no-placement-skill null.",
+    "Validation on synthetic worlds with known ground truth confirms nominal size (rejection near 5 percent with no skill) and monotone power (rejection rising as a per-event placement edge is injected). Against profitability tests (White's Reality Check, Hansen's SPA), the placement test correctly holds size where strategies are profitable but untimed. It is demonstrated across trading-strategy timing, condition-monitoring windows, and exact enumeration on small cases."
+  ],
+  "dataNote": "Simulated synthetic data for calibration and power with known-ground-truth designs; real financial data for validation across 322 strategy-by-asset tests on 47 instruments; plus a non-financial condition-monitoring validation.",
+  "honesty": [
+    "This is a method article defining a reusable conditional procedure, not a discovery of timing skill. It answers a narrow question (given this fixed path and structure, is the realized placement unusually favorable?) and does not test whether a rule is profitable, useful globally, or optimal.",
+    "The procedure is conditional on analyst-declared assumptions (path exogeneity, exchangeability under the declared law, and support). Violations can invalidate the test, and measure-dependent results should be framed as law-dependent, not robust.",
+    "Small decision counts (fewer than five) sharply reduce power; non-rejections there are not evidence that no skill exists.",
+    "Validation uses synthetic worlds with known ground truth and historical backtests, which are not out-of-sample evidence and remain subject to look-ahead bias, overfitting, and data-snooping concerns common to all backtesting."
+  ],
+  "pdf": "/papers/pdfs/placement-test-method.pdf"
+}

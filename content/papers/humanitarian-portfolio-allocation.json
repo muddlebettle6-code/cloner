@@ -1,0 +1,15 @@
+{
+  "published": true,
+  "order": 5,
+  "slug": "humanitarian-portfolio-allocation",
+  "title": "Humanitarian Portfolio Allocation Under Uncertainty",
+  "authors": [
+    "Aryan Patel"
+  ],
+  "status": "Research in progress",
+  "statusKind": "in-progress",
+  "date": "2026",
+  "kind": "note",
+  "oneLine": "Whether portfolio reasoning can help humanitarian organizations allocate limited resources under uncertainty, and where it breaks down.",
+  "abstract": "A framework for allocating limited humanitarian resources across programs and regions while accounting for uncertainty, concentration risk, and diminishing marginal benefit. The work examines where financial portfolio concepts transfer to humanitarian objectives and where donor restrictions, mission constraints, and uncertain impact change the allocation problem. Research in progress; no completed findings are claimed."
+}
