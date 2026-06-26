@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  Daily deep-article generator (launchd, macOS). Runs scripts/daily-article.sh.
+  Continuous newsroom watcher (launchd, macOS). Runs scripts/news-watch.sh on an
+  interval: each cycle scans for a significant breaking event and, when one
+  clears the bar, researches + writes + auto-publishes a deep article on it.
 
   Install:
     cp deploy/com.cumulant.fieldnote.daily.plist ~/Library/LaunchAgents/
@@ -21,15 +23,14 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/aryanpatel/cloner/scripts/daily-article.sh</string>
+        <string>/Users/aryanpatel/cloner/scripts/news-watch.sh</string>
     </array>
 
-    <!-- Run every day at 08:00 local time. -->
-    <key>StartCalendarInterval</key>
-    <dict>
-        <key>Hour</key><integer>8</integer>
-        <key>Minute</key><integer>0</integer>
-    </dict>
+    <!-- Scan for a breaking event every hour. Lower to 1800 (30 min) to be
+         quicker on scoops, or use scripts/daily-article.sh + StartCalendarInterval
+         for a once-a-day piece instead of the continuous watcher. -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
 
     <key>EnvironmentVariables</key>
     <dict>
