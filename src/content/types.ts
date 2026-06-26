@@ -243,6 +243,12 @@ export interface ArticleImage {
   alt: string;
 }
 
+/** A term a general reader can hover/tap to get a plain-language definition. */
+export interface GlossaryEntry {
+  term: string;
+  definition: string;
+}
+
 export type ArticleBlock =
   | { type: "p"; text: string }
   | { type: "pullquote"; text: string }
@@ -278,6 +284,8 @@ export interface Article {
   tags?: string[];
   /** The quick-version bullets shown at the top of the article. */
   takeaways?: string[];
+  /** Plain-language definitions for key terms, surfaced as hover tooltips. */
+  glossary?: GlossaryEntry[];
   /** The current event the article hooks on. */
   event: string;
   /** The single research question. */

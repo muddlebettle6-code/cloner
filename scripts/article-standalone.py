@@ -65,8 +65,10 @@ STANDARD = (
 JSON_SPEC = (
     "Return ONLY a JSON object with keys: slug (kebab-case), headline (specific, matches the finding), deck "
     "(1-2 sentences: what happened, what the analysis found, why it matters), takeaways (array of 3 to 5 short "
-    "plain-language bullets - the quick version a busy reader sees first), event, question, readingMinutes "
-    "(int), tags (array), leadChartId, "
+    "plain-language bullets - the quick version a busy reader sees first), "
+    "glossary (array of {term, definition}: EVERY term a non-expert might not know - acronyms, jargon, financial "
+    "or technical concepts - each with one plain-language sentence a total beginner could follow), "
+    "event, question, readingMinutes (int), tags (array), leadChartId, "
     "leadImage (OPTIONAL {src, caption, credit, alt}; include ONLY an openly-licensed image you verified - "
     "Wikimedia Commons, public domain, a government source, or an official company press image - with a clear "
     "credit; OMIT the key entirely if you cannot confirm the license), "
@@ -140,7 +142,9 @@ def main() -> None:
         "confirm an openly-licensed image (Wikimedia Commons, public domain, government, or official press), add "
         "a leadImage with its credit; otherwise omit it. Use blocks p/pullquote/callout/chart/image/list; place "
         "charts where they answer a question; set leadChartId. Explain hard concepts with a plain analogy and "
-        f"walk the reader through the research steps.\n\nFRAMING:\n{frame}\n\nANALYSIS + CHARTS:\n{analysis[:14000]}"
+        "walk the reader through the research steps. The article must be understandable to ANYONE: define each "
+        "technical term in plain words on first use AND add it to the glossary so the reader can hover for a "
+        f"definition.\n\nFRAMING:\n{frame}\n\nANALYSIS + CHARTS:\n{analysis[:14000]}"
         f"\n\n{JSON_SPEC}", web=False))
 
     log("critique")
@@ -174,6 +178,23 @@ def main() -> None:
             log("revise output incomplete; using the critiqued draft")
     except Exception as exc:  # noqa: BLE001 - never lose the article over a parse hiccup
         log(f"revise parse failed ({exc}); using the critiqued draft")
+
+    log("verify")
+    try:
+        checked = extract_json(claude(STANDARD + "FACT-CHECK and clarify this finished article; use web search "
+            "and fetch. (1) For EVERY number, date, name, quote, and factual claim, confirm it against a primary "
+            "or reputable source; if you cannot confirm it, or it is wrong, FIX it to match the source or cut it "
+            "- never invent and never keep a shaky claim. (2) Make sure a NON-EXPERT can understand every "
+            "sentence: reword anything awkward, vague, or confusing, and explain each technical term in plain "
+            "words on first use. (3) Fill 'glossary' with every term a general reader might not know, each one "
+            "plain sentence. Keep all real sources. Return the corrected FULL article as JSON.\n\nARTICLE:\n"
+            f"{json.dumps(final)[:15000]}\n\n{JSON_SPEC}", web=True))
+        if checked.get("headline") and checked.get("sections"):
+            final = checked
+        else:
+            log("verify output incomplete; keeping the revised article")
+    except Exception as exc:  # noqa: BLE001 - verification is best-effort
+        log(f"verify parse failed ({exc}); keeping the revised article")
 
     final["date"] = _dt.date.today().isoformat()
     final.setdefault("byline", "Cumulant Research")

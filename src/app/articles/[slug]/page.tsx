@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { ArticleChartView } from "@/components/article-chart";
 import { ArrowIcon } from "@/components/icons";
 import { ARTICLES, getArticle } from "@/content/articles";
-import type { Article, ArticleBlock } from "@/content/types";
+import type { Article, ArticleBlock, GlossaryEntry } from "@/content/types";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -38,10 +38,53 @@ function fmtDate(iso: string): string {
     : d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }
 
-function Block({ article, block }: { article: Article; block: ArticleBlock }) {
+/** A key term the reader can hover (or tap) to see a plain-language definition. */
+function GlossaryTerm({ term, definition }: { term: string; definition: string }) {
+  return (
+    <span tabIndex={0} className="group relative cursor-help border-b border-dotted border-smoke outline-none">
+      {term}
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute bottom-full left-1/2 z-30 mb-[8px] w-[240px] max-w-[78vw] -translate-x-1/2 rounded-[8px] border border-clay bg-white p-[12px] text-left text-[13px] font-normal normal-case leading-[1.45] tracking-normal text-ink opacity-0 shadow-[0_8px_28px_rgba(0,0,0,0.14)] transition-opacity duration-150 group-hover:opacity-100 group-focus:opacity-100"
+      >
+        <span className="font-mono text-[10px] uppercase tracking-[0.05em] text-smoke">{term}</span>
+        <span className="mt-[4px] block text-ink">{definition}</span>
+      </span>
+    </span>
+  );
+}
+
+function escapeRegExp(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Wrap the first occurrence of each glossary term in the text with a tooltip. */
+function renderProse(text: string, glossary: GlossaryEntry[] | undefined, linked: Set<string>): React.ReactNode {
+  if (!glossary || glossary.length === 0) return text;
+  let best: { start: number; end: number; entry: GlossaryEntry } | null = null;
+  for (const g of glossary) {
+    if (!g.term || linked.has(g.term.toLowerCase())) continue;
+    const m = new RegExp(`\\b${escapeRegExp(g.term)}\\b`, "i").exec(text);
+    if (m && (best === null || m.index < best.start || (m.index === best.start && g.term.length > best.end - best.start))) {
+      best = { start: m.index, end: m.index + m[0].length, entry: g };
+    }
+  }
+  if (!best) return text;
+  linked.add(best.entry.term.toLowerCase());
+  const after = text.slice(best.end);
+  return (
+    <>
+      {text.slice(0, best.start)}
+      <GlossaryTerm term={text.slice(best.start, best.end)} definition={best.entry.definition} />
+      {renderProse(after, glossary, linked)}
+    </>
+  );
+}
+
+function Block({ article, block, linked }: { article: Article; block: ArticleBlock; linked: Set<string> }) {
   switch (block.type) {
     case "p":
-      return <p className="my-[18px] text-[17px] leading-[1.65] text-ink md:text-[18px]">{block.text}</p>;
+      return <p className="my-[18px] text-[17px] leading-[1.65] text-ink md:text-[18px]">{renderProse(block.text, article.glossary, linked)}</p>;
     case "pullquote":
       return (
         <blockquote className="my-[34px] border-l-[3px] pl-[20px] text-[23px] font-medium leading-[1.32] tracking-[-0.4px] text-ink md:text-[27px]" style={{ borderColor: "#ff2d92" }}>
@@ -52,7 +95,7 @@ function Block({ article, block }: { article: Article; block: ArticleBlock }) {
       return (
         <div className="my-[24px] rounded-[8px] bg-stone p-[20px] md:p-[24px]">
           {block.label && <p className="font-mono text-[11px] uppercase tracking-[0.05em] text-smoke">{block.label}</p>}
-          <p className="mt-[6px] text-[16px] leading-[1.5] text-ink md:text-[17px]">{block.text}</p>
+          <p className="mt-[6px] text-[16px] leading-[1.5] text-ink md:text-[17px]">{renderProse(block.text, article.glossary, linked)}</p>
         </div>
       );
     case "list":
@@ -103,6 +146,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   const lead = article.leadChartId ? article.charts.find((c) => c.id === article.leadChartId) : undefined;
   const meta = [article.tags?.[0], `${article.readingMinutes} min read`].filter(Boolean).join("  ·  ");
+  // Each glossary term is defined on its first appearance only.
+  const linked = new Set<string>();
 
   return (
     <>
@@ -127,6 +172,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <p className="mt-[22px] font-mono text-[11px] uppercase tracking-[0.04em] text-smoke">
               By {article.byline ?? "Cumulant Research"}
             </p>
+            {article.glossary && article.glossary.length > 0 && (
+              <p className="mt-[10px] text-[12px] leading-[1.4] text-smoke">
+                Underlined terms have a plain-language definition - hover or tap to read.
+              </p>
+            )}
 
             {/* Quick version */}
             {article.takeaways && article.takeaways.length > 0 && (
@@ -173,7 +223,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <h2 className="text-[22px] font-medium leading-[1.2] tracking-[-0.4px] text-ink md:text-[27px]">{s.heading}</h2>
                 <div className="mt-[14px]">
                   {s.blocks.map((b, j) => (
-                    <Block key={j} article={article} block={b} />
+                    <Block key={j} article={article} block={b} linked={linked} />
                   ))}
                 </div>
               </section>

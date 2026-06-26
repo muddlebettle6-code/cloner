@@ -202,17 +202,14 @@ function Table({ data }: { data: { columns?: string[]; rows?: string[][] } }) {
 }
 
 export function ArticleChartView({ chart }: { chart: ArticleChart }) {
+  const k = chart.kind;
   let body: React.ReactNode = null;
-  try {
-    if (chart.kind === "keynumber") body = <KeyNumber data={chart.data} />;
-    else if (chart.kind === "bar" || chart.kind === "comparison") body = <Bars data={chart.data} />;
-    else if (chart.kind === "line") body = <Line data={chart.data} />;
-    else if (chart.kind === "timeline") body = <Timeline data={chart.data} />;
-    else if (chart.kind === "range") body = <Range data={chart.data} />;
-    else if (chart.kind === "table") body = <Table data={chart.data} />;
-  } catch {
-    body = null;
-  }
+  if (k === "keynumber") body = <KeyNumber data={chart.data} />;
+  else if (k === "bar" || k === "comparison") body = <Bars data={chart.data} />;
+  else if (k === "line") body = <Line data={chart.data} />;
+  else if (k === "timeline") body = <Timeline data={chart.data} />;
+  else if (k === "range") body = <Range data={chart.data} />;
+  else if (k === "table") body = <Table data={chart.data} />;
   if (!body) return null;
   return <Frame chart={chart}>{body}</Frame>;
 }
