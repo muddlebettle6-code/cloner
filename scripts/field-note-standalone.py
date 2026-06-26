@@ -46,6 +46,8 @@ class _Config:
 
 def main() -> None:
     args = sys.argv[1:]
+    review = "--review" in args
+    args = [a for a in args if a != "--review"]
     timespan = "2d"
     if "--timespan" in args:
         i = args.index("--timespan")
@@ -63,6 +65,18 @@ def main() -> None:
     note_path = out_dir / "note.json"
     note_path.write_text(json.dumps(note, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(str(note_path))
+
+    # With --review, run the automatic safety check and signal the result via the
+    # exit code: 0 = safe to publish, 3 = hold for a human.
+    if review:
+        verdict = field_note.review_field_note(note, config=_Config())
+        if verdict.get("ok"):
+            print("VERDICT: publish")
+            sys.exit(0)
+        print("VERDICT: hold")
+        for issue in verdict.get("issues", []):
+            print(f"  - {issue}")
+        sys.exit(3)
 
 
 if __name__ == "__main__":

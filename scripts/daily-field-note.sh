@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# Daily field note: generate a current-events note from FCRI and ingest it into
-# the site as a DRAFT for human review. Nothing is published automatically.
+# Daily field note: generate a current-events note, run an automatic safety
+# review, and AUTO-PUBLISH it (commit + push so Cloudflare rebuilds). Only a note
+# the safety review flags is held back as a draft for a human to look at.
 #
-# Configure the two paths below (or set FCRI_DIR / SITE_DIR in the environment).
-# Run it by hand to test, or on a schedule via launchd (see
-# deploy/com.cumulant.fieldnote.daily.plist).
+# Configure FCRI_DIR / SITE_DIR (or rely on the defaults). Run by hand to test,
+# or on a schedule via launchd (deploy/com.cumulant.fieldnote.daily.plist).
 #
 set -uo pipefail
 
@@ -13,6 +13,7 @@ FCRI_DIR="${FCRI_DIR:-$HOME/Desktop/cumulant/FCRI}"
 SITE_DIR="${SITE_DIR:-$HOME/cloner}"
 LOG="${FIELDNOTE_LOG:-$SITE_DIR/scripts/daily-field-note.log}"
 TIMESPAN="${FIELDNOTE_TIMESPAN:-2d}"
+AUTO_DEPLOY="${FIELDNOTE_AUTODEPLOY:-1}"   # 1 = commit + push; 0 = commit only
 
 DATE="$(date +%F)"
 OUTDIR="$FCRI_DIR/field_notes/$DATE"
@@ -22,23 +23,45 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"; }
 
 log "Daily field note starting."
 
-# 1) Generate the note (standalone: needs python3 + certifi + the claude CLI,
-#    not the full FCRI virtualenv).
+# 1) Generate + automatically review (needs python3 + certifi + the claude CLI).
 [ -d "$FCRI_DIR" ] || { log "FCRI_DIR not found: $FCRI_DIR"; exit 1; }
-if ! FCRI_DIR="$FCRI_DIR" python3 "$SITE_DIR/scripts/field-note-standalone.py" "$OUTDIR" --timespan "$TIMESPAN" >>"$LOG" 2>&1; then
-  log "field-note generation failed (no news, GDELT rate limit, or the claude CLI is unavailable / not logged in). Stopping."
+FCRI_DIR="$FCRI_DIR" python3 "$SITE_DIR/scripts/field-note-standalone.py" "$OUTDIR" --timespan "$TIMESPAN" --review >>"$LOG" 2>&1
+RC=$?
+[ -f "$NOTE" ] || { log "No note produced (no news / rate limit / claude unavailable). Stopping."; exit 1; }
+
+if [ "$RC" -eq 0 ]; then
+  PUBLISH="--publish"
+  log "Safety review PASSED -> auto-publishing."
+elif [ "$RC" -eq 3 ]; then
+  PUBLISH=""
+  log "Safety review HELD this note as a draft (see issues above). It will NOT auto-publish; review it in the console."
+else
+  log "Generation failed (rc=$RC). Stopping."
   exit 1
 fi
-[ -f "$NOTE" ] || { log "No note.json produced at $NOTE. Stopping."; exit 1; }
 
-# 2) Ingest as a DRAFT on the site (hidden until a human approves it).
+# 2) Ingest into the site (published, or draft if held).
 cd "$SITE_DIR" || { log "SITE_DIR not found: $SITE_DIR"; exit 1; }
-if ! node scripts/note-ingest.mjs "$NOTE" >>"$LOG" 2>&1; then
+if ! node scripts/note-ingest.mjs "$NOTE" $PUBLISH >>"$LOG" 2>&1; then
   log "note-ingest failed. Stopping."
   exit 1
 fi
 
-log "Done. A new draft is waiting. Review and approve:"
-log "    cd $SITE_DIR && npm run console        # review + approve in the browser"
-log "    (or: npm run note:review, then npm run note:publish <slug>)"
-log "    then push to deploy (Cloudflare rebuilds the site)."
+# 3) If published, commit + push so Cloudflare (building from this repo) redeploys.
+if [ -n "$PUBLISH" ]; then
+  git -C "$SITE_DIR" add content/notes/ >>"$LOG" 2>&1
+  if git -C "$SITE_DIR" diff --cached --quiet; then
+    log "Nothing new to commit."
+  else
+    git -C "$SITE_DIR" -c commit.gpgsign=false commit -m "Daily field note ($DATE)" >>"$LOG" 2>&1
+    if [ "$AUTO_DEPLOY" = "1" ] && git -C "$SITE_DIR" push >>"$LOG" 2>&1; then
+      log "Published + pushed. Cloudflare will rebuild; live in 1-2 min."
+    else
+      log "Published + committed locally, but did not push (auth, or AUTO_DEPLOY=0). Push the repo to deploy."
+    fi
+  fi
+else
+  log "Held as a draft. Review it: cd $SITE_DIR && npm run console"
+fi
+
+log "Done."

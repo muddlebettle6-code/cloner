@@ -7,9 +7,10 @@ import { join } from "node:path";
 const NOTES_DIR = join(process.cwd(), "content", "notes");
 const REQUIRED = ["slug", "title", "date", "dek", "question", "sections", "honesty"];
 
-const arg = process.argv[2];
+const publish = process.argv.includes("--publish");
+const arg = process.argv.slice(2).find((a) => !a.startsWith("--"));
 if (!arg) {
-  console.error("usage: node scripts/note-ingest.mjs <note.json | package-dir>");
+  console.error("usage: node scripts/note-ingest.mjs <note.json | package-dir> [--publish]");
   process.exit(1);
 }
 let notePath = arg;
@@ -46,9 +47,9 @@ if (errs.length) {
 
 mkdirSync(NOTES_DIR, { recursive: true });
 const isUpdate = existsSync(join(NOTES_DIR, `${n.slug}.json`));
-writeFileSync(join(NOTES_DIR, `${n.slug}.json`), JSON.stringify({ published: false, ...n }, null, 2) + "\n");
+writeFileSync(join(NOTES_DIR, `${n.slug}.json`), JSON.stringify({ published: publish, ...n }, null, 2) + "\n");
 
-console.log(`\n  Ingested ${isUpdate ? "(updated) " : ""}DRAFT field note: ${n.slug}`);
+console.log(`\n  Ingested ${isUpdate ? "(updated) " : ""}${publish ? "PUBLISHED" : "DRAFT"} field note: ${n.slug}`);
 console.log(`  ${n.title}`);
 warns.forEach((w) => console.log(`  ! ${w}`));
 console.log(`\n  Review:   npm run note:review`);
