@@ -47,18 +47,19 @@ if ! node scripts/note-ingest.mjs "$NOTE" $PUBLISH >>"$LOG" 2>&1; then
   exit 1
 fi
 
-# 3) If published, commit + push so Cloudflare (building from this repo) redeploys.
+# 3) If published, record it in the source repo, then build + sync + push to the
+#    cumulant repo that Cloudflare serves (that is what "going live" means here).
 if [ -n "$PUBLISH" ]; then
   git -C "$SITE_DIR" add content/notes/ >>"$LOG" 2>&1
-  if git -C "$SITE_DIR" diff --cached --quiet; then
-    log "Nothing new to commit."
-  else
-    git -C "$SITE_DIR" -c commit.gpgsign=false commit -m "Daily field note ($DATE)" >>"$LOG" 2>&1
-    if [ "$AUTO_DEPLOY" = "1" ] && git -C "$SITE_DIR" push >>"$LOG" 2>&1; then
-      log "Published + pushed. Cloudflare will rebuild; live in 1-2 min."
+  git -C "$SITE_DIR" diff --cached --quiet || git -C "$SITE_DIR" -c commit.gpgsign=false commit -m "Daily field note ($DATE)" >>"$LOG" 2>&1
+  if [ "$AUTO_DEPLOY" = "1" ]; then
+    if SITE_DIR="$SITE_DIR" bash "$SITE_DIR/scripts/deploy.sh" "Daily field note ($DATE)" >>"$LOG" 2>&1; then
+      log "Published + deployed to the cumulant repo. Cloudflare will publish in ~1 min."
     else
-      log "Published + committed locally, but did not push (auth, or AUTO_DEPLOY=0). Push the repo to deploy."
+      log "Published, but the deploy did not complete (auth?). Run: bash scripts/deploy.sh  (or push the cumulant repo by hand)."
     fi
+  else
+    log "Published in the content store (AUTO_DEPLOY=0). Deploy with: bash scripts/deploy.sh"
   fi
 else
   log "Held as a draft. Review it: cd $SITE_DIR && npm run console"

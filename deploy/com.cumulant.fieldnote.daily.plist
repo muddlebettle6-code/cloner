@@ -35,6 +35,12 @@
     <dict>
         <key>FCRI_DIR</key><string>/Users/aryanpatel/Desktop/cumulant/FCRI</string>
         <key>SITE_DIR</key><string>/Users/aryanpatel/cloner</string>
+        <!-- The Cloudflare-served repo (built site is synced + pushed here). -->
+        <key>FIELDNOTE_DEPLOY_DIR</key><string>/Users/aryanpatel/Downloads/Virtu_Fortuna_Project/cumulant</string>
+        <!-- For RELIABLE unattended publishing, paste a GitHub PAT with
+             Contents:write on the cumulant repo. Left blank, it falls back to
+             your keychain credentials, which may not work from a background job. -->
+        <key>GITHUB_TOKEN</key><string></string>
         <!-- Include the locations of node, python, and the claude CLI. -->
         <key>PATH</key><string>/Users/aryanpatel/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
     </dict>
