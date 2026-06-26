@@ -22,12 +22,11 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"; }
 
 log "Daily field note starting."
 
-# 1) Generate the note in the FCRI repo (uses OpenAI + GDELT; needs its venv).
-cd "$FCRI_DIR" || { log "FCRI_DIR not found: $FCRI_DIR"; exit 1; }
-# shellcheck disable=SC1091
-[ -f .venv/bin/activate ] && source .venv/bin/activate
-if ! python -m fcri field-note --output "$OUTDIR" --timespan "$TIMESPAN" >>"$LOG" 2>&1; then
-  log "fcri field-note failed (no news, GDELT rate limit, or the claude CLI is unavailable / not logged in). Stopping."
+# 1) Generate the note (standalone: needs python3 + certifi + the claude CLI,
+#    not the full FCRI virtualenv).
+[ -d "$FCRI_DIR" ] || { log "FCRI_DIR not found: $FCRI_DIR"; exit 1; }
+if ! FCRI_DIR="$FCRI_DIR" python3 "$SITE_DIR/scripts/field-note-standalone.py" "$OUTDIR" --timespan "$TIMESPAN" >>"$LOG" 2>&1; then
+  log "field-note generation failed (no news, GDELT rate limit, or the claude CLI is unavailable / not logged in). Stopping."
   exit 1
 fi
 [ -f "$NOTE" ] || { log "No note.json produced at $NOTE. Stopping."; exit 1; }
@@ -39,6 +38,7 @@ if ! node scripts/note-ingest.mjs "$NOTE" >>"$LOG" 2>&1; then
   exit 1
 fi
 
-log "Done. A new draft is waiting. Review and publish:"
-log "    cd $SITE_DIR && npm run note:review"
-log "    npm run note:publish <slug> && npm run build   # then push the cumulant repo"
+log "Done. A new draft is waiting. Review and approve:"
+log "    cd $SITE_DIR && npm run console        # review + approve in the browser"
+log "    (or: npm run note:review, then npm run note:publish <slug>)"
+log "    then push to deploy (Cloudflare rebuilds the site)."
