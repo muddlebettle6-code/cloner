@@ -21,6 +21,7 @@
     "note:ingest": "node scripts/note-ingest.mjs",
     "note:review": "node scripts/note-review.mjs",
     "note:publish": "node scripts/note-publish.mjs",
+    "article:ingest": "node scripts/article-ingest.mjs",
     "console": "node scripts/console.mjs"
   },
   "dependencies": {

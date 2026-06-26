@@ -210,3 +210,74 @@ export interface FieldNote {
   /** Honesty caveats (always includes the AI-assisted, not-peer-reviewed note). */
   honesty: string[];
 }
+
+// --------------------------------------------------------------------------- //
+// Articles — deeply reported data-journalism pieces (the upgraded format).
+// Research-grade evidence + news-feature readability + honest visuals.
+// --------------------------------------------------------------------------- //
+
+export type ArticleChartKind = "keynumber" | "bar" | "comparison" | "line" | "timeline" | "range" | "table";
+
+/** A chart that answers a question. Data shape depends on `kind`. */
+export interface ArticleChart {
+  id: string;
+  kind: ArticleChartKind;
+  title: string;
+  subtitle?: string;
+  source: string;
+  units?: string;
+  period?: string;
+  /** Annotation that points at the takeaway. */
+  note?: string;
+  /** Accessibility description. */
+  alt: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  data: any;
+}
+
+export type ArticleBlock =
+  | { type: "p"; text: string }
+  | { type: "pullquote"; text: string }
+  | { type: "callout"; label?: string; text: string }
+  | { type: "chart"; chartId: string }
+  | { type: "list"; items: string[] };
+
+export interface ArticleSection {
+  heading: string;
+  blocks: ArticleBlock[];
+}
+
+export interface ArticleSource {
+  title: string;
+  publisher?: string;
+  url: string;
+  kind?: "primary" | "secondary" | "academic" | "data";
+}
+
+/**
+ * A deeply reported article: one current event, one narrow question, answered
+ * with original analysis, sources, visuals, alternatives, scenarios, and limits.
+ */
+export interface Article {
+  slug: string;
+  headline: string;
+  /** One or two sentences: what happened, what the analysis found, why it matters. */
+  deck: string;
+  byline?: string;
+  date: string;
+  readingMinutes: number;
+  tags?: string[];
+  /** The current event the article hooks on. */
+  event: string;
+  /** The single research question. */
+  question: string;
+  /** Chart id used as the lead visual. */
+  leadChartId?: string;
+  charts: ArticleChart[];
+  sections: ArticleSection[];
+  /** The methods box. */
+  methodology: string[];
+  sources: ArticleSource[];
+  limitations: string[];
+  honesty: string[];
+}

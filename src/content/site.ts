@@ -19,7 +19,7 @@ export const ORG = {
 export const NAV: NavItem[] = [
   { label: "Research", target: "research", route: "/research" },
   { label: "Papers", target: "papers", route: "/papers", routeOnly: true },
-  { label: "Notes", target: "notes", route: "/notes", routeOnly: true },
+  { label: "Articles", target: "articles", route: "/articles", routeOnly: true },
   { label: "Methods", target: "methods", route: "/methods" },
   { label: "Systems", target: "systems", route: "/systems" },
   { label: "Principles", target: "principles", route: "/principles" },

@@ -1,0 +1,456 @@
+{
+  "published": true,
+  "slug": "quantinuum-ipo-implied-growth-wall",
+  "headline": "Quantinuum's IPO Implies Triple-Digit Revenue Growth For Five Years. Its Contracted Backlog Is $77 Million.",
+  "deck": "At $60 a share, the largest pure-play quantum IPO is valued at roughly $15.7 billion, about 507 times last year's revenue. Run the math in reverse and, under a generous terminal multiple, the price requires revenue compounding around 119 percent a year through 2030. The company's own contracted backlog, disclosed in its filing, would seed only a small fraction of that ramp. The same backlog test does flag Quantinuum as the least-covered name in its peer group, but it is a softer indictment than it first looks, because the whole sector is priced well beyond its order books.",
+  "event": "Quantinuum priced its IPO at $60 per share on 3 June 2026 and began trading on Nasdaq as QNT on 4 June, raising $1.68 billion. It closed its first session up 0.6 percent, at a roughly $15.7 billion market value, against $30.9 million in FY2025 revenue.",
+  "question": "At Quantinuum's $60 IPO price, what compound revenue growth does the valuation imply under a stated terminal-multiple assumption, and how does the company's disclosed contracted backlog compare both to that requirement and to the backlogs of its already-public peers?",
+  "leadChartId": "required-growth-ladder",
+  "sections": [
+    {
+      "heading": "A flat first day that settled nothing",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 3 June 2026, Quantinuum priced its initial public offering at $60 a share, the top of a range it had repeatedly raised, after upsizing the deal to 28 million Class A shares. The sale raised $1.68 billion in gross proceeds. The next morning the stock opened at $68 on Nasdaq under the ticker QNT, about 13 percent above the offer price, touched $71.35, then surrendered the pop and closed up just 0.6 percent, essentially flat, on its first day of trading."
+        },
+        {
+          "type": "p",
+          "text": "Several outlets read the flat close as restraint in an otherwise frothy quantum sector; CNBC noted the muted debut against a backdrop where quantum names often move in tandem on sentiment, and contrasted it with AI-chipmaker Cerebras popping nearly 70 percent in its debut a month earlier. The more durable fact is the price itself. At $60, counting the Honeywell-controlled units and insider stakes that can be exchanged into public shares, Quantinuum carries a fully diluted equity value of about $15.66 billion. Its audited revenue for the year ended 31 December 2025 was $30.9 million. That is a trailing price-to-sales multiple of roughly 507 times, against a $192.6 million net loss for the same year."
+        },
+        {
+          "type": "p",
+          "text": "This is the first major quantum-computing company to be priced in a conventional, bookrun IPO rather than reverse-merged into a blank-check shell, as IonQ, Rigetti and D-Wave all were in 2021. It is therefore an unusually clean test of one question: will public investors fund quantum computing on revenue, or on the promise of revenue? The answer is partly encoded in the price, and it can be examined with arithmetic rather than asserted with rhetoric."
+        }
+      ]
+    },
+    {
+      "heading": "The question the price asks",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The quick take is already written: 507 times sales is a bubble, full stop. That framing is not wrong so much as incomplete, because it stops at the trailing multiple. A growth company is supposed to grow into its multiple. The sharper question is not whether 507x is high, which it plainly is, but what future the price requires under explicit assumptions, and whether anything in the company's own filing supports it."
+        },
+        {
+          "type": "p",
+          "text": "So we ran the calculation in reverse. This requires one assumption that does a great deal of work, and we want to flag it rather than bury it: the multiple the market eventually settles on once growth normalizes. We do not observe that number; we assume a range and test sensitivity to it. Mature, still-growing technology businesses commonly trade in the high single digits to mid teens on forward sales, so we use a band of 8x to 15x, with 10x as a base case, and treat the result as a scenario rather than a forecast. If Quantinuum is to be worth its IPO valuation at a 10x forward multiple by fiscal 2030, we can solve for the revenue it must reach, and from there the compound annual growth rate it must sustain. The other inputs are public: about 260.97 million fully diluted shares times $60 is roughly $15.66 billion of equity value; the FY2025 revenue base is $30.9 million; the horizon is five years."
+        },
+        {
+          "type": "pullquote",
+          "text": "The terminal multiple is an assumption, not an observation. We state the band, run the sensitivity, and let the reader see how much the headline number moves."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: a wall of required growth",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Under the 10x base case, to support its $15.66 billion valuation by FY2030 while delivering its IPO buyers exactly zero return, Quantinuum would have to grow recognized revenue from $30.9 million to about $1.57 billion. That is a compound annual growth rate of roughly 119 percent, sustained without interruption for five consecutive years."
+        },
+        {
+          "type": "chart",
+          "chartId": "required-growth-ladder"
+        },
+        {
+          "type": "p",
+          "text": "The conclusion is not a single fragile estimate; it is a band that survives any reasonable terminal multiple. Grant a richer 15x forward multiple and the required CAGR eases to about 102 percent. Use a more conservative 8x and it rises to about 129 percent; at 5x, to about 152 percent. Those figures all assume the IPO buyer earns nothing. To also deliver a normal equity return of 10 to 15 percent a year, the required growth at a 10x terminal climbs to roughly 141 to 152 percent. The defensible statement is therefore a range, not a point: to justify the price, Quantinuum needs revenue compounding somewhere between roughly 102 and 152 percent a year for five straight years. No version of the arithmetic escapes triple-digit annual growth, which is the robust finding here; the precise number depends on assumptions we have made explicit."
+        },
+        {
+          "type": "callout",
+          "label": "The number the base case implies",
+          "text": "At a 10x forward sales multiple by FY2030 with zero return to the IPO buyer, the price implies revenue growth of about 119 percent every year for five years, from $30.9 million to roughly $1.57 billion. Change the terminal multiple and the figure moves within a 102 to 152 percent band."
+        },
+        {
+          "type": "p",
+          "text": "Now place that requirement against the one forward-looking, contracted number the company discloses. As of 31 March 2026, Quantinuum's remaining performance obligations, the contracted revenue it has signed but not yet recognized, totaled $76.8 million. The filing indicates about 35 percent is expected within twelve months. Treating the rest as recognized over the following few years implies very roughly $20 million to $27 million of contracted revenue a year. Two cautions matter here. First, remaining performance obligations are a stock of signed contracts, while the implied $1.57 billion is a single year's flow of FY2030 revenue; the honest comparison annualizes the backlog before setting it beside annual revenue. Second, a backlog can grow as new contracts land, so this is a snapshot, not a destiny. With those caveats, annualized contracted revenue of around $20 million sits far below the roughly $1.57 billion the base case implies for FY2030."
+        },
+        {
+          "type": "chart",
+          "chartId": "priced-vs-contracted"
+        },
+        {
+          "type": "p",
+          "text": "What about new contract flow? Quantinuum's bookings, the gross value of new contracts signed in a period, were $1.3 million in the first quarter of 2026, down from $1.9 million a year earlier. We resist drawing a trend from that. The company booked $79.3 million across full-year 2025, so a single $1.3 million quarter cannot establish deterioration; analysts and the company itself describe the business as lumpy, dependent on a handful of large institutional and government contracts rather than recurring revenue. The cleaner reading is not that bookings are collapsing but that they are volatile enough that no single quarter is diagnostic, which is itself a problem for a price that needs a smooth, uninterrupted 119 percent ramp."
+        }
+      ]
+    },
+    {
+      "heading": "What the headlines miss",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Press coverage settled on a tidy line: roughly a $14 billion valuation, $31 million in revenue, more than 450 times sales. Two things are worth adding, and both cut against the company rather than for it."
+        },
+        {
+          "type": "p",
+          "text": "First, the trailing multiple is understated rather than overstated. The $14 billion headline reflects the post-IPO Class A shares. But Quantinuum uses an Up-C structure: Honeywell and other insiders hold Common Units exchangeable into Class A stock, and the filing indicates public Class A holders own only about 12 percent of the economic interest in the company. Count the full economic ownership, the roughly 260.97 million fully diluted units the filing enumerates, and the equity value is about $15.66 billion and the trailing multiple is roughly 507 times, not 450. The public is buying a thin slice of a more expensive whole."
+        },
+        {
+          "type": "p",
+          "text": "Second, the revenue base is concentrated to a degree that makes any single-year multiple fragile. One outlet covering the filing reports that a single research customer, RIKEN, accounted for roughly 90 percent of 2025 revenue and only about 7 percent of first-quarter 2026 revenue. That concentration is also why the quarter-to-quarter numbers swing so violently, which the next point makes concrete."
+        },
+        {
+          "type": "p",
+          "text": "It is tempting to point to Quantinuum's reported first-quarter 2026 revenue of $5.2 million, down from $19.1 million a year earlier, as evidence the business is shrinking. That reading would be dishonest without the disclosed cause. The filing attributes the drop largely to the absence of upfront revenue from a prior sales-type lease, with specialized-hardware revenue falling to essentially zero from about $16.5 million in the year-ago quarter. The year-ago figure was inflated by a one-time hardware transaction, so the fall is mechanical, not a demand signal. The honest point is sharper than the misleading one: a business whose quarterly revenue can swing nearly fourfold on a single deal is exactly the kind that is hard to underwrite at 507 times sales."
+        },
+        {
+          "type": "chart",
+          "chartId": "peer-ps-panel"
+        },
+        {
+          "type": "pullquote",
+          "text": "A single lease deal swings quarterly revenue nearly fourfold. That lumpiness, not any one quarter's direction, is what makes a 507x multiple hard to underwrite."
+        }
+      ]
+    },
+    {
+      "heading": "Competing explanations",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There are at least two honest readings of the same price, and a third that complicates both. We state the bull case at its strongest."
+        },
+        {
+          "type": "p",
+          "text": "The bull case: triple-digit quantum growth is demonstrably real, so the wall is climbable. The proof is IonQ. It grew GAAP revenue from $43.1 million in FY2024, a figure IonQ reported directly, to $130.0 million in FY2025, up 202 percent, then reported record first-quarter 2026 revenue of $64.7 million, up 755 percent year on year, and raised FY2026 guidance to $260 to $270 million. Its remaining performance obligations reached $470 million as of 31 March 2026, up 554 percent year on year. The category can clearly ramp fast, and on a forward, contract-adjusted basis a quantum multiple looks less absurd than the trailing snapshot suggests."
+        },
+        {
+          "type": "p",
+          "text": "The bear case, which the same evidence supports more directly: the growth is real but unevenly distributed, and Quantinuum is not where it is most visibly contracted. IonQ's $470 million backlog is roughly six times Quantinuum's $76.8 million in absolute dollars, and IonQ's revenue is already four times larger. The fastest-growing, best-contracted name in the cohort also carries a far lower multiple, about 109 to 115 times sales versus Quantinuum's 507. The bull case proves triple-digit quantum growth exists somewhere; it does not show it is contracted at Quantinuum today."
+        },
+        {
+          "type": "chart",
+          "chartId": "backlog-vs-multiple"
+        },
+        {
+          "type": "p",
+          "text": "A third reading complicates the bear case and is the fairest test we can apply. If we are going to hold Quantinuum's backlog against its valuation, we must do the same for the comparators. IonQ's $470 million backlog is about 1.8 times its own FY2026 guided revenue midpoint of roughly $265 million, so its contracted book covers well under two years of near-term revenue, not the multi-year ramp its valuation implies either. Every name in this sector is priced beyond its order book; that is a feature of the category, not a quirk of Quantinuum. What distinguishes Quantinuum is the size of the gap relative to the others: it carries both the highest trailing multiple and, on the disclosed figures, the thinnest near-term contracted coverage. So the defensible claim is not that Quantinuum is uniquely unsupported, but that it sits at the unfavorable extreme of a sector that is uniformly priced ahead of its contracts."
+        },
+        {
+          "type": "p",
+          "text": "What would tip the balance toward the bull case is observable and specific: a step-change in Quantinuum's quarterly bookings and remaining performance obligations in its first few public reports, of the kind IonQ delivered when its RPO jumped 554 percent. What supports the bear case today is that the only forward indicators in the filing, a $76.8 million backlog and modest recent bookings, are small relative both to the requirement and to peers."
+        }
+      ]
+    },
+    {
+      "heading": "The historical comparison, and where it breaks",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The natural analogy is the 2021 quantum cohort, and it is instructive precisely because of how it breaks. IonQ, Rigetti and D-Wave all reached public markets in 2021 via SPAC mergers at lofty valuations. Then came the 2022 quantum winter, before the AI-adjacency trade reignited the sector from late 2024 onward."
+        },
+        {
+          "type": "p",
+          "text": "The part that matters for Quantinuum is that across that full cycle, debut, collapse, re-inflation, the cohort's price-to-sales multiples have moved far more on price than on sales catching up. As of 22 May 2026, on a market-cap-to-trailing-revenue basis, IonQ traded at roughly 109 times sales, Rigetti at roughly 836 times, and D-Wave at roughly 791 times. By mid-June, IonQ sat near 115 times at about a $23 billion market value. The compression and re-expansion in this group came overwhelmingly from the share price moving, not from revenue closing the gap. That is the load-bearing similarity: in this sector, the multiple has behaved largely as a sentiment variable."
+        },
+        {
+          "type": "p",
+          "text": "Where the analogy breaks, and not in Quantinuum's favor, is the entry mechanism. A SPAC debut sets a price through a negotiated merger with built-in redemption pressure and often a depressed float. Quantinuum was priced by a conventional, bookrun IPO led by J.P. Morgan and Morgan Stanley, with real institutional demand and a flat, disciplined first day. That makes the 507x multiple a more considered market judgment than a SPAC mark, harder to dismiss as a structural artifact. But the analogy also breaks in a way that helps Quantinuum, and we should say so: the 2021 names listed earlier in their commercialization, while Quantinuum arrives with a larger Honeywell-backed engineering base and an established hardware franchise. The comparison is therefore directional, not exact; it tells us how this market prices quantum, not what Quantinuum's revenue will do."
+        },
+        {
+          "type": "p",
+          "text": "A second, internal comparison sharpens the point. Honeywell's own marks for Quantinuum climbed from a $5 billion pre-money valuation in early 2024 toward $10 billion in 2025 and to roughly $15.7 billion at the June 2026 IPO. Revenue over a comparable span moved from $23.0 million in FY2024 to $30.9 million in FY2025. The valuation ladder is mostly a record of expectation compounding, not of revenue compounding."
+        },
+        {
+          "type": "chart",
+          "chartId": "valuation-ladder"
+        }
+      ]
+    },
+    {
+      "heading": "Who is exposed, and what happens next",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The most exposed buyers are the IPO subscribers who paid $60 for about 12 percent of the economic interest, since the implied-growth arithmetic shows how much has to go right merely to break even. Honeywell and continuing unitholders, by contrast, are largely marking up an existing position rather than committing fresh cash at this price, and retain the bulk of the economic interest through the Up-C structure."
+        },
+        {
+          "type": "p",
+          "text": "What would confirm the bull case is specific and near-term: in its first two or three public quarters, Quantinuum would need bookings and remaining performance obligations to step up by roughly an order of magnitude, toward the kind of $400 million-plus backlog IonQ now reports, and revenue to begin a sustained climb rather than oscillate with one-off hardware deals. The triggering evidence to watch is the RPO line and bookings disclosure in its first 10-Q, plus any large multi-year government or research contracts announced in the interim."
+        },
+        {
+          "type": "p",
+          "text": "What would confirm the bear case is the absence of that step-change: another few quarters of single-digit-million revenue swinging on individual deals, a backlog that stays in the tens of millions, and customer concentration that remains near the disclosed 90 percent. If, by the time the post-IPO lockup expires and insiders can begin exchanging and selling units, the contracted book still looks like today's, the multiple would have to compress the way the 2021 cohort's did, through the price falling, not through revenue rising to meet it."
+        }
+      ]
+    },
+    {
+      "heading": "Limitations",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This is a valuation-implied-growth analysis, not a forecast of Quantinuum's revenue. We do not predict what the company will earn; we quantify what the price assumes under stated terminal-multiple scenarios and compare that to disclosed contracted figures. The single largest source of uncertainty is the terminal multiple itself, which we assume rather than observe, which is why we report a band rather than a point. Peer multiples move daily and depend on the revenue denominator and on whether the numerator is market capitalization or fully diluted value; we have dated each one and used market-cap-to-trailing-revenue throughout. Backlog and bookings are lumpy in this sector, so single-quarter figures are weak signals on their own, a caution that applies to Quantinuum and to its peers equally."
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "required-growth-ladder",
+      "kind": "bar",
+      "title": "What the IPO price implies: required revenue CAGR by terminal multiple",
+      "subtitle": "Compound annual revenue growth FY2025 to FY2030 needed to support a $15.66B valuation, by assumed forward P/S, IPO buyer return = 0",
+      "units": "percent CAGR",
+      "period": "FY2025 to FY2030",
+      "source": "Cumulant Research calculation. Inputs: ~260.97M fully diluted shares x $60 = $15.66B (Quantinuum S-1/A); FY2025 revenue $30.9M (Quantinuum filing).",
+      "note": "A scenario, not a forecast. The terminal multiple is assumed; the chart shows sensitivity to it. Every case requires triple-digit growth.",
+      "alt": "Bar chart showing required revenue CAGR rising as the assumed terminal multiple falls: 102% at 15x, 119% at 10x, 129% at 8x, 152% at 5x.",
+      "data": {
+        "x": [
+          "15x terminal",
+          "10x terminal (base case)",
+          "8x terminal",
+          "5x terminal"
+        ],
+        "y": [
+          102,
+          119,
+          129,
+          152
+        ],
+        "unit": "% CAGR"
+      }
+    },
+    {
+      "id": "priced-vs-contracted",
+      "kind": "comparison",
+      "title": "Implied FY2030 revenue vs annualized contracted backlog",
+      "subtitle": "Both expressed as annual flows so the comparison is like-for-like",
+      "units": "USD per year",
+      "period": "FY2030 (implied) vs contracted as of 31 Mar 2026",
+      "source": "Cumulant Research. Implied FY2030 revenue $1.57B from 10x base case. Annualized RPO ~$20M/yr derived from $76.8M total RPO (Quantinuum S-1/A; ~35% expected within 12 months).",
+      "note": "Remaining performance obligations are a stock of signed contracts; we annualize them before comparing to a year of implied revenue. The backlog can grow as new contracts are signed.",
+      "alt": "Comparison of about $20 million per year of annualized contracted backlog against roughly $1.57 billion of implied FY2030 annual revenue.",
+      "data": {
+        "items": [
+          {
+            "label": "Annualized contracted backlog (~RPO/4)",
+            "value": 20,
+            "unit": "$M/yr"
+          },
+          {
+            "label": "Implied FY2030 revenue (10x base case)",
+            "value": 1570,
+            "unit": "$M/yr"
+          }
+        ]
+      }
+    },
+    {
+      "id": "peer-ps-panel",
+      "kind": "bar",
+      "title": "Quantum price-to-sales multiples, dated and on a common method",
+      "subtitle": "Market cap divided by trailing revenue; figures move daily",
+      "units": "x trailing sales",
+      "period": "as of 22 May 2026 (QNT priced 3 Jun 2026)",
+      "source": "Multiples per 24/7 Wall St. and Motley Fool reporting of 22 May 2026 (IonQ ~109x, Rigetti ~836x, D-Wave ~791x); IonQ ~115x at ~$23B mid-June 2026 per 24/7 Wall St. Quantinuum 507x = $15.66B / $30.9M FY2025 revenue (Cumulant Research).",
+      "note": "IonQ, the most-contracted and fastest-growing name, carries by far the lowest multiple. Quantinuum is not above all peers, but it is the most expensive on trailing sales.",
+      "alt": "Bar chart of price-to-sales multiples: IonQ about 109x, Quantinuum about 507x, D-Wave about 791x, Rigetti about 836x.",
+      "data": {
+        "x": [
+          "IonQ",
+          "Quantinuum (QNT)",
+          "D-Wave",
+          "Rigetti"
+        ],
+        "y": [
+          109,
+          507,
+          791,
+          836
+        ],
+        "unit": "x trailing sales"
+      }
+    },
+    {
+      "id": "backlog-vs-multiple",
+      "kind": "table",
+      "title": "The backlog test, applied to the whole cohort",
+      "subtitle": "Every name is priced ahead of its order book; the gap is widest for Quantinuum",
+      "units": "mixed",
+      "period": "backlog as of 31 Mar 2026; multiples as dated",
+      "source": "Quantinuum RPO $76.8M (S-1/A); IonQ RPO $470M and FY2026 guidance $260-270M (IonQ Q1 2026 results, 8-K); multiples per 24/7 Wall St. / Motley Fool as dated. Coverage ratios: Cumulant Research.",
+      "note": "IonQ's backlog covers ~1.8x its own near-term guided revenue yet it still trades far below Quantinuum. Quantinuum has both the highest multiple and the thinnest near-term contracted coverage.",
+      "alt": "Table comparing IonQ and Quantinuum on backlog, near-term revenue, backlog coverage, and price-to-sales multiple.",
+      "data": {
+        "columns": [
+          "Company",
+          "Contracted backlog (RPO)",
+          "Near-term annual revenue",
+          "Backlog / 1yr revenue",
+          "P/S multiple (dated)"
+        ],
+        "rows": [
+          [
+            "IonQ",
+            "$470M (31 Mar 2026)",
+            "~$265M (FY2026 guide midpoint)",
+            "~1.8x",
+            "~109-115x (May-Jun 2026)"
+          ],
+          [
+            "Quantinuum",
+            "$76.8M (31 Mar 2026)",
+            "$30.9M (FY2025 actual)",
+            "~2.5x trailing / ~0.01x of implied FY2030",
+            "~507x (3 Jun 2026)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "valuation-ladder",
+      "kind": "timeline",
+      "title": "Honeywell's marks for Quantinuum tripled while revenue rose about a third",
+      "subtitle": "Private valuation marks versus reported annual revenue",
+      "units": "USD",
+      "period": "early 2024 to June 2026",
+      "source": "Valuation marks: thequantuminsider.com and IPO pricing coverage (June 2026). Revenue: Quantinuum filing (FY2024 $23.0M; FY2025 $30.9M).",
+      "note": "Approximate valuation marks; pre-money figures and exact dates vary by source. The point is the divergence between expectation and revenue, not a precise multiple at each step.",
+      "alt": "Timeline showing valuation rising from about $5B in early 2024 to about $15.7B at the June 2026 IPO, while revenue moved from $23.0M to $30.9M.",
+      "data": {
+        "events": [
+          {
+            "date": "early 2024",
+            "label": "~$5B pre-money mark",
+            "value": "valuation"
+          },
+          {
+            "date": "FY2024",
+            "label": "$23.0M revenue",
+            "value": "revenue"
+          },
+          {
+            "date": "2025",
+            "label": "~$10B mark",
+            "value": "valuation"
+          },
+          {
+            "date": "FY2025",
+            "label": "$30.9M revenue",
+            "value": "revenue"
+          },
+          {
+            "date": "Jun 2026",
+            "label": "~$15.7B IPO valuation",
+            "value": "valuation"
+          }
+        ]
+      }
+    }
+  ],
+  "methodology": [
+    "Implied-growth calculation: fully diluted equity value = ~260.97M fully diluted shares x $60 = ~$15.66B (share count and Up-C structure from Quantinuum S-1/A). Required FY2030 revenue = equity value / assumed terminal forward P/S. Required CAGR = (required revenue / $30.9M FY2025 base)^(1/5) - 1. Computed for terminal multiples of 5x, 8x, 10x, 15x, and separately with 10-15% annual IPO-buyer returns layered on the 10x case. Verified in Python.",
+    "Terminal multiple is an explicit assumption, not an observation. We use a band of 8x-15x (10x base) reflecting where mature, still-growing technology businesses commonly trade on forward sales, and report full sensitivity rather than a single number. The robust finding is that all reasonable cases require triple-digit growth; the precise figure is assumption-dependent.",
+    "Backlog annualization: remaining performance obligations of $76.8M (as of 31 Mar 2026) are a stock of signed contracts. We annualize them (roughly $20M/yr on an even-split basis, up to ~$27M in year one given ~35% expected within 12 months) before comparing to a single year of implied revenue, so a stock is never compared directly to a flow.",
+    "Peer backlog test applied symmetrically: IonQ's $470M RPO compared to its ~$265M FY2026 guidance midpoint (~1.8x), establishing that the entire sector is priced ahead of its order books, not Quantinuum alone.",
+    "Peer price-to-sales multiples computed as market capitalization divided by trailing revenue, each dated (primarily 22 May 2026, with IonQ updated to mid-June 2026). Figures move daily and are sensitive to the revenue denominator; treated as directional context, not precise.",
+    "Quantinuum trailing P/S = $15.66B / $30.9M FY2025 revenue = ~507x. All Quantinuum financials (revenue, net loss, bookings, RPO, Q1 figures, ownership structure) taken from its S-1/A and contemporaneous reporting of the filing."
+  ],
+  "sources": [
+    {
+      "title": "Quantinuum closes flat in Nasdaq debut, after upsized offering",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+      "kind": "secondary",
+      "publisher": "CNBC"
+    },
+    {
+      "title": "Quantinuum Announces Pricing of Upsized Initial Public Offering",
+      "url": "https://www.quantinuum.com/press-releases/quantinuum-announces-pricing-of-upsized-initial-public-offering",
+      "kind": "primary",
+      "publisher": "Quantinuum"
+    },
+    {
+      "title": "Quantinuum's IPO prices at $60: What you need to know",
+      "url": "https://www.constellationr.com/insights/news/quantinuums-ipo-what-you-need-know",
+      "kind": "secondary",
+      "publisher": "Constellation Research"
+    },
+    {
+      "title": "Quantinuum IPO: June 1 S-1/A Sets the Deal Math, Valuation Still the Gate",
+      "url": "https://www.atlaspeakresearch.com/report/9c1600",
+      "kind": "secondary",
+      "publisher": "Atlas Peak Research"
+    },
+    {
+      "title": "Honeywell-Backed Quantinuum Files for Landmark Quantum IPO",
+      "url": "https://thequantuminsider.com/2026/05/26/honeywell-backed-quantinuum-files-for-landmark-quantum-ipo/",
+      "kind": "secondary",
+      "publisher": "The Quantum Insider"
+    },
+    {
+      "title": "Quantinuum Inc. - Form S-1/A (FY2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026039286/quantinuum-sx1a2.htm",
+      "kind": "primary",
+      "publisher": "U.S. Securities and Exchange Commission"
+    },
+    {
+      "title": "Quantinuum Files Publicly Under QNT While D-Wave's Bookings Explode 1,994 Percent",
+      "url": "https://advalorem.substack.com/p/quantinuum-files-publicly-under-qnt",
+      "kind": "secondary",
+      "publisher": "Ad Valorem"
+    },
+    {
+      "title": "IonQ Announces First Quarter 2026 Financial Results",
+      "url": "https://investors.ionq.com/news/news-details/2026/IonQ-Announces-First-Quarter-2026-Financial-Results/default.aspx",
+      "kind": "primary",
+      "publisher": "IonQ"
+    },
+    {
+      "title": "IonQ Achieves $130.0 Million of GAAP Revenues, Beating Guidance by 20% (FY2025)",
+      "url": "https://www.ionq.com/news/ionq-announces-fourth-quarter-and-full-year-2025-financial-results",
+      "kind": "primary",
+      "publisher": "IonQ"
+    },
+    {
+      "title": "IonQ Announces Fourth Quarter and Full Year 2024 Financial Results",
+      "url": "https://www.ionq.com/news/ionq-announces-fourth-quarter-and-full-year-2024-financial-results",
+      "kind": "primary",
+      "publisher": "IonQ"
+    },
+    {
+      "title": "IonQ Climbs 10%, D-Wave Rockets 25%, Rigetti Soars 24% (P/S multiples, 22 May 2026)",
+      "url": "https://247wallst.com/investing/2026/05/21/ionq-climbs-10-d-wave-rockets-25-rigetti-soars-24-quantum-computing-inc-jumps-14-the-quantum-trade-roars-back/",
+      "kind": "secondary",
+      "publisher": "24/7 Wall St."
+    },
+    {
+      "title": "Quantum Computing IonQ, Rigetti, D-Wave Wall Street Warning",
+      "url": "https://www.fool.com/investing/2026/05/28/quantum-computing-ionq-rgti-qbts-wall-st-warning/",
+      "kind": "secondary",
+      "publisher": "The Motley Fool"
+    },
+    {
+      "title": "Quantum Computing and D-Wave Jump, Rigetti Climbs, IonQ Gains (mid-June 2026 valuations)",
+      "url": "https://247wallst.com/investing/2026/06/15/quantum-computing-and-d-wave-quantum-jump-12-rigetti-climbs-9-ionq-gains-6-amid-risk-on-optimism/",
+      "kind": "secondary",
+      "publisher": "24/7 Wall St."
+    }
+  ],
+  "limitations": [
+    "This is a valuation-implied-growth analysis, not a revenue forecast. It quantifies what the $60 price assumes under stated scenarios, not what Quantinuum will earn.",
+    "The terminal forward multiple is assumed, not observed, and drives the headline number. We report a 102-152 percent band across 5x-15x rather than a single figure; only the triple-digit-growth conclusion is robust to the assumption.",
+    "Remaining performance obligations are a stock of signed contracts and can grow as new deals are signed; the $76.8M snapshot is not a ceiling on future revenue. We annualize it to compare like-for-like, but a step-change in bookings would change the picture.",
+    "Peer price-to-sales multiples move daily and depend on the revenue denominator (trailing vs forward) and numerator (market cap vs fully diluted). We date each and use market-cap-to-trailing-revenue, but they are directional context, not precise constants.",
+    "Bookings and revenue in this sector are lumpy and concentrated (one customer was ~90 percent of Quantinuum's FY2025 revenue), so single-quarter figures are weak signals for every company discussed, not just Quantinuum.",
+    "Some private valuation marks and exact filing-detail figures (e.g., precise economic-ownership percentage, RPO recognition schedule) vary slightly across draft filings and secondary sources; we use conservative rounded values and flag where versions differ."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis of what the IPO price implies under stated assumptions. It is not investment advice or a price target.",
+    "Figures are as of late June 2026 and trace to the cited sources; markets and disclosures change."
+  ],
+  "readingMinutes": 9,
+  "tags": [
+    "quantum computing",
+    "IPO",
+    "Quantinuum",
+    "valuation",
+    "Honeywell",
+    "IonQ",
+    "equity research",
+    "data journalism"
+  ],
+  "date": "2026-06-26",
+  "byline": "Cumulant Research"
+}
