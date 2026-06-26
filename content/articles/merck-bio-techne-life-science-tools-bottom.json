@@ -1,0 +1,527 @@
+{
+  "published": true,
+  "slug": "merck-bio-techne-life-science-tools-bottom",
+  "headline": "Did Merck just call the bottom of the life-science tools slump, or overpay for it?",
+  "deck": "On 25 June 2026 Germany's Merck agreed to buy Bio-Techne for about $11.3bn, roughly 9.3 times sales, even though the target now grows at about half its pre-pandemic pace. Rebuilding the price from the filings shows the deal looks expensive measured against revenue but ordinary measured against profit once promised savings land, so the whole case rests on two numbers not yet in the accounts: cost synergies and a growth re-acceleration the revenue line does not yet show.",
+  "takeaways": [
+    "Merck is paying about 9.3x trailing sales ($11.3bn for $1.22bn of fiscal-2025 revenue) for Bio-Techne, near the top of the post-2021 range but below Danaher's roughly 10x for Abcam in 2023, the cycle's richest reagent deal.",
+    "Bio-Techne's organic growth is about 5%, roughly half the 9-10% it ran in 2018-19; growth bottomed at 1% in fiscal 2024, so a partial recovery is real but incomplete.",
+    "On profit it looks ordinary: about 26x trailing adjusted EBITDA, falling toward roughly 20x once the promised EUR 140m of annual cost savings land, in line with strategic-buyer norms.",
+    "The unusual signal is the buyer's near-5% rise; acquirers usually fall when they pay up. But that is a one-day vote on price, not proof of value.",
+    "The bull case lives entirely in two soft numbers not in last year's accounts: cost synergies and a growth re-acceleration. If neither lands by year three, 9.3x looks like a top-of-cycle price."
+  ],
+  "glossary": [
+    {
+      "term": "Life-science tools",
+      "definition": "The proteins, antibodies, reagents and lab instruments sold to drug companies and research labs - the 'picks and shovels' of biology research, used up and reordered constantly."
+    },
+    {
+      "term": "Enterprise value (EV)",
+      "definition": "The all-in cost of owning a business: its share price times the number of shares, plus its debt, minus its cash."
+    },
+    {
+      "term": "EV/sales (revenue multiple)",
+      "definition": "Enterprise value divided by one year of revenue; it tells you how many dollars a buyer pays for each dollar the company sells in a year."
+    },
+    {
+      "term": "Organic growth",
+      "definition": "Revenue growth from the existing business only, stripping out acquisitions and currency swings, so it shows whether the underlying business is really expanding."
+    },
+    {
+      "term": "EBITDA",
+      "definition": "Earnings before interest, taxes, depreciation and amortization - a rough measure of the cash profit a business throws off from its day-to-day operations."
+    },
+    {
+      "term": "Adjusted EBITDA",
+      "definition": "EBITDA with one-off or non-cash items removed, meant to show normalized, ongoing profitability; each company defines its own adjustments."
+    },
+    {
+      "term": "Synergies",
+      "definition": "The cost savings or extra revenue a buyer expects to squeeze out after combining two companies; here, the EUR 140m of annual cost savings Merck promises by year three."
+    },
+    {
+      "term": "VWAP",
+      "definition": "Volume-weighted average price - the average price a stock actually traded at over a period, weighting bigger trades more; used as a fairer baseline than a single day's closing price."
+    },
+    {
+      "term": "Premium",
+      "definition": "How much more per share an acquirer pays than the stock's prior price; the figure depends entirely on which baseline date you measure against."
+    },
+    {
+      "term": "Arbitrage",
+      "definition": "Traders buying a target's stock once a cash bid is announced, pushing the price up toward the fixed offer to capture the small remaining gap."
+    },
+    {
+      "term": "All-cash deal",
+      "definition": "An acquisition paid entirely in cash rather than partly in the buyer's shares, so the price is a fixed dollar figure rather than a moving share ratio."
+    },
+    {
+      "term": "Reagents",
+      "definition": "Consumable biological substances such as antibodies and proteins that researchers use up in experiments and must keep reordering."
+    },
+    {
+      "term": "Antibodies",
+      "definition": "Lab-made proteins that latch onto one specific target molecule; researchers use them to detect or isolate whatever they are studying."
+    },
+    {
+      "term": "Spatial biology / RNAscope",
+      "definition": "Techniques (RNAscope is Bio-Techne's brand) that show exactly where genes switch on inside a tissue sample, mapping biology in place rather than in a test tube."
+    },
+    {
+      "term": "Proteomics / multi-omics",
+      "definition": "Proteomics is the large-scale study of all the proteins in a cell or organism; multi-omics combines several such layers (genes, proteins and more), a fast-growing corner of biology research."
+    },
+    {
+      "term": "Cell and gene therapy",
+      "definition": "Treatments that fix disease by editing or replacing cells or genes; manufacturing them requires specialized high-purity reagents."
+    },
+    {
+      "term": "GMP reagents",
+      "definition": "Good Manufacturing Practice reagents - lab materials made to the strict quality standard required to produce medicines that are given to patients."
+    },
+    {
+      "term": "Trailing-twelve-month (TTM / trailing)",
+      "definition": "A figure covering the most recent twelve months of actual results, rather than a forecast."
+    },
+    {
+      "term": "Operating margin / EBITDA margin",
+      "definition": "Profit as a percentage of sales; a higher margin means more of each revenue dollar is kept as profit."
+    },
+    {
+      "term": "Biopharma R&D budgets",
+      "definition": "The money drug companies spend on research and development; when they cut it, suppliers of lab tools and reagents sell less."
+    },
+    {
+      "term": "Strategic buyer",
+      "definition": "A company that buys another to run it for the long term and fold it into its own operations, as opposed to a financial buyer that plans to resell it."
+    },
+    {
+      "term": "Accretive",
+      "definition": "A deal is accretive when it lifts the buyer's per-share earnings or margins rather than diluting them."
+    },
+    {
+      "term": "Reverse Morris Trust",
+      "definition": "A tax-efficient deal structure in which a company spins off a unit that then merges with another firm, used in the 2025 Waters-BD combination cited here for comparison."
+    }
+  ],
+  "event": "On 25 June 2026, Germany's Merck KGaA agreed to acquire Minneapolis-based Bio-Techne for $73 a share in cash, an enterprise value of about $11.3bn (EUR 9.9bn) - Merck's largest deal since buying Sigma-Aldrich in 2015.",
+  "question": "At roughly nine times sales, is Merck paying a top-of-cycle price for a company stuck at bottom-of-cycle growth, and what would have to come true for the multiple to make sense?",
+  "readingMinutes": 9,
+  "tags": [
+    "M&A",
+    "life-science tools",
+    "Merck KGaA",
+    "Bio-Techne",
+    "valuation",
+    "biopharma",
+    "deal analysis"
+  ],
+  "leadChartId": "ev-sales",
+  "charts": [
+    {
+      "id": "ev-sales",
+      "kind": "bar",
+      "title": "What buyers paid per dollar of sales: selected life-science deals, 2021-2026",
+      "subtitle": "Enterprise value divided by the target's disclosed annual revenue (EV/sales)",
+      "source": "Cumulant Research calculations from deal releases and target filings: Thermo Fisher/PPD, Waters/BD Biosciences, Merck/Bio-Techne, Danaher/Abcam",
+      "units": "x sales",
+      "period": "2021-2026",
+      "note": "PPD is a clinical-research services business, included as cycle context, not a like-for-like tools comparable. The Abcam multiple is shown on revenue around its 2023 announcement; on Abcam's last full-year sales it is higher (about 12x), so either way it tops 9.3x. Sartorius/Polyplus and Thermo/Olink (both well above 20x sales) were left off because a 20x-plus bar would crush the others into invisibility - but both clear 9.3x easily and cut against the 'expensive' read.",
+      "alt": "Horizontal bars showing EV/sales multiples: Thermo Fisher/PPD 4.4x, Waters/BD 5.1x, Merck/Bio-Techne 9.3x (highlighted), Danaher/Abcam 10.4x. Merck's deal is near the top of the range but below Danaher's.",
+      "data": {
+        "bars": [
+          {
+            "label": "Thermo Fisher / PPD (2021)",
+            "value": 4.4
+          },
+          {
+            "label": "Waters / BD Biosciences (2025)",
+            "value": 5.1
+          },
+          {
+            "label": "Merck / Bio-Techne (2026)",
+            "value": 9.3,
+            "highlight": true
+          },
+          {
+            "label": "Danaher / Abcam (2023)",
+            "value": 10.4
+          }
+        ],
+        "max": 12
+      }
+    },
+    {
+      "id": "organic-growth",
+      "kind": "bar",
+      "title": "Bio-Techne organic revenue growth, by fiscal year (June year-end)",
+      "subtitle": "A pandemic boom that has deflated to about half its old pace",
+      "source": "Bio-Techne fourth-quarter earnings releases, FY2018-FY2025",
+      "units": "% organic growth",
+      "period": "FY2018-FY2025",
+      "note": "Growth bottomed at 1% in FY2024 and recovered to 5% in FY2025 - a real bounce, but still roughly half the 9-10% pace of FY2018-19.",
+      "alt": "Bars by fiscal year: FY2018 9%, FY2019 10%, FY2020 4%, FY2021 22%, FY2022 17%, FY2023 5%, FY2024 1%, FY2025 5%. A spike during the pandemic followed by a collapse and partial recovery.",
+      "data": {
+        "bars": [
+          {
+            "label": "FY2018",
+            "value": 9
+          },
+          {
+            "label": "FY2019",
+            "value": 10
+          },
+          {
+            "label": "FY2020",
+            "value": 4
+          },
+          {
+            "label": "FY2021",
+            "value": 22
+          },
+          {
+            "label": "FY2022",
+            "value": 17
+          },
+          {
+            "label": "FY2023",
+            "value": 5
+          },
+          {
+            "label": "FY2024",
+            "value": 1
+          },
+          {
+            "label": "FY2025",
+            "value": 5,
+            "highlight": true
+          }
+        ],
+        "max": 22
+      }
+    },
+    {
+      "id": "ev-ebitda",
+      "kind": "comparison",
+      "title": "The same price on two yardsticks (EV / adjusted EBITDA)",
+      "subtitle": "On profit, after promised synergies, the multiple lands in the strategic-buyer norm",
+      "source": "Cumulant Research from Merck deal release and Bio-Techne FY2025 results; synergy figure per Merck",
+      "units": "x adjusted EBITDA",
+      "period": "2026",
+      "note": "EV held at $11.3bn; denominator is FY2025 adjusted EBITDA of $429.6m, then that EBITDA plus the EUR 140m (roughly $150m) of promised run-rate cost savings. The lower figure exists only after the savings arrive, by year three.",
+      "alt": "Two bars: as reported about 26x adjusted EBITDA; after EUR 140m of cost savings land in year three, about 20x.",
+      "data": {
+        "bars": [
+          {
+            "label": "As reported (FY2025 EBITDA $429.6m)",
+            "value": 26,
+            "highlight": true
+          },
+          {
+            "label": "After EUR 140m synergies (year 3, ~$580m)",
+            "value": 20
+          }
+        ],
+        "max": 26
+      }
+    },
+    {
+      "id": "premium",
+      "kind": "comparison",
+      "title": "Same $73 offer, two premiums",
+      "subtitle": "How big a premium Merck paid depends entirely on the baseline date",
+      "source": "Merck deal release (36% to one-month VWAP); market reports (about 24% to prior close, derived from the $70.67 close implying an unaffected price near $58.90)",
+      "units": "% premium",
+      "period": "June 2026",
+      "note": "Both are correct; they answer different questions. The 24% is the gain over yesterday's screen price; the 36% is the gain over where the stock traded across the prior month, before deal speculation lifted it.",
+      "alt": "Two bars: premium versus prior closing price about 24%; premium versus one-month VWAP 36%.",
+      "data": {
+        "bars": [
+          {
+            "label": "vs prior closing price",
+            "value": 24
+          },
+          {
+            "label": "vs one-month VWAP",
+            "value": 36,
+            "highlight": true
+          }
+        ],
+        "max": 36
+      }
+    }
+  ],
+  "leadImage": null,
+  "sections": [
+    {
+      "heading": "The news",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 25 June 2026, Germany's Merck KGaA agreed to buy Bio-Techne, a Minneapolis maker of the proteins, antibodies and lab instruments that drug researchers use by the case, for $73 a share in cash. The enterprise value - the all-in cost of owning the business, share price plus debt minus cash - is about $11.3 billion (EUR 9.9 billion). It is Merck's largest acquisition since it bought Sigma-Aldrich in 2015."
+        },
+        {
+          "type": "p",
+          "text": "The market did the expected thing to the target and the unexpected thing to the buyer. Bio-Techne jumped about 20% to close at $70.67, closing most of the gap to the $73 offer. That is just arbitrage: traders pulling the share price toward a cash floor that is now fixed. The more telling move is that Merck's own stock rose nearly 5%."
+        },
+        {
+          "type": "callout",
+          "label": "The signal worth watching",
+          "text": "Buyers usually fall when they pay up, because the acquirer is the one writing the cheque. When the acquirer rises instead, the market is saying it likes the price. So: is the price actually likable? That is the one question worth chasing here, and it has a clean answer because the deal is all cash at a fixed number - there is no share-exchange ratio to muddy things. The multiple is locked and knowable."
+        }
+      ]
+    },
+    {
+      "heading": "The one narrow question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "At roughly nine times sales, is Merck paying a top-of-cycle price for a company stuck at bottom-of-cycle growth, and what would have to come true for that to make sense?"
+        },
+        {
+          "type": "p",
+          "text": "Let us build the number from the filings rather than assert it. The price tag is $11.3 billion of enterprise value. Bio-Techne's net sales for the fiscal year that ended in June 2025 were $1,219.6 million, with organic revenue up 5%. Divide one by the other: $11.3bn divided by $1.22bn is about 9.3 times trailing sales."
+        },
+        {
+          "type": "callout",
+          "label": "What 'EV/sales' means",
+          "text": "Enterprise value is the all-in cost of owning a business: its share price plus its debt, minus its cash. Dividing that by a year of revenue tells you how many dollars a buyer pays for each dollar the company sells annually. At 9.3x, Merck is paying about $9.30 for every $1 of yearly Bio-Techne revenue - like a landlord paying more than nine years of rent up front to own a building, on the bet that the rent is about to climb. The whole case rests on the rent climbing."
+        },
+        {
+          "type": "p",
+          "text": "The trouble is that the rent has been climbing slowly."
+        }
+      ]
+    },
+    {
+      "heading": "What happened: dates and actors",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Merck KGaA of Darmstadt - the German chemicals and life-sciences group, unrelated to the U.S. firm Merck & Co. - agreed on 25 June 2026 to acquire Bio-Techne Corporation of Minneapolis for $73.00 per share in cash. The deal, approved by both boards, carries an enterprise value of about $11.3 billion (EUR 9.9 billion) and is expected to close in late 2026 or early 2027, subject to shareholder and regulatory approvals. Merck has guided to about EUR 140 million of annual cost savings, fully in place by the third year after closing."
+        },
+        {
+          "type": "p",
+          "text": "Bio-Techne sells into Merck's Life Science arm: reagents, antibodies and instruments that fit alongside Merck's own laboratory and bioprocessing range. The assets Merck most often names are the high-growth fringe - spatial-biology tools (the RNAscope line), multi-omics and proteomics, and good-manufacturing-practice reagents used to make cell and gene therapies - rather than the slower legacy catalog."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: the growth the price has to overcome",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "We pulled Bio-Techne's reported organic growth from every fiscal-year earnings release back to 2018. 'Organic' growth strips out acquisitions and currency swings, so it is the cleanest read on whether the underlying business is actually expanding. The picture is a boom that has deflated."
+        },
+        {
+          "type": "chart",
+          "chartId": "organic-growth"
+        },
+        {
+          "type": "p",
+          "text": "Read it left to right and the story tells itself. Before COVID, Bio-Techne compounded at 9-10% a year. The pandemic sent drug research into overdrive and growth spiked to 22%, then 17%. Then came the hangover: biopharma companies cut research budgets, demand in China sagged, and labs worked through the reagents they had panic-bought. Growth collapsed to 1% in fiscal 2024 before recovering to 5% last year."
+        },
+        {
+          "type": "pullquote",
+          "text": "That 5% is the number under the price - roughly half the 9-10% pace Bio-Techne ran before the pandemic. The worst is arguably past, but Merck is paying a multiple that usually attaches to companies growing much faster."
+        }
+      ]
+    },
+    {
+      "heading": "Where 9.3x sits in the cycle",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To judge whether 9.3x is rich, you need the comparison set: what other buyers paid for similar businesses since the 2021 valuation peak collapsed. We rebuilt each multiple from the deal's own enterprise value and the target's disclosed revenue, and dropped any bar we could not source."
+        },
+        {
+          "type": "chart",
+          "chartId": "ev-sales"
+        },
+        {
+          "type": "p",
+          "text": "Two things stand out. First, 9.3x is near the top of this set but not at it. Danaher paid roughly 10x for Abcam in 2023 - the closest true comparable, another maker of premium antibodies and reagents. (Measured against Abcam's last full year of sales rather than its run-rate at announcement, that multiple is higher still, closer to 12x.) Either way, Bio-Techne sits just under the cycle's richest reagent deal, so 'top of the range' is better read as 'near the top.'"
+        },
+        {
+          "type": "p",
+          "text": "Second, the cleaner cyclical signal is what these multiples have not done. The Waters combination with BD's bioscience and diagnostics arm, struck in 2025 and completed in February 2026, valued that business at roughly 5x sales. Thermo Fisher's purchase of the clinical-research firm PPD went off at about 4.4x back in 2021. Neither is a pure reagents comparable, but together they show the broad market for life-science assets never reflated to its 2021 peak. Bio-Techne's 9.3x is a premium paid for a specific kind of asset - high-margin, recurring-revenue consumables - not a sign that the whole sector is hot again."
+        }
+      ]
+    },
+    {
+      "heading": "The same price, measured on profit",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Revenue multiples can mislead, because they ignore how much profit each dollar of sales actually throws off. Bio-Techne keeps an unusually large share: its adjusted EBITDA - a rough measure of operating cash profit - was about 35% of sales last year. So switch the yardstick from sales to profit and the deal looks far less exotic."
+        },
+        {
+          "type": "chart",
+          "chartId": "ev-ebitda"
+        },
+        {
+          "type": "p",
+          "text": "On Bio-Techne's fiscal-2025 adjusted EBITDA of $429.6 million, $11.3 billion works out to about 26 times profit. Add the EUR 140 million (roughly $150 million) of annual cost savings Merck says it can wring out by year three, and the effective multiple falls toward 20 times. That is squarely inside the range strategic buyers - companies buying to keep and operate, not to flip - routinely pay for durable, high-margin franchises. The catch is in the tense: the 20x exists only in the future, after the savings actually arrive. The 26x is what Merck is paying today."
+        },
+        {
+          "type": "callout",
+          "label": "Why two yardsticks disagree",
+          "text": "A company that turns a big slice of every sales dollar into profit can look expensive on revenue yet ordinary on earnings. Bio-Techne is exactly that: 9.3x sales sounds steep, but because roughly a third of those sales drop through to EBITDA, the same price is only about 26x profit - and less once costs are stripped out. The revenue multiple flags the risk; the profit multiple shows why a strategic buyer can still stomach it."
+        }
+      ]
+    },
+    {
+      "heading": "One offer, two premiums",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "One more figure gets quoted two different ways, and both are correct. They simply measure from different starting lines."
+        },
+        {
+          "type": "chart",
+          "chartId": "premium"
+        },
+        {
+          "type": "p",
+          "text": "Merck's own release leads with a 36% premium, measured against Bio-Techne's volume-weighted average price over the prior month - the average price the stock actually traded at, weighting bigger trades more. Measured against just the closing price the day before the announcement, the premium is about 24%. The 24% is the gain over yesterday's screen; the 36% is the gain over where the stock sat for a month, before takeover speculation crept into the price. Neither is wrong; a seller naturally prefers to quote the bigger one."
+        }
+      ]
+    },
+    {
+      "heading": "What would have to come true",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So the answer to the narrow question is layered. On revenue, 9.3x is a top-of-cycle-looking price for a business growing at a bottom-of-cycle 5%. On profit, after the promised savings, about 20x is unremarkable for a high-margin reagents franchise. The market's near-5% lift in Merck's shares says investors lean toward the second reading. But that is a one-day vote on price, not a verdict on value."
+        },
+        {
+          "type": "pullquote",
+          "text": "The bull case lives entirely in two soft numbers that are not in last year's accounts: the EUR 140m of cost savings, and a growth re-acceleration the revenue line does not yet show."
+        },
+        {
+          "type": "p",
+          "text": "For the multiple to make sense, both have to land. Merck has to actually extract the EUR 140 million it has promised, and Bio-Techne's growth has to climb from 5% back toward the high single digits its spatial-biology, proteomics and cell-and-gene-therapy lines are supposed to deliver. If the savings arrive and growth re-accelerates by year three, 9.3x sales and 26x EBITDA will look like a smart entry near the bottom of a cycle. If neither does, the same numbers will read as a top-of-cycle price paid for a business that had merely stopped falling."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Took the deal terms from the joint Merck KGaA / Bio-Techne announcement of 25 June 2026: $73.00 per share in cash, enterprise value about $11.3bn (EUR 9.9bn), EUR 140m of annual cost synergies fully realized by year three, 36% premium to the one-month VWAP, expected close late 2026 or early 2027.",
+    "Took Bio-Techne's fiscal-2025 actuals (year ended 30 June 2025) from its fourth-quarter earnings release: net sales $1,219,635,000, organic revenue up 5%, adjusted EBITDA $429,635,000.",
+    "Computed EV/sales as $11.3bn / $1.2196bn = about 9.3x; EV/adjusted EBITDA as $11.3bn / $429.6m = about 26x; post-synergy EBITDA as $429.6m plus roughly $150m of run-rate savings (about $580m), giving about 20x.",
+    "Pulled organic revenue growth for fiscal 2018-2025 from each year's fourth-quarter Bio-Techne earnings release (9%, 10%, 4%, 22%, 17%, 5%, 1%, 5%).",
+    "Rebuilt the comparison multiples from each deal's disclosed enterprise value and the target's revenue: Thermo Fisher/PPD ($20.9bn EV including assumed debt over PPD's 2020 revenue of about $4.7bn, about 4.4x); Waters/BD Biosciences and Diagnostic Solutions ($17.5bn over the BD units' 2024 revenue of about $3.4bn, about 5.1x); Danaher/Abcam ($5.7bn over Abcam revenue of about $540m around its August 2023 announcement, about 10.4x; about 12x on Abcam's last full calendar-year revenue of around $456m).",
+    "Derived the two premiums from the deal release (36% to one-month VWAP) and from market reports of the $70.67 close and 20% one-day jump, which imply an unaffected price near $58.90 and a roughly 24% premium to the prior close."
+  ],
+  "sources": [
+    {
+      "title": "Merck KGaA, Darmstadt, Germany, Agrees to Acquire Bio-Techne (joint announcement)",
+      "publisher": "Merck KGaA / Bio-Techne via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/merck-kgaa-darmstadt-germany-agrees-to-acquire-bio-techne-strengthening-leadership-position-in-fast-growing-life-sciences-markets-302810602.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Agreement to acquire Bio-Techne (company release)",
+      "publisher": "Merck KGaA (EMD Group)",
+      "url": "https://www.emdgroup.com/en/news/agreement-to-acquire-bio-techne-25-06-2026.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Merck KGaA, Darmstadt, Germany, Agrees to Acquire Bio-Techne (investor release)",
+      "publisher": "Bio-Techne Corporation",
+      "url": "https://investors.bio-techne.com/press-releases/detail/535/merck-kgaa-darmstadt-germany-agrees-to-acquire",
+      "kind": "primary"
+    },
+    {
+      "title": "Bio-Techne Releases Fourth Quarter Fiscal 2025 Results",
+      "publisher": "Bio-Techne Corporation",
+      "url": "https://investors.bio-techne.com/press-releases/detail/500/bio-techne-releases-fourth-quarter-fiscal-2025-results",
+      "kind": "primary"
+    },
+    {
+      "title": "Bio-Techne Fourth Quarter Fiscal 2025 Results (Form 8-K exhibit)",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000842023/000155837025010393/tech-20250806xex99d1.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Bio-Techne Releases Fourth Quarter Fiscal 2024 Results",
+      "publisher": "Bio-Techne Corporation",
+      "url": "https://investors.bio-techne.com/press-releases/detail/432/bio-techne-releases-fourth-quarter-fiscal-2024-results",
+      "kind": "primary"
+    },
+    {
+      "title": "Bio-Techne Releases Fourth Quarter Fiscal 2023 Results",
+      "publisher": "Bio-Techne Corporation via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/bio-techne-releases-fourth-quarter-fiscal-2023-results-301895161.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Bio-Techne Fourth Quarter Fiscal 2021 Results (Form 8-K exhibit)",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000842023/000143774921018609/ex_271735.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Bio-Techne jumps after Merck KGaA strikes $11.3B buyout deal",
+      "publisher": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4607138-bio-techne-jumps-after-merck-kgaa-strikes-113b-buyout-deal",
+      "kind": "secondary"
+    },
+    {
+      "title": "Germany's Merck boosts life sciences business with $11 billion Bio-Techne deal",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/25/germanys-merck-kgaa-to-buy-bio-techne.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Merck KGaA throws down $11.3B for Bio-Techne in its biggest deal since 2015 Sigma-Aldrich buy",
+      "publisher": "Fierce Pharma",
+      "url": "https://www.fiercepharma.com/pharma/merck-kgaa-throws-down-113b-bio-techne-biggest-deal-2015-sigma-aldrich-buy",
+      "kind": "secondary"
+    },
+    {
+      "title": "Danaher to Acquire Abcam",
+      "publisher": "Danaher Corporation",
+      "url": "https://investors.danaher.com/2023-08-28-Danaher-to-Acquire-Abcam",
+      "kind": "primary"
+    },
+    {
+      "title": "StockWatch: Abcam Founder Opposes $5.7B Danaher Acquisition (Abcam revenue context)",
+      "publisher": "GEN - Genetic Engineering & Biotechnology News",
+      "url": "https://www.genengnews.com/topics/drug-discovery/stockwatch-abcam-founder-opposes-5-7b-danaher-acquisition/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Thermo Fisher Scientific to Acquire PPD, Inc.",
+      "publisher": "Thermo Fisher Scientific",
+      "url": "https://ir.thermofisher.com/investors/news-events/news/news-details/2021/Thermo-Fisher-Scientific-to-Acquire-PPD-Inc.-a-Leading-Clinical-Research-Organization/default.aspx",
+      "kind": "primary"
+    },
+    {
+      "title": "Waters and BD's Biosciences & Diagnostic Solutions Business to Combine",
+      "publisher": "Waters Corporation via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/waters-and-bds-biosciences--diagnostic-solutions-business-to-combine-creating-a-life-science-and-diagnostics-leader-focused-on-regulated-high-volume-testing-302504188.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Waters Completes Combination with BD's Biosciences & Diagnostic Solutions Businesses",
+      "publisher": "Waters Corporation via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/waters-completes-combination-with-bds-biosciences--diagnostic-solutions-businesses-302682583.html",
+      "kind": "primary"
+    }
+  ],
+  "limitations": [
+    "Adjusted EBITDA is a company-defined, non-GAAP measure that excludes items management chooses to strip out; on a stricter definition the 26x and 20x multiples would shift.",
+    "The Abcam comparison depends on which revenue base you use. Against its run-rate near the August 2023 announcement the multiple is about 10.4x; against its last full calendar-year sales it is closer to 12x. The ranking (Bio-Techne below Abcam) holds across that range, but the precise gap does not.",
+    "The EUR 140m of synergies and any growth re-acceleration are management guidance and analyst expectation, not realized results; they may land late, partially, or not at all.",
+    "Dollar/euro conversions are approximate. Merck's own figures imply about $1.14 per euro ($11.3bn versus EUR 9.9bn); at that rate the EUR 140m of savings is closer to $160m than $150m, though the post-synergy multiple still rounds to about 20x.",
+    "One-day share-price reactions reflect sentiment and positioning on the announcement, not the deal's eventual economic outcome."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "date": "2026-06-26",
+  "byline": "Cumulant Research"
+}
