@@ -10,7 +10,7 @@
  *
  * Usage: node scripts/social-carousel.mjs --slug <slug> [--format 4x5] [--out DIR]
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { execFileSync } from "node:child_process";
 import { homedir } from "node:os";
@@ -58,11 +58,30 @@ const photo = (src) => (src ? `<img class="photo" src="${src}">` : "") + `<div c
 
 // ---- slide builders ------------------------------------------------------ //
 
-function titleSlide(title, body, img, withArrow = true) {
+// text-position variants so the layout switches up slide to slide
+const POSCSS = {
+  bl: ``,
+  tl: `.content{bottom:auto;top:148px;}`,
+  c: `.content{bottom:auto;top:50%;transform:translateY(-50%);}`,
+  bc: `.content{left:80px;right:80px;text-align:center;}`,
+};
+
+function titleSlide(title, body, img, pos = "bl", withArrow = true) {
   const len = String(title).length;
   const size = len > 150 ? 50 : len > 105 ? 60 : len > 64 ? 72 : len > 32 ? 88 : 104;
-  const css = `.title{font-size:${size}px;}`;
+  const css = `.title{font-size:${size}px;}${POSCSS[pos] || ""}`;
   return page(css, `${photo(img)}${wm}<div class="content"><div class="title">${esc(title)}</div>${body ? `<div class="body">${esc(body)}</div>` : ""}</div>${withArrow ? arrow : ""}`);
+}
+
+// background image -> pink text -> cutout subject on top, so the text weaves behind the object
+function behindSlide(title, bg, cut) {
+  const len = String(title).length;
+  const size = len > 62 ? 80 : len > 36 ? 100 : 126;
+  const css = `.bgi{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.66) saturate(1.08);}
+  .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3;filter:saturate(1.12) contrast(1.05);}
+  .topscrim{position:absolute;left:0;right:0;top:0;height:210px;background:linear-gradient(rgba(0,0,0,.42),transparent);z-index:4;pointer-events:none;}
+  .bt{position:absolute;left:60px;right:60px;top:210px;z-index:2;color:${MAG};font-size:${size}px;line-height:.98;letter-spacing:-.03em;text-shadow:0 0 16px rgba(0,0,0,.75),0 0 40px rgba(0,0,0,.6),0 3px 30px rgba(0,0,0,.6);}`;
+  return page(css, `<img class="bgi" src="${bg}"><div class="bt">${esc(title)}</div><img class="fg" src="${cut}"><div class="topscrim"></div>${wm}${arrow}`);
 }
 
 function bigNumberSlide(c, img) {
@@ -126,10 +145,47 @@ function gatherImages(a) {
   const imgs = [];
   if (a.leadImage?.src) imgs.push("file://" + join(PUB, a.leadImage.src));
   try {
-    readdirSync(join(ROOT, ".social-assets")).filter((f) => f.startsWith(a.slug + "-") && /\.(jpg|jpeg|png)$/i.test(f)).sort()
+    readdirSync(join(ROOT, ".social-assets"))
+      .filter((f) => f.startsWith(a.slug + "-") && /\.(jpg|jpeg|png)$/i.test(f) && !f.includes("-cut-"))
+      .sort()
       .forEach((f) => imgs.push("file://" + join(ROOT, ".social-assets", f)));
   } catch { /* none */ }
   return imgs.length ? imgs : [""];
+}
+
+// Native macOS Vision subject lift -> a transparent-background cutout PNG.
+// Returns the cutout url, or null when no clear subject is found (graceful).
+const CUTBIN = join(TMP, "subject-cutout");
+function ensureCutBin() {
+  if (existsSync(CUTBIN)) return true;
+  try {
+    mkdirSync(TMP, { recursive: true });
+    execFileSync("swiftc", ["-O", join(ROOT, "scripts", "subject-cutout.swift"), "-o", CUTBIN], { stdio: "ignore", timeout: 180000 });
+    return existsSync(CUTBIN);
+  } catch { return false; }
+}
+function cutoutFor(imgUrl, slug, idx) {
+  if (!imgUrl) return null;
+  const cut = join(ROOT, ".social-assets", `${slug}-cut-${idx}.png`);
+  if (existsSync(cut)) return "file://" + cut;
+  if (!ensureCutBin()) return null;
+  try { execFileSync(CUTBIN, [imgUrl.replace("file://", ""), cut], { stdio: "ignore", timeout: 60000 }); }
+  catch { return null; } // non-zero exit = no subject
+  return existsSync(cut) ? "file://" + cut : null;
+}
+
+// Fraction of the frame the cut-out subject covers — used to decide whether the
+// behind-subject layout will actually read (too small = no occlusion, too large
+// = text fully hidden). A clean centered subject sits around 0.15-0.6.
+function coverage(cutUrl) {
+  if (!cutUrl) return 0;
+  try {
+    const p = cutUrl.replace("file://", "");
+    const out = execFileSync("python3", ["-c",
+      `from PIL import Image;im=Image.open(${JSON.stringify(p)}).convert("RGBA");h=im.getchannel("A").histogram();t=im.width*im.height;print(round((t-h[0])/t,3))`],
+      { encoding: "utf8", timeout: 20000 }).trim();
+    return parseFloat(out) || 0;
+  } catch { return 0; }
 }
 
 // ---- assemble ------------------------------------------------------------ //
@@ -143,16 +199,28 @@ function build(a, copy, images) {
   const kp = a.keyPoints || a.takeaways || [];
   const takes = a.takeaways || kp;
 
+  // cutouts + coverage -> only use behind-subject where a real focal subject reads
+  const cuts = images.map((im, i) => cutoutFor(im, a.slug, i));
+  const covs = cuts.map(coverage);
+  const good = (i) => cuts[i] && covs[i] >= 0.14 && covs[i] <= 0.6;
+  const coverBehind = good(0);
+  // best non-cover image for the interior behind-subject slide (coverage near 0.4)
+  const cand = covs.map((c, i) => ({ c, i })).filter(({ i }) => good(i) && i !== (coverBehind ? 0 : -1))
+    .sort((x, y) => Math.abs(x.c - 0.4) - Math.abs(y.c - 0.4));
+  const j = cand.length ? cand[0].i : -1;
+
   const s = [];
-  s.push(titleSlide(copy.hook, null, img(0)));                          // 1 hook
-  s.push(titleSlide(copy.restate, copy.promise, img(1)));               // 2 re-serve
-  if (takes[0]) s.push(titleSlide(clip(takes[0], 170), null, img(2)));  // 3 evidence
-  if (kn) s.push(bigNumberSlide(kn, img(3)));                           // 4 big number
-  if (kp[1] || takes[1]) s.push(titleSlide(clip(kp[1] || takes[1], 170), null, img(0))); // 5 evidence
-  s.push(titleSlide(copy.turn, null, img(1)));                          // 6 the turn
+  // 1 hook: behind-subject only if the cover image has a strong subject, else colorful bottom-left
+  s.push(coverBehind ? behindSlide(copy.hook, img(0), cuts[0]) : titleSlide(copy.hook, null, img(0), "bl")); // 1
+  s.push(titleSlide(copy.restate, copy.promise, img(1), "tl"));                                              // 2 top-left
+  if (takes[0]) s.push(titleSlide(clip(takes[0], 170), null, img(2), "c"));                                  // 3 centered
+  if (kn) s.push(bigNumberSlide(kn, img(3)));                                                                // 4 big number
+  s.push(titleSlide(clip(kp[1] || takes[1] || a.deck, 170), null, img(0), "bc"));                            // 5 evidence, bottom-center
+  // 6 turn: short quotable line woven behind a real subject when one exists, else centered
+  s.push(j >= 0 ? behindSlide(clip(copy.turn, 60), img(j), cuts[j]) : titleSlide(copy.turn, null, img(1), "c"));
   const chart2 = comparison || bars[1] || bars[0];
-  if (chart2) s.push(barSlide(chart2, img(2)));                         // 7 chart
-  s.push(ctaSlide(copy.loopback, takes, copy.cta, img(3)));             // 8 cta
+  if (chart2) s.push(barSlide(chart2, img(2)));                                                              // 7 chart
+  s.push(ctaSlide(copy.loopback, takes, copy.cta, img(3)));                                                  // 8 cta
   return s;
 }
 
@@ -179,8 +247,9 @@ const images = gatherImages(a);
 const copy = getCopy(a);
 console.log(`  hook: ${copy.hook}`);
 const out = join(arg("out", join(homedir(), "Downloads", "cumulant-social")), `carousel-${a.slug}`);
-rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
+// clear only stale slide PNGs; keep captions.md so re-renders don't wipe captions
+try { readdirSync(out).filter((f) => /^slide-\d+\.png$/.test(f)).forEach((f) => rmSync(join(out, f))); } catch { /* fresh */ }
 
 const slides = build(a, copy, images);
 slides.forEach((html, i) => {
