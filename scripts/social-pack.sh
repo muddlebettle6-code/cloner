@@ -9,6 +9,8 @@ SITE_DIR="${SITE_DIR:-$HOME/cloner}"
 SLUG="${1:?usage: social-pack.sh <article-slug>}"
 cd "$SITE_DIR"
 
+echo "== images (find + download licensed photos for variety) =="
+python3 scripts/social-images.py "$SLUG"
 echo "== headline cards =="
 node scripts/social-card.mjs --slug "$SLUG" --formats 4x5,1x1,1.91x1
 echo "== carousel =="

@@ -92,13 +92,21 @@ def main() -> None:
     out_dir = Path(arg("out") or (OUT_BASE / f"carousel-{slug}"))
     out_dir.mkdir(parents=True, exist_ok=True)
     rd = c.get("reddit", {}) if isinstance(c.get("reddit"), dict) else {"title": "", "body": str(c.get("reddit", ""))}
+    creds = []
+    if (a.get("leadImage") or {}).get("credit"):
+        creds.append(a["leadImage"]["credit"])
+    cf = ROOT / ".social-assets" / f"{slug}-credits.txt"
+    if cf.exists():
+        creds += [ln for ln in cf.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    creds = list(dict.fromkeys(creds))
     md = (
         f"# Social captions — {a['headline']}\n\n{link}\n\n"
         f"## LinkedIn\n\n{c.get('linkedin','')}\n\n"
         f"## Instagram\n\n{c.get('instagram','')}\n\n"
         f"## Facebook\n\n{c.get('facebook','')}\n\n"
         f"## Reddit\n\n**Title:** {rd.get('title','')}\n\n{rd.get('body','')}\n\n"
-        f"## X / Twitter\n\n{c.get('x','')}\n"
+        f"## X / Twitter\n\n{c.get('x','')}\n\n"
+        + (("## Image credits\n\n" + "\n".join(f"- {x}" for x in creds) + "\n") if creds else "")
     )
     (out_dir / "captions.md").write_text(md, encoding="utf-8")
     print(f"saved -> {out_dir / 'captions.md'}\n")
