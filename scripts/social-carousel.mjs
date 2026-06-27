@@ -74,13 +74,17 @@ function titleSlide(title, body, img, pos = "bl", withArrow = true) {
 }
 
 // background image -> pink text -> cutout subject on top, so the text weaves behind the object
-function behindSlide(title, bg, cut) {
+function behindSlide(title, bg, cut, subTop = 0.2) {
   const len = String(title).length;
   const size = len > 62 ? 80 : len > 36 ? 100 : 126;
+  const lines = Math.max(1, Math.ceil(len / 15));
+  const textH = lines * size * 0.98;
+  // place text so only its bottom edge tucks behind the subject's top (subtle dip)
+  const topPx = Math.max(120, Math.round(subTop * H + size * 0.4 - textH));
   const css = `.bgi{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.66) saturate(1.08);}
   .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3;filter:saturate(1.12) contrast(1.05);}
-  .topscrim{position:absolute;left:0;right:0;top:0;height:210px;background:linear-gradient(rgba(0,0,0,.42),transparent);z-index:4;pointer-events:none;}
-  .bt{position:absolute;left:60px;right:60px;top:210px;z-index:2;color:${MAG};font-size:${size}px;line-height:.98;letter-spacing:-.03em;text-shadow:0 0 16px rgba(0,0,0,.75),0 0 40px rgba(0,0,0,.6),0 3px 30px rgba(0,0,0,.6);}`;
+  .topscrim{position:absolute;left:0;right:0;top:0;height:${Math.round(topPx + textH * 0.6)}px;background:linear-gradient(rgba(0,0,0,.5),transparent 78%);z-index:1;pointer-events:none;}
+  .bt{position:absolute;left:60px;right:60px;top:${topPx}px;z-index:2;color:${MAG};font-size:${size}px;line-height:.98;letter-spacing:-.03em;text-shadow:0 0 16px rgba(0,0,0,.78),0 0 42px rgba(0,0,0,.62),0 3px 30px rgba(0,0,0,.6);}`;
   return page(css, `<img class="bgi" src="${bg}"><div class="bt">${esc(title)}</div><img class="fg" src="${cut}"><div class="topscrim"></div>${wm}${arrow}`);
 }
 
@@ -129,11 +133,12 @@ function getCopy(a) {
     hook: a.headline, restate: clip(a.deck || a.headline, 80), promise: clip(a.whyItMatters || a.deck || "", 120),
     turn: clip(a.whyItMatters || (a.takeaways || []).slice(-1)[0] || "", 150),
     loopback: clip(a.deck || a.headline, 80), cta: "Save this for the next time it comes up.",
+    behindLine: clip(String(a.headline).split(/[.,:;]/)[0], 38),
   };
   try {
     const prompt = `You are the social editor for Cumulant Research (independent, AI-assisted financial newsroom). Write a retention copy pack for an 8-slide carousel. Rules: curiosity-gap hooks (tension + withheld why), plain English, no hype, no investment advice, no em dashes, no surrounding quotation marks. Short.\n`
       + `HEADLINE: ${a.headline}\nDECK: ${a.deck || ""}\nWHY IT MATTERS: ${a.whyItMatters || ""}\nTAKEAWAYS: ${(a.takeaways || []).slice(0, 3).join(" | ")}\n\n`
-      + `Return STRICT JSON: {"hook":"cover, 5-9 words, open loop / withheld why","restate":"restate the stakes in one line for someone who never saw slide 1, <=11 words","promise":"one setup line that raises a question","turn":"the single most quotable here-is-what-nobody-priced-in line, short","loopback":"one line echoing the hook now answered","cta":"ONE save or share prompt"}. Output ONLY JSON.`;
+      + `Return STRICT JSON: {"hook":"cover, 5-9 words, open loop / withheld why","restate":"restate the stakes in one line for someone who never saw slide 1, <=11 words","promise":"one setup line that raises a question","turn":"the single most quotable here-is-what-nobody-priced-in line, short","loopback":"one line echoing the hook now answered","cta":"ONE save or share prompt","behindLine":"a punchy 3 to 6 word fragment, a bold visual caption (a noun phrase or short claim) for a photo slide"}. Output ONLY JSON.`;
     const out = execFileSync(CLAUDE, ["-p"], { input: prompt, encoding: "utf8", timeout: 90000 });
     const m = out.replace(/```json?/g, "").replace(/```/g, "").match(/\{[\s\S]*\}/);
     if (m) { const j = JSON.parse(m[0]); return { ...fb, ...Object.fromEntries(Object.entries(j).filter(([, v]) => v && String(v).trim())) }; }
@@ -174,18 +179,18 @@ function cutoutFor(imgUrl, slug, idx) {
   return existsSync(cut) ? "file://" + cut : null;
 }
 
-// Fraction of the frame the cut-out subject covers — used to decide whether the
-// behind-subject layout will actually read (too small = no occlusion, too large
-// = text fully hidden). A clean centered subject sits around 0.15-0.6.
-function coverage(cutUrl) {
-  if (!cutUrl) return 0;
+// Subject coverage (does the behind-subject layout read?) + the subject's top
+// edge (so text can dip subtly behind it rather than hiding whole words).
+function subjectInfo(cutUrl) {
+  if (!cutUrl) return { cov: 0, top: 0.2 };
   try {
     const p = cutUrl.replace("file://", "");
     const out = execFileSync("python3", ["-c",
-      `from PIL import Image;im=Image.open(${JSON.stringify(p)}).convert("RGBA");h=im.getchannel("A").histogram();t=im.width*im.height;print(round((t-h[0])/t,3))`],
+      `from PIL import Image\nim=Image.open(${JSON.stringify(p)}).convert("RGBA")\na=im.getchannel("A");h=a.histogram();t=im.width*im.height;bb=a.getbbox()\nprint(round((t-h[0])/t,3), round(bb[1]/im.height,3) if bb else 0.2)`],
       { encoding: "utf8", timeout: 20000 }).trim();
-    return parseFloat(out) || 0;
-  } catch { return 0; }
+    const [cov, top] = out.split(/\s+/).map(Number);
+    return { cov: cov || 0, top: Number.isFinite(top) ? top : 0.2 };
+  } catch { return { cov: 0, top: 0.2 }; }
 }
 
 // ---- assemble ------------------------------------------------------------ //
@@ -199,25 +204,25 @@ function build(a, copy, images) {
   const kp = a.keyPoints || a.takeaways || [];
   const takes = a.takeaways || kp;
 
-  // cutouts + coverage -> only use behind-subject where a real focal subject reads
+  // cutouts + subject info -> only use behind-subject where a real focal subject reads
   const cuts = images.map((im, i) => cutoutFor(im, a.slug, i));
-  const covs = cuts.map(coverage);
-  const good = (i) => cuts[i] && covs[i] >= 0.14 && covs[i] <= 0.6;
+  const infos = cuts.map(subjectInfo);
+  const good = (i) => cuts[i] && infos[i].cov >= 0.14 && infos[i].cov <= 0.6;
   const coverBehind = good(0);
   // best non-cover image for the interior behind-subject slide (coverage near 0.4)
-  const cand = covs.map((c, i) => ({ c, i })).filter(({ i }) => good(i) && i !== (coverBehind ? 0 : -1))
+  const cand = infos.map((info, i) => ({ c: info.cov, i })).filter(({ i }) => good(i) && i !== (coverBehind ? 0 : -1))
     .sort((x, y) => Math.abs(x.c - 0.4) - Math.abs(y.c - 0.4));
   const j = cand.length ? cand[0].i : -1;
 
   const s = [];
   // 1 hook: behind-subject only if the cover image has a strong subject, else colorful bottom-left
-  s.push(coverBehind ? behindSlide(copy.hook, img(0), cuts[0]) : titleSlide(copy.hook, null, img(0), "bl")); // 1
+  s.push(coverBehind ? behindSlide(copy.hook, img(0), cuts[0], infos[0].top) : titleSlide(copy.hook, null, img(0), "bl")); // 1
   s.push(titleSlide(copy.restate, copy.promise, img(1), "tl"));                                              // 2 top-left
   if (takes[0]) s.push(titleSlide(clip(takes[0], 170), null, img(2), "c"));                                  // 3 centered
   if (kn) s.push(bigNumberSlide(kn, img(3)));                                                                // 4 big number
   s.push(titleSlide(clip(kp[1] || takes[1] || a.deck, 170), null, img(0), "bc"));                            // 5 evidence, bottom-center
   // 6 turn: short quotable line woven behind a real subject when one exists, else centered
-  s.push(j >= 0 ? behindSlide(clip(copy.turn, 60), img(j), cuts[j]) : titleSlide(copy.turn, null, img(1), "c"));
+  s.push(j >= 0 ? behindSlide(clip(copy.behindLine || copy.turn, 40), img(j), cuts[j], infos[j].top) : titleSlide(copy.turn, null, img(1), "c"));
   const chart2 = comparison || bars[1] || bars[0];
   if (chart2) s.push(barSlide(chart2, img(2)));                                                              // 7 chart
   s.push(ctaSlide(copy.loopback, takes, copy.cta, img(3)));                                                  // 8 cta
