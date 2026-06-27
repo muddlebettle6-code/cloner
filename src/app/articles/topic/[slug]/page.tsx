@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PageShell } from "@/components/page-shell";
+import { NewsroomShell } from "@/components/newsroom-shell";
 import { Reveal } from "@/components/reveal";
 import { bySection } from "@/content/articles";
 import { SECTIONS, SECTION_BY_SLUG } from "@/content/newsroom";
-import { LeadCard, ListRow, TopicNav } from "@/components/article-cards";
+import { LeadCard, ListRow, Masthead } from "@/components/article-cards";
 
 export function generateStaticParams() {
   return SECTIONS.map((s) => ({ slug: s.slug }));
@@ -25,8 +25,8 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
   const [lead, ...rest] = arts;
 
   return (
-    <PageShell eyebrow="Newsroom" title={section.label} intro={section.blurb}>
-      <TopicNav active={slug} />
+    <NewsroomShell>
+      <Masthead kicker="Newsroom" title={section.label} intro={section.blurb} active={slug} />
 
       {/* Subtopics */}
       <div className="flex flex-wrap gap-[8px] py-[18px]">
@@ -39,9 +39,8 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
 
       {arts.length === 0 ? (
         <div className="border-t border-clay py-[40px]">
-          <p className="text-[16px] leading-[1.5] text-smoke">
-            No stories in {section.label} yet. The newsroom runs continuously and covers this desk as developments
-            warrant.{" "}
+          <p className="text-[15px] leading-[1.5] text-smoke">
+            No stories on this desk yet. The newsroom runs continuously and covers it as developments warrant.{" "}
             <Link href="/articles" className="text-ink underline-offset-2 hover:underline">
               Back to the newsroom
             </Link>
@@ -51,13 +50,12 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
       ) : (
         <>
           {lead && (
-            <Reveal className="border-t border-clay py-[36px]">
+            <Reveal className="border-t border-clay py-[32px]">
               <LeadCard a={lead} />
             </Reveal>
           )}
           {rest.length > 0 && (
-            <Reveal as="section" className="border-t border-clay py-[20px]">
-              <p className="mb-[6px] font-mono text-[12px] uppercase tracking-[0.1em] text-ink">More in {section.label}</p>
+            <Reveal as="section" className="border-t border-clay py-[16px]">
               <div className="grid gap-x-[40px] md:grid-cols-2">
                 {rest.map((a, i) => (
                   <ListRow key={a.slug} a={a} first={i < 2} />
@@ -68,10 +66,10 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
         </>
       )}
 
-      {/* Related desks */}
-      <Reveal as="section" className="border-t border-clay py-[28px]">
-        <p className="mb-[12px] font-mono text-[12px] uppercase tracking-[0.1em] text-ink">Other desks</p>
-        <div className="flex flex-wrap gap-[10px]">
+      {/* Other desks */}
+      <div className="border-t border-clay py-[26px]">
+        <p className="mb-[12px] font-mono text-[11px] uppercase tracking-[0.1em] text-smoke">Other desks</p>
+        <div className="flex flex-wrap gap-[8px]">
           {SECTIONS.filter((s) => s.slug !== slug)
             .sort((a, b) => a.order - b.order)
             .map((s) => (
@@ -84,7 +82,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
               </Link>
             ))}
         </div>
-      </Reveal>
-    </PageShell>
+      </div>
+    </NewsroomShell>
   );
 }

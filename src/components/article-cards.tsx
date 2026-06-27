@@ -11,9 +11,9 @@ const MAG = "#ff2d92";
 /** The newsroom topic navigation strip. `active` is a section slug or "all". */
 export function TopicNav({ active }: { active?: string }) {
   const cls = (on: boolean) =>
-    cn("whitespace-nowrap font-mono text-[12px] uppercase tracking-[0.06em] transition-colors", on ? "text-ink" : "text-smoke hover:text-ink");
+    cn("whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.06em] transition-colors", on ? "text-ink" : "text-smoke hover:text-ink");
   return (
-    <nav className="-mx-[15px] mb-[8px] flex gap-[22px] overflow-x-auto border-y border-clay px-[15px] py-[14px] md:mx-0 md:px-0">
+    <nav className="flex gap-[20px] overflow-x-auto border-b border-clay py-[13px] [-ms-overflow-style:none] [scrollbar-width:none]">
       <Link href="/articles" className={cls(!active)}>Top</Link>
       {NAV_SECTIONS.map((s) => (
         <Link key={s.slug} href={`/articles/topic/${s.slug}`} className={cls(active === s.slug)}>
@@ -22,6 +22,20 @@ export function TopicNav({ active }: { active?: string }) {
       ))}
       <Link href="/articles/topics" className={cls(active === "all")}>All topics</Link>
     </nav>
+  );
+}
+
+/** Compact newsroom masthead: kicker + title, optional intro, and the nav. */
+export function Masthead({ title, kicker, intro, active }: { title: string; kicker?: string; intro?: string; active?: string }) {
+  return (
+    <div>
+      <div className="border-b border-ink pb-[14px] pt-[40px] md:pt-[56px]">
+        {kicker && <p className="mb-[7px] font-mono text-[11px] uppercase tracking-[0.1em] text-smoke">{kicker}</p>}
+        <h1 className="text-[27px] font-medium leading-[1] tracking-[-0.8px] text-ink md:text-[36px]">{title}</h1>
+        {intro && <p className="mt-[14px] max-w-[600px] text-[14px] leading-[1.5] text-smoke md:text-[15px]">{intro}</p>}
+      </div>
+      <TopicNav active={active} />
+    </div>
   );
 }
 

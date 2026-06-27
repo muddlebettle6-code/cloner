@@ -47,38 +47,40 @@ export function Header({ solid = false }: { solid?: boolean }) {
     <>
       <header
         className={cn(
-          "fixed left-0 top-0 z-50 flex h-[60px] w-full items-center justify-between px-[15px] py-[20px] transition-colors duration-500 ease-[var(--ease-standard)] md:px-[30px]",
+          "fixed left-0 top-0 z-50 h-[60px] w-full transition-colors duration-500 ease-[var(--ease-standard)]",
           darkText ? "text-ink" : "text-white",
           solid ? "border-b border-clay bg-cream" : scrolled ? "bg-white" : "bg-transparent"
         )}
       >
-        <Link href="/" aria-label={ORG.name} className="enter transition-opacity duration-300 hover:opacity-70" style={{ animationDelay: "0ms" }}>
-          <Wordmark />
-        </Link>
+        <div className="mx-auto flex h-full max-w-[1180px] items-center justify-between px-[20px] md:px-[40px]">
+          <Link href="/" aria-label={ORG.name} className="enter transition-opacity duration-300 hover:opacity-70" style={{ animationDelay: "0ms" }}>
+            <Wordmark />
+          </Link>
 
-        {/* Right: desktop nav + mobile menu trigger */}
-        <div className="enter flex items-center" style={{ animationDelay: "120ms" }}>
-          <nav className="hidden items-center gap-[28px] md:flex">
-            {NAV.map((item) => (
-              <Link
-                key={item.target}
-                href={item.route}
-                className="flex flex-col items-center transition-opacity duration-300 hover:opacity-70"
-              >
-                <span className="text-[13px] uppercase leading-none tracking-[-0.01em]">{item.label}</span>
-                <span
-                  className={cn(
-                    "mt-[4px] h-[3px] w-[3px] rounded-full bg-current transition-opacity duration-300",
-                    isActive(item.route) ? "opacity-100" : "opacity-0"
-                  )}
-                />
-              </Link>
-            ))}
-          </nav>
+          {/* Right: desktop nav + mobile menu trigger */}
+          <div className="enter flex items-center" style={{ animationDelay: "120ms" }}>
+            <nav className="hidden items-center gap-[26px] md:flex">
+              {NAV.map((item) => (
+                <Link
+                  key={item.target}
+                  href={item.route}
+                  className="flex flex-col items-center transition-opacity duration-300 hover:opacity-70"
+                >
+                  <span className="text-[13px] uppercase leading-none tracking-[-0.01em]">{item.label}</span>
+                  <span
+                    className={cn(
+                      "mt-[4px] h-[3px] w-[3px] rounded-full bg-current transition-opacity duration-300",
+                      isActive(item.route) ? "opacity-100" : "opacity-0"
+                    )}
+                  />
+                </Link>
+              ))}
+            </nav>
 
-          <button className="md:hidden" aria-label="open menu" onClick={() => setMenuOpen(true)}>
-            <MenuIcon className="h-[22px] w-[22px] text-current" />
-          </button>
+            <button className="md:hidden" aria-label="open menu" onClick={() => setMenuOpen(true)}>
+              <MenuIcon className="h-[22px] w-[22px] text-current" />
+            </button>
+          </div>
         </div>
       </header>
 

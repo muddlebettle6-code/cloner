@@ -1,36 +1,38 @@
 import Link from "next/link";
-import { PageShell } from "@/components/page-shell";
+import { NewsroomShell } from "@/components/newsroom-shell";
 import { Reveal } from "@/components/reveal";
-import { ARTICLES_BY_RECENCY, ARTICLES_INTRO, bySection, leadStory, sectionCounts } from "@/content/articles";
-import { SECTIONS } from "@/content/newsroom";
-import { CompactRow, LeadCard, ListRow, TopicNav } from "@/components/article-cards";
+import { ARTICLES_BY_RECENCY, leadStory } from "@/content/articles";
+import { CompactRow, LeadCard, Masthead, StoryCard } from "@/components/article-cards";
+
+const INTRO =
+  "Independent analysis of one current event at a time - markets, the economy, policy, and the forces that move money.";
 
 export const metadata = {
   title: "Newsroom",
-  description: ARTICLES_INTRO.body,
+  description: INTRO,
 };
 
 export default function ArticlesPage() {
   const all = ARTICLES_BY_RECENCY;
   const lead = leadStory();
-  const latest = all.filter((a) => a.slug !== lead?.slug).slice(0, 5);
-  const counts = sectionCounts();
-  const deskSections = SECTIONS.filter((s) => (counts[s.slug] ?? 0) > 0).sort((a, b) => a.order - b.order);
+  const rest = lead ? all.filter((a) => a.slug !== lead.slug) : all;
+  const latest = rest.slice(0, 4);
+  const grid = rest.slice(4);
 
   return (
-    <PageShell eyebrow="Newsroom" title="Newsroom." intro={ARTICLES_INTRO.body}>
-      <TopicNav />
+    <NewsroomShell>
+      <Masthead title="Newsroom" intro={INTRO} />
 
-      {all.length === 0 && <p className="py-[28px] text-[15px] text-smoke">No stories yet.</p>}
+      {all.length === 0 && <p className="py-[40px] text-[15px] text-smoke">No stories yet.</p>}
 
-      {/* Lead story + Latest stream */}
+      {/* Lead story + Latest */}
       {lead && (
-        <section className="grid gap-[36px] py-[40px] md:grid-cols-[1fr_320px] md:gap-[48px]">
+        <section className="grid gap-[36px] py-[36px] lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-[48px]">
           <Reveal>
             <LeadCard a={lead} />
           </Reveal>
-          <Reveal className="md:border-l md:border-clay md:pl-[40px]">
-            <p className="mb-[4px] font-mono text-[12px] uppercase tracking-[0.1em] text-ink">Latest</p>
+          <Reveal className="lg:border-l lg:border-clay lg:pl-[40px]">
+            <p className="mb-[2px] font-mono text-[11px] uppercase tracking-[0.1em] text-ink">Latest</p>
             <div>
               {latest.map((a, i) => (
                 <CompactRow key={a.slug} a={a} first={i === 0} />
@@ -40,31 +42,23 @@ export default function ArticlesPage() {
         </section>
       )}
 
-      {/* Desk modules — the newsroom organized by section */}
-      {deskSections.map((s) => {
-        const arts = bySection(s.slug).slice(0, 4);
-        if (!arts.length) return null;
-        return (
-          <Reveal as="section" key={s.slug} className="border-t border-clay py-[34px]">
-            <div className="mb-[16px] flex items-baseline justify-between">
-              <Link href={`/articles/topic/${s.slug}`} className="group inline-flex items-baseline gap-[10px]">
-                <h2 className="text-[22px] font-medium tracking-[-0.5px] text-ink transition-opacity group-hover:opacity-70 md:text-[26px]">
-                  {s.label}
-                </h2>
-                <span className="font-mono text-[11px] text-smoke">{counts[s.slug]}</span>
-              </Link>
-              <Link href={`/articles/topic/${s.slug}`} className="font-mono text-[11px] uppercase tracking-[0.05em] text-smoke transition-colors hover:text-ink">
-                View all
-              </Link>
-            </div>
-            <div className="grid gap-x-[40px] md:grid-cols-2">
-              {arts.map((a, i) => (
-                <ListRow key={a.slug} a={a} first={i < 2} />
-              ))}
-            </div>
-          </Reveal>
-        );
-      })}
-    </PageShell>
+      {/* More stories */}
+      {grid.length > 0 && (
+        <Reveal as="section" className="border-t border-clay py-[36px]">
+          <p className="mb-[22px] font-mono text-[11px] uppercase tracking-[0.1em] text-ink">More stories</p>
+          <div className="grid gap-x-[40px] gap-y-[38px] sm:grid-cols-2 lg:grid-cols-3">
+            {grid.map((a) => (
+              <StoryCard key={a.slug} a={a} />
+            ))}
+          </div>
+        </Reveal>
+      )}
+
+      <div className="border-t border-clay pt-[24px]">
+        <Link href="/articles/topics" className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke transition-colors hover:text-ink">
+          Browse all topics
+        </Link>
+      </div>
+    </NewsroomShell>
   );
 }
