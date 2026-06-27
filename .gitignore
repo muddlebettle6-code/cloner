@@ -57,3 +57,4 @@ __pycache__/
 scripts/*.log
 scripts/*.out.log
 scripts/*.err.log
+.social-assets/
