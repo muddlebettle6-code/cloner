@@ -65,7 +65,16 @@ def build(article_path: str, out_dir: str | None = None) -> dict:
         f"hyphens, never long dashes; include the URL.\n\nARTICLE URL: {url}\nARTICLE:\n{json.dumps(keep)[:9000]}"
         f"\n\n{SPEC}"
     )
-    pack = extract_json(claude(prompt))
+    # The social JSON is occasionally malformed; retry before giving up rather than crash.
+    pack = None
+    for attempt in range(3):
+        try:
+            pack = extract_json(claude(prompt))
+            break
+        except Exception as exc:  # noqa: BLE001
+            if attempt == 2:
+                print(f"social-pack: could not parse social JSON after 3 tries ({exc}); skipping.", file=sys.stderr)
+                return None
 
     def declash(o):
         if isinstance(o, str):
@@ -90,4 +99,6 @@ if __name__ == "__main__":
         print("usage: social-pack.py <article.json> [out-dir]", file=sys.stderr)
         sys.exit(1)
     result = build(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)
+    if result is None:
+        sys.exit(0)
     print(json.dumps(result, indent=2, ensure_ascii=False)[:2000])
