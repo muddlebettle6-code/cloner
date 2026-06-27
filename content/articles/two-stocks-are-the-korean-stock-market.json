@@ -293,7 +293,7 @@
         },
         {
           "type": "p",
-          "text": "At 12:10 in the afternoon the KOSPI - South Korea's main stock index, the rough equivalent of the S&P 500 - had fallen 731.97 points, or 8.19 percent, to 8,198.33. That breached the exchange's automatic 8 percent threshold and tripped a circuit breaker, a mandatory 20-minute trading halt designed to let a panicking market catch its breath. That is the number that went around the world: Korea down 8 percent."
+          "text": "At 12:10 in the afternoon the KOSPI, South Korea's main stock index, the rough equivalent of the S&P 500, had fallen 731.97 points, or 8.19 percent, to 8,198.33. That breached the exchange's automatic 8 percent threshold and tripped a circuit breaker, a mandatory 20-minute trading halt designed to let a panicking market catch its breath. That is the number that went around the world: Korea down 8 percent."
         },
         {
           "type": "p",
@@ -319,7 +319,7 @@
         {
           "type": "callout",
           "label": "The question",
-          "text": "When the KOSPI fell 519 points on 26 June, who actually pushed it down - and has the index become so concentrated that a memory-chip selloff and a Korean stock-market crash are now arithmetically the same event?"
+          "text": "When the KOSPI fell 519 points on 26 June, who actually pushed it down, and has the index become so concentrated that a memory-chip selloff and a Korean stock-market crash are now arithmetically the same event?"
         },
         {
           "type": "p",
@@ -365,11 +365,11 @@
         },
         {
           "type": "p",
-          "text": "Read it slowly, because it is counterintuitive. The 830-odd other companies on the KOSPI - banks, carmakers, shipbuilders, biotech, retail, steel, every name that is not a memory-chip maker - lost 188 points between them. Two semiconductor stocks lost 331. The chip duo, fewer than 0.3 percent of the listed names, outweighed the other 99.7 percent combined."
+          "text": "Read it slowly, because it is counterintuitive. The 830-odd other companies on the KOSPI, banks, carmakers, shipbuilders, biotech, retail, steel, every name that is not a memory-chip maker, lost 188 points between them. Two semiconductor stocks lost 331. The chip duo, fewer than 0.3 percent of the listed names, outweighed the other 99.7 percent combined."
         },
         {
           "type": "p",
-          "text": "It also means the '5.8 percent crash' overstated the day for almost everyone who owned almost anything else. Strip out the two chipmakers and the rest of the market fell, on a value-weighted basis, closer to 4.6 percent - and for the typical mid-cap name almost certainly milder still. The headline number was, to a first approximation, the price of memory chips wearing a national flag."
+          "text": "It also means the '5.8 percent crash' overstated the day for almost everyone who owned almost anything else. Strip out the two chipmakers and the rest of the market fell, on a value-weighted basis, closer to 4.6 percent, and for the typical mid-cap name almost certainly milder still. The headline number was, to a first approximation, the price of memory chips wearing a national flag."
         }
       ]
     },
@@ -382,7 +382,7 @@
         },
         {
           "type": "p",
-          "text": "It does not come in under 50 percent under any reasonable assumption. Use the older, lower weights from mid-May - when Samsung and SK Hynix were 28 and 23.5 percent of the KOSPI 200, which understates SK Hynix, the stock that fell hardest - and you still get roughly 59 percent."
+          "text": "It does not come in under 50 percent under any reasonable assumption. Use the older, lower weights from mid-May, when Samsung and SK Hynix were 28 and 23.5 percent of the KOSPI 200, which understates SK Hynix, the stock that fell hardest, and you still get roughly 59 percent."
         },
         {
           "type": "chart",
@@ -407,11 +407,11 @@
         },
         {
           "type": "p",
-          "text": "1. MSCI said no, again. On 23 June (released 24 June Korea time) the index provider MSCI kept Korea in its 'emerging market' bucket and off the watchlist for promotion to 'developed' status - a designation that would have forced waves of automatic buying by global passive funds. Foreigners had front-run that hoped-for upgrade; when it did not come, the trade unwound. MSCI's sticking point was mundane plumbing: the won still cannot be freely settled offshore (it trades mostly through non-deliverable forwards), which makes the market hard for global funds to rebalance. Seoul is opening 24-hour onshore FX trading in July, but MSCI wants to see it work first."
+          "text": "1. MSCI said no, again. On 23 June (released 24 June Korea time) the index provider MSCI kept Korea in its 'emerging market' bucket and off the watchlist for promotion to 'developed' status, a designation that would have forced waves of automatic buying by global passive funds. Foreigners had front-run that hoped-for upgrade; when it did not come, the trade unwound. MSCI's sticking point was mundane plumbing: the won still cannot be freely settled offshore (it trades mostly through non-deliverable forwards), which makes the market hard for global funds to rebalance. Seoul is opening 24-hour onshore FX trading in July, but MSCI wants to see it work first."
         },
         {
           "type": "p",
-          "text": "2. A brand-new leverage machine. On 27 May Korea launched its first single-stock leveraged ETFs - 16 products engineered to move twice as much as Samsung or SK Hynix each day. They drew about 28 trillion won in three days. By late June these products accounted for roughly 31 percent of Samsung's daily trading volume and 38 percent of SK Hynix's. The country's top financial regulator publicly said he regretted not blocking them. Leverage is mechanical: when both stocks dropped near 13 percent on 23 June, the 2x ETFs had to dump about 6 billion dollars of shares in a single session just to reset their ratios. That is forced selling feeding on itself, not a verdict on AI."
+          "text": "2. A brand-new leverage machine. On 27 May Korea launched its first single-stock leveraged ETFs, 16 products engineered to move twice as much as Samsung or SK Hynix each day. They drew about 28 trillion won in three days. By late June these products accounted for roughly 31 percent of Samsung's daily trading volume and 38 percent of SK Hynix's. The country's top financial regulator publicly said he regretted not blocking them. Leverage is mechanical: when both stocks dropped near 13 percent on 23 June, the 2x ETFs had to dump about 6 billion dollars of shares in a single session just to reset their ratios. That is forced selling feeding on itself, not a verdict on AI."
         },
         {
           "type": "chart",
@@ -428,7 +428,7 @@
         },
         {
           "type": "p",
-          "text": "So the cleanest reading is uncomfortable for the panic narrative: the economic effect (chip demand) looks fine; the market reaction (positioning, leverage, index mechanics) did the damage. But notice what that does to our question. It does not refute the concentration finding - it sharpens it. If the selloff was plumbing rather than fundamentals, then the 55 percent chip weight is not the cause. It is the amplifier: the thing that turned an ETF-and-flows squeeze in two stocks into a national circuit breaker."
+          "text": "So the cleanest reading is uncomfortable for the panic narrative: the economic effect (chip demand) looks fine; the market reaction (positioning, leverage, index mechanics) did the damage. But notice what that does to our question. It does not refute the concentration finding, it sharpens it. If the selloff was plumbing rather than fundamentals, then the 55 percent chip weight is not the cause. It is the amplifier: the thing that turned an ETF-and-flows squeeze in two stocks into a national circuit breaker."
         }
       ]
     },
@@ -437,7 +437,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Explanation one: a fundamental AI wobble. The simplest story is that investors are repricing AI itself - if data-center spending slows, memory demand softens, and the two most AI-exposed stocks on earth get hit first. Support: the selloff clustered in AI-memory names, came amid a global tech pullback (the Nasdaq fell sharply on adjacent sessions), and the magnitude looks like fear about a forecast, not a technical blip."
+          "text": "Explanation one: a fundamental AI wobble. The simplest story is that investors are repricing AI itself, if data-center spending slows, memory demand softens, and the two most AI-exposed stocks on earth get hit first. Support: the selloff clustered in AI-memory names, came amid a global tech pullback (the Nasdaq fell sharply on adjacent sessions), and the magnitude looks like fear about a forecast, not a technical blip."
         },
         {
           "type": "p",
@@ -445,7 +445,7 @@
         },
         {
           "type": "p",
-          "text": "The evidence leans toward the second, but the two are not mutually exclusive: fear about AI may have lit the match, while leverage and concentration poured on the fuel. Either way, the concentration finding stands - it is the transmission mechanism in both stories."
+          "text": "The evidence leans toward the second, but the two are not mutually exclusive: fear about AI may have lit the match, while leverage and concentration poured on the fuel. Either way, the concentration finding stands, it is the transmission mechanism in both stories."
         }
       ]
     },
@@ -462,7 +462,7 @@
         },
         {
           "type": "p",
-          "text": "Taiwan, now. The live cousin is the TAIEX, where the chip foundry TSMC alone runs around 40 to 44 percent. Korea is the more extreme case because its concentration is split across a duo that can both fall at once - which is exactly what happened on Friday."
+          "text": "Taiwan, now. The live cousin is the TAIEX, where the chip foundry TSMC alone runs around 40 to 44 percent. Korea is the more extreme case because its concentration is split across a duo that can both fall at once, which is exactly what happened on Friday."
         },
         {
           "type": "chart",
@@ -479,7 +479,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "The KOSPI roughly doubled in 2026 to become one of the hottest major markets on earth - it first cleared 9,000 on 18 June, only to give much of it back in a brutal final fortnight. As it rose, foreigners left in record size: net selling crossed 103 trillion won this year, more than the 62 trillion of the 2008 financial crisis and the 25 trillion of the 2020 pandemic combined."
+          "text": "The KOSPI roughly doubled in 2026 to become one of the hottest major markets on earth, it first cleared 9,000 on 18 June, only to give much of it back in a brutal final fortnight. As it rose, foreigners left in record size: net selling crossed 103 trillion won this year, more than the 62 trillion of the 2008 financial crisis and the 25 trillion of the 2020 pandemic combined."
         },
         {
           "type": "chart",
@@ -495,7 +495,7 @@
         },
         {
           "type": "p",
-          "text": "Put the two findings together. Ordinary households have, mostly without choosing to, concentrated their wealth into a single wager on AI memory pricing - catching the falling knife from the foreign institutions who built the position and are now handing it back. Anyone holding a plain KOSPI index fund - pensions, retail accounts, passive savers - is far more exposed to two semiconductor stocks than the word 'index' suggests."
+          "text": "Put the two findings together. Ordinary households have, mostly without choosing to, concentrated their wealth into a single wager on AI memory pricing, catching the falling knife from the foreign institutions who built the position and are now handing it back. Anyone holding a plain KOSPI index fund, pensions, retail accounts, passive savers, is far more exposed to two semiconductor stocks than the word 'index' suggests."
         }
       ]
     },
@@ -524,7 +524,7 @@
           "items": [
             "The official close is the anchor. If a clean KRX decomposition put the chip duo under 50 percent of the point drop, the central claim fails. It does not, even on conservative weights.",
             "Intraday vs close. Measured against the 8.19 percent trough rather than the 5.81 percent close, the absolute contributions are larger but the proportions are similar; the clock you choose changes the drama, not the finding.",
-            "Day-level flows disagree by source. The Korea Herald's intraday tally (as of 2:42pm) showed individuals net buying 3.77 trillion won against foreigners selling 3.11 trillion and institutions 0.73 trillion; other tallies run higher for the full session. We report the direction - heavy foreign selling, heavier retail buying - not a single contested figure."
+            "Day-level flows disagree by source. The Korea Herald's intraday tally (as of 2:42pm) showed individuals net buying 3.77 trillion won against foreigners selling 3.11 trillion and institutions 0.73 trillion; other tallies run higher for the full session. We report the direction, heavy foreign selling, heavier retail buying, not a single contested figure."
           ]
         }
       ]
@@ -534,7 +534,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Every wire framed Friday as 'Korea -8%, AI-bubble fears.' But the economic signal (HBM demand) is up - Micron at a record, 2026 capacity sold out. What actually fell was not a forecast about chips; it was the unwinding of a foreign upgrade-trade, magnified by month-old 2x ETFs, through an index where two stocks are 55 percent of the weight."
+          "text": "Every wire framed Friday as 'Korea -8%, AI-bubble fears.' But the economic signal (HBM demand) is up, Micron at a record, 2026 capacity sold out. What actually fell was not a forecast about chips; it was the unwinding of a foreign upgrade-trade, magnified by month-old 2x ETFs, through an index where two stocks are 55 percent of the weight."
         },
         {
           "type": "p",
@@ -544,7 +544,7 @@
     }
   ],
   "methodology": [
-    "Anchored every figure to one spine - the Korea Exchange (KRX) official daily record - and used the official close (8,411.21, -519.09 points, -5.81 percent) rather than the intraday trough for any decomposition, because a moving number cannot be decomposed.",
+    "Anchored every figure to one spine, the Korea Exchange (KRX) official daily record, and used the official close (8,411.21, -519.09 points, -5.81 percent) rather than the intraday trough for any decomposition, because a moving number cannot be decomposed.",
     "Computed each stock's contribution to the index as weight x return, the standard arithmetic for a market-cap-weighted index, using KRX market-cap weights (Samsung 28.34%, SK Hynix 26.42%, via Businesskorea, 19 Jun) and prior-close-consistent daily returns (Samsung -5.30%, SK Hynix -8.36%).",
     "Stress-tested the central claim against lower, older KOSPI 200 weights (28.0% / 23.5%) to confirm the duo's share stays above the 50 percent falsification threshold; it lands at 59-64 percent.",
     "Deliberately used the more conservative per-stock declines; steeper vendor figures (Trading Economics) would only raise the duo's share, so the claim rests on the weaker case.",
@@ -663,7 +663,7 @@
   ],
   "limitations": [
     "The reported magnitude of the 26 June move varies across outlets; the article anchors to the official KRX close (-5.81 percent) and treats the -8.19 percent intraday figure as the panic reading, not the settlement.",
-    "Market-cap weights are from 19 June (the most recent precise KRX reading available), not the 26 June close, so the exact weights on the day could differ by a fraction of a point - too small to change the finding.",
+    "Market-cap weights are from 19 June (the most recent precise KRX reading available), not the 26 June close, so the exact weights on the day could differ by a fraction of a point, too small to change the finding.",
     "Per-stock daily returns disagree across data vendors; the article uses the lower, prior-close-consistent figures, which understates rather than inflates the duo's contribution.",
     "Same-day investor flow tallies (foreign, institutional, retail) differ by source and time of capture, so the article reports direction rather than a single contested number.",
     "The $70 billion household-inflow and 103-trillion-won foreign-outflow figures are period estimates from secondary reporting, not a single audited primary series."
@@ -723,7 +723,7 @@
   "confidenceLevel": "high",
   "keyPoints": [
     "On 26 June 2026 the KOSPI tripped its 8 percent circuit breaker, falling 8.19 percent intraday before closing down 5.81 percent (-519.09 points to 8,411.21).",
-    "A weight-times-return decomposition shows Samsung Electronics and SK Hynix, about 55 percent of the index, produced roughly 64 percent of the day's point fall - SK Hynix -197 points, Samsung -134, all ~830 other stocks just -188.",
+    "A weight-times-return decomposition shows Samsung Electronics and SK Hynix, about 55 percent of the index, produced roughly 64 percent of the day's point fall, SK Hynix -197 points, Samsung -134, all ~830 other stocks just -188.",
     "The finding survives stress testing: even using lower May weights, the two-stock share of the fall is about 59 percent, well above the 50 percent kill line.",
     "Evidence points to a flows-and-leverage squeeze, not weak chip demand: month-old 2x single-stock ETFs drive about a third of trading in both stocks, an MSCI non-upgrade unwound a front-run foreign trade, and Micron hit a record while HBM stays sold out for 2026.",
     "Foreign net selling hit 103 trillion won year-to-date, more than the 2008 crisis and 2020 pandemic combined, while Korean households bought roughly 70 billion dollars of the dip."
@@ -732,8 +732,8 @@
   "whatToWatch": [
     "Whether leveraged-ETF deleveraging completes and the regulator curbs the new 2x single-stock products, easing forced selling.",
     "Seoul's July launch of 24-hour onshore FX trading and any concrete MSCI watchlist signal toward developed-market status, which could revive foreign passive inflows.",
-    "HBM order books - any cancellation or a Micron or SK Hynix guidance cut would turn the 55 percent chip weight into an amplifier of a real fundamental decline.",
-    "Foreign flow data - another record week of net selling versus a turn to net buying."
+    "HBM order books, any cancellation or a Micron or SK Hynix guidance cut would turn the 55 percent chip weight into an amplifier of a real fundamental decline.",
+    "Foreign flow data, another record week of net selling versus a turn to net buying."
   ],
-  "subheadline": "A weight-times-return decomposition shows Samsung and SK Hynix, now 55 percent of the KOSPI, drove roughly two-thirds of the 26 June circuit-breaker fall - making the index a leveraged bet on AI memory."
+  "subheadline": "A weight-times-return decomposition shows Samsung and SK Hynix, now 55 percent of the KOSPI, drove roughly two-thirds of the 26 June circuit-breaker fall, making the index a leveraged bet on AI memory."
 }

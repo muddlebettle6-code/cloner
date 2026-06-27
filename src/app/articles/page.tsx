@@ -5,7 +5,7 @@ import { ARTICLES_BY_RECENCY, leadStory } from "@/content/articles";
 import { CompactRow, LeadCard, Masthead, StoryCard } from "@/components/article-cards";
 
 const INTRO =
-  "Independent analysis of one current event at a time - markets, the economy, policy, and the forces that move money.";
+  "Independent analysis of the events moving markets, the economy, and policy, one consequential question at a time.";
 
 export const metadata = {
   title: "Newsroom",

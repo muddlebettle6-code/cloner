@@ -67,7 +67,7 @@
       "data": {
         "items": [
           {
-            "label": "iPad entry (6GB/128GB) - above band",
+            "label": "iPad entry (6GB/128GB), above band",
             "low": 53,
             "mid": 100,
             "high": 89
@@ -85,7 +85,7 @@
             "high": 173
           },
           {
-            "label": "iPad Pro (12GB/256GB) - marginal",
+            "label": "iPad Pro (12GB/256GB), marginal",
             "low": 106,
             "mid": 200,
             "high": 178
@@ -160,7 +160,7 @@
       "subtitle": "The contract price of a 64GB DDR5 server memory stick, from Q3 2025 to Q1 2026, with a Q2 2026 estimate. This is server memory, a different product from the LPDDR5 unified memory Apple ships in its devices. We use it only because it is the most widely cited public price series, as a rough indicator of the direction prices are moving, not as a stand-in for Apple's actual cost.",
       "source": "Counterpoint Research DDR5 RDIMM contract-price ladder, via Slashdot",
       "units": "USD per 64GB DDR5 RDIMM",
-      "period": "Q3 2025 - Q2 2026 (Q2 estimated)",
+      "period": "Q3 2025, Q2 2026 (Q2 estimated)",
       "note": "The Q2 2026 point ($1,000) is an estimate; the confirmed series runs through Q1 2026 (~$900, about 3.5x the Q3 2025 level). The 'quadrupling' read depends on the unconfirmed Q2 estimate and is not essential to the article's finding.",
       "alt": "Line chart of 64GB DDR5 server RDIMM contract prices rising from $255 in Q3 2025 to $450 in Q4 2025, about $900 in Q1 2026, and an estimated $1,000 in Q2 2026.",
       "data": {

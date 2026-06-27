@@ -1,8 +1,8 @@
 {
   "published": true,
   "slug": "onsemi-synaptics-floating-premium",
-  "headline": "onsemi's 23.7% drop turned a 27.6% premium for Synaptics into a 2.6% discount - in one day",
-  "deck": "On 25 June 2026 onsemi agreed to buy Synaptics for about $7bn, paying entirely in its own shares at a fixed rate of 1.350 onsemi shares per Synaptics share. The companies called it roughly a 19% premium, measured against a 10-day average of both stock prices. The next trading day onsemi's shares fell 23.7%. Because the share count was locked, the same deal was now worth only $122.38 per Synaptics share at the close - 2.6% below Synaptics' own price the day before the deal. It is a clean lesson in why a fixed-rate all-stock premium is a promise paid in the buyer's wobbling currency, not cash in hand.",
+  "headline": "onsemi's 23.7% drop turned a 27.6% premium for Synaptics into a 2.6% discount, in one day",
+  "deck": "On 25 June 2026 onsemi agreed to buy Synaptics for about $7bn, paying entirely in its own shares at a fixed rate of 1.350 onsemi shares per Synaptics share. The companies called it roughly a 19% premium, measured against a 10-day average of both stock prices. The next trading day onsemi's shares fell 23.7%. Because the share count was locked, the same deal was now worth only $122.38 per Synaptics share at the close, 2.6% below Synaptics' own price the day before the deal. It is a clean lesson in why a fixed-rate all-stock premium is a promise paid in the buyer's wobbling currency, not cash in hand.",
   "takeaways": [
     "onsemi agreed to buy Synaptics for about $7bn entirely in stock, exchanging a fixed 1.350 onsemi shares for each Synaptics share. The companies called this a roughly 19% premium, measured against a 10-day average of both stock prices.",
     "onsemi's own shares fell 23.7% the next trading day, closing at $90.65.",
@@ -74,7 +74,7 @@
       "subtitle": "Premium of the fixed 1.350 ratio to Synaptics' closing price",
       "source": "Cumulant Research calculation from StockTitan/SEC and stockanalysis.com prices",
       "units": "percent",
-      "note": "Both bars compare 1.350 x onsemi's price to Synaptics' $125.62 pre-deal close: at announcement onsemi was $118.74, on 26 June it closed at $90.65. The companies' own headline of about 19% used a different basis - a 10-day volume-weighted average price (VWAP) of both stocks - so it is not directly comparable and is not plotted here.",
+      "note": "Both bars compare 1.350 x onsemi's price to Synaptics' $125.62 pre-deal close: at announcement onsemi was $118.74, on 26 June it closed at $90.65. The companies' own headline of about 19% used a different basis, a 10-day volume-weighted average price (VWAP) of both stocks, so it is not directly comparable and is not plotted here.",
       "alt": "Two bars on a consistent basis: plus 27.6 percent at announcement, and minus 2.6 percent at the 26 June close.",
       "data": {
         "bars": [
@@ -145,7 +145,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "On 25 June 2026, onsemi (the chipmaker formerly styled ON Semiconductor) agreed to buy Synaptics in the largest deal in its history: an enterprise value of roughly $7bn, paid entirely in onsemi shares. Synaptics holders were to receive a fixed 1.350 onsemi shares for each Synaptics share they owned - a swap rate the companies billed as an 'about 19% premium' to the two stocks' average prices over the prior 10 trading days. (A premium is the extra amount a buyer offers above a target company's current share price to persuade its owners to sell.) The strategic pitch was 'Physical AI': putting computing intelligence into the physical, everyday devices onsemi already supplies, which the company said would lift its total addressable market - the full sales opportunity it can chase - by $30bn, to $243bn by 2030."
+          "text": "On 25 June 2026, onsemi (the chipmaker formerly styled ON Semiconductor) agreed to buy Synaptics in the largest deal in its history: an enterprise value of roughly $7bn, paid entirely in onsemi shares. Synaptics holders were to receive a fixed 1.350 onsemi shares for each Synaptics share they owned, a swap rate the companies billed as an 'about 19% premium' to the two stocks' average prices over the prior 10 trading days. (A premium is the extra amount a buyer offers above a target company's current share price to persuade its owners to sell.) The strategic pitch was 'Physical AI': putting computing intelligence into the physical, everyday devices onsemi already supplies, which the company said would lift its total addressable market, the full sales opportunity it can chase, by $30bn, to $243bn by 2030."
         },
         {
           "type": "p",
@@ -176,11 +176,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "On 25 June 2026 onsemi and Synaptics announced the agreement through an onsemi newsroom release and matching filings with the U.S. Securities and Exchange Commission (the SEC, the federal regulator that polices public companies' disclosures) - a Form 8-K, which reports major corporate events, and a Form 425, which companies file when they offer their own shares as part of the payment. The terms: the fixed 1.350 ratio; the ~19% premium framing against a 10-day average; Synaptics holders ending up with about 12% of the combined company; targeted cost savings of roughly $200m a year; and a close expected around the middle of 2027."
+          "text": "On 25 June 2026 onsemi and Synaptics announced the agreement through an onsemi newsroom release and matching filings with the U.S. Securities and Exchange Commission (the SEC, the federal regulator that polices public companies' disclosures), a Form 8-K, which reports major corporate events, and a Form 425, which companies file when they offer their own shares as part of the payment. The terms: the fixed 1.350 ratio; the ~19% premium framing against a 10-day average; Synaptics holders ending up with about 12% of the combined company; targeted cost savings of roughly $200m a year; and a close expected around the middle of 2027."
         },
         {
           "type": "p",
-          "text": "Synaptics had closed at $125.62 on 25 June, the announcement day. At onsemi's reference price of $118.74, the 1.350 ratio implied about $160.30 per Synaptics share - the deal value the headlines reported. On 26 June, the first full trading day after the news, onsemi fell 23.7% to a $90.65 close, according to stockanalysis.com. That decline is internally consistent: $90.65 is 23.66% below the $118.74 reference, which ties the close cleanly back to the announcement-day price."
+          "text": "Synaptics had closed at $125.62 on 25 June, the announcement day. At onsemi's reference price of $118.74, the 1.350 ratio implied about $160.30 per Synaptics share, the deal value the headlines reported. On 26 June, the first full trading day after the news, onsemi fell 23.7% to a $90.65 close, according to stockanalysis.com. That decline is internally consistent: $90.65 is 23.66% below the $118.74 reference, which ties the close cleanly back to the announcement-day price."
         }
       ]
     },
@@ -189,7 +189,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Do the multiplication that the fixed ratio forces on you. 1.350 onsemi shares at the $90.65 close are worth $122.38. Compare that with Synaptics' own $125.62 close the day before the deal, and the math is unforgiving: (122.38 - 125.62) / 125.62 = -2.6%. In other words, the deal is now worth slightly less than Synaptics was worth on its own before any of this happened."
+          "text": "Do the multiplication that the fixed ratio forces on you. 1.350 onsemi shares at the $90.65 close are worth $122.38. Compare that with Synaptics' own $125.62 close the day before the deal, and the math is unforgiving: (122.38, 125.62) / 125.62 = -2.6%. In other words, the deal is now worth slightly less than Synaptics was worth on its own before any of this happened."
         },
         {
           "type": "chart",
@@ -206,11 +206,11 @@
         {
           "type": "callout",
           "label": "The reconciliation, apples to apples",
-          "text": "On one consistent basis - 1.350 onsemi shares measured against Synaptics' $125.62 close both times - a +27.6% premium at announcement became a -2.6% discount one trading day later. Same fixed ratio, different price behind it."
+          "text": "On one consistent basis, 1.350 onsemi shares measured against Synaptics' $125.62 close both times, a +27.6% premium at announcement became a -2.6% discount one trading day later. Same fixed ratio, different price behind it."
         },
         {
           "type": "p",
-          "text": "A word on how the premium is measured, because this is where headlines and reality diverge. The companies quoted their premium against a 10-day VWAP - the volume-weighted average price, meaning the average trade price over the prior ten days, weighted by how many shares changed hands - which smooths out daily ups and downs, and they applied it to both stocks. That is a legitimate convention, but it is not the same yardstick as comparing prices on a single day. To avoid stacking incompatible numbers on one axis, we hold the measuring stick fixed: we compare the ratio to Synaptics' closing price on the same day at both moments. On that single ruler the swing is +27.6% to -2.6%. The company's ~19% figure lives on a different ruler and is not directly comparable, which is exactly why we keep it out of the chart below."
+          "text": "A word on how the premium is measured, because this is where headlines and reality diverge. The companies quoted their premium against a 10-day VWAP, the volume-weighted average price, meaning the average trade price over the prior ten days, weighted by how many shares changed hands, which smooths out daily ups and downs, and they applied it to both stocks. That is a legitimate convention, but it is not the same yardstick as comparing prices on a single day. To avoid stacking incompatible numbers on one axis, we hold the measuring stick fixed: we compare the ratio to Synaptics' closing price on the same day at both moments. On that single ruler the swing is +27.6% to -2.6%. The company's ~19% figure lives on a different ruler and is not directly comparable, which is exactly why we keep it out of the chart below."
         },
         {
           "type": "chart",
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "heading": "Why a stock premium floats - by design",
+      "heading": "Why a stock premium floats, by design",
       "blocks": [
         {
           "type": "p",
@@ -244,11 +244,11 @@
         },
         {
           "type": "p",
-          "text": "Explanation two: the drop is ordinary all-stock mechanics and timing, and it may reverse. Issuing roughly 12% in new shares automatically pressures the price, because each existing share now owns a smaller slice of the company - an effect called dilution - and uncertainty before a long regulatory-approval path adds a further discount. Because the deal does not close until mid-2027, onsemi's stock has about a year to move, and the fixed ratio could be worth far more, or less, by closing. Under this reading the 'zero premium' is a momentary snapshot, not the deal's settled economics. Supporting this, a one-day move is a market reaction, not a careful valuation of future cash flows, and selling driven by dilution often fades."
+          "text": "Explanation two: the drop is ordinary all-stock mechanics and timing, and it may reverse. Issuing roughly 12% in new shares automatically pressures the price, because each existing share now owns a smaller slice of the company, an effect called dilution, and uncertainty before a long regulatory-approval path adds a further discount. Because the deal does not close until mid-2027, onsemi's stock has about a year to move, and the fixed ratio could be worth far more, or less, by closing. Under this reading the 'zero premium' is a momentary snapshot, not the deal's settled economics. Supporting this, a one-day move is a market reaction, not a careful valuation of future cash flows, and selling driven by dilution often fades."
         },
         {
           "type": "p",
-          "text": "The honest position is that both are partly true. The cleanest way to separate them is to watch the deal spread over the coming weeks - the gap between where Synaptics actually trades and the deal-implied value of $122.38. A wide, persistent spread says the market doubts the deal will close on these terms; a narrowing spread says it trusts it. We flag one gap in our own evidence: we did not confirm Synaptics' own 26 June closing price for this piece, so we are not putting a realized spread number on the page. That single figure is the most informative thing a reader can check next."
+          "text": "The honest position is that both are partly true. The cleanest way to separate them is to watch the deal spread over the coming weeks, the gap between where Synaptics actually trades and the deal-implied value of $122.38. A wide, persistent spread says the market doubts the deal will close on these terms; a narrowing spread says it trusts it. We flag one gap in our own evidence: we did not confirm Synaptics' own 26 June closing price for this piece, so we are not putting a realized spread number on the page. That single figure is the most informative thing a reader can check next."
         }
       ]
     },
@@ -257,11 +257,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Fourteen months earlier, in April 2025, onsemi abandoned a roughly $6.9bn pursuit of Allegro MicroSystems - an all-cash bid of $35.10 per share - after Allegro's board called the price 'inadequate' and onsemi concluded there was 'no actionable path forward'. That was a cash offer for a power-and-sensing peer close to onsemi's core, and onsemi walked because it judged the price too high. The size is almost a match for the Synaptics deal: about $6.9bn then, about $7bn now."
+          "text": "Fourteen months earlier, in April 2025, onsemi abandoned a roughly $6.9bn pursuit of Allegro MicroSystems, an all-cash bid of $35.10 per share, after Allegro's board called the price 'inadequate' and onsemi concluded there was 'no actionable path forward'. That was a cash offer for a power-and-sensing peer close to onsemi's core, and onsemi walked because it judged the price too high. The size is almost a match for the Synaptics deal: about $6.9bn then, about $7bn now."
         },
         {
           "type": "p",
-          "text": "Now it has done a similarly sized deal - but paying in stock, and for a company further from that core - and the market's instant near-24% markdown is the mirror image of the price discipline onsemi advertised in 2025. Where the analogy breaks: Allegro was an all-cash bid for an adjacent business; Synaptics is a stock deal for a business a step away. That is precisely why the market reaction is sharper here. A cash buyer that overpays hurts mainly itself; an all-stock buyer the market doubts drags down the value of its own shares, and with them the premium it just promised."
+          "text": "Now it has done a similarly sized deal, but paying in stock, and for a company further from that core, and the market's instant near-24% markdown is the mirror image of the price discipline onsemi advertised in 2025. Where the analogy breaks: Allegro was an all-cash bid for an adjacent business; Synaptics is a stock deal for a business a step away. That is precisely why the market reaction is sharper here. A cash buyer that overpays hurts mainly itself; an all-stock buyer the market doubts drags down the value of its own shares, and with them the premium it just promised."
         }
       ]
     },
@@ -270,7 +270,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "The downside case is concrete. If onsemi's shares do not recover before closing, Synaptics holders would receive stock worth less than Synaptics' own standalone price the day before the deal - leaving them, on day-one prices, worse off than with no deal at all. That is not just a shareholder problem; it is a board problem. Synaptics' directors and management would be defending an agreement that the market currently values below the standalone company - the kind of arithmetic that invites shareholder lawsuits, scrutiny from proxy advisers (firms that advise big investors on how to vote), and pressure to renegotiate or walk away. The upside case is equally concrete: a year is a long time, and if onsemi's stock climbs back toward its reference price, the fixed ratio quietly restores the premium with no change to the terms."
+          "text": "The downside case is concrete. If onsemi's shares do not recover before closing, Synaptics holders would receive stock worth less than Synaptics' own standalone price the day before the deal, leaving them, on day-one prices, worse off than with no deal at all. That is not just a shareholder problem; it is a board problem. Synaptics' directors and management would be defending an agreement that the market currently values below the standalone company, the kind of arithmetic that invites shareholder lawsuits, scrutiny from proxy advisers (firms that advise big investors on how to vote), and pressure to renegotiate or walk away. The upside case is equally concrete: a year is a long time, and if onsemi's stock climbs back toward its reference price, the fixed ratio quietly restores the premium with no change to the terms."
         },
         {
           "type": "p",
@@ -285,7 +285,7 @@
   ],
   "methodology": [
     "Computed the deal-implied value per Synaptics share as the fixed exchange ratio times onsemi's share price: 1.350 x $118.74 = $160.30 at announcement, and 1.350 x $90.65 = $122.38 at onsemi's 26 June close.",
-    "Computed the realized premium on a single consistent basis, comparing the deal-implied value to Synaptics' $125.62 close on 25 June (the day before the deal): (122.38 - 125.62) / 125.62 = -2.6%; the announcement-day reading on the same basis is (160.30 - 125.62) / 125.62 = +27.6%.",
+    "Computed the realized premium on a single consistent basis, comparing the deal-implied value to Synaptics' $125.62 close on 25 June (the day before the deal): (122.38, 125.62) / 125.62 = -2.6%; the announcement-day reading on the same basis is (160.30, 125.62) / 125.62 = +27.6%.",
     "Kept the company's ~19% headline (a 10-day VWAP of both stocks) off the comparison chart because it rests on a different basis and is not directly comparable to a same-day premium.",
     "Cross-checked internal consistency: onsemi's $90.65 close is 23.66% below the $118.74 reference, matching the reported one-day drop, which ties the close back to the announcement-day price.",
     "Fact-checked the deal terms and prices against primary and reputable sources: onsemi's newsroom release, the SEC Form 425 and Form 8-K, StockTitan and Benzinga (deal terms and premium framing), CNBC (the one-day drop), and stockanalysis.com (onsemi's 26 June close of $90.65, -23.66%). The onsemi 26 June close was corrected to $90.65 (from an earlier $90.69) to match the cited source, and the dependent figures ($122.38 and -2.6%) were recomputed accordingly."
@@ -362,7 +362,7 @@
     },
     {
       "term": "Exchange ratio",
-      "definition": "The fixed number of the buyer's shares given for each share of the company being bought - here, 1.350 onsemi shares per Synaptics share."
+      "definition": "The fixed number of the buyer's shares given for each share of the company being bought, here, 1.350 onsemi shares per Synaptics share."
     },
     {
       "term": "Fixed exchange ratio",
@@ -382,7 +382,7 @@
     },
     {
       "term": "Discount",
-      "definition": "Here, the opposite of a premium - when the deal is worth less than the target company's own recent share price."
+      "definition": "Here, the opposite of a premium, when the deal is worth less than the target company's own recent share price."
     },
     {
       "term": "Realized premium",
@@ -394,7 +394,7 @@
     },
     {
       "term": "Reference price",
-      "definition": "The buyer's share price used to calculate the deal's headline value at announcement - here, onsemi's $118.74."
+      "definition": "The buyer's share price used to calculate the deal's headline value at announcement, here, onsemi's $118.74."
     },
     {
       "term": "Closing price (close)",
@@ -414,7 +414,7 @@
     },
     {
       "term": "Enterprise value",
-      "definition": "A measure of a company's total worth that includes its stock value plus its debt, minus its cash - here, about $7bn for the deal."
+      "definition": "A measure of a company's total worth that includes its stock value plus its debt, minus its cash, here, about $7bn for the deal."
     },
     {
       "term": "Dilution",
@@ -454,7 +454,7 @@
     },
     {
       "term": "Arbitrage spread / deal spread",
-      "definition": "The difference between where the target company's stock trades now and the value the deal would deliver - watched as a gauge of how confident the market is the deal will close."
+      "definition": "The difference between where the target company's stock trades now and the value the deal would deliver, watched as a gauge of how confident the market is the deal will close."
     },
     {
       "term": "Deal break",
@@ -568,13 +568,13 @@
   "keyPoints": [
     "On 25 June 2026 onsemi agreed to buy Synaptics for about $7bn entirely in stock at a fixed 1.350 onsemi shares per Synaptics share, framed as a roughly 19% premium against a 10-day average of both stocks.",
     "onsemi's shares fell 23.7% the next trading day to a $90.65 close, which mechanically cut the value of the fixed ratio to $122.38 per Synaptics share.",
-    "On a same-day basis, the +27.6% premium at announcement flipped to a -2.6% discount versus Synaptics' $125.62 pre-deal close - the deal became worth slightly less than the standalone company.",
+    "On a same-day basis, the +27.6% premium at announcement flipped to a -2.6% discount versus Synaptics' $125.62 pre-deal close, the deal became worth slightly less than the standalone company.",
     "Because the exchange ratio is locked, the dollar value to Synaptics holders floats on onsemi's stock; the article frames this as the all-stock instrument working as designed, not a broken promise.",
     "Caveats: this is a one-day reaction, the deal is not expected to close until mid-2027, and the reviewed materials did not state whether a collar (a value floor) exists."
   ],
-  "whyItMatters": "All-stock acquisitions pay sellers in the buyer's fluctuating shares rather than cash, so a headline premium can evaporate the instant the buyer's stock moves - a distinction that affects every shareholder, board, and arbitrage desk involved in a deal. Here a near-24% one-day drop in onsemi turned an advertised premium into a discount, leaving Synaptics holders facing stock worth less than their company's standalone price and onsemi holders diluted for a strategy the market questioned. The episode is a concrete lesson for investors evaluating any fixed-ratio all-stock deal, and it adds pressure on a struggling chip acquirer doing its largest-ever transaction.",
+  "whyItMatters": "All-stock acquisitions pay sellers in the buyer's fluctuating shares rather than cash, so a headline premium can evaporate the instant the buyer's stock moves, a distinction that affects every shareholder, board, and arbitrage desk involved in a deal. Here a near-24% one-day drop in onsemi turned an advertised premium into a discount, leaving Synaptics holders facing stock worth less than their company's standalone price and onsemi holders diluted for a strategy the market questioned. The episode is a concrete lesson for investors evaluating any fixed-ratio all-stock deal, and it adds pressure on a struggling chip acquirer doing its largest-ever transaction.",
   "whatToWatch": [
-    "The merger-arbitrage spread: where Synaptics actually trades versus the $122.38 deal-implied value - a wide, persistent gap signals market doubt the deal closes on these terms.",
+    "The merger-arbitrage spread: where Synaptics actually trades versus the $122.38 deal-implied value, a wide, persistent gap signals market doubt the deal closes on these terms.",
     "Whether onsemi's shares recover toward the $118.74 reference price before the targeted mid-2027 close, which would quietly restore the premium with no change to terms.",
     "Any disclosure clarifying whether the exchange ratio carries a collar or floor that would bound the realized discount.",
     "Reactions from Synaptics' board, proxy advisers, and shareholders, including potential lawsuits or pressure to renegotiate given the deal currently values the target below its standalone price."

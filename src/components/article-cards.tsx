@@ -3,7 +3,8 @@
 // rectangular imagery). Used by the newsroom homepage and topic pages.
 import Link from "next/link";
 import type { Article } from "@/content/types";
-import { SECTION_BY_SLUG, ARTICLE_TYPE_BY_SLUG, NAV_SECTIONS } from "@/content/newsroom";
+import { SECTION_BY_SLUG, ARTICLE_TYPE_BY_SLUG, SECTIONS } from "@/content/newsroom";
+import { ArrowIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
 const MAG = "#ff2d92";
@@ -13,26 +14,32 @@ export function TopicNav({ active }: { active?: string }) {
   const cls = (on: boolean) =>
     cn("whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.06em] transition-colors", on ? "text-ink" : "text-smoke hover:text-ink");
   return (
-    <nav className="flex gap-[20px] overflow-x-auto border-b border-clay py-[13px] [-ms-overflow-style:none] [scrollbar-width:none]">
-      <Link href="/articles" className={cls(!active)}>Top</Link>
-      {NAV_SECTIONS.map((s) => (
-        <Link key={s.slug} href={`/articles/topic/${s.slug}`} className={cls(active === s.slug)}>
-          {s.short ?? s.label}
-        </Link>
-      ))}
-      <Link href="/articles/topics" className={cls(active === "all")}>All topics</Link>
-    </nav>
+    <div className="relative border-y border-clay">
+      <nav className="flex gap-[20px] overflow-x-auto py-[13px] pr-[48px] [-ms-overflow-style:none] [scrollbar-width:none]">
+        <Link href="/articles" className={cls(!active)}>Top</Link>
+        {[...SECTIONS].sort((a, b) => a.order - b.order).map((s) => (
+          <Link key={s.slug} href={`/articles/topic/${s.slug}`} className={cls(active === s.slug)}>
+            {s.short ?? s.label}
+          </Link>
+        ))}
+        <Link href="/articles/topics" className={cls(active === "all")}>All topics</Link>
+      </nav>
+      {/* Fade + arrow so the list reads as scrollable instead of cut off. */}
+      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center bg-gradient-to-l from-cream via-cream to-transparent pl-[30px]">
+        <ArrowIcon className="h-[12px] w-[12px] text-smoke" />
+      </div>
+    </div>
   );
 }
 
-/** Compact newsroom masthead: kicker + title, optional intro, and the nav. */
+/** Newsroom masthead: kicker + large title (matching other pages), intro, nav. */
 export function Masthead({ title, kicker, intro, active }: { title: string; kicker?: string; intro?: string; active?: string }) {
   return (
     <div>
-      <div className="border-b border-ink pb-[14px] pt-[40px] md:pt-[56px]">
-        {kicker && <p className="mb-[7px] font-mono text-[11px] uppercase tracking-[0.1em] text-smoke">{kicker}</p>}
-        <h1 className="text-[27px] font-medium leading-[1] tracking-[-0.8px] text-ink md:text-[36px]">{title}</h1>
-        {intro && <p className="mt-[14px] max-w-[600px] text-[14px] leading-[1.5] text-smoke md:text-[15px]">{intro}</p>}
+      <div className="pb-[28px] pt-[40px] md:pt-[60px]">
+        {kicker && <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke">{kicker}</p>}
+        <h1 className="mt-[16px] text-[40px] leading-[1.05] tracking-[-1px] text-ink md:text-[64px]">{title}</h1>
+        {intro && <p className="mt-[22px] max-w-[680px] text-[18px] leading-[1.4] text-ink md:text-[20px]">{intro}</p>}
       </div>
       <TopicNav active={active} />
     </div>

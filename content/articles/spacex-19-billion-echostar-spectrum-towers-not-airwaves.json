@@ -2,16 +2,16 @@
   "published": true,
   "slug": "spacex-19-billion-echostar-spectrum-towers-not-airwaves",
   "headline": "SpaceX Paid $19.6 Billion for the Airwaves Dish Couldn't Turn Into a Network. The Towers Are Still the Hard Part.",
-  "deck": "Just after completing the largest US stock-market debut on record, SpaceX let it be known that it might sell Starlink mobile phone plans straight to US consumers, and one day build its own ground network to rival the big three carriers. The radio spectrum behind that idea is the same EchoStar (the parent of the Dish satellite-TV brand) had stockpiled for its abandoned attempt to become America's fourth carrier. The analysis finds the real obstacle is unchanged: not the airwaves, but the physical buildout of cell towers - the part Dish budgeted near $10 billion for and quit. SpaceX's own required buildout is unknown and plausibly smaller, and that unknown is the variable that decides the question.",
+  "deck": "Just after completing the largest US stock-market debut on record, SpaceX let it be known that it might sell Starlink mobile phone plans straight to US consumers, and one day build its own ground network to rival the big three carriers. The radio spectrum behind that idea is the same EchoStar (the parent of the Dish satellite-TV brand) had stockpiled for its abandoned attempt to become America's fourth carrier. The analysis finds the real obstacle is unchanged: not the airwaves, but the physical buildout of cell towers, the part Dish budgeted near $10 billion for and quit. SpaceX's own required buildout is unknown and plausibly smaller, and that unknown is the variable that decides the question.",
   "takeaways": [
-    "SpaceX agreed to pay EchoStar about $19.6 billion across two 2025 deals for the spectrum licenses (government permits to use specific radio frequencies) Dish had stockpiled for its failed bid to become America's fourth wireless carrier - $17 billion in September for the AWS-4 and H-block bands, and $2.6 billion in November for the AWS-3 band. The US regulator (the FCC) approved the deal in May 2026, with the transfer expected to fully close around late 2027.",
-    "A Starlink satellite mobile zone shares only about 2-4 Mbps (megabits per second, a measure of data speed) across every phone in a footprint hundreds of kilometers wide - fine for texts and filling rural gaps, but far below the per-user speed a city subscriber expects from a cell tower.",
-    "This kind of spectrum becomes real city-scale capacity only when it is broadcast from cell towers on the ground. Dish budgeted roughly $10 billion to build that ground network, spent about $3 billion, and walked away. SpaceX's own required buildout is unknown and plausibly smaller - and that unknown is exactly what decides the question.",
-    "The 'build our own network' line may be a bargaining tactic to win a wholesale deal (an MVNO arrangement, where you rent another carrier's network instead of building one) or to buy a carrier outright - T-Mobile, SpaceX's existing satellite partner, is the name analysts float - as much as it is a literal construction plan.",
+    "SpaceX agreed to pay EchoStar about $19.6 billion across two 2025 deals for the spectrum licenses (government permits to use specific radio frequencies) Dish had stockpiled for its failed bid to become America's fourth wireless carrier, $17 billion in September for the AWS-4 and H-block bands, and $2.6 billion in November for the AWS-3 band. The US regulator (the FCC) approved the deal in May 2026, with the transfer expected to fully close around late 2027.",
+    "A Starlink satellite mobile zone shares only about 2-4 Mbps (megabits per second, a measure of data speed) across every phone in a footprint hundreds of kilometers wide, fine for texts and filling rural gaps, but far below the per-user speed a city subscriber expects from a cell tower.",
+    "This kind of spectrum becomes real city-scale capacity only when it is broadcast from cell towers on the ground. Dish budgeted roughly $10 billion to build that ground network, spent about $3 billion, and walked away. SpaceX's own required buildout is unknown and plausibly smaller, and that unknown is exactly what decides the question.",
+    "The 'build our own network' line may be a bargaining tactic to win a wholesale deal (an MVNO arrangement, where you rent another carrier's network instead of building one) or to buy a carrier outright, T-Mobile, SpaceX's existing satellite partner, is the name analysts float, as much as it is a literal construction plan.",
     "Separate the market reaction (the big carriers' May 2026 defensive joint venture) from the economic effect (whether concrete and steel actually get poured)."
   ],
   "event": "On 25 June 2026, days after SpaceX completed what was the largest US IPO on record (an IPO, or initial public offering, is when a company first sells shares to the public), the Financial Times reported that SpaceX President Gwynne Shotwell had told investors during the company's IPO roadshow (the investor-pitch tour that precedes a share sale) that the company may sell Starlink mobile plans directly to US consumers and could one day build a ground-based network to rival Verizon, AT&T and T-Mobile. The hedged 'may/could' framing is preserved deliberately; this is an aspiration floated to investors, not an announced plan.",
-  "question": "Does owning roughly $19.6 billion of EchoStar's ground-based spectrum, plus the Starlink satellite network, change the economics of becoming a US retail carrier enough for SpaceX to succeed where the spectrum's previous owner (Dish/EchoStar) just failed - or does the disclosure describe the spectrum as leverage for a wholesale deal rather than a genuine fourth ground network?",
+  "question": "Does owning roughly $19.6 billion of EchoStar's ground-based spectrum, plus the Starlink satellite network, change the economics of becoming a US retail carrier enough for SpaceX to succeed where the spectrum's previous owner (Dish/EchoStar) just failed, or does the disclosure describe the spectrum as leverage for a wholesale deal rather than a genuine fourth ground network?",
   "readingMinutes": 9,
   "tags": [
     "SpaceX",
@@ -32,7 +32,7 @@
       "subtitle": "SpaceX's one-time spectrum purchase, next to the network buildout Dish budgeted and never finished. Different kinds of dollars, shown together to make one point.",
       "source": "EchoStar 8-K filings via SEC EDGAR (Sept and Nov 2025); Inside Towers and Cord Cutters News on Dish buildout budget and spend through Q3 2022",
       "units": "$ billion",
-      "note": "The first bar is a one-time asset purchase (spectrum licenses). The other two are network-construction spending (capital expenditure, or capex). They are deliberately placed on one axis to show the gap between owning airwaves and building a network - not to imply the three are the same kind of spending. Dish's total spectrum outlay across all bands was higher than $19.6B; this chart compares the price of the bands SpaceX bought to the buildout cost, not Dish's full spectrum stock.",
+      "note": "The first bar is a one-time asset purchase (spectrum licenses). The other two are network-construction spending (capital expenditure, or capex). They are deliberately placed on one axis to show the gap between owning airwaves and building a network, not to imply the three are the same kind of spending. Dish's total spectrum outlay across all bands was higher than $19.6B; this chart compares the price of the bands SpaceX bought to the buildout cost, not Dish's full spectrum stock.",
       "alt": "Horizontal bars in billions of dollars: SpaceX agreed to pay EchoStar for AWS-4, H-block and AWS-3 spectrum in 2025, about 19.6 (highlighted); cost Dish budgeted to build its nationwide network, about 10; what Dish actually spent on the buildout before quitting, about 3 (highlighted).",
       "data": {
         "max": 22,
@@ -75,7 +75,7 @@
       "data": {
         "value": "$11.4B",
         "label": "Starlink 2025 revenue, about 61% of SpaceX's total",
-        "sub": "Roughly $4.4B of operating profit (what a business unit earns from its core operations) - enough to fund either a serious buildout or a patient wait for a good wholesale deal"
+        "sub": "Roughly $4.4B of operating profit (what a business unit earns from its core operations), enough to fund either a serious buildout or a patient wait for a good wholesale deal"
       }
     },
     {
@@ -126,11 +126,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "On 25 June 2026, days after SpaceX completed what was reported as the largest US stock-market debut on record, the Financial Times reported that SpaceX President Gwynne Shotwell had told investors - during the IPO roadshow, the investor-pitch tour that leads up to selling shares - that the company may sell Starlink mobile plans directly to US consumers and could one day build its own ground-based network to rival Verizon, AT&T and T-Mobile. Note the hedges: 'may' and 'could,' not 'will.' This is a forward-looking aspiration floated to help sell a stock offering, which is precisely why its credibility is worth testing rather than taking at face value."
+          "text": "On 25 June 2026, days after SpaceX completed what was reported as the largest US stock-market debut on record, the Financial Times reported that SpaceX President Gwynne Shotwell had told investors, during the IPO roadshow, the investor-pitch tour that leads up to selling shares, that the company may sell Starlink mobile plans directly to US consumers and could one day build its own ground-based network to rival Verizon, AT&T and T-Mobile. Note the hedges: 'may' and 'could,' not 'will.' This is a forward-looking aspiration floated to help sell a stock offering, which is precisely why its credibility is worth testing rather than taking at face value."
         },
         {
           "type": "p",
-          "text": "It lands with sharp irony. The spectrum underwriting the pitch - roughly $19.6 billion of licenses SpaceX agreed to buy from EchoStar in two deals in late 2025 - is the same set of airwaves Dish stockpiled when it tried, and failed, to become America's fourth carrier. (EchoStar is the parent company of the Dish satellite-TV brand; the two names refer to the same business.) The asset behind the boast is the asset that did not save Dish."
+          "text": "It lands with sharp irony. The spectrum underwriting the pitch, roughly $19.6 billion of licenses SpaceX agreed to buy from EchoStar in two deals in late 2025, is the same set of airwaves Dish stockpiled when it tried, and failed, to become America's fourth carrier. (EchoStar is the parent company of the Dish satellite-TV brand; the two names refer to the same business.) The asset behind the boast is the asset that did not save Dish."
         }
       ]
     },
@@ -139,7 +139,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Strip away the spectacle and one question decides whether the pitch is real: does owning roughly $19.6 billion of EchoStar's ground-based spectrum, plus the Starlink satellite network, change the economics of becoming a US retail carrier enough that SpaceX can win where the spectrum's last owner just lost? Or is the 'build our own network' line really the spectrum used as leverage - a believable threat used to win a wholesale deal, not a plan to pour concrete?"
+          "text": "Strip away the spectacle and one question decides whether the pitch is real: does owning roughly $19.6 billion of EchoStar's ground-based spectrum, plus the Starlink satellite network, change the economics of becoming a US retail carrier enough that SpaceX can win where the spectrum's last owner just lost? Or is the 'build our own network' line really the spectrum used as leverage, a believable threat used to win a wholesale deal, not a plan to pour concrete?"
         },
         {
           "type": "pullquote",
@@ -152,11 +152,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "The spectrum changed hands in two steps. EchoStar's filings with the SEC (the Securities and Exchange Commission, the US agency that requires public companies to disclose financial facts) document a sale to SpaceX of about $17 billion in September 2025, covering the AWS-4 and H-block bands, and a further roughly $2.6 billion in November 2025, covering the AWS-3 band - $19.6 billion combined. These are airwaves originally meant to anchor Dish's own network. SpaceX is already T-Mobile's satellite partner for direct-to-cell service (letting an ordinary phone connect to a satellite when it is out of tower range), which makes any move to sell mobile service directly a shift from supplier to competitor."
+          "text": "The spectrum changed hands in two steps. EchoStar's filings with the SEC (the Securities and Exchange Commission, the US agency that requires public companies to disclose financial facts) document a sale to SpaceX of about $17 billion in September 2025, covering the AWS-4 and H-block bands, and a further roughly $2.6 billion in November 2025, covering the AWS-3 band, $19.6 billion combined. These are airwaves originally meant to anchor Dish's own network. SpaceX is already T-Mobile's satellite partner for direct-to-cell service (letting an ordinary phone connect to a satellite when it is out of tower range), which makes any move to sell mobile service directly a shift from supplier to competitor."
         },
         {
           "type": "p",
-          "text": "The big carriers appear to have already flinched. On 14 May 2026, Verizon, AT&T and T-Mobile announced a plan to pool spectrum in a defensive direct-to-device joint venture (a separate company jointly owned by the three) - a market reaction that, if it closes, arrived before SpaceX has signed a single retail subscriber. That reaction is worth watching, but it is not the same thing as the economic question of whether SpaceX can actually serve a city. (A three-way arrangement among direct competitors invites antitrust scrutiny - regulators checking whether it harms competition - and at announcement it was still an agreement in principle, not a closed deal.)"
+          "text": "The big carriers appear to have already flinched. On 14 May 2026, Verizon, AT&T and T-Mobile announced a plan to pool spectrum in a defensive direct-to-device joint venture (a separate company jointly owned by the three), a market reaction that, if it closes, arrived before SpaceX has signed a single retail subscriber. That reaction is worth watching, but it is not the same thing as the economic question of whether SpaceX can actually serve a city. (A three-way arrangement among direct competitors invites antitrust scrutiny, regulators checking whether it harms competition, and at announcement it was still an agreement in principle, not a closed deal.)"
         }
       ]
     },
@@ -165,7 +165,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Put the spending on one honest axis and the gap is the story. SpaceX agreed to pay about $19.6 billion for the spectrum. But that is a one-time purchase of an asset, not a network. The thing that turns licenses into a service people can buy is the ground buildout - and there Dish budgeted roughly $10 billion, spent about $3 billion through the third quarter of 2022, and walked away."
+          "text": "Put the spending on one honest axis and the gap is the story. SpaceX agreed to pay about $19.6 billion for the spectrum. But that is a one-time purchase of an asset, not a network. The thing that turns licenses into a service people can buy is the ground buildout, and there Dish budgeted roughly $10 billion, spent about $3 billion through the third quarter of 2022, and walked away."
         },
         {
           "type": "chart",
@@ -173,7 +173,7 @@
         },
         {
           "type": "p",
-          "text": "A caution the chart itself flags: the first bar (the spectrum price) and the next two (construction spending) are different kinds of dollars. They share an axis to make one point only - owning airwaves is the cheap, easy part, and the expensive, unfinished part is the towers. Dish's full spectrum spending across all its bands ran well above $19.6 billion, so this is not a claim that SpaceX bought 'all of Dish' at a discount. It bought the AWS-4, H-block and AWS-3 slice."
+          "text": "A caution the chart itself flags: the first bar (the spectrum price) and the next two (construction spending) are different kinds of dollars. They share an axis to make one point only, owning airwaves is the cheap, easy part, and the expensive, unfinished part is the towers. Dish's full spectrum spending across all its bands ran well above $19.6 billion, so this is not a claim that SpaceX bought 'all of Dish' at a discount. It bought the AWS-4, H-block and AWS-3 slice."
         }
       ]
     },
@@ -204,7 +204,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Honesty requires putting the strongest version of the other side. The reason 'towers are the real obstacle' might be wrong for SpaceX specifically: SpaceX is vertically integrated to a degree Dish never was - that is, it builds most of its own gear in house. It builds its own rockets, satellites and phased-array antennas (the flat antennas that steer a signal electronically without moving), and it owns this spectrum outright rather than carrying the $20-billion-plus debt load that helped strangle Dish. Dish's task was a debt-financed nationwide network built from scratch. SpaceX's task, if it ever builds, could be a far thinner city overlay - towers only where satellite capacity runs out, stitched to a satellite network that covers everywhere else. That is a smaller, cheaper problem than the one Dish failed, and a profitable Starlink could pay for it out of its own cash flow without new debt."
+          "text": "Honesty requires putting the strongest version of the other side. The reason 'towers are the real obstacle' might be wrong for SpaceX specifically: SpaceX is vertically integrated to a degree Dish never was, that is, it builds most of its own gear in house. It builds its own rockets, satellites and phased-array antennas (the flat antennas that steer a signal electronically without moving), and it owns this spectrum outright rather than carrying the $20-billion-plus debt load that helped strangle Dish. Dish's task was a debt-financed nationwide network built from scratch. SpaceX's task, if it ever builds, could be a far thinner city overlay, towers only where satellite capacity runs out, stitched to a satellite network that covers everywhere else. That is a smaller, cheaper problem than the one Dish failed, and a profitable Starlink could pay for it out of its own cash flow without new debt."
         },
         {
           "type": "p",
@@ -221,7 +221,7 @@
         },
         {
           "type": "p",
-          "text": "Reading two: the line is leverage. The most-discussed path is a wholesale deal - an MVNO arrangement, where SpaceX rents capacity from an existing carrier instead of building its own towers - using the believable threat of a buildout, and the spectrum that makes the threat believable, to win favorable terms, or even to set up buying a carrier outright. T-Mobile, SpaceX's existing direct-to-cell partner, is the name analysts at TD Cowen single out as the likeliest target. In this reading the testable claim can be entirely true (satellites cannot serve cities alone) while SpaceX still wins commercially without ever pouring concrete. The roadshow timing fits: 'we could build our own network' is also a way to raise the value of the share offering and a bargaining chip."
+          "text": "Reading two: the line is leverage. The most-discussed path is a wholesale deal, an MVNO arrangement, where SpaceX rents capacity from an existing carrier instead of building its own towers, using the believable threat of a buildout, and the spectrum that makes the threat believable, to win favorable terms, or even to set up buying a carrier outright. T-Mobile, SpaceX's existing direct-to-cell partner, is the name analysts at TD Cowen single out as the likeliest target. In this reading the testable claim can be entirely true (satellites cannot serve cities alone) while SpaceX still wins commercially without ever pouring concrete. The roadshow timing fits: 'we could build our own network' is also a way to raise the value of the share offering and a bargaining chip."
         },
         {
           "type": "chart",
@@ -229,16 +229,16 @@
         },
         {
           "type": "p",
-          "text": "The cash engine is real either way. Starlink generated about $11.4 billion of revenue in 2025, roughly 61% of SpaceX's total (SpaceX's total revenue was about $18.7 billion), with about $4.4 billion of operating profit. That is enough to fund a serious overlay - and also enough to wait patiently for a good wholesale deal. Money does not settle which reading is correct; only towers do."
+          "text": "The cash engine is real either way. Starlink generated about $11.4 billion of revenue in 2025, roughly 61% of SpaceX's total (SpaceX's total revenue was about $18.7 billion), with about $4.4 billion of operating profit. That is enough to fund a serious overlay, and also enough to wait patiently for a good wholesale deal. Money does not settle which reading is correct; only towers do."
         }
       ]
     },
     {
-      "heading": "The Dish rhyme - and where it breaks",
+      "heading": "The Dish rhyme, and where it breaks",
       "blocks": [
         {
           "type": "p",
-          "text": "The historical comparison is unusually exact because it is the same spectrum. Between 2019 and 2025, Dish was ordered to build a fourth carrier as a condition of the T-Mobile/Sprint merger, committed roughly $10 billion to a from-scratch 5G network built on open-RAN (an open, multi-vendor way of building a cellular network instead of buying it all from one supplier), reached 70% population coverage by its June 2023 FCC deadline, and then exited - selling the very licenses now in SpaceX's hands."
+          "text": "The historical comparison is unusually exact because it is the same spectrum. Between 2019 and 2025, Dish was ordered to build a fourth carrier as a condition of the T-Mobile/Sprint merger, committed roughly $10 billion to a from-scratch 5G network built on open-RAN (an open, multi-vendor way of building a cellular network instead of buying it all from one supplier), reached 70% population coverage by its June 2023 FCC deadline, and then exited, selling the very licenses now in SpaceX's hands."
         },
         {
           "type": "chart",
@@ -246,7 +246,7 @@
         },
         {
           "type": "p",
-          "text": "But the rhyme breaks in three places, and each one matters. First, Dish carried crushing debt; SpaceX is paying with cash and stock and funding itself from Starlink profit. Second, Dish had to build everywhere to hit federal coverage deadlines; SpaceX, with a satellite network already overhead, could in principle build only where satellites run short - a smaller footprint. Third, Dish was a satellite-TV company in decline learning to be a network operator; SpaceX is the lowest-cost launch and hardware builder on the planet. The spectrum that failed Dish is identical. The company holding it, and the size of the job it actually faces, are not."
+          "text": "But the rhyme breaks in three places, and each one matters. First, Dish carried crushing debt; SpaceX is paying with cash and stock and funding itself from Starlink profit. Second, Dish had to build everywhere to hit federal coverage deadlines; SpaceX, with a satellite network already overhead, could in principle build only where satellites run short, a smaller footprint. Third, Dish was a satellite-TV company in decline learning to be a network operator; SpaceX is the lowest-cost launch and hardware builder on the planet. The spectrum that failed Dish is identical. The company holding it, and the size of the job it actually faces, are not."
         }
       ]
     },
@@ -255,26 +255,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "The base case, on the public evidence, is leverage. The cleanest read of a hedged 'may/could' line surfaced during a roadshow, from a company that is already T-Mobile's satellite partner and sits on a fully paid-for spectrum trove, is that the buildout threat is being used to negotiate - a wholesale deal, better partner terms, or eventually a carrier acquisition - rather than announced as a plan. The carriers' defensive joint venture is consistent with rivals who believe the threat is believable, which is exactly what makes leverage work."
+          "text": "The base case, on the public evidence, is leverage. The cleanest read of a hedged 'may/could' line surfaced during a roadshow, from a company that is already T-Mobile's satellite partner and sits on a fully paid-for spectrum trove, is that the buildout threat is being used to negotiate, a wholesale deal, better partner terms, or eventually a carrier acquisition, rather than announced as a plan. The carriers' defensive joint venture is consistent with rivals who believe the threat is believable, which is exactly what makes leverage work."
         },
         {
           "type": "p",
-          "text": "The alternative case is that SpaceX builds a thin city overlay, because for SpaceX specifically the cost of doing so may be a fraction of what defeated Dish. That case becomes real only when concrete is poured, tower leases are signed, or ground-based spectrum is switched on in cities - not when a number is floated to investors."
+          "text": "The alternative case is that SpaceX builds a thin city overlay, because for SpaceX specifically the cost of doing so may be a fraction of what defeated Dish. That case becomes real only when concrete is poured, tower leases are signed, or ground-based spectrum is switched on in cities, not when a number is floated to investors."
         },
         {
           "type": "callout",
           "label": "What to watch",
-          "text": "Three signals separate the readings, in rising order of how much they would settle it: (1) a Starlink-branded retail MVNO launch riding an existing carrier's network - that is leverage cashing in, not a fourth network; (2) SpaceX FCC applications or tower-lease activity to deploy its AWS-4, H-block or AWS-3 spectrum from the ground in metro markets - the first hard evidence of an actual build; (3) a disclosed SpaceX buildout budget. If that budget lands well below Dish's $10 billion, the economics that sank the last owner may not apply to the new one. Until one of these appears, treat the boast as priced-in ambition, not a network."
+          "text": "Three signals separate the readings, in rising order of how much they would settle it: (1) a Starlink-branded retail MVNO launch riding an existing carrier's network, that is leverage cashing in, not a fourth network; (2) SpaceX FCC applications or tower-lease activity to deploy its AWS-4, H-block or AWS-3 spectrum from the ground in metro markets, the first hard evidence of an actual build; (3) a disclosed SpaceX buildout budget. If that budget lands well below Dish's $10 billion, the economics that sank the last owner may not apply to the new one. Until one of these appears, treat the boast as priced-in ambition, not a network."
         }
       ]
     }
   ],
   "methodology": [
-    "Framed the inquiry as one narrow, testable question - can SpaceX become a US retail carrier on the same spectrum Dish abandoned - rather than a broad overview of the IPO.",
+    "Framed the inquiry as one narrow, testable question, can SpaceX become a US retail carrier on the same spectrum Dish abandoned, rather than a broad overview of the IPO.",
     "Traced the spectrum's chain of custody using EchoStar's SEC 8-K disclosures (the September 2025 sale of AWS-4 and H-block licenses for ~$17B and the November 2025 sale of AWS-3 licenses for ~$2.6B to SpaceX, summing to ~$19.6B) and reconciled the two tranches (17 + 2.6 = 19.6) for internal consistency.",
     "Separated three distinct quantities that are easy to conflate: the spectrum purchase price (a one-time asset), network buildout spending (recurring construction), and Dish's full multi-band spectrum stock (larger than the bands SpaceX bought). The lead chart compares only the first two and labels the difference explicitly.",
     "Distinguished the market reaction (the May 2026 carrier joint venture, an observable defensive move) from the economic effect (whether a competitive city network is actually built), and refused to treat the former as proof of the latter.",
-    "Stress-tested the central thesis by stating the strongest counterargument - SpaceX's in-house manufacturing, debt-free spectrum ownership, and the possibility of a thin city overlay rather than a nationwide from-scratch build - and concluded the deciding variable (SpaceX's required buildout cost) is unknown on the public record.",
+    "Stress-tested the central thesis by stating the strongest counterargument, SpaceX's in-house manufacturing, debt-free spectrum ownership, and the possibility of a thin city overlay rather than a nationwide from-scratch build, and concluded the deciding variable (SpaceX's required buildout cost) is unknown on the public record.",
     "Preserved the hedged 'may/could' language of Shotwell's reported remarks rather than hardening it into stated intent.",
     "Confirmed each load-bearing number, date, name and quote against a primary or reputable source (EchoStar/SEC filings and FCC actions; Financial Times, CNBC, Morningstar, SpaceNews; independent direct-to-cell measurement studies) before publication."
   ],
@@ -374,7 +374,7 @@
     },
     {
       "term": "Buildout",
-      "definition": "The physical work of constructing a network - cell towers, antennas and equipment - so the spectrum can actually carry traffic."
+      "definition": "The physical work of constructing a network, cell towers, antennas and equipment, so the spectrum can actually carry traffic."
     },
     {
       "term": "Cell tower",
@@ -398,7 +398,7 @@
     },
     {
       "term": "Footprint",
-      "definition": "The area on the ground that a single satellite beam or signal covers - here, a region hundreds of kilometers wide."
+      "definition": "The area on the ground that a single satellite beam or signal covers, here, a region hundreds of kilometers wide."
     },
     {
       "term": "Mbps (megabits per second)",
@@ -458,7 +458,7 @@
     },
     {
       "term": "Buildout milestone",
-      "definition": "A coverage deadline the FCC sets - for example, reaching 70% of the population by a certain date - that a license holder must meet."
+      "definition": "A coverage deadline the FCC sets, for example, reaching 70% of the population by a certain date, that a license holder must meet."
     },
     {
       "term": "Escrow",
@@ -498,7 +498,7 @@
     },
     {
       "term": "Vertical integration",
-      "definition": "When one company makes most of the things it needs in house - SpaceX builds its own rockets, satellites and antennas."
+      "definition": "When one company makes most of the things it needs in house, SpaceX builds its own rockets, satellites and antennas."
     },
     {
       "term": "Phased-array antenna",
@@ -510,7 +510,7 @@
     },
     {
       "term": "Incumbent",
-      "definition": "An established company already operating in a market - here, the existing carriers Verizon, AT&T and T-Mobile."
+      "definition": "An established company already operating in a market, here, the existing carriers Verizon, AT&T and T-Mobile."
     },
     {
       "term": "Boost Mobile",
@@ -573,16 +573,16 @@
   "keyPoints": [
     "SpaceX agreed to pay EchoStar about $19.6 billion across two 2025 deals for the AWS-4, H-block and AWS-3 spectrum Dish stockpiled for its failed fourth-carrier bid; the FCC cleared the deal in May 2026 with full close expected around late 2027.",
     "Buying the airwaves was the cheap part: Dish budgeted roughly $10 billion to build the ground network, spent about $3 billion, and quit. SpaceX's own required buildout cost is unknown and plausibly smaller.",
-    "A Starlink direct-to-cell beam shares only about 2-4 Mbps across every phone in a footprint hundreds of kilometers wide - fine for texts and rural gaps, far below what a city tower delivers per user.",
-    "Starlink generated about $11.4 billion of revenue in 2025 (roughly 61% of SpaceX's total) with about $4.4 billion of operating profit - enough to fund a serious buildout or wait patiently for a wholesale deal.",
+    "A Starlink direct-to-cell beam shares only about 2-4 Mbps across every phone in a footprint hundreds of kilometers wide, fine for texts and rural gaps, far below what a city tower delivers per user.",
+    "Starlink generated about $11.4 billion of revenue in 2025 (roughly 61% of SpaceX's total) with about $4.4 billion of operating profit, enough to fund a serious buildout or wait patiently for a wholesale deal.",
     "The base case on public evidence is leverage: the buildout 'threat' may be aimed at winning a wholesale (MVNO) deal or buying a carrier outright, with T-Mobile floated as the likeliest target."
   ],
-  "whyItMatters": "The prospect of SpaceX entering US retail wireless puts pressure on Verizon, AT&T and T-Mobile, whose May 2026 defensive direct-to-device joint venture suggests they already take the threat seriously. The outcome shapes how a fourth competitive force - or a new wholesale buyer - could reprice mobile plans for consumers and redirect billions in carrier capex. For investors, it bears on SpaceX's post-IPO equity story and on the incumbent carriers whose moats depend on the very tower buildout that defeated Dish.",
+  "whyItMatters": "The prospect of SpaceX entering US retail wireless puts pressure on Verizon, AT&T and T-Mobile, whose May 2026 defensive direct-to-device joint venture suggests they already take the threat seriously. The outcome shapes how a fourth competitive force, or a new wholesale buyer, could reprice mobile plans for consumers and redirect billions in carrier capex. For investors, it bears on SpaceX's post-IPO equity story and on the incumbent carriers whose moats depend on the very tower buildout that defeated Dish.",
   "whatToWatch": [
     "A Starlink-branded retail MVNO launch riding an existing carrier's network, which would signal leverage cashing in rather than a fourth network being built.",
-    "SpaceX FCC applications or tower-lease activity to deploy its AWS-4, H-block or AWS-3 spectrum from the ground in metro markets - the first hard evidence of an actual build.",
+    "SpaceX FCC applications or tower-lease activity to deploy its AWS-4, H-block or AWS-3 spectrum from the ground in metro markets, the first hard evidence of an actual build.",
     "A disclosed SpaceX buildout budget; if it lands well below Dish's roughly $10 billion, the economics that sank the prior owner may not apply.",
     "Whether the Verizon/AT&T/T-Mobile direct-to-device joint venture closes and survives antitrust scrutiny, plus the spectrum transfer's full close expected around late 2027."
   ],
-  "subheadline": "SpaceX's $19.6 billion EchoStar spectrum buy makes a US retail mobile play conceivable, but the same obstacle that sank Dish - building cell towers, not owning airwaves - still decides whether the pitch is real or just leverage."
+  "subheadline": "SpaceX's $19.6 billion EchoStar spectrum buy makes a US retail mobile play conceivable, but the same obstacle that sank Dish, building cell towers, not owning airwaves, still decides whether the pitch is real or just leverage."
 }

@@ -197,7 +197,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </p>
             {article.glossary && article.glossary.length > 0 && (
               <p className="mt-[10px] text-[12px] leading-[1.4] text-smoke">
-                Underlined terms have a plain-language definition - hover or tap to read.
+                Hover or tap an underlined term to see its definition.
               </p>
             )}
           </header>

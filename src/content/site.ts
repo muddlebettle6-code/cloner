@@ -17,9 +17,9 @@ export const ORG = {
 
 // Primary navigation. Homepage uses #target anchors; each topic also has a route.
 export const NAV: NavItem[] = [
+  { label: "Newsroom", target: "articles", route: "/articles", routeOnly: true },
   { label: "Research", target: "research", route: "/research" },
   { label: "Papers", target: "papers", route: "/papers", routeOnly: true },
-  { label: "Articles", target: "articles", route: "/articles", routeOnly: true },
   { label: "Methods", target: "methods", route: "/methods" },
   { label: "Systems", target: "systems", route: "/systems" },
   { label: "Principles", target: "principles", route: "/principles" },

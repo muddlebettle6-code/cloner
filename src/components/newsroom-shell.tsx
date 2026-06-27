@@ -11,7 +11,7 @@ export function NewsroomShell({ children }: { children: React.ReactNode }) {
     <>
       <Header solid />
       <main className="bg-cream pt-[60px]">
-        <div className="mx-auto max-w-[1180px] px-[20px] pb-[72px] md:px-[40px]">{children}</div>
+        <div className="mx-auto max-w-[1600px] px-[15px] pb-[64px] md:px-[30px]">{children}</div>
       </main>
       <Footer />
     </>

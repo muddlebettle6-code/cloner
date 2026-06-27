@@ -341,7 +341,7 @@
     }
   ],
   "methodology": [
-    "Implied-growth calculation: fully diluted equity value = ~260.97M fully diluted shares x $60 = ~$15.66B (share count and Up-C structure from Quantinuum S-1/A). Required FY2030 revenue = equity value / assumed terminal forward P/S. Required CAGR = (required revenue / $30.9M FY2025 base)^(1/5) - 1. Computed for terminal multiples of 5x, 8x, 10x, 15x, and separately with 10-15% annual IPO-buyer returns layered on the 10x case. Verified in Python.",
+    "Implied-growth calculation: fully diluted equity value = ~260.97M fully diluted shares x $60 = ~$15.66B (share count and Up-C structure from Quantinuum S-1/A). Required FY2030 revenue = equity value / assumed terminal forward P/S. Required CAGR = (required revenue / $30.9M FY2025 base)^(1/5), 1. Computed for terminal multiples of 5x, 8x, 10x, 15x, and separately with 10-15% annual IPO-buyer returns layered on the 10x case. Verified in Python.",
     "Terminal multiple is an explicit assumption, not an observation. We use a band of 8x-15x (10x base) reflecting where mature, still-growing technology businesses commonly trade on forward sales, and report full sensitivity rather than a single number. The robust finding is that all reasonable cases require triple-digit growth; the precise figure is assumption-dependent.",
     "Backlog annualization: remaining performance obligations of $76.8M (as of 31 Mar 2026) are a stock of signed contracts. We annualize them (roughly $20M/yr on an even-split basis, up to ~$27M in year one given ~35% expected within 12 months) before comparing to a single year of implied revenue, so a stock is never compared directly to a flow.",
     "Peer backlog test applied symmetrically: IonQ's $470M RPO compared to its ~$265M FY2026 guidance midpoint (~1.8x), establishing that the entire sector is priced ahead of its order books, not Quantinuum alone.",
@@ -380,7 +380,7 @@
       "publisher": "The Quantum Insider"
     },
     {
-      "title": "Quantinuum Inc. - Form S-1/A (FY2026)",
+      "title": "Quantinuum Inc., Form S-1/A (FY2026)",
       "url": "https://www.sec.gov/Archives/edgar/data/2110105/000162828026039286/quantinuum-sx1a2.htm",
       "kind": "primary",
       "publisher": "U.S. Securities and Exchange Commission"
@@ -638,7 +638,7 @@
   "leadImage": {
     "src": "/images/articles/quantinuum-ipo-implied-growth-wall.jpg",
     "credit": "Photo: Y. Colombe / National Institute of Standards and Technology (NIST), Public Domain, via Wikimedia Commons",
-    "caption": "A trapped-ion device built by NIST physicists confines charged atoms above a gold chip - the same trapped-ion approach Quantinuum, whose $15.7 billion IPO priced at roughly 507 times sales, uses to build its quantum computers.",
+    "caption": "A trapped-ion device built by NIST physicists confines charged atoms above a gold chip, the same trapped-ion approach Quantinuum, whose $15.7 billion IPO priced at roughly 507 times sales, uses to build its quantum computers.",
     "alt": "Close-up of a NIST trapped-ion quantum computing apparatus showing a gold ion-trap chip surrounded by copper enclosure and a gold wire mesh used to manipulate beryllium ions."
   },
   "primarySection": "markets",

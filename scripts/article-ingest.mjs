@@ -31,7 +31,12 @@ if (publish && !a.publishedAt) a.publishedAt = new Date().toISOString();
 // House style: normalize em/en dashes (and minus signs) to plain hyphens
 // everywhere, so a stray dash never blocks an otherwise-good article.
 const declash = (o) => {
-  if (typeof o === "string") return o.replace(/[—–−]/g, "-");
+  if (typeof o === "string")
+    return o
+      .replace(/\s+[-—–]\s+/g, ", ") // dash used as a separator -> comma
+      .replace(/[—–−]/g, "-") // any remaining em/en/minus -> plain hyphen
+      .replace(/,\s*,/g, ",") // tidy double commas
+      .replace(/\s{2,}/g, " ");
   if (Array.isArray(o)) {
     for (let i = 0; i < o.length; i++) o[i] = declash(o[i]);
     return o;

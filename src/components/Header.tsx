@@ -52,7 +52,7 @@ export function Header({ solid = false }: { solid?: boolean }) {
           solid ? "border-b border-clay bg-cream" : scrolled ? "bg-white" : "bg-transparent"
         )}
       >
-        <div className="mx-auto flex h-full max-w-[1180px] items-center justify-between px-[20px] md:px-[40px]">
+        <div className="mx-auto flex h-full max-w-[1600px] items-center justify-between px-[15px] md:px-[30px]">
           <Link href="/" aria-label={ORG.name} className="enter transition-opacity duration-300 hover:opacity-70" style={{ animationDelay: "0ms" }}>
             <Wordmark />
           </Link>

@@ -320,7 +320,7 @@
         },
         {
           "type": "pullquote",
-          "text": "\"It's definitely jitters about AI. But is it a passing thing, or is it something more permanent?\" - an analyst quoted by Al Jazeera, June 23, before the OpenAI report."
+          "text": "\"It's definitely jitters about AI. But is it a passing thing, or is it something more permanent?\", an analyst quoted by Al Jazeera, June 23, before the OpenAI report."
         },
         {
           "type": "chart",
@@ -592,10 +592,10 @@
   "confidenceLevel": "medium",
   "keyPoints": [
     "The AI-stock sell-off began June 22-23 with SpaceX's roughly 16 percent slump and a chip-led rout that erased about $600 billion across tech, before the OpenAI IPO-delay report crossed.",
-    "On June 25, the day the New York Times report on OpenAI's likely 2027 listing actually broke in the US, the Nasdaq Composite closed down just 0.24 percent - a whisper, not a bang.",
+    "On June 25, the day the New York Times report on OpenAI's likely 2027 listing actually broke in the US, the Nasdaq Composite closed down just 0.24 percent, a whisper, not a bang.",
     "The one large post-report move was SoftBank's 12.53 percent drop in Tokyo on June 26 (about $38 billion erased), concentrated in the single public stock that serves as a direct OpenAI proxy.",
     "June 26's broad Asian rout, including a Kospi circuit breaker and a roughly 5.8 percent close, was blamed largely on Apple's AI-hardware cost warning and memory-chip pricing, not OpenAI alone.",
-    "An event study lining up the price moves against the clock points to the delay being a thermometer confirming a repricing already underway, not the match that lit it - echoing WeWork in 2019."
+    "An event study lining up the price moves against the clock points to the delay being a thermometer confirming a repricing already underway, not the match that lit it, echoing WeWork in 2019."
   ],
   "whyItMatters": "Getting the causal arrow right reframes the trade: if the OpenAI delay triggered the sell-off, June 26 marks the start of a re-rating of private AI valuations and a reason to sell; if it merely confirmed an existing repricing, the real drivers are AI capex returns and a hawkish Fed under new Chair Kevin Warsh. The episode hits chipmakers like Nvidia, AMD and Micron, AI investors like SoftBank, and the broad tech-heavy indices that dominate most equity portfolios. It also sets a benchmark for how much investors will pay for the most valuable private company in AI, with implications for the wider IPO and venture market.",
   "whatToWatch": [
