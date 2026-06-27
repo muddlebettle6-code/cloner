@@ -228,7 +228,8 @@ def main() -> None:
             "editorial metadata, based ONLY on the article. Return JSON with: primarySection (one of: markets, "
             "economy, politics, policy, geopolitics, business, technology, ai, banking, investing, "
             "personal-finance, real-estate, energy, commodities, healthcare, consumer, labor, trade, deals, "
-            "crypto, global-markets, research, explainers, opinion, breaking); articleType (one of: breaking, "
+            "crypto, global-markets, research, explainers, opinion, breaking); secondarySections (0-2 OTHER "
+            "slugs from that same list that the story also clearly belongs to, for cross-listing); articleType (one of: breaking, "
             "news-analysis, market-brief, explainer, data-story, company-analysis, policy-impact, geopolitical, "
             "personal-finance-guide, feature, research-note, opinion); companies[]; people[]; regions[]; "
             "industries[]; assetClasses[]; impactTags[]; topicTags[] (2-6 controlled, non-duplicative); "
@@ -238,9 +239,9 @@ def main() -> None:
             "forward-looking).\n\nARTICLE:\n"
             f"{json.dumps({k: final.get(k) for k in ('headline', 'deck', 'event', 'question', 'takeaways', 'sections')})[:13000]}",
             web=False))
-        for k in ("articleType", "companies", "people", "regions", "industries", "assetClasses", "impactTags",
-                  "readerLevel", "timeHorizon", "newsScore", "confidenceLevel", "keyPoints", "whyItMatters",
-                  "whatToWatch"):
+        for k in ("articleType", "secondarySections", "companies", "people", "regions", "industries",
+                  "assetClasses", "impactTags", "readerLevel", "timeHorizon", "newsScore", "confidenceLevel",
+                  "keyPoints", "whyItMatters", "whatToWatch"):
             if meta.get(k) is not None:
                 final[k] = meta[k]
         final["primarySection"] = seed_section or meta.get("primarySection") or "markets"

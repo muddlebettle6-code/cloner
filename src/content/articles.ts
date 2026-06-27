@@ -50,7 +50,7 @@ export function sectionOf(a: Article): string {
 }
 
 export function bySection(slug: string): Article[] {
-  return ARTICLES_BY_RECENCY.filter((a) => sectionOf(a) === slug);
+  return ARTICLES_BY_RECENCY.filter((a) => sectionOf(a) === slug || (a.secondarySections ?? []).includes(slug));
 }
 
 export function byType(slug: string): Article[] {
@@ -66,8 +66,8 @@ export function byTag(tag: string): Article[] {
 export function sectionCounts(): Record<string, number> {
   const c: Record<string, number> = {};
   for (const a of ARTICLES) {
-    const s = sectionOf(a);
-    c[s] = (c[s] ?? 0) + 1;
+    const secs = new Set([sectionOf(a), ...(a.secondarySections ?? [])]);
+    for (const s of secs) c[s] = (c[s] ?? 0) + 1;
   }
   return c;
 }

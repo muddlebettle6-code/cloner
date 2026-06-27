@@ -159,20 +159,20 @@ function page() {
 <title>Cumulant Newsroom</title><style>
 :root{--mag:#ff2d92;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{background:#fff;color:#000;font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;padding:48px 56px;max-width:1080px;margin:0 auto;}
+body{background:#fafafa;color:#111;font-family:"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;padding:34px 48px 72px;max-width:1120px;margin:0 auto;}
 .mono{font-family:ui-monospace,Menlo,monospace;}
-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e6e6e6;padding-bottom:20px;}
-.logo{display:flex;align-items:center;gap:12px;font-size:24px;letter-spacing:-.4px;}
-.logo svg{width:30px;height:24px;}
-.badge{font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding:7px 13px;border-radius:999px;}
-.bon{background:var(--mag);color:#fff;} .bidle{background:#f0f0f0;color:#8a8a8a;}
+header{display:flex;align-items:center;justify-content:space-between;color:#fff;background:linear-gradient(112deg,#140a1f 0%,#2a0f3a 40%,#6a1248 76%,#ff2d92 150%);border-radius:18px;padding:26px 30px;box-shadow:0 12px 44px rgba(40,8,50,.20);}
+.logo{display:flex;align-items:center;gap:13px;font-size:24px;letter-spacing:-.4px;color:#fff;}
+.logo svg{width:31px;height:25px;color:#fff;}
+.badge{font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding:8px 14px;border-radius:999px;}
+.bon{background:#fff;color:#7a1140;} .bidle{background:rgba(255,255,255,.16);color:rgba(255,255,255,.88);}
 h2{font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#9a9a9a;margin:42px 0 18px;}
 .pipe{display:flex;align-items:center;}
 .stage{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;text-align:center;width:74px;}
 .stage .dot{width:13px;height:13px;border-radius:50%;transition:.3s;}
 .bar{flex:1;height:1px;background:#e6e6e6;margin-bottom:22px;}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
-.kpi{border:1px solid #e6e6e6;border-radius:12px;padding:20px;}
+.kpi{border:1px solid #ececec;border-radius:14px;padding:20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.04);}
 .kpi .n{font-size:40px;letter-spacing:-1.5px;} .kpi .l{font-family:ui-monospace,monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#9a9a9a;margin-top:6px;}
 table{width:100%;border-collapse:collapse;font-size:14px;}
 td,th{text-align:left;padding:11px 10px;border-bottom:1px solid #efefef;vertical-align:top;}
@@ -186,7 +186,7 @@ td.c{text-align:center;width:54px;} a{color:#000;text-decoration:none;border-bot
 .alerts{list-style:none;} .alerts li{font-size:13px;color:#9a6a00;padding:8px 0;border-bottom:1px solid #f3f3f3;} .alerts li.ok{color:#0a8f3c;}
 </style></head><body>
 <header>
-  <div class="logo"><svg viewBox="0 0 30 24" fill="none"><path d="M2.5 18.6H27.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".35"/><path d="M3.5 18.6C8.6 18.6 10 5.6 15 5.6C20 5.6 21.4 18.6 26.5 18.6" stroke="#000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.4" cy="15" r="1.7" fill="#000"/></svg>Cumulant Newsroom</div>
+  <div class="logo"><svg viewBox="0 0 30 24" fill="none"><path d="M2.5 18.6H27.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".4"/><path d="M3.5 18.6C8.6 18.6 10 5.6 15 5.6C20 5.6 21.4 18.6 26.5 18.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.4" cy="15" r="1.7" fill="currentColor"/></svg>Cumulant Newsroom</div>
   <div class="badge ${live ? "bon" : "bidle"}">${live ? "writing now" : "idle - scanning hourly"}</div>
 </header>
 

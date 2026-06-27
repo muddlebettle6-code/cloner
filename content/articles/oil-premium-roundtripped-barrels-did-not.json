@@ -573,5 +573,15 @@
   "primarySection": "energy",
   "date": "2026-06-27",
   "byline": "Cumulant Research",
-  "publishedAt": "2026-06-27T16:03:06.553Z"
+  "publishedAt": "2026-06-27T16:03:06.553Z",
+  "secondarySections": [
+    "geopolitics",
+    "trade"
+  ],
+  "leadImage": {
+    "src": "/images/articles/oil-premium-roundtripped-barrels-did-not.jpg",
+    "credit": "Photo: Arne Huckelheim, CC BY-SA 3.0, via Wikimedia Commons",
+    "caption": "Pumpjacks work the Lost Hills oil field in California at sunset, a reminder that crude's flat price round-tripped its Hormuz war premium faster than the physical barrels came back.",
+    "alt": "Rows of oil pumpjacks silhouetted against an orange sunset sky on the Lost Hills oil field in California."
+  }
 }

@@ -693,5 +693,9 @@
     "Whether quarterly revenue begins a steady climb rather than swinging on one-off hardware deals like the prior sales-type lease.",
     "The post-IPO lockup expiry, when Honeywell and other insiders can begin swapping and selling Up-C units, and whether the multiple compresses through a falling price."
   ],
-  "subheadline": "A reverse-engineered look at what Quantinuum's $15.7 billion, 507-times-sales IPO price assumes about future growth, and how thin its signed-order backlog looks against that bar and against rivals."
+  "subheadline": "A reverse-engineered look at what Quantinuum's $15.7 billion, 507-times-sales IPO price assumes about future growth, and how thin its signed-order backlog looks against that bar and against rivals.",
+  "secondarySections": [
+    "technology",
+    "deals"
+  ]
 }

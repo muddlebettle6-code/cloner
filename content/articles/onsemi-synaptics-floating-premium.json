@@ -579,5 +579,9 @@
     "Any disclosure clarifying whether the exchange ratio carries a collar or floor that would bound the realized discount.",
     "Reactions from Synaptics' board, proxy advisers, and shareholders, including potential lawsuits or pressure to renegotiate given the deal currently values the target below its standalone price."
   ],
-  "subheadline": "A fixed-ratio all-stock deal shows how an advertised premium can invert into a discount overnight when the buyer's shares fall."
+  "subheadline": "A fixed-ratio all-stock deal shows how an advertised premium can invert into a discount overnight when the buyer's shares fall.",
+  "secondarySections": [
+    "technology",
+    "ai"
+  ]
 }

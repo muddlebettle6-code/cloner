@@ -307,6 +307,8 @@ export interface Article {
   // --- Newsroom classification (optional; back-compatible) ---
   /** Section slug from SECTIONS — the primary desk. */
   primarySection?: string;
+  /** Additional desks this story also belongs to (cross-listing). */
+  secondarySections?: string[];
   /** Article-type slug from ARTICLE_TYPES. */
   articleType?: string;
   /** Short kicker shown above the headline. */

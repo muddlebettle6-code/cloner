@@ -704,5 +704,9 @@
     "Whether the entry iPad stays elevated (holding near $449) even as other prices track falling memory costs, confirming a built-in regressive markup.",
     "Whether major PC makers hold prices flat on comparable memory-heavy configurations, which would weaken the shared-industry-shock explanation."
   ],
-  "subheadline": "A device-by-device check of Apple's June 2026 price list finds the increases track gigabytes of memory, not sticker price, though the test is generous and one unexplained markup lands on the cheapest iPad."
+  "subheadline": "A device-by-device check of Apple's June 2026 price list finds the increases track gigabytes of memory, not sticker price, though the test is generous and one unexplained markup lands on the cheapest iPad.",
+  "secondarySections": [
+    "consumer",
+    "ai"
+  ]
 }

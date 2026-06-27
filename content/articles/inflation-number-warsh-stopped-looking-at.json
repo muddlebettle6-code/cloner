@@ -643,5 +643,9 @@
   "primarySection": "economy",
   "date": "2026-06-27",
   "byline": "Cumulant Research",
-  "publishedAt": "2026-06-27T15:09:15.017Z"
+  "publishedAt": "2026-06-27T15:09:15.017Z",
+  "secondarySections": [
+    "banking",
+    "energy"
+  ]
 }
