@@ -1,0 +1,647 @@
+{
+  "published": true,
+  "slug": "inflation-number-warsh-stopped-looking-at",
+  "headline": "The Inflation Number the New Fed Chair Stopped Looking At",
+  "deck": "May's headline PCE inflation hit a three-year high of 4.1% and the hawks called for three rate hikes, but the Fed's own breadth gauge, the trimmed mean that Chair Kevin Warsh has said he trusts most, sits at 2.4% and easing. That 1.7-point gap is the fingerprint of a narrow, shock-driven spike rather than broad inflation, which puts Warsh's pivot toward hikes in tension with his own favorite metric.",
+  "takeaways": [
+    "May PCE inflation jumped to a three-year high of 4.1%, prompting Bank of America to reverse course and call for three rate hikes by December.",
+    "The Dallas Fed Trimmed Mean PCE, which strips out the most extreme price movers to show the calm middle, sits at 2.4% and is easing, a 1.7-point gap from the headline that is the signature of a narrow, concentrated shock rather than broad inflation.",
+    "New Fed Chair Kevin Warsh has repeatedly said he prefers trimmed-mean measures over the headline (he once called the standard gauge a 'rough swag'), yet steered the Fed toward hikes anyway, putting his pivot in tension with his own favorite gauge.",
+    "Unlike the broad, demand-driven inflation of 2022 (when the trimmed mean itself ran at 4.0% and rising), today's spike is driven by war-era oil and fading tariff pass-through, exactly the kind of one-off the trim is built to ignore.",
+    "The honest caveat: services prices ('supercore') are warming to about 3.9%, the hawks' best evidence, and some Fed economists warn the low trimmed mean may be flattered by an unusual mix of price moves, but the wage engine behind home-grown inflation is holding around 3.4%, so the trim looks early rather than plainly wrong."
+  ],
+  "glossary": [
+    {
+      "term": "PCE",
+      "definition": "Personal Consumption Expenditures price index, the Fed's preferred measure of inflation, broader than the better-known CPI because it captures more of what households actually spend on."
+    },
+    {
+      "term": "CPI",
+      "definition": "Consumer Price Index, the most familiar inflation measure, tracking the price of a fixed basket of goods and services a typical household buys."
+    },
+    {
+      "term": "Headline inflation",
+      "definition": "The all-items inflation rate, including volatile food and energy prices."
+    },
+    {
+      "term": "Core inflation",
+      "definition": "Inflation with food and energy stripped out, because those two swing wildly month to month and can hide the underlying trend."
+    },
+    {
+      "term": "Basis point",
+      "definition": "One-hundredth of a percentage point, so 75 basis points equals 0.75%."
+    },
+    {
+      "term": "Trimmed Mean PCE",
+      "definition": "A Dallas Fed inflation gauge that throws out the categories with the most extreme price changes each month, both the fastest risers and the fastest fallers, and measures only the calm middle, to reveal broad underlying inflation."
+    },
+    {
+      "term": "Median PCE",
+      "definition": "A Cleveland Fed gauge that takes the single middle category's price change each month, a second way to see what the typical price is doing rather than the extremes."
+    },
+    {
+      "term": "Dot plot",
+      "definition": "A grid the Fed publishes showing where each official privately thinks interest rates should be in coming years, a peek at the committee's leanings."
+    },
+    {
+      "term": "Supercore (core services ex-housing)",
+      "definition": "Inflation in services other than housing, things like haircuts, restaurant meals and medical care, watched closely because it tracks wages rather than supply chains, making it a tell for home-grown inflation."
+    },
+    {
+      "term": "Employment Cost Index (ECI)",
+      "definition": "A government measure of how fast employers' total labor costs (wages plus benefits) are rising, considered the cleanest read on wage pressure."
+    },
+    {
+      "term": "Second-round effects",
+      "definition": "When an initial price shock spreads: firms raise prices to cover higher costs, workers demand raises to cover higher prices, and the cycle feeds on itself."
+    },
+    {
+      "term": "Inflation expectations / un-anchoring",
+      "definition": "What people expect future inflation to be; if they stop believing the Fed will keep it near 2% ('un-anchoring'), those expectations can become self-fulfilling."
+    },
+    {
+      "term": "Supply shock",
+      "definition": "A sudden disruption to the supply of goods, like a war spiking oil prices, that pushes prices up for reasons unrelated to how hot demand is."
+    },
+    {
+      "term": "Tariff pass-through",
+      "definition": "The share of an import tax that gets passed on to consumers as higher prices rather than absorbed by sellers."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "definition": "A narrow sea passage at the mouth of the Persian Gulf through which roughly a fifth of the world's traded oil moves; blocking it chokes global oil supply and pushes prices up."
+    },
+    {
+      "term": "2-year Treasury yield",
+      "definition": "The interest rate on a two-year US government bond, the maturity most sensitive to expected Fed policy, so it moves fast when rate expectations shift."
+    },
+    {
+      "term": "FOMC",
+      "definition": "Federal Open Market Committee, the Fed group that sets interest rates, made up of governors and regional Fed presidents."
+    },
+    {
+      "term": "Real wages",
+      "definition": "Wages after subtracting inflation, what your pay can actually buy."
+    },
+    {
+      "term": "Annualized rate",
+      "definition": "A short-period change (like one or six months) scaled up to show what it would be over a full year, making it comparable to a 12-month figure."
+    },
+    {
+      "term": "Skewness (in the price distribution)",
+      "definition": "Whether the spread of price changes leans more toward big increases or big decreases; an unusual lean can pull a trimmed mean below or above the true underlying trend."
+    }
+  ],
+  "event": "On 25 June 2026 the BEA's May PCE report showed headline inflation at a three-year-high 4.1%; days earlier (22 June) Bank of America reversed to call for three rate hikes, and on 17 June the Fed under new Chair Kevin Warsh held rates but flipped its dot plot toward hikes.",
+  "question": "Is May's jump to 4.1% PCE a broad-based inflation that has spread across the economy, or a narrow spike concentrated in a few shock-hit categories (war-driven gasoline and fading tariff pass-through)?",
+  "readingMinutes": 9,
+  "tags": [
+    "inflation",
+    "Federal Reserve",
+    "monetary policy",
+    "PCE",
+    "Kevin Warsh",
+    "interest rates",
+    "trimmed mean",
+    "tariffs"
+  ],
+  "leadChartId": "breadth-fingerprint",
+  "charts": [
+    {
+      "id": "breadth-fingerprint",
+      "kind": "bar",
+      "title": "The breadth fingerprint: three gauges, one release",
+      "subtitle": "12-month inflation rates for May 2026. The wide gap between the headline and the trimmed mean is the signature of a narrow, concentrated shock.",
+      "source": "BEA Personal Income and Outlays (May 2026); Dallas Fed Trimmed Mean PCE (May 2026)",
+      "units": "%",
+      "period": "May 2026",
+      "note": "If inflation were broad, the trimmed mean would be climbing toward 4% too; instead it sits a whisker above the 2% target.",
+      "alt": "Bar chart showing Headline PCE at 4.1%, Core PCE at 3.4%, Trimmed Mean PCE at 2.4%, against a 2% Fed target line.",
+      "data": {
+        "bars": [
+          {
+            "label": "Headline PCE",
+            "value": 4.1,
+            "highlight": true
+          },
+          {
+            "label": "Core PCE",
+            "value": 3.4
+          },
+          {
+            "label": "Trimmed Mean PCE",
+            "value": 2.4,
+            "highlight": true
+          },
+          {
+            "label": "2% Fed target",
+            "value": 2
+          }
+        ],
+        "max": 5
+      }
+    },
+    {
+      "id": "gap-keynumber",
+      "kind": "keynumber",
+      "title": "The gap that tells the story",
+      "subtitle": "Distance between the headline and the broad-middle gauge",
+      "source": "BEA; Dallas Fed (May 2026)",
+      "units": "percentage points",
+      "period": "May 2026",
+      "alt": "A 1.7 percentage-point gap between headline PCE (4.1%) and trimmed mean PCE (2.4%).",
+      "data": {
+        "value": "1.7pp",
+        "label": "gap between headline PCE (4.1%) and trimmed mean PCE (2.4%)",
+        "sub": "The fingerprint of a concentrated shock, not broad inflation"
+      }
+    },
+    {
+      "id": "same-headline-diff-middle",
+      "kind": "comparison",
+      "title": "Same alarm, very different middle",
+      "subtitle": "The Trimmed Mean PCE in 2022 versus now. In May 2022 the broad middle ran hot and rising (4.0%) even as headline hit 6.3%; in May 2026 the middle barely clears target and is easing.",
+      "source": "Dallas Fed Behind the Numbers (May 2022); Dallas Fed Trimmed Mean PCE (May 2026)",
+      "units": "%",
+      "period": "May 2022 vs May 2026",
+      "note": "The shape is the argument: in 2022 even the trim was hot and climbing; 2026 fits the 'look-through' pattern instead.",
+      "alt": "Comparison bars: Trimmed Mean PCE was 4.0% in May 2022 (broad and rising) versus 2.4% in May 2026 (narrow and easing).",
+      "data": {
+        "bars": [
+          {
+            "label": "Trimmed mean, May 2022, broad & rising",
+            "value": 4,
+            "highlight": true
+          },
+          {
+            "label": "Trimmed mean, May 2026, narrow & easing",
+            "value": 2.4,
+            "highlight": true
+          },
+          {
+            "label": "2% target",
+            "value": 2
+          }
+        ],
+        "max": 5
+      }
+    },
+    {
+      "id": "anatomy-of-the-gap",
+      "kind": "bar",
+      "title": "Anatomy of the 4.1%",
+      "subtitle": "An approximate accounting of the May headline rate: start from the broad middle (the trimmed mean), then add the two pieces it discards, food and energy, and the extreme core price movers (where tariff-hit goods sit).",
+      "source": "BEA (headline 4.1%, core 3.4%); Dallas Fed (trimmed mean 2.4%); author's arithmetic",
+      "units": "percentage points",
+      "period": "May 2026",
+      "note": "Headline minus core (0.7pp) is food and energy; core minus the trimmed mean (1.0pp) is the extreme core movers the trim removes. The broad middle sits at 2.4%.",
+      "alt": "Bar chart: broad middle (trimmed mean) 2.4 percentage points, extreme core movers add-on 1.0, food and energy add-on 0.7, summing to the 4.1% headline.",
+      "data": {
+        "bars": [
+          {
+            "label": "Broad middle (trimmed mean)",
+            "value": 2.4,
+            "highlight": true
+          },
+          {
+            "label": "Extreme core movers add-on",
+            "value": 1
+          },
+          {
+            "label": "Food & energy add-on",
+            "value": 0.7
+          },
+          {
+            "label": "Headline (the three combined)",
+            "value": 4.1,
+            "highlight": true
+          }
+        ],
+        "max": 5
+      }
+    },
+    {
+      "id": "counter-finding",
+      "kind": "bar",
+      "title": "The counter-finding, and its limit",
+      "subtitle": "Services prices are warming, the hawks' best evidence, but the wage engine that usually drives that kind of inflation is holding steady.",
+      "source": "Employ America Core-Cast (supercore, May 2026 release); BLS Employment Cost Index (Q1 2026)",
+      "units": "% year-over-year",
+      "period": "Q1/May 2026",
+      "note": "Supercore is running about 3.9%, well above the ~2.6% pace consistent with 2% inflation; yet ECI wage growth held around 3.4%, so the second-round wage machinery is turning slowly at most.",
+      "alt": "Bars: supercore services inflation about 3.9% year-over-year and the ~2.6% pace consistent with 2% inflation, against ECI wage growth of 3.4%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Supercore services, 2026",
+            "value": 3.9,
+            "highlight": true
+          },
+          {
+            "label": "Pace consistent with 2% inflation",
+            "value": 2.6
+          },
+          {
+            "label": "ECI wages, Q1 2026",
+            "value": 3.4
+          }
+        ],
+        "max": 5
+      }
+    },
+    {
+      "id": "scenarios-range",
+      "kind": "range",
+      "title": "Where the policy rate could land by end-2026",
+      "subtitle": "From the Fed's current 3.50%-3.75% range, the paths markets and forecasters are weighing.",
+      "source": "Federal Reserve (June 2026 dot plot, median end-2026 dot 3.8%); CNBC (BofA three-hike call to 4.25%-4.5%)",
+      "units": "% upper bound of target range",
+      "period": "end-2026 scenarios",
+      "note": "Base case follows the median dot toward one hike; the hawkish path is BofA's three hikes; the dovish path holds if breadth gauges stay quiet and the shocks fade.",
+      "alt": "Range chart of end-2026 policy-rate scenarios: dovish hold near 3.75%, base case around 4.0%, hawkish up to 4.5%.",
+      "data": {
+        "items": [
+          {
+            "label": "End-2026 fed funds (upper bound)",
+            "low": 3.75,
+            "mid": 4,
+            "high": 4.5
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The number that looks like an emergency, and the one that does not",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On Thursday the Federal Reserve's favorite inflation gauge printed a number that looks like an emergency. The Personal Consumption Expenditures price index, the Fed's preferred inflation yardstick, rose 4.1% over the year through May, a three-year high. Within hours the hawks had their headline. Bank of America, which a week earlier expected no rate moves at all in 2026, reversed itself, called for three rate hikes by December, and declared the Fed's inflation problem 'unambiguously worse.'"
+        },
+        {
+          "type": "p",
+          "text": "But sitting in the very same data release is a second number that says something close to the opposite. And it is, by his own repeated testimony, the number the Fed's new chairman trusts most."
+        },
+        {
+          "type": "callout",
+          "label": "Quick glossary",
+          "text": "PCE is the Fed's preferred inflation yardstick, broader than the more familiar Consumer Price Index because it captures more of what households actually spend on. 'Headline' counts everything; 'core' strips out food and energy, which swing wildly month to month. A basis point is one-hundredth of a percentage point, so 75bp equals 0.75%."
+        }
+      ]
+    },
+    {
+      "heading": "One narrow question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Forget, for a moment, whether 4.1% is high. The only question that decides whether the Fed should raise rates is this: is May's jump a broad inflation that has spread across the economy, or a narrow spike concentrated in a few shock-hit categories, gasoline from the 2026 Iran war, and the last of the tariff pass-through?"
+        },
+        {
+          "type": "p",
+          "text": "This is not a nuance. It is the whole case. You raise interest rates to cool an economy generating inflation everywhere, from haircuts to rent to restaurant meals. You do not raise rates to fight a one-off jump in oil and imported goods, because tightening into a supply shock adds a second injury: you slow hiring to punish the economy for a price increase it did not cause and cannot undo."
+        },
+        {
+          "type": "pullquote",
+          "text": "'How broad is it?' is the difference between sound policy and a costly mistake."
+        }
+      ]
+    },
+    {
+      "heading": "What happened, and when",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Three events in nine days set the stage. On 17 June, at his first meeting as chair, Kevin Warsh held the policy rate steady at 3.50%-3.75% on a unanimous vote, but the Fed's 'dot plot', the grid of where officials think rates should go, flipped hawkish, with the median end-2026 dot jumping to 3.8% from 3.4% and nine of eighteen members now penciling in a hike before year-end. Warsh, tellingly, declined to submit a dot of his own."
+        },
+        {
+          "type": "p",
+          "text": "On 22 June, Bank of America abandoned its no-hikes call and projected three quarter-point increases, in September, October and December, to a 4.25%-4.5% range, citing inflation that is 'unambiguously worse.' Then on 25 June the Bureau of Economic Analysis published the May PCE report: headline 4.1%, a three-year high. The hawkish case had its number."
+        },
+        {
+          "type": "p",
+          "text": "Warsh himself is new to the chair, sworn in on 22 May as the Fed's 17th chairman, after the narrowest Senate confirmation vote in the institution's history, 54-45. The pivot toward hikes is the first major signal of his tenure."
+        },
+        {
+          "type": "chart",
+          "chartId": "breadth-fingerprint"
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: how to actually measure breadth",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is a clean tool for the breadth question, and it is not a matter of opinion. It is the Dallas Fed Trimmed Mean PCE. Picture all the hundreds of things people buy, sorted each month from the fastest price gainers to the fastest fallers. The trimmed mean throws out the extremes at both ends and measures only what the calm middle is doing. It is the inflation rate after you ignore whatever is screaming loudest in either direction."
+        },
+        {
+          "type": "p",
+          "text": "If inflation is genuinely broad, the middle is hot and the trimmed mean climbs. If a spike is concentrated, the trim removes the offending categories and the trimmed mean stays put. So the gap between the headline and the trim is, quite literally, a breadth meter. In May it read 1.7 percentage points, headline 4.1%, trimmed mean 2.4%, and the trim was easing, not rising. That is the fingerprint of a few categories doing the damage, not the whole basket."
+        },
+        {
+          "type": "chart",
+          "chartId": "gap-keynumber"
+        },
+        {
+          "type": "p",
+          "text": "Decompose the headline and the same story falls out of simple arithmetic. Start from the broad middle at 2.4%. Add back the food and energy the core excludes, headline minus core is 0.7 of a point. Add back the extreme core movers the trim discards, core minus the trimmed mean is another point. Stack those three and you are at 4.1%. Roughly two-thirds of the distance from target to the scary headline is built from the pieces both the core and the trim are designed to look past."
+        },
+        {
+          "type": "chart",
+          "chartId": "anatomy-of-the-gap"
+        },
+        {
+          "type": "p",
+          "text": "The 2022 comparison sharpens the point. Back then the inflation was broad and demand-driven, and the trim showed it: in May 2022 the headline ran at 6.3% and the trimmed mean itself sat at 4.0% and rising. The middle was on fire. Today the headline is lower, and the middle is barely above target and cooling. Same alarm bell on the headline; opposite reading underneath."
+        },
+        {
+          "type": "chart",
+          "chartId": "same-headline-diff-middle"
+        }
+      ]
+    },
+    {
+      "heading": "The shock, and why the trim is built to ignore it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "What is screaming loudest is not a mystery. Since late February, Iran's near-total blockade of the Strait of Hormuz, the narrow sea lane that carries about a fifth of the world's traded oil, has throttled global crude supply, and US pump prices climbed by more than a dollar a gallon at the worst of it. That is a textbook supply shock: prices up for reasons that have nothing to do with how hot American demand is. By late June, with Iran moving to reopen the strait, Brent had slid back toward $76 a barrel and the pressure was fading."
+        },
+        {
+          "type": "p",
+          "text": "The second pusher is tariffs. As import taxes worked their way onto shelf prices, they lifted the cost of affected goods, but as a one-time step up in the level of prices, not a permanent change in their growth rate. Dallas Fed economists Ron Mau and Tucker Smith found that the effect of realized tariff changes on PCE prices peaked in the first quarter of 2026. A level shift that has already crested is exactly the kind of move the trimmed mean is engineered to set aside: it shows up as a cluster of extreme gainers, gets trimmed off, and leaves the broad middle untouched."
+        },
+        {
+          "type": "p",
+          "text": "So the two forces lifting the headline, war-era oil and crested tariff pass-through, are precisely the categories the breadth gauge discards by design. Remove them and you are left with an underlying rate near target. That is the disinflation-camp case in one sentence."
+        }
+      ]
+    },
+    {
+      "heading": "Warsh versus his own gauge",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the awkward part for the new chairman. Kevin Warsh did not adopt the trimmed mean for this article's convenience; he has championed it for months. At his confirmation hearing he dismissed the standard inflation gauge as only a 'rough swag' of real price pressure and named the Dallas Fed trimmed mean as his preferred measure. 'What I'm most interested in is what's the underlying inflation rate,' he said, 'not what's the one-time change in prices because of a change in geopolitics or a change in beef.' War-driven oil and a one-off tariff step are about as close to 'a change in geopolitics' as the data gets."
+        },
+        {
+          "type": "pullquote",
+          "text": "By his own test, May is the one-time change in prices he said he would look through, not the underlying rate he said he would target."
+        },
+        {
+          "type": "p",
+          "text": "Yet the committee he now leads tilted toward hikes, and Warsh let it, while pointedly withholding his own dot. The pivot sits in visible tension with the metric he spent his confirmation defending. That does not make the hawks right or wrong; it means the chairman's favorite instrument and his committee's body language are pointing in opposite directions, and he has not yet said which one wins."
+        }
+      ]
+    },
+    {
+      "heading": "The counter-finding: services are warming",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Intellectual honesty requires the strongest version of the other side, and it is not nothing. Strip out housing and the volatile stuff and look at core services, haircuts, restaurant meals, medical care, the so-called 'supercore.' It is the part of inflation that tracks wages rather than supply chains, and it is the truest tell of home-grown price pressure. By the May reading it was running near 3.9% on a yearly basis, well above the roughly 2.6% pace that would square with 2% inflation, and analysts at Employ America flagged it as a genuine problem for the Fed. If supercore is heating, the trim could be lulling everyone to sleep."
+        },
+        {
+          "type": "p",
+          "text": "Two further cautions belong on the record. Some Fed economists, including Dallas Fed President Lorie Logan, have warned that an unusual lean in the spread of price changes is currently pulling the trimmed mean lower than the underlying trend would justify, the gauge may be flattered right now. And Mau and Smith's own work cautions that a trimmed mean sitting below core is not, by itself, strong evidence that disinflation is coming if tariff-driven price pressure keeps spreading. The trim is a breadth meter, not a crystal ball."
+        },
+        {
+          "type": "p",
+          "text": "But the engine that turns a services blip into a wage-price spiral is labor costs, and that engine is idling. The Employment Cost Index, the cleanest read on what employers pay in wages and benefits, rose about 3.4% over the year through the first quarter, holding roughly steady rather than accelerating. Hot services prices without accelerating wages behind them look like a shock still passing through, not a spiral taking hold. The trim, on this read, looks early rather than plainly wrong."
+        },
+        {
+          "type": "chart",
+          "chartId": "counter-finding"
+        }
+      ]
+    },
+    {
+      "heading": "What it means for the rate path",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A reaction is not an effect. Bank of America's flip and the dot plot's hawkish tilt are market and committee reactions to a frightening headline; whether the economy actually needs tighter policy depends on the breadth question, and the breadth gauge says the pressure is narrow and easing. The two should not be confused."
+        },
+        {
+          "type": "p",
+          "text": "From the current 3.50%-3.75% range, three paths are in play by year-end. The base case tracks the Fed's own median dot toward roughly one hike. The hawkish path is BofA's three increases, to 4.25%-4.5%, which makes sense only if breadth broadens and wages catch up. The dovish path, holding, is what Warsh's favorite metric, taken at face value, would counsel: let a fading supply shock fade. The coming months of supercore and wage data will decide which of his two instruments the chairman ends up believing."
+        },
+        {
+          "type": "chart",
+          "chartId": "scenarios-range"
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Defined one narrow, decision-relevant question, is May's PCE jump broad or concentrated?, because that distinction, not the headline level, is what determines whether rate hikes are the right tool.",
+    "Used the gap between headline PCE and the Dallas Fed Trimmed Mean PCE as a breadth meter: a wide, persistent gap means a few extreme categories are driving the headline, while a narrow gap means inflation is broad. Both numbers come from the same May 2026 data cycle (BEA for headline and core, Dallas Fed for the trimmed mean).",
+    "Built the 'Anatomy of the 4.1%' chart from simple, sourced arithmetic: headline minus core (0.7pp) is the food-and-energy contribution, and core minus the trimmed mean (1.0pp) approximates the extreme core movers the trim discards. This is an accounting decomposition, not a structural model, and is labeled as approximate.",
+    "Contrasted May 2026 with May 2022 using the trimmed mean in both periods to show that in the broad 2022 episode the trim itself ran hot (4.0% and rising) while the headline was 6.3%, whereas in 2026 the trim is near target and easing.",
+    "Tested the strongest counterargument directly: tracked supercore (core services ex-housing) as the best signal of home-grown, wage-driven inflation, then checked the wage engine itself via the Employment Cost Index. Stable wage growth alongside hot services is evidence of a shock still passing through rather than a self-feeding spiral.",
+    "Cross-checked the disinflation read against dissenting Fed voices (Dallas Fed President Lorie Logan on skewness; Mau and Smith on tariff persistence) so the finding is presented with its limits rather than as settled.",
+    "Every number in the article and charts is traced to a primary release (BEA, BLS, Federal Reserve, Dallas Fed) or a reputable report cited in Sources; no figure that could not be confirmed against a source was retained."
+  ],
+  "sources": [
+    {
+      "title": "Personal Income and Outlays, May 2026",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026",
+      "kind": "primary"
+    },
+    {
+      "title": "Trimmed Mean PCE Inflation Rate, May 2026",
+      "publisher": "Federal Reserve Bank of Dallas",
+      "url": "https://www.dallasfed.org/research/pce",
+      "kind": "data"
+    },
+    {
+      "title": "PCE inflation report, May 2026",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kevin Warsh takes oath of office as chairman of the Federal Reserve",
+      "publisher": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Kevin Warsh sworn in as Fed chair at pivotal moment for US economy",
+      "publisher": "CNN Business",
+      "url": "https://edition.cnn.com/2026/05/22/economy/kevin-warsh-sworn-in-fed-chair",
+      "kind": "secondary"
+    },
+    {
+      "title": "Bank of America expects three Fed hikes this year, says inflation is getting 'unambiguously worse'",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/22/bank-of-america-sees-3-fed-hikes-in-2026-inflation-unambiguously-worse.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "The Fed is fed up with inflation and will bring down the hammer with a series of rate hikes this year, BofA says",
+      "publisher": "Fortune",
+      "url": "https://fortune.com/2026/06/22/fed-rate-hikes-outlook-sticky-inflation-kevin-warsh-job-growth-oil-prices/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Fed interest rate decision, June 2026: Fed holds rates steady",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "What are trimmed mean and median inflation rates? And why does Kevin Warsh prefer them?",
+      "publisher": "Brookings Institution",
+      "url": "https://www.brookings.edu/articles/what-are-trimmed-mean-and-median-inflation-rates-and-why-does-kevin-warsh-prefer-them/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kevin Warsh's preferred inflation measure could come into focus",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/04/22/kevin-warsh-inflation-trend-pce-trump.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Inflation Monitor: Warsh dismisses standard gauge as a 'rough swag'",
+      "publisher": "Charles Schwab",
+      "url": "https://www.schwab.com/learn/story/inflation-monitor-warsh-dismisses-rough-swag",
+      "kind": "secondary"
+    },
+    {
+      "title": "Inflation is the worst in three years. Kevin Warsh says that's not the full story",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2026/06/11/economy/inflation-kevin-warsh-federal-reserve",
+      "kind": "secondary"
+    },
+    {
+      "title": "Effects of realized tariff changes on PCE prices peaked in first quarter 2026 (Mau and Smith)",
+      "publisher": "Federal Reserve Bank of Dallas",
+      "url": "https://www.dallasfed.org/research/economics/2026/0505-mau",
+      "kind": "academic"
+    },
+    {
+      "title": "Skewness warrants caution as Trimmed Mean PCE inflation eases",
+      "publisher": "Federal Reserve Bank of Dallas",
+      "url": "https://www.dallasfed.org/research/economics/2026/0416",
+      "kind": "academic"
+    },
+    {
+      "title": "May 2026 Core-Cast Post PCE: Supercore (Core Services Ex-Housing) is Running Hot",
+      "publisher": "Employ America",
+      "url": "https://www.employamerica.org/core-cast/may-2026-core-cast-post-pce/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Employment Cost Index Summary, 2026 Q1 Results",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Behind the Numbers: PCE Inflation Update, May 2022 (trimmed mean 4.0%, headline 6.3%)",
+      "publisher": "Federal Reserve Bank of Dallas",
+      "url": "https://www.dallasfed.org/research/pce/2022/pce2205",
+      "kind": "data"
+    },
+    {
+      "title": "2026 Strait of Hormuz crisis",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil prices continue slide amid hopes for peace, opening of Strait of Hormuz",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/6/17/oil-prices-continue-slide-amid-hopes-for-peace-opening-of-strait-of-hormuz",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trimmed Mean PCE Inflation Rate (12-month)",
+      "publisher": "FRED, Federal Reserve Bank of St. Louis",
+      "url": "https://fred.stlouisfed.org/series/PCETRIM12M159SFRBDAL",
+      "kind": "data"
+    }
+  ],
+  "limitations": [
+    "The trimmed mean is a breadth meter, not a forecast. It tells you how concentrated this month's inflation is; it does not guarantee that concentrated pressure will not later broaden.",
+    "The 'Anatomy of the 4.1%' decomposition is an approximate accounting that treats headline, core and the trimmed mean as additively layered. The three gauges are built with different aggregation rules, so the split into food-and-energy (0.7pp) and extreme core movers (1.0pp) is illustrative rather than an exact structural identity.",
+    "Specific category-level contributions of gasoline and tariffs to May PCE (in percentage points) were not published in a form that could be independently confirmed, so the article relies on the verifiable trimmed-mean gap and on Dallas Fed timing (tariff effects peaked in Q1 2026) rather than on a precise dollar-by-dollar attribution.",
+    "Supercore is cited near 3.9% year-over-year from the May Core-Cast release; month-to-month it has run hotter still on an annualized basis, so the services warming is real and the trim's benign read could prove premature.",
+    "Wage data through the Employment Cost Index runs only through Q1 2026; a Q2 reading showing wage acceleration would materially weaken the 'shock, not spiral' conclusion.",
+    "Market and committee reactions (the BofA call, the dot plot) are described as reactions, not as proof of the underlying economic state; they can move on sentiment as much as on fundamentals."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/inflation-number-warsh-stopped-looking-at.jpg",
+    "credit": "Photo: AgnosticPreachersKid, CC BY-SA 3.0, via Wikimedia Commons",
+    "caption": "The Marriner S. Eccles building, home of the Federal Reserve Board, where Chair Kevin Warsh held rates on 17 June while tilting the committee toward hikes.",
+    "alt": "The white marble facade of the Marriner S. Eccles Federal Reserve Board building in Washington under a blue sky, the U.S. flag flying above its central columns."
+  },
+  "articleType": "data-story",
+  "companies": [
+    "Bank of America",
+    "Employ America",
+    "Federal Reserve",
+    "Dallas Federal Reserve",
+    "Bureau of Economic Analysis"
+  ],
+  "people": [
+    "Kevin Warsh",
+    "Lorie Logan",
+    "Ron Mau",
+    "Tucker Smith"
+  ],
+  "regions": [
+    "United States",
+    "Iran",
+    "Strait of Hormuz"
+  ],
+  "industries": [
+    "central banking",
+    "monetary policy",
+    "energy",
+    "oil"
+  ],
+  "assetClasses": [
+    "rates",
+    "bonds",
+    "commodities",
+    "equities"
+  ],
+  "impactTags": [
+    "inflation",
+    "interest-rate-policy",
+    "supply-shock",
+    "rate-hikes",
+    "oil-prices",
+    "tariffs"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 82,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "May headline PCE inflation hit a three-year high of 4.1%, prompting Bank of America to flip from no hikes to three quarter-point hikes by December.",
+    "The Dallas Fed Trimmed Mean PCE, which strips out the most extreme price movers to gauge breadth, sits at just 2.4% and is easing, a 1.7-point gap that signals a narrow, concentrated shock rather than broad inflation.",
+    "New Fed Chair Kevin Warsh has repeatedly named the trimmed mean as his preferred gauge, yet steered the committee toward hikes while pointedly withholding his own dot.",
+    "The spike is driven by Iran-war oil and crested tariff pass-through, one-off supply forces the trim is designed to discard, unlike the broad, demand-driven 2022 inflation when the trim itself ran at 4.0%.",
+    "The counter-case: core services ('supercore') is warming to ~3.9%, but wage growth (ECI ~3.4%) is steady, suggesting a shock passing through rather than a wage-price spiral."
+  ],
+  "whyItMatters": "Whether the Fed raises rates three more times this year hinges on a single question, is May's 4.1% inflation broad or narrow, and the Fed's own breadth gauge points the opposite way from its hawkish pivot. The answer shapes the path of mortgage rates, bond yields, and hiring, and tightening into a supply shock risks slowing the labor market to punish a price increase the economy did not cause. It also exposes a credibility test for a new chairman whose favorite metric and his committee's body language now disagree.",
+  "whatToWatch": [
+    "Whether Warsh breaks his silence and signals which gauge wins, his trimmed mean or the committee's hawkish dot plot, ahead of the September meeting.",
+    "The June and July trimmed-mean and supercore PCE prints, to see if breadth stays narrow or services-driven inflation broadens.",
+    "Brent crude and Strait of Hormuz developments, since a reopening would drain the oil-driven piece of the headline.",
+    "The next Employment Cost Index reading for any acceleration in wages that would turn a services blip into a genuine spiral."
+  ],
+  "primarySection": "economy",
+  "date": "2026-06-27",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T15:09:15.017Z"
+}
