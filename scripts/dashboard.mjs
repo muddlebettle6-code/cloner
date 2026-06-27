@@ -15,6 +15,16 @@ const LOG = join(ROOT, "scripts", "news-watch.log");
 const PLIST = join(process.env.HOME, "Library/LaunchAgents/com.cumulant.fieldnote.daily.plist");
 const PORT = process.env.DASH_PORT || 4173;
 const SITE = "https://cumulant.org";
+const USER = process.env.DASH_USER || "cumulant";
+const PASS = process.env.DASH_PASSWORD || ""; // when set, the board requires Basic auth
+
+function authed(req) {
+  if (!PASS) return true;
+  const m = (req.headers.authorization || "").match(/^Basic (.+)$/);
+  if (!m) return false;
+  const [u, ...rest] = Buffer.from(m[1], "base64").toString().split(":");
+  return u === USER && rest.join(":") === PASS;
+}
 
 const STAGES = ["Scout", "Frame", "Field study", "Analysis", "Write", "Critique", "Revise", "Verify", "Publish", "Distribute"];
 const PHASE_TO_STAGE = { scout: 0, "frame": 1, "field study": 2, analysis: 3, write: 4, critique: 5, revise: 6, verify: 7 };
@@ -173,6 +183,10 @@ td.c{text-align:center;width:54px;} a{color:#000;text-decoration:none;border-bot
 
 createServer((req, res) => {
   if (req.url === "/favicon.ico") { res.writeHead(204).end(); return; }
+  if (!authed(req)) {
+    res.writeHead(401, { "WWW-Authenticate": 'Basic realm="Cumulant Newsroom"' }).end("Authentication required");
+    return;
+  }
   try { res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" }).end(page()); }
   catch (e) { res.writeHead(500).end(String(e)); }
-}).listen(PORT, () => console.log(`Cumulant Newsroom dashboard -> http://localhost:${PORT}`));
+}).listen(PORT, () => console.log(`Cumulant Newsroom dashboard -> http://localhost:${PORT} (auth: ${PASS ? "on" : "off"})`));

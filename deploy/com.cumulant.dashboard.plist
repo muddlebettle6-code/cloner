@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Always-on Cumulant Newsroom dashboard (launchd, macOS). KeepAlive restarts it
+  if it dies; RunAtLoad starts it at login.
+
+  Install:
+    cp deploy/com.cumulant.dashboard.plist ~/Library/LaunchAgents/
+    plutil -replace EnvironmentVariables.DASH_PASSWORD -string 'YOUR-PASSWORD' \
+      ~/Library/LaunchAgents/com.cumulant.dashboard.plist
+    launchctl load -w ~/Library/LaunchAgents/com.cumulant.dashboard.plist
+
+  Then expose it privately at dashboard.cumulant.org with a Cloudflare Tunnel —
+  see docs/DASHBOARD.md.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cumulant.dashboard</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/node</string>
+        <string>/Users/aryanpatel/cloner/scripts/dashboard.mjs</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/aryanpatel/cloner</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>DASH_PORT</key>
+        <string>4173</string>
+        <key>DASH_USER</key>
+        <string>cumulant</string>
+        <key>DASH_PASSWORD</key>
+        <string></string>
+        <key>PATH</key>
+        <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/dashboard.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/dashboard.err.log</string>
+</dict>
+</plist>
