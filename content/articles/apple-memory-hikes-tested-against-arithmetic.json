@@ -642,5 +642,12 @@
     "The clearest sign is that two devices with the same memory got the same $200 increase even though one costs three times as much.",
     "Most of the increases land at the high end of what the extra memory could plausibly cost, so there may be a small markup layered on top of the real shortage.",
     "The one increase that memory cannot explain falls on the cheapest $349 iPad, the device with the least memory to blame."
-  ]
+  ],
+  "leadImage": {
+    "src": "/images/articles/apple-memory-hikes-tested-against-arithmetic.jpg",
+    "credit": "Photo: Jorge Láscar, CC BY 2.0, via Wikimedia Commons",
+    "caption": "Apple's flagship Fifth Avenue store in Manhattan, where on 25 June 2026 the company raised prices across its Mac, iPad, HomePod and Vision Pro lines, blaming a shortage of memory and storage chips.",
+    "alt": "The glass-cube entrance of Apple's Fifth Avenue retail store in New York City, with the white Apple logo suspended inside the illuminated transparent cube."
+  },
+  "publishedAt": "2026-06-26T12:38:08-04:00"
 }

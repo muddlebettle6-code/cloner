@@ -536,5 +536,12 @@
     "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
   ],
   "date": "2026-06-26",
-  "byline": "Cumulant Research"
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T12:58:32.370Z",
+  "leadImage": {
+    "src": "/images/articles/openai-ipo-delay-thermometer-not-trigger.jpg",
+    "credit": "Photo: Carl Lender, CC BY 2.0, via Wikimedia Commons",
+    "caption": "Rows of server racks in a data center, the physical backbone of the AI compute buildout whose chipmakers and investors drove the June 2026 sell-off this analysis dissects.",
+    "alt": "Long aisle of illuminated server racks lined with cabling inside a data center, viewed down the corridor between two rows of equipment."
+  }
 }

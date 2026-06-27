@@ -25,6 +25,8 @@ if (!existsSync(path)) {
 const a = JSON.parse(readFileSync(path, "utf8"));
 if (!a.date) a.date = new Date().toISOString().slice(0, 10);
 if (!a.byline) a.byline = "Cumulant Research";
+// Stamp the moment it goes live (kept stable across later re-ingests).
+if (publish && !a.publishedAt) a.publishedAt = new Date().toISOString();
 
 // House style: normalize em/en dashes (and minus signs) to plain hyphens
 // everywhere, so a stray dash never blocks an otherwise-good article.

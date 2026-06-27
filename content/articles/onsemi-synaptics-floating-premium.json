@@ -525,5 +525,12 @@
     }
   ],
   "date": "2026-06-26",
-  "byline": "Cumulant Research"
+  "byline": "Cumulant Research",
+  "leadImage": {
+    "src": "/images/articles/onsemi-synaptics-floating-premium.jpg",
+    "credit": "Photo: ArticCynda, CC0 1.0, via Wikimedia Commons",
+    "caption": "Finished silicon wafers like these are the end product of the chip industry at the heart of onsemi's all-stock bid for Synaptics.",
+    "alt": "Several round, mirror-finish silicon semiconductor wafers stacked and fanned out, their surfaces reflecting rainbow-colored light."
+  },
+  "publishedAt": "2026-06-26T13:57:27-04:00"
 }

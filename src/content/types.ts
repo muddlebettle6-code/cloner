@@ -280,6 +280,8 @@ export interface Article {
   deck: string;
   byline?: string;
   date: string;
+  /** Full publish timestamp (ISO), shown as the time it went live. */
+  publishedAt?: string;
   readingMinutes: number;
   tags?: string[];
   /** The quick-version bullets shown at the top of the article. */

@@ -6,6 +6,7 @@ import { ArticleChartView } from "@/components/article-chart";
 import { ArrowIcon } from "@/components/icons";
 import { ARTICLES, getArticle } from "@/content/articles";
 import type { Article, ArticleBlock, GlossaryEntry } from "@/content/types";
+import { Reveal } from "@/components/reveal";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -36,6 +37,12 @@ function fmtDate(iso: string): string {
   return Number.isNaN(d.getTime())
     ? iso
     : d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+}
+
+function fmtTime(iso?: string): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? "" : d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
 /** A key term the reader can hover (or tap) to see a plain-language definition. */
@@ -163,7 +170,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <ArrowIcon className="h-[13px] w-[13px] rotate-180" /> Articles
             </Link>
             <p className="mt-[26px] font-mono text-[11px] uppercase tracking-[0.05em] text-smoke">
-              {fmtDate(article.date)}{meta ? `  ·  ${meta}` : ""}
+              {fmtDate(article.date)}{fmtTime(article.publishedAt) ? `, ${fmtTime(article.publishedAt)}` : ""}{meta ? `  ·  ${meta}` : ""}
             </p>
             <h1 className="mt-[14px] text-[33px] font-medium leading-[1.06] tracking-[-1px] text-ink md:text-[52px]">
               {article.headline}
@@ -176,21 +183,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <p className="mt-[10px] text-[12px] leading-[1.4] text-smoke">
                 Underlined terms have a plain-language definition - hover or tap to read.
               </p>
-            )}
-
-            {/* Quick version */}
-            {article.takeaways && article.takeaways.length > 0 && (
-              <div className="mt-[28px] rounded-[10px] border border-clay bg-stone p-[20px] md:p-[24px]">
-                <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke">The quick version</p>
-                <ul className="mt-[12px] flex flex-col gap-[10px]">
-                  {article.takeaways.map((t, i) => (
-                    <li key={i} className="flex gap-[12px] text-[15px] leading-[1.5] text-ink md:text-[16px]">
-                      <span className="mt-[9px] h-[5px] w-[5px] flex-none rounded-full" style={{ background: "#ff2d92" }} />
-                      <span>{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
             )}
           </header>
 
@@ -209,24 +201,39 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </figure>
           )}
 
+          {/* Quick version */}
+          {article.takeaways && article.takeaways.length > 0 && (
+            <Reveal className="mx-auto mt-[36px] max-w-[760px] rounded-[10px] border border-clay bg-stone p-[20px] md:p-[24px]">
+              <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke">The quick version</p>
+              <ul className="mt-[12px] flex flex-col gap-[10px]">
+                {article.takeaways.map((t, i) => (
+                  <li key={i} className="flex gap-[12px] text-[15px] leading-[1.5] text-ink md:text-[16px]">
+                    <span className="mt-[9px] h-[5px] w-[5px] flex-none rounded-full" style={{ background: "#ff2d92" }} />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          )}
+
           {/* Lead visual */}
           {lead && (
-            <div className="mx-auto mt-[40px] max-w-[880px]">
+            <Reveal className="mx-auto mt-[40px] max-w-[880px]">
               <ArticleChartView chart={lead} />
-            </div>
+            </Reveal>
           )}
 
           {/* Body */}
           <div className="mx-auto max-w-[760px]">
             {article.sections.map((s, i) => (
-              <section key={i} className="mt-[40px] md:mt-[52px]">
+              <Reveal as="section" key={i} className="mt-[40px] md:mt-[52px]">
                 <h2 className="text-[22px] font-medium leading-[1.2] tracking-[-0.4px] text-ink md:text-[27px]">{s.heading}</h2>
                 <div className="mt-[14px]">
                   {s.blocks.map((b, j) => (
                     <Block key={j} article={article} block={b} linked={linked} />
                   ))}
                 </div>
-              </section>
+              </Reveal>
             ))}
           </div>
 

@@ -675,5 +675,12 @@
     "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
   ],
   "date": "2026-06-27",
-  "byline": "Cumulant Research"
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T12:58:32.560Z",
+  "leadImage": {
+    "src": "/images/articles/two-stocks-are-the-korean-stock-market.jpg",
+    "credit": "Photo: hyolee2, CC BY-SA 3.0, via Wikimedia Commons",
+    "caption": "The Korea Exchange (KRX), operator of the KOSPI, whose official close anchors this decomposition of the index's 26 June 2026 fall.",
+    "alt": "Exterior of the Korea Exchange (KRX) building, the operator of South Korea's KOSPI stock index."
+  }
 }

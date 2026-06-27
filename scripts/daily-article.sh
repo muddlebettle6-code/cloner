@@ -28,6 +28,17 @@ if ! python3 "$SITE_DIR/scripts/article-standalone.py" "$OUTDIR" >>"$LOG" 2>&1; 
 fi
 [ -f "$ART" ] || { log "No article.json produced. Stopping."; exit 1; }
 
+# 1.5) Safety review: defamation + claim-sourcing gate (complements the
+# structural quality gate below). Failure -> hold as a draft, never publish.
+# Fails closed: any error in the reviewer also holds the article.
+if ! python3 "$SITE_DIR/scripts/article-safety-check.py" "$ART" >>"$LOG" 2>&1; then
+  log "Safety review FAILED -> holding as a draft (defamation/sourcing). Not publishing."
+  node scripts/article-ingest.mjs "$ART" >>"$LOG" 2>&1 || log "draft ingest failed"
+  log "Done."
+  exit 0
+fi
+log "Safety review PASSED."
+
 # 2) Quality gate + publish. Gate failure (exit 2) holds it as a draft.
 if node scripts/article-ingest.mjs "$ART" --publish >>"$LOG" 2>&1; then
   log "Quality gate PASSED -> published."

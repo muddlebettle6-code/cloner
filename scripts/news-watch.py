@@ -125,6 +125,7 @@ def main() -> None:
             log("No article produced; skipping.")
             return
 
+        subprocess.run(["node", "scripts/localize-lead-image.mjs", str(art)], cwd=str(SITE_DIR))
         gate = subprocess.run(["node", "scripts/article-ingest.mjs", str(art), "--publish"], cwd=str(SITE_DIR))
         if gate.returncode != 0:
             log("Quality gate failed; holding as a draft.")

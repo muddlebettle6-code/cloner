@@ -251,7 +251,12 @@
       }
     }
   ],
-  "leadImage": null,
+  "leadImage": {
+    "src": "/images/articles/merck-bio-techne-life-science-tools-bottom.jpg",
+    "credit": "Photo: Linda Bartlett (National Cancer Institute), Public Domain, via Wikimedia Commons",
+    "caption": "A researcher pipettes samples into a microplate while producing monoclonal antibodies, the kind of antibody and reagent lab work that anchors Bio-Techne's life-science tools business that Merck KGaA agreed to buy for about $11.3bn.",
+    "alt": "Close-up of a scientist's hands using a red micropipette to transfer a sample into a clear microplate, with pipette-tip boxes, sample tubes and a tube rack on the lab bench."
+  },
   "sections": [
     {
       "heading": "The news",
@@ -523,5 +528,6 @@
     "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
   ],
   "date": "2026-06-26",
-  "byline": "Cumulant Research"
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-26T18:46:50-04:00"
 }

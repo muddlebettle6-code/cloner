@@ -522,5 +522,12 @@
     }
   ],
   "date": "2026-06-26",
-  "byline": "Cumulant Research"
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T12:58:32.468Z",
+  "leadImage": {
+    "src": "/images/articles/spacex-19-billion-echostar-spectrum-towers-not-airwaves.jpg",
+    "credit": "Photo: U.S. Space Force / Joshua Conti, Public Domain, via Wikimedia Commons",
+    "caption": "A SpaceX Falcon 9 rocket lifts off carrying Starlink satellites, the orbital network SpaceX would lean on if it tried to turn its $19.6 billion EchoStar spectrum into a US mobile service.",
+    "alt": "A SpaceX Falcon 9 rocket carrying Starlink satellites climbs into a blue sky on a column of flame and exhaust after lifting off from its launch pad at Cape Canaveral."
+  }
 }

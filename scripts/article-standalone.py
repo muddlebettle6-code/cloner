@@ -196,6 +196,27 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001 - verification is best-effort
         log(f"verify parse failed ({exc}); keeping the revised article")
 
+    log("illustrate")
+    try:
+        img = extract_json(claude(STANDARD + "Find ONE real, high-resolution, OPENLY-LICENSED photograph to "
+            "illustrate this article. The license MUST be public domain, CC0, CC BY, or CC BY-SA - strongly "
+            "prefer Wikimedia Commons (or NASA, public domain, for space topics). It must be a REAL photo of the "
+            "concrete subject (a chip or silicon wafer for semiconductors, a satellite or phased-array antenna "
+            "for SpaceX, a quantum computer for quantum, a lab for biotech, a data center for AI, an Apple Store "
+            "or device for Apple). At least 1600px wide, ideally 3000px+. Use web search and fetch to find the "
+            "file and VERIFY the direct url returns an image and the license is as stated. Return JSON {found, "
+            "imageUrl (the DIRECT upload.wikimedia.org/... file url of the original or a large rendering, NOT the "
+            "File: page), credit ('Photo: <author>, <license>, via Wikimedia Commons'), caption (one sentence "
+            "tying it to the story), alt}. Return {\"found\": false} if you cannot verify one.\n\nARTICLE: "
+            f"{final.get('headline', '')}\nEVENT: {str(final.get('event', ''))[:400]}", web=True))
+        if img.get("found") and img.get("imageUrl"):
+            final["leadImage"] = {
+                "src": img["imageUrl"], "credit": img.get("credit", ""),
+                "caption": img.get("caption", ""), "alt": img.get("alt", final.get("headline", "")),
+            }
+    except Exception as exc:  # noqa: BLE001 - illustration is best-effort
+        log(f"illustrate failed ({exc})")
+
     final["date"] = _dt.date.today().isoformat()
     final.setdefault("byline", "Cumulant Research")
     final["honesty"] = [

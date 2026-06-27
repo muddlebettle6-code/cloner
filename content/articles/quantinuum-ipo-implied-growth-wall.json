@@ -633,5 +633,12 @@
     "To justify the price, Quantinuum would need to grow revenue about 119 percent every year (more than doubling annually) for five straight years.",
     "The company has only about $77 million in signed future orders, a tiny fraction of the growth the price assumes.",
     "The whole quantum sector is priced this way, so Quantinuum is not uniquely overvalued, just an extreme example."
-  ]
+  ],
+  "publishedAt": "2026-06-27T12:58:32.421Z",
+  "leadImage": {
+    "src": "/images/articles/quantinuum-ipo-implied-growth-wall.jpg",
+    "credit": "Photo: Y. Colombe / National Institute of Standards and Technology (NIST), Public Domain, via Wikimedia Commons",
+    "caption": "A trapped-ion device built by NIST physicists confines charged atoms above a gold chip - the same trapped-ion approach Quantinuum, whose $15.7 billion IPO priced at roughly 507 times sales, uses to build its quantum computers.",
+    "alt": "Close-up of a NIST trapped-ion quantum computing apparatus showing a gold ion-trap chip surrounded by copper enclosure and a gold wire mesh used to manipulate beryllium ions."
+  }
 }
