@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Source-driven engine (launchd, macOS). Runs scripts/source-watch.sh: monitor
+  primary sources, triage, and write/draft qualifying stories. Runs alongside the
+  core engine (com.cumulant.fieldnote.daily); a shared lock prevents overlap.
+
+  Install:
+    cp deploy/com.cumulant.source.plist ~/Library/LaunchAgents/
+    plutil -replace EnvironmentVariables.GITHUB_TOKEN -string 'YOUR-TOKEN' \
+      ~/Library/LaunchAgents/com.cumulant.source.plist   # for auto-publishing briefs
+    launchctl load -w ~/Library/LaunchAgents/com.cumulant.source.plist
+  Disable:
+    launchctl unload ~/Library/LaunchAgents/com.cumulant.source.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cumulant.source</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/aryanpatel/cloner/scripts/source-watch.sh</string>
+    </array>
+
+    <!-- Every 60 minutes. -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>SITE_DIR</key>
+        <string>/Users/aryanpatel/cloner</string>
+        <key>FIELDNOTE_DEPLOY_DIR</key>
+        <string>/Users/aryanpatel/Downloads/Virtu_Fortuna_Project/cumulant</string>
+        <key>GITHUB_TOKEN</key>
+        <string></string>
+        <key>PATH</key>
+        <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/source.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/source.err.log</string>
+</dict>
+</plist>

@@ -195,6 +195,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <p className="mt-[22px] font-mono text-[11px] uppercase tracking-[0.04em] text-smoke">
               By {article.byline ?? "Cumulant Research"}
             </p>
+            {article.sourceType && (
+              <p className="mt-[8px] font-mono text-[10px] uppercase tracking-[0.05em] text-smoke">
+                Primary source: {article.sourceType.replace(/-/g, " ")}
+                {article.confidenceScore ? `  ·  Confidence ${article.confidenceScore}` : ""}
+                {article.verificationStatus ? `  ·  ${article.verificationStatus}` : ""}
+                {article.humanReviewStatus === "approved" ? "  ·  Editor reviewed" : ""}
+              </p>
+            )}
             {article.glossary && article.glossary.length > 0 && (
               <p className="mt-[10px] text-[12px] leading-[1.4] text-smoke">
                 Hover or tap an underlined term to see its definition.
@@ -247,6 +255,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </Reveal>
           )}
 
+          {/* What changed (source/change-driven stories) */}
+          {article.whatChanged && article.whatChanged.length > 0 && (
+            <Reveal className="mx-auto mt-[36px] max-w-[760px] border border-clay bg-stone p-[24px] md:p-[28px]">
+              <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-smoke">What changed</p>
+              <ul className="mt-[12px] flex flex-col gap-[10px]">
+                {article.whatChanged.map((w, i) => (
+                  <li key={i} className="flex gap-[12px] text-[16px] leading-[1.5] text-ink">
+                    <span className="mt-[9px] h-[5px] w-[5px] flex-none rounded-full" style={{ background: "#ff2d92" }} />
+                    <span>{w}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          )}
+
           {/* Body */}
           <div className="mx-auto max-w-[760px]">
             {article.sections.map((s, i) => (
@@ -273,6 +296,32 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {/* Fact vs analysis: confirmed vs reported (source-driven stories) */}
+          {((article.confirmedFacts?.length ?? 0) > 0 || (article.reportedClaims?.length ?? 0) > 0) && (
+            <div className="mx-auto mt-[48px] grid max-w-[760px] gap-[20px] md:grid-cols-2">
+              {article.confirmedFacts && article.confirmedFacts.length > 0 && (
+                <div className="border border-clay bg-white p-[20px]">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke">Confirmed</p>
+                  <ul className="mt-[10px] flex flex-col gap-[8px]">
+                    {article.confirmedFacts.map((m, i) => (
+                      <li key={i} className="text-[14px] leading-[1.5] text-ink">{m}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {article.reportedClaims && article.reportedClaims.length > 0 && (
+                <div className="border border-clay bg-white p-[20px]">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke">Reported, not confirmed</p>
+                  <ul className="mt-[10px] flex flex-col gap-[8px]">
+                    {article.reportedClaims.map((m, i) => (
+                      <li key={i} className="text-[14px] leading-[1.5] text-smoke">{m}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           )}
 

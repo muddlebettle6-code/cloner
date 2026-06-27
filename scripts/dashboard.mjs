@@ -118,6 +118,16 @@ function page() {
   arts.forEach((a) => { if (!a.section || !a.type) alerts.push(`${a.slug} is missing section/type metadata.`); });
   const alertHtml = alerts.length ? alerts.slice(0, 10).map((x) => `<li>${esc(x)}</li>`).join("") : '<li class="ok">No editorial alerts.</li>';
 
+  // Source engine (the second, source-driven layer).
+  const sourceQueued = read(join(BUILDS, "source-queue.jsonl")).trim().split("\n").filter(Boolean).length;
+  let sourceProcessed = 0;
+  try { sourceProcessed = JSON.parse(read(join(BUILDS, "source-processed.json")) || "[]").length; } catch {}
+  const reviewItems = read(join(BUILDS, "review-queue.jsonl")).trim().split("\n").filter(Boolean)
+    .map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean).slice(-8).reverse();
+  const reviewHtml = reviewItems.length
+    ? reviewItems.map((r) => `<tr><td><a href="${esc(r.source)}" target="_blank">${esc(r.title).slice(0, 84)}</a></td><td class="mono mag">${esc(r.priority || "")}</td><td class="mono dim">${esc((r.time || "").slice(0, 16))}</td></tr>`).join("")
+    : '<tr><td class="dim">nothing awaiting review</td></tr>';
+
   const stageHtml = STAGES.map((s, i) => {
     const on = live && i === stage;
     const done = live && stage >= 0 && i < stage;
@@ -205,6 +215,15 @@ td.c{text-align:center;width:54px;} a{color:#000;text-decoration:none;border-bot
 
 <h2>Distribution</h2>
 <div>${platHtml}</div>
+
+<h2>Source engine</h2>
+<div class="cards">
+  <div class="kpi"><div class="n">${sourceQueued}</div><div class="l">source docs queued</div></div>
+  <div class="kpi"><div class="n">${sourceProcessed}</div><div class="l">triaged</div></div>
+  <div class="kpi"><div class="n">${reviewItems.length}</div><div class="l">awaiting review</div></div>
+  <div class="kpi"><div class="n" style="font-size:21px;letter-spacing:0">SEC &middot; Fed Reg</div><div class="l">monitored primary sources</div></div>
+</div>
+<table style="margin-top:16px"><tr><th>Draft awaiting human review</th><th>Priority</th><th>Detected</th></tr>${reviewHtml}</table>
 
 <div class="foot">auto-refreshes every 12s &middot; ${esc(new Date().toString().slice(0, 24))}</div>
 </body></html>`;

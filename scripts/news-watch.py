@@ -69,6 +69,12 @@ def record(slug: str, event: str, published: bool, section: str = "", score: int
 def main() -> None:
     BUILDS.mkdir(parents=True, exist_ok=True)
 
+    # Defer to the source engine if it is mid-write, so the two never overlap.
+    source_lock = BUILDS / "source.lock"
+    if source_lock.exists() and (_dt.datetime.now().timestamp() - source_lock.stat().st_mtime) < 90 * 60:
+        log("Source engine is writing; skipping this cycle.")
+        return
+
     # One run at a time; clear a stale lock (>90 min, longer than a full article).
     if LOCK.exists():
         if (_dt.datetime.now().timestamp() - LOCK.stat().st_mtime) < 90 * 60:

@@ -278,6 +278,12 @@ export interface Correction {
   note: string;
 }
 
+/** A visible entry in a developing/live story's update log. */
+export interface UpdateEntry {
+  time: string;
+  note: string;
+}
+
 /**
  * A deeply reported article: one current event, one narrow question, answered
  * with original analysis, sources, visuals, alternatives, scenarios, and limits.
@@ -325,6 +331,31 @@ export interface Article {
   status?: "draft" | "published";
   relatedArticles?: string[];
   corrections?: Correction[];
+  // --- Source-driven layer (optional; back-compatible) ---
+  /** Where the story originated: a filing, regulation, data release, statement. */
+  sourceType?: string;
+  /** When the source document itself was published. */
+  sourcePublishedAt?: string;
+  /** When the newsroom retrieved the source. */
+  sourceRetrievedAt?: string;
+  sourceReliability?: "official" | "regulatory" | "company" | "wire" | "secondary";
+  /** Editorial priority lane from the story-priority model. */
+  priority?: "immediate" | "high" | "standard" | "briefing" | "monitor";
+  /** 0-100 confidence in the facts as reported. */
+  confidenceScore?: number;
+  verificationStatus?: "verified" | "partial" | "unverified";
+  humanReviewStatus?: "not-required" | "pending" | "approved";
+  /** For change-driven stories: what changed against the prior document. */
+  whatChanged?: string[];
+  /** Explicitly verified facts (kept distinct from analysis). */
+  confirmedFacts?: string[];
+  /** Reported but not independently confirmed. */
+  reportedClaims?: string[];
+  /** Forward scenarios, clearly labeled as not predictions. */
+  scenarios?: string[];
+  /** Visible update log for developing/live stories. */
+  updateHistory?: UpdateEntry[];
+  researchPacketId?: string;
   // --- Editorial boxes (rendered by article type) ---
   keyPoints?: string[];
   whyItMatters?: string;
@@ -349,4 +380,46 @@ export interface Article {
   sources: ArticleSource[];
   limitations: string[];
   honesty: string[];
+}
+
+// --------------------------------------------------------------------------- //
+// Source-driven engine — the second newsroom layer that monitors primary
+// sources and produces research packets the writing/verification roles share.
+
+/** A detected primary-source document (the Source Monitor's output). */
+export interface SourceEvent {
+  id: string;
+  /** e.g. "sec-8k", "sec-s1", "federal-register-rule". */
+  sourceType: string;
+  title: string;
+  url: string;
+  entity?: string;
+  publishedAt?: string;
+  retrievedAt: string;
+  reliability: string;
+  score?: number;
+  priority?: string;
+  summary?: string;
+}
+
+/** The structured packet shared by the writing, verification, and editing roles. */
+export interface ResearchPacket {
+  id: string;
+  event: SourceEvent;
+  whatChanged?: string[];
+  impact?: {
+    direct?: string[];
+    indirect?: string[];
+    companies?: string[];
+    industries?: string[];
+    countries?: string[];
+    assetClasses?: string[];
+  };
+  angles?: { kind: string; score: number; note: string }[];
+  priority: string;
+  confidence: number;
+  confirmedFacts?: string[];
+  reportedClaims?: string[];
+  unknowns?: string[];
+  humanReviewRequired: boolean;
 }

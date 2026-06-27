@@ -54,9 +54,12 @@ export default function ArticlesPage() {
         </Reveal>
       )}
 
-      <div className="border-t border-clay pt-[24px]">
+      <div className="flex gap-[26px] border-t border-clay pt-[24px]">
         <Link href="/articles/topics" className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke transition-colors hover:text-ink">
           Browse all topics
+        </Link>
+        <Link href="/articles/methodology" className="font-mono text-[11px] uppercase tracking-[0.06em] text-smoke transition-colors hover:text-ink">
+          Methodology
         </Link>
       </div>
     </NewsroomShell>
