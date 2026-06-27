@@ -55,18 +55,33 @@ const POS = ["center", "center top", "center bottom", "left center", "right cent
 
 // ---- slide shells -------------------------------------------------------- //
 
-function coverSlide(a, total, bg) {
+function coverSlide(a, hook, bg) {
   const section = a.primarySection ? cap(a.primarySection) : "";
-  const len = a.headline.length;
-  const size = len > 64 ? 70 : 86;
+  const len = hook.length;
+  const size = len > 88 ? 74 : len > 56 ? 92 : len > 34 ? 110 : 128;
   return `<div class="slide">
     ${bg ? `<img class="photo" src="${bg}" style="object-position:center">` : ""}
     <div class="scrim cover"></div>
     <div class="cpad">
       ${section ? `<div class="ckick">${esc(section)}</div>` : ""}
-      <div class="chead" style="font-size:${size}px">${hl(a.headline)}</div>
-      <div class="cfoot"><div class="brand">${mark("#fff")}<span>Cumulant</span></div><div class="swipe">Swipe →</div></div>
+      <div class="chead" style="font-size:${size}px">${hl(hook)}</div>
+      <div class="cfoot"><div class="brand">${mark("#fff")}<span>Cumulant</span></div><div class="arrow">→</div></div>
     </div></div>`;
+}
+
+// A scroll-stopping cover line (curiosity/tension). Falls back to the headline.
+function getHook(a) {
+  try {
+    const prompt = `Write ONE scroll-stopping cover line for a social carousel about this financial news story. `
+      + `Do NOT simply reword the headline. Open a curiosity gap or state a provocative "this, but that" contrast that `
+      + `makes someone stop scrolling; a short, sharp question is allowed. Under 10 words. Punchy and factual; no hype, `
+      + `no clickbait falsehoods, no em dashes, no quotation marks. Lead with or include the single most striking figure `
+      + `if it fits.\nHEADLINE: ${a.headline}\nDECK: ${a.deck || ""}\nReturn ONLY the line.`;
+    const out = execFileSync(process.env.FCRI_CLAUDE_BIN || "claude", ["-p"], { input: prompt, encoding: "utf8", timeout: 60000 });
+    const line = out.split("\n").map((s) => s.trim()).filter(Boolean).pop().replace(/^["'“”]|["'“”]$/g, "").trim();
+    if (line && line.length >= 8 && line.length < 130) return line;
+  } catch { /* fall back */ }
+  return a.headline;
 }
 
 function dataSlide(idx, total, source, inner, bg, pos) {
@@ -98,8 +113,7 @@ function keynumberBody(c) {
   const d = c.data || {};
   return `<div class="kicker">${esc(c.title)}</div>
     <div class="kn">${esc(d.value ?? "")}</div>
-    <div class="knlabel">${esc(d.label ?? c.subtitle ?? "")}</div>
-    ${d.sub ? `<div class="knsub">${esc(d.sub)}</div>` : ""}`;
+    <div class="knlabel">${esc(d.label ?? c.subtitle ?? "")}</div>`;
 }
 
 function barsBody(c) {
@@ -111,9 +125,9 @@ function barsBody(c) {
     return `<div class="brow"><div class="blabel">${esc(b.label)}</div>
       <div class="btrack"><div class="bfill" style="width:${pct}%;background:${b.highlight ? MAG : "rgba(255,255,255,.92)"}"></div><span class="bval">${esc(val)}</span></div></div>`;
   }).join("");
-  return `<div class="kicker">${esc(c.title)}</div>${c.subtitle ? `<div class="csub">${esc(c.subtitle)}</div>` : ""}
+  return `<div class="kicker">${esc(c.title)}</div>
     <div class="bars">${rows}</div>
-    ${c.units ? `<div class="units">${esc(c.units)}</div>` : ""}${c.note ? `<div class="note">${esc(clip(c.note, 220))}</div>` : ""}`;
+    ${c.units ? `<div class="units">${esc(c.units)}</div>` : ""}`;
 }
 
 function statementBody(kicker, text) {
@@ -167,9 +181,9 @@ function css(F) {
   /* cover */
   .cpad{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:74px;}
   .ckick{font-size:24px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:${MAG};margin-bottom:22px;}
-  .chead{line-height:1.04;letter-spacing:-.02em;font-weight:700;color:#fff;max-width:96%;text-wrap:balance;text-shadow:0 2px 30px rgba(0,0,0,.5);}
-  .cfoot{display:flex;align-items:center;justify-content:space-between;margin-top:46px;}
-  .swipe{font-size:20px;font-weight:500;color:rgba(255,255,255,.75);}
+  .chead{line-height:1.16;letter-spacing:-.025em;font-weight:700;color:#fff;max-width:98%;text-wrap:balance;text-shadow:0 2px 30px rgba(0,0,0,.55);}
+  .cfoot{display:flex;align-items:center;justify-content:space-between;margin-top:50px;}
+  .arrow{font-size:48px;font-weight:400;line-height:1;color:rgba(255,255,255,.9);}
   /* brand */
   .brand{display:flex;align-items:center;gap:13px;}.brand svg{width:34px;height:27px;}.brand span{font-size:30px;font-weight:600;letter-spacing:-.01em;color:#fff;}
   .brand.sm svg{width:27px;height:22px;}.brand.sm span{font-size:20px;}
@@ -196,9 +210,8 @@ function css(F) {
   .note{margin-top:12px;font-size:21px;line-height:1.42;color:rgba(255,255,255,.84);}
   /* statement (Brut-style big bold text) */
   .stkick{display:inline-block;font-family:ui-monospace,monospace;font-size:22px;text-transform:uppercase;letter-spacing:.14em;color:#fff;background:${MAG};padding:7px 14px;border-radius:5px;margin-bottom:30px;}
-  .sttext{line-height:1.14;font-weight:700;letter-spacing:-.02em;text-shadow:0 2px 26px rgba(0,0,0,.55);}
-  .hl{background:${MAG};color:#fff;padding:.02em .15em;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
-  .chead .hl{border-radius:7px;}
+  .sttext{line-height:1.34;font-weight:700;letter-spacing:-.02em;text-shadow:0 2px 26px rgba(0,0,0,.6);}
+  .hl{background:${MAG};color:#fff;padding:.05em .18em;border-radius:7px;white-space:nowrap;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
   /* timeline */
   .timeline{display:flex;flex-direction:column;gap:27px;}
   .tev{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:start;}
@@ -245,12 +258,14 @@ mkdirSync(out, { recursive: true });
 
 const slides = plan(a);
 const total = slides.length;
+const hook = getHook(a);
+console.log(`  hook: ${hook}`);
 slides.forEach((s, i) => {
   const idx = i + 1;
   const bg = images[i % images.length];
   const pos = POS[i % POS.length];
   let body;
-  if (s.cover) body = coverSlide(a, total, bg);
+  if (s.cover) body = coverSlide(a, hook, bg);
   else if (s.cta) body = ctaSlide(a, total, bg);
   else if (s.statement) body = dataSlide(idx, total, null, statementBody(s.statement[0], s.statement[1]), bg, pos);
   else body = dataSlide(idx, total, s.src, s.body, bg, pos);
