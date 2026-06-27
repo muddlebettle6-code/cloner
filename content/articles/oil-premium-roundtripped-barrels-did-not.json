@@ -1,0 +1,577 @@
+{
+  "published": true,
+  "slug": "oil-premium-roundtripped-barrels-did-not",
+  "headline": "The Oil War Premium Round-Tripped in 17 Weeks. The Barrels Did Not.",
+  "deck": "By the 26 June 2026 close, crude had erased the entire premium it built after February's US strike on Iran, with Brent back near its pre-attack $72. But the physical recovery underneath the price had not caught up: Gulf exports were running at roughly 75 percent of prewar volumes and Strait of Hormuz throughput lower still. The price reverted because the market priced out the tail risk of a future blockade, not because the barrels were fully back, and that gap is the market's freshest vulnerability.",
+  "takeaways": [
+    "Brent and WTI gave back every dollar of their war premium by 26 June, returning to roughly where they sat on 27 February, the day before the US strike on Iran.",
+    "The physical market did not round-trip with the price: Gulf crude exports recovered to about 75 percent of prewar levels and Hormuz throughput was running at roughly a third to 40 percent of its prewar norm.",
+    "The flat price fell mainly because an 18 June US-Iran ceasefire deal collapsed the odds of a future Hormuz closure, not because supply was confirmed back. A glutted, contango oil market did the rest.",
+    "This premium took about 17 weeks to unwind, far slower than the roughly two weeks after the 2019 Abqaiq attack or 9/11, because this time there was a real shooting war and a real outage: Iran actually shut Hormuz on 4 March.",
+    "The all-clear and the alarm rang the same day: hours after the round-trip was complete, Iranian drones struck a cargo ship near Hormuz and the US struck back, showing how fast a premium that took months to fade could snap back."
+  ],
+  "glossary": [
+    {
+      "term": "Brent crude",
+      "definition": "The most-watched global oil price benchmark, named for a North Sea oil field; it sets the reference price for most of the world's internationally traded crude."
+    },
+    {
+      "term": "WTI (West Texas Intermediate)",
+      "definition": "The main US oil price benchmark, generally trading a few dollars below Brent and used as the reference for crude produced and delivered in the United States."
+    },
+    {
+      "term": "War premium / risk premium",
+      "definition": "The extra amount buyers will pay for oil purely because of the fear that conflict could cut off future supply, separate from how much oil is actually flowing today."
+    },
+    {
+      "term": "Round-trip",
+      "definition": "When a price spikes and then falls all the way back to where it started, ending up roughly unchanged over the period."
+    },
+    {
+      "term": "Flat price",
+      "definition": "The headline dollar price of a barrel of oil that you see quoted on a screen, as opposed to the relationships between different delivery dates or grades."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "definition": "A narrow sea passage between Iran and Oman through which roughly a fifth of the world's oil is shipped; the single most important chokepoint in the global oil trade."
+    },
+    {
+      "term": "Chokepoint",
+      "definition": "A narrow passage that a large share of global trade must squeeze through, so that closing it or threatening it can disrupt supply far out of proportion to its size."
+    },
+    {
+      "term": "Contango",
+      "definition": "A market condition where oil for delivery later is more expensive than oil for delivery now, a classic sign that there is plenty of supply around today and little urgency to buy."
+    },
+    {
+      "term": "Backwardation",
+      "definition": "The opposite of contango: oil for delivery now costs more than oil for later, the telltale sign of a tight, scarce market where buyers pay up to get barrels immediately."
+    },
+    {
+      "term": "Time-spread / prompt spread",
+      "definition": "The price gap between the nearest delivery month and the next one; traders read it to judge whether the market is tight (backwardation) or oversupplied (contango) right now."
+    },
+    {
+      "term": "Dated Brent",
+      "definition": "The price of physical North Sea crude available for loading on specific near-term dates, a closely watched gauge of real, here-and-now supply and demand."
+    },
+    {
+      "term": "Physical differential",
+      "definition": "The premium or discount a specific real cargo of oil trades at versus a benchmark like Dated Brent; a weak (negative) differential signals that sellers are struggling to move barrels."
+    },
+    {
+      "term": "VLCC (Very Large Crude Carrier)",
+      "definition": "A supertanker that can carry roughly two million barrels of oil; the workhorse vessel for long-haul crude shipments out of the Gulf."
+    },
+    {
+      "term": "Freight / charter rate",
+      "definition": "The price a buyer pays to hire a tanker to move oil; it rises sharply when ships are scarce or sailing through risky waters, adding to the delivered cost of crude."
+    },
+    {
+      "term": "OPEC+",
+      "definition": "The group of major oil-exporting nations, led by Saudi Arabia and Russia, that coordinates how much crude to pump in order to influence global prices."
+    },
+    {
+      "term": "EIA Short-Term Energy Outlook (STEO)",
+      "definition": "A monthly US government forecast of oil and energy supply, demand and prices, widely used as a neutral reference for the global supply balance."
+    },
+    {
+      "term": "Memorandum of understanding (MOU)",
+      "definition": "A signed document that records what two sides have agreed to in principle; it sets out commitments and next steps but is usually a framework rather than a final, binding treaty."
+    },
+    {
+      "term": "IRGC (Islamic Revolutionary Guard Corps)",
+      "definition": "A powerful branch of Iran's military that controls naval forces in the Gulf and is often involved in confrontations around the Strait of Hormuz."
+    },
+    {
+      "term": "Barrels per day (b/d)",
+      "definition": "The standard way oil flows are measured; for scale, the world uses roughly 100 million barrels per day and about a fifth of that passes through Hormuz."
+    },
+    {
+      "term": "Abqaiq",
+      "definition": "A massive Saudi oil processing facility hit by a 2019 attack that briefly knocked out about 5 percent of global supply, the largest sudden outage on record before this episode."
+    }
+  ],
+  "event": "By the 26 June 2026 close, Brent and WTI crude erased the entire war premium built after the 28 February US strike on Iran, returning to pre-attack levels even as Gulf exports and Strait of Hormuz transits remained well below normal.",
+  "question": "When crude fully round-tripped its Hormuz war premium by 26 June, had the physical oil market actually normalized, or did the flat price revert weeks ahead of the barrels, restoring a forward-looking insurance value rather than confirming that supply was back?",
+  "readingMinutes": 12,
+  "tags": [
+    "oil",
+    "commodities",
+    "geopolitics",
+    "Strait of Hormuz",
+    "Iran",
+    "energy markets",
+    "risk premium",
+    "macro"
+  ],
+  "leadChartId": "recovery-gap",
+  "charts": [
+    {
+      "id": "recovery-gap",
+      "kind": "bar",
+      "title": "The price came back faster than the barrels",
+      "subtitle": "How far each measure had returned toward its pre-war normal by the 26 June 2026 close",
+      "source": "OilPrice; Al Jazeera; CNBC (24-26 June 2026 reporting)",
+      "units": "% of the way back to pre-war normal",
+      "period": "As of 26 June 2026",
+      "note": "Bars measure recovery toward the late-February baseline, not absolute levels. The Hormuz bar reflects a daily run-rate of roughly 5 to 8 million b/d against a prewar norm of about 15 to 20 million b/d (CNBC ~32%, OilPrice ~40%). One single-day tally cited by the US energy secretary approached the prewar level; we use the lower, multi-day reading and flag the conflict.",
+      "alt": "Bar chart showing Brent flat price about 100 percent recovered, Gulf crude exports about 75 percent, and Hormuz throughput about 40 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "Brent flat price",
+            "value": 100,
+            "highlight": true
+          },
+          {
+            "label": "Gulf crude exports",
+            "value": 75
+          },
+          {
+            "label": "Hormuz throughput",
+            "value": 40
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "brent-roundtrip",
+      "kind": "keynumber",
+      "title": "Brent's full round-trip",
+      "source": "OilPrice; Al Jazeera (26 June 2026)",
+      "units": "USD per barrel",
+      "alt": "Key number showing Brent settled at 71.99 dollars on 26 June, back to its pre-attack level.",
+      "data": {
+        "value": "$71.99",
+        "label": "Brent close, 26 June 2026",
+        "sub": "Down ~4.3% on the day and ~10% on the week, back to its 27 February pre-strike level near $72, after peaking at $126.41 on 30 April"
+      }
+    },
+    {
+      "id": "war-timeline",
+      "kind": "timeline",
+      "title": "From strike to round-trip in four months",
+      "source": "NPR; Axios; CNN; CNBC; Al Jazeera; OilPrice (Feb-Jun 2026)",
+      "period": "28 Feb, 26 Jun 2026",
+      "alt": "Timeline of the 2026 oil shock from the late-February strike through the April price peak to the June round-trip and renewed drone attack.",
+      "data": {
+        "events": [
+          {
+            "date": "28 Feb 2026",
+            "title": "Operation Epic Fury",
+            "detail": "US and Israeli strikes on Iran; Supreme Leader Khamenei killed, igniting the Hormuz crisis."
+          },
+          {
+            "date": "4-8 Mar 2026",
+            "title": "Hormuz shut, Brent tops $100",
+            "detail": "Iran closes the Strait of Hormuz on 4 March; when markets open on 8 March Brent jumps past $100 and nears $120 within days."
+          },
+          {
+            "date": "30 Apr 2026",
+            "title": "Brent peaks at $126",
+            "detail": "Crude touches $126.41 a barrel, a four-year high, on fears of wider US strikes."
+          },
+          {
+            "date": "18 Jun 2026",
+            "title": "US-Iran sign a ceasefire MOU",
+            "detail": "A memorandum of understanding extends the ceasefire 60 days and commits to reopening Hormuz, collapsing the perceived odds of a closure."
+          },
+          {
+            "date": "25-26 Jun 2026",
+            "title": "Premium fully erased",
+            "detail": "Brent settles at $71.99 and WTI near $69, back to pre-attack levels."
+          },
+          {
+            "date": "26 Jun 2026",
+            "title": "Drones and retaliation",
+            "detail": "IRGC drones strike the cargo ship Ever Lovely off Oman; the US strikes Iranian drone and radar sites the same day."
+          }
+        ]
+      }
+    },
+    {
+      "id": "unwind-speed",
+      "kind": "bar",
+      "title": "The slowest war premium to unwind in decades",
+      "subtitle": "Approximate weeks for an oil price shock to round-trip to its pre-event level",
+      "source": "ECB Economic Bulletin (2024) for the 9/11 reversal; Cumulant Research dating of the 2026 episode (28 Feb to 26 Jun) and approximate datings for Abqaiq 2019 and Russia 2022",
+      "units": "weeks to full round-trip",
+      "note": "This chart measures how fast each premium faded, not how severe the shock was. The longest bar is the slowest unwind, not the worst outcome. Only the 9/11 figure (a ~25% drop within 14 days) is drawn directly from the ECB; the others are approximate.",
+      "alt": "Bar chart comparing weeks to unwind: post-9/11 about two weeks, Abqaiq 2019 about two weeks, Russia 2022 about eight weeks, Hormuz 2026 about seventeen weeks.",
+      "data": {
+        "bars": [
+          {
+            "label": "Post-9/11 (2001)",
+            "value": 2
+          },
+          {
+            "label": "Abqaiq (2019)",
+            "value": 2
+          },
+          {
+            "label": "Russia invasion (2022)",
+            "value": 8
+          },
+          {
+            "label": "Hormuz (2026)",
+            "value": 17,
+            "highlight": true
+          }
+        ],
+        "max": 18
+      }
+    },
+    {
+      "id": "curve-flip",
+      "kind": "comparison",
+      "title": "The front of the curve says oversupply, not scarcity",
+      "subtitle": "Brent monthly contracts at the 25 June close: later oil costs more than nearer oil (contango)",
+      "source": "Al Jazeera (25 June 2026)",
+      "units": "USD per barrel",
+      "note": "When the later month trades above the nearer month, the market is signalling plenty of supply today, the opposite of the tightness a genuine ongoing outage would produce.",
+      "alt": "Comparison showing August Brent at 72.68 dollars below September Brent at 73.59 dollars, a contango structure.",
+      "data": {
+        "bars": [
+          {
+            "label": "August Brent (nearer)",
+            "value": 72.68,
+            "highlight": true
+          },
+          {
+            "label": "September Brent (later)",
+            "value": 73.59
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The all-clear and the alarm rang the same day",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 26 June 2026, the oil market declared the war over. By the close, Brent crude settled at $71.99 a barrel, down about 4.3 percent on the day and roughly 10 percent on the week, its lowest since 27 February. WTI, the US benchmark, settled near $69; OilPrice put it at $69.23 (down 3.74 percent), while Al Jazeera's snapshot a day earlier quoted $69.58. Either way, the message was the same: crude had given back every dollar of the premium it built after the 28 February US strike on Iran. The screen showed a clean round-trip, oil back to where it traded the day before the bombs fell."
+        },
+        {
+          "type": "p",
+          "text": "Then, hours later, the alarm. Drones from Iran's Revolutionary Guard struck the Singapore-flagged cargo ship Ever Lovely off the coast of Oman, near the mouth of the Strait of Hormuz, the narrow channel through which roughly a fifth of the world's oil passes. US forces shot down three more drones aimed at shipping, and the United States struck back the same day, hitting Iranian drone storage and radar sites. President Trump accused Tehran of a \"foolish violation\" of the ceasefire it had just signed. The market that had spent the afternoon pricing in peace had, by evening, fresh reason to doubt it."
+        },
+        {
+          "type": "callout",
+          "label": "The tension",
+          "text": "The same reporting that confirmed the price round-trip also showed Hormuz vessel transits running at a fraction of their previous norm of 130 to 140 a day, Saudi Aramco having loaded only its first two Gulf cargoes since the conflict began, and buyers from India to China struggling to charter enough tankers as freight rates spiked. The screen said all-clear. The water did not yet fully agree."
+        }
+      ]
+    },
+    {
+      "heading": "The one question worth asking",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A round-trip in the flat price is the kind of fact that ends a story. The premium is gone, the headlines move on, gasoline drifts back down, and everyone assumes the crisis is behind us. But a price is a forecast, not a measurement. So the narrow question this article tries to answer is precise:"
+        },
+        {
+          "type": "pullquote",
+          "text": "Had the physical oil market actually normalized by 26 June, or did the price revert weeks ahead of the barrels, restoring an insurance value rather than confirming supply was back?"
+        },
+        {
+          "type": "p",
+          "text": "This matters because the two readings carry very different risks. If the barrels are genuinely back, the round-trip is earned and durable. If the barrels are not back and the price reverted anyway, then the market is treating a not-yet-finished recovery as finished, and a premium that took four months to fade could come back in days."
+        }
+      ]
+    },
+    {
+      "heading": "What happened: four months from strike to settle",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The trigger was Operation Epic Fury, the 28 February 2026 US and Israeli strike on Iran that killed Supreme Leader Khamenei and opened what is now recorded as the 2026 Strait of Hormuz crisis. Oil reacted the way oil always reacts to a chokepoint at war: it surged. Iran shut the Strait of Hormuz on 4 March, and when markets opened on 8 March Brent vaulted past $100 (it traded around $101.81 that Sunday evening) and neared $120 within days, as traders priced in the genuine possibility that the closure could last."
+        },
+        {
+          "type": "p",
+          "text": "The peak came later. Brent touched $126.41 a barrel on 30 April, its highest in four years, on reports that Washington was weighing a fresh wave of strikes. That is the number to anchor on: the war premium kept building for two months after the first shock, well into the spring."
+        },
+        {
+          "type": "chart",
+          "chartId": "war-timeline"
+        },
+        {
+          "type": "p",
+          "text": "The unwind came in stages. On 18 June, the United States and Iran signed a memorandum of understanding that extended their ceasefire for 60 days and committed to reopening the strait. With a deal on paper, the probability that anyone would actually keep Hormuz closed dropped sharply, and so did the price. By 25 and 26 June, helped along by Gulf exports recovering to about 75 percent of prewar levels and Saudi Arabia resuming loadings at its giant Ras Tanura terminal, the premium was fully gone."
+        },
+        {
+          "type": "p",
+          "text": "The actors here are worth keeping straight. The producers (Saudi Arabia, the UAE, Kuwait, Qatar) control how fast barrels physically return. The diplomats control the framework that governs the risk premium. And the IRGC, with its drones and naval forces, controls whether any of it holds. On 26 June, all three were pulling in different directions at once."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: the price is back, the barrels are not",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the cleanest fact. Brent's flat price round-tripped essentially 100 percent: from a pre-attack level around $72, up to $126.41, and back to $71.99. By the screen, the war never happened."
+        },
+        {
+          "type": "chart",
+          "chartId": "brent-roundtrip"
+        },
+        {
+          "type": "p",
+          "text": "Now line that up against the physical recovery, and the gap opens. Gulf crude exports had returned to roughly 75 percent of prewar volumes, not 100. And Hormuz throughput was further behind still. The single busiest stretch since the war began saw more than 16 million barrels cross in two days, the kind of number a press release loves to wave around. But two days is the key. That is about 8 million barrels a day against a prewar Hormuz norm of roughly 15 to 20 million, which works out to somewhere around a third to 40 percent of normal flow, not the picture of a fully healed market. A separate tally put June flows at about 4.8 million barrels a day against a prewar 15 million, an even lower reading of about 32 percent."
+        },
+        {
+          "type": "chart",
+          "chartId": "recovery-gap"
+        },
+        {
+          "type": "callout",
+          "label": "How we measured it, and where it gets murky",
+          "text": "We benchmark each measure against its late-February level, not against an absolute zero. For Hormuz we deliberately used a multi-day run-rate (roughly 5 to 8 million b/d) rather than the single best day, because averages are harder to cherry-pick. In full honesty, the physical data is genuinely noisy: the same day Al Jazeera reported the price round-trip, it also quoted US Energy Secretary Chris Wright saying about 20 million barrels had exited the strait in the prior 24 hours, close to prewar. If that single-day figure is the right gauge, Hormuz is much closer to normal than our 40 percent bar suggests. We flag the conflict rather than pick the flattering number, and the wider point survives either way: the price was treated as fully healed while the physical reads ran anywhere from a third of normal to nearly back."
+        }
+      ]
+    },
+    {
+      "heading": "Why the price could revert without the barrels: a glutted, contango market",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the part that resolves the apparent contradiction. A war premium is insurance against a future supply cut, not a measurement of today's supply. Once the 18 June deal made a renewed Hormuz closure look unlikely, that insurance was worth far less, and the price could fall even with barrels still trickling back. A glutted market did the rest."
+        },
+        {
+          "type": "p",
+          "text": "You can read the glut straight off the futures curve. At the 25 June close, the nearer Brent contract (August) traded at $72.68, below the later one (September) at $73.59. That shape is called contango, and it is the market's way of saying there is plenty of oil around right now. A genuine ongoing outage produces the opposite shape, backwardation, where buyers pay up for barrels today. The curve was signalling comfort, not scarcity."
+        },
+        {
+          "type": "chart",
+          "chartId": "curve-flip"
+        },
+        {
+          "type": "p",
+          "text": "That fits the wider backdrop. Even before the war, OPEC+ had been unwinding output cuts into a soft demand picture, and Iran was set to add barrels once it got a temporary reprieve from US sanctions under the deal. Stranded tankers that had sat in the Gulf for months were finally sailing, adding to supply all at once. So the flat price had two reasons to fall: the insurance value evaporated, and the underlying market was well supplied. Neither of those is the same as saying the barrels through Hormuz were fully back."
+        }
+      ]
+    },
+    {
+      "heading": "The slowest unwind in decades",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "What makes this episode unusual is not how high the price went but how long the premium took to fade. From the 28 February strike to the 26 June round-trip is about 17 weeks. Compare that with history. After 9/11, the ECB notes, Brent's initial jump reversed within roughly two weeks as demand fears took over. After the 2019 Abqaiq attack, which knocked out about 5 percent of global supply, prices round-tripped in about two weeks once Saudi Arabia restored output. Even Russia's 2022 invasion premium faded in roughly eight weeks."
+        },
+        {
+          "type": "chart",
+          "chartId": "unwind-speed"
+        },
+        {
+          "type": "p",
+          "text": "The reason this one was so much slower is also the reason it is fragile. Abqaiq and 9/11 were shocks that the market could quickly judge to be contained. This time there was a real shooting war that ran for months and a real outage: Iran actually closed Hormuz on 4 March. A premium that reflects a live, physical closure takes longer to talk down than one that reflects a scare, and it can return just as physically the moment the shooting resumes."
+        }
+      ]
+    },
+    {
+      "heading": "The answer, and the risk it leaves behind",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So, to the question. No, the physical oil market had not fully normalized by 26 June. The flat price reverted ahead of the barrels. Gulf exports were about three-quarters of the way back, Hormuz throughput by most readings a good deal less, and tankers were still scarce and expensive. What round-tripped was the insurance value of a future closure, not a confirmation that supply was home."
+        },
+        {
+          "type": "pullquote",
+          "text": "The market closed the book on the war while the last chapters of the physical recovery were still being written."
+        },
+        {
+          "type": "p",
+          "text": "That is exactly why the 26 June drone strike matters so much. It is the live demonstration of the risk. A premium that took 17 weeks to bleed away started to look reversible within hours, because the thing it was insuring against, a hostile Iran able to threaten Hormuz at will, had not actually gone anywhere. The barrels that had not fully returned were the proof. When the price and the physical market disagree, it is usually the price that has to catch up, not the other way around."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Defined the war premium as the gap between Brent's flat price during the conflict and its 27 February pre-strike level near $72, and treated a 'round-trip' as a return to within about a dollar of that level.",
+    "Cross-checked the 26 June settle and weekly move across two independent sources (OilPrice for the $71.99 close and -4.34% day move; Al Jazeera for the prior-day snapshot and contract-level prices).",
+    "Built the recovery-gap chart by comparing each measure to its late-February baseline rather than to zero: Brent flat price (~100% recovered), Gulf crude exports (~75%, per Al Jazeera/Bloomberg reporting), and Hormuz throughput (a daily run-rate of roughly 5 to 8 million b/d against a prewar 15 to 20 million, giving ~32% to ~40%).",
+    "Used the contango in the Brent curve (August $72.68 below September $73.59) and the flip in Dubai and Murban benchmarks as independent evidence that the front of the market was well supplied, not tight.",
+    "Dated the unwind from the 28 February strike to the 26 June round-trip (about 17 weeks) and compared it with prior episodes; only the 9/11 reversal (a ~25% drop within 14 days) is taken directly from the ECB, with Abqaiq 2019 and Russia 2022 as approximate datings.",
+    "Verified every named event (Operation Epic Fury, the 4 March Hormuz closure, the 30 April $126.41 peak, the 18 June MOU, and the 26 June drone strike and US retaliation) against contemporaneous reporting before including it."
+  ],
+  "sources": [
+    {
+      "title": "Oil prices back to pre-war levels on rising Middle East supply",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/25/oil-prices-back-to-pre-war-levels-on-rising-middle-east-supply",
+      "kind": "secondary"
+    },
+    {
+      "title": "Brent Erases Iran War Premium as Hormuz Flows Show Signs of Recovery",
+      "publisher": "OilPrice.com",
+      "url": "https://oilprice.com/Energy/Energy-General/Brent-Erases-Iran-War-Premium-as-Hormuz-Flows-Show-Signs-of-Recovery.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Brent falls below $75, lowest level since day before U.S.-Iran war",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/24/oil-prices-wti-brent-crude-trump-doj-gasoline-prices-strait-of-hormuz.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Brent crude falls below $74 for first time since start of the Iran war",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/business/2026/06/24/brent-crude-falls-below-74-for-first-time-since-start-of-the-iran-war",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil tankers with 35 million barrels stuck in Persian Gulf exited Strait of Hormuz since Iran deal",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/24/oil-tanker-strait-hormuz-iran-deal.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "US strikes Iran in response to drone strike on commercial ship",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/26/us-strikes-iran-in-response-to-drone-strike-on-commercial-ship",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump: Iran committed 'foolish violation' of ceasefire following drone strikes on Strait of Hormuz shipping",
+      "publisher": "OAN",
+      "url": "https://www.oann.com/newsroom/trump-iran-committed-foolish-violation-of-ceasefire-following-series-of-attack-drone-strikes-targeting-commercial-shipping-in-strait-of-hormuz/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Iran's supreme leader, Ayatollah Ali Khamenei, has been killed",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/02/28/nx-s1-5730158/israel-iran-strikes-trump-us",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil tops $100 a barrel as Iran war escalates",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2026/03/08/iran-war-oil-market-barrel-cost",
+      "kind": "secondary"
+    },
+    {
+      "title": "Crude oil prices swing wildly as the Iran war stretches on",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/03/08/nx-s1-5741818/iran-israel-trump-oil-100",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil briefly touches $126, its highest price in four years",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2026/04/30/energy/oil-prices-iran-war-wartime-high-blockade-hnk",
+      "kind": "secondary"
+    },
+    {
+      "title": "Full text of Trump's framework agreement to end Iran war (US-Iran memorandum of understanding)",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/06/18/nx-s1-5863027/us-iran-trump-memorandum-of-understanding-full-text",
+      "kind": "primary"
+    },
+    {
+      "title": "World reacts to US-Iran deal to extend ceasefire, reopen Strait of Hormuz",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/18/world-reacts-to-us-iran-deal-to-extend-ceasefire-begin-negotations",
+      "kind": "secondary"
+    },
+    {
+      "title": "India-bound oil tanker rates surge as Gulf shipping capacity tightens",
+      "publisher": "Domain-b",
+      "url": "https://www.domain-b.com/amp/industry/industry-general/india-bound-oil-tanker-rates-gulf-shipping-capacity-tightens-2026",
+      "kind": "secondary"
+    },
+    {
+      "title": "Hormuz crisis slashes VLCC volumes by 36% but voyages are longer",
+      "publisher": "Lloyd's List",
+      "url": "https://www.lloydslist.com/LL1157100/Hormuz-crisis-slashes-VLCC-volumes-by-36-but-voyages-are-longer",
+      "kind": "data"
+    },
+    {
+      "title": "Speculation in oil and gas prices in times of geopolitical risks (Economic Bulletin)",
+      "publisher": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2024/html/ecb.ebbox202402_01~b3d857ae05.en.html",
+      "kind": "academic"
+    },
+    {
+      "title": "Brent crude oil price, chart and historical data",
+      "publisher": "Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+      "kind": "data"
+    }
+  ],
+  "limitations": [
+    "Hormuz throughput figures conflict sharply across sources and across single-day versus multi-day windows: roughly 4.8 million b/d (CNBC), about 8 million b/d implied by a two-day tally (OilPrice), and about 20 million b/d in one 24-hour period cited by the US energy secretary (Al Jazeera). The prewar norm itself is quoted as both ~15 million b/d (crude) and ~20 million b/d (total oil). The 40 percent bar is a defensible mid-to-low reading, not a precise measurement.",
+    "The ~75 percent Gulf-export figure rests largely on a single round of reporting and is a snapshot, not an audited flow.",
+    "In the unwind-speed comparison, only the 9/11 reversal is taken directly from the ECB; the Abqaiq 2019 and Russia 2022 figures are approximate datings and depend on exactly which start and end points are chosen.",
+    "Intraday and close prices differ by source and snapshot time (for example WTI quoted at $69.23 by OilPrice and $69.58 by Al Jazeera a day earlier), so small percentage moves should be read as approximate.",
+    "Some sequencing and context (the 4 March closure, the framing of the broader crisis) draws on fast-moving news and reference pages that can be revised after publication."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "companies": [
+    "Saudi Aramco"
+  ],
+  "people": [
+    "Donald Trump",
+    "Chris Wright",
+    "Ali Khamenei"
+  ],
+  "regions": [
+    "Strait of Hormuz",
+    "Iran",
+    "Persian Gulf",
+    "Saudi Arabia",
+    "Oman",
+    "United States",
+    "United Arab Emirates",
+    "Kuwait",
+    "Qatar"
+  ],
+  "industries": [
+    "Oil and Gas",
+    "Energy",
+    "Shipping",
+    "Maritime Transport"
+  ],
+  "assetClasses": [
+    "Commodities",
+    "Crude Oil",
+    "Futures"
+  ],
+  "impactTags": [
+    "supply-shock",
+    "geopolitical-risk",
+    "price-volatility",
+    "chokepoint-risk",
+    "war-premium",
+    "energy-security"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 84,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "Brent and WTI erased the entire post-strike war premium by the 26 June 2026 close, with Brent back near $72, roughly where it traded before the 28 February US strike on Iran.",
+    "The physical market lagged the price: Gulf exports recovered to about 75 percent of prewar volumes and Hormuz throughput ran at roughly a third to 40 percent of normal by most readings (though one single-day official figure suggested near-normal flow).",
+    "The price reverted mainly because an 18 June US-Iran ceasefire collapsed the odds of a future Hormuz closure, repricing insurance value rather than confirming barrels were back, with a glutted, contango market amplifying the drop.",
+    "At 17 weeks, this premium unwound far slower than the roughly two weeks after Abqaiq (2019) or 9/11 because there was a real shooting war and an actual Hormuz closure on 4 March.",
+    "Hours after the round-trip completed, Iranian drones struck a cargo ship near Hormuz and the US struck back, showing how quickly a months-long premium could snap back."
+  ],
+  "whyItMatters": "Oil prices feed directly into gasoline, inflation, and central bank policy, so a crude benchmark that has 'declared peace' while a fifth of the world's seaborne oil still moves below normal volumes signals a mispriced risk rather than a resolved crisis. The gap between a fully reverted flat price and a partly recovered physical market means the premium could reprice sharply if Iran-US tensions reignite, exposing refiners, shippers, importers like India and China, and any investor positioned for calm. For consumers, it is the difference between durably cheaper fuel and a fragile lull.",
+  "whatToWatch": [
+    "Whether Hormuz vessel transits and Gulf export volumes climb back toward the prewar norm of 130 to 140 ships and 15 to 20 million barrels a day, closing the gap with the recovered price.",
+    "Whether the 18 June 60-day US-Iran ceasefire holds after the 26 June drone strike and US retaliation, or breaks down and rebuilds the war premium.",
+    "The shape of the Brent futures curve, watching for a flip from contango back toward backwardation that would signal renewed physical scarcity.",
+    "Tanker freight rates and charter availability for Gulf-origin cargoes as a real-time gauge of whether the physical recovery is genuinely normalizing."
+  ],
+  "primarySection": "energy",
+  "date": "2026-06-27",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T16:03:06.553Z"
+}
