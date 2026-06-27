@@ -254,11 +254,10 @@ function getStoryboard(a, copy) {
   ];
 }
 
-function build(a, copy, images) {
+function build(a, copy, images, story) {
   const img = (i) => images[i % images.length];
   const byTitle = {};
   (a.charts || []).forEach((c) => { byTitle[c.title] = c; });
-  const story = getStoryboard(a, copy);
   const posCycle = ["bl", "tl", "c", "bl", "c", "tl"];
   let k = 0, p = 0;
   return story.map((sl, idx) => {
@@ -299,6 +298,8 @@ const out = join(arg("out", join(homedir(), "Downloads", "cumulant-social")), `c
 mkdirSync(out, { recursive: true });
 try { readdirSync(out).filter((f) => /^slide-\d+\.png$/.test(f)).forEach((f) => rmSync(join(out, f))); } catch { /* fresh */ }
 
-const slides = build(a, copy, images);
+const story = getStoryboard(a, copy);
+writeFileSync(join(out, "storyboard.json"), JSON.stringify({ slug: a.slug, headline: a.headline, cta: copy.cta, slides: story, images: images.map((u) => u.replace("file://", "")) }, null, 2));
+const slides = build(a, copy, images, story);
 slides.forEach((html, i) => { render(html, join(out, `slide-${String(i + 1).padStart(2, "0")}.png`)); console.log(`  slide ${i + 1}/${slides.length}`); });
 console.log(`\nCarousel (${slides.length} slides, ${images.length} image(s), 4K) -> ${out}`);
