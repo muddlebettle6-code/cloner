@@ -1,0 +1,619 @@
+{
+  "published": true,
+  "slug": "pjm-data-center-capacity-who-pays",
+  "headline": "Data Centers Drove PJM's Record Power Price. The Cost of Their Growth Is Spread Across Everyone's Peak, Not Billed to the Newcomers.",
+  "deck": "On 1 June 2026 PJM's record $329.17/MW-day capacity price began landing on bills in 13 states, and on 18 June the federal regulator ordered all six US grid operators to justify or rewrite their large-load rules by 17 August. Reading the rate mechanics shows the catch is not that data centers dodge the bill, running flat around the clock, they pay a large absolute share, but that the extra cost their growth created is socialized across all customers' peak demand rather than charged to the loads that triggered it, and a federal fix would still have to clear both a wholesale rule change and 13 state retail dockets to change who pays.",
+  "takeaways": [
+    "PJM's capacity price hit a record $329.17/MW-day for 2026/27 and $333.44 for 2027/28, both pinned to a FERC-approved temporary price cap (about $325/MW-day) that came out of a 2025 settlement; PJM has said that uncapped, the 2026/27 price would have cleared around $389 and the 2027/28 price around $530.",
+    "PJM's independent market monitor calls forecast data-center load the leading driver, in the December 2025 (2027/28) auction it tied 40 percent of the $16.4 billion in costs, about $6.5 billion, to data centers, but generator retirements, a slow interconnection queue, and a 2024 accreditation change (marginal ELCC) are genuine co-causes, so this is not a single-cause story.",
+    "Capacity cost is allocated by each customer's share of system peak. Data centers run flat 24/7 and contribute heavily to peak, so they already pay a large absolute share; the real grievance is marginal, the incremental cost from their growth is spread across everyone's peak rather than charged to the new loads.",
+    "In a modeled case for the Washington, DC zone tied to the 2025/26 surge, both residential and commercial capacity charges rise about 9 percent; that is one advocate's single-zone estimate, not a 13-state average, and a flat per-kilowatt-hour adder falls hardest on lower-income households.",
+    "FERC's 18 June show-cause orders target large-load integration and wholesale cost-shifting (FERC could in principle create a large-load wholesale charge) but leave retail class allocation to the states, so most household relief still has to pass through separate state proceedings, and because the price sits at the cap, whether it 'round-trips' lower is genuinely unknown."
+  ],
+  "glossary": [
+    {
+      "term": "PJM Interconnection",
+      "definition": "The largest US regional grid operator, coordinating the high-voltage electricity system for all or part of 13 states and Washington, DC."
+    },
+    {
+      "term": "Capacity market",
+      "definition": "A market where the grid operator pays power plants years in advance to promise they will be available on the hardest days, separate from the electricity they actually sell; it is essentially an insurance payment for reliability."
+    },
+    {
+      "term": "Capacity price ($/MW-day)",
+      "definition": "The price set in that auction, in dollars per megawatt of promised capacity per day; a higher number means every customer's reliability insurance got more expensive."
+    },
+    {
+      "term": "Base Residual Auction (BRA)",
+      "definition": "PJM's main once-a-year auction, held a few years ahead of the delivery period, that sets the capacity price."
+    },
+    {
+      "term": "Delivery year",
+      "definition": "The 12-month period (June to May) for which an auction's capacity is actually supplied and billed; the 2026/27 delivery year began 1 June 2026."
+    },
+    {
+      "term": "Megawatt (MW)",
+      "definition": "A unit of electrical power equal to one million watts; a large data center can draw tens to hundreds of megawatts continuously."
+    },
+    {
+      "term": "Kilowatt-hour (kWh)",
+      "definition": "The standard unit of electricity use on a household bill, running a 1,000-watt appliance for one hour; a typical US home uses around 800-900 kWh a month."
+    },
+    {
+      "term": "Load factor",
+      "definition": "How steadily a customer uses power. A data center running flat 24/7 has a high load factor; a home that spikes in the evening and idles at night has a low one. High load factor means a customer is drawing power during almost every peak hour."
+    },
+    {
+      "term": "Coincident peak / 5CP allocation",
+      "definition": "The few hours each year when the whole system strains hardest. PJM splits capacity cost by how much each customer draws during those peak hours, not by total energy used, like a gym billing you only for your usage during its busiest hours."
+    },
+    {
+      "term": "Cost causation / cost-causation principle",
+      "definition": "The regulatory idea that whoever causes a cost on the grid should pay for it, rather than spreading it across everyone."
+    },
+    {
+      "term": "Cost socialization",
+      "definition": "Spreading a cost across all customers instead of charging it to the specific party that triggered it; the opposite of cost causation."
+    },
+    {
+      "term": "Marginal cost causation",
+      "definition": "A narrower version of the principle: even if a customer already pays its share of total cost, the extra cost its growth adds should be charged to it, not averaged across everyone."
+    },
+    {
+      "term": "Cost allocation",
+      "definition": "The rules that decide which customers pay which share of a grid cost."
+    },
+    {
+      "term": "FERC",
+      "definition": "The Federal Energy Regulatory Commission, the US agency that regulates wholesale electricity and interstate transmission."
+    },
+    {
+      "term": "Section 206 show-cause order",
+      "definition": "A FERC action under the Federal Power Act that puts existing rules on trial: the grid operator must show the rules are fair or be made to change them, here within 60 days."
+    },
+    {
+      "term": "RTO / ISO",
+      "definition": "Regional Transmission Organization / Independent System Operator, the independent bodies, like PJM, that run regional power grids; the US has six of them."
+    },
+    {
+      "term": "Hyperscaler",
+      "definition": "A very large operator of cloud and data center capacity, such as Amazon, Microsoft, Google, or Meta."
+    },
+    {
+      "term": "Large load / large-load customer",
+      "definition": "An electricity user, typically a data center or big factory, whose demand is large enough to affect grid planning on its own."
+    },
+    {
+      "term": "Transmission customer vs retail customer",
+      "definition": "A transmission customer takes power off the high-voltage federal grid (FERC's turf); a retail customer is the household or business billed by a local utility (the states' turf)."
+    },
+    {
+      "term": "Locational Deliverability Area (LDA)",
+      "definition": "A sub-region of PJM that can clear at its own capacity price when the grid cannot freely move power in; data-center-heavy zones can price differently from the system-wide number."
+    },
+    {
+      "term": "Minimum Offer Price Rule (MOPR)",
+      "definition": "A now-largely-repealed PJM rule that forced certain subsidized power plants to bid at an artificially high floor, which raised past capacity prices."
+    },
+    {
+      "term": "ELCC (Effective Load Carrying Capability)",
+      "definition": "A method PJM uses to credit each power plant for how much it really contributes on peak days; a switch to a 'marginal' version of this measure, approved by FERC in January 2024 and first used at the July 2024 auction, reshaped recent results."
+    },
+    {
+      "term": "Interconnection queue",
+      "definition": "The waiting line of new power plants seeking to connect to the grid; a long backlog means new supply arrives slowly even when demand is rising."
+    },
+    {
+      "term": "Reliability requirement",
+      "definition": "The total amount of capacity PJM must buy to keep the lights on at its target reliability standard; raising it lifts how much capacity gets purchased."
+    },
+    {
+      "term": "Load Serving Entity (LSE)",
+      "definition": "A company, usually a utility, responsible for buying enough capacity to cover its customers' demand."
+    },
+    {
+      "term": "Round-trip",
+      "definition": "Market shorthand for a price that spikes and then falls back to roughly where it started."
+    },
+    {
+      "term": "Price cap (and the Shapiro settlement)",
+      "definition": "A regulatory ceiling on how high an auction price can clear; PJM's current cap (about $325/MW-day for 2026/27 and 2027/28) came from a settlement with Pennsylvania Governor Josh Shapiro that FERC approved 4-0. When demand pressure exceeds the cap, the price sits at the cap and the true market signal is hidden."
+    },
+    {
+      "term": "Energy burden",
+      "definition": "The share of a household's income spent on energy bills; lower-income homes have a higher energy burden, so a flat per-kilowatt-hour increase hits them proportionally harder."
+    },
+    {
+      "term": "Independent market monitor",
+      "definition": "An outside watchdog (for PJM, the firm Monitoring Analytics) that audits the market and reports whether prices and rules are working as intended."
+    }
+  ],
+  "event": "On 1 June 2026 PJM's record $329.17/MW-day capacity price began flowing onto electric bills in 13 states, and on 18 June 2026 FERC issued Section 206 show-cause orders directing all six US grid operators to justify or rewrite the rules governing how large loads such as data centers connect to and pay for the grid, including a category on preventing cost-shifting, with tariff responses due within 60 days (deadline 17 August 2026).",
+  "question": "Now that the data-center-driven jump in PJM capacity costs is hitting June 2026 bills, who actually pays for it, and does the design flaw lie in data centers underpaying their share, or in the incremental cost of their growth being socialized rather than charged to them, and would FERC's reform change that?",
+  "readingMinutes": 11,
+  "tags": [
+    "energy",
+    "electricity",
+    "data centers",
+    "PJM",
+    "FERC",
+    "capacity market",
+    "utility rates",
+    "AI infrastructure"
+  ],
+  "leadChartId": "capacity-price-history",
+  "charts": [
+    {
+      "id": "capacity-price-history",
+      "kind": "line",
+      "title": "PJM capacity prices have stair-stepped to a new plateau",
+      "subtitle": "PJM Base Residual Auction capacity clearing price, 2020/21 to 2027/28 ($/MW-day, RTO-wide)",
+      "source": "PJM Base Residual Auction reports and news releases; historical BRA tables",
+      "units": "$/MW-day",
+      "period": "2020/21-2027/28 delivery years",
+      "note": "Whether this plateau reverts is unknown: the 2026/27 and 2027/28 prices both sit AT a FERC-approved temporary price cap (about $325/MW-day, from a 2025 settlement), so the cap may be masking still-rising pressure rather than marking a stable ceiling. PJM has said that without the cap the 2026/27 price would have cleared around $389 and the 2027/28 price around $530. A 2024 accreditation change (marginal ELCC) also means the last points are not perfectly like-for-like with earlier years.",
+      "alt": "A line rising modestly from about $77 in 2020/21 to $140, dropping to $50, $34, and $29 through 2024/25, then jumping steeply to $270, $329, and $333 in the final three years and staying flat at the top.",
+      "data": {
+        "series": [
+          {
+            "name": "Capacity clearing price",
+            "points": [
+              {
+                "x": "2020/21",
+                "y": 76.53
+              },
+              {
+                "x": "2021/22",
+                "y": 140
+              },
+              {
+                "x": "2022/23",
+                "y": 50
+              },
+              {
+                "x": "2023/24",
+                "y": 34.13
+              },
+              {
+                "x": "2024/25",
+                "y": 28.92
+              },
+              {
+                "x": "2025/26",
+                "y": 269.92
+              },
+              {
+                "x": "2026/27",
+                "y": 329.17
+              },
+              {
+                "x": "2027/28",
+                "y": 333.44
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "same-hike-per-kwh",
+      "kind": "comparison",
+      "title": "In one modeled zone, the capacity adder lands at nearly the same rate per kWh on homes and businesses",
+      "subtitle": "Modeled capacity-cost increase from the 2025/26 auction jump, Washington DC (Pepco) zone, illustrative, not a 13-state average",
+      "source": "Synapse Energy Economics for the DC Office of People's Counsel (May 2025), Table 1",
+      "units": "$/kWh increase",
+      "note": "These are modeled figures for ONE zone, filed by one advocate, analyzing the 2025/26 capacity surge; PJM prices clear by Locational Deliverability Area, so data-center-heavy zones (e.g. Dominion/Virginia) differ. The point is the rate, not the dollars: both classes see about +9% on the capacity portion of the bill (roughly +$10/month for a typical home, far more for a large commercial account). What this chart does NOT show is the large-load class itself, its per-kWh figure was not independently sourced for this piece; see the section on how the cost is split.",
+      "alt": "Two near-equal bars: residential capacity cost rises about 0.017 dollars per kilowatt-hour, commercial about 0.016 dollars per kilowatt-hour. The values are labeled directly because the bars look almost identical.",
+      "data": {
+        "bars": [
+          {
+            "label": "Residential (+~9%)",
+            "value": 0.017,
+            "highlight": true
+          },
+          {
+            "label": "Commercial (+~9%)",
+            "value": 0.016
+          }
+        ]
+      }
+    },
+    {
+      "id": "auction-cost-total",
+      "kind": "keynumber",
+      "title": "What the 2026/27 auction procured",
+      "source": "PJM auction reports; Utility Dive; Monitoring Analytics",
+      "alt": "The 2026/27 PJM auction procured capacity worth about $16.1 billion, but capacity is only roughly a fifth to a quarter of a typical retail electricity bill.",
+      "data": {
+        "value": "~$16.1B",
+        "label": "Total cost of capacity PJM procured in the 2026/27 auction (the delivery year now hitting bills)",
+        "sub": "This is the capacity line only, roughly a fifth to a quarter of a typical retail bill, not the whole bill. The next auction (2027/28) procured about $16.4 billion, and PJM's market monitor tied 40 percent of that, about $6.5 billion, to forecast data-center load."
+      }
+    },
+    {
+      "id": "ferc-timeline",
+      "kind": "timeline",
+      "title": "A 60-day window that is open right now",
+      "source": "FERC newsroom; Utility Dive; PJM",
+      "alt": "Timeline from the 2024 marginal ELCC accreditation change through the 1 June 2026 bill impact, the 18 June FERC orders, and the 17 August reform deadline.",
+      "data": {
+        "events": [
+          {
+            "date": "2024",
+            "title": "Accreditation change (marginal ELCC)",
+            "detail": "FERC approves marginal ELCC in January 2024; it is first applied at the July 2024 auction, reshaping how plants are credited for peak contribution."
+          },
+          {
+            "date": "1 Jun 2026",
+            "title": "Record price hits bills",
+            "detail": "$329.17/MW-day for 2026/27 begins flowing onto bills in 13 states."
+          },
+          {
+            "date": "18 Jun 2026",
+            "title": "FERC show-cause orders",
+            "detail": "All six RTOs/ISOs ordered to justify or rewrite large-load integration and cost rules."
+          },
+          {
+            "date": "17 Aug 2026",
+            "title": "60-day deadline",
+            "detail": "Grid operators must respond; retail class allocation still left to states."
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news hook",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 1 June 2026, the most expensive reliability insurance bill in PJM Interconnection's history started arriving. PJM is the largest US grid operator, the body that keeps the lights on for all or part of 13 states and Washington, DC. Once a year it runs an auction, the Base Residual Auction, that pays power plants in advance to promise they will show up on the hardest days of the year. Think of it as the grid buying insurance: customers pay a premium now so capacity is guaranteed later. For the 2026/27 delivery year, that premium cleared at a record $329.17 per megawatt-day, and as of 1 June it began flowing onto electric bills."
+        },
+        {
+          "type": "p",
+          "text": "Three weeks later, the federal regulator moved. On 18 June 2026 the Federal Energy Regulatory Commission (FERC) issued Section 206 show-cause orders to all six US grid operators, a legal step that puts existing rules on trial and gives the operators 60 days to prove the rules are fair or be made to change them. The stated worry: that giant new electricity users, above all data centers, could shift costs and strain reliability for everyone else. The clock runs out on 17 August 2026."
+        },
+        {
+          "type": "chart",
+          "chartId": "capacity-price-history"
+        },
+        {
+          "type": "callout",
+          "label": "Why this is reportable right now",
+          "text": "The charges are landing this month and the federal deadline is weeks away. Who ends up paying for the increase is genuinely undecided and observable in real time, not a settled story."
+        }
+      ]
+    },
+    {
+      "heading": "The central question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is now common knowledge that data centers are pushing up power prices. That broad claim is true and largely answered. So we asked something narrower: now that the jump is hitting June 2026 bills, where exactly is the design flaw? Is it that data centers underpay their share, or something subtler about how the extra cost their growth created gets divided? And would FERC's reform change it?"
+        },
+        {
+          "type": "p",
+          "text": "The distinction that matters is between two ideas that sound alike but point to opposite fixes. The first is that data centers free-ride, that they use the grid heavily but somehow escape the bill. The second is that they pay plenty in absolute terms, but the marginal cost their growth adds gets averaged across every customer's peak demand instead of charged to the loads that caused it. Those are not the same grievance, and only one of them is supported by how the rate mechanics actually work."
+        },
+        {
+          "type": "p",
+          "text": "To answer it we did three things: traced where the record price came from and how much of it the market's own watchdog blames on data centers; followed the formula that splits capacity cost among customers, to see whether data centers under- or over-contribute; and read what FERC's 18 June orders can and cannot reach. The short version: the free-rider story is mostly wrong, the marginal-cost story is mostly right, and the fix is split across two regulators."
+        }
+      ]
+    },
+    {
+      "heading": "First, is it really data centers, or several things at once?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "PJM's independent market monitor, the outside firm Monitoring Analytics that audits the market, is blunt about the leading cause. It calls forecast data-center load the primary reason for the recent and expected capacity-market conditions, the tight supply-demand balance, the shortfall in cleared capacity, and the high prices. In the December 2025 auction (for the 2027/28 year) it tied 40 percent of the $16.4 billion in costs, about $6.5 billion, directly to data centers. Across PJM's last two auctions, it estimated forecast data-center load drove roughly $23 billion in market costs."
+        },
+        {
+          "type": "p",
+          "text": "But 'leading driver' is not 'only driver,' and honest reporting has to separate the market's reaction from its underlying mechanics. Three other forces pushed the same direction. Generators kept retiring faster than new plants arrived. PJM's interconnection queue, the waiting line for new supply to connect, stayed slow, so even as demand climbed, fresh megawatts trickled in. And in January 2024 FERC approved a change to how PJM credits each plant for its real contribution on peak days, a switch from an average to a 'marginal' version of a measure called ELCC; first used at the July 2024 auction, it lowered the credited capacity of some resources and tightened the math. PJM itself has pointed more to its risk-modeling update than to accreditation as the bigger technical lever. The point for a reader: data centers are the largest single cause, but retirements, the queue, and accreditation changes are genuine co-causes. This is not a one-villain story."
+        },
+        {
+          "type": "chart",
+          "chartId": "auction-cost-total"
+        },
+        {
+          "type": "p",
+          "text": "One more piece of context keeps the dollars honest. The numbers above are the capacity line only. Capacity is roughly a fifth to a quarter of a typical retail electricity bill; the rest is energy, transmission, distribution, and various charges. So a record capacity price is a real increase, but it moves a slice of the bill, not the whole thing."
+        }
+      ]
+    },
+    {
+      "heading": "How the cost is split, and why 'free-riding' is the wrong word",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the mechanism that decides who pays. PJM does not divide capacity cost by total electricity used. It divides it by how much each customer draws during the system's few hardest hours, its coincident peak, often summarized by five peak days (the '5CP' method). Picture a gym that bills you not for your total hours but for how much of the busiest hours you took up. The more you crowd the peak, the bigger your share."
+        },
+        {
+          "type": "p",
+          "text": "Now apply that to a data center. A data center runs flat, 24 hours a day, seven days a week. In the jargon, it has a very high load factor: it is drawing power during almost every peak hour, every year. A home is the opposite, it spikes in the evening, idles overnight, and is often modest during the worst summer afternoons. Under a peak-based formula, the steady, always-on user contributes heavily to peak and therefore picks up a large absolute share of capacity cost. So the simple charge that data centers 'don't pay' does not survive contact with the formula. In absolute dollars, they pay a lot."
+        },
+        {
+          "type": "pullquote",
+          "text": "The data centers are not skipping the bill. They are paying a large absolute share, and still, the extra cost their arrival created is being smeared across everyone's peak."
+        },
+        {
+          "type": "p",
+          "text": "So where is the grievance? It is marginal, not absolute. When a cluster of new data centers arrives, it lifts the whole region's forecast peak and tightens the supply-demand balance, which lifts the clearing price for everybody. That incremental cost, the part the new load created by showing up, is then recovered through the same peak-share formula applied to all customers. The newcomers pay their slice of it, but so does every existing household and business, in proportion to their own peak use. Regulators have a name for the principle this strains: cost causation, the idea that whoever causes a cost should pay it. The narrower version, marginal cost causation, says even a customer already paying its fair share of total cost should be charged the extra cost its growth adds, rather than having it averaged across the system. That is the design seam FERC is now poking at."
+        }
+      ]
+    },
+    {
+      "heading": "What it costs a household",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To make the abstraction concrete, look at one zone where an advocate has done the math. For the Washington, DC area served by Pepco, Synapse Energy Economics, working for the DC Office of People's Counsel, the office that represents utility customers, modeled the bill impact of the 2025/26 capacity surge. It found the capacity portion of the bill rising about 9 percent for the average residential customer, on the order of $10 a month, with the commercial class seeing a similar percentage increase."
+        },
+        {
+          "type": "chart",
+          "chartId": "same-hike-per-kwh"
+        },
+        {
+          "type": "p",
+          "text": "Read this chart carefully, because it is easy to over-read. It is one advocate's estimate for one zone, tied to the 2025/26 jump, not a 13-state average, and PJM prices clear by sub-region, so a data-center-heavy zone like Dominion in Virginia can land very differently. The dollars also depend on usage: the same per-kilowatt-hour adder is a few dollars for a small apartment and thousands a year for a large commercial account. The useful takeaway is the rate, not the total: the increase arrives as a roughly flat charge per kilowatt-hour, hitting homes and businesses at about the same rate."
+        },
+        {
+          "type": "p",
+          "text": "A flat per-kilowatt-hour increase is not neutral across incomes. Lower-income households spend a larger share of their income on energy, they have a higher energy burden, so the same cents-per-kilowatt-hour adder takes a bigger bite from them than from a wealthier home. That is the distributional sting hiding inside a number that looks even-handed on a chart."
+        }
+      ]
+    },
+    {
+      "heading": "Would FERC's reform actually change who pays?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This is where the jurisdictional map matters, and where a lot of the public hope may be misplaced. FERC's 18 June orders are aimed at the wholesale, federal layer: how large loads connect to the grid, how their costs are studied and assigned, and how to prevent cost-shifting onto other transmission customers. In principle FERC could push the operators toward a wholesale rule that puts more of the marginal cost on the loads that cause it, a large-load charge of some kind. The orders even list 'preventing cost shifting and requiring transparency into transmission costs' as one of five reform categories, alongside faster interconnection and rules for co-located generation."
+        },
+        {
+          "type": "chart",
+          "chartId": "ferc-timeline"
+        },
+        {
+          "type": "p",
+          "text": "But the part of the bill a household sees, how cost is divided among residential, commercial, and industrial classes at the retail level, is set by state regulators, not FERC. So even a strong wholesale fix would change the size and assignment of the pie at the federal level and then hand the slicing back to the states. Translating any wholesale reform into lower household bills would still have to pass through separate state proceedings across PJM's 13-state footprint. That is a long, uneven road, and it is why a single federal order, however aggressive, does not automatically reach your bill."
+        },
+        {
+          "type": "callout",
+          "label": "The two-lock problem",
+          "text": "Changing who ultimately pays needs two keys turned: a wholesale rule change at FERC, and retail class-allocation changes in state dockets. The 17 August deadline only opens the first lock."
+        }
+      ]
+    },
+    {
+      "heading": "Does the price round-trip, or is the cap hiding the truth?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is tempting to assume the spike is temporary and will fall back, the way commodity shocks often do. Here the evidence genuinely does not say. Both the 2026/27 and 2027/28 prices cleared at a FERC-approved temporary cap, about $325 per megawatt-day, a ceiling that grew out of a 2025 settlement with Pennsylvania's governor and was approved 4-0. When a price sits exactly at its cap, the cap is not telling you the market has stabilized; it is telling you the true clearing price is somewhere above the line and hidden. PJM's own simulations make the point: without the cap, 2026/27 would have cleared around $389 and 2027/28 around $530."
+        },
+        {
+          "type": "p",
+          "text": "So the honest answer to 'will it come back down?' is that we cannot see the real signal yet. The cap may be holding back still-rising pressure rather than marking a stable plateau. Whether this is a spike that round-trips or a step to a permanently higher level depends on supply catching up to load, new generation clearing the queue faster than data centers arrive, and that race is not yet decided."
+        }
+      ]
+    },
+    {
+      "heading": "The bottom line",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Data centers are the largest single driver of PJM's record capacity price, but not the only one, and they are not free-riding: because they run flat around the clock, the peak-based formula already hands them a large absolute share of the cost. The real flaw is narrower and more technical. The marginal cost their growth creates, the price increase their arrival triggers for the whole region, is recovered across everyone's peak rather than charged to the loads that caused it. FERC's June orders can in principle tighten that at the wholesale level, but the part households feel is set by 13 state regulators, so relief, if it comes, is slow and indirect. And with the price pinned to a cap, even the question of whether the spike reverses is, for now, unanswerable."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Pulled the headline numbers from PJM's own auction documents and news releases: the 2026/27 Base Residual Auction cleared at $329.17/MW-day (announced 22 July 2025) and the 2027/28 at $333.44/MW-day (announced 17 December 2025), each at the FERC-approved temporary price cap.",
+    "Cross-checked the uncapped estimates against PJM and trade-press reporting: about $389/MW-day for 2026/27 (roughly 18 percent above the cap) and about $530/MW-day for 2027/28 (roughly 60 percent above), correcting an earlier draft that mis-attributed the $530 figure to 2026/27.",
+    "Confirmed the total cost of procured capacity by delivery year: about $16.1 billion for 2026/27 and about $16.4 billion for 2027/28, correcting an earlier draft that labeled $16.4 billion as the 2026/27 figure.",
+    "Verified the causation framing against PJM's independent market monitor (Monitoring Analytics), which calls forecast data-center load the primary driver and tied 40 percent ($6.5 billion) of the December 2025 auction cost to data centers, while noting retirements, the interconnection queue, and the marginal ELCC accreditation change (FERC-approved January 2024, first used July 2024) as co-causes.",
+    "Walked the cost-allocation logic from PJM's 5CP / coincident-peak method and load-factor concept to show data centers carry a large absolute share, isolating the grievance as marginal cost causation rather than free-riding.",
+    "Used the May 2025 Synapse Energy Economics report for the DC Office of People's Counsel for the household impact illustration, treating it explicitly as a single-zone, single-advocate estimate of the 2025/26 surge rather than a regional average.",
+    "Read FERC's 18 June 2026 Section 206 show-cause orders and law-firm/trade summaries to separate what the federal orders can reach (wholesale large-load rules and cost-shifting) from what stays with state regulators (retail class allocation)."
+  ],
+  "sources": [
+    {
+      "title": "PJM Auction Procures 134,311 MW of Generation Resources; Supply Responds to Price Signal (2026/27 results)",
+      "publisher": "PJM Inside Lines",
+      "url": "https://insidelines.pjm.com/pjm-auction-procures-134311-mw-of-generation-resources-supply-responds-to-price-signal/",
+      "kind": "primary"
+    },
+    {
+      "title": "2026/2027 Base Residual Auction Report (July 22, 2025)",
+      "publisher": "PJM Interconnection",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2026-2027/2026-2027-bra-report.pdf",
+      "kind": "data"
+    },
+    {
+      "title": "PJM Auction Procures 134,479 MW of Generation Resources (2027/28 results)",
+      "publisher": "PJM Inside Lines",
+      "url": "https://insidelines.pjm.com/pjm-auction-procures-134479-mw-of-generation-resources/",
+      "kind": "primary"
+    },
+    {
+      "title": "2027/2028 Base Residual Auction Report (December 17, 2025)",
+      "publisher": "PJM Interconnection",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2027-2028/2027-2028-bra-report.pdf",
+      "kind": "data"
+    },
+    {
+      "title": "PJM capacity auction hits price cap again as region falls short of reliability target",
+      "publisher": "Power Engineering",
+      "url": "https://www.power-eng.com/business/pjm-capacity-auction-hits-price-cap-again-as-region-falls-short-of-reliability-target/",
+      "kind": "secondary"
+    },
+    {
+      "title": "PJM capacity prices hit record high as grid operator falls short of reliability target",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/pjm-interconnection-capacity-auction-data-center/808264/",
+      "kind": "secondary"
+    },
+    {
+      "title": "PJM Capacity Prices Hit $329/MW-day Price Cap",
+      "publisher": "RTO Insider",
+      "url": "https://www.rtoinsider.com/110662-pjm-capacity-prices-hit-price-cap/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Data centers were 40% of PJM capacity costs in last auction: market monitor",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/data-centers-pjm-capacity-auction/808951/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Data centers 'primary reason' for high PJM capacity prices: market monitor",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780/",
+      "kind": "secondary"
+    },
+    {
+      "title": "PJM State of the Market, 2025",
+      "publisher": "Monitoring Analytics (PJM Independent Market Monitor)",
+      "url": "https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2025.shtml",
+      "kind": "primary"
+    },
+    {
+      "title": "FERC Launches Aggressive Targeted Action to Speed Large Load Integration (18 June 2026 orders)",
+      "publisher": "Federal Energy Regulatory Commission",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      "kind": "primary"
+    },
+    {
+      "title": "FERC orders grid operators to promptly revise or justify interconnection rules for data centers and large loads",
+      "publisher": "White & Case LLP",
+      "url": "https://www.whitecase.com/insight-alert/ferc-orders-grid-operators-promptly-revise-or-justify-interconnection-rules-data",
+      "kind": "secondary"
+    },
+    {
+      "title": "6 takeaways from FERC's data center interconnection decision",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/",
+      "kind": "secondary"
+    },
+    {
+      "title": "FERC approves PJM capacity accreditation, modeling reforms aimed at boosting reliability",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/ferc-pjm-capacity-accreditation-reforms-grid-reliability/706276/",
+      "kind": "secondary"
+    },
+    {
+      "title": "What ELCC is Telling Us About PJM's Capacity Crunch",
+      "publisher": "Advanced Energy United",
+      "url": "https://advancedenergyunited.org/blog/what-elcc-is-telling-us-about-pjms-capacity-crunch/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Drivers of PJM's Capacity Market Price Surge and its Impact on DC (May 2025)",
+      "publisher": "Synapse Energy Economics for the DC Office of People's Counsel",
+      "url": "https://opc-dc.gov/wp-content/uploads/2025/05/PJM-Capacity-Market-Report-FINAL-OPC-Synapse.pdf",
+      "kind": "academic"
+    },
+    {
+      "title": "Maryland electric customers face up to 24% bill hikes from PJM capacity auction: report",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/maryland-bge-pepco-electricity-bill-pjm-capacity-auction-opc-ratepayer/724319/",
+      "kind": "secondary"
+    },
+    {
+      "title": "FERC approves PJM capacity auction price cap, floor (Shapiro settlement)",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/ferc-pjm-interconnection-capacity-auction-price-cap-collar/745979/",
+      "kind": "secondary"
+    },
+    {
+      "title": "FERC Approves Gov. Shapiro Settlement with PJM to Prevent Unnecessary Price Hikes",
+      "publisher": "Commonwealth of Pennsylvania",
+      "url": "https://www.pa.gov/governor/newsroom/2025-press-releases/ferc-approves-gov-shapiro-settlement-pjm-prevent-unnecessary-pri",
+      "kind": "primary"
+    },
+    {
+      "title": "PJM's Electric Capacity Market: Background and Current Issues (R48553)",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/R48553",
+      "kind": "primary"
+    }
+  ],
+  "limitations": [
+    "Both the 2026/27 and 2027/28 prices cleared at a FERC-approved cap, so the true uncapped clearing prices ($389 and $530 estimates) are PJM simulations, not observed market outcomes; the real scarcity signal is masked.",
+    "The household-impact chart is a single advocate's model for a single zone (Pepco/DC) analyzing the 2025/26 surge; it is not a 13-state average, and zones such as Dominion can differ sharply because PJM prices clear by sub-region.",
+    "The exact per-kilowatt-hour figures in the Synapse Table 1 (about $0.017 residential, $0.016 commercial) rest on that report; the source PDF could not be re-extracted cleanly for this piece, but the report's headline result of roughly +9 percent (about +$10/month for a typical residential customer) was independently confirmed in trade-press coverage.",
+    "Attributing a precise share of the price increase to data centers versus retirements, the queue, and accreditation changes is inherently a modeling judgment; the market monitor's 40 percent / $6.5 billion figure is for the December 2025 (2027/28) auction and is its estimate, not a settled fact.",
+    "FERC's orders were just issued; what the operators file by 17 August, and whether any wholesale change is later translated into retail bills by state regulators, is unknown.",
+    "The pre-2025 historical clearing prices in the lead chart (2020/21 through 2024/25) come from PJM auction archives and secondary historical tables; the 2024 marginal ELCC change means the most recent points are not perfectly like-for-like with earlier years."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/pjm-data-center-capacity-who-pays.jpg",
+    "credit": "Photo: Carl Lender, CC BY 2.0, via Wikimedia Commons",
+    "caption": "Inside a data center hall, the kind of around-the-clock load that PJM's market monitor identifies as the primary driver of its record capacity price.",
+    "alt": "Rows of illuminated server racks running down a long aisle inside a data center hall."
+  },
+  "articleType": "data-story",
+  "secondarySections": [
+    "policy",
+    "technology"
+  ],
+  "companies": [
+    "PJM Interconnection",
+    "Monitoring Analytics",
+    "Synapse Energy Economics",
+    "Pepco",
+    "Dominion Energy"
+  ],
+  "people": [],
+  "regions": [
+    "United States",
+    "PJM region",
+    "Washington, DC",
+    "Virginia"
+  ],
+  "industries": [
+    "electric utilities",
+    "power generation",
+    "data centers"
+  ],
+  "assetClasses": [
+    "utilities",
+    "electricity"
+  ],
+  "impactTags": [
+    "electricity-prices",
+    "cost-shifting",
+    "capacity-market",
+    "regulatory-reform",
+    "household-energy-bills"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 76,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "PJM's record capacity price ($329.17/MW-day for 2026/27, $333.44 for 2027/28) began hitting bills in 13 states and DC on 1 June 2026, both prices held down by a roughly $325/MW-day temporary cap from a 2025 settlement.",
+    "The market monitor calls forecast data-center load the leading driver, tying about $6.5 billion (40 percent) of the December 2025 auction's $16.4 billion to data centers, but generator retirements, a slow interconnection queue, and a 2024 marginal-ELCC accreditation change are genuine co-causes.",
+    "Because capacity cost is allocated by each customer's share of system peak, always-on data centers already pay a large absolute share; the real flaw is marginal, the incremental cost of their growth is socialized across all customers' peak rather than charged to the new loads.",
+    "A single-zone Synapse estimate for Pepco/DC put the capacity portion of bills up about 9 percent (roughly $10/month) as a flat per-kWh adder that falls hardest on lower-income, higher-energy-burden households.",
+    "FERC's 18 June Section 206 show-cause orders (tariff responses due 17 August 2026) target wholesale large-load rules and cost-shifting but leave retail class allocation to states, so most household relief must still clear separate state dockets."
+  ],
+  "whyItMatters": "Capacity charges are landing on bills in 13 states and DC right now, and the cost of data-center growth is being spread across every household and business at peak rather than charged to the new loads that triggered it. The distinction between data centers underpaying (largely false) and the marginal cost of their growth being socialized (largely true) determines which regulatory fix would actually change who pays. Because the wholesale fix sits with FERC and retail allocation sits with 13 states, the path to relief, and whether the capped price ever falls, is unsettled and consequential for utilities, large-load developers, and ratepayers alike.",
+  "whatToWatch": [
+    "The 17 August 2026 deadline for the six grid operators to respond to FERC's Section 206 show-cause orders, and whether any propose a dedicated large-load wholesale charge.",
+    "Whether state retail dockets in PJM jurisdictions move to reallocate capacity cost across customer classes, since FERC's orders do not reach retail allocation.",
+    "PJM's next Base Residual Auction outcome and whether prices stay pinned to the cap or 'round-trip' lower once the temporary cap expires.",
+    "Zone-level divergence, especially data-center-heavy areas like Dominion in Virginia, versus the single-zone DC estimate cited."
+  ],
+  "primarySection": "energy",
+  "date": "2026-06-27",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T23:22:27.540Z"
+}
