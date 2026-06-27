@@ -44,7 +44,7 @@ export function CumulantMark({ className, ...props }: IconProps) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <circle cx="23.4" cy="15" r="1.7" fill="currentColor" />
+      <circle cx="23.4" cy="15" r="1.85" fill="#FF2D92" />
     </svg>
   );
 }
