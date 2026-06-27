@@ -42,7 +42,8 @@ def extract_json(t: str) -> dict:
     m = re.search(r"\{.*\}", t, re.S)
     if not m:
         raise RuntimeError("no JSON")
-    return json.loads(m.group(0))
+    raw = re.sub(r"[\x00-\x1f]", " ", m.group(0))  # strip unescaped control chars
+    return json.loads(raw)
 
 
 def load_article():
@@ -87,7 +88,15 @@ def main() -> None:
         '}\nOutput ONLY the JSON.'
     )
     print(f"writing captions for {slug} ...", flush=True)
-    c = extract_json(claude(prompt))
+    c = None
+    for attempt in range(3):
+        try:
+            c = extract_json(claude(prompt))
+            break
+        except Exception as e:  # noqa: BLE001
+            if attempt == 2:
+                print(f"caption generation failed after retries: {e}")
+                return
 
     out_dir = Path(arg("out") or (OUT_BASE / f"carousel-{slug}"))
     out_dir.mkdir(parents=True, exist_ok=True)
