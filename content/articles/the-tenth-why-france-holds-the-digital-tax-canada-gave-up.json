@@ -112,8 +112,7 @@
     "Canada",
     "European Union",
     "Trump",
-    "tax policy",
-    "geoeconomics"
+    "tax policy"
   ],
   "charts": [
     {
@@ -649,5 +648,59 @@
     "credit": "Photo: Dinkum, CC0 1.0, via Wikimedia Commons",
     "caption": "The French Ministry of the Economy and Finance at Bercy in Paris, the seat of the tax policy behind France's digital services tax.",
     "alt": "The modern French Ministry of the Economy and Finance building at Bercy in Paris, seen across the Seine behind the arched Pont de Bercy."
-  }
+  },
+  "primarySection": "trade",
+  "articleType": "news-analysis",
+  "companies": [],
+  "people": [
+    "Donald Trump"
+  ],
+  "regions": [
+    "France",
+    "Canada",
+    "United States",
+    "European Union",
+    "Italy",
+    "Spain",
+    "Austria",
+    "United Kingdom"
+  ],
+  "industries": [
+    "Wine and spirits",
+    "Luxury goods",
+    "Technology platforms",
+    "Aerospace",
+    "Trade policy"
+  ],
+  "assetClasses": [
+    "Equities",
+    "Currencies"
+  ],
+  "impactTags": [
+    "Wine and spirits exporters",
+    "Luxury goods makers",
+    "US tech platforms",
+    "EU-US trade framework",
+    "Cognac and Champagne producers",
+    "Cross-border supply chains"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 68,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "On 26 June 2026 Trump threatened a 100% tariff on goods from any country with a digital services tax; France, with a 3% DST since 2019, is the most prominent target ahead of a 4 July EU-US framework deadline.",
+    "France's goods exports to the US are about 1.8% of its GDP versus roughly 17% for Canada, which folded on a similar threat in 2025; France's exposure is about a tenth of Canada's.",
+    "France negotiates inside the EU, which shipped 531.6bn euros of goods to the US in 2024, so Brussels - not Paris - bargains for all 27 members against a market of roughly 449m people.",
+    "A February 2026 Supreme Court ruling (Learning Resources v. Trump) struck down IEEPA tariffs, leaving the fastest legal routes (Section 122 and the EU-US framework) capped at 15%, far below the threatened 100%.",
+    "The money is trivial: France's DST raised about 756m euros in 2024 (roughly 0.02% of GDP), so the fight is over precedent, not revenue - the national average also hides US-dependent sectors like Cognac (36% of exports) and wine and spirits."
+  ],
+  "whyItMatters": "A 100% US tariff on digital-tax countries would hit EU exporters and American buyers at once, putting hundreds of billions of euros of transatlantic goods trade in the crossfire and falling hardest on France's wine, spirits and luxury sectors where the US is the single largest market. The standoff also tests whether the US tariff threat still carries the force it did when it pushed Canada to repeal its tax within 48 hours, now that a Supreme Court ruling has capped the fastest tariff routes at 15%. For markets and the firms involved, the outcome turns less on the tiny tax revenue than on precedent over who can tax US tech giants' local revenue - and on which side can most afford to walk away.",
+  "whatToWatch": [
+    "The 4 July EU-US trade framework deadline and whether digital taxes get folded into or excluded from the final terms.",
+    "Whether France's National Assembly increase of its DST from 3% to 6% becomes law or is struck out by the government to avoid retaliation.",
+    "Whether the administration pivots to slower Section 232 or Section 301 investigations to reach a higher tariff than the 15% fast-track ceiling.",
+    "Reaction from US-dependent French sectors - Cognac, Champagne, wine and spirits, and luxury - and whether their lobbying shifts Paris's stance."
+  ],
+  "subheadline": "France's tenfold-smaller export exposure, its shelter behind the 27-member EU, and a Supreme Court ruling that capped fast tariffs at 15% explain why Paris can hold the line Ottawa could not."
 }

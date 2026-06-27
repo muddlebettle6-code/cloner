@@ -266,7 +266,16 @@ export interface ArticleSource {
   title: string;
   publisher?: string;
   url: string;
-  kind?: "primary" | "secondary" | "academic" | "data";
+  /** Source-hierarchy tier (1 = official data/filings ... down to industry reporting). */
+  tier?: number;
+  date?: string;
+  accessed?: string;
+  kind?: "primary" | "secondary" | "academic" | "data" | "official" | "regulatory" | "wire";
+}
+
+export interface Correction {
+  date: string;
+  note: string;
 }
 
 /**
@@ -279,10 +288,47 @@ export interface Article {
   /** One or two sentences: what happened, what the analysis found, why it matters. */
   deck: string;
   byline?: string;
+  /** Author role/desk, e.g. "Markets desk". */
+  byrole?: string;
   date: string;
   /** Full publish timestamp (ISO), shown as the time it went live. */
   publishedAt?: string;
+  /** When the underlying event occurred (distinct from publishedAt). */
+  eventDate?: string;
+  /** Last substantive update for developing stories. */
+  updatedAt?: string;
   readingMinutes: number;
+  // --- Newsroom classification (optional; back-compatible) ---
+  /** Section slug from SECTIONS — the primary desk. */
+  primarySection?: string;
+  /** Article-type slug from ARTICLE_TYPES. */
+  articleType?: string;
+  /** Short kicker shown above the headline. */
+  subheadline?: string;
+  /** One-line summary for cards (falls back to deck). */
+  summary?: string;
+  companies?: string[];
+  people?: string[];
+  regions?: string[];
+  industries?: string[];
+  assetClasses?: string[];
+  impactTags?: string[];
+  readerLevel?: string;
+  timeHorizon?: string;
+  // --- Editorial scoring + status ---
+  /** 0-100 significance score from the selection engine. */
+  newsScore?: number;
+  confidenceLevel?: "high" | "medium" | "low";
+  breakingNewsStatus?: "developing" | "confirmed" | "updated";
+  /** Higher = more prominent on the newsroom homepage. */
+  featuredPriority?: number;
+  status?: "draft" | "published";
+  relatedArticles?: string[];
+  corrections?: Correction[];
+  // --- Editorial boxes (rendered by article type) ---
+  keyPoints?: string[];
+  whyItMatters?: string;
+  whatToWatch?: string[];
   tags?: string[];
   /** The quick-version bullets shown at the top of the article. */
   takeaways?: string[];

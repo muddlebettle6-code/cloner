@@ -91,6 +91,11 @@ def main() -> None:
         i = args.index("--event")
         seed_event = args[i + 1]
         del args[i : i + 2]
+    seed_section = None
+    if "--section" in args:
+        i = args.index("--section")
+        seed_section = args[i + 1]
+        del args[i : i + 2]
     out = Path(args[0]) if args else Path("article_out")
     out.mkdir(parents=True, exist_ok=True)
     log = lambda m: print(f"[{_dt.datetime.now():%H:%M:%S}] {m}", flush=True)  # noqa: E731
@@ -216,6 +221,35 @@ def main() -> None:
             }
     except Exception as exc:  # noqa: BLE001 - illustration is best-effort
         log(f"illustrate failed ({exc})")
+
+    log("classify")
+    try:
+        meta = extract_json(claude(STANDARD + "Classify this finished article for a financial newsroom and write "
+            "editorial metadata, based ONLY on the article. Return JSON with: primarySection (one of: markets, "
+            "economy, politics, policy, geopolitics, business, technology, ai, banking, investing, "
+            "personal-finance, real-estate, energy, commodities, healthcare, consumer, labor, trade, deals, "
+            "crypto, global-markets, research, explainers, opinion, breaking); articleType (one of: breaking, "
+            "news-analysis, market-brief, explainer, data-story, company-analysis, policy-impact, geopolitical, "
+            "personal-finance-guide, feature, research-note, opinion); companies[]; people[]; regions[]; "
+            "industries[]; assetClasses[]; impactTags[]; topicTags[] (2-6 controlled, non-duplicative); "
+            "readerLevel (Beginner/Intermediate/Advanced); timeHorizon (Short-Term/Medium-Term/Long-Term); "
+            "newsScore (0-100); confidenceLevel (high/medium/low); keyPoints[] (3-5 crisp bullets); whyItMatters "
+            "(2-4 sentences connecting the event to markets, industries and people); whatToWatch[] (2-4 "
+            "forward-looking).\n\nARTICLE:\n"
+            f"{json.dumps({k: final.get(k) for k in ('headline', 'deck', 'event', 'question', 'takeaways', 'sections')})[:13000]}",
+            web=False))
+        for k in ("articleType", "companies", "people", "regions", "industries", "assetClasses", "impactTags",
+                  "readerLevel", "timeHorizon", "newsScore", "confidenceLevel", "keyPoints", "whyItMatters",
+                  "whatToWatch"):
+            if meta.get(k) is not None:
+                final[k] = meta[k]
+        final["primarySection"] = seed_section or meta.get("primarySection") or "markets"
+        if meta.get("topicTags"):
+            final["tags"] = list(dict.fromkeys((final.get("tags") or []) + meta["topicTags"]))[:8]
+    except Exception as exc:  # noqa: BLE001 - classification is best-effort
+        log(f"classify failed ({exc})")
+        if seed_section:
+            final["primarySection"] = seed_section
 
     final["date"] = _dt.date.today().isoformat()
     final.setdefault("byline", "Cumulant Research")

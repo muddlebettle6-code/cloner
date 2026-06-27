@@ -1,61 +1,70 @@
 import Link from "next/link";
 import { PageShell } from "@/components/page-shell";
 import { Reveal } from "@/components/reveal";
-import { ArrowIcon } from "@/components/icons";
-import { ARTICLES, ARTICLES_INTRO } from "@/content/articles";
-import { cn } from "@/lib/utils";
+import { ARTICLES_BY_RECENCY, ARTICLES_INTRO, bySection, leadStory, sectionCounts } from "@/content/articles";
+import { SECTIONS } from "@/content/newsroom";
+import { CompactRow, LeadCard, ListRow, TopicNav } from "@/components/article-cards";
 
-export const metadata = { title: "Articles" };
-
-function fmtDate(iso: string): string {
-  const d = new Date(`${iso}T00:00:00`);
-  return Number.isNaN(d.getTime())
-    ? iso
-    : d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
-}
+export const metadata = {
+  title: "Newsroom",
+  description: ARTICLES_INTRO.body,
+};
 
 export default function ArticlesPage() {
+  const all = ARTICLES_BY_RECENCY;
+  const lead = leadStory();
+  const latest = all.filter((a) => a.slug !== lead?.slug).slice(0, 5);
+  const counts = sectionCounts();
+  const deskSections = SECTIONS.filter((s) => (counts[s.slug] ?? 0) > 0).sort((a, b) => a.order - b.order);
+
   return (
-    <PageShell eyebrow={ARTICLES_INTRO.label} title={ARTICLES_INTRO.heading} intro={ARTICLES_INTRO.body}>
-      <Reveal as="section" stagger className="px-[15px] pb-[80px] md:px-[30px] md:pb-[120px]">
-        {ARTICLES.length === 0 && (
-          <p className="border-t border-clay py-[28px] text-[15px] text-smoke">No articles yet.</p>
-        )}
-        {ARTICLES.map((a) => (
-          <Link
-            key={a.slug}
-            href={`/articles/${a.slug}`}
-            className={cn(
-              "group block border-t border-clay py-[28px] last:border-b md:py-[36px]",
-              a.leadImage && "md:grid md:grid-cols-[1fr_300px] md:gap-[30px] md:items-start"
-            )}
-          >
-            {a.leadImage && (
-              <div className="order-first mb-[18px] overflow-hidden border border-clay bg-stone md:order-last md:mb-0">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={a.leadImage.src}
-                  alt={a.leadImage.alt}
-                  loading="lazy"
-                  className="aspect-[3/2] w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                />
-              </div>
-            )}
-            <div className="md:order-first">
-              <p className="font-mono text-[11px] uppercase tracking-[0.04em] text-smoke">
-                {fmtDate(a.date)}  ·  {a.readingMinutes} min read{a.tags?.[0] ? `  ·  ${a.tags[0]}` : ""}
-              </p>
-              <h2 className="mt-[10px] max-w-[820px] text-[26px] font-medium leading-[1.1] tracking-[-0.6px] text-ink md:text-[34px]">
-                {a.headline}
-              </h2>
-              <p className="mt-[12px] max-w-[680px] text-[16px] leading-[1.5] text-smoke">{a.deck}</p>
-              <span className="mt-[16px] inline-flex items-center gap-[8px] font-mono text-[11px] uppercase tracking-[0.04em] text-ink">
-                Read the article <ArrowIcon className="h-[14px] w-[14px] transition-transform duration-300 group-hover:translate-x-[3px]" />
-              </span>
+    <PageShell eyebrow="Newsroom" title="Newsroom." intro={ARTICLES_INTRO.body}>
+      <TopicNav />
+
+      {all.length === 0 && <p className="py-[28px] text-[15px] text-smoke">No stories yet.</p>}
+
+      {/* Lead story + Latest stream */}
+      {lead && (
+        <section className="grid gap-[36px] py-[40px] md:grid-cols-[1fr_320px] md:gap-[48px]">
+          <Reveal>
+            <LeadCard a={lead} />
+          </Reveal>
+          <Reveal className="md:border-l md:border-clay md:pl-[40px]">
+            <p className="mb-[4px] font-mono text-[12px] uppercase tracking-[0.1em] text-ink">Latest</p>
+            <div>
+              {latest.map((a, i) => (
+                <CompactRow key={a.slug} a={a} first={i === 0} />
+              ))}
             </div>
-          </Link>
-        ))}
-      </Reveal>
+          </Reveal>
+        </section>
+      )}
+
+      {/* Desk modules — the newsroom organized by section */}
+      {deskSections.map((s) => {
+        const arts = bySection(s.slug).slice(0, 4);
+        if (!arts.length) return null;
+        return (
+          <Reveal as="section" key={s.slug} className="border-t border-clay py-[34px]">
+            <div className="mb-[16px] flex items-baseline justify-between">
+              <Link href={`/articles/topic/${s.slug}`} className="group inline-flex items-baseline gap-[10px]">
+                <h2 className="text-[22px] font-medium tracking-[-0.5px] text-ink transition-opacity group-hover:opacity-70 md:text-[26px]">
+                  {s.label}
+                </h2>
+                <span className="font-mono text-[11px] text-smoke">{counts[s.slug]}</span>
+              </Link>
+              <Link href={`/articles/topic/${s.slug}`} className="font-mono text-[11px] uppercase tracking-[0.05em] text-smoke transition-colors hover:text-ink">
+                View all
+              </Link>
+            </div>
+            <div className="grid gap-x-[40px] md:grid-cols-2">
+              {arts.map((a, i) => (
+                <ListRow key={a.slug} a={a} first={i < 2} />
+              ))}
+            </div>
+          </Reveal>
+        );
+      })}
     </PageShell>
   );
 }

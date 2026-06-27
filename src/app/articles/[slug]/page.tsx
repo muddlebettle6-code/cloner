@@ -4,9 +4,11 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ArticleChartView } from "@/components/article-chart";
 import { ArrowIcon } from "@/components/icons";
-import { ARTICLES, getArticle } from "@/content/articles";
+import { ARTICLES, getArticle, relatedArticles } from "@/content/articles";
 import type { Article, ArticleBlock, GlossaryEntry } from "@/content/types";
+import { SECTION_BY_SLUG, ARTICLE_TYPE_BY_SLUG } from "@/content/newsroom";
 import { Reveal } from "@/components/reveal";
+import { ListRow } from "@/components/article-cards";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -152,7 +154,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   if (!article) notFound();
 
   const lead = article.leadChartId ? article.charts.find((c) => c.id === article.leadChartId) : undefined;
-  const meta = [article.tags?.[0], `${article.readingMinutes} min read`].filter(Boolean).join("  ·  ");
+  const section = article.primarySection ? SECTION_BY_SLUG[article.primarySection] : undefined;
+  const atype = article.articleType ? ARTICLE_TYPE_BY_SLUG[article.articleType] : undefined;
+  const meta = [atype?.label, `${article.readingMinutes} min read`].filter(Boolean).join("  ·  ");
+  const related = relatedArticles(article, 4);
+  const tagChips = [...(article.tags ?? []), ...(article.companies ?? []), ...(article.regions ?? [])];
   // Each glossary term is defined on its first appearance only.
   const linked = new Set<string>();
 
@@ -167,10 +173,20 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               href="/articles"
               className="inline-flex items-center gap-[8px] font-mono text-[11px] uppercase tracking-[0.04em] text-smoke transition-opacity duration-300 hover:opacity-60"
             >
-              <ArrowIcon className="h-[13px] w-[13px] rotate-180" /> Articles
+              <ArrowIcon className="h-[13px] w-[13px] rotate-180" /> Newsroom
             </Link>
-            <p className="mt-[26px] font-mono text-[11px] uppercase tracking-[0.05em] text-smoke">
+            {section && (
+              <Link
+                href={`/articles/topic/${section.slug}`}
+                className="mt-[24px] block font-mono text-[12px] uppercase tracking-[0.08em] transition-opacity hover:opacity-70"
+                style={{ color: "#ff2d92" }}
+              >
+                {section.label}
+              </Link>
+            )}
+            <p className="mt-[10px] font-mono text-[11px] uppercase tracking-[0.05em] text-smoke">
               {fmtDate(article.date)}{fmtTime(article.publishedAt) ? `, ${fmtTime(article.publishedAt)}` : ""}{meta ? `  ·  ${meta}` : ""}
+              {article.updatedAt ? `  ·  Updated ${fmtTime(article.updatedAt)}` : ""}
             </p>
             <h1 className="mt-[14px] text-[33px] font-medium leading-[1.06] tracking-[-1px] text-ink md:text-[52px]">
               {article.headline}
@@ -223,6 +239,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </Reveal>
           )}
 
+          {/* Why it matters */}
+          {article.whyItMatters && (
+            <Reveal className="mx-auto mt-[40px] max-w-[760px] border-l-[3px] pl-[22px]" style={{ borderColor: "#ff2d92" }}>
+              <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-smoke">Why it matters</p>
+              <p className="mt-[8px] text-[18px] leading-[1.5] text-ink md:text-[20px]">{article.whyItMatters}</p>
+            </Reveal>
+          )}
+
           {/* Body */}
           <div className="mx-auto max-w-[760px]">
             {article.sections.map((s, i) => (
@@ -236,6 +260,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </Reveal>
             ))}
           </div>
+
+          {/* What to watch */}
+          {article.whatToWatch && article.whatToWatch.length > 0 && (
+            <div className="mx-auto mt-[48px] max-w-[760px] border border-clay bg-stone p-[24px] md:p-[28px]">
+              <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-smoke">What to watch</p>
+              <ul className="mt-[12px] flex flex-col gap-[10px]">
+                {article.whatToWatch.map((w, i) => (
+                  <li key={i} className="flex gap-[12px] text-[16px] leading-[1.5] text-ink">
+                    <span className="mt-[9px] h-[5px] w-[5px] flex-none rounded-full" style={{ background: "#ff2d92" }} />
+                    <span>{w}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Methodology + limitations */}
           {(article.methodology?.length > 0 || article.limitations?.length > 0) && (
@@ -290,6 +329,31 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   </li>
                 ))}
               </ol>
+            </div>
+          )}
+
+          {/* Tags */}
+          {tagChips.length > 0 && (
+            <div className="mx-auto mt-[40px] max-w-[760px]">
+              <div className="flex flex-wrap gap-[8px]">
+                {tagChips.slice(0, 14).map((t) => (
+                  <span key={t} className="border border-clay px-[11px] py-[5px] font-mono text-[11px] uppercase tracking-[0.04em] text-smoke">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Related stories */}
+          {related.length > 0 && (
+            <div className="mx-auto mt-[48px] max-w-[760px] border-t border-clay pt-[24px]">
+              <p className="font-mono text-[12px] uppercase tracking-[0.1em] text-ink">Related</p>
+              <div className="mt-[6px] grid gap-x-[40px] md:grid-cols-2">
+                {related.map((a, i) => (
+                  <ListRow key={a.slug} a={a} first={i < 2} />
+                ))}
+              </div>
             </div>
           )}
         </article>

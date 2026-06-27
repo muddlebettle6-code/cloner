@@ -42,8 +42,11 @@ function articles() {
     const a = JSON.parse(read(join(ART, f)));
     return {
       slug: a.slug, headline: a.headline, date: a.date, published: a.published !== false,
+      section: a.primarySection || "", type: a.articleType || "",
       glossary: (a.glossary || []).length, charts: (a.charts || []).length,
       sources: (a.sources || []).length, takeaways: (a.takeaways || []).length,
+      newsScore: typeof a.newsScore === "number" ? a.newsScore : null,
+      companies: a.companies || [], whyItMatters: !!a.whyItMatters,
     };
   }).sort((x, y) => (y.date || "").localeCompare(x.date || "") || x.slug.localeCompare(y.slug));
 }
@@ -99,6 +102,22 @@ function page() {
   const plats = connectedPlatforms();
   const live = !!lock;
 
+  // Desk balance + editorial alerts.
+  const desk = {};
+  for (const a of arts) { const s = a.section || "uncategorized"; desk[s] = (desk[s] || 0) + 1; }
+  const deskHtml = Object.entries(desk).sort((a, b) => b[1] - a[1])
+    .map(([s, n]) => `<span class="deskpill">${esc(s)} <b>${n}</b></span>`).join("") || '<span class="dim">no desks yet</span>';
+  const recent = arts.slice(0, 8);
+  const alerts = [];
+  const sc = {}; recent.forEach((a) => { if (a.section) sc[a.section] = (sc[a.section] || 0) + 1; });
+  Object.entries(sc).forEach(([s, n]) => { if (n >= 4) alerts.push(`${n} of the last ${recent.length} stories are on one desk (${s}); diversify.`); });
+  const cc = {}; recent.forEach((a) => (a.companies || []).forEach((c) => { cc[c] = (cc[c] || 0) + 1; }));
+  Object.entries(cc).forEach(([c, n]) => { if (n >= 3) alerts.push(`${n} recent stories mention ${c}.`); });
+  arts.forEach((a) => { if (a.sources <= 1) alerts.push(`${a.slug} relies on ${a.sources} source.`); });
+  arts.forEach((a) => { if (!a.whyItMatters) alerts.push(`${a.slug} has no "why it matters" framing.`); });
+  arts.forEach((a) => { if (!a.section || !a.type) alerts.push(`${a.slug} is missing section/type metadata.`); });
+  const alertHtml = alerts.length ? alerts.slice(0, 10).map((x) => `<li>${esc(x)}</li>`).join("") : '<li class="ok">No editorial alerts.</li>';
+
   const stageHtml = STAGES.map((s, i) => {
     const on = live && i === stage;
     const done = live && stage >= 0 && i < stage;
@@ -108,9 +127,11 @@ function page() {
 
   const artRows = arts.map((a) => `<tr>
     <td><a href="${SITE}/articles/${esc(a.slug)}" target="_blank">${esc(a.headline)}</a></td>
+    <td class="mono dim" style="text-transform:capitalize">${esc(a.section || "-")}</td>
     <td class="mono">${esc(a.date)}</td>
     <td class="mono c">${a.charts}</td><td class="mono c">${a.sources}</td>
     <td class="mono c">${a.glossary}</td>
+    <td class="mono c">${a.newsScore ?? "-"}</td>
     <td class="mono c">${a.published ? '<span class="ok">live</span>' : "draft"}</td></tr>`).join("");
 
   const actRows = logTail(12).reverse().map((l) => {
@@ -151,6 +172,8 @@ td.c{text-align:center;width:54px;} a{color:#000;text-decoration:none;border-bot
 .pill{display:inline-block;font-family:ui-monospace,monospace;font-size:12px;padding:7px 13px;border-radius:999px;margin-right:8px;}
 .pon{background:#eafaf0;color:#0a8f3c;} .poff{background:#f4f4f4;color:#b0b0b0;}
 .foot{margin-top:46px;font-family:ui-monospace,monospace;font-size:11px;color:#bcbcbc;}
+.deskpill{display:inline-block;font-family:ui-monospace,monospace;font-size:12px;padding:6px 11px;border:1px solid #e6e6e6;border-radius:999px;margin:0 8px 8px 0;color:#777;text-transform:capitalize;} .deskpill b{color:#000;}
+.alerts{list-style:none;} .alerts li{font-size:13px;color:#9a6a00;padding:8px 0;border-bottom:1px solid #f3f3f3;} .alerts li.ok{color:#0a8f3c;}
 </style></head><body>
 <header>
   <div class="logo"><svg viewBox="0 0 30 24" fill="none"><path d="M2.5 18.6H27.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-opacity=".35"/><path d="M3.5 18.6C8.6 18.6 10 5.6 15 5.6C20 5.6 21.4 18.6 26.5 18.6" stroke="#000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.4" cy="15" r="1.7" fill="#000"/></svg>Cumulant Newsroom</div>
@@ -168,8 +191,14 @@ td.c{text-align:center;width:54px;} a{color:#000;text-decoration:none;border-bot
   <div class="kpi"><div class="n">${esc((arts[0] && arts[0].date) || "-")}</div><div class="l">last published</div></div>
 </div>
 
+<h2>Desk coverage</h2>
+<div>${deskHtml}</div>
+
+<h2>Editorial alerts</h2>
+<ul class="alerts">${alertHtml}</ul>
+
 <h2>Articles</h2>
-<table><tr><th>Headline</th><th>Date</th><th class="c">Ch</th><th class="c">Src</th><th class="c">Gl</th><th class="c">Status</th></tr>${artRows}</table>
+<table><tr><th>Headline</th><th>Desk</th><th>Date</th><th class="c">Ch</th><th class="c">Src</th><th class="c">Gl</th><th class="c">Score</th><th class="c">Status</th></tr>${artRows}</table>
 
 <h2>Watcher activity</h2>
 <table>${actRows || '<tr><td class="dim">no activity logged yet</td></tr>'}</table>

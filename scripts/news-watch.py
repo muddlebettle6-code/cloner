@@ -60,9 +60,10 @@ def load_covered() -> list[dict]:
     return out
 
 
-def record(slug: str, event: str, published: bool) -> None:
+def record(slug: str, event: str, published: bool, section: str = "", score: int = 0) -> None:
     with COVERED.open("a", encoding="utf-8") as f:
-        f.write(json.dumps({"date": TODAY, "slug": slug, "event": event, "published": published}) + "\n")
+        f.write(json.dumps({"date": TODAY, "slug": slug, "event": event, "published": published,
+                            "section": section, "score": score}) + "\n")
 
 
 def main() -> None:
@@ -79,21 +80,43 @@ def main() -> None:
     if sum(1 for c in covered if c.get("date") == TODAY) >= MAX_PER_DAY:
         log(f"Daily cap reached ({MAX_PER_DAY}); skipping.")
         return
-    recent = [c.get("event", "")[:90] for c in covered[-30:]]
+    recent_full = covered[-16:]
+    recent = [c.get("event", "")[:90] for c in recent_full]
+    sec_counts: dict[str, int] = {}
+    for c in recent_full:
+        s = c.get("section")
+        if s:
+            sec_counts[s] = sec_counts.get(s, 0) + 1
+    overcovered = ", ".join(sorted(sec_counts, key=lambda k: sec_counts[k], reverse=True)[:4]) or "(none yet)"
 
     log("scanning recent news for a worthy new event...")
     avoid = ("\n- " + "\n- ".join(recent)) if recent else " (none yet)"
+    universe = ("markets; economy (inflation, rates, jobs, GDP, housing, credit); politics (elections, tax, "
+        "spending, antitrust, central-bank appointments); policy and regulation; geopolitics (war, sanctions, "
+        "tariffs, shipping, energy security, supply chains); business strategy; technology; AI; banking and "
+        "credit; investing; personal finance (mortgages, credit, student loans, taxes, retirement, insurance); "
+        "real estate; energy; commodities and climate; healthcare; consumer; labor and employment; trade; deals "
+        "(M&A, IPOs, private equity, venture capital); crypto; global markets; and research/data")
     try:
         verdict = extract_json(claude(
-            "You are Cumulant Research's news desk. Use web search to scan the LAST FEW HOURS of news for the "
-            "single most SIGNIFICANT, SPECIFIC, researchable NEW event in markets, finance, IPOs and offerings, "
-            "tariffs and trade, AI investment, corporate disclosure, major corporate events (large deals, "
-            "earnings shocks, leadership or regulatory actions), or economic policy. It must be: (a) specific and "
-            "concrete (a named company, deal, filing, or policy, not a vague trend); (b) significant enough to "
-            "justify a deep data article; (c) supported by primary sources; and (d) NOT one of these "
-            f"already-covered items:{avoid}\n\nHold a HIGH bar: most hours, nothing qualifies. Return STRICT JSON: "
-            '{"worthy": true or false, "event": "one sentence with the key fact and date", "slug": "kebab-case", '
-            '"why": "why it clears the bar"}. Output ONLY the JSON object.'))
+            "You are Cumulant Research's news desk for a FULL financial-and-economic newsroom - the breadth of "
+            "CNBC, Bloomberg, Reuters, the Financial Times and the Economist - with our own research-led "
+            "identity. Use web search to scan the last several hours of news ACROSS this whole universe: "
+            + universe + ".\n\n"
+            "Find the single best NEW story to research now. SCORE candidates on economic impact (20%), reader "
+            "interest (15%), timeliness (15%), market relevance (15%), policy or geopolitical importance (10%), "
+            "original-analysis potential (10%), breadth of consequences (10%), and source quality (5%). A strong "
+            "story connects an event to markets, companies, industries, households AND the wider economy - not "
+            "just a market reaction. REJECT thin press-release rewrites, minor corporate announcements, "
+            "low-impact IPO updates, predictable market recaps, weakly sourced items, and stories already widely "
+            "covered without a distinct angle.\n"
+            f"DIVERSITY: these desks are already well covered recently - strongly prefer OTHER desks unless a "
+            f"story is exceptional: {overcovered}. Never repeat the same company, industry, person, or event.\n"
+            f"Be specific, concrete and primary-source-backed, and NOT one of these already-covered items:{avoid}\n\n"
+            "Hold a HIGH bar. Return STRICT JSON: {\"worthy\": true or false, \"event\": \"one sentence with the "
+            "key fact and date\", \"slug\": \"kebab-case\", \"section\": \"one desk slug, e.g. economy, "
+            "geopolitics, policy, technology, banking, personal-finance, energy, deals, labor, trade, markets\", "
+            "\"score\": 0-100, \"why\": \"why it clears the bar and what analysis we add\"}. Output ONLY JSON."))
     except Exception as exc:  # noqa: BLE001
         log(f"scan failed ({exc}); skipping.")
         return
@@ -107,6 +130,11 @@ def main() -> None:
         return
     event = (verdict.get("event") or "").strip()
     slug = re.sub(r"[^a-z0-9-]", "", (verdict.get("slug") or "").lower()).strip("-")
+    section = re.sub(r"[^a-z-]", "", (verdict.get("section") or "").lower())
+    try:
+        score = int(verdict.get("score") or 0)
+    except (TypeError, ValueError):
+        score = 0
     if not event or not slug:
         log("Worthy but missing event/slug; skipping.")
         return
@@ -118,8 +146,10 @@ def main() -> None:
     LOCK.write_text(slug, encoding="utf-8")
     try:
         outdir = BUILDS / slug
-        subprocess.run([sys.executable, str(SITE_DIR / "scripts" / "article-standalone.py"), str(outdir),
-                        "--event", event], check=True)
+        cmd = [sys.executable, str(SITE_DIR / "scripts" / "article-standalone.py"), str(outdir), "--event", event]
+        if section:
+            cmd += ["--section", section]
+        subprocess.run(cmd, check=True)
         art = outdir / "article.json"
         if not art.exists():
             log("No article produced; skipping.")
@@ -130,7 +160,7 @@ def main() -> None:
         if gate.returncode != 0:
             log("Quality gate failed; holding as a draft.")
             subprocess.run(["node", "scripts/article-ingest.mjs", str(art)], cwd=str(SITE_DIR))
-            record(slug, event, published=False)
+            record(slug, event, published=False, section=section, score=score)
             return
 
         subprocess.run(["git", "-C", str(SITE_DIR), "add", "content/articles/"])
@@ -138,7 +168,7 @@ def main() -> None:
         if AUTO_DEPLOY:
             subprocess.run(["bash", str(SITE_DIR / "scripts" / "deploy.sh"), f"Article: {slug}"],
                            cwd=str(SITE_DIR), env={**os.environ, "SITE_DIR": str(SITE_DIR)})
-        record(slug, event, published=True)
+        record(slug, event, published=True, section=section, score=score)
         log(f"Published + deployed: {slug}")
 
         # Distribution: generate platform-tailored posts and auto-post to every

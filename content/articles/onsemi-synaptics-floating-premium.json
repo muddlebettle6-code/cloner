@@ -20,7 +20,8 @@
     "Synaptics",
     "all-stock deal",
     "merger arbitrage",
-    "Physical AI"
+    "Physical AI",
+    "All-stock deal"
   ],
   "leadChartId": "premium-before-after",
   "charts": [
@@ -532,5 +533,51 @@
     "caption": "Finished silicon wafers like these are the end product of the chip industry at the heart of onsemi's all-stock bid for Synaptics.",
     "alt": "Several round, mirror-finish silicon semiconductor wafers stacked and fanned out, their surfaces reflecting rainbow-colored light."
   },
-  "publishedAt": "2026-06-26T13:57:27-04:00"
+  "publishedAt": "2026-06-26T13:57:27-04:00",
+  "primarySection": "deals",
+  "articleType": "news-analysis",
+  "companies": [
+    "onsemi",
+    "Synaptics",
+    "Allegro MicroSystems"
+  ],
+  "people": [],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "Semiconductors",
+    "Technology hardware",
+    "Automotive chips",
+    "Consumer electronics"
+  ],
+  "assetClasses": [
+    "Equities"
+  ],
+  "impactTags": [
+    "Synaptics shareholders",
+    "onsemi shareholders",
+    "Merger-arbitrage funds",
+    "Acquisition premiums",
+    "Shareholder value"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 62,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "On 25 June 2026 onsemi agreed to buy Synaptics for about $7bn entirely in stock at a fixed 1.350 onsemi shares per Synaptics share, framed as a roughly 19% premium against a 10-day average of both stocks.",
+    "onsemi's shares fell 23.7% the next trading day to a $90.65 close, which mechanically cut the value of the fixed ratio to $122.38 per Synaptics share.",
+    "On a same-day basis, the +27.6% premium at announcement flipped to a -2.6% discount versus Synaptics' $125.62 pre-deal close - the deal became worth slightly less than the standalone company.",
+    "Because the exchange ratio is locked, the dollar value to Synaptics holders floats on onsemi's stock; the article frames this as the all-stock instrument working as designed, not a broken promise.",
+    "Caveats: this is a one-day reaction, the deal is not expected to close until mid-2027, and the reviewed materials did not state whether a collar (a value floor) exists."
+  ],
+  "whyItMatters": "All-stock acquisitions pay sellers in the buyer's fluctuating shares rather than cash, so a headline premium can evaporate the instant the buyer's stock moves - a distinction that affects every shareholder, board, and arbitrage desk involved in a deal. Here a near-24% one-day drop in onsemi turned an advertised premium into a discount, leaving Synaptics holders facing stock worth less than their company's standalone price and onsemi holders diluted for a strategy the market questioned. The episode is a concrete lesson for investors evaluating any fixed-ratio all-stock deal, and it adds pressure on a struggling chip acquirer doing its largest-ever transaction.",
+  "whatToWatch": [
+    "The merger-arbitrage spread: where Synaptics actually trades versus the $122.38 deal-implied value - a wide, persistent gap signals market doubt the deal closes on these terms.",
+    "Whether onsemi's shares recover toward the $118.74 reference price before the targeted mid-2027 close, which would quietly restore the premium with no change to terms.",
+    "Any disclosure clarifying whether the exchange ratio carries a collar or floor that would bound the realized discount.",
+    "Reactions from Synaptics' board, proxy advisers, and shareholders, including potential lawsuits or pressure to renegotiate given the deal currently values the target below its standalone price."
+  ],
+  "subheadline": "A fixed-ratio all-stock deal shows how an advertised premium can invert into a discount overnight when the buyer's shares fall."
 }

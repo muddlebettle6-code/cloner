@@ -640,5 +640,58 @@
     "credit": "Photo: Y. Colombe / National Institute of Standards and Technology (NIST), Public Domain, via Wikimedia Commons",
     "caption": "A trapped-ion device built by NIST physicists confines charged atoms above a gold chip - the same trapped-ion approach Quantinuum, whose $15.7 billion IPO priced at roughly 507 times sales, uses to build its quantum computers.",
     "alt": "Close-up of a NIST trapped-ion quantum computing apparatus showing a gold ion-trap chip surrounded by copper enclosure and a gold wire mesh used to manipulate beryllium ions."
-  }
+  },
+  "primarySection": "markets",
+  "articleType": "company-analysis",
+  "companies": [
+    "Quantinuum",
+    "Honeywell",
+    "IonQ",
+    "Rigetti",
+    "D-Wave",
+    "Cerebras",
+    "J.P. Morgan",
+    "Morgan Stanley",
+    "RIKEN"
+  ],
+  "people": [],
+  "regions": [
+    "United States",
+    "Japan"
+  ],
+  "industries": [
+    "Quantum computing",
+    "Technology",
+    "Investment banking",
+    "Semiconductors"
+  ],
+  "assetClasses": [
+    "Equities"
+  ],
+  "impactTags": [
+    "IPO investors",
+    "Quantum computing sector",
+    "Honeywell shareholders",
+    "Retail investors",
+    "Institutional investors"
+  ],
+  "readerLevel": "Advanced",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 71,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "Quantinuum priced its IPO at $60 on 3 June 2026 and listed on Nasdaq under QNT on 4 June, raising $1.68 billion and closing its first day up just 0.6 percent at a roughly $15.7 billion valuation.",
+    "On a fully diluted basis that values the company at about 507 times FY2025 revenue of $30.9 million, well above the ~450x headline figure because public Class A holders own only about 12 percent of the economic interest under an Up-C structure.",
+    "Working the price backwards, justifying the valuation at a 10x terminal forward sales multiple with zero IPO-buyer profit implies revenue growth of about 119 percent a year through FY2030, within a 102-152 percent band across stated assumptions.",
+    "Quantinuum's signed-order backlog (remaining performance obligations) was only $76.8 million as of 31 March 2026, roughly $20 million a year when annualized, versus the ~$1.57 billion of FY2030 revenue the base case requires.",
+    "The entire quantum sector is priced ahead of its order books, but Quantinuum carries both the highest price-to-sales multiple and the thinnest near-term contracted cushion; rival IonQ trades near 109-115x with a $470 million backlog."
+  ],
+  "whyItMatters": "Quantinuum is the first pure-play quantum-computing company to go public through a conventional bank-led IPO rather than a SPAC, making its $15.7 billion price a cleaner market test of whether public investors will fund the sector on real sales or on promised growth. The reverse-engineered math shows the valuation demands triple-digit annual revenue growth for five straight years, a bar far above the company's $77 million signed-order backlog, which exposes IPO buyers who paid $60 for about 12 percent of the economic interest. Because rivals IonQ, Rigetti and D-Wave are all priced well ahead of their order books, the analysis frames a sector-wide repricing risk where multiples have behaved more like a mood gauge than a measure of contracted demand.",
+  "whatToWatch": [
+    "Quantinuum's first quarterly report (10-Q) as a public company, especially whether bookings and signed-order backlog jump roughly tenfold toward IonQ's $400 million-plus level.",
+    "Any large multi-year government or research contracts that would diversify away from heavy customer concentration (RIKEN was about 60 percent of FY2025 revenue).",
+    "Whether quarterly revenue begins a steady climb rather than swinging on one-off hardware deals like the prior sales-type lease.",
+    "The post-IPO lockup expiry, when Honeywell and other insiders can begin swapping and selling Up-C units, and whether the multiple compresses through a falling price."
+  ],
+  "subheadline": "A reverse-engineered look at what Quantinuum's $15.7 billion, 507-times-sales IPO price assumes about future growth, and how thin its signed-order backlog looks against that bar and against rivals."
 }

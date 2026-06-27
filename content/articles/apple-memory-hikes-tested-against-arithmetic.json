@@ -13,7 +13,8 @@
     "NAND",
     "consumer electronics",
     "AI supply chain",
-    "pricing"
+    "pricing",
+    "Memory chip shortage"
   ],
   "leadChartId": "hike-vs-price",
   "charts": [
@@ -649,5 +650,59 @@
     "caption": "Apple's flagship Fifth Avenue store in Manhattan, where on 25 June 2026 the company raised prices across its Mac, iPad, HomePod and Vision Pro lines, blaming a shortage of memory and storage chips.",
     "alt": "The glass-cube entrance of Apple's Fifth Avenue retail store in New York City, with the white Apple logo suspended inside the illuminated transparent cube."
   },
-  "publishedAt": "2026-06-26T12:38:08-04:00"
+  "publishedAt": "2026-06-26T12:38:08-04:00",
+  "primarySection": "technology",
+  "articleType": "data-story",
+  "companies": [
+    "Apple",
+    "Microsoft",
+    "HP",
+    "Micron",
+    "Counterpoint Research",
+    "TechInsights",
+    "TrendForce",
+    "Bloomberg"
+  ],
+  "people": [
+    "Bruce Broussard"
+  ],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "Consumer electronics",
+    "Semiconductors",
+    "Memory chips",
+    "Personal computers",
+    "Artificial intelligence"
+  ],
+  "assetClasses": [
+    "Equities"
+  ],
+  "impactTags": [
+    "Consumer prices",
+    "Supply chains",
+    "Component costs",
+    "Profit margins",
+    "Device buyers"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 68,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "On 25 June 2026 Apple raised prices across Macs, iPads, HomePod and Vision Pro, blaming a memory and storage chip shortage; the iPhone, Apple Watch and AirPods were left unchanged, and Apple shares fell about 6% to close near $275.",
+    "Per-device dollar hikes grow with how much memory each device carries rather than with its sticker price, which fits a genuine cost pass-through; the cleanest clue is the MacBook Air and Vision Pro both rising exactly $200 despite the Vision Pro costing more than three times as much.",
+    "The test is deliberately forgiving: the implied memory-cost band ($8-14 per extra GB of DRAM plus about $0.04 per GB of NAND) spans 75%, and most hikes cluster near the expensive top of that band, consistent with a mild markup layered on a real shock.",
+    "The one increase memory cannot explain lands on the $349 entry iPad, which rose $100 (28.7%) against an estimated $53-89 of extra memory cost, a regressive effect falling on the buyer paying the least.",
+    "The shock is industry-wide: Microsoft raised Xbox and Surface prices the same week, and PC makers say memory has jumped from roughly 15-18% to about 35% of build cost in a year, per an HP estimate."
+  ],
+  "whyItMatters": "Apple's price increases test whether the AI-driven surge in memory chip demand is now reaching consumer wallets, after a roughly two-decade decline in computer prices. Because the hikes appear to track gigabytes of memory rather than sticker price, the move reads largely as a genuine component cost pass-through rather than a broad margin grab, which matters for how investors read Apple's pricing power and for shoppers facing higher device costs. The fact that Microsoft and PC makers moved in the same week signals a shared input shock across the consumer electronics and semiconductor supply chain, not a one-company decision.",
+  "whatToWatch": [
+    "Whether DDR5 and LPDDR5 contract prices fall back in the second half of 2026 and Apple quietly reverses the hikes, which would support a pure cost pass-through reading.",
+    "Whether the autumn iPhone 18 launches with its own memory-driven price increase, strengthening the broad cost-shock story.",
+    "Whether the entry iPad stays elevated (holding near $449) even as other prices track falling memory costs, confirming a built-in regressive markup.",
+    "Whether major PC makers hold prices flat on comparable memory-heavy configurations, which would weaken the shared-industry-shock explanation."
+  ],
+  "subheadline": "A device-by-device check of Apple's June 2026 price list finds the increases track gigabytes of memory, not sticker price, though the test is generous and one unexplained markup lands on the cheapest iPad."
 }

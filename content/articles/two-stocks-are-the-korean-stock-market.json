@@ -135,9 +135,7 @@
     "semiconductors",
     "market concentration",
     "AI memory",
-    "HBM",
-    "index mechanics",
-    "circuit breaker"
+    "HBM"
   ],
   "leadChartId": "decomp",
   "charts": [
@@ -682,5 +680,60 @@
     "credit": "Photo: hyolee2, CC BY-SA 3.0, via Wikimedia Commons",
     "caption": "The Korea Exchange (KRX), operator of the KOSPI, whose official close anchors this decomposition of the index's 26 June 2026 fall.",
     "alt": "Exterior of the Korea Exchange (KRX) building, the operator of South Korea's KOSPI stock index."
-  }
+  },
+  "primarySection": "global-markets",
+  "articleType": "data-story",
+  "companies": [
+    "Samsung Electronics",
+    "SK Hynix",
+    "Micron",
+    "TSMC",
+    "Nokia",
+    "MSCI"
+  ],
+  "people": [],
+  "regions": [
+    "South Korea",
+    "Taiwan",
+    "United States",
+    "Finland"
+  ],
+  "industries": [
+    "Semiconductors",
+    "AI memory",
+    "Asset management",
+    "Stock exchanges",
+    "Index funds"
+  ],
+  "assetClasses": [
+    "Equities",
+    "ETFs",
+    "Currencies"
+  ],
+  "impactTags": [
+    "Korean households",
+    "Pension and passive savers",
+    "Foreign investors",
+    "Index fund holders",
+    "Retirement savings"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 74,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "On 26 June 2026 the KOSPI tripped its 8 percent circuit breaker, falling 8.19 percent intraday before closing down 5.81 percent (-519.09 points to 8,411.21).",
+    "A weight-times-return decomposition shows Samsung Electronics and SK Hynix, about 55 percent of the index, produced roughly 64 percent of the day's point fall - SK Hynix -197 points, Samsung -134, all ~830 other stocks just -188.",
+    "The finding survives stress testing: even using lower May weights, the two-stock share of the fall is about 59 percent, well above the 50 percent kill line.",
+    "Evidence points to a flows-and-leverage squeeze, not weak chip demand: month-old 2x single-stock ETFs drive about a third of trading in both stocks, an MSCI non-upgrade unwound a front-run foreign trade, and Micron hit a record while HBM stays sold out for 2026.",
+    "Foreign net selling hit 103 trillion won year-to-date, more than the 2008 crisis and 2020 pandemic combined, while Korean households bought roughly 70 billion dollars of the dip."
+  ],
+  "whyItMatters": "Because two semiconductor stocks make up about 55 percent of the KOSPI, a memory-chip selloff and a national stock-market crash have become arithmetically the same event, so anyone holding a plain Korean index fund is far more exposed to two chipmakers than the word \"index\" implies. The episode shows how extreme index concentration, plus new leveraged single-stock ETFs that force mechanical selling, can amplify a positioning squeeze into a circuit breaker even when underlying chip demand is intact. The losers are concentrated: Korean households who bought the dip from departing foreign institutions now hold an undiversified wager on AI memory pricing, including pensions and passive savers who never chose that bet.",
+  "whatToWatch": [
+    "Whether leveraged-ETF deleveraging completes and the regulator curbs the new 2x single-stock products, easing forced selling.",
+    "Seoul's July launch of 24-hour onshore FX trading and any concrete MSCI watchlist signal toward developed-market status, which could revive foreign passive inflows.",
+    "HBM order books - any cancellation or a Micron or SK Hynix guidance cut would turn the 55 percent chip weight into an amplifier of a real fundamental decline.",
+    "Foreign flow data - another record week of net selling versus a turn to net buying."
+  ],
+  "subheadline": "A weight-times-return decomposition shows Samsung and SK Hynix, now 55 percent of the KOSPI, drove roughly two-thirds of the 26 June circuit-breaker fall - making the index a leveraged bet on AI memory."
 }

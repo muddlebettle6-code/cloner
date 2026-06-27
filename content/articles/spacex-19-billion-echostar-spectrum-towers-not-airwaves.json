@@ -529,5 +529,60 @@
     "credit": "Photo: U.S. Space Force / Joshua Conti, Public Domain, via Wikimedia Commons",
     "caption": "A SpaceX Falcon 9 rocket lifts off carrying Starlink satellites, the orbital network SpaceX would lean on if it tried to turn its $19.6 billion EchoStar spectrum into a US mobile service.",
     "alt": "A SpaceX Falcon 9 rocket carrying Starlink satellites climbs into a blue sky on a column of flame and exhaust after lifting off from its launch pad at Cape Canaveral."
-  }
+  },
+  "primarySection": "business",
+  "articleType": "news-analysis",
+  "companies": [
+    "SpaceX",
+    "Starlink",
+    "EchoStar",
+    "Dish",
+    "T-Mobile",
+    "Verizon",
+    "AT&T",
+    "Sprint",
+    "AST SpaceMobile",
+    "Boost Mobile"
+  ],
+  "people": [
+    "Gwynne Shotwell"
+  ],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "Telecommunications",
+    "Wireless carriers",
+    "Satellite communications",
+    "Aerospace"
+  ],
+  "assetClasses": [
+    "Equities"
+  ],
+  "impactTags": [
+    "Wireless competition",
+    "Consumer mobile plans",
+    "Carrier capex",
+    "Spectrum ownership",
+    "Rural connectivity"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Long-Term",
+  "newsScore": 72,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "SpaceX agreed to pay EchoStar about $19.6 billion across two 2025 deals for the AWS-4, H-block and AWS-3 spectrum Dish stockpiled for its failed fourth-carrier bid; the FCC cleared the deal in May 2026 with full close expected around late 2027.",
+    "Buying the airwaves was the cheap part: Dish budgeted roughly $10 billion to build the ground network, spent about $3 billion, and quit. SpaceX's own required buildout cost is unknown and plausibly smaller.",
+    "A Starlink direct-to-cell beam shares only about 2-4 Mbps across every phone in a footprint hundreds of kilometers wide - fine for texts and rural gaps, far below what a city tower delivers per user.",
+    "Starlink generated about $11.4 billion of revenue in 2025 (roughly 61% of SpaceX's total) with about $4.4 billion of operating profit - enough to fund a serious buildout or wait patiently for a wholesale deal.",
+    "The base case on public evidence is leverage: the buildout 'threat' may be aimed at winning a wholesale (MVNO) deal or buying a carrier outright, with T-Mobile floated as the likeliest target."
+  ],
+  "whyItMatters": "The prospect of SpaceX entering US retail wireless puts pressure on Verizon, AT&T and T-Mobile, whose May 2026 defensive direct-to-device joint venture suggests they already take the threat seriously. The outcome shapes how a fourth competitive force - or a new wholesale buyer - could reprice mobile plans for consumers and redirect billions in carrier capex. For investors, it bears on SpaceX's post-IPO equity story and on the incumbent carriers whose moats depend on the very tower buildout that defeated Dish.",
+  "whatToWatch": [
+    "A Starlink-branded retail MVNO launch riding an existing carrier's network, which would signal leverage cashing in rather than a fourth network being built.",
+    "SpaceX FCC applications or tower-lease activity to deploy its AWS-4, H-block or AWS-3 spectrum from the ground in metro markets - the first hard evidence of an actual build.",
+    "A disclosed SpaceX buildout budget; if it lands well below Dish's roughly $10 billion, the economics that sank the prior owner may not apply.",
+    "Whether the Verizon/AT&T/T-Mobile direct-to-device joint venture closes and survives antitrust scrutiny, plus the spectrum transfer's full close expected around late 2027."
+  ],
+  "subheadline": "SpaceX's $19.6 billion EchoStar spectrum buy makes a US retail mobile play conceivable, but the same obstacle that sank Dish - building cell towers, not owning airwaves - still decides whether the pitch is real or just leverage."
 }
