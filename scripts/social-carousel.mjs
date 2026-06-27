@@ -76,16 +76,16 @@ function titleSlide(title, body, img, posHint = "bl") {
 
 // ---- chart slides (the research) — pink/white over a darkened photo ------- //
 
-function bigNumberSlide(c, img) {
+function bigNumberSlide(c, img, headline) {
   const d = c.data || {};
   const num = String(d.value ?? "");
   const size = num.length > 7 ? 220 : num.length > 5 ? 270 : 320;
   const css = `.num{color:${MAG};font-size:${size}px;line-height:.9;letter-spacing:-.045em;text-shadow:0 3px 40px rgba(0,0,0,.6);}
   .lab{color:#fff;font-size:40px;line-height:1.25;margin-top:30px;text-shadow:0 2px 22px rgba(0,0,0,.7);}`;
-  return page(css, `${photo(img)}${wm}<div class="content"><div class="num">${esc(num)}</div><div class="lab">${esc(d.label ?? c.title ?? "")}</div></div>${arrow}`);
+  return page(css, `${photo(img)}<div class="dark" style="background:rgba(0,0,0,.3)"></div>${headline ? `<div class="ctitle">${esc(headline)}</div>` : ""}${wm}<div class="content"><div class="num">${esc(num)}</div><div class="lab">${esc(d.label ?? c.title ?? "")}</div></div>${arrow}`);
 }
 
-function barSlide(c, img) {
+function barSlide(c, img, headline) {
   const bars = (c.data?.bars || []).slice(0, 4);
   const max = Math.max(...bars.map((b) => Math.abs(b.value)), 1);
   const rows = bars.map((b) => {
@@ -96,10 +96,10 @@ function barSlide(c, img) {
   .bl{color:#fff;font-size:34px;margin-bottom:14px;text-shadow:0 2px 16px rgba(0,0,0,.8);}
   .bt{position:relative;height:60px;background:rgba(255,255,255,.16);border-radius:9px;display:flex;align-items:center;}
   .bf{height:100%;border-radius:9px;}.bv{position:absolute;right:20px;font-size:32px;text-shadow:0 1px 8px rgba(0,0,0,.5);}`;
-  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(c.title)}</div><div class="bars">${rows}</div>${arrow}`);
+  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(headline || c.title)}</div><div class="bars">${rows}</div>${arrow}`);
 }
 
-function tableSlide(c, img) {
+function tableSlide(c, img, headline) {
   const cols = (c.data?.columns || []).slice(0, 4);
   const rows = (c.data?.rows || []).slice(0, 4);
   const n = cols.length;
@@ -108,10 +108,10 @@ function tableSlide(c, img) {
   const css = `.tbl{position:absolute;left:52px;right:52px;top:330px;z-index:4;}
   .hr,.tr{display:grid;grid-template-columns:1.5fr repeat(${Math.max(1, n - 1)},1fr);gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.2);}
   .th{color:${MAG};font-size:21px;line-height:1.15;}.td{color:rgba(255,255,255,.92);font-size:23px;line-height:1.2;}`;
-  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(c.title)}</div><div class="tbl"><div class="hr">${head}</div>${body}</div>${arrow}`);
+  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(headline || c.title)}</div><div class="tbl"><div class="hr">${head}</div>${body}</div>${arrow}`);
 }
 
-function timelineSlide(c, img) {
+function timelineSlide(c, img, headline) {
   const ev = (c.data?.events || []).slice(0, 5);
   const mid = Math.min(ev.length - 1, Math.max(1, Math.round(ev.length / 2)));
   const rows = ev.map((e, i) => `<div class="tev"><span class="dot" style="background:${i === mid ? MAG : "rgba(255,255,255,.55)"}"></span><div><div class="dt" style="color:${i === mid ? MAG : "#fff"}">${esc(e.date)}</div><div class="tt">${esc(e.title)}</div></div></div>`).join("");
@@ -120,10 +120,10 @@ function timelineSlide(c, img) {
   .tev{display:grid;grid-template-columns:54px 1fr;gap:24px;align-items:start;position:relative;}
   .dot{width:28px;height:28px;border-radius:50%;margin-top:6px;}
   .dt{font-size:24px;}.tt{color:#fff;font-size:34px;line-height:1.14;margin-top:6px;letter-spacing:-.01em;}`;
-  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(c.title)}</div><div class="tl">${rows}</div>${arrow}`);
+  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(headline || c.title)}</div><div class="tl">${rows}</div>${arrow}`);
 }
 
-function lineSlide(c, img) {
+function lineSlide(c, img, headline) {
   const series = (c.data?.series || [])[0];
   const pts = (series?.points || []).filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
   if (pts.length < 2) return barSlide(c, img);
@@ -132,11 +132,11 @@ function lineSlide(c, img) {
   const px = 70, pw = 940, py0 = 1040, ph = 520;
   const poly = pts.map((p) => `${(px + ((p.x - minx) / (maxx - minx || 1)) * pw).toFixed(1)},${(py0 - ((p.y - miny) / (maxy - miny || 1)) * ph).toFixed(1)}`).join(" ");
   const css = `.ln{position:absolute;inset:0;z-index:4;}`;
-  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(c.title)}</div>
+  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(headline || c.title)}</div>
     <svg class="ln" viewBox="0 0 ${W} ${H}"><polyline points="${poly}" fill="none" stroke="${MAG}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>${arrow}`);
 }
 
-function rangeSlide(c, img) {
+function rangeSlide(c, img, headline) {
   const items = (c.data?.items || []).slice(0, 4);
   const all = items.flatMap((i) => [i.low, i.high]).filter(Number.isFinite);
   const lo = Math.min(...all), hi = Math.max(...all) || 1, span = hi - lo || 1;
@@ -150,7 +150,7 @@ function rangeSlide(c, img) {
   .rf{position:absolute;top:0;bottom:0;background:rgba(255,255,255,.55);border-radius:8px;}
   .rm{position:absolute;top:-6px;bottom:-6px;width:8px;background:${MAG};border-radius:4px;}
   .rv{color:${MAG};font-size:26px;margin-top:10px;}`;
-  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(c.title)}</div><div class="rr">${rows}</div>${arrow}`);
+  return page(css, `${photo(img)}<div class="dark"></div>${wm}<div class="ctitle">${esc(headline || c.title)}</div><div class="rr">${rows}</div>${arrow}`);
 }
 
 function ctaSlide(loopback, takeaways, cta, img) {
@@ -215,38 +215,62 @@ function scrimBg(pos) {
 
 // ---- assemble ------------------------------------------------------------ //
 
+function chartSlideFor(c, img, headline) {
+  switch (c.kind) {
+    case "keynumber": return bigNumberSlide(c, img, headline);
+    case "bar": case "comparison": return barSlide(c, img, headline);
+    case "table": return tableSlide(c, img, headline);
+    case "timeline": return timelineSlide(c, img, headline);
+    case "line": return lineSlide(c, img, headline);
+    case "range": return rangeSlide(c, img, headline);
+    default: return titleSlide(headline || c.title, null, img, "bl");
+  }
+}
+
+// A narrative storyboard: each slide is a beat that builds on the previous and
+// pulls the reader to the next; charts are woven in as proof at the right moment.
+function getStoryboard(a, copy) {
+  const charts = (a.charts || []).map((c) => `"${c.title}" (${c.kind})`).join("; ");
+  try {
+    const prompt = `You are a master visual storyteller for a financial newsroom. Using ONLY this article's facts (invent nothing), turn it into a CAROUSEL THAT TELLS ONE STORY. Pick the single most interesting thread (ONE spine) and make EVERY slide serve it - not a list of disconnected facts. Lead with the most counterintuitive true detail (surprise over completeness). Conversational, plain English, no hype, no investment advice, no em dashes. Use DIGITS with the dollar sign and spelled units (e.g. $72, $15.7 billion, 75 percent); never write a number as words, never use bn or M.\n\n`
+      + `8 slides. Slide 1: a HOOK that names the topic and opens a curiosity gap. Slides 2-7: build the story beat by beat, and END EACH LINE ON AN OPEN LOOP (a question, a "but", a "stranger still") that the NEXT slide answers. Weave in 2-3 of the charts below as PROOF beats, clustered in the middle-to-late slides as ESCALATING evidence (each deepening the SAME tension): set "chart" to the EXACT title and write "text" that frames what it shows in the story. The second-to-last slide must RESOLVE the hook (answer the opening question). The LAST slide (role "cta") is a save/share line tied to a forward question - something to watch next. Each "text" is ONE short line (<= ~14 words).\n\n`
+      + `ARTICLE\nHeadline: ${a.headline}\nDeck: ${a.deck || ""}\nWhy it matters: ${a.whyItMatters || ""}\nTakeaways: ${(a.takeaways || []).join(" | ")}\nKey points: ${(a.keyPoints || []).join(" | ")}\nCHARTS to weave in (reference by EXACT title): ${charts || "none"}\n\n`
+      + `Return STRICT JSON: {"slides":[{"text":"the narrative line","chart":"exact chart title or empty string","role":"hook|build|proof|turn|cta"}]}. Exactly 8 slides; the last has role "cta". Output ONLY JSON.`;
+    const out = execFileSync(CLAUDE, ["-p"], { input: prompt, encoding: "utf8", timeout: 120000 });
+    const m = out.replace(/```json?/g, "").replace(/```/g, "").match(/\{[\s\S]*\}/);
+    if (m) {
+      const j = JSON.parse(m[0].replace(/[ -]/g, " "));
+      if (Array.isArray(j.slides) && j.slides.length >= 5) {
+        if (process.env.STORYBOARD_LOG) console.error("STORYBOARD:\n" + j.slides.map((s, i) => `  ${i + 1}. ${s.text}${s.chart ? `  [chart: ${s.chart}]` : ""}`).join("\n"));
+        return j.slides;
+      }
+    }
+  } catch { /* fall back */ }
+  return [
+    { text: copy.hook, role: "hook" },
+    ...(a.takeaways || a.keyPoints || []).slice(0, 4).map((t) => ({ text: clip(t, 110), role: "build" })),
+    { text: copy.turn || copy.loopback, role: "turn" },
+    { text: copy.cta, role: "cta" },
+  ];
+}
+
 function build(a, copy, images) {
   const img = (i) => images[i % images.length];
-  // colorful photo slide; text placed over the image's darkest area, position varies
-  const photoD = (text, i, pos, _short, body) => titleSlide(clip(text, 170), body || null, img(i), pos);
-
-  // chart slides — the research (only what the article actually has), capped
-  const C = a.charts || [];
-  const find = (k) => C.find((c) => c.kind === k);
-  const chartBuilders = [];
-  if (find("keynumber")) chartBuilders.push((im) => bigNumberSlide(find("keynumber"), im));
-  if (find("bar")) chartBuilders.push((im) => barSlide(find("bar"), im));
-  if (find("table")) chartBuilders.push((im) => tableSlide(find("table"), im));
-  if (find("timeline")) chartBuilders.push((im) => timelineSlide(find("timeline"), im));
-  if (find("line")) chartBuilders.push((im) => lineSlide(find("line"), im));
-  if (find("comparison")) chartBuilders.push((im) => barSlide(find("comparison"), im));
-  if (find("range")) chartBuilders.push((im) => rangeSlide(find("range"), im));
-  const charts = chartBuilders.slice(0, 4);
-
-  const kp = a.keyPoints || a.takeaways || [];
-  const takes = a.takeaways || kp;
-  let k = 0;
-  const s = [];
-  s.push(photoD(copy.hook, k++, "bl", copy.hook));                               // 1 hook
-  s.push(photoD(copy.restate, k++, "tl", copy.behindLine, copy.promise));        // 2 re-serve
-  if (charts[0]) s.push(charts[0](img(k++)));                                    // 3 chart
-  s.push(photoD(takes[0] || a.deck, k++, "c", copy.behindLine));                 // 4 evidence
-  if (charts[1]) s.push(charts[1](img(k++)));                                    // 5 chart
-  if (charts[2]) s.push(charts[2](img(k++)));                                    // 6 chart (table / timeline)
-  s.push(photoD(copy.turn, k++, "bc", copy.behindLine));                         // 7 turn
-  if (charts[3]) s.push(charts[3](img(k++)));                                    // 8 chart
-  s.push(ctaSlide(copy.loopback, takes, copy.cta, img(k++)));                    // 9 cta
-  return s;
+  const byTitle = {};
+  (a.charts || []).forEach((c) => { byTitle[c.title] = c; });
+  const story = getStoryboard(a, copy);
+  const posCycle = ["bl", "tl", "c", "bl", "c", "tl"];
+  let k = 0, p = 0;
+  return story.map((sl, idx) => {
+    const im = img(k++);
+    const text = String(sl.text || "");
+    if (sl.role === "cta" || idx === story.length - 1) {
+      return ctaSlide(text, a.takeaways || a.keyPoints || [], copy.cta, im);
+    }
+    const c = sl.chart && byTitle[sl.chart];
+    if (c) return chartSlideFor(c, im, text);
+    return titleSlide(clip(text, 170), null, im, posCycle[p++ % posCycle.length]);
+  });
 }
 
 // ---- main ---------------------------------------------------------------- //
