@@ -1,0 +1,618 @@
+{
+  "published": true,
+  "slug": "private-credit-run-june-2026-gap",
+  "headline": "The Gap That Tells You Who Is Right in Private Credit's First Run",
+  "deck": "Investors are pulling money from the biggest semi-liquid private-credit funds two to three times faster than the funds say their loans have lost value. That gap usually signals a panic that cures itself, but the June 2026 evidence points the other way: realized defaults are at a record, the worst losses are parked in payment-in-kind so they never hit the mark, and the public market for the same risk is down 30 percent. The reported markdown, not the redemption wave, looks like the number that is lying.",
+  "takeaways": [
+    "Apollo's flagship retail credit fund got Q2 redemption requests for 16.8% of shares (about $2.4bn, against roughly $14bn of net assets) and capped payouts at 5%; Blackstone's $79bn BCRED gated for the first time ever after requests hit 10%, and Morgan Stanley capped a $7bn fund of its own the same day Apollo acted.",
+    "Money wants out two to three times faster than the funds admit their loans have fallen (reported NAV is down only about 5% from peak), and the run is accelerating, not fading.",
+    "Unlike the 2022-23 BREIT episode that round-tripped to near-zero loss, the underlying loans here are measurably deteriorating: US private-credit defaults hit a record 6.0% in the year to April 2026, versus a 2-2.5% historical norm.",
+    "More than half of recent defaults arrived through interest-payment deferrals and payment-in-kind (PIK), the exact mechanism that lets a fund keep a loan marked near par while the borrower stops paying cash.",
+    "The finding: the redeemers are closer to right than the comfortable base rate suggests. This looks less like a confidence run on healthy loans and more like a slow solvency event still wearing liquidity clothing."
+  ],
+  "glossary": [
+    {
+      "term": "Private credit",
+      "definition": "Loans made directly to companies by investment funds rather than by banks or public bond markets; the loans rarely trade, so there is no live market price for them."
+    },
+    {
+      "term": "Business development company (BDC)",
+      "definition": "A fund that lends to mid-sized companies and is sold to ordinary investors, packaged like a mutual fund but holding loans that almost never trade."
+    },
+    {
+      "term": "Semi-liquid fund",
+      "definition": "A fund that holds hard-to-sell assets but still promises investors they can cash out on a regular schedule, usually monthly or quarterly."
+    },
+    {
+      "term": "Redemption",
+      "definition": "An investor asking for their money back out of a fund."
+    },
+    {
+      "term": "Redemption gate / cap",
+      "definition": "A rule that limits how much money can leave a fund in one period (often 5% of the fund per quarter), used to stop a rush of withdrawals from forcing fire sales."
+    },
+    {
+      "term": "Net asset value (NAV)",
+      "definition": "A fund's own stated price for what it owns, per share; for private loans it is based on periodic appraisals rather than live market trades, so it can lag reality."
+    },
+    {
+      "term": "Net assets vs. total assets",
+      "definition": "Total assets is everything a fund holds; net assets is what is left after subtracting the money the fund itself has borrowed. Redemptions are paid out of net assets, so percentages of the fund refer to that smaller number."
+    },
+    {
+      "term": "Liquidity mismatch",
+      "definition": "The danger of promising quick withdrawals while owning assets that take a long time to sell, the same borrow-short, lend-long risk that banks run."
+    },
+    {
+      "term": "Solvency vs. liquidity",
+      "definition": "A liquidity problem is being unable to pay people quickly enough even though the assets are sound; a solvency problem is the assets genuinely being worth less than what is owed."
+    },
+    {
+      "term": "Default rate",
+      "definition": "The share of loans where the borrower fails to meet the terms, such as missing payments or restructuring."
+    },
+    {
+      "term": "Payment-in-kind (PIK)",
+      "definition": "When a struggling borrower stops paying interest in cash and instead adds it to the loan balance, like a tenant paying rent with IOUs while the landlord still records the rent as collected."
+    },
+    {
+      "term": "Markdown / impairment",
+      "definition": "A reduction in the recorded value of a loan to reflect that it is worth less than before."
+    },
+    {
+      "term": "Software-as-a-service (SaaS)",
+      "definition": "Companies that sell software by subscription over the internet; a fast-growing slice of private-credit borrowers and the sector investors most fear AI will disrupt."
+    },
+    {
+      "term": "Capital call",
+      "definition": "A demand by a fund for investors to hand over money they previously committed; banks often lend against these commitments, creating a link between private funds and the banking system."
+    },
+    {
+      "term": "REIT",
+      "definition": "A real estate investment trust, a fund that owns income-producing property; publicly traded ones reprice instantly, unlike appraisal-based private versions."
+    },
+    {
+      "term": "Prorated",
+      "definition": "Split proportionally; when a fund can only honor part of the withdrawals requested, each investor gets the same fraction of what they asked for."
+    },
+    {
+      "term": "Onshore vs. offshore feeder",
+      "definition": "Large funds are often sold through two parallel vehicles: an onshore one for US investors and an offshore one for non-US investors. They hold the same loans but report withdrawal requests separately."
+    },
+    {
+      "term": "Procyclicality",
+      "definition": "The tendency of a financial mechanism to amplify a downturn, for example forced selling that pushes prices down further just as everyone wants out."
+    }
+  ],
+  "event": "On 23 June 2026 Apollo capped second-quarter redemptions from its Apollo Debt Solutions BDC (about $14bn in net assets, roughly $27bn in total assets once borrowed money is counted) at its 5% quarterly limit, after investors asked to withdraw 16.8% of shares, about $2.4bn, the largest request since the fund launched in January 2022; the same day, Morgan Stanley capped a $7bn fund of its own after redemption requests reached 11.6%. Three weeks earlier, on 4 June, Blackstone's $79bn BCRED had gated for the first time ever after requests hit 10%.",
+  "question": "When investors redeem from semi-liquid private-credit funds far faster than the funds say their loans have fallen in value, is the run outpacing healthy fundamentals (a self-curing confidence run) or are the redeemers front-running losses the stale NAVs have not yet booked (a solvency event)?",
+  "readingMinutes": 9,
+  "tags": [
+    "private credit",
+    "BDC",
+    "redemptions",
+    "liquidity mismatch",
+    "BREIT",
+    "default rate",
+    "SaaS lending",
+    "financial stability"
+  ],
+  "leadChartId": "wedge",
+  "charts": [
+    {
+      "id": "wedge",
+      "kind": "comparison",
+      "title": "The wedge: money out vs. markdown",
+      "subtitle": "Q2 2026 redemption requests against reported NAV decline from peak",
+      "source": "AltsWire (23 Jun 2026); CNBC and Bloomberg (4 Jun 2026); Apollo and BCRED fund disclosures",
+      "units": "%",
+      "period": "Q2 2026",
+      "note": "Different units: 'asked to exit' is a flow (share of the fund requested in one quarter); 'NAV down' is a price change from peak. They are not the same measure, but the size of the wedge between them is exactly what is in dispute. The 5% NAV figures are approximate peak-to-now estimates.",
+      "alt": "Grouped bars showing Apollo investors asked to exit 16.8% vs reported NAV down about 5%, and Blackstone BCRED asked to exit 10% vs NAV down about 5%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Apollo BDC, asked to exit",
+            "value": 16.8,
+            "highlight": true
+          },
+          {
+            "label": "Apollo BDC, reported NAV down",
+            "value": 5
+          },
+          {
+            "label": "Blackstone BCRED, asked to exit",
+            "value": 10,
+            "highlight": true
+          },
+          {
+            "label": "Blackstone BCRED, reported NAV down",
+            "value": 5
+          }
+        ],
+        "max": 18
+      }
+    },
+    {
+      "id": "accelerating",
+      "kind": "bar",
+      "title": "The run is accelerating, not fading",
+      "subtitle": "Share of shares investors asked to withdraw, Q1 vs Q2 2026",
+      "source": "AltsWire (23 Jun 2026); CNBC and Bloomberg (4 Jun 2026)",
+      "units": "% of shares requested",
+      "period": "Q1-Q2 2026",
+      "note": "Most base-rate confidence runs decay quarter over quarter as panic burns out. This one is climbing.",
+      "alt": "Bars showing Apollo requests rising from 11.2% in Q1 to 16.8% in Q2, and BCRED rising from 7.9% to 10%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Apollo BDC, Q1",
+            "value": 11.2
+          },
+          {
+            "label": "Apollo BDC, Q2",
+            "value": 16.8,
+            "highlight": true
+          },
+          {
+            "label": "BCRED, Q1",
+            "value": 7.9
+          },
+          {
+            "label": "BCRED, Q2",
+            "value": 10,
+            "highlight": true
+          }
+        ],
+        "max": 18
+      }
+    },
+    {
+      "id": "who-runs",
+      "kind": "bar",
+      "title": "Who is actually running",
+      "subtitle": "Apollo Q2 redemption requests by investor channel",
+      "source": "AltsWire (23 Jun 2026)",
+      "units": "% of shares",
+      "period": "Q2 2026",
+      "note": "A simple retail panic would show up most in the onshore (US) bar. Instead it is the offshore channel that surged. Offshore feeders mix private-wealth and institutional money, so this is suggestive rather than proof that institutions led the run.",
+      "alt": "Bars showing US onshore requests at 4.3% and offshore requests at 12.5%.",
+      "data": {
+        "bars": [
+          {
+            "label": "US onshore",
+            "value": 4.3
+          },
+          {
+            "label": "Offshore",
+            "value": 12.5,
+            "highlight": true
+          }
+        ],
+        "max": 14
+      }
+    },
+    {
+      "id": "defaults",
+      "kind": "bar",
+      "title": "Default rate: record high vs the long-run normal",
+      "subtitle": "US private-credit default rate (trailing 12 months)",
+      "source": "Fitch Ratings via Bloomberg Tax (May 2026); Morgan Stanley for the historical norm",
+      "units": "%",
+      "period": "to April 2026",
+      "note": "The April rate is roughly 2.4 times the 2-2.5% historical norm and still rising month over month. Fitch's own series only began in August 2024, so the long-run norm is a broader industry benchmark.",
+      "alt": "Bars showing long-run norm around 2.5%, March 2026 at 5.7%, and April 2026 at a record 6.0%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Long-run norm",
+            "value": 2.5
+          },
+          {
+            "label": "Mar 2026",
+            "value": 5.7
+          },
+          {
+            "label": "Apr 2026 (record)",
+            "value": 6,
+            "highlight": true
+          }
+        ],
+        "max": 7
+      }
+    },
+    {
+      "id": "repricing",
+      "kind": "bar",
+      "title": "Public repricing vs private books",
+      "subtitle": "Price change, October 2025 to February 2026",
+      "source": "BIS Quarterly Review (Mar 2026)",
+      "units": "% change",
+      "period": "Oct 2025, Feb 2026",
+      "note": "BDCs with heavy software exposure fell about 5 points more than the roughly 10% listed-BDC average. The same underlying credit risk is marked down about 30% in public software equity and only about 5% inside the funds that lent against it, though equity and senior debt are not identical risks.",
+      "alt": "Bars showing software stocks down 30%, listed BDCs down 10%, high-software BDCs down about 15%, and reported BDC NAV down about 5%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Software stocks",
+            "value": 30,
+            "highlight": true
+          },
+          {
+            "label": "Listed BDCs (avg)",
+            "value": 10
+          },
+          {
+            "label": "High-software BDCs",
+            "value": 15
+          },
+          {
+            "label": "Reported BDC NAV",
+            "value": 5
+          }
+        ],
+        "max": 32
+      }
+    },
+    {
+      "id": "saas-growth",
+      "kind": "comparison",
+      "title": "How big the software bet got",
+      "subtitle": "Direct lending to software-as-a-service firms",
+      "source": "BIS Quarterly Review (Mar 2026)",
+      "units": "$bn",
+      "period": "2015 vs end-2025",
+      "note": "By end-2025 SaaS lending was about 19% of all direct loans; BDCs put more than 15% of their loans into the sector now facing AI-disruption fears, and a third of private-credit funds have lent to it.",
+      "alt": "Bars showing SaaS direct lending under $8bn in 2015 rising to over $500bn by end-2025.",
+      "data": {
+        "bars": [
+          {
+            "label": "2015",
+            "value": 8
+          },
+          {
+            "label": "End-2025",
+            "value": 500,
+            "highlight": true
+          }
+        ],
+        "max": 520
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A structure meets its first downturn",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 23 June, Apollo told the investors in its flagship retail credit fund that they could have just under a third of their money back. They had asked for far more. Shareholders in the Apollo Debt Solutions BDC requested to withdraw 16.8% of the fund, about $2.4bn, in the second quarter, the largest redemption request since the fund launched in January 2022. The fund holds roughly $14bn in net assets (about $27bn once you count the money it has itself borrowed), and redemptions are paid out of those net assets, which is why 16.8% comes to $2.4bn. Apollo held the line at its 5%-a-quarter cap and will honor less than a third of the demand on a prorated basis."
+        },
+        {
+          "type": "p",
+          "text": "On the same day, Morgan Stanley capped a $7bn fund of its own after investors asked to pull 11.6% of its shares. And three weeks earlier, on 4 June, Blackstone had capped its $79bn BCRED fund for the first time ever, after requests hit 10%. The biggest names in the business hit the brakes within about three weeks of one another."
+        },
+        {
+          "type": "p",
+          "text": "This is the first real stress test of a structure that barely existed a downturn ago: the semi-liquid business development company, or BDC. Think of it as a fund that lends directly to mid-sized companies (loans that are illiquid and almost never trade) while promising ordinary investors they can cash out every quarter. It is a bank's core balance-sheet trick, borrowing short to lend long, dressed in a mutual-fund wrapper and sold to retail. The broader private-credit market it belongs to has grown to somewhere around $1.5-2.0tn, most of it built since 2020."
+        },
+        {
+          "type": "pullquote",
+          "text": "So the funds are gated. The interesting question is not that people are leaving. It is what their leaving tells us."
+        }
+      ]
+    },
+    {
+      "heading": "One narrow question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When investors line up to redeem far faster than a fund admits its loans have fallen in value, one of two very different things is happening."
+        },
+        {
+          "type": "list",
+          "label": "Two stories that look identical from outside",
+          "items": [
+            "A confidence run. The loans are basically fine, but a semi-liquid fund can be emptied faster than it can sell illiquid assets, so the rational move is to be first in the queue regardless of fundamentals. Scary, self-curing, no real losses at the end.",
+            "Front-running the truth. The published NAV (the fund's own stated price for its loans) is stale fiction. The loans are worth less than the fund says, and the people leaving are simply the ones who can see it first. Not a panic. A correct read."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "From the outside these look identical. Both produce gates and ugly headlines. But they end in opposite places: one round-trips to roughly zero loss, the other ends in restated NAVs and real holes. Everything else in the news bundle, the AI-driven software markdowns, the bank exposure, hangs on which one this is."
+        },
+        {
+          "type": "p",
+          "text": "The way to tell them apart is to measure the gap between how fast money wants out and how far the funds say their loans have fallen, and then ask which side of that gap is telling the truth."
+        }
+      ]
+    },
+    {
+      "heading": "The gap, measured",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the wedge, using the freshest quarter on record. One bar is how much investors asked to withdraw in Q2; the other is how far the funds say their NAV has fallen from its peak. A word of caution before reading it: these are different units. The withdrawal figure is a flow (how much of the fund was requested in three months); the NAV figure is a price change. They are not directly comparable, but the size of the gap between them is exactly what the two stories disagree about."
+        },
+        {
+          "type": "chart",
+          "chartId": "wedge"
+        },
+        {
+          "type": "p",
+          "text": "Money wants out two to three times faster than the loans admit to falling. In Apollo's case, more than three times. And the run is getting bigger, not smaller: Apollo's request jumped from 11.2% of shares in Q1 to 16.8% in Q2; BCRED's went from 7.9% (which it fully honored, with senior executives reportedly helping fund the payouts) to 10% (which it gated)."
+        },
+        {
+          "type": "chart",
+          "chartId": "accelerating"
+        },
+        {
+          "type": "p",
+          "text": "There is one more tell hiding inside Apollo's number, and it cuts against the simplest panic story. The surge did not come from the US retail investors the BREIT comparison would predict. Onshore US requests actually moderated to 4.3% of shares in Q2. The pressure, 12.5%, came almost entirely from Apollo's offshore channel. That channel mixes private-wealth and institutional money rather than being purely retail, so it is suggestive rather than conclusive, but it is the opposite of what a headline-driven retail stampede looks like."
+        },
+        {
+          "type": "chart",
+          "chartId": "who-runs"
+        }
+      ]
+    },
+    {
+      "heading": "How to read the wedge: the base rate",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The natural reference point is BREIT, 2022-2023, Blackstone's non-traded real estate trust, the same perpetual, semi-liquid, retail-facing structure. When interest rates spiked, redemption requests blew through its 5%-a-quarter gate for more than a year while its appraisal-based NAV stayed marked far above where publicly traded REITs were valued. Commentators predicted a doom loop of forced selling. It never came. Requests faded, the gate came off in early 2024, and the feared losses largely round-tripped."
+        },
+        {
+          "type": "callout",
+          "label": "An echo from our own files",
+          "text": "We found the same shape in a different market this spring: an oil-war premium that priced in fully while the barrels never actually stopped moving. The market reaction and the physical reality had come unstuck, and physical reality won; the premium round-tripped. That is the base rate the comfortable story leans on: panics that overshoot quiet fundamentals tend to reverse. The whole question is whether private credit's fundamentals are actually quiet."
+        },
+        {
+          "type": "p",
+          "text": "So the base rate says: bet on the round-trip. If this is BREIT again, the redeemers are wrong, the NAV is roughly right, and the gates will quietly come off in a few quarters. To overturn that prior, you need evidence that the loans themselves, not just investor nerves, are deteriorating. So look at the loans."
+        }
+      ]
+    },
+    {
+      "heading": "Why the NAV is the suspect this time",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "BREIT's defense was that nothing was actually breaking; the assets kept paying and the panic was about interest rates, not about the buildings. Private credit cannot make that claim today. The thing the round-trip story needs, quiet fundamentals, is missing."
+        },
+        {
+          "type": "p",
+          "text": "Start with realized defaults. Fitch Ratings put the US private-credit default rate at a record 6.0% for the 12 months to April 2026, up from 5.7% in March. That is roughly 2.4 times the 2-2.5% rate that counted as normal before 2025. Of 99 default events in the period, 81 were first-time defaulters, the most since Fitch began tracking in August 2024. This is not a stable book of loans being mistrusted by jumpy investors; it is a book that is genuinely cracking."
+        },
+        {
+          "type": "chart",
+          "chartId": "defaults"
+        },
+        {
+          "type": "p",
+          "text": "Now the mechanism that keeps the cracks off the books. Fitch found that more than half of those defaults were driven by interest-payment deferrals and the switch to payment-in-kind, or PIK, where a borrower stops paying interest in cash and instead piles it onto the loan balance. Picture a tenant who stops paying rent and instead signs IOUs, while the landlord keeps recording the rent as collected. A loan that has gone PIK can sit at close to its original value on a fund's books even as the cash stops arriving. That is precisely the gap between a stale NAV and reality, and here it is the dominant form of distress, not a footnote."
+        },
+        {
+          "type": "p",
+          "text": "Finally, the same credit risk priced two ways. Between October 2025 and February 2026, public software stocks fell almost 30% on fears that AI would hollow out the subscription-software business model. Listed BDCs, which hold the loans to many of those same companies, fell about 10% on average, and the BDCs with the heaviest software exposure fell about 5 points more than that. Yet inside the semi-liquid funds, reported NAV is down only about 5%. When the public market and the private appraisal disagree this loudly about the same borrowers, the appraisal is usually the slower of the two to tell the truth."
+        },
+        {
+          "type": "chart",
+          "chartId": "repricing"
+        }
+      ]
+    },
+    {
+      "heading": "The software bet underneath",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Why is software the fault line? Because direct lenders leaned into it hard. According to the Bank for International Settlements, lending to software-as-a-service firms grew from under $8bn in 2015 to more than $500bn by the end of 2025, about 19% of all direct loans. BDCs specifically put more than 15% of their loans into the sector, and a third of all private-credit funds now have some SaaS exposure."
+        },
+        {
+          "type": "chart",
+          "chartId": "saas-growth"
+        },
+        {
+          "type": "p",
+          "text": "That concentration is the reason the public software sell-off matters so much for these private books. The funds did not lend a little to a fashionable corner of the economy; they lent enough that a re-rating of software credit is a re-rating of the funds. And the trigger for the public re-rating, the fear that AI will erode subscription-software revenues, is exactly the kind of slow, structural threat that an appraisal-based NAV is poorly equipped to register in real time."
+        }
+      ]
+    },
+    {
+      "heading": "Why the gap reaches past the funds",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If this were only about a few wealthy investors waiting an extra quarter for their money, it would be a footnote. It reaches further because private credit is wired into the banking system. Banks lend against the capital that investors have committed to these funds (so-called capital-call or subscription lines), and they finance the funds' own borrowing. The Financial Stability Board flagged exactly these linkages in its May 2026 review of private-credit vulnerabilities."
+        },
+        {
+          "type": "p",
+          "text": "The danger is procyclicality, the tendency of a mechanism to amplify a downturn. If gated funds are eventually forced to sell loans to meet redemptions, they sell into a falling market, which validates the lower public marks, which deepens the discount, which encourages the next wave of redemptions. The gates exist precisely to interrupt that loop. They buy time. What they cannot do is turn an overvalued loan back into a sound one; if the NAV is the number that is wrong, a gate only postpones the reckoning."
+        }
+      ]
+    },
+    {
+      "heading": "The verdict",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Put the evidence side by side. The comfortable base rate, drawn from BREIT, says runs like this round-trip and the redeemers end up looking foolish. But BREIT round-tripped because its assets were sound and only its investors were scared. Here the assets are the problem: defaults are at a record and still climbing, more than half of them are being hidden inside PIK and payment deferrals that keep loans marked near par, the public market has marked the same credit risk down six times as far as the funds have, and the investors heading for the door are disproportionately the offshore, less retail channel rather than the panicky retail base the base rate assumes."
+        },
+        {
+          "type": "p",
+          "text": "None of this proves the redeemers are right about the eventual losses; we will only know that as loans mature or restructure. But it tilts the balance hard. The redeemers are closer to right than the soothing base rate suggests. This looks less like a confidence run on healthy loans and more like a slow solvency event still wearing liquidity clothing, and the reported markdown, not the redemption wave, is the number that is lying."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Took the second-quarter redemption-request percentages and dollar figures from fund disclosures and the reporting on them: AltsWire and SEC filings for Apollo Debt Solutions BDC, CNBC and Bloomberg for Blackstone's BCRED, and Bloomberg for Morgan Stanley's North Haven fund.",
+    "Reconciled Apollo's headline numbers: 16.8% of roughly $14.4bn in net assets equals about $2.4bn, and the 5% cap on net assets equals roughly $700m gross, consistent with the reported ~$400m net outflow (about 3% of NAV).",
+    "Defined the 'wedge' as the gap between a flow (share of the fund requested for withdrawal in one quarter) and a price change (reported NAV decline from peak), and treated the size of that gap, not an apples-to-apples loss estimate, as the disputed quantity.",
+    "Set the base rate using the BREIT 2022-2024 episode, where a near-identical structure gated for over a year and then largely round-tripped.",
+    "Tested whether fundamentals are 'quiet' using three independent readings: Fitch's realized default rate and its breakdown of default mechanisms, the BIS Quarterly Review's measurement of public software-equity and BDC repricing, and the BIS data on how concentrated direct lending has become in SaaS.",
+    "Used Apollo's onshore-versus-offshore disclosure to test whether the run fits a retail-panic profile."
+  ],
+  "sources": [
+    {
+      "title": "Apollo Debt Solutions BDC Caps Q2 Redemptions at 5% as Withdrawal Requests Hit 16.8%",
+      "publisher": "AltsWire",
+      "url": "https://altswire.com/apollo-debt-solutions-bdc-caps-q2-redemptions-at-5-as-withdrawal-requests-hit-16-8/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Apollo Debt Solutions BDC NAV Slips Again as Aggregate Fund Size Contracts $700M",
+      "publisher": "AltsWire",
+      "url": "https://altswire.com/apollo-debt-solutions-bdc-nav-slips-again-as-aggregate-fund-size-contracts-700m/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Apollo Debt Solutions BDC, Form 10-Q (period ended 31 Mar 2026)",
+      "publisher": "US Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001837532/000119312526215667/ck0001837532-20260331.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Blackstone restricts flagship fund withdrawals as private asset fears reemerge",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/04/blackstone-caps-withdrawals-private-credit.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Blackstone BCRED Joins Private Credit Funds Limiting Redemptions",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-04/blackstone-bcred-joins-private-credit-funds-limiting-redemptions",
+      "kind": "secondary"
+    },
+    {
+      "title": "Morgan Stanley Caps Private Credit Fund After 11.6% Exit Request",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-23/morgan-stanley-caps-private-credit-fund-after-11-6-exit-request",
+      "kind": "secondary"
+    },
+    {
+      "title": "US Private Credit Defaults Hit New Record of 6% in April: Fitch",
+      "publisher": "Bloomberg Tax",
+      "url": "https://news.bloombergtax.com/financial-accounting/us-private-credit-defaults-hit-new-record-of-6-in-april-fitch",
+      "kind": "data"
+    },
+    {
+      "title": "Private credit defaults hit record high as interest rates soar",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/21/private-credit-defaults-hit-record-high-as-interest-rates-soar.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Private credit's software lending meets AI disruption",
+      "publisher": "BIS Quarterly Review (March 2026)",
+      "url": "https://www.bis.org/publ/qtrpdf/r_qt2603v.htm",
+      "kind": "academic"
+    },
+    {
+      "title": "BIS Quarterly Review, March 2026 (full issue)",
+      "publisher": "Bank for International Settlements",
+      "url": "https://www.bis.org/publ/qtrpdf/r_qt2603.pdf",
+      "kind": "academic"
+    },
+    {
+      "title": "Report on Vulnerabilities in Private Credit",
+      "publisher": "Financial Stability Board",
+      "url": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/",
+      "kind": "primary"
+    },
+    {
+      "title": "Blackstone REIT hits key milestone, lifts redemption limit",
+      "publisher": "InvestmentNews",
+      "url": "https://www.investmentnews.com/alternatives/blackstone-reit-hits-key-milestone-lifts-redemption-limit/250253",
+      "kind": "secondary"
+    },
+    {
+      "title": "BCRED Cuts July Distribution to $0.18 as NAV Slides",
+      "publisher": "AltsWire",
+      "url": "https://altswire.com/bcred-cuts-july-distribution-to-0-18-second-reduction-in-nine-months-as-nav-slides/",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "The two halves of the 'wedge' are different units: redemption share is a flow over one quarter, while NAV decline is a stock price change from peak. The comparison is illustrative of the disagreement between investors and appraisals, not a direct loss estimate.",
+    "The 'about 5% NAV down from peak' figures are approximate. BCRED's NAV per share is down roughly 3.4% since January 2026; Apollo's is down about 5% from its $25.00 launch price. We round to 5% for both.",
+    "Onshore versus offshore is not a clean retail-versus-institutional split. Offshore feeder vehicles include private-wealth as well as institutional money, so the claim that 'institutions are running' is an inference from who sits in that channel, not a disclosed fact.",
+    "The 2-2.5% historical default norm is a broad industry benchmark; Fitch's own series only began in August 2024, so the 6.0% 'record' is a record for that short series, and the long-run comparison draws on wider leveraged-loan and private-credit history.",
+    "The 30%-versus-5% comparison sets public equity against senior private debt. Equity falls first and harder than the loans above it, so the gap overstates the like-for-like markdown the loans ultimately deserve.",
+    "Ultimate losses are unobservable today. The solvency-versus-liquidity question resolves only as these loans mature, restructure, or recover, which could take several quarters."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/private-credit-run-june-2026-gap.jpg",
+    "credit": "Photo: C.M. de Talleyrand-Périgord, CC BY-SA 4.0, via Wikimedia Commons",
+    "caption": "9 West 57th Street, the Manhattan tower that houses Apollo Global Management, whose Debt Solutions fund capped withdrawals at 5% on 23 June 2026 after investors asked to pull 16.8%.",
+    "alt": "A tall sloped-base glass-and-steel skyscraper at 9 West 57th Street in Manhattan rising against a clear sky, seen from street level."
+  },
+  "articleType": "data-story",
+  "secondarySections": [
+    "banking",
+    "markets"
+  ],
+  "companies": [
+    "Apollo Global Management",
+    "Apollo Debt Solutions BDC",
+    "Blackstone",
+    "BCRED (Blackstone Private Credit Fund)",
+    "Morgan Stanley",
+    "Fitch Ratings",
+    "Bank for International Settlements",
+    "Financial Stability Board"
+  ],
+  "people": [],
+  "regions": [
+    "United States",
+    "Global"
+  ],
+  "industries": [
+    "Private credit",
+    "Asset management",
+    "Banking",
+    "Software (SaaS)"
+  ],
+  "assetClasses": [
+    "Private credit",
+    "Leveraged loans",
+    "Business development companies (BDCs)",
+    "Equities"
+  ],
+  "impactTags": [
+    "liquidity-risk",
+    "redemption-gates",
+    "credit-deterioration",
+    "valuation-mismatch",
+    "financial-stability",
+    "procyclicality"
+  ],
+  "readerLevel": "Advanced",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 86,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "Within three weeks (4-23 June 2026), Blackstone's BCRED, Apollo's Debt Solutions BDC and a $7bn Morgan Stanley fund all capped redemptions after withdrawal requests of 10-16.8%, the first real run on the semi-liquid BDC structure.",
+    "Investors are asking to leave two to three times faster than the funds say their loans have fallen (reported NAV down ~5% from peak), and the run is accelerating rather than fading.",
+    "Unlike the 2022-23 BREIT episode that round-tripped to near-zero loss, fundamentals are genuinely deteriorating: Fitch puts US private-credit defaults at a record 6.0% for the year to April 2026, about 2.4x the historical norm.",
+    "More than half of recent defaults came via interest deferrals and payment-in-kind (PIK), the exact mechanism that lets a fund hold a non-paying loan near par, keeping losses off the mark.",
+    "The article's finding: the redeemers look closer to right than the comfortable base rate suggests, making this a slow solvency event dressed as a liquidity scare rather than a self-curing confidence run."
+  ],
+  "whyItMatters": "Roughly $1.5-2.0tn of private credit, much of it sold to retail through semi-liquid BDCs, is facing its first synchronized stress test, and the gap between fast redemptions and barely-moved NAVs suggests reported values may be stale. If gates give way to forced loan sales, banks that lend against fund capital and finance fund leverage (linkages the FSB flagged in May 2026) become a transmission channel, turning a fund-level problem into a procyclical, system-wide one. Retail and private-wealth investors who were promised quarterly liquidity now face prorated payouts and potential markdowns on holdings they treated as cash-like.",
+  "whatToWatch": [
+    "Whether Q3 2026 redemption requests at Apollo, Blackstone and Morgan Stanley keep rising and whether more funds hit their gates.",
+    "Whether reported NAVs are revised down toward public-market pricing for the same borrowers (listed BDCs and software credit), closing or confirming the wedge.",
+    "Fitch's next private-credit default readings and the share driven by PIK and interest deferrals as a gauge of hidden distress.",
+    "Signs of stress moving into bank exposure via capital-call/subscription lines and fund leverage, and any further FSB or regulatory action on private-credit liquidity."
+  ],
+  "primarySection": "banking",
+  "date": "2026-06-27",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T18:06:19.005Z"
+}
