@@ -25,18 +25,21 @@ Hard rules (do not regress these):
 - **Vary the text position** slide to slide (not always bottom-left) AND place the
   text over the image's **darkest third** with a matched dark scrim, so it is
   always legible.
-- **Text-behind-subject depth** where the photo has a real focal subject (macOS
-  Vision subject lift, coverage ~0.14-0.6): background photo -> short pink line ->
-  the cut-out subject on top, so the text tucks subtly behind the subject. Skip it
-  on landscapes / scattered scenes (they stay full-color flat).
+- **Do NOT use background-removal / text-behind-subject overlays.** It was tried
+  and looked unnatural; photo slides are plain colorful with the title on the dark
+  area.
+- **Spell out financial units** in all rendered text: `$44B` -> `$44 billion`,
+  `76.8M` -> `76.8 million`. Leave `x` multiples and percentages alone, and never
+  write the number itself in words ("$15.7 billion", not "fifteen point seven").
 - **A different picture on each slide** (>=5-6 images per article;
   `social-images.py` tops up; cutouts cached in `.social-assets/`).
 - **Surface the research.** The article's charts each become their own slide:
   big-number, bar, comparison, table, timeline, line, range - pink accent, white
   text, over a darkened photo.
-- **Scroll-stopping hook cover** using curiosity/tension (withheld why), generated
-  per article. **Retention arc:** hook -> re-serve cover -> evidence -> research ->
-  turn -> save/share CTA.
+- **Scroll-stopping hook cover** that is genuinely hooky (curiosity/tension) but
+  also makes the topic clear - name the company, market, asset, or subject so the
+  reader knows what it is about (not vague or cryptic). **Retention arc:** hook ->
+  re-serve cover -> evidence -> research -> turn -> save/share CTA.
 
 ## Captions (per platform, in `captions.md`)
 
