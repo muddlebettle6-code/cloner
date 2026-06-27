@@ -177,16 +177,16 @@ def main() -> None:
         record(slug, event, published=True, section=section, score=score)
         log(f"Published + deployed: {slug}")
 
-        # Distribution: generate platform-tailored posts and auto-post to every
-        # connected platform (each is skipped cleanly until you connect it).
-        try:
-            subprocess.run([sys.executable, str(SITE_DIR / "scripts" / "social-pack.py"), str(art), str(outdir)])
-            social = outdir / "social.json"
-            if social.exists():
-                log("posting to connected social platforms")
-                subprocess.run([sys.executable, str(SITE_DIR / "scripts" / "social-post.py"), str(social)])
-        except Exception as exc:  # noqa: BLE001 - distribution must not fail the publish
-            log(f"social step failed ({exc})")
+        # Distribution: auto-generate the social pack (cards + carousel + captions)
+        # for every published article. Auto-posting to LinkedIn/Reddit is enabled
+        # separately once those accounts are connected. Never blocks the publish.
+        if os.environ.get("SOCIAL_AUTOGEN", "1") == "1":
+            try:
+                log("generating social pack")
+                subprocess.run(["bash", str(SITE_DIR / "scripts" / "social-pack.sh"), slug],
+                               cwd=str(SITE_DIR), env={**os.environ, "SITE_DIR": str(SITE_DIR)})
+            except Exception as exc:  # noqa: BLE001 - distribution must not fail the publish
+                log(f"social pack step failed ({exc})")
     finally:
         if LOCK.exists():
             LOCK.unlink()
