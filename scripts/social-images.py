@@ -21,7 +21,7 @@ CLAUDE = os.environ.get("FCRI_CLAUDE_BIN", "claude")
 ROOT = Path(os.environ.get("SITE_DIR", str(Path.home() / "cloner")))
 ART = ROOT / "content" / "articles"
 DEST = ROOT / ".social-assets"
-N = int(os.environ.get("SOCIAL_IMAGES_N", "3"))
+N = int(os.environ.get("SOCIAL_IMAGES_N", "5"))
 
 
 def claude(prompt: str, timeout: int = 360) -> str:
@@ -48,13 +48,14 @@ def main() -> None:
     slug = sys.argv[1]
     a = json.loads((ART / f"{slug}.json").read_text(encoding="utf-8"))
     DEST.mkdir(exist_ok=True)
-    existing = sorted(DEST.glob(f"{slug}-*.jpg"))
-    if len(existing) >= N:
+    existing = sorted(p for p in DEST.glob(f"{slug}-*.jpg") if "-cut-" not in p.name)
+    need = max(0, N - len(existing))
+    if need == 0:
         print(f"{slug}: {len(existing)} images already present; skipping")
         return
 
     prompt = (
-        f"Find {N} DISTINCT, real, high-resolution, OPENLY-LICENSED photographs (public domain, CC0, CC BY, or "
+        f"Find {need} DISTINCT, real, high-resolution, OPENLY-LICENSED photographs (public domain, CC0, CC BY, or "
         f"CC BY-SA; strongly prefer Wikimedia Commons) to illustrate a financial-news social carousel about this "
         f"story. Each must be a DIFFERENT relevant subject (no near-duplicates), at least 2000px wide, and you must "
         f"return the DIRECT downloadable image FILE url (e.g. upload.wikimedia.org/.../<File>.jpg of the original or "
@@ -63,9 +64,9 @@ def main() -> None:
         f"HEADLINE: {a['headline']}\nDECK: {a.get('deck','')}\n"
         f"TAGS: {', '.join(a.get('tags') or [])}\nINDUSTRIES: {', '.join(a.get('industries') or [])}\n"
         f"COMPANIES: {', '.join(a.get('companies') or [])}\nREGIONS: {', '.join(a.get('regions') or [])}\n\n"
-        f'Return ONLY a JSON array of up to {N} objects: '
+        f'Return ONLY a JSON array of up to {need} objects: '
         f'[{{"imageUrl":"...","credit":"Photo: <author>, <license>, via Wikimedia Commons","subject":"..."}}]. '
-        f"Fewer than {N} is fine if you cannot verify enough; never invent a url."
+        f"Fewer than {need} is fine if you cannot verify enough; never invent a url."
     )
     print(f"{slug}: finding {N} images...", flush=True)
     try:
