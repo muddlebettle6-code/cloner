@@ -60,6 +60,18 @@ docs/
 scripts/            # Asset download scripts
 ```
 
+## Cumulant newsroom + social
+This repo also runs the Cumulant autonomous newsroom. Before generating any social
+content (carousels, cards, captions) or touching the social pipeline, follow the
+canonical preferences in `docs/SOCIAL_STYLE.md` exactly: full-color photos every
+slide, pink titles + white body, "Cumulant." wordmark (top-right; bottom on the
+last slide), magenta arrow, Neue Haas font only (no mono), no counters/kickers/
+source-lines, text placed on the darkest area, text-behind-subject depth where a
+subject exists, a different image per slide, and the article's charts surfaced as
+research slides. Captions are per-platform (LinkedIn, Instagram, Facebook, Reddit,
+X) with the AI-assisted disclosure, no em dashes, no investment advice, and image
+credits. See also `docs/SOURCE_ENGINE.md` for the newsroom engines.
+
 ## MOST IMPORTANT NOTES
 - When launching Claude Code agent teams, ALWAYS have each teammate work in their own worktree branch and merge everyone's work at the end, resolving any merge conflicts smartly since you are basically serving the orchestrator role and have full context to our goals, work given, work achieved, and desired outcomes.
 - After editing `AGENTS.md`, run `bash scripts/sync-agent-rules.sh` to regenerate platform-specific instruction files.
