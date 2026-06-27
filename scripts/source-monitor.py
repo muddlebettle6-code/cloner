@@ -126,6 +126,68 @@ def federal_register() -> list[dict]:
     return out
 
 
+_BILL_PATH = {"HR": "house-bill", "S": "senate-bill", "HJRES": "house-joint-resolution",
+              "SJRES": "senate-joint-resolution", "HCONRES": "house-concurrent-resolution",
+              "SCONRES": "senate-concurrent-resolution", "HRES": "house-resolution", "SRES": "senate-resolution"}
+
+
+def congress() -> list[dict]:
+    """Recent congressional bills/actions (api.data.gov DEMO_KEY works; a free
+    Congress.gov key raises the rate limit)."""
+    key = os.environ.get("CONGRESS_API_KEY", "DEMO_KEY")
+    out: list[dict] = []
+    try:
+        data = json.loads(get(f"https://api.congress.gov/v3/bill?api_key={key}&sort=updateDate+desc&limit=20&format=json"))
+    except Exception as e:  # noqa: BLE001
+        print(f"  congress fetch failed: {e}", flush=True)
+        return out
+    for b in data.get("bills", []):
+        typ, num, cong = b.get("type", ""), b.get("number", ""), b.get("congress", "")
+        upd = b.get("updateDate", "")
+        action = (b.get("latestAction") or {}).get("text", "")
+        pub = f"https://www.congress.gov/bill/{cong}th-congress/{_BILL_PATH.get(typ, 'house-bill')}/{num}"
+        out.append({
+            "id": f"congress:{typ}{num}:{upd}", "sourceType": "congress-bill",
+            "title": f"{typ} {num}: {(b.get('title') or '').strip()}",
+            "url": pub, "entity": "U.S. Congress", "publishedAt": upd, "reliability": "official",
+            "abstract": (action or "")[:300],
+        })
+    return out
+
+
+def fred() -> list[dict]:
+    """Latest readings of key economic series (gated on a free FRED_API_KEY)."""
+    key = os.environ.get("FRED_API_KEY")
+    out: list[dict] = []
+    if not key:
+        return out
+    series = {
+        "CPIAUCSL": "Consumer Price Index", "UNRATE": "Unemployment rate", "GDPC1": "Real GDP",
+        "FEDFUNDS": "Federal funds rate", "PAYEMS": "Nonfarm payrolls", "RSAFS": "Retail sales",
+        "MORTGAGE30US": "30-year mortgage rate", "PCEPI": "PCE price index",
+    }
+    for sid, name in series.items():
+        try:
+            d = json.loads(get(
+                f"https://api.stlouisfed.org/fred/series/observations?series_id={sid}"
+                f"&api_key={key}&file_type=json&sort_order=desc&limit=1"))
+            obs = d.get("observations", [])
+            if not obs:
+                continue
+            o = obs[0]
+            out.append({
+                "id": f"fred:{sid}:{o['date']}", "sourceType": "fred-economic-data",
+                "title": f"{name}: latest reading for {o['date']} is {o['value']}",
+                "url": f"https://fred.stlouisfed.org/series/{sid}", "entity": "Federal Reserve (FRED)",
+                "publishedAt": o["date"], "reliability": "official",
+                "abstract": f"{name} ({sid}) updated to {o['value']} as of {o['date']}.",
+            })
+        except Exception as e:  # noqa: BLE001
+            print(f"  fred {sid} failed: {e}", flush=True)
+        time.sleep(0.3)
+    return out
+
+
 def prelim_score(ev: dict) -> int:
     st = ev["sourceType"]
     if st.startswith("sec-s-1") or st.startswith("sec-424"):
@@ -136,13 +198,17 @@ def prelim_score(ev: dict) -> int:
         return 50
     if st == "federal-register-proposed-rule":
         return 44
+    if st == "fred-economic-data":
+        return 58  # economic releases are high-value
+    if st == "congress-bill":
+        return 42
     return 30
 
 
 def main() -> None:
     BUILDS.mkdir(parents=True, exist_ok=True)
     seen = load_seen()
-    found = sec_filings() + federal_register()
+    found = sec_filings() + federal_register() + congress() + fred()
     new = [e for e in found if e["id"] not in seen]
     print(f"[{now_iso()}] scanned {len(found)} primary-source docs, {len(new)} new", flush=True)
     for e in new:

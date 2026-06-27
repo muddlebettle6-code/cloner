@@ -47,6 +47,13 @@ function fmtTime(iso?: string): string {
   return Number.isNaN(d.getTime()) ? "" : d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 }
 
+function fmtUpdate(iso: string): string {
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime())
+    ? iso
+    : d.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+}
+
 /** A key term the reader can hover (or tap) to see a plain-language definition. */
 function GlossaryTerm({ term, definition }: { term: string; definition: string }) {
   return (
@@ -184,6 +191,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 {section.label}
               </Link>
             )}
+            {article.breakingNewsStatus && article.breakingNewsStatus !== "confirmed" && (
+              <span className="ml-[12px] inline-block border border-ink px-[8px] py-[3px] align-middle font-mono text-[10px] uppercase tracking-[0.06em] text-ink">
+                {article.breakingNewsStatus === "developing" ? "Developing" : "Updated"}
+              </span>
+            )}
             <p className="mt-[10px] font-mono text-[11px] uppercase tracking-[0.05em] text-smoke">
               {fmtDate(article.date)}{fmtTime(article.publishedAt) ? `, ${fmtTime(article.publishedAt)}` : ""}{meta ? `  ·  ${meta}` : ""}
               {article.updatedAt ? `  ·  Updated ${fmtTime(article.updatedAt)}` : ""}
@@ -252,6 +264,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <Reveal className="mx-auto mt-[40px] max-w-[760px] border-l-[3px] pl-[22px]" style={{ borderColor: "#ff2d92" }}>
               <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-smoke">Why it matters</p>
               <p className="mt-[8px] text-[18px] leading-[1.5] text-ink md:text-[20px]">{article.whyItMatters}</p>
+            </Reveal>
+          )}
+
+          {/* Live update log */}
+          {article.updateHistory && article.updateHistory.length > 0 && (
+            <Reveal className="mx-auto mt-[36px] max-w-[760px] border-l-[3px] border-clay pl-[22px]">
+              <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-smoke">Updates</p>
+              <ul className="mt-[12px] flex flex-col gap-[12px]">
+                {[...article.updateHistory].reverse().map((u, i) => (
+                  <li key={i} className="text-[15px] leading-[1.5] text-ink">
+                    <span className="mr-[10px] font-mono text-[10px] uppercase tracking-[0.04em] text-smoke">{fmtUpdate(u.time)}</span>
+                    {u.note}
+                  </li>
+                ))}
+              </ul>
             </Reveal>
           )}
 

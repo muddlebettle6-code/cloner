@@ -12,4 +12,5 @@ LOG="${SOURCE_LOG:-$SITE_DIR/scripts/source-engine.log}"
   echo "=== source-watch $(date '+%Y-%m-%d %H:%M:%S') ==="
   python3 "$SITE_DIR/scripts/source-monitor.py"
   python3 "$SITE_DIR/scripts/source-engine.py" "$@"
+  python3 "$SITE_DIR/scripts/live-updater.py"
 } >> "$LOG" 2>&1

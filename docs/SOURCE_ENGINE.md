@@ -74,6 +74,38 @@ articles are unaffected.
 engine. Auto-publishing source briefs uses the same deploy token as the core
 engine; high-impact drafts need no token (they wait for review).
 
+## Sources monitored
+
+- **SEC EDGAR** (8-K / S-1 / prospectus) and the **Federal Register** (rules,
+  proposed rules) - keyless.
+- **Congress.gov** (recent bills and actions) - works immediately with the public
+  `DEMO_KEY`; set a free `CONGRESS_API_KEY` for a higher rate limit.
+- **FRED** (key economic series: CPI, unemployment, GDP, fed funds, payrolls,
+  retail sales, mortgage rate, PCE) - gated on a free `FRED_API_KEY`.
+
+Add keys to the source job:
+
+```sh
+plutil -replace EnvironmentVariables.FRED_API_KEY -string 'KEY' \
+  ~/Library/LaunchAgents/com.cumulant.source.plist
+plutil -replace EnvironmentVariables.CONGRESS_API_KEY -string 'KEY' \
+  ~/Library/LaunchAgents/com.cumulant.source.plist
+launchctl unload ~/Library/LaunchAgents/com.cumulant.source.plist
+launchctl load -w ~/Library/LaunchAgents/com.cumulant.source.plist
+```
+
+## Live stories
+
+`scripts/live-updater.py` keeps developing stories current. It finds articles
+marked developing (`breakingNewsStatus == "developing"` or `liveStory`), checks
+the web for new confirmed developments since the last update, appends to a
+visible update log, refreshes the timestamp, and re-deploys - then retires the
+story once it settles or after a maximum age (`LIVE_MAX_AGE_HOURS`, default 36).
+The article page renders the update log and a Developing/Updated badge. Mark a
+story live with `python3 scripts/live-updater.py --mark SLUG`; the source engine
+can mark immediate-priority breaking events automatically. It runs each
+source-watch cycle and serializes against both engines via the shared lock.
+
 ## Safety
 
 No invented sources, quotes, data, or market reactions. Estimates are not
