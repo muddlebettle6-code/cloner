@@ -1,0 +1,540 @@
+{
+  "published": true,
+  "slug": "openai-ipo-delay-thermometer-not-trigger",
+  "headline": "The OpenAI IPO Delay Did Not Trigger the AI Sell-Off. It Confirmed One Already Days Old.",
+  "deck": "Headlines blamed a June 25 report that OpenAI would push its listing to 2027 for a global rout in AI stocks. But lining the price moves up against the clock shows most of the damage landed on June 22-23, before the report crossed, when analysts blamed SpaceX's slump and a more hawkish Federal Reserve. The delay was the thermometer reading the fever, not the match that lit it.",
+  "takeaways": [
+    "The AI-stock sell-off began June 22-23, when a roughly $600 billion two-day wipeout across tech, led by newly-public SpaceX, dragged chipmakers down. Contemporaneous reporting blamed a more hawkish Fed and doubts about AI spending, and did not mention OpenAI.",
+    "The report that OpenAI would delay its IPO to 2027 crossed in the US on June 25. That day the broad Nasdaq Composite closed down just 0.24 percent. The market barely flinched on the day the news actually broke.",
+    "The single large reaction came the next session and on another continent: SoftBank, the closest public proxy for an OpenAI bet, fell 12.53 percent in Tokyo on June 26, erasing about $38 billion in value.",
+    "Even June 26's broad Asian rout was pinned mostly on Apple's AI-hardware cost warning and memory-chip pricing tensions, not OpenAI. SoftBank was the OpenAI-specific move; the wider sell-off had other drivers.",
+    "This rhymes with WeWork in 2019: a marquee private company's failed listing marked a mood already turning rather than causing a broad crash. After WeWork pulled its IPO, the Nasdaq kept climbing to a record high in February 2020.",
+    "Getting the causal arrow right matters for money: if the delay is a trigger, June 26 is the start of a re-rating; if it is a thermometer, it is confirmation of a repricing the venture and chip markets had already begun."
+  ],
+  "glossary": [
+    {
+      "term": "The AI trade",
+      "definition": "Shorthand for buying the cluster of stocks expected to profit from artificial intelligence, chiefly chipmakers like Nvidia and AI investors like SoftBank, on the bet that AI spending keeps rising."
+    },
+    {
+      "term": "IPO (initial public offering)",
+      "definition": "The first time a private company sells shares to the public on a stock exchange, turning private ownership into freely traded stock."
+    },
+    {
+      "term": "Event study",
+      "definition": "A simple research method that lines up exact price moves against the exact time a piece of news arrives, to test whether the news actually moved the market."
+    },
+    {
+      "term": "Drawdown",
+      "definition": "The drop in price from a recent peak to a later low, a way of measuring how much value has been lost in a slide."
+    },
+    {
+      "term": "Basket",
+      "definition": "A hand-picked group of related stocks tracked together as one unit, here a set of AI-chip names used to represent the AI trade."
+    },
+    {
+      "term": "Float",
+      "definition": "The portion of a company's shares actually available for the public to trade. A thin float means few shares trade, so prices can swing violently on small amounts of buying or selling."
+    },
+    {
+      "term": "Melt-up",
+      "definition": "A rapid rise in a price driven by a rush of buyers rather than by improving fundamentals, often when few shares are available to buy."
+    },
+    {
+      "term": "Short-selling",
+      "definition": "Betting that a stock will fall by borrowing shares, selling them, and aiming to buy them back cheaper later. More short-selling can push a price down faster."
+    },
+    {
+      "term": "ADR (American Depositary Receipt)",
+      "definition": "A certificate traded on a US exchange that stands in for shares of a foreign company, letting Americans buy a stock like SoftBank without trading in Tokyo."
+    },
+    {
+      "term": "Nasdaq Composite",
+      "definition": "A US stock index tracking thousands of companies listed on the Nasdaq exchange, heavily weighted toward technology, used here as a gauge of the broad market's mood."
+    },
+    {
+      "term": "S&P 500",
+      "definition": "A US stock index of about 500 large companies, the most widely used yardstick for the overall American stock market."
+    },
+    {
+      "term": "Kospi",
+      "definition": "South Korea's main stock index, home to major chipmakers, used here as a read on Asian tech sentiment."
+    },
+    {
+      "term": "Nikkei 225",
+      "definition": "Japan's best-known stock index, tracking 225 large Japanese companies, including SoftBank."
+    },
+    {
+      "term": "Circuit breaker",
+      "definition": "An automatic trading halt triggered when an index falls too far too fast, designed to give panicked markets a pause to cool off."
+    },
+    {
+      "term": "Capex (capital expenditure)",
+      "definition": "The money companies spend on physical assets like data centers and chips. AI capex is the enormous spending on the hardware needed to build and run AI systems."
+    },
+    {
+      "term": "Hyperscaler",
+      "definition": "A giant technology company that runs vast data centers, such as the firms pouring billions into AI computing."
+    },
+    {
+      "term": "Magnificent Seven",
+      "definition": "Wall Street's nickname for the seven biggest US tech stocks whose moves dominate the market's direction."
+    },
+    {
+      "term": "Re-rating / repricing",
+      "definition": "When investors decide an asset is worth a different multiple of its earnings or potential than before, marking its fair price up or down across the board."
+    },
+    {
+      "term": "Risk-off",
+      "definition": "A market mood in which investors sell riskier assets like high-growth tech stocks and move toward safer ones, usually on fear of tighter money or slower growth."
+    },
+    {
+      "term": "Hawkish / monetary tightening",
+      "definition": "A central bank leaning toward higher interest rates to fight inflation. Tighter money makes borrowing costlier and tends to weigh on high-growth stocks."
+    },
+    {
+      "term": "Rate hike",
+      "definition": "An increase in the central bank's benchmark interest rate, which raises the cost of borrowing across the economy."
+    },
+    {
+      "term": "CPI (Consumer Price Index)",
+      "definition": "A monthly measure of how fast consumer prices are rising. A hotter CPI signals more inflation, which can push central banks to keep interest rates high."
+    },
+    {
+      "term": "Fed Chair",
+      "definition": "The head of the US Federal Reserve, the official with the most influence over US interest rates and therefore over how expensive money is for everyone."
+    },
+    {
+      "term": "Conglomerate",
+      "definition": "A single company that owns a wide range of different businesses. SoftBank is a Japanese conglomerate whose holdings include large technology investments."
+    },
+    {
+      "term": "Bridge loan",
+      "definition": "A short-term loan used to cover spending now while a company waits for longer-term funding to arrive."
+    },
+    {
+      "term": "Unicorn",
+      "definition": "A privately held startup valued at more than $1 billion, a label for the richly-valued private companies whose paper worth a public listing puts to the test."
+    },
+    {
+      "term": "S-1",
+      "definition": "The detailed legal filing a US company submits to regulators before an IPO, the primary document for verified figures on its finances and share count."
+    },
+    {
+      "term": "Intraday",
+      "definition": "Within a single trading day, as opposed to a closing price. An intraday peak or low is the highest or lowest point reached before the session ends."
+    },
+    {
+      "term": "Debut price",
+      "definition": "The price at which a newly-listed stock first trades or closes on its first day, a benchmark for whether later trading is above or below where it started."
+    },
+    {
+      "term": "Proxy (market proxy)",
+      "definition": "A publicly traded asset used to bet on or measure something you cannot trade directly. SoftBank is a proxy for OpenAI because it is a large OpenAI backer whose shares the public can buy."
+    }
+  ],
+  "event": "On June 25, 2026, a New York Times report said OpenAI would likely delay its IPO to 2027 because Sam Altman would not list below a roughly $1 trillion valuation. Global AI stocks fell, with SoftBank dropping 12.53 percent in Tokyo on June 26 and Korea's Kospi hitting a circuit breaker before closing down about 5.8 percent. Headlines framed the report as the trigger of the sell-off.",
+  "question": "Did the June 25 OpenAI IPO-delay report actually cause the AI-trade sell-off, or did it re-accelerate a sell-off that had already begun days earlier with SpaceX's slump and worries about AI spending, making the delay a symptom of the repricing rather than its trigger?",
+  "readingMinutes": 12,
+  "tags": [
+    "AI trade",
+    "OpenAI",
+    "IPO",
+    "SoftBank",
+    "semiconductors",
+    "market structure",
+    "event study",
+    "SpaceX"
+  ],
+  "leadChartId": "event-study",
+  "charts": [
+    {
+      "id": "event-study",
+      "kind": "bar",
+      "title": "Largest single-day drops across the AI complex, June 22-26, 2026",
+      "subtitle": "Most of the damage lands on June 22-23, before the OpenAI report crossed on June 25",
+      "source": "Al Jazeera (June 23), CNBC (June 25), TechTimes/Bloomberg (June 26)",
+      "units": "percent decline (shown as positive magnitude)",
+      "period": "22-26 June 2026",
+      "note": "Figures are largest reported single-day declines from market reporting; some names trade in ranges across sources (Micron has been cited between -9% and -13% on June 23). SoftBank is the closest public proxy for an OpenAI bet.",
+      "alt": "Bar chart of single-day percentage drops. SpaceX falls about 16 percent on June 22 before the report. SoftBank falls 12.53 percent on June 26 as Asia reprices the report. Micron drops 9 percent, AMD 5.7 percent and Nvidia 2.8 percent on June 23, all before the report. The Nasdaq Composite falls only 0.24 percent on June 25, the day the report actually crossed in the US.",
+      "data": {
+        "max": 18,
+        "bars": [
+          {
+            "label": "SpaceX (SPCX) · Jun 22 · pre-report",
+            "value": 16
+          },
+          {
+            "label": "SoftBank Tokyo · Jun 26 · Asia reprices report",
+            "value": 12.53,
+            "highlight": true
+          },
+          {
+            "label": "Micron · Jun 23 · pre-report",
+            "value": 9
+          },
+          {
+            "label": "AMD · Jun 23 · pre-report",
+            "value": 5.7
+          },
+          {
+            "label": "Nvidia · Jun 23 · pre-report",
+            "value": 2.8
+          },
+          {
+            "label": "Nasdaq Comp. · Jun 25 · US report day",
+            "value": 0.24
+          }
+        ]
+      }
+    },
+    {
+      "id": "report-day-shrug",
+      "kind": "comparison",
+      "title": "What the broad US market did on the report day versus two days earlier",
+      "subtitle": "On the day the OpenAI report actually crossed, the Nasdaq barely moved",
+      "source": "Reuters/U.S. News (June 23), CNBC (June 25)",
+      "units": "percent change, Nasdaq Composite close",
+      "period": "23-25 June 2026",
+      "note": "Both figures are closing changes, for a like-for-like comparison. A trigger should produce its largest move on the day the news arrives; the opposite happened. (Al Jazeera cited a 1.4 percent intraday drop on June 23; the index kept sliding to close down 2.2 percent.)",
+      "alt": "Comparison of two Nasdaq Composite daily closing moves. On June 23, before the report, the index fell 2.2 percent. On June 25, the day the report crossed in the US, it fell only 0.24 percent.",
+      "data": {
+        "max": 2.5,
+        "bars": [
+          {
+            "label": "Jun 23 · pre-report rout (close)",
+            "value": 2.2,
+            "highlight": true
+          },
+          {
+            "label": "Jun 25 · US report day (close)",
+            "value": 0.24
+          }
+        ]
+      }
+    },
+    {
+      "id": "timeline",
+      "kind": "timeline",
+      "title": "How the AI sell-off unfolded, June 12-26, 2026",
+      "subtitle": "The slide starts with SpaceX and the Fed, not OpenAI",
+      "source": "CNBC, Al Jazeera, Reuters/U.S. News, the-decoder, Bloomberg, Moneylife",
+      "period": "12-26 June 2026",
+      "alt": "Timeline from June 12 to June 26 showing the SpaceX IPO, its peak, the June 22-23 slump that erased about 600 billion dollars across tech, strong Micron earnings amid a continued slide, the June 25 OpenAI report, and SoftBank's June 26 fall.",
+      "data": {
+        "events": [
+          {
+            "date": "Jun 12",
+            "title": "SpaceX goes public",
+            "detail": "Lists at $135 under ticker SPCX, closes up about 19 percent at $161.11, valued near $1.77 trillion."
+          },
+          {
+            "date": "Jun 16",
+            "title": "SPCX peaks",
+            "detail": "Reaches an intraday high of $225.64 before turning lower."
+          },
+          {
+            "date": "Jun 22",
+            "title": "SpaceX slumps about 16 percent",
+            "detail": "Falls 16.4 percent to $154.60; roughly $400 billion erased as the thin-float darling rolls over and drags chips with it."
+          },
+          {
+            "date": "Jun 23",
+            "title": "Tech rout, about $600 billion gone",
+            "detail": "SPCX falls below its debut price; Nasdaq closes -2.2%, Micron -9%, AMD -5.7%, Nvidia -2.8%. Blamed on AI-spending doubts and a hawkish Fed under new Chair Kevin Warsh, with traders pricing a second 2026 rate hike. OpenAI not mentioned."
+          },
+          {
+            "date": "Jun 24",
+            "title": "Micron earnings beat, index still slips",
+            "detail": "Micron's strong results lift memory names, but the broad Nasdaq closes lower for a fourth straight session."
+          },
+          {
+            "date": "Jun 25",
+            "title": "OpenAI report crosses (US)",
+            "detail": "NYT: OpenAI likely delays IPO to 2027; Altman calls a sub-$1 trillion listing a nonstarter. Nasdaq closes -0.24% at 25,297.62, S&P -0.05% at 7,354.02, a fifth straight loss."
+          },
+          {
+            "date": "Jun 26",
+            "title": "Asia reprices",
+            "detail": "SoftBank falls 12.53% in Tokyo (about $38 billion erased); Korea's Kospi hits a circuit breaker and closes down about 5.8%, with reporting blaming Apple and memory-chip pricing as much as OpenAI."
+          }
+        ]
+      }
+    },
+    {
+      "id": "before-report-keynumber",
+      "kind": "keynumber",
+      "title": "Value erased before the OpenAI report",
+      "source": "Al Jazeera (June 23, 2026)",
+      "alt": "About 600 billion dollars in market value was erased across tech on June 22-23, two days before the OpenAI report crossed.",
+      "data": {
+        "value": "~$600bn",
+        "label": "erased across tech on June 22-23",
+        "sub": "Two trading days before the June 25 OpenAI report"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news hook",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On June 26, 2026, the verb was unanimous. A New York Times report that OpenAI would likely delay its public listing to 2027 had, depending on the outlet, triggered, sparked, or rattled a global sell-off in artificial-intelligence stocks. In Tokyo, SoftBank, the Japanese conglomerate (a company that owns many different businesses) and one of OpenAI's largest backers, fell 12.53 percent, erasing about $38 billion in market value. In Seoul, the Kospi index dropped fast enough to trip a circuit breaker, an automatic trading halt, and closed down about 5.8 percent. Chip-linked names slid across two continents."
+        },
+        {
+          "type": "p",
+          "text": "The story practically writes itself: the crown jewel of private AI cannot fetch its price, so the whole AI trade falls. There is just one problem with that sentence. By the time the report crossed, the AI trade had already been falling hard for several trading days."
+        },
+        {
+          "type": "callout",
+          "label": "The reflex to interrogate",
+          "text": "Every causal claim in the June 26 coverage rests on a verb of ignition. But ignition requires that the fire start when the match is struck. The tape shows the fire was already burning."
+        }
+      ]
+    },
+    {
+      "heading": "The central question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This investigation asks one narrow, consequential question, and only one. Did the June 25 OpenAI IPO-delay report actually cause the AI-trade sell-off? Or did it merely re-accelerate a sell-off that began days earlier with the slump in newly-public SpaceX and a wave of fear about AI spending, making the delay a symptom of the repricing rather than its trigger?"
+        },
+        {
+          "type": "p",
+          "text": "Put in plainer terms: was the delay the match, or the thermometer? A match starts the fire. A thermometer only tells you the fever is already there. The distinction is not a word game. It decides whether June 26 is a buyable dip in a healthy bull market or the first public confirmation that private AI valuations are being marked down."
+        }
+      ]
+    },
+    {
+      "heading": "What happened, with dates and actors",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the chronology, because the chronology is the case. On June 12, SpaceX went public under the ticker SPCX, listing at $135 and closing its first day up about 19 percent at $161.11, for a valuation near $1.77 trillion. It was the marquee listing of the year. By June 16 the stock had run to an intraday peak of $225.64, a classic thin-float melt-up, in which a small number of tradable shares let buyers push the price far above where steady supply would hold it."
+        },
+        {
+          "type": "p",
+          "text": "Then it broke. On Monday June 22, SPCX fell 16.4 percent to $154.60, erasing roughly $400 billion and pulling the chip complex down with it. On Tuesday June 23, the stock dropped below its debut price, and the two-day toll across tech reached about $600 billion. The Nasdaq Composite closed down 2.2 percent (Al Jazeera flagged a 1.4 percent drop in morning trading, but the index kept sliding into the close). Micron lost 9 percent, AMD 5.7 percent, Nvidia 2.8 percent. Crucially, the contemporaneous reporting that day pinned the move on doubts about debt-funded AI spending and expectations of tighter policy under the new Federal Reserve Chair, Kevin Warsh, with traders moving to price in a second 2026 rate hike. OpenAI was not in the story."
+        },
+        {
+          "type": "pullquote",
+          "text": "\"It's definitely jitters about AI. But is it a passing thing, or is it something more permanent?\" - an analyst quoted by Al Jazeera, June 23, before the OpenAI report."
+        },
+        {
+          "type": "chart",
+          "chartId": "timeline"
+        },
+        {
+          "type": "p",
+          "text": "On June 24 Micron reported strong earnings, lifting memory-chip names, yet the broad Nasdaq still closed lower for a fourth straight session. Then, late on June 25 in the US, the New York Times report crossed: OpenAI would likely push its IPO to 2027, with Sam Altman reported to view any listing below about $1 trillion as a nonstarter. That same US session, the broad market shrugged. The Nasdaq closed down just 0.24 percent at 25,297.62; the S&P 500 down 0.05 percent at 7,354.02, a fifth straight loss. The large reaction came the next session, June 26, in Asia, and it was concentrated in SoftBank, the one widely-held public stock that functions as a direct bet on OpenAI."
+        },
+        {
+          "type": "callout",
+          "label": "Why the date matters",
+          "text": "The report crossed in the US on June 25, not June 26. On its actual arrival day, the broad US market moved a quarter of a percent. That single fact reframes everything that follows."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To test the trigger claim cleanly, line up the largest single-day drops across the AI complex and mark which side of the report each one fell on. This is an event study: a method that puts exact price moves next to the exact time the news arrives, so you can see whether the market actually reacted when the news broke, or whether it was already moving for other reasons."
+        },
+        {
+          "type": "chart",
+          "chartId": "event-study"
+        },
+        {
+          "type": "p",
+          "text": "The pattern is hard to miss. The biggest drops, SpaceX's 16 percent on June 22 and the chip slide on June 23, all land before the report. The one large move that comes after it, SoftBank's 12.53 percent, arrives a full session later and only in the one stock that is a direct OpenAI proxy. If the report were the trigger, its largest market-wide effect should have landed the moment it crossed. Instead, on the day it crossed, the broad US market did almost nothing."
+        },
+        {
+          "type": "p",
+          "text": "Compare the two days directly, on a like-for-like closing basis. On June 23, before the report, the Nasdaq closed down 2.2 percent. On June 25, the day the report actually arrived in the US, it closed down 0.24 percent, nearly ten times smaller. A trigger produces its loudest bang on impact. This one produced a whisper."
+        },
+        {
+          "type": "chart",
+          "chartId": "report-day-shrug"
+        },
+        {
+          "type": "p",
+          "text": "What about June 26, when SoftBank cratered and the Kospi tripped its circuit breaker? Look closer and the OpenAI story narrows. SoftBank, a direct OpenAI proxy, clearly moved on the report. But the wider Asian rout was blamed by contemporaneous reporting as much on Apple's warning of higher AI-hardware costs and on memory-chip pricing tensions as on OpenAI. In other words, the broad index move had its own drivers; the cleanly OpenAI-attributable damage was concentrated in a single stock, one day after the news."
+        },
+        {
+          "type": "chart",
+          "chartId": "before-report-keynumber"
+        }
+      ]
+    },
+    {
+      "heading": "The thermometer, not the match",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Put the pieces together and the causal arrow points the other way. The sell-off started with a thin-float IPO unwinding and a hawkish Fed, not with OpenAI. By the time the delay report crossed, chip stocks had already given back hundreds of billions. The report did not start the repricing; it confirmed it. The bankers' reported reasoning makes the point for us: OpenAI's advisers cited choppy tech markets and SpaceX's weak post-IPO trading as reasons to wait. The delay was a response to the sell-off, not its cause."
+        },
+        {
+          "type": "p",
+          "text": "There is a useful historical rhyme here: WeWork in 2019. When the office-rental company pulled its IPO on September 30, 2019, after its marketed valuation collapsed from $47 billion toward $10 billion, it was widely read as the moment the late-2010s unicorn boom met reality. Yet it did not cause a broad market crash. The Nasdaq Composite kept climbing for nearly five months, to a record high in February 2020, until an entirely unrelated shock, the COVID-19 pandemic, ended the run. A failed marquee listing can mark a turning mood without being the thing that breaks the market."
+        },
+        {
+          "type": "callout",
+          "label": "Reading the proxy carefully",
+          "text": "SoftBank is the cleanest public way to bet on OpenAI: it has committed roughly $65 billion and holds about 13 percent of the company. But it is also a sprawling conglomerate that moves on its chip-design arm, its venture funds, the yen, and its own debt. A 12.53 percent drop is a real reaction to the report, but it is not the same thing as the whole AI trade repricing."
+        }
+      ]
+    },
+    {
+      "heading": "Why the causal arrow matters for money",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This is not a debate about wording. The two readings imply opposite trades. If the delay is a genuine trigger, June 26 is the first day of a re-rating, the start of investors marking down what private AI is worth, and the prudent move is to sell into it. If the delay is a thermometer, it is confirmation of a repricing the venture and chip markets had already begun days earlier, and the relevant questions are about AI capex returns and Fed policy, the things that were actually moving prices on June 22 and 23."
+        },
+        {
+          "type": "p",
+          "text": "The evidence here favors the thermometer. The largest moves preceded the news; the news day itself was nearly flat; and the one big post-report move was concentrated in a single proxy stock on a day when the broad regional sell-off had other, well-reported causes. None of this means the OpenAI delay is meaningless. It plainly hurt SoftBank, and it is a real data point about how much investors will pay for the most valuable private company in AI. It means the delay belongs in the story as a symptom of a repricing already underway, not as the spark that started it."
+        },
+        {
+          "type": "callout",
+          "label": "What would change our mind",
+          "text": "If, in the sessions after June 26, the broad AI complex keeps falling specifically on OpenAI-valuation news, with the largest moves clearly tied to that thread rather than to chips, rates, or memory pricing, the trigger reading would gain support. So far, the tape does not show that."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "We treated the claim 'the OpenAI report triggered the sell-off' as a testable hypothesis and ran a simple event study: align each large single-day price move in the AI complex against the exact date and region the OpenAI report crossed (US session, June 25), then ask whether the biggest moves came before or after the news.",
+    "All index moves are compared on a like-for-like basis (closing percentage change to closing percentage change) to avoid mixing intraday and closing figures. Where a source gave an intraday number (Al Jazeera's 1.4 percent for the Nasdaq on June 23), we used the closing figure (2.2 percent) and flagged the difference.",
+    "We separated the broad-market reaction (Nasdaq, S&P 500, Kospi, Nikkei) from the single-stock reaction (SoftBank) because SoftBank is the only widely-held public proxy for an OpenAI bet, and conflating the two is what produced the original 'trigger' framing.",
+    "Every number was checked against contemporaneous reporting dated to the day of the move. Where reported figures differed across outlets (for example Micron's June 23 drop, cited between 9 and 13 percent), we used the more conservative figure and noted the range.",
+    "We checked the attributed cause of each move against what reporters wrote at the time, not after the fact, specifically whether OpenAI was named as a driver on June 22-23 (it was not) and what was named instead (AI-spending doubts and a hawkish Fed under new Chair Kevin Warsh)."
+  ],
+  "sources": [
+    {
+      "title": "SpaceX targets $135 IPO price at valuation of $1.77 trillion",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "SpaceX IPO takeaways: SPCX closes at $161, jumping 19% after record debut",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Initial public offering of SpaceX",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Initial_public_offering_of_SpaceX",
+      "kind": "secondary"
+    },
+    {
+      "title": "SpaceX shares drop below debut price before jumping amid $600bn sell-off",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/6/23/spacex-shares-drop-below-debut-price-before-jumping-amid-600bn-sell-off",
+      "kind": "secondary"
+    },
+    {
+      "title": "Wall St tumbles on tech selloff as concerns about hawkish Fed, AI spending mount",
+      "publisher": "Reuters via U.S. News",
+      "url": "https://money.usnews.com/investing/news/articles/2026-06-23/nasdaq-futures-fall-2-on-tech-worries-fed-hike-bets",
+      "kind": "secondary"
+    },
+    {
+      "title": "$600 billion SpaceX slide takes tech stocks along for the ride",
+      "publisher": "The Detroit News (Reuters)",
+      "url": "https://www.detroitnews.com/story/business/2026/06/23/600-billion-spacex-slide-takes-tech-stocks-along-for-the-ride/90657174007/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Global tech sell-off intensifies, led by AI and chip stocks",
+      "publisher": "NBC News",
+      "url": "https://www.nbcnews.com/business/business-news/tech-sell-off-markets-spacex-alphabet-nasdaq100-stocks-rcna351331",
+      "kind": "secondary"
+    },
+    {
+      "title": "Nasdaq falls for a fourth day as a drop in Apple overshadows Micron's booming earnings",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/24/stock-market-today-live-updates.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Nasdaq Composite posts fifth losing session Friday as chip stocks tumble",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/25/stock-market-today-live-updates.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Altman won't go public for less than $1 trillion, so OpenAI's IPO may slip to 2027",
+      "publisher": "the-decoder",
+      "url": "https://the-decoder.com/altman-wont-go-public-for-less-than-1-trillion-so-openais-ipo-may-slip-to-2027/",
+      "kind": "secondary"
+    },
+    {
+      "title": "OpenAI IPO Delay Sends SoftBank Down $38 Billion: Altman Refuses Any Cut to $1 Trillion Target",
+      "publisher": "TechTimes",
+      "url": "https://www.techtimes.com/articles/319145/20260626/openai-ipo-delay-sends-softbank-down-38-billion-altman-refuses-any-cut-1-trillion-target.htm",
+      "kind": "secondary"
+    },
+    {
+      "title": "SoftBank Shares Tumble After Report of OpenAI's IPO Delay",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/softbank-s-shares-tumble-after-report-of-openai-s-ipo-delay",
+      "kind": "secondary"
+    },
+    {
+      "title": "Asian Markets Sink as Tech Selloff Deepens; South Korea's Kospi Crashes over 8%, Triggers Circuit Breaker",
+      "publisher": "Moneylife",
+      "url": "https://moneylife.in/article/asian-markets-sink-as-tech-selloff-deepens-south-koreas-kospi-crashes-over-8-percentage-triggers-circuit-breaker/80897.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Why Asian Stocks Are Crashing Today: AI Bubble Fears, Apple Price Hikes Trigger Market Bloodbath",
+      "publisher": "Republic World",
+      "url": "https://www.republicworld.com/business/why-asian-stocks-crashing-today-tech-selloff-apple-price-hike-ai-bubble-kospi-nikkei-2026-06-26-129975",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kevin Warsh takes oath of office as chairman of the Board of Governors of the Federal Reserve System",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Kevin Warsh wins Senate confirmation as the next Federal Reserve chair",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/13/kevin-warsh-wins-senate-confirmation-as-the-next-federal-reserve-chair.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "WeWork pulls IPO filing",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2019/09/30/wework-says-it-will-file-request-to-withdraw-its-ipo-prospectus-after-roadshow-management-turmoil.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Closing milestones of the Nasdaq Composite",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Closing_milestones_of_the_Nasdaq_Composite",
+      "kind": "data"
+    }
+  ],
+  "limitations": [
+    "Price and market-cap figures come from market reporting, not from a single audited tape; several names traded in ranges across outlets (Micron's June 23 drop is cited between 9 and 13 percent), and SpaceX's exact market-cap loss varies with the share count assumed.",
+    "An event study can show that the biggest moves preceded the news; it cannot fully isolate OpenAI's marginal contribution to June 26, when Apple's AI-hardware cost warning and memory-chip pricing tensions were also moving Asian markets.",
+    "SoftBank is the cleanest public OpenAI proxy but is an imperfect one: it also moves on its chip-design business, its venture funds, the yen, and its own debt load, so its 12.53 percent drop overstates a pure OpenAI signal.",
+    "The WeWork comparison is an analogy that fits the pattern, not proof; every market episode has its own drivers, and the 2019 backdrop differed from 2026's.",
+    "This analysis covers a roughly two-week window; a longer or OpenAI-specific sell-off in later sessions could shift the weight of evidence."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "date": "2026-06-26",
+  "byline": "Cumulant Research"
+}
