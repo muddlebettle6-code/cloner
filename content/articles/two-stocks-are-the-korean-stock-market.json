@@ -1,0 +1,679 @@
+{
+  "published": true,
+  "slug": "two-stocks-are-the-korean-stock-market",
+  "headline": "Two Stocks Are the Korean Stock Market Now",
+  "deck": "When the KOSPI tripped its circuit breaker on 26 June 2026, the wires said 'Korea down 8 percent' and the official close said down 5.81 percent. Decompose the fall and roughly two-thirds came from just two semiconductor stocks, Samsung Electronics and SK Hynix, which now make up about 55 percent of the index, meaning a memory-chip selloff and a Korean stock-market crash have become arithmetically the same event.",
+  "takeaways": [
+    "The KOSPI's headline 8 percent drop was an intraday panic; the official close was -5.81 percent (-519 points). Both are real, and the gap is itself a symptom of the problem.",
+    "Two stocks, Samsung and SK Hynix, are about 55 percent of the whole index and produced roughly 64 percent of the day's point decline. Owning 'the Korean market' is mostly owning two chipmakers.",
+    "It probably was not a chip-demand story: high-bandwidth memory is sold out for 2026 and rival Micron hit a record. The damage came from positioning and leverage, not from the world needing fewer chips.",
+    "Month-old 2x single-stock ETFs now drive about a third of trading in both stocks and forced billions in mechanical selling, while foreigners exited at record size and Korean households bought the dip.",
+    "The concentration is not a footnote. It is the amplifier that turned a flows-and-leverage squeeze in two tickers into a national circuit breaker."
+  ],
+  "glossary": [
+    {
+      "term": "KOSPI",
+      "definition": "South Korea's main stock-market index, roughly the equivalent of the S&P 500 in the United States; it tracks the value of the country's largest listed companies."
+    },
+    {
+      "term": "S&P 500",
+      "definition": "A widely watched index of 500 large US companies, often used as shorthand for 'the US stock market.'"
+    },
+    {
+      "term": "Circuit breaker",
+      "definition": "An automatic, temporary halt in trading that kicks in when an index falls past a set threshold (here 8 percent), giving a panicking market a 20-minute pause to calm down."
+    },
+    {
+      "term": "Index weight",
+      "definition": "How much a single company counts toward an index, set by its market value; bigger companies move the index more."
+    },
+    {
+      "term": "Market capitalization",
+      "definition": "A company's total stock-market value, found by multiplying its share price by the number of shares; it determines a stock's weight in an index."
+    },
+    {
+      "term": "Contribution (weight times return)",
+      "definition": "A stock's effect on an index for the day, equal to its weight multiplied by its percentage move; a stock that is 25 percent of an index and falls 8 percent pulls the index down by about 2 points."
+    },
+    {
+      "term": "Value-weighted",
+      "definition": "A way of averaging stock moves that gives bigger companies more influence, in proportion to their market value, rather than treating every company equally."
+    },
+    {
+      "term": "Intraday vs close",
+      "definition": "Intraday is the price at some moment during the trading day (often the worst tick); the close is the final settled price. The same day can look very different depending on which you quote."
+    },
+    {
+      "term": "MSCI",
+      "definition": "A company that builds and maintains widely used global stock indexes; its decisions on which 'bucket' a country belongs in can move billions of dollars of fund money."
+    },
+    {
+      "term": "Emerging vs developed market",
+      "definition": "MSCI's classification of a country's stock market by maturity; being upgraded from 'emerging' to 'developed' forces many global funds to automatically buy that country's stocks."
+    },
+    {
+      "term": "Passive funds",
+      "definition": "Investment funds that simply track an index rather than picking stocks, so they mechanically buy or sell whatever the index tells them to."
+    },
+    {
+      "term": "Front-run",
+      "definition": "Buying in advance of an expected wave of other buyers (here, foreign funds betting on an MSCI upgrade) so as to profit when that buying arrives; if it never comes, the early bet unwinds."
+    },
+    {
+      "term": "Non-deliverable forward (NDF)",
+      "definition": "A currency contract settled in cash without the actual currency changing hands, used when a currency like the Korean won cannot be freely traded offshore; it makes a market harder for global funds to use."
+    },
+    {
+      "term": "ETF (exchange-traded fund)",
+      "definition": "A fund that trades on an exchange like a single stock but holds a basket of assets or tracks a particular bet."
+    },
+    {
+      "term": "Leveraged ETF",
+      "definition": "An ETF engineered to move a multiple (here 2x) of its target each day; to keep that ratio it must buy as prices rise and sell as they fall, which can force selling into a falling market."
+    },
+    {
+      "term": "Single-stock ETF",
+      "definition": "An ETF tied to just one company's shares rather than a basket; combined with leverage, it concentrates and amplifies bets on one stock."
+    },
+    {
+      "term": "High-bandwidth memory (HBM)",
+      "definition": "A specialized, high-speed type of computer memory stacked to feed data quickly to AI chips; it is the product Samsung, SK Hynix and Micron are racing to supply for AI data centers."
+    },
+    {
+      "term": "AI accelerator",
+      "definition": "A specialized chip (such as a GPU) built to run artificial-intelligence workloads; it relies on fast memory like HBM to keep it fed with data."
+    },
+    {
+      "term": "Tracking error",
+      "definition": "How far a portfolio's returns drift from the benchmark it is supposed to follow; a high tracking error means 'the market' and your holdings can move very differently."
+    },
+    {
+      "term": "Net selling / foreign outflows",
+      "definition": "When investors sell more of a market's stocks than they buy over a period; for foreigners leaving Korea, it shows up as money flowing out of the market."
+    },
+    {
+      "term": "Margin / margined accounts",
+      "definition": "Buying stocks with borrowed money; if prices fall, the lender can force the borrower to sell quickly to repay, adding to the decline."
+    },
+    {
+      "term": "Deleveraging",
+      "definition": "Reducing borrowed positions, often by selling assets; when many investors do it at once it can feed a self-reinforcing drop."
+    },
+    {
+      "term": "Quarter-end",
+      "definition": "The close of a three-month accounting period, when funds and leveraged traders often adjust or unwind positions, sometimes adding selling pressure regardless of fundamentals."
+    },
+    {
+      "term": "Market reaction vs economic effect",
+      "definition": "Market reaction is how prices move because of buying, selling and positioning; economic effect is what actually changes in the real business (like chip demand). They can point in opposite directions."
+    },
+    {
+      "term": "TAIEX",
+      "definition": "Taiwan's main stock-market index, heavily dominated by the chip foundry TSMC."
+    },
+    {
+      "term": "TSMC",
+      "definition": "Taiwan Semiconductor Manufacturing Company, the world's largest contract chipmaker, which alone makes up a large share of Taiwan's stock index."
+    },
+    {
+      "term": "Won",
+      "definition": "South Korea's currency; one trillion won was roughly 700 million US dollars in mid-2026."
+    },
+    {
+      "term": "Trillion won (KRW)",
+      "definition": "A unit used for large Korean money figures; foreign net selling is reported in trillions of won."
+    }
+  ],
+  "event": "On 26 June 2026 the KOSPI tripped its 8 percent circuit breaker after falling 8.19 percent intraday and closed down 5.81 percent (-519.09 points to 8,411.21), led overwhelmingly by Samsung Electronics and SK Hynix.",
+  "question": "When the KOSPI fell 519 points on 26 June 2026, how much of the drop was mechanically produced by just two stocks, Samsung Electronics and SK Hynix, and has the index become so concentrated that 'a memory-chip selloff' and 'a Korean stock-market crash' are now the same event?",
+  "readingMinutes": 9,
+  "tags": [
+    "KOSPI",
+    "South Korea",
+    "Samsung Electronics",
+    "SK Hynix",
+    "semiconductors",
+    "market concentration",
+    "AI memory",
+    "HBM",
+    "index mechanics",
+    "circuit breaker"
+  ],
+  "leadChartId": "decomp",
+  "charts": [
+    {
+      "id": "decomp",
+      "kind": "bar",
+      "title": "Two stocks broke the index",
+      "subtitle": "The KOSPI fell 519 points on 26 June 2026. Where the points came from.",
+      "source": "Cumulant Research decomposition of the official KRX close; market-cap weights via Businesskorea (19 Jun 2026)",
+      "units": "index points lost",
+      "period": "26 June 2026",
+      "note": "Decomposed as weight x return: Samsung 28.34% x -5.30%; SK Hynix 26.42% x -8.36%. Bars sum to the day's -519-point close.",
+      "alt": "Bar chart showing SK Hynix lost 197 index points, Samsung 134 points, and all other roughly 830 stocks combined 188 points, of the KOSPI's 519-point fall.",
+      "data": {
+        "bars": [
+          {
+            "label": "SK Hynix",
+            "value": 197,
+            "highlight": true
+          },
+          {
+            "label": "Samsung Electronics",
+            "value": 134,
+            "highlight": true
+          },
+          {
+            "label": "All other ~830 stocks",
+            "value": 188
+          }
+        ],
+        "max": 220
+      }
+    },
+    {
+      "id": "robustness",
+      "kind": "comparison",
+      "title": "The finding survives a deliberate attempt to break it",
+      "subtitle": "Two-stock share of the 26 June fall, under different weight assumptions",
+      "source": "Cumulant Research, using KRX market-cap weights (Businesskorea, 19 Jun) and KOSPI 200 weights (Asia Business Daily, May)",
+      "units": "% of the day's point fall from two stocks",
+      "period": "26 June 2026",
+      "note": "The claim dies only if the duo's share falls below 50 percent. It clears that line even on the lower May weights.",
+      "alt": "Comparison chart showing the two chipmakers produced 64 percent of the fall using 19 June weights and 59 percent using lower May weights, both above the 50 percent kill line.",
+      "data": {
+        "bars": [
+          {
+            "label": "Jun 19 weights (28.3 / 26.4)",
+            "value": 64,
+            "highlight": true
+          },
+          {
+            "label": "May weights (28.0 / 23.5)",
+            "value": 59
+          },
+          {
+            "label": "Kill line (claim fails below)",
+            "value": 50
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "etf-volume",
+      "kind": "bar",
+      "title": "The amplifier: month-old funds now move a third of the volume",
+      "subtitle": "Share of each stock's daily trading volume tied to single-stock leveraged ETFs launched 27 May 2026",
+      "source": "The Herald Business (biz.heraldcorp.com), late June 2026",
+      "units": "% of daily trading volume",
+      "period": "Late June 2026",
+      "note": "These 2x products are less than a month old; for every ten SK Hynix shares traded, nearly four were tied to them.",
+      "alt": "Bar chart showing leveraged single-stock ETFs account for about 38 percent of SK Hynix's daily trading volume and about 31 percent of Samsung's.",
+      "data": {
+        "bars": [
+          {
+            "label": "SK Hynix",
+            "value": 38,
+            "highlight": true
+          },
+          {
+            "label": "Samsung Electronics",
+            "value": 31,
+            "highlight": true
+          }
+        ],
+        "max": 50
+      }
+    },
+    {
+      "id": "concentration",
+      "kind": "comparison",
+      "title": "How concentrated is concentrated",
+      "subtitle": "Single-name or single-theme share of a national stock index",
+      "source": "Nasdaq Helsinki / Wikipedia (Nokia); Businesskorea (KOSPI); Focus Taiwan (TAIEX)",
+      "units": "% of national index by market value",
+      "period": "2000 (Nokia); June 2026 (Korea, Taiwan)",
+      "note": "Korea's weight is split across a duo that can both fall at once, which is exactly what happened on 26 June.",
+      "alt": "Comparison chart showing Nokia was about 70 percent of Helsinki's market in 2000, Samsung plus SK Hynix are about 55 percent of the KOSPI, and TSMC is about 44 percent of Taiwan's TAIEX.",
+      "data": {
+        "bars": [
+          {
+            "label": "Nokia, Helsinki (2000)",
+            "value": 70
+          },
+          {
+            "label": "Samsung + SK Hynix, KOSPI (2026)",
+            "value": 55,
+            "highlight": true
+          },
+          {
+            "label": "TSMC, Taiwan TAIEX (2026)",
+            "value": 44
+          }
+        ],
+        "max": 80
+      }
+    },
+    {
+      "id": "foreign-outflows",
+      "kind": "bar",
+      "title": "Foreigners are leaving like it is a crisis",
+      "subtitle": "Cumulative foreign net selling of KOSPI stocks, by episode",
+      "source": "Seoul Economic Daily (en.sedaily.com), 2 June 2026",
+      "units": "trillion won, foreign net selling",
+      "period": "2026 year-to-date vs prior crises",
+      "note": "2026's foreign exodus already exceeds the 2008 financial crisis and 2020 pandemic combined.",
+      "alt": "Bar chart showing foreign net selling of 103 trillion won year-to-date in 2026, versus 62 trillion in the 2008 financial crisis and 25 trillion in the 2020 pandemic.",
+      "data": {
+        "bars": [
+          {
+            "label": "2026 year-to-date",
+            "value": 103,
+            "highlight": true
+          },
+          {
+            "label": "2008 financial crisis",
+            "value": 62
+          },
+          {
+            "label": "2020 pandemic",
+            "value": 25
+          }
+        ],
+        "max": 120
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Two crashes, one afternoon",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There were two crashes in Seoul on Friday, 26 June, and which one you heard about depends on which clock you read."
+        },
+        {
+          "type": "p",
+          "text": "At 12:10 in the afternoon the KOSPI - South Korea's main stock index, the rough equivalent of the S&P 500 - had fallen 731.97 points, or 8.19 percent, to 8,198.33. That breached the exchange's automatic 8 percent threshold and tripped a circuit breaker, a mandatory 20-minute trading halt designed to let a panicking market catch its breath. That is the number that went around the world: Korea down 8 percent."
+        },
+        {
+          "type": "p",
+          "text": "Then the market reopened, steadied, and settled. The official Korea Exchange close was 8,411.21, down 519.09 points, or 5.81 percent."
+        },
+        {
+          "type": "pullquote",
+          "text": "One number measures the panic; the other measures the settlement. The distance between them is itself a symptom of the thing we are about to measure."
+        },
+        {
+          "type": "p",
+          "text": "Neither figure is wrong. Everything that follows is locked to the official close, because you cannot decompose a number that keeps moving. But hold on to the gap between 8.19 and 5.81."
+        }
+      ]
+    },
+    {
+      "heading": "The one question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Not 'why did Korea crash.' That is too big to answer honestly in one sitting, and half the answers would be guesses. Instead, a narrow, testable question:"
+        },
+        {
+          "type": "callout",
+          "label": "The question",
+          "text": "When the KOSPI fell 519 points on 26 June, who actually pushed it down - and has the index become so concentrated that a memory-chip selloff and a Korean stock-market crash are now arithmetically the same event?"
+        },
+        {
+          "type": "p",
+          "text": "This is answerable with grade-school arithmetic, which is the point. You do not need a model. You need two inputs per stock."
+        }
+      ]
+    },
+    {
+      "heading": "How to read an index's fall",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "An index like the KOSPI is a weighted average. Every company counts in proportion to its market value, its 'weight.' Samsung is worth far more than a mid-size shipbuilder, so Samsung moves the index far more. The contribution of any single stock to the index's move is just its weight multiplied by its return that day."
+        },
+        {
+          "type": "p",
+          "text": "A stock that is 25 percent of the index and falls 8 percent drags the whole index down by 2 percentage points, all by itself. That is the entire toolkit. Now plug in Friday's official figures."
+        },
+        {
+          "type": "p",
+          "text": "By 19 June, the most recent precise reading from the Korea Exchange's market-cap tables (reported by Businesskorea), Samsung Electronics was 28.34 percent of the KOSPI and SK Hynix was 26.42 percent. Together, 54.76 percent. Two companies, more than half the index. On Friday Samsung closed down 5.30 percent (358,500 won to 339,500) and SK Hynix down 8.36 percent."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Samsung: 28.34% x (-5.30%) = -1.50 points of index, out of every 100",
+            "SK Hynix: 26.42% x (-8.36%) = -2.21 points of index",
+            "Together: -3.71 of the index's 5.81-point fall"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Two stocks produced about 64 percent of the entire decline."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says",
+      "blocks": [
+        {
+          "type": "chart",
+          "chartId": "decomp"
+        },
+        {
+          "type": "p",
+          "text": "Read it slowly, because it is counterintuitive. The 830-odd other companies on the KOSPI - banks, carmakers, shipbuilders, biotech, retail, steel, every name that is not a memory-chip maker - lost 188 points between them. Two semiconductor stocks lost 331. The chip duo, fewer than 0.3 percent of the listed names, outweighed the other 99.7 percent combined."
+        },
+        {
+          "type": "p",
+          "text": "It also means the '5.8 percent crash' overstated the day for almost everyone who owned almost anything else. Strip out the two chipmakers and the rest of the market fell, on a value-weighted basis, closer to 4.6 percent - and for the typical mid-cap name almost certainly milder still. The headline number was, to a first approximation, the price of memory chips wearing a national flag."
+        }
+      ]
+    },
+    {
+      "heading": "The falsification test",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A claim worth printing has to be killable. Ours: the two chipmakers accounted for more than half of the point decline. The test: run weight-times-return against the official numbers, and if the duo comes in under 50 percent, the claim is dead."
+        },
+        {
+          "type": "p",
+          "text": "It does not come in under 50 percent under any reasonable assumption. Use the older, lower weights from mid-May - when Samsung and SK Hynix were 28 and 23.5 percent of the KOSPI 200, which understates SK Hynix, the stock that fell hardest - and you still get roughly 59 percent."
+        },
+        {
+          "type": "chart",
+          "chartId": "robustness"
+        },
+        {
+          "type": "p",
+          "text": "The finding is robust precisely because the concentration is so extreme that the arithmetic has no room to escape it. And if anything it is conservative: some data vendors put Friday's per-stock falls steeper still (Trading Economics has Samsung at -6.28 percent and SK Hynix at -8.95 percent), which would push the duo's share toward 70 percent. We use the lower, prior-close-consistent figures so the claim rests on the weaker case."
+        },
+        {
+          "type": "pullquote",
+          "text": "Diversification on the KOSPI is, for practical purposes, an illusion: you are holding a memory-chip bet with a 45 percent tracking error."
+        }
+      ]
+    },
+    {
+      "heading": "What the headline misses: is it even a chip story?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here a careful reporter has to separate two things that look identical and are not: market reaction (who is buying and selling, and how the plumbing routes their orders) versus economic effect (whether the world actually needs fewer memory chips). Three non-fundamental triggers landed on Seoul in the same week, and none is about chip demand."
+        },
+        {
+          "type": "p",
+          "text": "1. MSCI said no, again. On 23 June (released 24 June Korea time) the index provider MSCI kept Korea in its 'emerging market' bucket and off the watchlist for promotion to 'developed' status - a designation that would have forced waves of automatic buying by global passive funds. Foreigners had front-run that hoped-for upgrade; when it did not come, the trade unwound. MSCI's sticking point was mundane plumbing: the won still cannot be freely settled offshore (it trades mostly through non-deliverable forwards), which makes the market hard for global funds to rebalance. Seoul is opening 24-hour onshore FX trading in July, but MSCI wants to see it work first."
+        },
+        {
+          "type": "p",
+          "text": "2. A brand-new leverage machine. On 27 May Korea launched its first single-stock leveraged ETFs - 16 products engineered to move twice as much as Samsung or SK Hynix each day. They drew about 28 trillion won in three days. By late June these products accounted for roughly 31 percent of Samsung's daily trading volume and 38 percent of SK Hynix's. The country's top financial regulator publicly said he regretted not blocking them. Leverage is mechanical: when both stocks dropped near 13 percent on 23 June, the 2x ETFs had to dump about 6 billion dollars of shares in a single session just to reset their ratios. That is forced selling feeding on itself, not a verdict on AI."
+        },
+        {
+          "type": "chart",
+          "chartId": "etf-volume"
+        },
+        {
+          "type": "p",
+          "text": "3. Quarter-end, margined retail. Late June is when leveraged retail accounts get squeezed and forced to sell, regardless of what anyone thinks a stock is worth."
+        },
+        {
+          "type": "callout",
+          "label": "The tell",
+          "text": "Micron, the American memory maker and direct competitor, rose on adjacent selloff days, jumping about 11 percent to a record near $1,089. Both Micron and SK Hynix say their high-bandwidth memory is sold out through all of 2026 under binding contracts. If the AI-memory business were breaking, the order books would be the first place you would see it, and they are full."
+        },
+        {
+          "type": "p",
+          "text": "So the cleanest reading is uncomfortable for the panic narrative: the economic effect (chip demand) looks fine; the market reaction (positioning, leverage, index mechanics) did the damage. But notice what that does to our question. It does not refute the concentration finding - it sharpens it. If the selloff was plumbing rather than fundamentals, then the 55 percent chip weight is not the cause. It is the amplifier: the thing that turned an ETF-and-flows squeeze in two stocks into a national circuit breaker."
+        }
+      ]
+    },
+    {
+      "heading": "Competing explanations",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Explanation one: a fundamental AI wobble. The simplest story is that investors are repricing AI itself - if data-center spending slows, memory demand softens, and the two most AI-exposed stocks on earth get hit first. Support: the selloff clustered in AI-memory names, came amid a global tech pullback (the Nasdaq fell sharply on adjacent sessions), and the magnitude looks like fear about a forecast, not a technical blip."
+        },
+        {
+          "type": "p",
+          "text": "Explanation two: a flows-and-plumbing squeeze wearing a chip costume. The competing read says nothing about chip demand changed; what changed was positioning. The MSCI non-upgrade unwound a front-run foreign trade, brand-new 2x single-stock ETFs forced mechanical selling, and quarter-end margin calls piled on. Support: Micron hit a record while SK Hynix cratered, HBM is contractually sold out for 2026, and the leveraged ETFs alone now move a third of the volume in both stocks. Under this reading the fundamentals are intact and the concentration is the amplifier."
+        },
+        {
+          "type": "p",
+          "text": "The evidence leans toward the second, but the two are not mutually exclusive: fear about AI may have lit the match, while leverage and concentration poured on the fuel. Either way, the concentration finding stands - it is the transmission mechanism in both stories."
+        }
+      ]
+    },
+    {
+      "heading": "The precedent, and the live control case",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "We have seen a national index become a single company before."
+        },
+        {
+          "type": "p",
+          "text": "Nokia, Helsinki, 2000. At the peak of the telecom bubble Nokia was about 70 percent of the Helsinki exchange's market value. 'The Finnish stock market fell' and 'Nokia fell' were the same sentence, and when the bubble deflated the index spent years as a derivative of one company's fortunes. Korea's 55 percent is not yet Nokia's 70 percent, but it is the same structure: a national savings vehicle quietly reorganized around one theme."
+        },
+        {
+          "type": "p",
+          "text": "Taiwan, now. The live cousin is the TAIEX, where the chip foundry TSMC alone runs around 40 to 44 percent. Korea is the more extreme case because its concentration is split across a duo that can both fall at once - which is exactly what happened on Friday."
+        },
+        {
+          "type": "chart",
+          "chartId": "concentration"
+        },
+        {
+          "type": "p",
+          "text": "Where the analogy breaks: Nokia was one company in one product cycle, and Finland was a small economy. Korea's duo sits at the center of the global AI supply chain with contracted, sold-out demand, so a fundamental collapse is harder to engineer than a positioning shake-out. The risk is less '1990s Nokia bust' and more that a real downturn, whenever it comes, would be amplified far beyond what a diversified index would feel."
+        }
+      ]
+    },
+    {
+      "heading": "Who is exposed",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The KOSPI roughly doubled in 2026 to become one of the hottest major markets on earth - it first cleared 9,000 on 18 June, only to give much of it back in a brutal final fortnight. As it rose, foreigners left in record size: net selling crossed 103 trillion won this year, more than the 62 trillion of the 2008 financial crisis and the 25 trillion of the 2020 pandemic combined."
+        },
+        {
+          "type": "chart",
+          "chartId": "foreign-outflows"
+        },
+        {
+          "type": "p",
+          "text": "What kept the index aloft was domestic. Korean households poured an estimated 70 billion dollars in, buying what foreigners sold."
+        },
+        {
+          "type": "pullquote",
+          "text": "The index is 55 percent two chipmakers. And the marginal buyer holding it up is the Korean saver."
+        },
+        {
+          "type": "p",
+          "text": "Put the two findings together. Ordinary households have, mostly without choosing to, concentrated their wealth into a single wager on AI memory pricing - catching the falling knife from the foreign institutions who built the position and are now handing it back. Anyone holding a plain KOSPI index fund - pensions, retail accounts, passive savers - is far more exposed to two semiconductor stocks than the word 'index' suggests."
+        }
+      ]
+    },
+    {
+      "heading": "What happens next",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Base case (most likely): a choppy, range-bound stabilization. As the leveraged-ETF deleveraging completes and the regulator curbs the new products, forced selling fades while sold-out 2026 HBM contracts keep fundamentals firm. What would make this likelier: order books staying full (Micron and SK Hynix guidance intact) and no fresh foreign-outflow record."
+        },
+        {
+          "type": "p",
+          "text": "Upside case: foreigners return. If Seoul's July launch of 24-hour onshore FX trading works and the won becomes easier to settle, the MSCI developed-market path reopens, reviving the passive-inflow trade foreigners had front-run. What would make this likelier: smooth FX reform, a concrete MSCI watchlist signal, and foreign net buying turning positive."
+        },
+        {
+          "type": "p",
+          "text": "Downside case: the concentration bites for real. If AI capital spending actually slows and HBM contracts get renegotiated, the 55 percent chip weight would amplify a genuine fundamental decline into a deeper crash, with more circuit breakers and household losses concentrated in two names. What would make this likelier: any HBM order cancellation, a Micron or SK Hynix guidance cut, or another record week of foreign selling."
+        }
+      ]
+    },
+    {
+      "heading": "What would change this finding",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "The official close is the anchor. If a clean KRX decomposition put the chip duo under 50 percent of the point drop, the central claim fails. It does not, even on conservative weights.",
+            "Intraday vs close. Measured against the 8.19 percent trough rather than the 5.81 percent close, the absolute contributions are larger but the proportions are similar; the clock you choose changes the drama, not the finding.",
+            "Day-level flows disagree by source. The Korea Herald's intraday tally (as of 2:42pm) showed individuals net buying 3.77 trillion won against foreigners selling 3.11 trillion and institutions 0.73 trillion; other tallies run higher for the full session. We report the direction - heavy foreign selling, heavier retail buying - not a single contested figure."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The non-obvious point",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Every wire framed Friday as 'Korea -8%, AI-bubble fears.' But the economic signal (HBM demand) is up - Micron at a record, 2026 capacity sold out. What actually fell was not a forecast about chips; it was the unwinding of a foreign upgrade-trade, magnified by month-old 2x ETFs, through an index where two stocks are 55 percent of the weight."
+        },
+        {
+          "type": "p",
+          "text": "When the index is this concentrated, 'the stock market crashed' and 'memory chips had a bad day' stop being two events that happen to coincide. On 26 June they were the same event, told twice."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Anchored every figure to one spine - the Korea Exchange (KRX) official daily record - and used the official close (8,411.21, -519.09 points, -5.81 percent) rather than the intraday trough for any decomposition, because a moving number cannot be decomposed.",
+    "Computed each stock's contribution to the index as weight x return, the standard arithmetic for a market-cap-weighted index, using KRX market-cap weights (Samsung 28.34%, SK Hynix 26.42%, via Businesskorea, 19 Jun) and prior-close-consistent daily returns (Samsung -5.30%, SK Hynix -8.36%).",
+    "Stress-tested the central claim against lower, older KOSPI 200 weights (28.0% / 23.5%) to confirm the duo's share stays above the 50 percent falsification threshold; it lands at 59-64 percent.",
+    "Deliberately used the more conservative per-stock declines; steeper vendor figures (Trading Economics) would only raise the duo's share, so the claim rests on the weaker case.",
+    "Separated market reaction (foreign flows, leveraged-ETF mechanics, quarter-end margin) from economic effect (HBM demand) by cross-checking Micron's record and the sold-out-for-2026 order books.",
+    "Used one authoritative source per number; outlet reports were used only to cross-check, never as the primary figure, and source disagreements are flagged in the text rather than averaged away."
+  ],
+  "sources": [
+    {
+      "title": "KOSPI triggers circuit breaker again, June 26",
+      "publisher": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/more/261993168-stock-kospi-nekki-kioxia-samsung-skhynix-ai-openai-softbank-tradingkey",
+      "kind": "secondary"
+    },
+    {
+      "title": "KOSPI closes near 8,410 after circuit breaker; semiconductor shares slump",
+      "publisher": "Digital Today",
+      "url": "https://www.digitaltoday.co.kr/en/view/75359/kospi-closes-near-8410-after-circuit-breaker-triggered-semiconductor-shares-slump",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kospi drops ~5% after two days of gains",
+      "publisher": "Asia Business Daily",
+      "url": "https://www.asiae.co.kr/en/article/2026062616094801886",
+      "kind": "secondary"
+    },
+    {
+      "title": "Samsung, SK hynix top half of KOSPI market cap",
+      "publisher": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/05/27/samsung-sk-hynix-surge-alone-as-chip-duo-tops-half-of-kospi",
+      "kind": "data"
+    },
+    {
+      "title": "Samsung + SK Hynix nearly half of KOSPI market cap",
+      "publisher": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/jEs_Fp4BX0tZvRTv4JAl",
+      "kind": "secondary"
+    },
+    {
+      "title": "Why foreign investors are selling Kospi",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/08/kospi-sk-hynix-samsung-electronics-why-foreign-investors-are-selling.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Foreign investors offload $62B; KOSPI drops 8%",
+      "publisher": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/foreign-investors-sell-south-korean-stocks-kospi/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kospi 'Black Tuesday,' -9.99% to 8,204.06",
+      "publisher": "Bloomingbit",
+      "url": "https://en.bloomingbit.io/feed/news/114847",
+      "kind": "secondary"
+    },
+    {
+      "title": "AI sell-off; KOSPI circuit breaker, divided market",
+      "publisher": "TechTimes",
+      "url": "https://www.techtimes.com/articles/319013/20260624/ai-stock-selloff-hits-nasdaq-22-kospi-circuit-breaker-signals-a-divided-market.htm",
+      "kind": "secondary"
+    },
+    {
+      "title": "$900B vanishes in Korean chip stocks; AI breakdown doubted",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/24/900-billion-just-vanished-as-korean-chip-stocks-crater-but-the-squawk-crew-isnt-sold-on-an-ai-breakdown/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Nokia ~70% of Nasdaq Helsinki market cap at 2000 peak",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nokia",
+      "kind": "secondary"
+    },
+    {
+      "title": "The Kospi is up 100% in 2026, Goldman Sachs still sees more upside",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/03/the-kospi-is-up-100percent-in-2026-goldman-sachs-still-see-more-upside.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "KOSPI market-cap weights for Samsung and SK Hynix (19 Jun 2026)",
+      "publisher": "Businesskorea",
+      "url": "https://www.businesskorea.co.kr",
+      "kind": "data"
+    },
+    {
+      "title": "Single-stock leveraged ETFs' share of Samsung and SK Hynix daily volume",
+      "publisher": "The Herald Business",
+      "url": "https://biz.heraldcorp.com",
+      "kind": "data"
+    },
+    {
+      "title": "Foreign net selling of KOSPI stocks vs 2008 and 2020 (cumulative)",
+      "publisher": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com",
+      "kind": "data"
+    },
+    {
+      "title": "Samsung and SK Hynix daily price changes, 26 June 2026",
+      "publisher": "Trading Economics",
+      "url": "https://tradingeconomics.com/south-korea/stock-market",
+      "kind": "data"
+    },
+    {
+      "title": "TSMC share of the TAIEX index",
+      "publisher": "Focus Taiwan",
+      "url": "https://focustaiwan.tw",
+      "kind": "data"
+    },
+    {
+      "title": "Intraday investor net buy/sell tally, 26 June 2026",
+      "publisher": "The Korea Herald",
+      "url": "https://www.koreaherald.com",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "The reported magnitude of the 26 June move varies across outlets; the article anchors to the official KRX close (-5.81 percent) and treats the -8.19 percent intraday figure as the panic reading, not the settlement.",
+    "Market-cap weights are from 19 June (the most recent precise KRX reading available), not the 26 June close, so the exact weights on the day could differ by a fraction of a point - too small to change the finding.",
+    "Per-stock daily returns disagree across data vendors; the article uses the lower, prior-close-consistent figures, which understates rather than inflates the duo's contribution.",
+    "Same-day investor flow tallies (foreign, institutional, retail) differ by source and time of capture, so the article reports direction rather than a single contested number.",
+    "The $70 billion household-inflow and 103-trillion-won foreign-outflow figures are period estimates from secondary reporting, not a single audited primary series."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "date": "2026-06-27",
+  "byline": "Cumulant Research"
+}
