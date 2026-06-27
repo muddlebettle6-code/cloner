@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Always-on Cloudflare Tunnel for the newsroom dashboard. Serves
+  dashboard.cumulant.org -> http://localhost:4173 (see ~/.cloudflared/config.yml).
+
+  Install:
+    cp deploy/com.cumulant.tunnel.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.cumulant.tunnel.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cumulant.tunnel</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/cloudflared</string>
+        <string>tunnel</string>
+        <string>run</string>
+        <string>cumulant-dash</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>HOME</key>
+        <string>/Users/aryanpatel</string>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/tunnel.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/aryanpatel/cloner/scripts/tunnel.err.log</string>
+</dict>
+</plist>
