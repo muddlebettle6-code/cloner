@@ -28,7 +28,11 @@ const MAG = "#ff2d92";
 const W = 1080, H = 1350;
 const NEUE = readFileSync(join(PUB, "fonts", "NeueHaasUnica-Regular.woff2")).toString("base64");
 
-const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const htmlEsc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// spell out financial unit abbreviations: $44B -> $44 billion, 76.8M -> 76.8 million
+const UNIT = { k: "thousand", m: "million", mn: "million", b: "billion", bn: "billion", t: "trillion", tn: "trillion", trn: "trillion", thousand: "thousand", million: "million", billion: "billion", trillion: "trillion" };
+const expandUnits = (s) => String(s ?? "").replace(/(\$?\d[\d,.]*)\s*(billion|trillion|million|thousand|bn|tn|trn|mn|[KMBT])\b/g, (full, num, u) => { const w = UNIT[u.toLowerCase()]; return w ? `${num} ${w}` : full; });
+const esc = (s) => htmlEsc(expandUnits(s));
 const clip = (s, n) => { s = String(s ?? ""); return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, "") + "…"; };
 const arg = (n, d) => { const i = process.argv.indexOf(`--${n}`); return i >= 0 && process.argv[i + 1] && !process.argv[i + 1].startsWith("--") ? process.argv[i + 1] : d; };
 const fmtNum = (v) => (typeof v === "number" ? (Number.isInteger(v) ? v : v.toFixed(2)) : v);
@@ -68,20 +72,6 @@ function titleSlide(title, body, img, posHint = "bl") {
   const size = len > 150 ? 50 : len > 105 ? 60 : len > 64 ? 72 : len > 32 ? 88 : 104;
   const css = `.title{font-size:${size}px;}${POSCSS[pos] || ""}.scr{position:absolute;inset:0;z-index:1;background:${scrimBg(pos)};}`;
   return page(css, `${img ? `<img class="photo" src="${img}">` : ""}<div class="scr"></div>${wm}<div class="content"><div class="title">${esc(title)}</div>${body ? `<div class="body">${esc(body)}</div>` : ""}</div>${arrow}`);
-}
-
-// background photo -> pink text -> cutout subject on top; text dips subtly behind
-function behindSlide(title, bg, cut, subTop = 0.2) {
-  const len = String(title).length;
-  const size = len > 62 ? 80 : len > 36 ? 100 : 126;
-  const lines = Math.max(1, Math.ceil(len / 15));
-  const textH = lines * size * 0.98;
-  const topPx = Math.max(120, Math.round(subTop * H + size * 0.4 - textH));
-  const css = `.bgi{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.66) saturate(1.08);}
-  .fg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3;filter:saturate(1.12) contrast(1.05);}
-  .topscrim{position:absolute;left:0;right:0;top:0;height:${Math.round(topPx + textH * 0.6)}px;background:linear-gradient(rgba(0,0,0,.5),transparent 78%);z-index:1;}
-  .bt{position:absolute;left:60px;right:60px;top:${topPx}px;z-index:2;color:${MAG};font-size:${size}px;line-height:.98;letter-spacing:-.03em;text-shadow:0 0 16px rgba(0,0,0,.78),0 0 42px rgba(0,0,0,.62),0 3px 30px rgba(0,0,0,.6);}`;
-  return page(css, `<img class="bgi" src="${bg}"><div class="bt">${esc(title)}</div><img class="fg" src="${cut}"><div class="topscrim"></div>${wm}${arrow}`);
 }
 
 // ---- chart slides (the research) — pink/white over a darkened photo ------- //
@@ -186,7 +176,7 @@ function getCopy(a) {
   try {
     const prompt = `You are the social editor for Cumulant Research (independent, AI-assisted financial newsroom). Write a retention copy pack for a carousel. Rules: curiosity-gap hooks (tension + withheld why), plain English, no hype, no investment advice, no em dashes, no surrounding quotation marks. Short.\n`
       + `HEADLINE: ${a.headline}\nDECK: ${a.deck || ""}\nWHY IT MATTERS: ${a.whyItMatters || ""}\nTAKEAWAYS: ${(a.takeaways || []).slice(0, 3).join(" | ")}\n\n`
-      + `Return STRICT JSON: {"hook":"cover, 5-9 words, open loop","restate":"restate the stakes in one line, <=11 words","promise":"one setup line that raises a question","turn":"the most quotable here-is-what-nobody-priced-in line, short","loopback":"one line echoing the hook now answered","cta":"ONE save or share prompt","behindLine":"a punchy 3 to 6 word fragment for a photo slide"}. Output ONLY JSON.`;
+      + `Return STRICT JSON: {"hook":"cover line, 6-11 words: genuinely hooky (curiosity or tension), but the reader must immediately know WHAT it is about - name the company, market, asset, or topic. Not vague or cryptic. Use digits with the unit word (e.g. $15.7 billion, $77 million); never write the number itself in words; never use bn or M","restate":"restate the stakes in one line, <=11 words, topic clear","promise":"one setup line that raises a question","turn":"the most quotable here-is-what-nobody-priced-in line, short","loopback":"one line echoing the hook now answered","cta":"ONE save or share prompt","behindLine":"a punchy 3 to 6 word fragment"}. Output ONLY JSON.`;
     const out = execFileSync(CLAUDE, ["-p"], { input: prompt, encoding: "utf8", timeout: 90000 });
     const m = out.replace(/```json?/g, "").replace(/```/g, "").match(/\{[\s\S]*\}/);
     if (m) { const j = JSON.parse(m[0]); return { ...fb, ...Object.fromEntries(Object.entries(j).filter(([, v]) => v && String(v).trim())) }; }
@@ -203,32 +193,6 @@ function gatherImages(a) {
       .forEach((f) => imgs.push("file://" + join(ROOT, ".social-assets", f)));
   } catch { /* none */ }
   return imgs.length ? imgs : [""];
-}
-
-const CUTBIN = join(TMP, "subject-cutout");
-function ensureCutBin() {
-  if (existsSync(CUTBIN)) return true;
-  try { mkdirSync(TMP, { recursive: true }); execFileSync("swiftc", ["-O", join(ROOT, "scripts", "subject-cutout.swift"), "-o", CUTBIN], { stdio: "ignore", timeout: 180000 }); return existsSync(CUTBIN); }
-  catch { return false; }
-}
-function cutoutFor(imgUrl, slug, idx) {
-  if (!imgUrl) return null;
-  const cut = join(ROOT, ".social-assets", `${slug}-cut-${idx}.png`);
-  if (existsSync(cut)) return "file://" + cut;
-  if (!ensureCutBin()) return null;
-  try { execFileSync(CUTBIN, [imgUrl.replace("file://", ""), cut], { stdio: "ignore", timeout: 60000 }); } catch { return null; }
-  return existsSync(cut) ? "file://" + cut : null;
-}
-function subjectInfo(cutUrl) {
-  if (!cutUrl) return { cov: 0, top: 0.2 };
-  try {
-    const p = cutUrl.replace("file://", "");
-    const out = execFileSync("python3", ["-c",
-      `from PIL import Image\nim=Image.open(${JSON.stringify(p)}).convert("RGBA")\na=im.getchannel("A");h=a.histogram();t=im.width*im.height;bb=a.getbbox()\nprint(round((t-h[0])/t,3), round(bb[1]/im.height,3) if bb else 0.2)`],
-      { encoding: "utf8", timeout: 20000 }).trim();
-    const [cov, top] = out.split(/\s+/).map(Number);
-    return { cov: cov || 0, top: Number.isFinite(top) ? top : 0.2 };
-  } catch { return { cov: 0, top: 0.2 }; }
 }
 
 // Which third of the image is darkest -> place the text there (legibility + variety).
@@ -253,15 +217,8 @@ function scrimBg(pos) {
 
 function build(a, copy, images) {
   const img = (i) => images[i % images.length];
-  const cuts = images.map((im, i) => cutoutFor(im, a.slug, i));
-  const infos = cuts.map(subjectInfo);
-  const good = (i) => { const k = i % images.length; return cuts[k] && infos[k].cov >= 0.14 && infos[k].cov <= 0.6; };
-  // photo slide: text-behind-subject depth where a subject reads, else colorful + varied position
-  const photoD = (text, i, pos, short, body) => {
-    const k = i % images.length;
-    return good(i) ? behindSlide(clip(short || text, 40), img(k), cuts[k], infos[k].top)
-                   : titleSlide(clip(text, 170), body || null, img(k), pos);
-  };
+  // colorful photo slide; text placed over the image's darkest area, position varies
+  const photoD = (text, i, pos, _short, body) => titleSlide(clip(text, 170), body || null, img(i), pos);
 
   // chart slides — the research (only what the article actually has), capped
   const C = a.charts || [];
