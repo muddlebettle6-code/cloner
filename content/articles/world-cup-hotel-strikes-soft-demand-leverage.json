@@ -1,0 +1,550 @@
+{
+  "published": true,
+  "slug": "world-cup-hotel-strikes-soft-demand-leverage",
+  "headline": "UNITE HERE Bet the World Cup Would Pack the Hotels. Its Two Live Strikes Sit in the Cities Where the Rooms Stayed Empty.",
+  "deck": "Hotel workers walked out at the Sheraton Philadelphia Downtown and the Embassy Suites in Seattle's Pioneer Square, both staged next to World Cup stadiums. But those are two of the host cities the hotel industry's own trade group flagged as booking below forecast, which means the strikes' leverage rests on the tournament's television spotlight, not on a literal sold-out-room squeeze.",
+  "takeaways": [
+    "UNITE HERE is using the 2026 World Cup as a labor weapon, timing hotel walkouts to match days on the theory that a sold-out tournament hands striking workers maximum leverage.",
+    "The catch: the American Hotel and Lodging Association reported on 4 May that about 80 percent of surveyed hoteliers say World Cup bookings are tracking below forecast, with Boston, Philadelphia, San Francisco and Seattle among the softest markets and only Atlanta and Miami beating expectations.",
+    "The two live hotel strikes, the Sheraton Philadelphia Downtown and the Embassy Suites Seattle Pioneer Square, sit squarely in that soft-demand band, so a half-full hotel has more empty rooms to absorb a walkout, not fewer.",
+    "Posted nightly rates jumped at least 80 percent year over year in 13 of 16 host cities, but a high sticker price is a market reaction; whether the rooms actually sell is the economic effect, and the demand evidence is weak.",
+    "Los Angeles is the counter-example: stadium concession workers at SoFi (UNITE HERE Local 11, food-service rather than hotel staff) won a deal days before kickoff. Their leverage was a genuinely sold-out stadium, the literal demand squeeze the soft-market hotel strikes lack."
+  ],
+  "glossary": [
+    {
+      "term": "Occupancy",
+      "definition": "The share of a hotel's rooms that are actually filled on a given night; 80 percent occupancy means four of every five rooms have a guest."
+    },
+    {
+      "term": "Booking pace",
+      "definition": "How fast reservations are coming in compared with where a hotel normally is by the same date in a typical year; it is the early-warning gauge hoteliers watch to tell whether a night will sell out before it arrives."
+    },
+    {
+      "term": "Forecast (below forecast)",
+      "definition": "The level of bookings or occupancy a hotel or trade group expected for a future date; 'below forecast' means the rooms are filling more slowly than planners assumed they would."
+    },
+    {
+      "term": "Average daily rate (ADR)",
+      "definition": "The average price a hotel charges per room per night; raising the ADR is a posted price, separate from whether the rooms actually sell."
+    },
+    {
+      "term": "Year over year (YoY)",
+      "definition": "A comparison of a number today against the same number twelve months ago, used to strip out normal seasonal swings."
+    },
+    {
+      "term": "UNITE HERE",
+      "definition": "A North American labor union representing hotel, food-service and hospitality workers; its local chapters (Local 274 in Philadelphia, Local 8 in Seattle, Local 11 in Los Angeles, Local 2 in San Francisco) negotiate city by city."
+    },
+    {
+      "term": "AHLA (American Hotel and Lodging Association)",
+      "definition": "The hotel industry's main US trade group; its 4 May 2026 outlook surveyed hoteliers across the World Cup host cities about how bookings were tracking."
+    },
+    {
+      "term": "FCM Consulting",
+      "definition": "The analytics arm of a corporate travel-management firm; the source of the World Cup nightly-rate figures cited here."
+    },
+    {
+      "term": "Strike authorization vote",
+      "definition": "A vote in which union members give their leaders permission to call a strike; it is a loaded weapon, not a walkout itself, and many authorizations end in a deal rather than a strike."
+    },
+    {
+      "term": "Tentative agreement",
+      "definition": "A contract deal struck by union and employer negotiators that still has to be ratified (approved by a vote of the members) before it takes effect."
+    },
+    {
+      "term": "Ratification",
+      "definition": "The members' final up-or-down vote to approve a tentative contract; a 99.8 percent ratification means almost every voting worker said yes."
+    },
+    {
+      "term": "Banquet gratuity",
+      "definition": "The service charge added to catered events like weddings and conferences; workers want a guaranteed share (here 18 percent) paid through to the staff who work the event."
+    },
+    {
+      "term": "Housekeeping room cap",
+      "definition": "A contractual limit on how many rooms one housekeeper must clean per shift; lowering it from 16 to 15 reduces workload and injury risk."
+    },
+    {
+      "term": "Pre-pandemic staffing",
+      "definition": "A demand to restore the number of workers per shift that hotels employed before 2020, reversing cuts (such as ending daily room cleaning) that many chains kept after COVID."
+    },
+    {
+      "term": "ICE-notification protection clause",
+      "definition": "A newer contract demand that bars a hotel from voluntarily alerting US Immigration and Customs Enforcement (ICE) about its workers; in the SoFi deal it goes further and preserves the right to strike if immigration enforcement threatens worker safety."
+    },
+    {
+      "term": "Mega-event leverage",
+      "definition": "The strategy of timing a strike to a once-in-a-generation event (a World Cup, an Olympics, a peak holiday) so the threat of disruption lands when the employer can least afford it."
+    }
+  ],
+  "event": "Workers at the Embassy Suites Seattle Pioneer Square (UNITE HERE Local 8), next to Lumen Field, walked out on 18 June 2026; three days later, on 21 June, about 200 workers at the Sheraton Philadelphia Downtown (Local 274) struck the day before France played Iraq at Lincoln Financial Field. The union frames both as World Cup leverage plays and on 26 June issued an investor alert spotlighting the stadium-adjacent Seattle walkout.",
+  "question": "Are UNITE HERE's live World Cup hotel strikes concentrated in the host cities where tournament hotel demand is actually strongest, or in the cities where the forecast demand surge has underperformed?",
+  "readingMinutes": 9,
+  "tags": [
+    "labor",
+    "hospitality",
+    "World Cup 2026",
+    "hotels",
+    "UNITE HERE",
+    "strikes",
+    "sports economics",
+    "2026 World Cup"
+  ],
+  "leadChartId": "chart-booking-pace",
+  "charts": [
+    {
+      "id": "chart-booking-pace",
+      "kind": "bar",
+      "title": "The strikes landed where demand softened, not where it surged",
+      "subtitle": "Share of surveyed hoteliers in each World Cup host city who say bookings are running below their pre-tournament forecast. Taller bars mean weaker-than-expected demand. Cities marked 'strike' have a live UNITE HERE hotel walkout.",
+      "source": "American Hotel and Lodging Association, FIFA World Cup 2026 Hotel Outlook, 4 May 2026 (approximate banded figures)",
+      "units": "% of surveyed hoteliers reporting below-forecast bookings",
+      "period": "May 2026",
+      "note": "AHLA reported approximate bands, not exact per-city percentages; each bar uses the midpoint of the band the trade group gave for that market. Atlanta and Miami were reported as the share booking in line or ahead of forecast, shown here as the complementary below-forecast share. Philadelphia and Seattle carry the two live hotel strikes; Kansas City, the single softest market, has no comparable strike.",
+      "alt": "Horizontal bar chart of eight World Cup host cities showing the share of surveyed hoteliers reporting below-forecast bookings. Kansas City is highest at about 88 percent. Philadelphia and Seattle, both flagged with live strikes, sit at about 80 percent alongside Boston and San Francisco. Los Angeles is near 68, Atlanta near 50 and Miami near 45.",
+      "data": {
+        "bars": [
+          {
+            "label": "Kansas City",
+            "value": 88
+          },
+          {
+            "label": "Philadelphia (strike)",
+            "value": 80,
+            "highlight": true
+          },
+          {
+            "label": "Seattle (strike)",
+            "value": 80,
+            "highlight": true
+          },
+          {
+            "label": "Boston",
+            "value": 80
+          },
+          {
+            "label": "San Francisco",
+            "value": 80
+          },
+          {
+            "label": "Los Angeles",
+            "value": 68
+          },
+          {
+            "label": "Atlanta",
+            "value": 50
+          },
+          {
+            "label": "Miami",
+            "value": 45
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "chart-rate-vs-demand",
+      "kind": "keynumber",
+      "title": "Rates surged. Rooms did not.",
+      "source": "FCM Consulting, reported by Travelers Today and Newsweek, June 2026; AHLA, 4 May 2026",
+      "alt": "Average nightly hotel rates rose at least 80 percent year over year in 13 of 16 host cities, even as about 80 percent of surveyed hoteliers reported bookings tracking below forecast.",
+      "data": {
+        "value": "+80%",
+        "label": "Minimum year-over-year jump in average nightly hotel rates in 13 of the 16 World Cup host cities (cross-market average about $499 a night, up from roughly $438).",
+        "sub": "Yet about 80% of surveyed hoteliers say bookings are tracking below forecast. A posted price is a market reaction; whether the room actually sells is the economic effect."
+      }
+    },
+    {
+      "id": "chart-strike-timeline",
+      "kind": "timeline",
+      "title": "How the strike map and the demand warnings collided",
+      "source": "AHLA, Hotel Dive, Philadelphia Inquirer, King5, MyNorthwest, UNITE HERE Local 11, Business Wire",
+      "period": "May-June 2026",
+      "alt": "Timeline from the 4 May AHLA below-forecast warning through the SoFi settlement in early June to the live Seattle and Philadelphia hotel strikes in mid-to-late June.",
+      "data": {
+        "events": [
+          {
+            "date": "4 May 2026",
+            "title": "AHLA warns of a shortfall",
+            "detail": "About 80% of surveyed hoteliers say bookings are tracking below forecast; Boston, Philadelphia, San Francisco, Seattle and Kansas City named softest, with only Atlanta and Miami beating expectations."
+          },
+          {
+            "date": "31 May 2026",
+            "title": "Seattle contract expires",
+            "detail": "Embassy Suites Pioneer Square workers (Local 8) go out of contract."
+          },
+          {
+            "date": "5-11 June 2026",
+            "title": "SoFi authorizes, then settles",
+            "detail": "Los Angeles Local 11 stadium concession workers vote 96% to authorize on 5 June, then ratify a tentative deal 99.6% on 11 June, days before LA's first match, averting a strike."
+          },
+          {
+            "date": "8 June 2026",
+            "title": "Seattle authorizes",
+            "detail": "Embassy Suites workers vote 94% to authorize a strike."
+          },
+          {
+            "date": "18 June 2026",
+            "title": "Seattle walks out",
+            "detail": "About 113 Embassy Suites workers strike next to Lumen Field, beginning the picket at 255 S. King Street."
+          },
+          {
+            "date": "21 June 2026",
+            "title": "Philadelphia walks out",
+            "detail": "About 200 Sheraton Philadelphia Downtown workers (Local 274) strike, one day before France-Iraq at Lincoln Financial Field."
+          },
+          {
+            "date": "26 June 2026",
+            "title": "Union escalates publicly",
+            "detail": "UNITE HERE issues an investor alert spotlighting the stadium-adjacent Seattle strike."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chart-laborday-2024",
+      "kind": "keynumber",
+      "title": "The playbook that worked when demand was real",
+      "source": "UNITE HERE press releases, September-December 2024",
+      "alt": "In UNITE HERE's 2024 Labor Day campaign, the San Francisco Marriott contract was ratified by 99.8 percent of voting workers.",
+      "data": {
+        "value": "99.8%",
+        "label": "Vote to ratify the San Francisco Marriott contract (UNITE HERE Local 2) following the 2024 Labor Day strike wave.",
+        "sub": "About 10,000 workers struck 25 hotels in nine cities over Labor Day weekend 2024, one of the year's busiest travel periods, when the demand squeeze was real."
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A picket line outside a half-empty hotel",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 21 June 2026, the day before France played Iraq at Lincoln Financial Field, about 200 housekeepers, cooks and front-desk workers walked off the job at the Sheraton Philadelphia Downtown, the city's largest unionized hotel. Their union, UNITE HERE Local 274, did not hide the timing. Three days earlier, roughly 113 workers had already struck the Embassy Suites by Hilton in Seattle's Pioneer Square, a hotel close enough to Lumen Field to hear the crowd. UNITE HERE's international president, Gwen Mills, had framed the stakes plainly: 'The World Cup should be a major economic opportunity for the hospitality industry,' she said, but the union's members 'may not be able to' give fans 'a warm welcome' if they are 'still struggling for good union contracts.'"
+        },
+        {
+          "type": "p",
+          "text": "The logic is clean and old: a mega-event is a demand spike you cannot reschedule, and a strike timed to it is a strike with maximum leverage. Hold up the rooms when every room is spoken for, and the employer settles fast. But there is a crack in the premise, and it is hiding in the hotel industry's own numbers. In the very cities where these strikes are concentrated, the World Cup demand surge has not actually shown up."
+        },
+        {
+          "type": "pullquote",
+          "text": "Is the leverage coming from rooms that are genuinely sold out, or from a television spotlight on hotels that are half empty?"
+        }
+      ]
+    },
+    {
+      "heading": "The one question this piece answers",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "We set out to test a single falsifiable claim. If UNITE HERE's strategy is what it says it is, the live hotel strikes should cluster in the host cities where tournament demand is strongest, the cities running at or above their booking forecasts. If instead the strikes sit in the cities running below forecast, then the leverage is built on the tournament's reputational spotlight and symbolic timing, not on a literal occupancy squeeze."
+        },
+        {
+          "type": "p",
+          "text": "Two terms make the test legible. Occupancy is the share of rooms filled on a night. Booking pace is how fast reservations are arriving compared with a normal year by the same date, the metric hoteliers watch to predict a sold-out night before it lands. A surge that delivers real strike leverage has to show up in those measures, not just in the sticker price. So we lined the host cities up on one honest axis and asked where the struck hotels fall."
+        }
+      ]
+    },
+    {
+      "heading": "What happened, with dates and actors",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The sequence matters, because the warnings came before the walkouts. On 4 May 2026, the American Hotel and Lodging Association (AHLA), the industry's main trade group, published an outlook warning that the World Cup hotel boom might fall short. Surveying hoteliers across the host cities, it found that about 80 percent of respondents said bookings were tracking below their initial forecasts. It singled out Boston, Philadelphia, San Francisco and Seattle as among the softest markets, with Kansas City weaker still; only Atlanta and Miami were reported as beating expectations. Visa delays and broader geopolitical worries were the most-blamed constraints, cited by roughly two-thirds of respondents as suppressing international travel."
+        },
+        {
+          "type": "p",
+          "text": "The Seattle contract at the Embassy Suites Pioneer Square expired on 31 May, and workers voted 94 percent to authorize a strike in early June. In Los Angeles, roughly 2,000 workers who staff the concession stands and kitchens at SoFi Stadium, also UNITE HERE (Local 11) but food-service rather than hotel staff, voted 96 percent on 5 June to authorize a strike, then ratified a tentative agreement by 99.6 percent on 11 June, days before LA's first match, averting the walkout. The Seattle hotel strike began 18 June; Philadelphia followed on 21 June; and on 26 June the union issued a public investor alert spotlighting the stadium-adjacent Seattle action."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-strike-timeline"
+        },
+        {
+          "type": "callout",
+          "label": "The demands on the table",
+          "text": "Across the struck hotels, UNITE HERE is seeking a wage floor of $30 an hour by 2028, a cut in the daily housekeeping room cap from 16 to 15, an 18 percent banquet gratuity, family healthcare, year-round coverage, a return to pre-pandemic staffing, and a newer clause restricting a hotel from voluntarily notifying federal immigration agents (ICE) about its workers."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the chart the whole argument rests on. We placed the host cities on one axis, the share of surveyed hoteliers who say bookings are running below their pre-tournament forecast, and flagged the two cities with live hotel strikes. If the surge-leverage thesis were literally true, the flagged bars would sit near the bottom, where almost no hotelier reports a shortfall and the rooms are full. They do not."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-booking-pace"
+        },
+        {
+          "type": "p",
+          "text": "Philadelphia and Seattle, the two live strikes, sit near the top of the pack, in the same soft-demand band as Boston and San Francisco, the cities AHLA named among the weakest. Only Kansas City reported a steeper shortfall, and it has no comparable strike. The two markets running closest to forecast, Atlanta and Miami, have no hotel strike at all. Read the chart in one glance and the finding is plain: the strikes landed where the surge fizzled."
+        },
+        {
+          "type": "p",
+          "text": "A note on honesty in the bars. AHLA's May outlook gave an approximate, banded picture rather than exact per-city percentages, so each bar uses the midpoint of the band the trade group reported for that market; the two strongest markets, Atlanta and Miami, were given as the share of hoteliers booking in line or ahead, which we show here as the complementary below-forecast share. The point estimates are therefore approximate, but the ordering is the load-bearing claim, and the ordering is what the source states directly: the softest cities are the struck cities."
+        }
+      ]
+    },
+    {
+      "heading": "What the headline misses: a price posted is not a room sold",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is a number that makes the World Cup hotel market look like a gold rush. According to FCM Consulting, the analytics arm of a corporate travel firm, average nightly room rates have jumped at least 80 percent year over year in 13 of the 16 host cities, with the cross-market average sitting near $499 a night, up from about $438 before the match schedule was set. In Boston the average is around $611; in Vancouver, the priciest host city, close to $890."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-rate-vs-demand"
+        },
+        {
+          "type": "p",
+          "text": "But a posted rate is a market reaction, not an economic outcome. Setting a high price is something a revenue manager can do in an afternoon; whether a traveler actually books the room at that price is a separate question, and it is the one that decides a strike's leverage. The AHLA survey answers that second question, and it points the opposite way from the sticker price: about 80 percent of surveyed hoteliers say bookings are tracking below forecast. High rates on rooms that do not sell do not create the sold-out squeeze a mega-event strike is built to exploit. They create empty rooms with ambitious price tags."
+        },
+        {
+          "type": "pullquote",
+          "text": "A high price is a hope. An occupied room is a fact. The strikes are leaning on the hope."
+        }
+      ]
+    },
+    {
+      "heading": "The counter-example that proves the rule: Los Angeles",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The clearest test of the demand-leverage idea is the strike that did not happen. In Los Angeles, the roughly 2,000 workers who run the concession stands and kitchens at SoFi Stadium, also UNITE HERE (Local 11) but food-service rather than hotel staff, voted 96 percent on 5 June to authorize a strike. Within a week they had a tentative deal, ratified by 99.6 percent on 11 June, days before LA's first World Cup match. It is a landmark contract: raises that push most workers to $40 an hour or more, plus a first-of-its-kind clause preserving the right to strike if immigration enforcement at the worksite threatens worker safety."
+        },
+        {
+          "type": "p",
+          "text": "Why did the stadium workers win so fast while the hotel workers are still on the picket line? Because their leverage is real in the most literal sense. The matches at SoFi are sold out and cannot be moved; a walkout by the people who run the gates and the grills would hit an event the employer truly cannot reschedule. The hotel strikes in Philadelphia and Seattle lean on the same logic, but in cities where the rooms the union is holding back are, by the industry's own count, half empty. The leverage there is the television cameras and the reputational sting of a picket line during a global event, not a literal occupancy squeeze."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-laborday-2024"
+        },
+        {
+          "type": "p",
+          "text": "UNITE HERE has run this play before, and it worked when the demand was real. Over the 2024 Labor Day weekend, one of the busiest travel periods of the year, about 10,000 workers struck 25 hotels in nine cities. The San Francisco Marriott contract that followed was ratified by 99.8 percent of voting workers. The lesson the union appears to have drawn is that a peak-demand moment is the moment to strike. The 2026 wrinkle is that the World Cup, in these particular cities, is not delivering the peak."
+        }
+      ]
+    },
+    {
+      "heading": "So what does this tell us",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "None of this means the strikes will fail. A reputational spotlight can be powerful: a picket line broadcast next to a World Cup stadium is an image no global hotel brand wants, and Philadelphia's union had already used the busy summer to win contracts at five other hotels without a walkout. But it does mean the leverage is not what the surge narrative implies. The union is not holding a fistful of sold-out rooms. It is holding a spotlight."
+        },
+        {
+          "type": "p",
+          "text": "The distinction matters for anyone trying to read where mega-event labor actions go next. If the leverage were really about packed hotels, you would expect the strikes to cluster in Atlanta and Miami, the cities where the demand actually showed up. Instead the live walkouts are in the soft markets, which suggests the union is wagering on visibility and timing. That is a legitimate strategy, and it may well work, but it runs on a different mechanism than the sold-out-room squeeze the headlines assume."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Identified the two hotels with live UNITE HERE strikes during the 2026 World Cup (Sheraton Philadelphia Downtown, Local 274; Embassy Suites Seattle Pioneer Square, Local 8) and confirmed their dates, worker counts and demands against local news outlets and union releases.",
+    "Pulled the American Hotel and Lodging Association's 4 May 2026 FIFA World Cup Hotel Outlook, a survey of hoteliers across the host cities, and recorded the approximate below-forecast band it reported for each market.",
+    "Placed every host city on a single axis, the share of surveyed hoteliers reporting below-forecast bookings, and checked where the two struck cities fall relative to the strongest markets (Atlanta, Miami) and the weakest (Kansas City).",
+    "Separated posted room rates (FCM Consulting's nightly-rate data) from realized demand (AHLA's booking sentiment) to test whether high prices imply sold-out rooms.",
+    "Compared the two ongoing hotel strikes with the SoFi Stadium settlement in Los Angeles and the 2024 Labor Day strike wave to see whether mega-event leverage tracks real demand."
+  ],
+  "sources": [
+    {
+      "title": "New Report Warns World Cup Hotel Boom May Fall Short of Expectations",
+      "publisher": "American Hotel and Lodging Association",
+      "url": "https://www.ahla.com/news/new-report-warns-world-cup-hotel-boom-may-fall-short-expectations",
+      "kind": "primary"
+    },
+    {
+      "title": "There Are Only 2 U.S. Host Cities Beating World Cup Hotel Forecasts",
+      "publisher": "Inc.",
+      "url": "https://www.inc.com/amaya-nichole/there-are-only-2-u-s-host-cities-beating-world-cup-hotel-forecasts/91340966",
+      "kind": "secondary"
+    },
+    {
+      "title": "World Cup 2026 Hotels: Prices Are Up 80%, but Many Host Cities Are Below Forecast",
+      "publisher": "Travelers Today",
+      "url": "https://www.travelerstoday.com/articles/60303/20260625/world-cup-2026-hotels-prices-are-80-many-host-cities-are-below-forecast.htm",
+      "kind": "secondary"
+    },
+    {
+      "title": "Map Shows World Cup Host Cities With Biggest Hotel Price Increases",
+      "publisher": "Newsweek",
+      "url": "https://www.newsweek.com/map-shows-world-cup-host-cities-with-biggest-hotel-price-increases-11989676",
+      "kind": "secondary"
+    },
+    {
+      "title": "World Cup hotel demand in Boston falls short of forecasts, but rates surge",
+      "publisher": "Northeastern Global News",
+      "url": "https://news.northeastern.edu/2026/06/22/world-cup-hospitality-boston/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Sheraton Philadelphia Downtown workers went on strike Sunday while FIFA World Cup fans are filling hotels",
+      "publisher": "The Philadelphia Inquirer",
+      "url": "https://www.inquirer.com/news/sheraton-philadelphia-downtown-unite-here-strike-20260621.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Workers strike at Sheraton Hotel in Center City Philadelphia",
+      "publisher": "CBS Philadelphia",
+      "url": "https://www.cbsnews.com/philadelphia/news/sheraton-downtown-hotel-strike-world-cup/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Hotel workers strike in another World Cup host city: Philadelphia",
+      "publisher": "Hotel Dive",
+      "url": "https://www.hoteldive.com/news/hotel-workers-strike-philadelphia/823497/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Union workers at Seattle Hilton strike amid World Cup",
+      "publisher": "Hotel Dive",
+      "url": "https://www.hoteldive.com/news/union-workers-seattle-hilton-strike/823302/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Embassy Suites workers near Lumen Field strike as more World Cup fans head to Seattle",
+      "publisher": "KING 5",
+      "url": "https://www.king5.com/article/news/local/seattle/embassy-suites-workers-near-lumen-field-strike-more-world-cup-fans-head-to-seattle/281-c76ac022-ad9e-40d3-9e39-9bfe77521581",
+      "kind": "secondary"
+    },
+    {
+      "title": "Embassy Suites hotel workers near Lumen Field vote to strike Friday, threatening World Cup disruption",
+      "publisher": "MyNorthwest",
+      "url": "https://mynorthwest.com/local/embassy-suites-strike-world-cup/4244485",
+      "kind": "secondary"
+    },
+    {
+      "title": "UNITE HERE: Investor Alert, Hotel Strike Next to World Cup Stadium at Embassy Suites Seattle Pioneer Square",
+      "publisher": "Business Wire / UNITE HERE",
+      "url": "https://www.businesswire.com/news/home/20260626822831/en/UNITE-HERE-Investor-Alert-Hotel-Strike-Next-to-World-Cup-Stadium-at-Embassy-Suites-Seattle-Pioneer-Square",
+      "kind": "primary"
+    },
+    {
+      "title": "Days Before World Cup, SoFi Stadium Workers Win Historic Contract and Reserve the Right to Strike if ICE Threatens Safety",
+      "publisher": "UNITE HERE Local 11",
+      "url": "https://www.unitehere11.org/breaking-news-days-before-world-cup-sofi-stadium-workers-win-historic-contract-and-reserve-the-right-to-strike-if-ice-threatens-safety/",
+      "kind": "primary"
+    },
+    {
+      "title": "SoFi Stadium workers' union reaches deal to avoid strike during World Cup",
+      "publisher": "ESPN",
+      "url": "https://www.espn.com/espn/story/_/id/49011203/sofi-stadium-workers-union-reaches-deal-avoid-strike-world-cup",
+      "kind": "secondary"
+    },
+    {
+      "title": "Hospitality Workers Union UNITE HERE Warns of Possible Labor Disputes at World Cup Host Stadiums, Hotels, and Airports",
+      "publisher": "UNITE HERE",
+      "url": "https://unitehere.org/press-releases/hospitality-workers-union-unite-here-warns-of-possible-labor-disputes-at-world-cup-host-stadiums-hotels-and-airports/",
+      "kind": "primary"
+    },
+    {
+      "title": "Marriott Workers Vote by 99.8% to Ratify New Contract; Strikes Continue at Hilton and Hyatt",
+      "publisher": "UNITE HERE",
+      "url": "https://unitehere.org/press-releases/marriott-workers-vote-by-99-8-to-ratify-new-contract-strikes-continue-at-hilton-and-hyatt/",
+      "kind": "primary"
+    },
+    {
+      "title": "10k+ Hotel Workers Strike on Labor Day",
+      "publisher": "UNITE HERE",
+      "url": "https://unitehere.org/press-releases/10k-hotel-workers-strike-on-labor-day-baltimore-workers-begin-strike/",
+      "kind": "primary"
+    },
+    {
+      "title": "10,000 US hotel workers strike over Labor Day weekend",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2024/9/2/ten-thousand-us-hotel-workers-strike-as-contract-talks-break-down",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "AHLA's outlook is a survey of hotelier sentiment, reported in approximate bands, not a measurement of realized occupancy; 'below forecast' reflects what hoteliers expected, which itself varies by market.",
+    "We could not obtain occupancy figures for the two individual struck hotels, so the city-level demand data stands in as a proxy for each property.",
+    "Posted nightly rates from FCM Consulting are advertised prices, not transacted bookings; the rates travelers actually pay and the final occupancy may differ.",
+    "The chart's per-city values are band midpoints, not exact percentages; the ordering, not the precise bar heights, is the load-bearing finding.",
+    "SoFi Stadium workers are food-service and concession staff, not hotel workers, so the Los Angeles case is a parallel mega-event labor action, not a like-for-like hotel comparison.",
+    "We describe an association between strike location and soft demand; we do not claim the union deliberately chose soft cities, only that the live strikes are not where demand is strongest."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/world-cup-hotel-strikes-soft-demand-leverage.jpg",
+    "credit": "Photo: SounderBruce, CC BY-SA 4.0, via Wikimedia Commons",
+    "caption": "Lumen Field in Seattle's Pioneer Square hosted six World Cup matches; the struck Embassy Suites, the focus of UNITE HERE's 'strike next to the World Cup stadium,' sits about a block to the north.",
+    "alt": "Lumen Field in Seattle's Pioneer Square, photographed from its north side at dusk with floodlights on and the downtown skyline behind it."
+  },
+  "articleType": "data-story",
+  "secondarySections": [
+    "business",
+    "consumer"
+  ],
+  "companies": [
+    "UNITE HERE",
+    "UNITE HERE Local 274",
+    "UNITE HERE Local 8",
+    "UNITE HERE Local 11",
+    "American Hotel and Lodging Association",
+    "Sheraton Philadelphia Downtown",
+    "Embassy Suites by Hilton Seattle Pioneer Square",
+    "Hilton",
+    "Marriott",
+    "FCM Consulting",
+    "SoFi Stadium"
+  ],
+  "people": [
+    "Gwen Mills"
+  ],
+  "regions": [
+    "United States",
+    "Philadelphia",
+    "Seattle",
+    "Los Angeles",
+    "Atlanta",
+    "Miami",
+    "Boston",
+    "San Francisco",
+    "Kansas City"
+  ],
+  "industries": [
+    "Hospitality",
+    "Hotels",
+    "Travel",
+    "Sports",
+    "Food Service"
+  ],
+  "assetClasses": [],
+  "impactTags": [
+    "labor-action",
+    "wages",
+    "hotel-demand",
+    "mega-event-economics",
+    "union-leverage"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 72,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "UNITE HERE timed two live hotel strikes, Sheraton Philadelphia Downtown (Local 274) and Embassy Suites Seattle Pioneer Square (Local 8), to 2026 World Cup match days for maximum leverage.",
+    "But AHLA's 4 May outlook found ~80% of hoteliers reporting bookings below forecast, with Philadelphia and Seattle among the softest markets, so the struck hotels sit in weak-demand cities, not sold-out ones.",
+    "Posted nightly rates jumped at least 80% YoY in 13 of 16 host cities, but a high sticker price is a market reaction, not proof rooms are actually selling.",
+    "The strikes' leverage therefore rests on the tournament's television and reputational spotlight, not a literal occupancy squeeze.",
+    "Los Angeles is the counter-example: SoFi Stadium food-service workers (Local 11) won a fast deal because their matches were genuinely sold out, the real demand squeeze the hotel strikes lack."
+  ],
+  "whyItMatters": "Mega-event labor strategy is being tested in real time, and this article shows the assumed mechanism (sold-out rooms = leverage) does not match the data. For hotel operators (Hilton, Marriott) and the broader hospitality sector, it signals that World Cup demand is underdelivering even as rates spike, which pressures revenue and reframes how unions can extract gains. For workers and investors, it clarifies that reputational visibility, not occupancy, is the live bargaining lever in soft markets.",
+  "whatToWatch": [
+    "Whether the Sheraton Philadelphia and Embassy Suites Seattle strikes settle quickly or drag, testing whether spotlight leverage works without a demand squeeze.",
+    "Whether UNITE HERE shifts or adds actions in strong-demand host cities like Atlanta and Miami as the tournament progresses.",
+    "Updated AHLA and FCM data on whether World Cup bookings recover or confirm the below-forecast trend across host cities.",
+    "Adoption of the ICE-notification and strike-rights immigration clauses as templates in future hospitality contracts."
+  ],
+  "primarySection": "labor",
+  "date": "2026-06-27",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T19:06:27.159Z"
+}
