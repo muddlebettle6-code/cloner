@@ -1,0 +1,646 @@
+{
+  "published": true,
+  "slug": "the-tenth-why-france-holds-the-digital-tax-canada-gave-up",
+  "headline": "The Tenth: Why France Can Hold the Digital Tax Canada Gave Up",
+  "deck": "On 26 June 2026 President Trump threatened a 100% tariff on goods from any country that keeps a digital services tax, a threat strikingly like the one that pushed Canada to abandon its own tax within 48 hours a year earlier. Our analysis finds France can hold firm for three reinforcing reasons, not one: its goods exports to the US are about a tenth of Canada's as a share of its economy, it negotiates behind the 27-member EU rather than alone, and a February 2026 Supreme Court ruling stripped most of the legal force from the tariff weapon itself. Because all three differ at once, the Canada-France contrast is suggestive, not a controlled experiment, but it points to a hard pattern in trade brinkmanship: leverage flows to whoever can most afford to walk away.",
+  "takeaways": [
+    "Trump threatened a 100% tariff on goods from any country with a digital services tax (DST). His post named no single country, but France - with a long-standing tax and a wine-tariff threat aimed at it days earlier - is the most prominent target this time, not Canada.",
+    "Canada folded on a similar threat in 2025 partly because about 17% of its economy rides on goods exports to the US; France's figure is about 1.8%, roughly a tenth.",
+    "Exposure is not the only difference: France negotiates inside the EU (which shipped 531.6bn euros of goods to the US in 2024), and a February 2026 Supreme Court ruling left both fast tariff routes capped at 15%, far below the threatened 100%. Because all three changed at once, this is a revealing comparison, not a clean test.",
+    "The 1.8% national average hides intensely US-dependent sectors - Cognac, Champagne, wine and spirits, luxury - where the US is the single largest market, so the pain is concentrated even if the country looks insulated.",
+    "The revenue is tiny: France's DST raised about 756m euros in 2024, roughly 0.02% of GDP. This is a fight over principle and precedent, not money."
+  ],
+  "glossary": [
+    {
+      "term": "Digital services tax (DST)",
+      "definition": "A small tax a country places on the local revenue that big technology platforms earn there, designed to capture money from firms that book little taxable profit in the country."
+    },
+    {
+      "term": "Tariff",
+      "definition": "A tax a government charges on goods coming into its country from abroad, which makes those imports more expensive."
+    },
+    {
+      "term": "Goods exports",
+      "definition": "Physical products (cars, machinery, oil, food, wine) that a country sells to buyers in other countries."
+    },
+    {
+      "term": "GDP (gross domestic product)",
+      "definition": "The total value of everything a country produces in a year - the standard measure of the size of its economy."
+    },
+    {
+      "term": "Nominal GDP",
+      "definition": "A country's total output measured in today's prices, without adjusting for inflation."
+    },
+    {
+      "term": "Exposure (export-to-GDP share)",
+      "definition": "How much of a country's economy depends on selling goods to one market, found by dividing those exports by the country's total output."
+    },
+    {
+      "term": "Concentration risk",
+      "definition": "The danger of relying too heavily on a single customer or market, so that losing it would do outsized damage."
+    },
+    {
+      "term": "Confounding variable",
+      "definition": "A second thing that also changed between two cases, making it impossible to say for sure which change caused the different outcome."
+    },
+    {
+      "term": "Controlled experiment",
+      "definition": "A test in which only one thing is allowed to change at a time, so you can be confident about what caused the result; the France-Canada comparison is not one, because several things differ at once."
+    },
+    {
+      "term": "Royal assent",
+      "definition": "The final formal step that turns a bill passed by Canada's Parliament into law (or, here, repeals one)."
+    },
+    {
+      "term": "European single market",
+      "definition": "An arrangement letting goods, services, money, and people move freely among EU countries as if they were one large home market."
+    },
+    {
+      "term": "European Commission",
+      "definition": "The EU's executive body, which negotiates trade deals on behalf of all 27 member countries."
+    },
+    {
+      "term": "Trade surplus",
+      "definition": "When a country or bloc sells more goods to a partner than it buys from them."
+    },
+    {
+      "term": "IEEPA (International Emergency Economic Powers Act)",
+      "definition": "A 1977 US law letting the president take certain economic actions during a declared emergency; the Supreme Court ruled in February 2026 that it does not allow imposing tariffs."
+    },
+    {
+      "term": "Major questions doctrine",
+      "definition": "A legal principle that says decisions of huge economic or political importance need clear permission from Congress, which the Supreme Court used to strike down the emergency tariffs."
+    },
+    {
+      "term": "Section 122 of the Trade Act of 1974",
+      "definition": "A US law that lets the president impose a temporary import surcharge of up to 15% for up to 150 days without Congress."
+    },
+    {
+      "term": "Section 232 / Section 301",
+      "definition": "Other US trade laws that can justify higher tariffs but require months of formal investigation, so they are slow rather than overnight tools."
+    },
+    {
+      "term": "Ad valorem",
+      "definition": "A tax set as a percentage of a product's value (for example, 15% of the price), rather than a flat fee per item."
+    },
+    {
+      "term": "OECD global-tax deal",
+      "definition": "A stalled international agreement, brokered by the Organisation for Economic Co-operation and Development, to set common rules for taxing large multinational companies and replace national digital taxes."
+    },
+    {
+      "term": "Parliamentary Budget Officer (PBO)",
+      "definition": "Canada's independent watchdog that estimates the cost and revenue of government policies."
+    },
+    {
+      "term": "Canada Revenue Agency (CRA)",
+      "definition": "Canada's national tax-collection agency, the equivalent of the US Internal Revenue Service."
+    },
+    {
+      "term": "UN COMTRADE / US Census trade data",
+      "definition": "Two standard sources for trade figures; one counts what exporters say they shipped, the other what importers say they received, so their numbers differ slightly."
+    }
+  ],
+  "event": "On 26 June 2026, President Trump threatened a 100% tariff on goods from any country that imposes a digital services tax. His post named no country, but its most prominent target is France, days before a 4 July EU-US trade framework deadline.",
+  "question": "Why can France hold its digital services tax against a threat strikingly like the one that made Canada repeal its own tax a year earlier - and how much of the difference is export exposure to the US rather than politics, the EU, or a changed legal landscape?",
+  "readingMinutes": 10,
+  "leadChartId": "exposure-gap",
+  "tags": [
+    "trade",
+    "tariffs",
+    "digital services tax",
+    "France",
+    "Canada",
+    "European Union",
+    "Trump",
+    "tax policy",
+    "geoeconomics"
+  ],
+  "charts": [
+    {
+      "id": "exposure-gap",
+      "kind": "bar",
+      "title": "The exposure gap",
+      "subtitle": "Goods exports to the US as a share of the exporter's own GDP",
+      "source": "Exporter-reported trade data (Statistics Canada / UN COMTRADE; French customs / UN COMTRADE) and IMF/World Bank nominal GDP; author calculation: exports divided by GDP.",
+      "units": "% of GDP",
+      "period": "Canada 2025, France 2024 (latest available for each)",
+      "note": "Same threat, roughly a tenth the exposure. The two-year mismatch is immaterial against a gap this wide.",
+      "alt": "Horizontal bar chart showing Canada at about 17% of GDP in goods exports to the US versus France at 1.8%, on a zero-based axis up to 20%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Canada (2025)",
+            "value": 17.1,
+            "highlight": true
+          },
+          {
+            "label": "France (2024)",
+            "value": 1.8
+          }
+        ],
+        "max": 20
+      }
+    },
+    {
+      "id": "average-hides-exposed",
+      "kind": "bar",
+      "title": "The average hides the exposed",
+      "subtitle": "US as a share of exports, by category (same measure for each: US sales divided by that category's total export value)",
+      "source": "French customs (DGDDI) for all goods and the by-value Cognac share; FEVS for wine and spirits.",
+      "units": "% of category's export value going to the US",
+      "period": "2024 (latest reported)",
+      "note": "The country looks insulated at the average; specific export industries do not. This is why national ratios understate the political pain.",
+      "alt": "Horizontal bar chart of the US share of French export value: all goods about 8%, wine and spirits about 24%, Cognac about 36%.",
+      "data": {
+        "bars": [
+          {
+            "label": "All French goods",
+            "value": 8
+          },
+          {
+            "label": "Wine and spirits",
+            "value": 24
+          },
+          {
+            "label": "Cognac",
+            "value": 36,
+            "highlight": true
+          }
+        ],
+        "max": 40
+      }
+    },
+    {
+      "id": "threat-vs-law",
+      "kind": "bar",
+      "title": "The threat versus the law",
+      "subtitle": "Announced tariff rate versus the fastest rate the president can lawfully reach",
+      "source": "Reuters, CBS and Al Jazeera on the 26 June 2026 announcement; US Trade Act of 1974 Section 122 (19 U.S.C. 2132); EU-US August 2025 framework terms.",
+      "units": "%",
+      "period": "2026",
+      "note": "After the February 2026 Supreme Court ruling, both fast routes left - the EU-US framework cap and the Section 122 statutory ceiling - top out at 15%. The threatened figure is nearly seven times that.",
+      "alt": "Bar chart comparing Trump's threatened 100% DST tariff against a single 15% fast-track ceiling that applies to both the EU-US framework and Section 122.",
+      "data": {
+        "bars": [
+          {
+            "label": "Threatened DST tariff",
+            "value": 100,
+            "highlight": true
+          },
+          {
+            "label": "Fast-track ceiling (framework and Section 122)",
+            "value": 15
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "pennies-at-stake",
+      "kind": "bar",
+      "title": "Pennies at stake",
+      "subtitle": "Digital services tax revenue collected, 2023 (France's 2024 take was about 756m euros)",
+      "source": "Tax Foundation Europe, Digital Services Taxes in Europe.",
+      "units": "euro millions",
+      "period": "2023",
+      "note": "France's DST is roughly 0.02% of GDP, a rounding error against the 531.6bn euros of EU goods trade now in the crossfire.",
+      "alt": "Horizontal bar chart of 2023 DST revenue: France 680, Italy 434, Spain 345, Austria 103 million euros.",
+      "data": {
+        "bars": [
+          {
+            "label": "France",
+            "value": 680,
+            "highlight": true
+          },
+          {
+            "label": "Italy",
+            "value": 434
+          },
+          {
+            "label": "Spain",
+            "value": 345
+          },
+          {
+            "label": "Austria",
+            "value": 103
+          }
+        ],
+        "max": 700
+      }
+    },
+    {
+      "id": "canada-round-trip",
+      "kind": "bar",
+      "title": "Canada's round trip",
+      "subtitle": "What Canada collected, and then refunded, in Canadian dollars",
+      "source": "Canada Department of Finance and Canada Revenue Agency (via Globe and Mail); Parliamentary Budget Officer 5-year projection.",
+      "units": "C$ millions",
+      "period": "2024-2026",
+      "note": "A PBO five-year projection of about C$7,200m that never materialised: of the C$647m actually collected, the CRA is refunding every dollar, leaving C$0 kept.",
+      "alt": "Bar chart showing Canada collected C$647m of digital services tax before repeal and kept C$0 after refunds.",
+      "data": {
+        "bars": [
+          {
+            "label": "Collected before repeal",
+            "value": 647,
+            "highlight": true
+          },
+          {
+            "label": "Kept after refunds (C$0)",
+            "value": 0
+          }
+        ],
+        "max": 700
+      }
+    },
+    {
+      "id": "line-of-fire",
+      "kind": "bar",
+      "title": "Who is in the line of fire",
+      "subtitle": "Current digital services tax rate, selected countries; France also shows its proposed 6%",
+      "source": "Tax Foundation Europe; French National Assembly vote of 28 October 2025.",
+      "units": "% rate",
+      "period": "2026",
+      "note": "Rates cluster at 2-5%. France's National Assembly voted to raise its 3% rate to 6%, which would be the highest, but the government has signalled it may strike the increase down, and it is not yet law.",
+      "alt": "Horizontal bar chart of DST rates: Austria 5%, France current 3% with a proposed 6%, Italy 3%, Spain 3%, UK 2%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Austria",
+            "value": 5
+          },
+          {
+            "label": "France (current)",
+            "value": 3,
+            "highlight": true
+          },
+          {
+            "label": "France (proposed)",
+            "value": 6,
+            "highlight": true
+          },
+          {
+            "label": "Italy",
+            "value": 3
+          },
+          {
+            "label": "Spain",
+            "value": 3
+          },
+          {
+            "label": "United Kingdom",
+            "value": 2
+          }
+        ],
+        "max": 6
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news hook",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On Friday, 26 June 2026, President Trump posted that \"any Country that imposes such a Tax will immediately be met with a 100% TARIFF on any and all Goods sent to the United States of America,\" adding that the levy \"will supersede Trade Deals made with the Country, whether implemented, signed, or not.\" The \"Tax\" he meant is the digital services tax, or DST: a small charge that more than a dozen countries place on the local revenue of big technology platforms, most of them American."
+        },
+        {
+          "type": "p",
+          "text": "His post did not name a single country - it was aimed at \"any Country.\" But the obvious target is France, which has run a 3% digital tax since 2019 and which Trump had threatened with a 100% tariff on its wine only days earlier, around the G7 summit. So this is, in effect, a Europe-wide warning shot with a French bullseye."
+        },
+        {
+          "type": "p",
+          "text": "We have seen a version of this before, and we know how it ended. In June 2025, facing a threat to break off trade talks, Canada rescinded its own 3% digital services tax. Ottawa announced the climbdown on Sunday 29 June 2025, the day before the first payments were due that Monday, after Washington said it was terminating all trade discussions. The repeal received royal assent on 26 March 2026, and the Canada Revenue Agency is now refunding the roughly C$647m it had already collected. The 2025 trigger was a threat to end negotiations rather than a specified 100% tariff; the 2026 threat names the number. They are not identical, but they rhyme."
+        },
+        {
+          "type": "callout",
+          "label": "The question",
+          "text": "Why can France hold a digital tax against a threat like the one that made Canada back down? France did not just keep its DST. On 28 October 2025 its National Assembly voted, 296 to 58, to double it from 3% to 6%."
+        },
+        {
+          "type": "p",
+          "text": "The tempting answer is that France is braver, or that Europe has finally grown a spine. The evidence points somewhere less flattering and far more interesting, and to three causes at once rather than a single act of nerve."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: France has roughly a tenth of Canada's exposure",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A 100% tariff is only as frightening as the share of your economy that sits in its blast radius. So we measured that radius the way a credit analyst sizes a borrower's concentration risk: goods exports to the United States, divided by the exporter's own GDP. It is the cleanest available proxy for how much of a country's livelihood one market controls."
+        },
+        {
+          "type": "p",
+          "text": "The two countries are not in the same weight class. Canada sent roughly US$409bn in goods to the United States in 2025 (on Canadian export reporting; US import figures put it nearer US$382bn), against a national output of about US$2.3 to US$2.4 trillion. That is roughly 17% of GDP riding on continued access to one market. France sent about US$55bn in goods to the United States in 2024, against output of US$3.16 trillion. That is about 1.8% of GDP."
+        },
+        {
+          "type": "chart",
+          "chartId": "exposure-gap"
+        },
+        {
+          "type": "pullquote",
+          "text": "France is not calling a bluff. It is doing arithmetic."
+        },
+        {
+          "type": "p",
+          "text": "Put plainly, the United States is Canada's economy in a way it simply is not France's. France, sitting inside the European single market, sells most of what it makes to its neighbours. When Trump cocks the same 100% hammer at both, he is threatening roughly a tenth as much of France's economy as he was of Canada's. The precise ratio is close to nine or ten to one depending on which trade source you use; \"a tenth\" is the honest round number."
+        }
+      ]
+    },
+    {
+      "heading": "The catch: the average hides the firms actually in the line of fire",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The 1.8% figure is a national average, and averages lie about pain. A 100% US tariff does not fall on \"France.\" It falls on Cognac, Champagne, wine and spirits, perfume and luxury goods, and aerospace - industries for which the United States is often the single largest export market. For Cognac, the United States takes about 36% of everything the industry ships abroad by value; for wine and spirits as a whole, close to a quarter. That is the difference between a flesh wound and a heart attack."
+        },
+        {
+          "type": "chart",
+          "chartId": "average-hides-exposed"
+        },
+        {
+          "type": "p",
+          "text": "This cuts against the comfortable \"France can shrug this off\" frame. The country can absorb the blow; specific, politically vocal industries cannot, which is exactly why French wine and spirits lobbies have been the loudest voices in every recent tariff fight. The national ratio explains why Paris can stay at the table. The sectoral ratio explains why the fight feels existential to the people in the room. Both are true, and an honest account needs both."
+        }
+      ]
+    },
+    {
+      "heading": "Competing explanation: France is not standing alone",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If exposure were the whole story, France would simply be a small, lucky target. It is not, because the threat is not really bilateral. Trump's post lands days before a 4 July deadline for the European Union and the United States to finalise a framework that caps tariffs on most EU goods at 15%. Digital taxes were deliberately left out of that deal and have been the unresolved sticking point ever since."
+        },
+        {
+          "type": "p",
+          "text": "France's 1.8% is the exposure of one member hiding behind a bloc whose collective economy rivals America's own. In 2024 the EU shipped 531.6bn euros of goods to the United States and ran a large surplus on that trade, which means a 100% tariff would slam European exporters and American buyers at the same time. And France does not bargain alone: under EU law it is the European Commission in Brussels, not the French government in Paris, that negotiates trade for all 27 members. Trump is not facing France across the table. He is facing a market of roughly 449m people."
+        },
+        {
+          "type": "pullquote",
+          "text": "Ottawa negotiated as one country. Paris negotiates as one twenty-seventh of a superpower."
+        }
+      ]
+    },
+    {
+      "heading": "The weapon itself has been blunted",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is a third difference, and it may be the quietest but the most decisive. A year ago, the US president could plausibly impose sweeping tariffs almost at will. He no longer can. On 20 February 2026 the Supreme Court ruled, 6 to 3, that the International Emergency Economic Powers Act - the 1977 emergency-powers law the administration had leaned on for its broadest tariffs - does not authorise tariffs at all. The case was Learning Resources, Inc. v. Trump, and the Court reasoned that a power this sweeping needs clear permission from Congress, which the 1977 law never gave."
+        },
+        {
+          "type": "p",
+          "text": "That ruling forces any quick tariff onto a far shorter leash. The fastest legal route left is Section 122 of the Trade Act of 1974, which lets the president impose an import surcharge of no more than 15%, and only for up to 150 days, before Congress has to step in. The EU-US framework caps most tariffs at the same 15%. So both of the fast routes available top out at 15 - while the number on the table is 100."
+        },
+        {
+          "type": "chart",
+          "chartId": "threat-vs-law"
+        },
+        {
+          "type": "p",
+          "text": "A 100% tariff is not flatly impossible. Slower tools (the Section 232 and Section 301 investigations) can in principle climb higher, but they take months of formal process, not the overnight action that panicked Ottawa. The gap between what was threatened and what can be delivered fast is now nearly seven to one. A year ago, in Canada's standoff, that weapon still looked loaded."
+        }
+      ]
+    },
+    {
+      "heading": "The money was never the point",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Step back and the strangest fact about this confrontation is how little money is actually at stake. France's digital services tax raised about 756m euros in 2024. Against a 3.16-trillion-dollar economy, that is roughly 0.02% of GDP - a rounding error. Across Europe the sums are similarly small: in 2023 France collected 680m euros, Italy 434m, Spain 345m, Austria 103m."
+        },
+        {
+          "type": "chart",
+          "chartId": "pennies-at-stake"
+        },
+        {
+          "type": "p",
+          "text": "Canada's experience shows where the real cost lands. Its tax was projected by the Parliamentary Budget Officer to raise about C$7.2bn over five years. In the end it collected C$647m before repeal - and is now handing every dollar back, with interest. The net take is zero."
+        },
+        {
+          "type": "chart",
+          "chartId": "canada-round-trip"
+        },
+        {
+          "type": "p",
+          "text": "If the sums are this small, why fight at all? Because the fight is about precedent, not pennies. A digital services tax is a country's claim that it can tax value created inside its borders by foreign tech giants that book their profits elsewhere. Concede that under threat once, as Canada did, and the principle is gone - which is why a 756m-euro line item can trigger a trade war."
+        }
+      ]
+    },
+    {
+      "heading": "Who else is in the line of fire",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "France is far from alone in levying such a tax. At least ten countries do, with rates clustered between 2% and 5%: Austria at 5%, Italy and Spain at 3%, the United Kingdom at 2%. France's current rate is 3%, the very rate Canada gave up. A 100% tariff aimed at \"any Country\" with a DST therefore points at much of Europe at once, which is part of why the EU can answer as a bloc."
+        },
+        {
+          "type": "chart",
+          "chartId": "line-of-fire"
+        },
+        {
+          "type": "p",
+          "text": "And France has signalled it may go further. On 28 October 2025 its National Assembly voted, 296 to 58, to double the rate to 6% as part of the 2026 budget, which would make it the highest in Europe. But that increase is not yet law: it was an amendment to a budget bill, and the government has hinted it may strike it out precisely to avoid the retaliation Trump is now threatening. Read it as a statement of intent more than a settled policy - a way of holding firm without necessarily pulling the trigger."
+        }
+      ]
+    },
+    {
+      "heading": "What the contrast really shows",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So why can France hold the line Canada could not? Not because the French are braver. Because three things are true at once: France risks roughly a tenth of the economic exposure, it negotiates from behind a bloc the size of the United States rather than alone, and the legal weapon that terrified Ottawa has since been blunted by America's own Supreme Court."
+        },
+        {
+          "type": "callout",
+          "label": "The honest caveat",
+          "text": "Because all three differ at the same time, the Canada-France comparison is suggestive, not a controlled experiment. We cannot prove which factor matters most - only that together they flip the balance of nerve."
+        },
+        {
+          "type": "pullquote",
+          "text": "Leverage in a trade fight flows to whoever can most afford to walk away."
+        },
+        {
+          "type": "p",
+          "text": "That is the durable lesson under the headlines. Brinkmanship rewards the side with less to lose. Canada, with roughly 17% of its economy tied to one buyer, could not afford to test the threat. France, risking a fraction of that and shielded by 26 partners and a court ruling, can. The tax itself is almost beside the point. The real subject is who blinks - and who can afford not to."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Exposure ratio = a country's goods exports to the US divided by its nominal GDP. We used exporter-reported trade data for both countries (Statistics Canada / UN COMTRADE for Canada; French customs / UN COMTRADE for France) for consistency, and IMF/World Bank nominal GDP. We use the latest full year available for each (Canada 2025, France 2024).",
+    "We note that US Census import data gives lower export figures (about US$382bn for Canada and US$60bn for France), which would put the ratios near 16% and 1.9%; the roughly tenfold gap holds under either source.",
+    "Sectoral shares = a category's exports to the US divided by that category's total exports, by value, from French customs (DGDDI) and the wine-and-spirits federation (FEVS). The Cognac figure (about 36%) is by value; by volume the US share is higher (around 40-43%).",
+    "DST revenue as a share of GDP = reported DST revenue divided by nominal GDP (756m euros against about 3.16 trillion US dollars, or roughly 2.9 trillion euros, giving about 0.02-0.03%).",
+    "Legal ceilings are taken from the statutory text of Section 122 (19 U.S.C. 2132), the August 2025 EU-US framework terms, and the Supreme Court's 20 February 2026 ruling in Learning Resources, Inc. v. Trump.",
+    "All currency figures are left in the units the source reports (US dollars, euros, Canadian dollars) and labelled; no figure depends on a contested exchange-rate conversion."
+  ],
+  "sources": [
+    {
+      "title": "Trump vows 100% tariff on countries over digital services taxes",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/trump-vows-100-tariff-on-countries-over-digital-services-taxes",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump threatens tariffs for countries that levy a digital tax on US firms",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/26/trump-threatens-tariffs-for-countries-that-levy-digital-tax-on-us-firms",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump threatens 100% tariff over digital services taxes; sets July 4 EU deadline",
+      "publisher": "CBS News",
+      "url": "https://www.cbsnews.com/news/trump-digital-services-tax-tariff-europe/",
+      "kind": "secondary"
+    },
+    {
+      "title": "French wine at risk: Trump threatens 100% tariff over digital tax",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/en/americas/20260615-french-wine-at-risk-trump-threatens-100-tariff-over-digital-tax",
+      "kind": "secondary"
+    },
+    {
+      "title": "Canada rescinds Digital Services Tax to advance broader trade negotiations with the United States",
+      "publisher": "Department of Finance Canada",
+      "url": "https://www.canada.ca/en/department-finance/news/2025/06/canada-rescinds-digital-services-tax-to-advance-broader-trade-negotiations-with-the-united-states.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Canada rescinds digital services tax after Trump cuts off US trade talks",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2025/06/30/canada-rescinds-digital-services-tax-after-trump-cuts-off-us-trade-talks.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "CRA refunding $647-million collected from cancelled digital services tax",
+      "publisher": "The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/globe-advisor/advisor-news/article-cra-refunding-647-million-collected-from-cancelled-digital-services/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Digital Services Tax - legislative costing note",
+      "publisher": "Parliamentary Budget Officer (Canada)",
+      "url": "https://www.pbo-dpb.ca/en/publications/LEG-2324-013-S--digital-services-tax--taxe-services-numeriques",
+      "kind": "primary"
+    },
+    {
+      "title": "New Proposal Would Double France's Harmful Digital Services Tax",
+      "publisher": "Tax Foundation",
+      "url": "https://taxfoundation.org/blog/france-digital-services-tax-dst/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Digital Services Taxes in Europe, 2026",
+      "publisher": "Tax Foundation Europe",
+      "url": "https://taxfoundation.org/data/all/eu/digital-services-taxes-europe/",
+      "kind": "data"
+    },
+    {
+      "title": "France government to strike down proposed DST rise to 6%",
+      "publisher": "VATCalc",
+      "url": "https://www.vatcalc.com/france/france-dst-rise-to-6-proposal/",
+      "kind": "secondary"
+    },
+    {
+      "title": "GDP (current US$) - France",
+      "publisher": "World Bank",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=FR",
+      "kind": "data"
+    },
+    {
+      "title": "Canada GDP",
+      "publisher": "IMF (via StatisticsTimes)",
+      "url": "https://statisticstimes.com/economy/country/canada-gdp.php",
+      "kind": "data"
+    },
+    {
+      "title": "Trade in goods with Canada (2025)",
+      "publisher": "US Census Bureau",
+      "url": "https://www.census.gov/foreign-trade/balance/c1220.html",
+      "kind": "data"
+    },
+    {
+      "title": "Trade in goods with France (2024)",
+      "publisher": "US Census Bureau",
+      "url": "https://www.census.gov/foreign-trade/balance/c4279.html",
+      "kind": "data"
+    },
+    {
+      "title": "USA-EU - international trade in goods statistics (EU exported 531.6bn euros to the US in 2024)",
+      "publisher": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250311-1",
+      "kind": "data"
+    },
+    {
+      "title": "Etats-Unis: pres de 10% des exportations francaises (US about 8% of French goods exports; 48.5bn euros)",
+      "publisher": "DGDDI (French customs)",
+      "url": "https://www.douane.gouv.fr/actualites/etats-unis-plus-de-80-des-exportations-francaises-seraient-taxees-pres-de-10-selon-une",
+      "kind": "primary"
+    },
+    {
+      "title": "Bilan des exportations de vins et spiritueux 2024 (US near a quarter of export value)",
+      "publisher": "FEVS",
+      "url": "https://www.fevs.com/wp-content/uploads/2025/02/20250211-dp-fevs-bilan-2024-export-vins-spiritueux-vf-complet.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Cognac exports plunge in 2024 (NAFTA 1.12bn euros / 70.6m bottles)",
+      "publisher": "just-drinks (BNIC data)",
+      "url": "https://www.just-drinks.com/news/cognac-exports-plunge-2024/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Supreme Court strikes down tariffs (Learning Resources, Inc. v. Trump)",
+      "publisher": "SCOTUSblog",
+      "url": "https://www.scotusblog.com/2026/02/supreme-court-strikes-down-tariffs/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Slip opinion, No. 24-1287 (IEEPA tariffs)",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "19 U.S.C. 2132 - Section 122, Trade Act of 1974 (15% / 150-day limits)",
+      "publisher": "U.S. House Office of the Law Revision Counsel",
+      "url": "https://uscode.house.gov/view.xhtml?req=%28title%3A19+section%3A2132+edition%3Aprelim%29",
+      "kind": "primary"
+    },
+    {
+      "title": "Supreme Court strikes down IEEPA tariffs: what now (Section 122 as fastest route)",
+      "publisher": "WilmerHale",
+      "url": "https://www.wilmerhale.com/en/insights/client-alerts/20260220-supreme-court-strikes-down-ieepa-tariffs-what-now",
+      "kind": "secondary"
+    },
+    {
+      "title": "EU, US release trade statement setting 15% all-inclusive tariff",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/my-europe/2025/08/21/eu-us-release-long-awaited-trade-statement-setting-15-all-inclusive-tariff-on-eu-goods",
+      "kind": "secondary"
+    },
+    {
+      "title": "Taxing tech: how do digital services levies differ across Europe?",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/business/2026/01/27/taxing-tech-how-do-digital-services-levies-differ-across-europe",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "This is a natural comparison, not a controlled experiment: exposure, EU membership and the legal landscape all differ between the two cases, so we cannot isolate how much each one contributes to the different outcomes.",
+    "Trade figures differ by source. Using exporter reporting, Canada sent about US$409bn and France about US$55bn to the US; using US Census import data the figures are about US$382bn and US$60bn, which shift the exposure ratios to roughly 16% and 1.9%. The roughly tenfold gap survives either way, but exact percentages depend on the source.",
+    "The 17.1% Canada figure is sensitive to the GDP figure chosen; a range of about 16% to 17.6% is defensible. We report it as 'about 17%'.",
+    "The years compared differ (Canada 2025, France 2024) because we used each country's latest full-year data; the gap is far too wide for the one-year mismatch to matter.",
+    "France's proposed 6% rate is an amendment to the 2026 budget bill, not enacted law, and the government has signalled it may remove it. The 296-to-58 vote tally comes from news reporting rather than a primary parliamentary record we could open directly.",
+    "The Cognac US-share figure (about 36%) is by value for 2024, a year depressed by China measures and tariff uncertainty; the by-volume share is higher (around 40-43%), so the metric chosen changes the headline number.",
+    "DST revenue as a share of GDP (about 0.02%) is our own calculation; sources express the tax's smallness as a share of total tax revenue, not of GDP."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "date": "2026-06-27",
+  "byline": "Cumulant Research"
+}
