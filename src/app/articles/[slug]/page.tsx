@@ -124,7 +124,7 @@ function Block({ article, block, linked }: { article: Article; block: ArticleBlo
       return (
         <figure className="my-[28px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={block.src} alt={block.alt} loading="lazy" className="w-full rounded-[6px] border border-clay bg-stone" />
+          <img src={block.src} alt={block.alt} loading="lazy" className="w-full border border-clay bg-stone" />
           {(block.caption || block.credit) && (
             <figcaption className="mt-[10px] text-[13px] leading-[1.5] text-smoke">
               {block.caption}
@@ -190,7 +190,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           {article.leadImage && (
             <figure className="mx-auto mt-[36px] max-w-[980px]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={article.leadImage.src} alt={article.leadImage.alt} loading="lazy" className="w-full rounded-[6px] border border-clay bg-stone object-cover" />
+              <img src={article.leadImage.src} alt={article.leadImage.alt} loading="lazy" className="w-full border border-clay bg-stone object-cover" />
               {(article.leadImage.caption || article.leadImage.credit) && (
                 <figcaption className="mt-[10px] text-[13px] leading-[1.5] text-smoke">
                   {article.leadImage.caption}

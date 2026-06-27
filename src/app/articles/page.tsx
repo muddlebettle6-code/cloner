@@ -31,7 +31,7 @@ export default function ArticlesPage() {
             )}
           >
             {a.leadImage && (
-              <div className="order-first mb-[18px] overflow-hidden rounded-[6px] border border-clay bg-stone md:order-last md:mb-0">
+              <div className="order-first mb-[18px] overflow-hidden border border-clay bg-stone md:order-last md:mb-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={a.leadImage.src}
