@@ -1,0 +1,664 @@
+{
+  "published": true,
+  "slug": "rap-affordable-only-in-the-middle",
+  "headline": "RAP is sold as the 'affordable' student-loan plan. The arithmetic says it is only cheaper in the middle, and never cleanly.",
+  "deck": "On July 1 about 7.5 million borrowers begin a 90-day clock off the court-voided SAVE plan and toward the new Repayment Assistance Plan, marketed as the simple, affordable option. We rebuilt RAP's monthly payment and set it against the New IBR plan it sits beside: for a single borrower with no dependents RAP is cheaper across a broad band from roughly $29,300 to $80,000 of income, but because RAP re-rates your whole income at every $10,000 step, the advantage arrives as a sawtooth, not a smooth discount. Which side of those edges a household lands on decides whether 'affordable' is true for them, and even inside the band the savings flicker.",
+  "takeaways": [
+    "RAP is not cheaper for everyone. For a single borrower with no dependents it generally beats the older New IBR plan only between about $29,300 and $80,000 of adjusted gross income.",
+    "Below that band RAP charges the lowest earners more than IBR (which can drop them to $0); above it RAP charges high earners a premium that widens to roughly $200 a month by $120,000 of income.",
+    "Because RAP applies a flat rate to your entire income and that rate steps up every $10,000, the curve is a staircase. Right after each step RAP briefly jumps above IBR before IBR's steeper formula catches up, so even inside the 'cheaper' band there is a small notch just past $30,000 and a wider one running from about $70,000 to $78,000 where RAP costs more.",
+    "Just past $80,000 there is a true cliff: one extra dollar re-rates the whole income from 7% to 8% and jumps the monthly bill about $66 overnight, from roughly $467 to $533, putting RAP about $62 a month above IBR and keeping it there.",
+    "This compares the monthly payment only. RAP's unpaid-interest waiver, its $50 monthly principal match, and a 30-year forgiveness clock change lifetime cost and are not captured here, so a higher monthly payment is not automatically a worse deal."
+  ],
+  "glossary": [
+    {
+      "term": "SAVE plan",
+      "definition": "The Saving on a Valuable Education plan, an income-driven repayment plan launched in 2023 that set unusually low payments; courts struck it down, and enrollees have since sat in a paused, interest-free $0 status."
+    },
+    {
+      "term": "RAP (Repayment Assistance Plan)",
+      "definition": "The new student-loan repayment plan created by the 2025 budget law, opening July 1, 2026, that charges a flat percentage of your entire income instead of shielding part of it for living costs."
+    },
+    {
+      "term": "New IBR (Income-Based Repayment)",
+      "definition": "An income-driven plan that charges 10% of your 'discretionary' income (income above a protected living-cost floor) and forgives the balance after 20 years; it is open only to borrowers who had no federal loan balance as of July 1, 2014."
+    },
+    {
+      "term": "Old IBR",
+      "definition": "The earlier version of Income-Based Repayment, for borrowers who already had loans before July 1, 2014; it charges a steeper 15% of discretionary income and forgives after 25 years. Many longtime borrowers can only use this version."
+    },
+    {
+      "term": "AGI (adjusted gross income)",
+      "definition": "Your total yearly income after certain deductions, as reported on your tax return; the figure both plans use to size your payment."
+    },
+    {
+      "term": "Discretionary income",
+      "definition": "Under IBR, your income minus a protected amount for basic living costs (150% of the federal poverty guideline); only this slice is used to set your payment."
+    },
+    {
+      "term": "Federal poverty guideline",
+      "definition": "An annual income figure published by the government to mark the poverty line; for 2025 it is $15,650 for a single person and rises by $5,500 for each additional household member."
+    },
+    {
+      "term": "Forbearance",
+      "definition": "A temporary pause on loan payments; SAVE enrollees were placed in an interest-free forbearance, meaning no payments and, for a time, no interest piling up."
+    },
+    {
+      "term": "Income-driven repayment (IDR)",
+      "definition": "Any plan that ties your monthly student-loan payment to how much you earn rather than to a fixed schedule."
+    },
+    {
+      "term": "OBBBA (One Big Beautiful Bill Act)",
+      "definition": "The 2025 federal budget-reconciliation law (P.L. 119-21) that created RAP and set the rules for moving borrowers off SAVE."
+    },
+    {
+      "term": "Flat vs marginal bracket",
+      "definition": "A flat bracket applies one rate to your whole income at once, so crossing a threshold re-rates every dollar; a marginal bracket (like the income tax) would charge the higher rate only on income inside the new band. RAP uses the flat version, which creates payment 'cliffs.'"
+    },
+    {
+      "term": "Step (staircase) function",
+      "definition": "A value that holds steady and then jumps, rather than rising smoothly; RAP's payment steps up each time income crosses a $10,000 line, so its graph looks like a staircase."
+    },
+    {
+      "term": "RAP $50 per-dependent reduction",
+      "definition": "One of two separate $50s in RAP: this one cuts your monthly payment by $50 for each dependent in your household, down to a $10 minimum."
+    },
+    {
+      "term": "RAP $50 principal match",
+      "definition": "The other $50 in RAP: a monthly credit the government applies directly to the original amount you borrowed (the principal), which shrinks your balance faster but does not lower your payment."
+    },
+    {
+      "term": "Unpaid-interest waiver",
+      "definition": "A feature where the government covers interest your monthly payment does not cover, so your balance does not grow even when the payment is small."
+    },
+    {
+      "term": "Standard-payment cap",
+      "definition": "An IBR rule that never lets your income-driven payment exceed what you would owe on the fixed 10-year Standard plan; for high earners with small balances this can hold IBR below the straight 10%-of-income line."
+    },
+    {
+      "term": "PSLF (Public Service Loan Forgiveness)",
+      "definition": "A program that cancels remaining federal student debt after 10 years of payments while working for government or a qualifying nonprofit; for people on this track a lower monthly payment is always better."
+    },
+    {
+      "term": "Parent PLUS / Grad PLUS",
+      "definition": "Federal loans taken out by parents (PLUS) or graduate students (Grad PLUS); their repayment options differ from a typical undergraduate borrower's, so this analysis does not describe them."
+    },
+    {
+      "term": "Delinquency",
+      "definition": "Being behind on loan payments; '90+ days delinquent' means a payment is more than three months overdue."
+    },
+    {
+      "term": "Servicer",
+      "definition": "The private company the government hires to manage your loan, collect payments, and move you between plans."
+    },
+    {
+      "term": "Auto-enrollment",
+      "definition": "Being placed into a plan automatically by your servicer if you do not actively choose one before your deadline."
+    },
+    {
+      "term": "Standard / Tiered Standard plan",
+      "definition": "Fixed-schedule repayment plans (not income-based) that borrowers are dropped into by default if they make no choice; the Tiered Standard plan is new and opens July 1, 2026."
+    },
+    {
+      "term": "Forgiveness timeline",
+      "definition": "The number of years of payments after which any remaining loan balance is cancelled; it differs between plans (20 or 25 years for IBR, 30 for RAP) and changes lifetime cost."
+    },
+    {
+      "term": "Reconciliation law",
+      "definition": "A federal budget law passed through a special fast-track Senate process that needs only a simple majority; OBBBA was enacted this way in 2025."
+    }
+  ],
+  "event": "On July 1, 2026 the U.S. Department of Education is expected to begin issuing 90-day notices moving roughly 7.5 million borrowers off the court-voided SAVE plan, the same day the replacement Repayment Assistance Plan (RAP) opens for enrollment.",
+  "question": "For a single borrower with no dependents, across what slice of the income distribution is RAP actually cheaper per month than the New IBR plan it sits beside, and who lands on the losing side of each crossover?",
+  "readingMinutes": 10,
+  "tags": [
+    "student loans",
+    "RAP",
+    "SAVE plan",
+    "income-driven repayment",
+    "OBBBA",
+    "education policy",
+    "household finance",
+    "Department of Education"
+  ],
+  "leadChartId": "staircase-vs-ramp",
+  "charts": [
+    {
+      "id": "staircase-vs-ramp",
+      "kind": "line",
+      "title": "A staircase against a ramp",
+      "subtitle": "Single borrower, no dependents. RAP (flat % of full income, stepping up every $10,000) vs New IBR (a straight 10% of income above a protected floor).",
+      "source": "Cumulant Research calculations from the RAP bracket schedule (OBBBA, P.L. 119-21, as set out by the Congressional Research Service and NerdWallet) and the New IBR formula using 2025 HHS poverty guidelines. Source figures web-verified June 2026.",
+      "units": "monthly payment ($)",
+      "note": "RAP is plotted as a true step function. It is generally cheaper only between the lower crossing (~$29,300) and the $80,000 cliff. At each $10,000 line RAP's whole income re-rates one point higher, so RAP briefly pops above IBR before IBR catches up, creating a notch just past $30,000 and a wider one from about $70,000 to $78,000. Just past $80,000 RAP jumps from ~$467 to ~$533 and stays above IBR for good.",
+      "alt": "A line chart with annual income on the x-axis from about 10,000 to 120,000 dollars and monthly payment on the y-axis from 0 to about 1,000 dollars. The New IBR line is a straight ramp starting at zero near 23,500 dollars. The RAP line is a staircase that holds flat and jumps upward at each 10,000-dollar mark. The staircase sits below the IBR ramp across most of the middle but pokes above it right after the 30,000 and 70,000 jumps, and after the 80,000 jump it stays clearly above the ramp.",
+      "data": {
+        "series": [
+          {
+            "name": "RAP",
+            "points": [
+              {
+                "x": 10000,
+                "y": 10
+              },
+              {
+                "x": 20000,
+                "y": 17
+              },
+              {
+                "x": 20001,
+                "y": 33
+              },
+              {
+                "x": 30000,
+                "y": 50
+              },
+              {
+                "x": 30001,
+                "y": 75
+              },
+              {
+                "x": 40000,
+                "y": 100
+              },
+              {
+                "x": 40001,
+                "y": 133
+              },
+              {
+                "x": 50000,
+                "y": 167
+              },
+              {
+                "x": 50001,
+                "y": 208
+              },
+              {
+                "x": 60000,
+                "y": 250
+              },
+              {
+                "x": 60001,
+                "y": 300
+              },
+              {
+                "x": 70000,
+                "y": 350
+              },
+              {
+                "x": 70001,
+                "y": 408
+              },
+              {
+                "x": 80000,
+                "y": 467
+              },
+              {
+                "x": 80001,
+                "y": 533
+              },
+              {
+                "x": 90000,
+                "y": 600
+              },
+              {
+                "x": 90001,
+                "y": 675
+              },
+              {
+                "x": 100000,
+                "y": 750
+              },
+              {
+                "x": 100001,
+                "y": 833
+              },
+              {
+                "x": 120000,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "New IBR",
+            "points": [
+              {
+                "x": 10000,
+                "y": 0
+              },
+              {
+                "x": 23475,
+                "y": 0
+              },
+              {
+                "x": 30000,
+                "y": 54
+              },
+              {
+                "x": 40000,
+                "y": 138
+              },
+              {
+                "x": 50000,
+                "y": 221
+              },
+              {
+                "x": 60000,
+                "y": 304
+              },
+              {
+                "x": 70000,
+                "y": 388
+              },
+              {
+                "x": 80000,
+                "y": 471
+              },
+              {
+                "x": 90000,
+                "y": 554
+              },
+              {
+                "x": 100000,
+                "y": 638
+              },
+              {
+                "x": 120000,
+                "y": 804
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "four-rulebooks",
+      "kind": "comparison",
+      "title": "One borrower, four rulebooks",
+      "subtitle": "Single borrower, $50,000 AGI, no dependents, undergraduate loans.",
+      "source": "Cumulant Research calculations: SAVE formula (5% of income above 225% of the 2025 poverty guideline), New IBR formula, RAP bracket schedule (OBBBA, P.L. 119-21). Source figures web-verified June 2026.",
+      "units": "monthly payment ($)",
+      "note": "At this income RAP ($167) is the cheaper of the two go-forward plans, but it is still about 2.7 times the $62 these borrowers last paid under SAVE, and infinitely more than the $0 of the current pause.",
+      "alt": "A bar chart comparing the monthly payment for the same $50,000 single borrower under four regimes: the SAVE forbearance pause at $0, SAVE as actually billed at $62, RAP at $167, and New IBR at $221.",
+      "data": {
+        "bars": [
+          {
+            "label": "SAVE forbearance (the pause)",
+            "value": 0
+          },
+          {
+            "label": "SAVE (what they actually paid)",
+            "value": 62
+          },
+          {
+            "label": "RAP (the new option)",
+            "value": 167,
+            "highlight": true
+          },
+          {
+            "label": "New IBR",
+            "value": 221
+          }
+        ]
+      }
+    },
+    {
+      "id": "family-band-narrows",
+      "kind": "range",
+      "title": "RAP's cheaper band narrows as the family grows",
+      "subtitle": "Approximate income range where RAP's monthly payment beats New IBR, by household size. Edges are approximate because the staircase makes the boundary ragged.",
+      "source": "Cumulant Research calculations: RAP $50 per-dependent reduction vs IBR's household-scaled poverty shield (2025 HHS guidelines, +$5,500 per additional person). Source figures web-verified June 2026.",
+      "units": "annual AGI ($)",
+      "note": "Each added dependent is worth about $69 a month of IBR relief (a larger poverty shield) but only $50 of RAP relief, so adding family members shrinks and lifts RAP's winning band.",
+      "alt": "A horizontal range chart with two rows. The single-no-dependents row shows RAP roughly cheaper from about 29,300 to 80,000 dollars of income. The single-plus-two-dependents row shows a narrower band from about 47,000 to 70,000 dollars.",
+      "data": {
+        "items": [
+          {
+            "label": "Single, no dependents",
+            "low": 29300,
+            "mid": 54650,
+            "high": 80000
+          },
+          {
+            "label": "Single + 2 dependents",
+            "low": 47000,
+            "mid": 58500,
+            "high": 70000
+          }
+        ]
+      }
+    },
+    {
+      "id": "cliff-keynumber",
+      "kind": "keynumber",
+      "title": "The price of one dollar at $80,000",
+      "source": "Cumulant Research calculation from the RAP bracket schedule (OBBBA, P.L. 119-21). Source figures web-verified June 2026.",
+      "alt": "Crossing from 80,000 to 80,001 dollars of income raises RAP's monthly payment by about $66, because the flat rate steps from 7% to 8% on the entire income.",
+      "data": {
+        "value": "+$66",
+        "label": "jump in RAP's monthly payment for one dollar of income above $80,000",
+        "sub": "The flat rate re-rates the whole income from 7% to 8%"
+      }
+    }
+  ],
+  "leadImage": {
+    "src": "/images/articles/rap-affordable-only-in-the-middle.jpg",
+    "credit": "Photo: G. Edward Johnson, CC BY 4.0, via Wikimedia Commons",
+    "caption": "The U.S. Department of Education headquarters in Washington, where the agency begins moving 7.5 million SAVE-plan borrowers onto new repayment terms on July 1.",
+    "alt": "The main entrance of the Lyndon Baines Johnson Building, headquarters of the U.S. Department of Education, with the agency's name carved into the stone facade."
+  },
+  "sections": [
+    {
+      "heading": "The news hook",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Next week the U.S. Department of Education is expected to begin mailing notices that start a countdown for the roughly 7.5 million borrowers still parked in the struck-down SAVE plan. Each borrower gets at least 90 days to choose a new plan, or a servicer drops them into the Standard or the new Tiered Standard plan by default. The notices are expected to go out in tranches, so most clocks would expire in the autumn. Opening the same day, July 1, is the headline replacement: the Repayment Assistance Plan (RAP), which the Department describes as the simpler, more affordable option."
+        },
+        {
+          "type": "p",
+          "text": "'Affordable' is an adjective. We wanted an answer in numbers, so we rebuilt both payment formulas from their rulebooks and recomputed every figure by hand."
+        },
+        {
+          "type": "callout",
+          "label": "How to read this piece",
+          "text": "We compare one thing only: the size of the monthly check, for a single borrower with no dependents, under RAP versus the New IBR plan. That is deliberately narrow. It is also incomplete, and the final section explains exactly what a monthly-payment lens leaves out. Treat the number as the first question a borrower asks, not the last."
+        }
+      ]
+    },
+    {
+      "heading": "The central question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For a single borrower with no dependents, across what slice of the income distribution is RAP actually cheaper per month than New IBR (Income-Based Repayment), the income-driven plan it sits beside? Where do the two payment curves cross, and who lands on the losing side?"
+        },
+        {
+          "type": "p",
+          "text": "A note on which IBR. We model New IBR, which charges 10% of discretionary income and forgives after 20 years. It is open only to people who had no federal loan balance as of July 1, 2014. Many longtime borrowers can use only Old IBR, which charges a steeper 15% of discretionary income and forgives after 25 years; against that harsher plan RAP looks better still, so modeling New IBR is the tougher, more conservative test of RAP's 'affordable' label. If RAP only barely beats the gentler IBR, that tells you the most it can claim."
+        }
+      ]
+    },
+    {
+      "heading": "Two formulas, side by side",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The plans size your payment in fundamentally different ways, and the difference is the whole story."
+        },
+        {
+          "type": "p",
+          "text": "New IBR shields part of your income first. It protects 150% of the federal poverty guideline (for a single person in 2025 that is 150% of $15,650, or $23,475) and charges 10% of whatever is left, divided by 12 for a monthly figure. Earn below $23,475 and your payment is $0. The slice it taxes, the part above the floor, is called discretionary income. Because the floor is fixed, IBR's payment rises in a single straight line as income climbs: a ramp."
+        },
+        {
+          "type": "p",
+          "text": "RAP shields nothing. It applies one flat percentage to your entire adjusted gross income, and that percentage steps up by a point at every $10,000 line. Earn $10,000 or less and you pay a $10 minimum. From there it is 1% of all your income up to $20,000, 2% up to $30,000, 3% up to $40,000, and so on, reaching 10% above $100,000. Crucially, the rate is flat, not marginal: cross a line and the higher rate re-rates every dollar you make, not just the dollars above the line. That is why RAP's payment does not ramp. It holds flat, then jumps: a staircase."
+        },
+        {
+          "type": "callout",
+          "label": "A way to picture it",
+          "text": "Think of IBR as a tax with a standard deduction baked in: the first $23,475 is free, and you pay a flat slice of the rest. RAP is more like a membership tier. Nudge into the next tier by a single dollar and the new, higher rate applies to your whole income at once. The tiers are what make the bill lurch."
+        }
+      ]
+    },
+    {
+      "heading": "The staircase against the ramp",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Plot both and the shape of the answer appears. RAP's staircase sits below IBR's ramp across most of the middle of the income range, which is the kernel of truth in the 'affordable' pitch. But the staircase pokes back above the ramp right after some of its steps, and past $80,000 it climbs above the ramp and never comes back down."
+        },
+        {
+          "type": "chart",
+          "chartId": "staircase-vs-ramp"
+        },
+        {
+          "type": "p",
+          "text": "Reading the two curves against each other gives three findings: a lower edge where RAP starts winning, a couple of notches where it briefly loses inside the winning zone, and a hard upper cliff where it loses for good."
+        }
+      ]
+    },
+    {
+      "heading": "The lower edge, near $29,300",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "At the bottom of the income range, RAP is the more expensive plan, not the cheaper one. Anyone earning below $23,475 pays $0 under IBR but still owes RAP its 1% or 2%, subject to the $10 floor. Even just above the IBR floor, RAP stays pricier for a while: at $25,000 RAP's 2% works out to about $42 a month while IBR's thin slice of discretionary income is only about $13."
+        },
+        {
+          "type": "p",
+          "text": "The two lines finally cross at about $29,300. Below that point a borrower is better off on IBR; above it, RAP pulls ahead. The arithmetic is simple enough to do on a napkin: in the 2% band, RAP charges 2% of income while IBR charges 10% of income above $23,475. Set those equal and the crossover falls at roughly $29,300. The people on the losing side of this edge are the lowest earners, exactly the group the 'affordable' label is most likely to reach."
+        },
+        {
+          "type": "pullquote",
+          "text": "At the bottom of the income range, the plan marketed as affordable is the more expensive one."
+        }
+      ]
+    },
+    {
+      "heading": "The notches inside the band",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Even where RAP wins on average, the win is not continuous, because every $10,000 step briefly throws the payment above IBR before IBR's steeper slope catches back up."
+        },
+        {
+          "type": "p",
+          "text": "Just past $30,000, RAP re-rates from 2% to 3%, lifting the monthly bill from about $50 to about $75 in a single dollar, while IBR is still only around $54. So from roughly $30,000 to about $33,500, RAP costs a little more, even though both the income just below and the income just above sit inside RAP's cheaper band. A second, wider notch opens after the $70,000 step: RAP jumps to 7% (about $408 a month) while IBR is near $388, and RAP stays a touch more expensive all the way to about $78,000 before dipping back under for the final stretch to $80,000. Inside the 'cheaper' band, in other words, there are stretches thousands of dollars wide where it is not."
+        },
+        {
+          "type": "p",
+          "text": "These notches are modest in dollars, at most about $20 a month, but they matter for anyone whose income lands on a step. The plan's advantage is real on average and ragged in detail."
+        }
+      ]
+    },
+    {
+      "heading": "The cliff at $80,000",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The last crossover is not a gentle notch but a cliff, and it is the sharpest feature of the whole design. At $80,000 of income RAP charges 7%, about $467 a month, a hair under IBR's $471. Add a single dollar and RAP re-rates the entire $80,001 at 8%, lifting the payment to about $533. That is a jump of roughly $66 for one dollar of extra income."
+        },
+        {
+          "type": "chart",
+          "chartId": "cliff-keynumber"
+        },
+        {
+          "type": "p",
+          "text": "From that dollar onward RAP sits about $62 a month above IBR and never returns. As income keeps climbing the gap widens, partly because RAP keeps stepping up and partly because IBR's payment can be held down by its standard-payment cap, the rule that never lets an IBR bill exceed the fixed 10-year Standard amount. By $120,000 of income RAP runs roughly $200 a month more than IBR. The losing side of this edge is high earners, and unlike the lower edge there is no income high enough to climb back into RAP's favor."
+        },
+        {
+          "type": "callout",
+          "label": "Why a cliff and not a ramp",
+          "text": "Because RAP's rate is flat rather than marginal, the income tax it most resembles is one with no brackets at all, just thresholds. The federal income tax avoids exactly this by taxing each band of income at its own rate, so crossing into a higher bracket never cuts your take-home pay. RAP's flat-rate design re-prices everything at once, which is what turns an ordinary raise into a payment shock."
+        }
+      ]
+    },
+    {
+      "heading": "When the household grows",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The single, no-dependents case is the cleanest, but most borrowers are not single with no dependents, and family size moves the band. The two plans hand out family relief through different doors. IBR enlarges its poverty shield by $5,500 for each additional household member, which at 10% and divided by 12 is worth about $69 a month per dependent. RAP instead subtracts a flat $50 per dependent straight off the payment."
+        },
+        {
+          "type": "p",
+          "text": "Because IBR's per-dependent relief ($69) is larger than RAP's ($50), every dependent you add helps IBR more than it helps RAP. The result: as the family grows, RAP's winning band both narrows and shifts upward. For a single filer with two dependents, the band where RAP beats IBR shrinks from roughly $29,300-to-$80,000 down to something closer to $47,000-to-$70,000."
+        },
+        {
+          "type": "chart",
+          "chartId": "family-band-narrows"
+        },
+        {
+          "type": "p",
+          "text": "The practical lesson is that 'is RAP cheaper for me' has no household-independent answer. The same income that makes RAP the bargain for a single person can make IBR the bargain for that person's coworker with two kids."
+        }
+      ]
+    },
+    {
+      "heading": "What SAVE borrowers actually felt",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For the 7.5 million people getting these notices, the comparison that lands hardest is not RAP versus IBR but RAP versus what they have been paying, which for most of them is nothing. SAVE enrollees have spent months in an interest-free forbearance: a $0 bill with the balance frozen. Even when SAVE was being billed normally, it was the most generous plan on the menu, shielding income up to 225% of poverty and charging only 5% above that for undergraduate debt."
+        },
+        {
+          "type": "chart",
+          "chartId": "four-rulebooks"
+        },
+        {
+          "type": "p",
+          "text": "Stack the four regimes for the same $50,000 single borrower and the size of the coming jolt is plain. The pause is $0. SAVE as actually billed was about $62. RAP, the cheaper of the two go-forward options at this income, is about $167, roughly 2.7 times the SAVE bill. New IBR is about $221. For these borrowers, 'affordable' is a comparison to IBR, not to the world they have been living in. The monthly number is going up no matter which plan they pick."
+        }
+      ]
+    },
+    {
+      "heading": "What a monthly-payment lens leaves out",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Everything above measures one quantity: the size of the monthly check. That is the first question most borrowers ask, but it is not the same question as 'which plan costs less over the life of the loan,' and the two can diverge sharply."
+        },
+        {
+          "type": "p",
+          "text": "RAP carries three features that this comparison does not price. It waives unpaid interest, so a small payment never lets the balance grow. It adds a $50-a-month government match straight to principal, shrinking the original balance faster (this is a separate $50 from the per-dependent payment cut). And it forgives after 30 years. IBR forgives sooner, after 20 years for New IBR, but charges a larger slice along the way and offers no interest waiver or principal match. A borrower who pays RAP's higher monthly bill at high income may still come out behind over the full term, and a borrower with a small balance and a clear runway to payoff may find the monthly figure is the only one that matters. The honest version of the finding is that RAP is cheaper per month across a specific middle band, with frayed edges, and that whether it is cheaper overall is a different calculation that turns on balance size, career path, and time."
+        },
+        {
+          "type": "p",
+          "text": "One group should ignore the lifetime math entirely: anyone chasing Public Service Loan Forgiveness, which cancels the balance after 10 years of qualifying work. For them a lower monthly payment is simply better, full stop, and the band where RAP wins is the band where RAP wins. For everyone else, the monthly number is where the decision starts, not where it ends."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "We rebuilt each plan's monthly payment from its published rulebook and recomputed every figure independently rather than relying on a calculator.",
+    "RAP: a $10 minimum at or below $10,000 of AGI, then a flat rate applied to the entire AGI that rises one percentage point per $10,000 band (1% over $10,000, rising to 10% over $100,000), divided by 12. The rate is flat, not marginal, so crossing a band re-rates all income. Source schedule from OBBBA (P.L. 119-21) as set out by the Congressional Research Service and NerdWallet.",
+    "New IBR: 10% of discretionary income, defined as AGI minus 150% of the 2025 HHS poverty guideline ($15,650 single, plus $5,500 per additional household member), divided by 12; payment floored at $0 and capped at the 10-year Standard amount. Forgiveness after 20 years; eligibility limited to borrowers with no federal loan balance as of July 1, 2014.",
+    "Crossover points were solved algebraically by setting the two payment formulas equal within each RAP band (for example, the lower crossing solves 0.02*AGI = 0.10*(AGI, 23,475), giving about $29,300).",
+    "The SAVE comparison uses the SAVE undergraduate formula: 5% of AGI above 225% of the poverty guideline, divided by 12.",
+    "The family band uses IBR's household-scaled poverty shield (about $69 per dependent per month of relief) against RAP's flat $50 per-dependent payment reduction; band edges are approximate because RAP's staircase makes the boundary ragged.",
+    "All figures are for a single borrower with no dependents and undergraduate loans unless a chart states otherwise. Parent PLUS and Grad PLUS borrowers face different rules and are out of scope."
+  ],
+  "sources": [
+    {
+      "title": "U.S. Department of Education Announces Next Steps for Borrowers Enrolled in the Unlawful SAVE Plan",
+      "publisher": "U.S. Department of Education",
+      "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-next-steps-borrowers-enrolled-unlawful-save-plan",
+      "kind": "primary"
+    },
+    {
+      "title": "The Repayment Assistance Plan (RAP) in P.L. 119-21, the FY2025 Reconciliation Law",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/IF13075",
+      "kind": "primary"
+    },
+    {
+      "title": "What Is the New Repayment Assistance Plan (RAP) for Student Loans?",
+      "publisher": "NerdWallet",
+      "url": "https://www.nerdwallet.com/student-loans/learn/what-is-the-new-repayment-assistance-plan-rap-for-student-loans",
+      "kind": "secondary"
+    },
+    {
+      "title": "2025 Poverty Guidelines",
+      "publisher": "U.S. Department of Health and Human Services (ASPE)",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "kind": "data"
+    },
+    {
+      "title": "Income-Based Repayment (IBR): How It Works, Who Qualifies, and What Changed",
+      "publisher": "Tate Law (tateesq.com)",
+      "url": "https://www.tateesq.com/learn/income-based-repayment",
+      "kind": "secondary"
+    },
+    {
+      "title": "IBR vs RAP: Which Student Loan Repayment Plan Is Better for You?",
+      "publisher": "Tate Law (tateesq.com)",
+      "url": "https://www.tateesq.com/learn/ibr-vs-rap",
+      "kind": "secondary"
+    },
+    {
+      "title": "Department of Ed Will Begin July 1 Exit Plan for 7 Million SAVE Plan Borrowers",
+      "publisher": "The College Investor",
+      "url": "https://thecollegeinvestor.com/81538/save-plan-forbearance-ends-borrower-reminders/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Guide: Student loan options change July 1. What you need to know",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/06/10/nx-s1-5835633/student-loans-guide-education-changes-repayment-plan",
+      "kind": "secondary"
+    },
+    {
+      "title": "One Big Beautiful Bill Act: Paying Back Your Loans",
+      "publisher": "PHEAA",
+      "url": "https://www.pheaa.org/tools-resources/how-obbba-impacts-student-loans/repayment-and-forgiveness",
+      "kind": "secondary"
+    },
+    {
+      "title": "How OBBBA reshapes student lending",
+      "publisher": "Brookings Institution",
+      "url": "https://www.brookings.edu/articles/how-obbba-reshapes-student-lending/",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "This compares one quantity only, the monthly payment. It does not model lifetime cost, which RAP's unpaid-interest waiver, $50 principal match, and 30-year forgiveness clock all change.",
+    "Crossover and band edges are computed for a single borrower with no dependents and undergraduate loans; results shift with household size, loan type, and state (Alaska and Hawaii have higher poverty guidelines).",
+    "We model New IBR (10%, 20-year forgiveness). Borrowers limited to Old IBR (15%, 25 years) would see RAP win across a wider band, so the conclusions here are conservative.",
+    "The family band is approximate; RAP's staircase makes the true boundary ragged rather than a single clean number.",
+    "Figures use 2025 poverty guidelines and the AGI of the prior tax year, as both plans do; updated guidelines or income would move the dollar thresholds slightly.",
+    "Parent PLUS and Grad PLUS loans follow different rules and are not covered.",
+    "The 7.5 million figure and the July 1 timing reflect the Department's stated plans as of late June 2026 and could change with litigation or administrative delay."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "secondarySections": [
+    "policy",
+    "economy"
+  ],
+  "companies": [],
+  "people": [],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "Student Lending",
+    "Higher Education",
+    "Consumer Finance"
+  ],
+  "assetClasses": [
+    "Student Loans"
+  ],
+  "impactTags": [
+    "household-budgets",
+    "debt-repayment",
+    "policy-transition",
+    "income-driven-repayment",
+    "monthly-cost"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Long-Term",
+  "newsScore": 78,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "On July 1, 2026 the Department of Education begins 90-day notices moving roughly 7.5 million borrowers off the court-voided SAVE plan toward the new Repayment Assistance Plan (RAP).",
+    "For a single borrower with no dependents, RAP beats New IBR on monthly payment only across a band of roughly $29,300 to $80,000 of income, not for everyone.",
+    "RAP's flat rate re-rates the entire income at every $10,000 step, producing a sawtooth: small notches near $30,000 and $70,000-$78,000, and a true cliff at $80,000 where one extra dollar jumps the bill about $66.",
+    "Below the band, RAP charges the lowest earners more than IBR (which can be $0); above it, high earners pay a premium widening to about $200 a month by $120,000.",
+    "Adding dependents narrows and shifts RAP's winning band upward (toward roughly $47,000-$70,000 with two dependents) because IBR's per-dependent relief is larger than RAP's flat $50."
+  ],
+  "whyItMatters": "About 7.5 million borrowers must pick a new repayment plan within months, and the 'affordable' label on RAP only holds for a middle slice of incomes and household sizes. For most SAVE enrollees coming off a $0 interest-free pause, the monthly bill rises sharply no matter which plan they choose, reshaping household budgets and discretionary spending. Whether a borrower lands just inside or just outside a $10,000 rate step or the $80,000 cliff can swing the monthly payment by tens of dollars, making plan choice consequential and non-obvious.",
+  "whatToWatch": [
+    "Timing and tranching of the Department of Education's 90-day notices, with most clocks expiring in autumn 2026.",
+    "How servicers handle defaults into the Standard or Tiered Standard plan for borrowers who do not actively choose.",
+    "Whether RAP's lifetime features (unpaid-interest waiver, $50 principal match, 30-year forgiveness) offset higher monthly payments in practice.",
+    "Borrower behavior near rate-step thresholds and the $80,000 cliff, including any income-bunching or plan-switching."
+  ],
+  "primarySection": "personal-finance",
+  "date": "2026-06-27",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-27T17:14:03.085Z"
+}
