@@ -1,0 +1,545 @@
+{
+  "published": true,
+  "slug": "mica-deadline-turnstile-not-doorway",
+  "headline": "MiCA's deadline was sold as a doorway to all of Europe. The arithmetic says it is a turnstile.",
+  "deck": "On 1 July 2026 the EU's MiCA transitional period ends with no extension, and Binance has confirmed it will wind down most EU services after failing to secure a license in time. Cumulant finds that only about one in six already-registered crypto firms converted to the new EU-wide license, a survival rate that looks as harsh as the UK's tough FCA regime. But the resemblance is largely an arithmetic accident: French data suggest the thinning came mostly from firms that never applied, and among firms that did apply, MiCA's pass rate looks higher, not lower, than the FCA's.",
+  "takeaways": [
+    "About 210 of a roughly 1,200-firm legacy base of nationally registered crypto providers converted to a full MiCA license, around 17 percent. Measured against the wider European universe of about 2,750 to 3,000 firms it is closer to 7 to 8 percent. These are different denominators and should never be read as a single number.",
+    "That 17 percent looks like the UK FCA's record (44 of 359 applicants approved, about 12 percent), but the only like-for-like figure, MiCA's pass rate among firms that actually applied, is a derived estimate of roughly 40 percent. On that basis MiCA looks more permissive, not equally tough.",
+    "The shrinkage is mostly self-selection, not refusal: in France about 70 percent of unlicensed registered firms either never applied or never responded to the regulator. This is one-country evidence and should not be generalized across all 27 states.",
+    "Binance is the visible exception, a real application that stalled on anti-money-laundering and 'fit and proper' concerns in Greece, sitting on top of a much larger mass of quiet exits. It says it still intends to seek a license in France.",
+    "Survivors concentrate in a few states, with Germany alone holding roughly one in four licenses. That is concentration, not proof of forum shopping; BaFin is strict and slow, and ESMA's scrutiny of fast-track licensing has centered on Malta."
+  ],
+  "glossary": [
+    {
+      "term": "MiCA",
+      "definition": "The EU's Markets in Crypto-Assets regulation, a single rulebook that replaces the patchwork of national crypto rules across all 27 member states."
+    },
+    {
+      "term": "VASP",
+      "definition": "Virtual asset service provider, the old country-by-country registration most EU states used to let a crypto firm operate."
+    },
+    {
+      "term": "CASP",
+      "definition": "Crypto-asset service provider, the new single EU-wide license MiCA created to replace the old national registrations."
+    },
+    {
+      "term": "Passporting",
+      "definition": "The right to get one license in one EU country and then offer services across all 27 without applying again in each."
+    },
+    {
+      "term": "Transitional period",
+      "definition": "A grace window during which firms could keep operating under old national rules while applying for the new MiCA license; it ends 1 July 2026."
+    },
+    {
+      "term": "ESMA",
+      "definition": "The European Securities and Markets Authority, the EU body that coordinates national financial regulators and oversees how MiCA is applied."
+    },
+    {
+      "term": "FCA",
+      "definition": "The UK's Financial Conduct Authority, the regulator that has run a strict crypto anti-money-laundering registration regime since 2020."
+    },
+    {
+      "term": "Anti-money-laundering (AML)",
+      "definition": "Rules and checks that require firms to verify who their customers are and stop criminal money from being disguised as legitimate funds."
+    },
+    {
+      "term": "Fit and proper",
+      "definition": "A regulator's judgment about whether the people running a firm, and its controls, are honest, competent and suitable to be trusted with customers' money."
+    },
+    {
+      "term": "Conversion rate",
+      "definition": "Here, the share of firms that already held an old national registration and successfully obtained the new MiCA license."
+    },
+    {
+      "term": "Denominator",
+      "definition": "The bottom number in a fraction; change what you divide by and the same count of licensed firms can read as 7 percent or 17 percent or 40 percent."
+    },
+    {
+      "term": "Cull versus attrition",
+      "definition": "A cull means a regulator actively refuses applicants; attrition means firms quietly walk away or never apply. Both shrink the market but for different reasons."
+    },
+    {
+      "term": "Withdrawal",
+      "definition": "When a firm pulls its own application before a decision, often under pressure; it counts as a failure but it is the firm leaving, not the regulator refusing."
+    },
+    {
+      "term": "Forum shopping",
+      "definition": "When firms pick the country with the friendliest or fastest regulator to get licensed, then use passporting to serve everyone else."
+    },
+    {
+      "term": "Self-selection",
+      "definition": "When the people who drop out of a process choose to do so themselves, rather than being pushed out; the survivors are shaped by who decided not to try."
+    },
+    {
+      "term": "Custody",
+      "definition": "The safekeeping of customers' crypto assets by a licensed firm, similar to a bank holding deposits."
+    },
+    {
+      "term": "BaFin",
+      "definition": "Germany's federal financial regulator, which has authorized the largest single share of MiCA licenses."
+    },
+    {
+      "term": "AMF",
+      "definition": "France's financial markets regulator, the Autorite des marches financiers."
+    },
+    {
+      "term": "HCMC",
+      "definition": "The Hellenic Capital Market Commission, Greece's financial regulator, which was reviewing Binance's license application before the firm withdrew it."
+    },
+    {
+      "term": "Changpeng Zhao (CZ)",
+      "definition": "Binance's founder and former chief executive, who pleaded guilty to a US anti-money-laundering charge in 2023 and still holds most of the company."
+    },
+    {
+      "term": "Annual turnover",
+      "definition": "A company's total yearly revenue; MiCA ties some maximum fines to a percentage of it so that penalties scale with a firm's size."
+    }
+  ],
+  "event": "On 26 June 2026 Binance told users in France, Italy, Spain and Poland that it would suspend most EU services from 1 July, days before the EU's MiCA transitional period ends with no extension. After that date, providing crypto services to EU clients without a MiCA license breaches EU law and exposes a firm to administrative fines that, for operating without authorization, can reach up to EUR 5 million or 5 percent of annual turnover (higher tiers apply to other breaches).",
+  "question": "Of the crypto firms that already held a national registration in the EU, what share actually cleared MiCA's bar by 1 July 2026, and does that pass rate show a market being actively gatekept or one thinning itself out?",
+  "readingMinutes": 9,
+  "tags": [
+    "MiCA",
+    "crypto regulation",
+    "EU",
+    "Binance",
+    "FCA",
+    "data journalism",
+    "fintech",
+    "financial regulation"
+  ],
+  "leadChartId": "denominator-artifact",
+  "charts": [
+    {
+      "id": "denominator-artifact",
+      "kind": "bar",
+      "title": "One pass rate, three different denominators",
+      "subtitle": "Why '17 percent' and the FCA's '12 percent' are not the same measurement",
+      "source": "ESMA MiCA interim register and CASP tracker (late June 2026); FCA cryptoasset registration data (2024); the last bar is a Cumulant-derived estimate, not a register count",
+      "units": "percent",
+      "period": "2020-2026",
+      "note": "Each bar divides by a different base, so they are not one 'survival rate'. The only like-for-like comparison with the FCA's 12 percent is the last bar, MiCA's pass rate among firms that actually applied. We derive it by scaling France's roughly 30 percent application rate to the bloc; the result is sensitive to assumptions and lands anywhere from the high 20s to high 50s in percent depending on the legacy base used, with about 40 percent as a midpoint. On any plausible version MiCA looks more permissive than the FCA, not equally tough.",
+      "alt": "Bar chart showing four ratios: MiCA converted about 17 percent of legacy-registered firms, MiCA authorized about 7 percent of the wider universe of roughly 2,750 to 3,000 firms, the UK FCA approved 12 percent of applicants, and MiCA's derived pass rate among firms that actually applied is about 40 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "MiCA: legacy-registered firms converted (~210/~1,200)",
+            "value": 17,
+            "highlight": true
+          },
+          {
+            "label": "MiCA: share of wider universe (~210/~2,750)",
+            "value": 8
+          },
+          {
+            "label": "UK FCA: applicants approved 2020-24 (44/359)",
+            "value": 12
+          },
+          {
+            "label": "MiCA: approved among firms that applied (derived, midpoint)",
+            "value": 40,
+            "highlight": true
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "france-status",
+      "kind": "bar",
+      "title": "The decisive test: France's unlicensed firms, by what they actually did",
+      "subtitle": "Status of about 90 unlicensed registered French providers, share by status",
+      "source": "AMF figures as reported in crypto trade press (Sumsub, Cointribune) citing the AMF; the exact percentages were not found in a still-live AMF document",
+      "units": "percent",
+      "period": "late 2025 to early 2026",
+      "note": "The base is small, about 90 firms, so the 'no intention' group is only roughly 36 firms. Seven in ten never engaged, which points to self-selection rather than refusal, but this is one country and cannot stand for all 27.",
+      "alt": "Bar chart of about 90 unlicensed registered French crypto providers: 40 percent had no intention of applying, 30 percent did not respond to the regulator, 30 percent had applied.",
+      "data": {
+        "bars": [
+          {
+            "label": "No intention of applying",
+            "value": 40,
+            "highlight": true
+          },
+          {
+            "label": "Did not respond to AMF",
+            "value": 30
+          },
+          {
+            "label": "Applied",
+            "value": 30
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "casp-by-state",
+      "kind": "bar",
+      "title": "The surviving market has an address",
+      "subtitle": "CASP licenses by member state, top six jurisdictions",
+      "source": "CASP tracker built on ESMA's interim register, snapshot of 26 June 2026; cross-checked against BaFin",
+      "units": "licenses",
+      "period": "26 June 2026",
+      "note": "Counts move week to week and vary by source and scope: this snapshot totals about 244, while ESMA's narrower full-authorization count read 204 on 18 June. Germany alone holds roughly one in four of all CASP licenses.",
+      "alt": "Bar chart of MiCA CASP licenses by country as of 26 June 2026: Germany 57, Netherlands 26, France 26, Malta 17, Cyprus 14, Ireland 12.",
+      "data": {
+        "bars": [
+          {
+            "label": "Germany",
+            "value": 57,
+            "highlight": true
+          },
+          {
+            "label": "Netherlands",
+            "value": 26
+          },
+          {
+            "label": "France",
+            "value": 26
+          },
+          {
+            "label": "Malta",
+            "value": 17
+          },
+          {
+            "label": "Cyprus",
+            "value": 14
+          },
+          {
+            "label": "Ireland",
+            "value": 12
+          }
+        ],
+        "max": 57
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A deadline, and an exit",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 26 June 2026, Binance, the largest crypto exchange in the world, told customers in France, Italy, Spain and Poland that it would suspend most of its services on 1 July. From that date it stops accepting new sign-ups, deposits and most spot trades for EU residents, though existing funds stay accessible and withdrawals keep working. Two days earlier it had withdrawn its license application in Greece, telling the Hellenic Capital Market Commission (HCMC) it acted 'after careful consideration of the status and the timeline of the process.'"
+        },
+        {
+          "type": "p",
+          "text": "According to reporting by the Financial Times and others, Greek regulators had raised two concerns before that withdrawal: the strength of Binance's anti-money-laundering controls, and whether its founder and former chief executive Changpeng Zhao, who still owns most of the company, could satisfy MiCA's 'fit and proper' test. We flag this detail as load-bearing and reported rather than independently confirmed; the HCMC itself declined to comment. Binance says it is not leaving Europe for good and intends to seek a license in France."
+        },
+        {
+          "type": "p",
+          "text": "The trigger is a deadline. On 1 July 2026 the transitional period under the EU's Markets in Crypto-Assets regulation, known as MiCA, runs out. The European Securities and Markets Authority (ESMA) has set this out plainly: after that date a firm is either authorized under MiCA or it is breaking EU law, with no intermediate status and no extension mechanism in the rules. The financial stakes are real. Operating without authorization can draw administrative fines of up to EUR 5 million or 5 percent of annual turnover for a company, and other categories of breach, such as stablecoin or market-abuse violations, carry even higher caps."
+        },
+        {
+          "type": "callout",
+          "label": "The vocabulary, in plain terms",
+          "text": "A VASP (virtual asset service provider) is the old, country-by-country registration most EU states used to let a crypto firm operate. A CASP (crypto-asset service provider) is the new, single EU-wide license MiCA created to replace all of them. The selling point of the CASP is passporting: get one license in one member state and you can serve all 27, a market of roughly 450 million people. The promise, in other words, is a doorway: walk through once, sell everywhere."
+        },
+        {
+          "type": "p",
+          "text": "This piece asks one narrow question, and only one: of the crypto firms that already held a national registration in the EU, what share actually cleared MiCA's bar by 1 July, and does that pass rate show a market being actively gatekept or one thinning itself out?"
+        }
+      ]
+    },
+    {
+      "heading": "The number, and the trap inside it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Of an estimated 1,200 firms that previously held national VASP registrations across the bloc, roughly 210 had converted to a full CASP license as the deadline approached, a conversion rate of about 17 percent. Measured against the wider universe of crypto firms operating in Europe, counted at about 2,747 in 2024 and sometimes rounded to 3,000, the licensed survivors are closer to 7 or 8 percent."
+        },
+        {
+          "type": "p",
+          "text": "A note on honesty before we go further, because these counts are softer than they look. Depending on the weekly snapshot, and on whether you count full authorizations only or also include credit institutions and pending notifications, the running total of authorized CASPs lands somewhere between roughly 200 and 245 in late June. ESMA's narrower register read 204 on 18 June; a widely used tracker built on the same register read 244 on 26 June. We use about 210 as a central figure. The denominators are softer still: the roughly 1,200 legacy base traces to crypto trade press rather than a regulator, and the wider universe of about 2,750 comes from a 2024 count set against 2026 licensees. We keep the two ratios strictly separate so they are never blurred into one flattering or one damning number."
+        },
+        {
+          "type": "p",
+          "text": "And one more caution that turns out to matter more than any of these: 17 percent is a snapshot of a process still running. Authorizations are being issued week by week, and firms sitting in the pending pile will convert after the deadline. So 17 percent is best read as a floor, not a settled verdict."
+        }
+      ]
+    },
+    {
+      "heading": "A regime we have seen before",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The closest precedent for a hard, judgment-based crypto gatekeeper is the UK's Financial Conduct Authority (FCA) anti-money-laundering registration regime, which has run since January 2020. The FCA received 359 applications from crypto firms and registered just 44 of them. Counting refusals, withdrawals and rejections together, the regulator's own framing is that more than 87 percent of applications failed to meet its standards. That 44-of-359 works out to a 12 percent approval rate, close enough to MiCA's 17 percent that the two look like the same gate."
+        },
+        {
+          "type": "p",
+          "text": "They are not, and the chart below is built to show why rather than to hide it. Put the ratios side by side and the first thing you see is that they do not share a denominator."
+        },
+        {
+          "type": "chart",
+          "chartId": "denominator-artifact"
+        },
+        {
+          "type": "p",
+          "text": "The 17 percent divides licenses by the registered base. The 12 percent divides FCA approvals by FCA applicants. Those are different measurements. The genuinely comparable number, MiCA's pass rate among firms that actually applied, is the fourth bar: a derived estimate of roughly 40 percent. We build it by scaling France's application behavior (below) to the bloc, so treat it as an illustration, not a register count; depending on which legacy base you assume, the figure swings from the high 20s to the high 50s in percent. But the direction holds across every plausible version. On a like-for-like basis MiCA does not match the FCA's severity. It looks more permissive."
+        }
+      ]
+    },
+    {
+      "heading": "The objection that nearly breaks the story",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is where a careful reader should push back, and where the reporting forced a revision."
+        },
+        {
+          "type": "p",
+          "text": "A low pass rate is a fact. 'MiCA rejected them' is a causal claim, and a different thing. A market can shrink to 17 percent two ways. One is a cull: firms apply and the regulator refuses them. The other is attrition: firms look at the cost and the scrutiny and simply walk away or never file at all. Same body count, very different cause. If most of the missing firms never applied, then 'cull' is the wrong word."
+        },
+        {
+          "type": "p",
+          "text": "The only granular test we have comes from France. Of about 90 registered French providers without a MiCA license, roughly 40 percent had no intention of applying, another 30 percent never responded to the regulator at all, and only about 30 percent had actually applied. Seven in ten never entered the ring."
+        },
+        {
+          "type": "chart",
+          "chartId": "france-status"
+        },
+        {
+          "type": "p",
+          "text": "Read carefully, this disproves the pure-cull story for France. The contraction there is mostly self-selection. But it is one country, and a small base: the 'no intention' group is only about 36 firms, so we lean on it for direction, not precision, and we cannot assume the other 26 states behaved the same way."
+        },
+        {
+          "type": "pullquote",
+          "text": "Same body count, very different cause. If most of the missing firms never applied, then 'cull' is the wrong word."
+        }
+      ]
+    },
+    {
+      "heading": "Where the survivors cluster",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If most of the thinning is firms leaving rather than regulators refusing, the next question is where the ones who stayed ended up. The answer is lopsided."
+        },
+        {
+          "type": "chart",
+          "chartId": "casp-by-state"
+        },
+        {
+          "type": "p",
+          "text": "Germany holds roughly one in four of all CASP licenses, more than the next two countries combined. It is tempting to read that as forum shopping, firms flocking to a soft touch. The evidence points the other way. Germany's regulator, BaFin, has a reputation for being strict and slow, and it could lean on an existing national crypto-custody licensing regime that gave serious applicants a head start. Concentration here looks like capacity and preparation, not leniency."
+        },
+        {
+          "type": "p",
+          "text": "Where the forum-shopping worry has actually landed is Malta. In July 2025 ESMA published a fast-track peer review of a Maltese license and concluded the authorization should have been more thorough and was granted ahead of other member states. ESMA has separately argued for a single EU-level supervisor for the biggest cross-border crypto firms, precisely to stop firms from picking the easiest regulator and passporting everywhere else. So the concentration in the chart is two different stories: Germany's lead is the slow, strict kind of survival, while the lighter-touch route ESMA worries about runs through smaller fast-track states."
+        }
+      ]
+    },
+    {
+      "heading": "Doorway or turnstile?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Put the pieces together and the headline number reorganizes itself. Yes, only about one in six already-registered firms converted, a survival rate that superficially rhymes with the FCA's brutal record. But the mechanism is almost the opposite. The FCA built a gate and turned most applicants away. MiCA built a gate that most firms looked at and chose not to approach; among those that did apply, the pass rate appears markedly higher than the FCA's."
+        },
+        {
+          "type": "p",
+          "text": "That is the difference between a doorway and a turnstile. A doorway is the promise MiCA advertised: clear the bar once, sell across 450 million people. A turnstile is what the arithmetic actually describes: a narrow opening that most of the old crowd never bothered to push through, while the few who did mostly got to the other side. The market did shrink dramatically. It just shrank mostly by self-selection, with Binance's stalled Greek application the loud exception sitting on top of a much quieter exodus."
+        },
+        {
+          "type": "p",
+          "text": "The honest verdict, then, is conditional. If you are a firm willing to staff up on compliance and file a serious application, MiCA in mid-2026 looks more like a doorway than the FCA ever did. If you are one of the thousands of lightly capitalized registrations that populated Europe's pre-MiCA map, the deadline was a turnstile you were never going to clear, and most of you decided that before the regulator ever had to."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Defined one narrow question, the conversion rate from legacy national registration to a full MiCA CASP license, and deliberately separated it from the broader 'how many crypto firms survived' framing that mixes denominators.",
+    "Took the count of authorized CASPs (about 210, within a roughly 200 to 245 range in late June 2026) from ESMA's interim MiCA register and a tracker built on it, and noted the snapshot date because the total moves weekly.",
+    "Computed three distinct ratios using explicitly different denominators (the roughly 1,200 legacy VASP base, the roughly 2,747 to 3,000 wider 2024 universe, and the FCA's 359 applicants) and refused to collapse them into a single 'survival rate'.",
+    "Derived the like-for-like applicant pass rate by scaling France's reported application behavior (about 30 percent of unlicensed registered firms had applied) to the bloc, then stress-tested it across plausible legacy bases, which produced a range from the high 20s to high 50s in percent and a midpoint near 40 percent.",
+    "Tested the cull-versus-attrition question against the one granular dataset available, the AMF's breakdown of about 90 unlicensed French providers, and treated it as directional one-country evidence rather than an EU-wide finding.",
+    "Cross-checked the per-country license tally against BaFin's own MiCAR disclosures and ESMA's register, and read ESMA's Malta peer review to separate genuine forum-shopping concern from ordinary concentration.",
+    "Verified the Binance timeline (EU service suspension, Greek withdrawal, stated reasons) against contemporaneous reporting, flagging the anti-money-laundering and 'fit and proper' detail as press-reported because the Greek regulator declined to comment."
+  ],
+  "sources": [
+    {
+      "title": "Binance tells EU users it will no longer provide services after failing to secure MiCA license",
+      "publisher": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2026/06/26/binance-tells-eu-users-it-will-no-longer-provide-services-after-failing-to-secure-mica-license",
+      "kind": "secondary"
+    },
+    {
+      "title": "Binance to halt crypto services across EU countries after failing to secure MiCA approval",
+      "publisher": "Euronews (FT-sourced)",
+      "url": "https://www.euronews.com/business/2026/06/25/binance-to-halt-crypto-services-across-eu-countries-after-failing-to-secure-mica-approval",
+      "kind": "secondary"
+    },
+    {
+      "title": "Binance withdraws Greece MiCA application, targets new EU jurisdiction",
+      "publisher": "The Defiant",
+      "url": "https://thedefiant.io/news/regulation/binance-withdraws-greece-mica-application-targets-new-eu-jurisdiction",
+      "kind": "secondary"
+    },
+    {
+      "title": "Binance withdraws Greece bid but its MiCA plans aren't dead",
+      "publisher": "The Crypto Times",
+      "url": "https://www.cryptotimes.io/2026/06/24/binance-withdraws-greece-bid-but-its-mica-plans-arent-dead/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Statement on the End of Transitional Periods under MiCA (ESMA75-113276571-1679)",
+      "publisher": "ESMA",
+      "url": "https://www.esma.europa.eu/sites/default/files/2026-04/ESMA75-113276571-1679_Statement_on_the_end_of_transitional_periods_under_MiCA.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "End of MiCA transitional period: ESMA sets out its expectations for professionals and warns retail investors",
+      "publisher": "AMF",
+      "url": "https://www.amf-france.org/en/news-publications/news/end-mica-transitional-period-esma-sets-out-its-expectations-professionals-and-warns-retail-investors",
+      "kind": "primary"
+    },
+    {
+      "title": "Markets in Crypto-Assets Regulation (MiCA) interim register and statistics",
+      "publisher": "ESMA",
+      "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+      "kind": "data"
+    },
+    {
+      "title": "CASP Tracker (live count of MiCA authorizations by member state)",
+      "publisher": "casptracker.eu",
+      "url": "https://casptracker.eu/",
+      "kind": "data"
+    },
+    {
+      "title": "The MiCAR regime and its administrative penalties",
+      "publisher": "KPMG Law (Ireland)",
+      "url": "https://kpmglaw.ie/insight-micar-regime.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Europe crypto risk as MiCA July deadline nears (only ~7% hold licences)",
+      "publisher": "BeInCrypto",
+      "url": "https://beincrypto.com/europe-crypto-risk-mica-july-deadline/",
+      "kind": "secondary"
+    },
+    {
+      "title": "83% of Europe's crypto firms are not MiCA-licensed",
+      "publisher": "CryptoSlate via Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/83-europe-crypto-firms-not-133100256.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "UK regulator says 87% of crypto registration applications failed to meet standards for approval",
+      "publisher": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2024/09/05/uk-regulator-says-87-of-crypto-registration-applications-failed-to-meet-standards-for-approval",
+      "kind": "secondary"
+    },
+    {
+      "title": "Why the FCA rejected a large majority of crypto applications",
+      "publisher": "DL News",
+      "url": "https://www.dlnews.com/articles/regulation/why-the-fca-rejected-a-large-majority-of-crypto-applications/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Only 30% of crypto firms without a MiCA license have applied, says France's AMF",
+      "publisher": "Sumsub (citing AMF)",
+      "url": "https://sumsub.com/media/news/only-30-percent-of-crypto-firms-without-mica-license-have-applied-france-amf/",
+      "kind": "secondary"
+    },
+    {
+      "title": "The AMF gives crypto companies until June 30 to obtain their MiCA approval",
+      "publisher": "Cointribune",
+      "url": "https://www.cointribune.com/en/the-amf-gives-crypto-companies-until-june-30-to-obtain-their-mica-approval",
+      "kind": "secondary"
+    },
+    {
+      "title": "ESMA identifies opportunities to strengthen MiCA authorisations (Malta fast-track peer review)",
+      "publisher": "ESMA",
+      "url": "https://www.esma.europa.eu/press-news/esma-news/esma-identifies-opportunities-strengthen-mica-authorisations",
+      "kind": "primary"
+    },
+    {
+      "title": "Fast-track peer review on a CASP authorisation and supervision in Malta (ESMA42-2004696504-8164)",
+      "publisher": "ESMA",
+      "url": "https://www.esma.europa.eu/sites/default/files/2025-07/ESMA42-2004696504-8164_Fast-track_peer_review_on_a_CASP_authorisation_and_supervision_in_Malta.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "MiCAR supervision and authorisation in Germany",
+      "publisher": "BaFin",
+      "url": "https://www.bafin.de/EN/Aufsicht/MiCAR/MiCAR_node_en.html",
+      "kind": "primary"
+    }
+  ],
+  "limitations": [
+    "The headline 17 percent rests on a legacy base of about 1,200 firms that traces to trade press rather than a regulator; better-documented counts of the pre-MiCA universe run higher (Coincub put it at 2,747 in 2024, others at 3,500+), which would push the conversion rate toward 6 to 8 percent. We show both ratios rather than choosing one.",
+    "The count of authorized CASPs is a moving target. Sources disagree by scope and date: ESMA's register read 204 on 18 June, a tracker built on it read 244 on 26 June, and trade press cites about 210. We treat ~210 as central and report the range.",
+    "The fourth bar, MiCA's pass rate among firms that actually applied, is a Cumulant derivation, not a register figure. It is highly sensitive to the legacy base assumed and ranges from roughly the high 20s to the high 50s in percent; we present about 40 percent as a midpoint and the direction, not the exact value, as the finding.",
+    "The cull-versus-attrition evidence is from France alone, a base of about 90 firms, so the key sub-groups are only a few dozen firms each. It cannot be generalized across all 27 member states.",
+    "The Binance Greek-withdrawal detail (anti-money-laundering controls and Changpeng Zhao's 'fit and proper' status) is reported by the Financial Times and others; the Hellenic Capital Market Commission declined to comment, so it is not regulator-confirmed.",
+    "The per-country license chart is a single late-June snapshot; authorizations were still being issued and the numbers will have shifted by the deadline."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "secondarySections": [
+    "policy",
+    "regulation"
+  ],
+  "companies": [
+    "Binance"
+  ],
+  "people": [
+    "Changpeng Zhao"
+  ],
+  "regions": [
+    "European Union",
+    "France",
+    "Germany",
+    "Malta",
+    "Greece",
+    "United Kingdom",
+    "Italy",
+    "Spain",
+    "Poland"
+  ],
+  "industries": [
+    "Cryptocurrency",
+    "Crypto exchanges",
+    "Financial regulation",
+    "Digital assets"
+  ],
+  "assetClasses": [
+    "Cryptocurrencies",
+    "Digital assets"
+  ],
+  "impactTags": [
+    "regulatory-deadline",
+    "market-access",
+    "licensing",
+    "compliance-cost",
+    "market-consolidation",
+    "passporting"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 82,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "The EU's MiCA transitional period ends 1 July 2026 with no extension; after that, serving EU crypto clients without a CASP license breaches EU law and risks fines up to EUR 5 million or 5 percent of turnover.",
+    "Only about 210 of roughly 1,200 legacy nationally registered firms (~17 percent) converted to a full MiCA license, a rate that superficially echoes the UK FCA's 12 percent approval record.",
+    "The resemblance is an arithmetic artifact: the only like-for-like figure, MiCA's pass rate among firms that actually applied, is a derived ~40 percent, making MiCA look more permissive than the FCA, not equally tough.",
+    "French data show the shrinkage is mostly self-selection: about 70 percent of unlicensed registered firms never applied or never responded, not a regulator-led cull.",
+    "Binance is the loud exception, withdrawing its Greek application over AML and 'fit and proper' concerns and suspending most EU services, while survivors cluster in a few states with Germany alone holding roughly a quarter of licenses."
+  ],
+  "whyItMatters": "MiCA is the world's first comprehensive cross-border crypto licensing regime, and how harsh it actually is shapes whether Europe becomes a viable home for crypto businesses or a market that exporters write off. The 1 July deadline immediately removes most EU access for the world's largest exchange and thins a legacy field of roughly 1,200 firms to a few hundred, reshaping where liquidity, custody and compliance jobs concentrate. For firms weighing entry, the finding that the gate is more self-selection than refusal changes the calculus: serious, well-staffed applicants face a doorway, not a turnstile.",
+  "whatToWatch": [
+    "Whether Binance follows through on seeking a MiCA license in France and how regulators treat the Changpeng Zhao 'fit and proper' question.",
+    "How many pending applications convert after 1 July, lifting the 17 percent floor as authorizations continue week by week.",
+    "ESMA's push for an EU-level supervisor for large cross-border firms and further scrutiny of fast-track licensing in smaller states like Malta.",
+    "Whether other member states mirror France's self-selection pattern or show more active regulatory refusals as full-period data emerges."
+  ],
+  "primarySection": "crypto",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T08:52:53.700Z"
+}
