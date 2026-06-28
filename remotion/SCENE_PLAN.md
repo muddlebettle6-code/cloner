@@ -13,11 +13,11 @@ Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~75 s (2241 frames)**, H
 | 7 | spending huge, profit tiny | **bar chart**: SPENDING = HUGE vs PROFIT = TINY | whoosh + ticks |
 | 8 | "that gap is a bubble" | **bubble** (tense) | whoosh + chime |
 | 9 | dot-com crash, 2000 | **line chart** (up then crash) | whoosh + **down** sweep |
-| 10 | prices ran ahead, crashed | line chart | **down** + sub |
+| 10 | prices ran ahead, **crashed** | **the bubble BURSTS** into iridescent fragments (3D, on "crashed") | shimmer in, **bubble-pop + boom** on the burst |
 | 11 | the twist — spenders are profitable | **3D coin stack** | whoosh + coin |
 | 12 | may deflate, not pop | **bubble** (slowly shrinking) | whoosh + soft down |
 | 13 | watch: spending stops growing | line chart | whoosh + tick |
 | 14 | "A new era? Or the next bubble?" | **bubble** (question) | whoosh + chime |
 | 15 | follow card | Cumulant mark + "Follow…" | chime |
 
-**3D (4 detailed models):** iridescent bubble (meshPhysical + iridescence/clearcoat), AI chip, data center, coin stack — drei environment reflections + slow camera drift. **Charts:** circular flow, spending-vs-profit bar, dot-com line. **Audio:** deep onyx VO + a varied low SFX palette synced to each animation (coin, descending sweep on the crash, pops on the flow nodes); **no music**. Captions are the exact spoken words, smoothly word-synced.
+**3D (4 detailed models):** iridescent bubble (meshPhysical + iridescence/clearcoat), AI chip, data center, coin stack — drei environment reflections + slow camera drift. **Charts:** circular flow, spending-vs-profit bar, dot-com line. **Audio:** deep onyx VO + a **varied SFX palette with a different sound per transition type** (zoom→swish, push→snap, slide→swoosh-down, wipe→glitch, fade→shimmer) — never the same whoosh twice — plus event hits (coin, descending sweep on the crashes, node pops, **bubble-pop + boom on the burst**, boom on the drop). **No music.** Captions are the exact spoken words, smoothly word-synced. New SFX this pass: bubblepop, shimmer, swish, glitch, boom, snap.

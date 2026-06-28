@@ -26,6 +26,35 @@ const Bubble: React.FC<{ frame: number }> = ({ frame }) => {
   );
 };
 
+// the bubble that POPS — inflates + wobbles, then bursts into iridescent fragments
+const BubbleBurst: React.FC<{ frame: number; burstAt: number }> = ({ frame, burstAt }) => {
+  const t = frame - burstAt;
+  const grow = 0.55 + Math.min(1, frame / burstAt) * 0.9;        // inflate
+  const wobble = t < 0 ? 1 + 0.05 * Math.sin(frame / 3.5) : 1;   // tension before the pop
+  const scale = t < 0 ? grow * wobble : grow * (1 + Math.min(1, t / 3) * 0.55);
+  const opacity = t < 0 ? 0.82 : Math.max(0, 0.82 - t / 6);
+  const R = 1.3;
+  return (
+    <group rotation={[0.2, frame * 0.005, 0]} position={[0, Math.sin(frame / 30) * 0.1, 0]}>
+      {opacity > 0.01 && (
+        <mesh scale={scale}><sphereGeometry args={[R, 96, 96]} />
+          <meshPhysicalMaterial color="#ff5fae" roughness={0.03} metalness={0.15} clearcoat={1} iridescence={1} iridescenceIOR={1.4} transparent opacity={opacity} envMapIntensity={2.4} /></mesh>
+      )}
+      {t >= 0 && Array.from({ length: 22 }).map((_, i) => {
+        const a = (i / 22) * Math.PI * 2; const el = ((i % 3) - 1) * 0.5;
+        const dist = R * grow + t * 0.17;
+        const fo = Math.max(0, 1 - t / 14); const fs = (0.12 + (i % 4) * 0.03) * Math.max(0.2, 1 - t / 18);
+        if (fo <= 0.01) return null;
+        return (
+          <mesh key={i} position={[Math.cos(a) * dist, Math.sin(a) * dist - 0.006 * t * t, Math.sin(el) * dist * 0.5]} scale={fs}>
+            <sphereGeometry args={[1, 16, 16]} /><meshPhysicalMaterial color="#ff5fae" roughness={0.05} clearcoat={1} iridescence={1} transparent opacity={fo * 0.9} envMapIntensity={2} />
+          </mesh>
+        );
+      })}
+    </group>
+  );
+};
+
 // an AI chip (dark package + glowing magenta die + gold pins)
 const Chip: React.FC<{ frame: number }> = ({ frame }) => {
   const s = 0.62 + easeIn(frame) * 0.34;
@@ -70,9 +99,10 @@ const MoneyStack: React.FC<{ frame: number }> = ({ frame }) => {
   );
 };
 
-export const Object3D: React.FC<{ kind: "bubble" | "chip" | "datacenter" | "money" }> = ({ kind }) => {
+export const Object3D: React.FC<{ kind: "bubble" | "bubbleburst" | "chip" | "datacenter" | "money"; frames?: number }> = ({ kind, frames }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
+  const burstAt = Math.round((frames ?? 170) * 0.82);
   const camX = Math.sin(frame / 70) * 0.45;       // slow cinematic drift
   const camY = 0.3 + Math.sin(frame / 95) * 0.22;
   return (
@@ -86,6 +116,7 @@ export const Object3D: React.FC<{ kind: "bubble" | "chip" | "datacenter" | "mone
         <Lightformer form="circle" intensity={2} color="#9fd0ff" position={[2, -3, -5]} scale={[5, 5, 1]} />
       </Environment>
       {kind === "bubble" && <Bubble frame={frame} />}
+      {kind === "bubbleburst" && <BubbleBurst frame={frame} burstAt={burstAt} />}
       {kind === "chip" && <Chip frame={frame} />}
       {kind === "datacenter" && <DataCenter frame={frame} />}
       {kind === "money" && <MoneyStack frame={frame} />}

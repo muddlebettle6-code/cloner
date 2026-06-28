@@ -11,7 +11,7 @@ const Beat: React.FC<{ i: number }> = ({ i }) => {
   if (s.follow) return <SceneWrap frames={s.frames} trans={s.trans}><FollowCard /></SceneWrap>;
   return (
     <SceneWrap frames={s.frames} trans={s.trans}>
-      {s.object && <Object3D kind={s.object} />}
+      {s.object && <Object3D kind={s.object} frames={s.frames} />}
       {s.flow && <CircleFlow start={4} centerY={920} />}
       {s.chart && <BarChart bars={s.chart} start={6} centerY={920} />}
       {s.line && <LineChart start={5} centerY={900} />}

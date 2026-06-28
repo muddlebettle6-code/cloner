@@ -4,7 +4,7 @@
 export type Bar = { label: string; value: number; disp?: string; hi?: boolean };
 export type Scene = {
   id: string; frames: number; vo: number;
-  object?: "bubble" | "chip" | "datacenter" | "money";
+  object?: "bubble" | "bubbleburst" | "chip" | "datacenter" | "money";
   chart?: Bar[]; line?: boolean; flow?: boolean; follow?: boolean;
   trans: "zoom" | "push" | "slide" | "wipe" | "fade";
 };
@@ -25,7 +25,7 @@ export const reel = {
     { id: "s7", frames: 204, vo: 6.648, chart: SPEND, trans: "wipe" },
     { id: "s8", frames: 148, vo: 4.776, object: "bubble", trans: "zoom" },
     { id: "s9", frames: 138, vo: 4.464, line: true, trans: "push" },
-    { id: "s10", frames: 172, vo: 5.568, line: true, trans: "fade" },
+    { id: "s10", frames: 172, vo: 5.568, object: "bubbleburst", trans: "fade" },
     { id: "s12", frames: 156, vo: 5.064, object: "money", trans: "wipe" },
     { id: "s13", frames: 159, vo: 5.16, object: "bubble", trans: "slide" },
     { id: "s14", frames: 129, vo: 4.152, line: true, trans: "push" },
