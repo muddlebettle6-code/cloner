@@ -10,14 +10,16 @@ social content MUST follow this. Keep it in sync with the code.
 Format: 4:5 (1080x1350 logical), rendered at 3x for 4K-crisp output.
 
 Hard rules (do not regress these):
-- **Tell ONE connected story, not a fact list.** This is the most important rule.
-  The deck is a narrative storyboard (`getStoryboard` in social-carousel.mjs): pick
-  one spine; lead with the most counterintuitive true detail; END EACH SLIDE ON AN
-  OPEN LOOP (a question, a "but", a "stranger still") that the next slide answers;
-  weave 2-3 charts in the middle-to-late slides as ESCALATING proof beats with
-  narrative headlines; RESOLVE the hook in the second-to-last slide; close on a CTA
-  tied to a forward question. Use only the article's facts. Digits with spelled
-  units ($72, $15.7 billion, 75 percent), never number-words or bn/M.
+- **Tell ONE clear story anyone understands, and INFORM as you go.** Most important
+  rule. The deck is a storyboard (`getStoryboard` in social-carousel.mjs) written in
+  PLAIN LANGUAGE for a general audience - avoid jargon or define it simply ("the
+  price of oil", not "the front of the curve"). Slide 1 is a CLEAR HEADLINE anyone
+  instantly gets (what happened + why it matters), not a cryptic teaser. Each slide
+  makes one clear point and DELIVERS the information - do not withhold or save the
+  key facts for the end; front-load them. Weave 2-3 charts where they help explain a
+  point. Engaging but readable and self-explanatory; close on a one-line takeaway +
+  save/share. Use only the article's facts; digits with spelled units ($72, $15.7
+  billion, 75 percent), never number-words or bn/M.
 - **Full-COLOR photos on every slide.** No duotone, no monochrome, no washing the
   color out. Photos are the point; keep them vivid.
 - **Pink titles, white body.** Titles, hooks, big numbers, and the CTA line are
