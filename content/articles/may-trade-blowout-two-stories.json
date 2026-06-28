@@ -1,0 +1,562 @@
+{
+  "published": true,
+  "slug": "may-trade-blowout-two-stories",
+  "headline": "The May trade blowout: one number, two stories, and only part of it round-trips",
+  "deck": "The U.S. goods deficit hit a 14-month high of $105.8 billion in May 2026. The half everyone reported, surging imports, is a datable tariff front-run that should reverse by autumn. The half nobody led with, falling exports, is murkier: much of it is the same oil-price illusion that inflated the import side and will also reverse, but consumer-goods exports falling 9.2 percent is a cleaner demand signal that may not, and that residual is what the Fed has to weigh.",
+  "takeaways": [
+    "May's goods deficit jumped to $105.8B, a 14-month high, up $22.7B (27.4%) from April and far past the roughly $85B economists expected.",
+    "The bigger single mover was the $11.8B drop in exports, not the $10.9B rise in imports, the opposite of the story most headlines told.",
+    "The import surge has a front-run fingerprint: it concentrated in storable, tariff-exposed goods (autos +6.3%, consumer +5.7%) and barely touched capital goods (+0.4%), ahead of the 24 July Section 122 tariff cliff.",
+    "Apply the same lens to both sides: falling oil deflates the dollar value of industrial-supplies exports (-7.0%) just as it had inflated industrial-supplies imports, so part of the export drop is also a price round-trip. The cleaner demand signal is consumer-goods exports, down 9.2%, especially because a weaker dollar should have helped, not hurt, them.",
+    "Same number, opposite policy reads: a front-run is noise the Fed should look through, but a genuine softening in export demand is not, though one month is a print, not a trend."
+  ],
+  "glossary": [
+    {
+      "term": "Goods-trade deficit",
+      "definition": "The gap between the value of physical products a country buys from abroad (imports) and the value it sells abroad (exports); when imports are larger, the country runs a deficit."
+    },
+    {
+      "term": "Census advance report",
+      "definition": "An early monthly estimate of U.S. goods trade from the Census Bureau that gives fast category-level import and export figures a few days before the fuller, revised report."
+    },
+    {
+      "term": "Front-running (front-loading)",
+      "definition": "Buying something earlier than you normally would to beat a known future cost increase, like stocking up before a price hike; it shifts purchases on the calendar without changing underlying demand."
+    },
+    {
+      "term": "Round-trip",
+      "definition": "A move in the data that reverses itself, ending roughly where it started; here, purchases pulled forward into one quarter that drop back the next, cancelling out."
+    },
+    {
+      "term": "GDP (gross domestic product)",
+      "definition": "The total value of all goods and services an economy produces; the headline measure of how fast it is growing or shrinking."
+    },
+    {
+      "term": "Annualized rate",
+      "definition": "A quarterly change expressed as the yearly pace it would reach if the same rate continued for four quarters; it makes one quarter's growth comparable to a full year's."
+    },
+    {
+      "term": "Net exports",
+      "definition": "Exports minus imports; because imports are subtracted in the GDP formula, a jump in imports mechanically lowers measured GDP even if nothing else changes."
+    },
+    {
+      "term": "Contribution to GDP growth",
+      "definition": "How many percentage points a single category (such as net exports) added to or subtracted from the economy's overall growth rate in a quarter."
+    },
+    {
+      "term": "Section 122",
+      "definition": "A U.S. trade law that lets the president impose a temporary universal tariff of up to 15% to address a trade deficit, but only for 150 days unless Congress extends it."
+    },
+    {
+      "term": "Section 301",
+      "definition": "A U.S. trade law used to impose tariffs on specific countries deemed to trade unfairly; here, country-specific rates expected to replace the expiring universal Section 122 tariff."
+    },
+    {
+      "term": "Tariff",
+      "definition": "A tax a government charges on imported goods, which raises their cost to domestic buyers."
+    },
+    {
+      "term": "IEEPA",
+      "definition": "The International Emergency Economic Powers Act, an older emergency law the administration first used for tariffs before switching to the Section 122 authority."
+    },
+    {
+      "term": "Court of International Trade (CIT)",
+      "definition": "A specialized U.S. federal court that hears disputes over trade and customs law, including challenges to tariffs."
+    },
+    {
+      "term": "Standing (legal)",
+      "definition": "The right to bring a lawsuit because you are directly affected; a court's order can be limited to the specific plaintiffs who had standing in the case."
+    },
+    {
+      "term": "Capital goods",
+      "definition": "Machinery and equipment that businesses buy to produce other goods; usually ordered to specification and hard to stockpile in advance."
+    },
+    {
+      "term": "Industrial supplies",
+      "definition": "Raw and semi-finished materials used in production, such as petroleum, metals, and chemicals; a category whose dollar value swings with commodity prices, not just volumes."
+    },
+    {
+      "term": "Inventories",
+      "definition": "The stock of unsold goods businesses hold; rising inventories can partly offset a trade drag in GDP because goods produced for stock still count as output."
+    },
+    {
+      "term": "Nowcast",
+      "definition": "A real-time estimate of current-quarter GDP that updates as new data arrives, such as the Atlanta Fed's GDPNow."
+    },
+    {
+      "term": "GDPNow",
+      "definition": "The Atlanta Federal Reserve's running model estimate of current-quarter GDP growth, refreshed through the quarter as fresh data comes in."
+    },
+    {
+      "term": "Brent crude",
+      "definition": "A global benchmark price for oil, widely used as a reference for crude traded internationally."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "definition": "A narrow shipping channel between Iran and the Arabian Peninsula through which a large share of the world's seaborne oil passes; disruptions there can spike oil prices."
+    },
+    {
+      "term": "Retaliation (trade)",
+      "definition": "When a country responds to another's tariffs by imposing its own, often reducing how much it buys from the first country's exporters."
+    },
+    {
+      "term": "Price effect vs volume effect",
+      "definition": "A trade figure can move because prices changed or because the number of units changed; only a volume move reflects real economic activity, while a price move can reverse on its own."
+    },
+    {
+      "term": "Dollar (currency strength)",
+      "definition": "When the dollar is weaker against other currencies, U.S. goods become cheaper for foreign buyers, which normally helps exports; a stronger dollar does the opposite."
+    }
+  ],
+  "event": "On 26 June 2026 the U.S. Census Bureau's advance economic indicators report showed the goods-trade deficit widened to a 14-month high of $105.8 billion in May, up $22.7 billion (27.4%) from April and well past the roughly $85 billion economists expected.",
+  "question": "Is May's deficit blowout a temporary tariff front-run that mechanically reverses, dragging Q2 GDP only to hand it back in Q3 as the 2025 episode did, or a structural deterioration that sticks, and does the answer differ for the import versus the export side once you strip out the oil-price swing common to both?",
+  "readingMinutes": 8,
+  "tags": [
+    "trade deficit",
+    "tariffs",
+    "GDP",
+    "Section 122",
+    "front-running",
+    "US economy",
+    "Federal Reserve",
+    "Cumulant Research"
+  ],
+  "leadChartId": "net-exports-contribution",
+  "charts": [
+    {
+      "id": "deficit-breakdown",
+      "kind": "table",
+      "title": "The bigger mover was exports falling, not imports rising",
+      "subtitle": "U.S. goods trade, May 2026 versus April",
+      "source": "U.S. Census Bureau, Advance Economic Indicators Report, May 2026 (released 26 June 2026)",
+      "units": "USD billions",
+      "period": "May 2026",
+      "note": "Of the $22.7B the gap widened, the export drop (-$11.8B) was a larger single mover than the import rise (+$10.9B). Arithmetic check: 313.4, 207.7 = 105.7, which rounds to the reported 105.8; 10.9 + 11.8 = 22.7.",
+      "alt": "Table showing the goods deficit at $105.8B (up $22.7B, 27.4%), imports at $313.4B (up $10.9B, 3.6%), and exports at $207.7B (down $11.8B, 5.4%).",
+      "data": {
+        "columns": [
+          "Measure",
+          "May 2026",
+          "Change vs April"
+        ],
+        "rows": [
+          [
+            "Goods deficit",
+            "$105.8B",
+            "+$22.7B (+27.4%)"
+          ],
+          [
+            "Imports",
+            "$313.4B",
+            "+$10.9B (+3.6%)"
+          ],
+          [
+            "Exports",
+            "$207.7B",
+            "-$11.8B (-5.4%)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "category-change",
+      "kind": "comparison",
+      "title": "The import surge has a front-run fingerprint; the export drop is mixed",
+      "subtitle": "Imports rose most in storable goods; exports fell broadly, but the oil-heavy and demand-driven parts differ",
+      "source": "U.S. Census Bureau advance report, May 2026; category figures via Reuters",
+      "units": "% change, May 2026 vs April",
+      "period": "May 2026",
+      "note": "Top four bars are imports, bottom four exports. Imports concentrate in warehouseable goods (autos, consumer); capital goods barely moved. On exports, industrial supplies (-7.0%) is partly an oil-price effect that can reverse, while consumer goods (-9.2%) is the cleaner demand read.",
+      "alt": "Eight paired bars. Imports: autos +6.3%, consumer goods +5.7%, industrial supplies +4.8%, capital goods +0.4%. Exports: autos +0.5%, consumer goods -9.2%, industrial supplies -7.0%, capital goods -5.0%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Autos, imports",
+            "value": 6.3,
+            "highlight": true
+          },
+          {
+            "label": "Consumer goods, imports",
+            "value": 5.7,
+            "highlight": true
+          },
+          {
+            "label": "Industrial supplies, imports",
+            "value": 4.8
+          },
+          {
+            "label": "Capital goods, imports",
+            "value": 0.4
+          },
+          {
+            "label": "Autos, exports",
+            "value": 0.5
+          },
+          {
+            "label": "Consumer goods, exports",
+            "value": -9.2,
+            "highlight": true
+          },
+          {
+            "label": "Industrial supplies, exports",
+            "value": -7
+          },
+          {
+            "label": "Capital goods, exports",
+            "value": -5
+          }
+        ]
+      }
+    },
+    {
+      "id": "net-exports-contribution",
+      "kind": "bar",
+      "title": "A tariff front-run is a loan against the next quarter",
+      "subtitle": "Contribution of net exports to real GDP growth, the 2025 round-trip",
+      "source": "BEA, Gross Domestic Product 2nd Quarter 2025 (Third Estimate), 25 September 2025",
+      "units": "percentage points",
+      "period": "Q1-Q2 2025",
+      "note": "In early 2025, front-loaded imports made net exports a record drag on growth (about -4.8pp in Q1, on the day of release), and that drag reversed to a near-equal boost the next quarter (about +4.8pp in Q2) once the front-run faded. These are BEA estimates that shift across revisions; on the third-estimate vintage Q1 2025 GDP was -0.6% and Q2 2025 was +3.8%. We deliberately do not plot a Q2 2026 bar: no published contribution exists yet and we do not invent one. The May data points the same direction, but the magnitude is unknown.",
+      "alt": "Bar chart of net-exports contribution to GDP growth: Q1 2025 at about -4.8pp and Q2 2025 at about +4.8pp, illustrating a front-run that drags one quarter and reverses the next.",
+      "data": {
+        "bars": [
+          {
+            "label": "Q1 2025",
+            "value": -4.8,
+            "highlight": true
+          },
+          {
+            "label": "Q2 2025",
+            "value": 4.8,
+            "highlight": true
+          }
+        ],
+        "max": 6
+      }
+    },
+    {
+      "id": "nowcast-cuts",
+      "kind": "comparison",
+      "title": "Every forecaster trimmed Q2 growth after the report",
+      "subtitle": "Q2 2026 real GDP growth estimates, before and after the 26 June trade data",
+      "source": "Atlanta Fed GDPNow; Morgan Stanley and Goldman Sachs estimates via wire reports, June 2026",
+      "units": "% annualized",
+      "period": "June 2026",
+      "note": "Lighter bar is the earlier estimate, darker bar the later cut: GDPNow 3.0% (17 Jun) to 2.5% (25 Jun); Morgan Stanley 2.5% to 2.1%; Goldman 2.4% to 2.2%. These are forecaster reactions, not realized GDP.",
+      "alt": "Six bars in three before/after pairs: GDPNow 3.0% then 2.5%, Morgan Stanley 2.5% then 2.1%, Goldman 2.4% then 2.2%.",
+      "data": {
+        "bars": [
+          {
+            "label": "GDPNow (17 Jun)",
+            "value": 3
+          },
+          {
+            "label": "GDPNow (25 Jun)",
+            "value": 2.5,
+            "highlight": true
+          },
+          {
+            "label": "Morgan Stanley (before)",
+            "value": 2.5
+          },
+          {
+            "label": "Morgan Stanley (after)",
+            "value": 2.1,
+            "highlight": true
+          },
+          {
+            "label": "Goldman (before)",
+            "value": 2.4
+          },
+          {
+            "label": "Goldman (after)",
+            "value": 2.2,
+            "highlight": true
+          }
+        ],
+        "max": 3.5
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The headline that wrote itself",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 26 June the Census Bureau's advance report landed with a thud: the U.S. deficit in goods trade jumped to **$105.8 billion** in May, a 14-month high, up $22.7 billion (27.4%) from April's $83.0 billion. Economists had penciled in about $85 billion. The wire copy wrote itself: a surge in imports blew out the gap."
+        },
+        {
+          "type": "p",
+          "text": "That sentence is true and almost beside the point. \"Deficit hits 14-month high\" is a description. The question that changes what you should *do* about it is narrower: is May's blowout a temporary pull-forward that mechanically reverses, dragging this quarter's GDP only to hand it back next quarter, or a structural deterioration that sticks? The economy ran almost exactly this experiment a year ago. The twist this time is that the answer is not the same on both sides of the ledger, and getting it right means stripping out a swing in oil prices that quietly moves both."
+        },
+        {
+          "type": "chart",
+          "chartId": "deficit-breakdown"
+        }
+      ]
+    },
+    {
+      "heading": "The arithmetic the headline skipped",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with a fact sitting in plain sight in the release and almost unmentioned: of the $22.7B the gap widened, the *drop in exports* (-$11.8B) was a **larger single mover than the rise in imports** (+$10.9B). The story everyone told, \"imports surged,\" describes the *smaller* of the two forces."
+        },
+        {
+          "type": "pullquote",
+          "text": "The story everyone told, imports surged, describes the smaller of the two forces. The bigger mover was exports falling."
+        },
+        {
+          "type": "p",
+          "text": "Now the imports. If May's jump is companies racing to beat a known deadline, that is front-running: you buy in May what you would have bought in August, so the calendar, not the economy, moves. Front-loaded imports subtract from this quarter's GDP and add it straight back next quarter. An accounting head-fake. The tell is *where* the imports land."
+        },
+        {
+          "type": "chart",
+          "chartId": "category-change"
+        },
+        {
+          "type": "p",
+          "text": "Read the imports (top four bars) and the fingerprint is clear. They rose most in goods you can warehouse and sit on, autos (+6.3%) and consumer goods (+5.7%), and **least in capital goods (+0.4%)**, the machinery firms order to spec and cannot stockpile in advance. A broad, demand-driven boom would lift everything. This is concentrated in exactly the storable categories you pull forward to beat a cost increase. Not proof, but the signature of front-running rather than underlying strength."
+        }
+      ]
+    },
+    {
+      "heading": "Two datable reasons to buy in May, both fading",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "**1. The tariff cliff on 24 July.** The administration's Section 122 \"universal\" 10% tariff, which a buyer pays as a tax on imported goods, took effect 24 February 2026 under a statute that caps such measures at 150 days. The clock runs out **24 July** (24 February plus 150 days), and the President cannot extend it without Congress. The 10% is not expected to simply vanish: the U.S. Trade Representative has described Section 122 as a \"bridge\" to country-specific Section 301 tariffs expected on or around the same date, some of them above 10%. So for goods from those countries, the rational move is to land the container now, at 10%, before any step-up. A textbook front-run with a hard, dated catalyst."
+        },
+        {
+          "type": "callout",
+          "label": "The court case that did not change the deadline",
+          "text": "On 7 May 2026 a divided three-judge panel at the Court of International Trade struck the Section 122 tariff down. But the order reaches only the named plaintiffs in the case, so for nearly every other importer the duty still applies and the 24 July cliff still governs. The administration has appealed, which is one more reason a cautious importer would rather front-load now than bet on the courts."
+        },
+        {
+          "type": "p",
+          "text": "**2. A war still hot in May.** Conflict around Iran disrupted the Strait of Hormuz, the narrow channel that carries a large share of the world's seaborne oil, through the spring, and survey sponsors attributed part of the import surge to firms stocking up to avoid shortages and price spikes tied to the fighting. By mid-to-late June the U.S. and Iran had signed a framework to end the war, Gulf oil flows were recovering toward roughly three-quarters of prewar levels, and Brent crude (the main international oil benchmark) had fallen back near $72 a barrel, its lowest since February. That motive was draining away. Both reasons share a feature: they are about *timing*, not appetite. When the calendar passes them, the buying they pulled forward leaves a hole, not a trend."
+        }
+      ]
+    },
+    {
+      "heading": "Turn the same lens on the exports",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is where the tidy \"two stories\" framing has to be disciplined. If a spike in oil prices had inflated the dollar value of *industrial-supplies imports* without more barrels actually crossing the border, then the *same* oil move cuts the other way on exports. Petroleum and refined products are a major U.S. export. As Brent round-tripped lower into late June, the dollar value of industrial-supplies exports fell 7.0 percent even if the physical volume of barrels shipped barely changed. That slice of the export drop is a *price* effect, not a *demand* effect, and like the import side it can reverse when prices settle. Call it the export half of the oil illusion."
+        },
+        {
+          "type": "p",
+          "text": "Strip that piece out and a cleaner signal remains: **consumer-goods exports fell 9.2 percent**, the steepest drop of any major export category. Consumer goods are not priced off a swinging commodity benchmark, so a fall that size is harder to wave away as an accounting artifact. And note what was *not* working against these exports: the dollar in 2026 has been weaker, not stronger, than a year earlier, and a weaker dollar makes American goods cheaper abroad. Exports falling anyway, with the currency tailwind at their back, is the kind of number that can reflect genuine softening in foreign demand, whether because trading partners are slowing or because retaliation against U.S. tariffs is biting. One month does not tell you which. But it is the residual the Fed cannot simply look through."
+        },
+        {
+          "type": "p",
+          "text": "\"The widening trade deficit is bad news for national income growth, and it suggests that net exports might drag down real GDP growth too,\" Carl Weinberg, chief economist at High Frequency Economics, told Reuters after the release, capturing the worry beneath the front-run noise."
+        }
+      ]
+    },
+    {
+      "heading": "What it does to GDP, and what the Fed has to weigh",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Why does a trade gap move GDP at all? In the GDP formula, imports are subtracted and exports added, so net exports (exports minus imports) feed straight into the growth number. A front-loaded import surge therefore drags measured growth in the quarter the goods arrive, then flatters it the next quarter when imports fall back. That is not a forecast; it is arithmetic, and the economy demonstrated it last year."
+        },
+        {
+          "type": "chart",
+          "chartId": "net-exports-contribution"
+        },
+        {
+          "type": "p",
+          "text": "In early 2025, a record rush to beat tariffs made net exports a record drag on growth, knocking Q1 GDP to -0.6 percent. The very next quarter the same flow reversed: imports fell back, net exports swung to a near-equal *boost*, and GDP printed +3.8 percent. A near-complete round-trip. Crucially, one cushion sat underneath it: goods that pile up unsold still count as output, so rising inventories can offset part of a trade drag inside GDP even before the reversal arrives. The May data points the same direction, but we deliberately plot no Q2 2026 bar, because no official contribution figure exists yet and we will not invent one."
+        },
+        {
+          "type": "p",
+          "text": "Forecasters reacted the way the arithmetic implies. After the report, the Atlanta Fed's GDPNow nowcast, a model estimate of current-quarter growth that updates with each data release, was cut to 2.5 percent from 3.0 percent a week earlier; Morgan Stanley trimmed its Q2 call to 2.1 from 2.5 percent, and Goldman Sachs to 2.2 from 2.4."
+        },
+        {
+          "type": "chart",
+          "chartId": "nowcast-cuts"
+        },
+        {
+          "type": "p",
+          "text": "Here the two stories split on policy. The import surge is the kind of noise a central bank is supposed to see through: it drags one quarter, reverses the next, and tells you little about the trend. But a genuine softening in export demand is exactly the signal the Fed should *not* look through, because it can persist. The same $105.8 billion headline therefore carries opposite instructions depending on which half you weigh, and the only way to tell them apart is to strip the common oil-price swing out of both."
+        }
+      ]
+    },
+    {
+      "heading": "One print is not a trend",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So the answer to the opening question is: it depends which side you mean. The import blowout looks like a datable front-run with a hard 24 July deadline and a now-fading war premium, the sort of move that should largely round-trip out of the data by autumn, just as the 2025 episode did. The export drop is split: the oil-driven part is a price illusion that will reverse with crude, but the 9.2 percent fall in consumer-goods exports is a cleaner read on demand that may not. That residual, small in dollars but stubborn in meaning, is the part worth watching."
+        },
+        {
+          "type": "p",
+          "text": "A final discipline: these are advance Census figures that will be revised, and a single month is a print, not a trend. The honest read of May is not \"the trade picture is deteriorating\" or \"it is all noise.\" It is that one number contains a piece that reverses on schedule and a smaller piece that might not, and the work, for the Fed and for everyone else, is keeping the two apart."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Pulled the May 2026 headline and category figures from the U.S. Census Bureau's advance economic indicators report (released 26 June 2026) and cross-checked the totals and percentages against Reuters wire coverage of the same release.",
+    "Decomposed the $22.7B widening into its export move (-$11.8B) and import move (+$10.9B) to show which force was larger, and read the category percentages to test for a front-running signature (storable autos and consumer goods up, hard-to-stockpile capital goods flat).",
+    "Verified the Section 122 timeline (10% tariff effective 24 February 2026, 150-day statutory cap, expiry 24 July 2026) and the 7 May 2026 Court of International Trade ruling against trade-law alerts from White & Case and Skadden.",
+    "Anchored the GDP round-trip precedent in BEA's Q2 2025 third estimate, which shows net exports swinging from a record drag in Q1 2025 to a near-equal boost in Q2 2025, with GDP moving from -0.6% to +3.8% on that vintage.",
+    "Collected pre- and post-report forecaster estimates (Atlanta Fed GDPNow, Morgan Stanley, Goldman Sachs) from the GDPNow model page and wire reports.",
+    "Separated price effects from volume effects on oil-sensitive categories using the Brent move into late June and the recovery of Strait of Hormuz flows after the U.S.-Iran framework."
+  ],
+  "sources": [
+    {
+      "title": "Advance Economic Indicators Report, May 2026",
+      "publisher": "U.S. Census Bureau",
+      "url": "https://www.census.gov/econ/indicators/current/index.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Surge in imports drives US goods trade deficit to 14-month high in May (Reuters)",
+      "publisher": "Reuters via Investing.com",
+      "url": "https://www.investing.com/news/economic-indicators/us-goods-trade-deficit-widens-sharply-in-may-on-imports-4762810",
+      "kind": "secondary"
+    },
+    {
+      "title": "U.S. Goods Trade Deficit Widens to $105 Billion in May",
+      "publisher": "Transport Topics",
+      "url": "https://www.ttnews.com/articles/us-trade-deficit-may-2026",
+      "kind": "secondary"
+    },
+    {
+      "title": "Gross Domestic Product 2nd Quarter 2025 (Third Estimate)",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/sites/default/files/2025-09/gdp2q25-3rd.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "GDPNow current estimate and commentary",
+      "publisher": "Federal Reserve Bank of Atlanta",
+      "url": "https://www.atlantafed.org/research-and-data/data/gdpnow",
+      "kind": "data"
+    },
+    {
+      "title": "Trump Administration Imposes 10% Section 122 Tariff in Plan to Replace IEEPA Tariffs",
+      "publisher": "White & Case LLP",
+      "url": "https://www.whitecase.com/insight-alert/trump-administration-imposes-10-section-122-tariff-plan-replace-ieepa-tariffs",
+      "kind": "secondary"
+    },
+    {
+      "title": "US Trade Court Strikes Down Section 122 Tariffs, but Ruling's Fate Is Uncertain and Practical Impact Is Limited",
+      "publisher": "Skadden, Arps, Slate, Meagher & Flom LLP",
+      "url": "https://www.skadden.com/insights/publications/2026/05/us-trade-court-strikes-down-section-122-tariffs",
+      "kind": "secondary"
+    },
+    {
+      "title": "Section 122 Tariff Expiration Countdown: What Importers Must Do Before July 24, 2026",
+      "publisher": "FreightFigures",
+      "url": "https://www.freightfigures.com/articles/section-122-tariff-expiration-countdown-july-2026",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil prices fall, stocks rally as US, Iran sign framework to end war",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/6/18/oil-prices-fall-stocks-rally-as-us-iran-sign-framework-to-end-war",
+      "kind": "secondary"
+    },
+    {
+      "title": "Brent rises after U.S.-Iran peace talks in Geneva are abruptly postponed",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Q1 GDP Whacked by Massive Spike in Imports on Frontrunning of Tariffs",
+      "publisher": "Wolf Street",
+      "url": "https://wolfstreet.com/2025/04/30/q1-gdp-whacked-by-massive-spike-in-imports-on-tariff-frontrunning-consumer-spending-grew-business-investment-soared/",
+      "kind": "secondary"
+    },
+    {
+      "title": "U.S. Import and Export Price Indexes, May 2026",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/news.release/ximpim.nr0.htm",
+      "kind": "data"
+    }
+  ],
+  "limitations": [
+    "All May 2026 figures are advance Census estimates and will be revised in the fuller report; the category splits in particular can shift.",
+    "No published Q2 2026 net-exports GDP contribution exists yet, so we plot none; the 2025 bars are an illustrative precedent, not a forecast of the 2026 magnitude.",
+    "The split of the export drop into a 'price' part and a 'demand' part is an interpretation, not a measured decomposition; the Census advance report is in nominal dollars and does not separate price from volume.",
+    "The 2025 contribution figures are BEA estimates revised across vintages; we cite the third-estimate vintage, and the exact decimals (about -4.8pp and +4.8pp) move with each revision even though the record-drag-then-record-reversal pattern is robust.",
+    "Forecaster nowcasts are reactions to incoming data, not realized GDP, and GDPNow in particular swung within a wide range during June 2026."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/may-trade-blowout-two-stories.jpg",
+    "credit": "Photo: Downtowngal, CC BY-SA 4.0, via Wikimedia Commons",
+    "caption": "Container ships are worked by gantry cranes at the Port of Los Angeles, the busiest U.S. container gateway and a front line of the nation's widening goods-trade deficit.",
+    "alt": "Two large container ships stacked with shipping containers berthed beside tall green cargo cranes at the Port of Los Angeles, with the Vincent Thomas Bridge spanning the harbor in the background under a clear blue sky."
+  },
+  "articleType": "data-story",
+  "secondarySections": [
+    "trade",
+    "policy"
+  ],
+  "companies": [
+    "High Frequency Economics",
+    "Morgan Stanley",
+    "Goldman Sachs"
+  ],
+  "people": [
+    "Carl Weinberg"
+  ],
+  "regions": [
+    "United States",
+    "Iran",
+    "Strait of Hormuz",
+    "Persian Gulf"
+  ],
+  "industries": [
+    "Automotive",
+    "Consumer Goods",
+    "Oil and Gas",
+    "Capital Goods",
+    "Manufacturing"
+  ],
+  "assetClasses": [
+    "Commodities",
+    "Currencies",
+    "Rates"
+  ],
+  "impactTags": [
+    "GDP Growth",
+    "Federal Reserve Policy",
+    "Tariffs",
+    "Oil Prices",
+    "Trade Deficit",
+    "Net Exports"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 74,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "The May goods-trade deficit hit a 14-month high of $105.8B, up $22.7B (27.4%) from April and far past the roughly $85B economists expected.",
+    "The larger single mover was a $11.8B drop in exports, not the $10.9B rise in imports, the opposite of most headlines.",
+    "The import surge bears a front-run fingerprint: concentrated in storable, tariff-exposed autos (+6.3%) and consumer goods (+5.7%), barely touching capital goods (+0.4%), ahead of the 24 July Section 122 tariff cliff.",
+    "A falling oil price round-trips on both sides: it deflated industrial-supplies exports (-7.0%) just as it had inflated the import side, so part of the export drop is a price effect, not demand.",
+    "The cleaner demand signal is consumer-goods exports down 9.2 percent despite a weaker-dollar tailwind, the residual the Fed cannot simply look through."
+  ],
+  "whyItMatters": "The same $105.8 billion print carries opposite policy instructions: a tariff-driven import front-run is noise the Fed should look through, while genuine softening in export demand is a signal it should not. The import side mechanically drags Q2 GDP and reverses in Q3, swinging nowcasts and quarterly growth calls that move rate expectations, the dollar and equities. For firms and consumers, the distinction separates a calendar-driven inventory shuffle from a real deterioration in foreign demand for U.S. goods.",
+  "whatToWatch": [
+    "The 24 July Section 122 tariff cliff and any country-specific Section 301 tariffs that replace it, plus the appeal of the Court of International Trade ruling.",
+    "Whether June and revised trade data confirm the import surge reverses and whether the 9.2% consumer-goods export drop persists into a trend.",
+    "Atlanta Fed GDPNow and bank Q2 growth revisions as net-export drag and inventory offsets are re-estimated.",
+    "Brent crude's path and Strait of Hormuz oil flows, which drive the price round-trip on both import and export values."
+  ],
+  "primarySection": "trade",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T12:45:35.699Z"
+}

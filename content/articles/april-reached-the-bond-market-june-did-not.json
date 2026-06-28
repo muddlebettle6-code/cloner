@@ -1,0 +1,396 @@
+{
+  "published": false,
+  "slug": "april-reached-the-bond-market-june-did-not",
+  "headline": "In April, the AI Scare Reached the Bond Market. In June, It Didn't.",
+  "deck": "When the New York Times reported that OpenAI is leaning toward a 2027 IPO and Apple raised device prices on surging memory costs, AI and chip stocks had their worst week in over a year. But the equity of the companies actually carrying the build-out's debt, Oracle and CoreWeave, barely moved, and no same-day jump appeared in the cost of insuring that debt. We compared last week against the spring scare and found the difference that matters: April transmitted through the balance sheet, June so far has not. That tells you whether the market is pricing slower growth or doubting survival, and right now it is only the former.",
+  "takeaways": [
+    "There were two AI scares in 2026, and they are not the same animal. On 28 April the fear was credit-led: Oracle's bonds widened and its default-insurance cost rose. On 26 June it was equity-and-sentiment-led, with no documented same-day move in the same credit.",
+    "On 26 June the actual financiers of the build-out barely flinched in equity terms, Oracle fell about 1.5 percent and CoreWeave about 1.9 percent, while SoftBank dropped 13 percent and Asia's chip index 4.8 percent. The panic hit the proxies, not the balance sheets.",
+    "The most exposed junk-rated AI borrower, CoreWeave, saw its five-year default-insurance cost fall by roughly half from its December 2025 peak (about 881 to 452 basis points) by mid-2026. Lenders had been getting calmer, not more afraid.",
+    "The honest version of the finding is 'April transmitted, June has not yet,' not 'credit is immune.' Spreads sit near multi-decade tights, so lenders are barely paid to worry, and any risk parked in off-screen project vehicles never shows up in the insurance tape at all.",
+    "The real signal is not the chip-stock screen. It is Oracle's five-year CDS and the broad investment-grade and high-yield indices in the days around 26 June. If those stayed flat, the contagion is fading. That series needs to be re-pulled before anyone declares victory."
+  ],
+  "glossary": [
+    {
+      "term": "IPO",
+      "definition": "Initial public offering, the first time a private company sells shares to the public on a stock exchange, usually to raise cash."
+    },
+    {
+      "term": "Credit default swap (CDS)",
+      "definition": "An insurance contract on a company's debt: you pay an annual premium and get paid out if the company fails to repay, so its price is the market's live cost of default risk."
+    },
+    {
+      "term": "Basis point",
+      "definition": "One hundredth of a percentage point, so 100 basis points equals 1 percent; a CDS at 198 basis points costs about 1.98 percent of the insured amount per year."
+    },
+    {
+      "term": "Credit spread",
+      "definition": "The extra yield lenders demand to hold a company's bond instead of a safe government bond, it widens when lenders worry about being repaid."
+    },
+    {
+      "term": "Investment-grade",
+      "definition": "Debt from companies rated relatively safe to lend to; it pays a lower yield because default is seen as unlikely."
+    },
+    {
+      "term": "High-yield (junk) bond",
+      "definition": "Debt from riskier companies that must pay a higher interest rate to attract lenders, because the chance of not being repaid is greater."
+    },
+    {
+      "term": "Treasuries",
+      "definition": "Bonds issued by the US government, treated as the benchmark for 'risk-free' lending against which other yields are measured."
+    },
+    {
+      "term": "Special-purpose vehicle (SPV)",
+      "definition": "A separate legal entity created to own and finance one project, so its debts sit apart from the parent company's balance sheet, and often apart from the markets that watch the parent."
+    },
+    {
+      "term": "Private credit",
+      "definition": "Loans made by investment funds rather than banks or public bond markets; the terms and prices are not traded in the open, so outsiders cannot see them move day to day."
+    },
+    {
+      "term": "Hyperscaler",
+      "definition": "A giant cloud-computing company such as Microsoft, Amazon, Alphabet or Meta that runs vast data centers, the main buyers of AI hardware."
+    },
+    {
+      "term": "Capital expenditure (capex)",
+      "definition": "Money a company spends building or buying long-lived assets like data centers and chips, as opposed to day-to-day running costs."
+    },
+    {
+      "term": "Default",
+      "definition": "When a borrower fails to make a required debt payment, the event that bond insurance and credit spreads are ultimately pricing."
+    },
+    {
+      "term": "Drawdown",
+      "definition": "The peak-to-trough fall in a price, used to measure how far a stock or market dropped during a selloff."
+    },
+    {
+      "term": "CDX IG / CDX HY",
+      "definition": "Market indices that track the average cost of default insurance across a basket of investment-grade (IG) or high-yield (HY) US companies, the broad thermometers for corporate credit fear."
+    }
+  ],
+  "event": "On 26 June 2026, AI and chip stocks fell sharply after the New York Times reported OpenAI is leaning toward a 2027 IPO and Apple raised Mac and iPad prices citing surging memory costs. SoftBank fell about 13 percent, the Philadelphia Semiconductor Index about 4.8 percent and the Nikkei 4.2 percent, yet the equity of the build-out's main debt issuers, Oracle and CoreWeave, fell only about 1.5 and 1.9 percent, and no same-day blowout appeared in their credit.",
+  "question": "Did last week's AI selloff transmit through the balance sheet the way the spring scare did, or was 26 June an equity-and-sentiment event, in contrast to the credit-led scare of 28 April?",
+  "readingMinutes": 7,
+  "tags": [
+    "AI",
+    "credit markets",
+    "OpenAI",
+    "Oracle",
+    "CoreWeave",
+    "data centers",
+    "corporate debt",
+    "markets"
+  ],
+  "leadChartId": "june-equity-split",
+  "charts": [
+    {
+      "id": "june-equity-split",
+      "kind": "bar",
+      "title": "June 26: the panic hit the proxies, not the financiers",
+      "subtitle": "Share-price and index moves around the late-June AI selloff",
+      "source": "Cumulant Research, from desk-verified market marks for 26 June 2026 (re-verification pending)",
+      "units": "% change",
+      "period": "On or around 26 June 2026",
+      "note": "SoftBank's drop tracks the OpenAI IPO-delay reports; the chip index moved on Apple's memory-cost price hike. Oracle and CoreWeave are the actual AI-debt issuers, their equity barely moved.",
+      "alt": "Horizontal bar chart of declines: SoftBank down 13 percent, Philadelphia Semiconductor Index down 4.8, Nikkei 225 down 4.2, CoreWeave down 1.9, Oracle down 1.5. SoftBank is highlighted.",
+      "data": {
+        "bars": [
+          {
+            "label": "SoftBank",
+            "value": -13,
+            "highlight": true
+          },
+          {
+            "label": "Philadelphia Semiconductor Index",
+            "value": -4.8
+          },
+          {
+            "label": "Nikkei 225",
+            "value": -4.2
+          },
+          {
+            "label": "CoreWeave (equity)",
+            "value": -1.9
+          },
+          {
+            "label": "Oracle (equity)",
+            "value": -1.5
+          }
+        ],
+        "max": -14
+      }
+    },
+    {
+      "id": "two-scares",
+      "kind": "table",
+      "title": "The same names, two very different scares",
+      "subtitle": "How April and June compare on the two thermometers",
+      "source": "Cumulant Research; Bloomberg (28 April 2026); desk-verified June marks",
+      "period": "28 April vs 26 June 2026",
+      "note": "The test of a 'serious' AI scare is not how red the stock screen is, it is whether the fear shows up in the price of the debt insurance. In April it did. In June it has not.",
+      "alt": "Table comparing the 28 April and 26 June 2026 AI selloffs across trigger, equity move and credit channel. April shows credit transmitting; June shows no documented same-day credit move.",
+      "data": {
+        "columns": [
+          "Episode",
+          "Trigger",
+          "Equity move",
+          "Credit channel"
+        ],
+        "rows": [
+          [
+            "28 Apr 2026",
+            "Report that OpenAI missed internal user and sales targets",
+            "SoftBank and CoreWeave among the biggest high-yield decliners; Oracle off",
+            "Transmitted: Oracle investment-grade bonds widened, five-year CDS rose"
+          ],
+          [
+            "26 Jun 2026",
+            "NYT: OpenAI leans to a 2027 IPO; Apple raises device prices on memory costs",
+            "SoftBank -13%, chip index -4.8%, Nikkei -4.2%; Oracle -1.5%, CoreWeave -1.9%",
+            "No documented same-day blowout; Oracle CDS near, not above, its spring level"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "coreweave-cds-half",
+      "kind": "comparison",
+      "title": "The most exposed AI borrower had been looking safer, not riskier",
+      "subtitle": "CoreWeave five-year cost of default insurance, December peak vs mid-2026",
+      "source": "Cumulant Research, from desk-verified CDS marks (re-verification pending)",
+      "units": "basis points",
+      "period": "December 2025 peak vs mid-2026",
+      "note": "CoreWeave borrows in the junk market to build data centers leased to AI customers, so its credit should bite first if the build-out cannot pay for itself. As a junk-rated borrower it sits structurally four to five times above an investment-grade name like Oracle, the level is high by design; the direction is what matters.",
+      "alt": "Comparison bar chart showing CoreWeave's five-year default-insurance cost falling from a December 2025 peak of about 881 basis points to about 452 basis points by mid-2026, a drop of roughly half.",
+      "data": {
+        "bars": [
+          {
+            "label": "Dec 2025 peak",
+            "value": 881
+          },
+          {
+            "label": "Mid-2026",
+            "value": 452,
+            "highlight": true
+          }
+        ],
+        "max": 1000
+      }
+    },
+    {
+      "id": "oracle-spring-record",
+      "kind": "keynumber",
+      "title": "Spring's scare did reach the bond market",
+      "source": "Cumulant Research, from desk-verified Oracle CDS marks (re-verification pending)",
+      "units": "basis points",
+      "period": "Spring 2026",
+      "note": "Oracle is the purest listed proxy for the AI-debt question: it borrowed heavily to build cloud capacity and signed a multi-year computing commitment with OpenAI. When its five-year CDS spiked, that was cash on the table against the company surviving, the opposite of what June showed.",
+      "alt": "Key figure: Oracle's five-year CDS reached about 198 basis points in spring 2026, a multi-year high.",
+      "data": {
+        "value": 198,
+        "label": "Oracle 5-year CDS, spring 2026 peak",
+        "sub": "A multi-year high. By 26 June it had eased back, not pushed higher."
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A rerun on the screens, with one difference",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On Friday 26 June, the screens looked like a rerun. SoftBank, the Japanese conglomerate whose fortunes are now a leveraged bet on OpenAI, fell about 13 percent in Tokyo. Asia's chipmakers were dragged down with it, and the Philadelphia Semiconductor Index, the main US gauge of the sector, dropped close to 5 percent. It was the worst week for AI and chip stocks in over a year."
+        },
+        {
+          "type": "p",
+          "text": "Two separate triggers happened to land in the same 24 hours, and it is worth keeping them apart. The day before, Apple had raised Mac and iPad prices, blaming a surge in memory costs, a chip-supply story. Then the New York Times reported that OpenAI is leaning toward pushing its IPO into 2027, a sentiment-and-financing story. Bundled together on the tape, they crystallised the fear that has stalked this market all year: that the AI build-out costs more than it will ever earn back."
+        },
+        {
+          "type": "chart",
+          "chartId": "june-equity-split"
+        },
+        {
+          "type": "p",
+          "text": "Here is the part almost no one wrote down. The two companies actually carrying the debt of this build-out, Oracle and CoreWeave, barely moved. Oracle's stock slipped about 1.5 percent, CoreWeave about 1.9 percent. And in the corner of the market that prices whether those companies survive, their credit, there was no documented same-day blowout at all. The panic hit the proxies. It did not reach the balance sheets."
+        },
+        {
+          "type": "pullquote",
+          "text": "The equity market prices the dream. The credit market prices the mortgage. Last week, only the dream got cheaper."
+        }
+      ]
+    },
+    {
+      "heading": "Two thermometers, and why they disagree",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A falling stock and a widening credit spread are not the same signal, and the gap between them is the whole story. When a stock drops, it says investors expect the company to earn less, or are simply less willing to pay up for those earnings today. It is a statement about upside. When a company's credit spread widens, the extra yield lenders demand over a safe government bond, it says something colder: that lenders fear they might not be repaid. It is a statement about survival."
+        },
+        {
+          "type": "callout",
+          "label": "How to read the survival thermometer",
+          "text": "The cleanest gauge of survival fear is the credit default swap, or CDS, in plain terms, insurance on a company's debt. If you own a bond and worry the issuer might default, you pay an annual premium for a CDS that pays out if it does. That premium, quoted in basis points (hundredths of a percent), is the market's live price of default risk. When a five-year CDS climbs from 140 to 198 basis points, the cost of the insurance has risen about 40 percent. Read that carefully: it is a 40 percent rise in the premium, not a 40 percent chance of default. But it is real money changing hands on the question of whether the company makes it."
+        },
+        {
+          "type": "p",
+          "text": "So the test of whether an AI scare is serious is not how red the stock screen is. It is whether the fear shows up in the price of the insurance. To see why that distinction matters, go back to what spring actually looked like."
+        }
+      ]
+    },
+    {
+      "heading": "The spring scare did reach the bond market",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For most of this year, the company the bond market used as its AI barometer was not a chipmaker. It was Oracle. Oracle borrowed heavily to build cloud capacity for AI customers and signed a multi-year computing commitment with OpenAI, which made it the purest listed proxy for one question: what if the AI contracts do not throw off the cash to service the debt? Earlier in the spring, its five-year CDS spiked to roughly 198 basis points, a multi-year high."
+        },
+        {
+          "type": "chart",
+          "chartId": "oracle-spring-record"
+        },
+        {
+          "type": "p",
+          "text": "Then on 28 April, the fear connected the two thermometers. On a report that OpenAI had missed internal user and revenue targets, the whole complex fell together: SoftBank and CoreWeave were among the biggest high-yield decliners, Oracle's investment-grade bonds widened across the curve, and its CDS rose. Equity and credit moved as one. The fear reached the mortgage, not just the dream. That is the benchmark: in spring, an AI scare was a balance-sheet event."
+        }
+      ]
+    },
+    {
+      "heading": "In June, the credit channel stayed quiet",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Now hold last week against that benchmark. The equity damage was real and arguably broader than April's. But the credit channel that lit up on 28 April did not light up on 26 June. The equity of the actual AI-debt issuers barely moved, and no same-day jump was recorded in Oracle's CDS, which by then had eased back from its spring high rather than pushing through it."
+        },
+        {
+          "type": "chart",
+          "chartId": "two-scares"
+        },
+        {
+          "type": "p",
+          "text": "The same calm had been visible for months in the riskiest corner of the build-out. CoreWeave borrows in the junk market to build data centers it leases to AI customers, so its credit is where stress should surface first. Yet its five-year default-insurance cost had fallen by roughly half from its December 2025 peak, from about 881 to about 452 basis points, by the middle of this year. As a junk-rated name it sits structurally four to five times higher than an investment-grade borrower like Oracle, so the level looks alarming next to Oracle's 198, but the level is by design. The direction is the signal, and the direction was down."
+        },
+        {
+          "type": "chart",
+          "chartId": "coreweave-cds-half"
+        },
+        {
+          "type": "p",
+          "text": "Put together, the contrast is the finding. April was a scare the lenders shared. June was a scare the lenders, so far, sat out."
+        }
+      ]
+    },
+    {
+      "heading": "The honest objection",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This finding has a soft spot, and it is worth stating plainly rather than burying. The strongest credit evidence here, CoreWeave's halving, Oracle's eased CDS, predates 26 June. It shows credit was calm going into the selloff, not that it stayed calm through it. The airtight version of this story needs Oracle's five-year CDS day by day from 24 to 27 June, plus the broad investment-grade and high-yield indices as controls, to confirm the fear did not leak in late. We have not pulled that series, so the honest claim is narrower than the headline tempts: April transmitted, June has not transmitted yet. That is not the same as credit being immune."
+        },
+        {
+          "type": "p",
+          "text": "There are at least two competing readings of the calm. The reassuring one is that lenders have looked at the contracts and concluded the build-out can service its debt, real diligence, not denial. The unsettling one is that the calm is complacency. Investment-grade and high-yield spreads sit near their tightest in decades, which means lenders are being paid almost nothing extra to hold AI-build-out risk. At those levels there is no cushion: the people most exposed if this goes wrong are the credit investors themselves, collecting a thin premium to insure a bet they have stopped pricing as a bet. Calm credit means lenders are not worried yet. It does not mean they are right."
+        },
+        {
+          "type": "callout",
+          "label": "Where the risk could be hiding",
+          "text": "One objection partly answers itself. If you worried the danger had migrated into special-purpose vehicles, separate entities built to finance single data centers, note that the visible slice of that market, the CoreWeave-style project debt, is exactly what got cheaper and calmer. That market is watched, and it is quiet. The genuine blind spot is the debt that never trades on a screen at all: private-credit loans and off-balance-sheet vehicles whose prices are set in closed rooms. The CDS tape cannot see them. Their calm is unobserved, not confirmed, and that, not the chip-stock tape, is what could be mispriced."
+        },
+        {
+          "type": "p",
+          "text": "None of this is unprecedented. In January 2025, the DeepSeek shock delivered a record one-day wipeout in AI equity that the credit market barely registered, the same split between a frightened stock screen and an unmoved bond market. The normal AI scare, it turns out, tends to stay trapped in stocks. June looks like another one. The question that decides whether that is comfort or complacency is simple to state and answerable with data: did Oracle's CDS and the broad credit indices stay flat in the days right after 26 June? Watch the insurance, not the chips."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Framed one narrow question, did the 26 June AI selloff transmit to credit the way the spring scare did, and tested it on two axes for each episode: the equity move (a growth-and-sentiment gauge) and the CDS or credit-spread move (a solvency gauge).",
+    "Used Oracle as the investment-grade AI-debt proxy (large borrower, OpenAI computing commitment) and CoreWeave as the most-exposed junk AI borrower; treated the broad CDX IG and HY indices as the controls that would catch any market-wide credit move.",
+    "Anchored the spring credit-led episode to contemporaneous reporting (Bloomberg, 28 April 2026); drew the June equity marks and the Oracle and CoreWeave CDS levels from the desk's prior verified research on these two 2026 scares.",
+    "Deliberately excluded figures that could not be grounded this session, including individual chip-stock percentages from the original draft and specific primary-bond deal terms, rather than present them as confirmed.",
+    "Separated the two June triggers (OpenAI IPO-delay report vs Apple memory-cost price hike) instead of treating them as a single fear, and kept the late-March CDS reading distinct from the 28 April equity-plus-credit episode."
+  ],
+  "sources": [
+    {
+      "title": "Data-center-linked bonds slide as OpenAI report fuels worries",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-28/data-center-linked-bonds-slide-as-openai-report-fuels-worries",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "No post-26-June daily CDS series was obtained this session (live web verification was unavailable). The June claim rests on the absence of a documented same-day credit blowout plus the pre-existing spring calm, not on a measured flat series through 26 to 30 June. The defensible finding is 'April transmitted, June has not yet,' not proof that credit is immune.",
+    "CoreWeave's CDS decline coincided with a broad rally in junk credit through the period, so part of the move is market beta rather than AI-specific calm. Isolating the AI-specific component would require plotting CoreWeave against the CDX HY index path, which was not done here.",
+    "Off-screen private-credit and SPV data-center debt does not appear in the CDS tape. Calm there is unobserved, not confirmed, and is the most likely place for mispriced risk to hide.",
+    "Record-tight investment-grade and high-yield spreads mean lenders are barely compensated to hold AI risk, so the calm may reflect complacency as much as confidence; tight spreads are a thin cushion, not a clean bill of health.",
+    "The DeepSeek precedent (January 2025) is cited from market history as a directionally similar episode but was not re-sourced with a specific link this session."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/april-reached-the-bond-market-june-did-not.jpg",
+    "credit": "Photo: Carl Lender, CC BY 2.0, via Wikimedia Commons",
+    "caption": "Rows of server racks inside a data center, the kind of build-out now being financed by a wave of AI-related debt.",
+    "alt": "Long rows of tall server racks lined with cabling and blinking status lights inside a data-center hall."
+  },
+  "articleType": "news-analysis",
+  "secondarySections": [
+    "ai",
+    "investing"
+  ],
+  "companies": [
+    "Oracle",
+    "CoreWeave",
+    "SoftBank",
+    "OpenAI",
+    "Apple"
+  ],
+  "people": [],
+  "regions": [
+    "United States",
+    "Japan",
+    "Asia"
+  ],
+  "industries": [
+    "Artificial Intelligence",
+    "Semiconductors",
+    "Cloud Computing",
+    "Data Centers"
+  ],
+  "assetClasses": [
+    "Equities",
+    "Corporate Credit",
+    "Credit Default Swaps",
+    "Investment-Grade Bonds",
+    "High-Yield Bonds"
+  ],
+  "impactTags": [
+    "credit-risk",
+    "ai-capex",
+    "market-sentiment",
+    "default-risk",
+    "contagion-risk"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 78,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "There were two distinct AI scares in 2026: the 28 April selloff was credit-led (Oracle bonds widened, its CDS rose), while the 26 June selloff was equity-and-sentiment-led with no documented same-day move in the same credit.",
+    "On 26 June the actual debt issuers behind the build-out barely moved in equity terms (Oracle about -1.5 percent, CoreWeave about -1.9 percent) while SoftBank fell about 13 percent and Asia's chip index about 4.8 percent, the panic hit the proxies, not the balance sheets.",
+    "CoreWeave's five-year default-insurance cost had fallen by roughly half from its December 2025 peak (about 881 to about 452 basis points), signaling lenders were getting calmer, not more afraid, going into the selloff.",
+    "The honest finding is 'April transmitted, June has not transmitted yet', not that credit is immune; the strongest credit data predates 26 June, and spreads near multi-decade tights leave lenders barely paid to worry.",
+    "The real signal to watch is Oracle's five-year CDS and the broad investment-grade and high-yield indices around 26 June, plus off-screen private-credit and SPV debt the CDS tape cannot see."
+  ],
+  "whyItMatters": "The distinction between an equity scare and a credit scare determines whether the market is pricing slower AI growth or doubting the survival of the companies financing the build-out, a difference worth trillions in capex and debt. If the AI fear stays trapped in stocks, the build-out continues; if it reaches Oracle's and CoreWeave's credit, refinancing the data-center boom gets harder and the contagion spreads to lenders, pension funds and private-credit investors. With investment-grade and high-yield spreads near multi-decade tights, credit investors are collecting almost nothing to insure that risk, leaving little cushion if the calm proves to be complacency.",
+  "whatToWatch": [
+    "Whether Oracle's five-year CDS and the broad investment-grade and high-yield indices stayed flat in the days immediately after 26 June, the series the article flags as not yet pulled.",
+    "Any widening in CoreWeave's junk-rated credit, the place where AI build-out stress should surface first.",
+    "Off-balance-sheet and private-credit exposure to single data centers, whose prices are set in closed rooms and never appear on the CDS tape.",
+    "Confirmation or revision of OpenAI's 2027 IPO timeline and follow-through on memory-cost-driven device price increases."
+  ],
+  "primarySection": "technology",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research"
+}
