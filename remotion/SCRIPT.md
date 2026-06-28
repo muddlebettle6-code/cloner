@@ -1,36 +1,26 @@
-# Cumulant Reel — Narration Script (v7, plain-language)
+# Cumulant Reel — Narration Script (v8 — "Is AI a bubble?")
 
-**Story:** SpaceX Paid $19.6 Billion for the Airwaves Dish Couldn't Turn Into a Network. The Towers Are the Hard Part.
-**Article:** cumulant.org/articles/spacex-19-billion-echostar-spectrum-towers-not-airwaves
+**Topic:** The AI bubble — what it is, and how it could (or could not) burst.
 **Voice:** OpenAI `gpt-4o-mini-tts`, voice **`onyx`** (deep), speed 1.1 — warm, friendly explainer.
-**Runtime:** ~67 s · DARK mode · one frame per sentence (16 beats) + a follow-card ending.
+**Runtime:** ~75 s · DARK mode · one frame per sentence (15 beats) + a follow-card ending. **No music** (per request) — deep VO + synced SFX only.
 
-**Rewritten for a general FB/IG audience** — zero jargon: "radio airwaves" → "the invisible signals your phone uses"; "2–4 Mbps" → "painfully slow — a few people, for a whole city"; "MVNO/leverage" → "a threat to scare the big carriers into a cheaper deal"; "lower phone bill for you." **Captions** are the exact spoken words, word-synced (whisper). **Ending:** a closing question + a clean Follow-Cumulant card. **Music:** original dramatic piano + strings with a drop, **mixed lower**. **SFX:** a coin chime on the money stacks + a descending sweep when the graph drops, plus row/bar/number hits — all low + varied. (No copyrighted/viral tracks — infringement.)
+> **Editorial guardrails:** a *balanced* explainer, not doom-hype. Plain language for a general audience. The "burst" is framed as a **possibility, not a prediction** ("could," "may," "might"). **No investment advice.** No fabricated precise figures — only widely-established facts ("billions," "record amounts," "Nvidia became one of the most valuable companies"). Caption = exact spoken words, smoothly word-synced (whisper). Consistent with Cumulant's AI coverage (the AI sell-off, stretched IPO valuations, data-center spending).
 
-## Beats (plain language)
-1 "SpaceX just spent $19 billion on something you can't even see." · 2 "Radio airwaves." · 3 "They're the invisible signals your phone uses to call and text." · 4 "SpaceX wants to use them to sell you phone service, beamed straight from its satellites." · 5 "A fourth big phone company? Finally, some real competition?" · 6 "But here's the problem we spotted." · 7 "Buying the airwaves was the cheap part." · 8 "One satellite covers a huge area, but it's painfully slow. Think a few people, for a whole city." · 9 "To make it actually work, you'd need thousands of cell towers on the ground." · 10 "And that's the giant bill that bankrupted the last company that tried, Dish." · 11 "So why spend $19 billion?" · 12 "Probably as a threat, to scare the big carriers into a cheaper deal." · 13 "And that could mean a cheaper phone bill for you." · 14 "Building the network is the hard part." · 15 "So, a real new rival? Or just a clever bluff?" · 16 "Follow Cumulant. We explain the news behind the numbers."
+## Beats
+1 "Everyone is pouring billions into AI. But what if it's a giant bubble?" *(hook)*
+2 "Big tech is spending record amounts building AI, mostly chips and data centers."
+3 "The company selling those chips, Nvidia, became one of the most valuable on Earth."
+4 "But here's the strange part. A lot of that money just moves in circles."
+5 "AI companies invest in each other, then buy each other's chips and computing power."
+6 "That can make demand look way bigger than it really is."
+7 "Meanwhile, the spending is massive. But the actual profits from AI are still tiny."
+8 "That gap, huge spending and small returns, is what a bubble looks like." *(the definition)*
+9 "We've seen this movie before. The dot-com crash of 2000."
+10 "The internet was real. But stock prices ran way ahead of it, and then crashed."
+11 "But here's the twist. This time, the biggest spenders are hugely profitable." *(the balance)*
+12 "They can afford to keep going. So it may not pop. It might just slowly deflate."
+13 "The thing to watch? The day AI spending stops growing." *(audience takeaway)*
+14 "A new era? Or the next bubble?" *(closing question)*
+15 "Follow Cumulant. We explain the news behind the numbers." *(follow card)*
 
-> Human, flowing narration with **transition words** and **rhetorical questions**; explains the situation, **what Cumulant found**, and **what it means for the viewer**. Facts from the article + cited reporting (SEC/EDGAR, FCC, FT, CNBC/Morningstar, telecom measurement studies).
-
-| Beat | Sentence | Role |
-|---|---|---|
-| 1 | "SpaceX just paid $19.6 billion for something you can't even see." | hook |
-| 2 | "Airwaves." | punch / reveal |
-| 3 | "These are spectrum licenses. The right to broadcast wireless signals." | explain |
-| 4 | "And SpaceX hinted it could sell you a phone plan, straight from Starlink." | stakes |
-| 5 | "A fourth phone company, finally?" | **rhetorical question** |
-| 6 | "Well, here's what we found when we dug into the numbers." | **Cumulant's analysis** |
-| 7 | "Buying the airwaves was the easy part." | turn |
-| 8 | "One Starlink beam shares just 2 to 4 megabits, across an area hundreds of miles wide." | evidence (number) |
-| 9 | "To turn that into real coverage, you need thousands of cell towers on the ground." | mechanism |
-| 10 | "And that is exactly what bankrupted the last company that tried. Dish." | precedent |
-| 11 | "So why pay $19.6 billion?" | **rhetorical question** |
-| 12 | "It may be leverage, to squeeze a cheaper deal out of the carriers it's now threatening." | analysis |
-| 13 | "But a real fourth competitor could mean a lower phone bill for you." | **audience impact** |
-| 15 | "The towers are the whole game." | close |
-| 16 | "So, a real fourth carrier? Or a $19.6 billion bluff?" | **closing rhetorical question** |
-| 17 | "Either way, follow Cumulant for the analysis behind the headlines." | **follow CTA** |
-
-*(The "The airwaves were easy" recap beat was dropped — it repeated beat 7.)*
-
-Transition words used: *And, Well, So, But, exactly.* No investment advice; nothing stated as certain ("may be," "could"). Numbers spoken in words, shown as digits on screen.
+*(A "could rhyme with that" connector beat was cut to tighten.)* The bubble is the recurring 3D motif (inflating → tense → slowly deflating); other beats use a data center, an AI chip, a circular-money-flow diagram, a spending-vs-profit bar, and a dot-com line chart.

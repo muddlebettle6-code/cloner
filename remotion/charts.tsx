@@ -48,6 +48,30 @@ export const Table: React.FC<{ rows: { name: string; note: string; hi?: boolean 
   );
 };
 
+// circular money flow — nodes in a ring, a flowing dashed loop (money in circles)
+export const CircleFlow: React.FC<{ start?: number; centerY?: number }> = ({ start = 4, centerY = 960 }) => {
+  const f = useCurrentFrame();
+  const p = rev(f, start, 22, E.smoothOut);
+  const cx = 540, cy = 440, R = 250;
+  const labels = ["AI Co.", "$", "Chips", "$"];
+  return (
+    <svg width="1080" height="880" viewBox="0 0 1080 880" style={{ position: "absolute", left: "50%", top: centerY, transform: "translate(-50%,-50%)" }}>
+      <circle cx={cx} cy={cy} r={R} fill="none" stroke={C.mag} strokeWidth={7} strokeDasharray="34 26" strokeDashoffset={-f * 2.4} opacity={p * 0.85} style={{ filter: `drop-shadow(0 0 16px ${C.magGlow})` }} />
+      {labels.map((lb, i) => {
+        const a = (i / labels.length) * 2 * Math.PI - Math.PI / 2;
+        const x = cx + Math.cos(a) * R, y = cy + Math.sin(a) * R;
+        const np = rev(f, start + i * 5, 16, E.softOvershoot);
+        return (
+          <g key={i} opacity={np} transform={`translate(${x},${y}) scale(${0.6 + np * 0.4})`}>
+            <circle r={64} fill={C.bg2} stroke={lb === "$" ? C.mag : C.white} strokeWidth={3} />
+            <text y={20} fontFamily={F.display} fontSize={lb === "$" ? 64 : 40} fill={lb === "$" ? C.mag : C.white} textAnchor="middle">{lb}</text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
 // declining line chart (the collapse) — draws up then crashes down
 export const LineChart: React.FC<{ start?: number; centerY?: number }> = ({ start = 4, centerY = 960 }) => {
   const f = useCurrentFrame();

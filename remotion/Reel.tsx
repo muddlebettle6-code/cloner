@@ -1,5 +1,4 @@
-// Reel composition v7 — plain language, lower music, more animation-matched SFX
-// (coin chime on the stacks, descending sweep when the graph drops, pause + drop).
+// Reel composition v8 — AI bubble. NO music (per request) — deep VO + synced SFX only.
 import React from "react";
 import { AbsoluteFill, Series, Sequence, Audio, staticFile } from "remotion";
 import { Background, Fonts } from "./components";
@@ -11,26 +10,25 @@ const Sfx: React.FC<{ src: string; at: number; vol?: number; dur?: number }> = (
   <Sequence from={Math.max(0, at)} durationInFrames={dur}><Audio src={staticFile(`audio/${src}.mp3`)} volume={vol} /></Sequence>
 );
 
-// starts: s1 0, s2 160, s3 226, s4 354, s5 524, s6 664, s7 771, s8 843, s9 1059,
-//         s10 1188, s11 1339, s12 1405, s13 1542, s14 1677, s15 1756, s16 1876
+// starts: s1 0, s2 152, s3 331, s4 515, s5 648, s6 795, s7 932, s8 1136, s9 1284,
+//         s10 1422, s12 1594, s13 1750, s14 1909, s15 2038, s16 2111
 const CUES: { src: string; at: number; vol?: number }[] = [
-  { src: "riser", at: 0, vol: 0.22 }, { src: "coin", at: 8, vol: 0.34 }, { src: "impact", at: 13, vol: 0.28 },
-  { src: "subdrop", at: 156, vol: 0.42 }, { src: "impact", at: 160, vol: 0.36 }, // pause -> DROP
-  { src: "whoosh", at: 160, vol: 0.24 },
-  { src: "tick", at: 226, vol: 0.24 },
-  { src: "whoosh", at: 354, vol: 0.26 }, { src: "clink", at: 362, vol: 0.2 },
-  { src: "whoosh", at: 524, vol: 0.28 }, { src: "pop", at: 530, vol: 0.26 }, { src: "pop", at: 536, vol: 0.26 }, { src: "pop", at: 542, vol: 0.26 }, { src: "pop", at: 548, vol: 0.28 },
-  { src: "whoosh", at: 664, vol: 0.26 }, { src: "tick", at: 672, vol: 0.28 }, { src: "tick", at: 680, vol: 0.28 },
-  { src: "tick", at: 771, vol: 0.26 },
-  { src: "whoosh", at: 843, vol: 0.28 }, { src: "tick", at: 862, vol: 0.24 },
-  { src: "whoosh", at: 1059, vol: 0.28 }, { src: "clink", at: 1067, vol: 0.2 },
-  { src: "down", at: 1213, vol: 0.42 }, { src: "subdrop", at: 1216, vol: 0.3 }, // the graph drops
-  { src: "coin", at: 1345, vol: 0.32 }, { src: "impact", at: 1349, vol: 0.28 },
-  { src: "whoosh", at: 1405, vol: 0.28 }, { src: "pop", at: 1411, vol: 0.26 }, { src: "pop", at: 1417, vol: 0.26 }, { src: "pop", at: 1423, vol: 0.26 }, { src: "pop", at: 1429, vol: 0.28 },
-  { src: "whoosh", at: 1542, vol: 0.26 }, { src: "clink", at: 1550, vol: 0.2 },
-  { src: "whoosh", at: 1677, vol: 0.26 },
-  { src: "whoosh", at: 1756, vol: 0.26 }, { src: "clink", at: 1764, vol: 0.2 },
-  { src: "ding", at: 1878, vol: 0.3 },
+  { src: "riser", at: 0, vol: 0.3 }, { src: "ding", at: 9, vol: 0.32 },
+  { src: "subdrop", at: 148, vol: 0.44 }, { src: "impact", at: 152, vol: 0.4 }, // pause -> DROP
+  { src: "whoosh", at: 152, vol: 0.3 }, { src: "tick", at: 168, vol: 0.26 },
+  { src: "whoosh", at: 331, vol: 0.3 }, { src: "clink", at: 339, vol: 0.26 },
+  { src: "whoosh", at: 515, vol: 0.3 }, { src: "pop", at: 521, vol: 0.28 }, { src: "pop", at: 527, vol: 0.28 }, { src: "pop", at: 533, vol: 0.28 }, { src: "pop", at: 539, vol: 0.28 },
+  { src: "tick", at: 648, vol: 0.26 },
+  { src: "whoosh", at: 795, vol: 0.3 }, { src: "riser", at: 800, vol: 0.22 },
+  { src: "whoosh", at: 932, vol: 0.3 }, { src: "tick", at: 940, vol: 0.28 }, { src: "tick", at: 948, vol: 0.28 },
+  { src: "whoosh", at: 1136, vol: 0.3 }, { src: "ding", at: 1144, vol: 0.3 },
+  { src: "whoosh", at: 1284, vol: 0.3 }, { src: "down", at: 1302, vol: 0.4 }, // dot-com crash
+  { src: "down", at: 1452, vol: 0.4 }, { src: "subdrop", at: 1456, vol: 0.3 },
+  { src: "whoosh", at: 1594, vol: 0.3 }, { src: "coin", at: 1602, vol: 0.34 },
+  { src: "whoosh", at: 1750, vol: 0.3 }, { src: "down", at: 1760, vol: 0.26 }, // slow deflate
+  { src: "whoosh", at: 1909, vol: 0.28 }, { src: "tick", at: 1917, vol: 0.26 },
+  { src: "whoosh", at: 2038, vol: 0.3 }, { src: "ding", at: 2046, vol: 0.3 },
+  { src: "ding", at: 2113, vol: 0.3 },
 ];
 
 export const Reel: React.FC = () => {
@@ -48,8 +46,7 @@ export const Reel: React.FC = () => {
           <Audio src={staticFile(`audio/${s.id}.mp3`)} />
         </Sequence>
       ))}
-      {/* dramatic original track — lower in the mix now */}
-      <Audio src={staticFile("audio/music.mp3")} volume={0.26} />
+      {/* NO music bed — VO + SFX only */}
       {CUES.map((c, i) => <Sfx key={i} {...c} />)}
     </AbsoluteFill>
   );

@@ -44,15 +44,15 @@ export const Background: React.FC = () => {
 // ---- flowy transitions: entrance varies; full-change beats fly through ------ //
 export const SceneWrap: React.FC<{ frames: number; trans: "zoom" | "push" | "slide" | "wipe" | "fade"; children: React.ReactNode }> = ({ frames, trans, children }) => {
   const f = useCurrentFrame();
-  const inP = interpolate(f, [0, 13], [0, 1], { extrapolateRight: "clamp", easing: E.smoothOut });
-  const outP = interpolate(f, [frames - 10, frames], [1, 0], { extrapolateLeft: "clamp", easing: E.smoothIn });
+  const inP = interpolate(f, [0, 18], [0, 1], { extrapolateRight: "clamp", easing: E.cinematicScale });
+  const outP = interpolate(f, [frames - 14, frames], [1, 0], { extrapolateLeft: "clamp", easing: E.smoothInOut });
   let scale = 1, x = 0, blur = 0;
-  if (trans === "zoom") { scale = interpolate(inP, [0, 1], [1.3, 1]); blur += (1 - inP) * 11; }
-  if (trans === "push") { scale = interpolate(inP, [0, 1], [0.76, 1]); blur += (1 - inP) * 9; }
-  if (trans === "slide") x = interpolate(inP, [0, 1], [300, 0]);
-  if (trans === "fade") blur += (1 - inP) * 6;
+  if (trans === "zoom") { scale = interpolate(inP, [0, 1], [1.22, 1]); blur += (1 - inP) * 10; }
+  if (trans === "push") { scale = interpolate(inP, [0, 1], [0.82, 1]); blur += (1 - inP) * 8; }
+  if (trans === "slide") x = interpolate(inP, [0, 1], [240, 0]);
+  if (trans === "fade") blur += (1 - inP) * 7;
   const strong = trans === "zoom" || trans === "wipe" || trans === "push";
-  if (strong) { scale *= interpolate(outP, [0, 1], [1.32, 1]); blur += (1 - outP) * 15; } else { x += interpolate(outP, [0, 1], [-200, 0]); blur += (1 - outP) * 7; }
+  if (strong) { scale *= interpolate(outP, [0, 1], [1.24, 1]); blur += (1 - outP) * 13; } else { x += interpolate(outP, [0, 1], [-150, 0]); blur += (1 - outP) * 7; }
   return (
     <>
       <AbsoluteFill style={{ opacity: Math.min(inP, outP), filter: blur > 0.3 ? `blur(${blur}px)` : undefined, transform: `translateX(${x}px) scale(${scale})` }}>{children}</AbsoluteFill>
@@ -67,12 +67,13 @@ export const Subtitle: React.FC<{ id: string; centerY?: number }> = ({ id, cente
   const words = CAPTIONS[id] || [];
   return (
     <div style={{ position: "absolute", left: 100, right: 100, top: centerY, transform: "translateY(-50%)", textAlign: "center" }}>
-      <div style={{ fontFamily: F.display, fontSize: 54, lineHeight: 1.2, letterSpacing: "-0.012em", color: C.white }}>
+      <div style={{ fontFamily: F.display, fontSize: 54, lineHeight: 1.28, letterSpacing: "-0.012em", color: C.white }}>
         {words.map((wd, i) => {
-          const p = rev(f, wd.t * 30, 6, E.fastReveal);
-          if (p <= 0.01) return null;
+          const p = rev(f, wd.t * 30, 13, E.smoothOut); // longer, smooth ease (no chop)
           const num = /[\d$]/.test(wd.w);
-          return <span key={i} style={{ opacity: p, color: num ? C.mag : C.white }}>{wd.w}{" "}</span>;
+          return (
+            <span key={i} style={{ display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 15}px)`, filter: p < 0.99 ? `blur(${(1 - p) * 5}px)` : undefined, color: num ? C.mag : C.white, marginRight: "0.26em" }}>{wd.w}</span>
+          );
         })}
       </div>
     </div>
