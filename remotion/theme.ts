@@ -1,26 +1,26 @@
-// Cumulant reel design tokens — LIGHT mode (Cumulant site aesthetic):
-// soft warm-white page, ink text, magenta accent. Easing-driven motion system.
+// Cumulant reel design tokens — DARK mode. Near-black page + subtle grid, white text
+// (ONE type, no gray subtext), magenta accent. Easing-driven motion system.
 import { Easing } from "remotion";
 
 export const FPS = 30;
 export const WIDTH = 1080;
 export const HEIGHT = 1920;
 
-// --- color (light: cream page, ink text, magenta accent) ---
+// --- color (dark) ---
 export const C = {
-  bg: "#f5f3ee",      // soft warm white (page)
-  bg2: "#e9e4d9",     // darker cream for gradients/depth
-  ink: "#17140f",     // primary text
-  soft: "rgba(23,20,15,0.58)",
-  faint: "rgba(23,20,15,0.30)",
-  hair: "rgba(23,20,15,0.10)",
+  bg: "#070708",      // near-black page
+  bg2: "#0e0e12",
+  ink: "#ffffff",     // text is white (single text colour)
+  soft: "#ffffff",    // never gray — keep all text white
+  faint: "rgba(255,255,255,0.34)",
+  hair: "rgba(255,255,255,0.07)",  // grid lines
   mag: "#ff2d92",
-  magDeep: "#d11668",
-  magSoft: "rgba(255,45,146,0.10)",
-  magGlow: "rgba(255,45,146,0.28)",
+  magDeep: "#c01567",
+  magSoft: "rgba(255,45,146,0.14)",
+  magGlow: "rgba(255,45,146,0.5)",
   white: "#ffffff",
-  black: "#0a0a0a",
-  shadow: "rgba(23,20,15,0.18)",
+  black: "#070708",
+  shadow: "rgba(0,0,0,0.5)",
 };
 
 export const F = {
