@@ -41,7 +41,7 @@ function narrate(text, i) {
     try {
       execFileSync("curl", ["-s", "https://api.openai.com/v1/audio/speech",
         "-H", `Authorization: Bearer ${KEY}`, "-H", "Content-Type: application/json",
-        "-d", JSON.stringify({ model: "gpt-4o-mini-tts", voice: VOICE, input: text, speed: 1.08, instructions: "Confident, punchy news-explainer delivery, brisk and engaging, a touch of intrigue, not robotic." }),
+        "-d", JSON.stringify({ model: "gpt-4o-mini-tts", voice: VOICE, input: text, speed: 1.12, instructions: "Confident, punchy news-explainer delivery, brisk and engaging, a touch of intrigue, not robotic." }),
         "-o", mp3], { stdio: "ignore" });
       if (existsSync(mp3) && dur(mp3) > 0.3) return mp3;
     } catch { /* fall back */ }
@@ -134,12 +134,20 @@ const slides = sb.slides || [];
 let article = null;
 try { article = JSON.parse(readFileSync(join(ROOT, "content/articles", `${sb.slug}.json`), "utf8")); } catch { /* charts optional */ }
 const chartByTitle = {}; (article?.charts || []).forEach((c) => { chartByTitle[c.title] = c; });
+// keep the reel tight (~30s): hook + count-up/proof + payoff + cta, dropping a couple middle beats
+const MAX = parseInt(process.env.REEL_MAX_SCENES || "6", 10);
+let chosen = slides;
+if (slides.length > MAX) {
+  const mid = slides.slice(1, -2), keepMid = Math.max(1, MAX - 3), step = mid.length / keepMid;
+  const picked = Array.from({ length: keepMid }, (_, k) => mid[Math.floor(k * step)]);
+  chosen = [slides[0], ...picked, ...slides.slice(-2)];
+}
 const scenes = [], voClips = [];
-slides.forEach((sl, i) => {
+chosen.forEach((sl, i) => {
   const text = String(sl.text || "");
-  const end = sl.role === "cta" || i === slides.length - 1;
+  const end = sl.role === "cta" || i === chosen.length - 1;
   const v = narrate(text, i);
-  const secs = Math.round((dur(v) + 0.3) * 100) / 100;
+  const secs = Math.round((dur(v) + 0.2) * 100) / 100;
   const photo = imgs[i % imgs.length];
   const chart = sl.chart && chartByTitle[sl.chart];
   const capTrack = { frames: captionFrames(text, i, end), from: 0, to: Math.min(secs - 0.3, secs * 0.6) };
@@ -148,7 +156,7 @@ slides.forEach((sl, i) => {
   if (nums) { tracks = [{ frames: nums, from: 0.1, to: Math.min(1.3, secs * 0.55) }, capTrack]; darken = true; tag = " [count-up]"; }
   scenes.push(scene(i, photo, secs, tracks, darken));
   voClips.push({ v, secs });
-  process.stdout.write(`  scene ${i + 1}/${slides.length} (${secs}s)${tag}\n`);
+  process.stdout.write(`  scene ${i + 1}/${chosen.length} (${secs}s)${tag}\n`);
 });
 
 // crossfade-concat the video scenes
