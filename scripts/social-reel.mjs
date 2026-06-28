@@ -41,7 +41,7 @@ function narrate(text, i) {
     try {
       execFileSync("curl", ["-s", "https://api.openai.com/v1/audio/speech",
         "-H", `Authorization: Bearer ${KEY}`, "-H", "Content-Type: application/json",
-        "-d", JSON.stringify({ model: "gpt-4o-mini-tts", voice: VOICE, input: text, instructions: "Confident, natural news-explainer delivery; clear and engaging, not robotic." }),
+        "-d", JSON.stringify({ model: "gpt-4o-mini-tts", voice: VOICE, input: text, speed: 1.08, instructions: "Confident, punchy news-explainer delivery, brisk and engaging, a touch of intrigue, not robotic." }),
         "-o", mp3], { stdio: "ignore" });
       if (existsSync(mp3) && dur(mp3) > 0.3) return mp3;
     } catch { /* fall back */ }
@@ -63,30 +63,67 @@ function shot(html, file) {
 // the scrim + Cumulant wordmark (static overlay, rendered once)
 const scrim = join(tmp, "scrim.png");
 shot(`<div class="f"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.12) 13%,rgba(0,0,0,0) 36%,rgba(0,0,0,.5) 62%,rgba(0,0,0,.93) 100%)"></div><div style="position:absolute;top:92px;left:0;right:0;text-align:center;color:#fff;font-size:48px;letter-spacing:-.01em">Cumulant<span style="color:${MAG}">.</span></div></div>`, scrim);
-function captionPng(text, i, big, end) {
-  const f = join(tmp, `cap${i}.png`);
+// cumulative caption frames: each shows one more word-group (the rest hidden but
+// kept in place), so words pop in sequence like a kinetic caption.
+function captionFrames(text, i, end, num) {
+  if (end) {
+    const f = join(tmp, `cap${i}_0.png`);
+    shot(`<div class="f"><div style="position:absolute;left:84px;right:84px;top:50%;transform:translateY(-50%);text-align:center"><div style="color:#fff;font-size:100px;letter-spacing:-.02em">Cumulant<span style="color:${MAG}">.</span></div><div style="color:${MAG};font-size:56px;line-height:1.15;margin-top:46px">${esc(text)}</div><div style="color:rgba(255,255,255,.72);font-size:34px;margin-top:42px">Follow for the analysis behind the headlines</div></div></div>`, f);
+    return [f];
+  }
   const n = String(text).length;
-  const size = end ? 60 : big ? (n > 70 ? 78 : n > 40 ? 100 : 122) : (n > 90 ? 60 : n > 56 ? 72 : n > 30 ? 88 : 104);
-  const pos = end ? `top:50%;transform:translateY(-50%);text-align:center` : `bottom:330px`;
-  const inner = end
-    ? `<div style="color:#fff;font-size:96px;letter-spacing:-.02em">Cumulant<span style="color:${MAG}">.</span></div><div style="color:${MAG};font-size:56px;line-height:1.15;margin-top:44px">${esc(text)}</div><div style="color:rgba(255,255,255,.72);font-size:34px;margin-top:40px">Follow for the analysis behind the headlines</div>`
-    : `<div style="color:${MAG};font-size:${size}px;line-height:1.06;letter-spacing:-.02em;text-shadow:0 3px 30px rgba(0,0,0,.6)">${esc(text)}</div>`;
-  shot(`<div class="f"><div style="position:absolute;left:84px;right:84px;${pos}">${inner}</div></div>`, f);
-  return f;
+  const size = n > 90 ? 62 : n > 56 ? 76 : n > 30 ? 92 : 108;
+  const words = String(text).split(/\s+/);
+  const groups = []; for (let k = 0; k < words.length; k += 2) groups.push(words.slice(k, k + 2).join(" "));
+  const numHtml = num ? `<div id="num" style="color:${MAG};font-size:200px;line-height:.9;letter-spacing:-.04em;margin-bottom:30px">${esc(num.shown)}</div>` : "";
+  return groups.map((_, g) => {
+    const f = join(tmp, `cap${i}_${g}.png`);
+    const html = groups.map((grp, gi) => `<span style="visibility:${gi <= g ? "visible" : "hidden"}">${esc(grp)} </span>`).join("");
+    shot(`<div class="f"><div style="position:absolute;left:84px;right:84px;bottom:300px">${numHtml}<div style="color:#fff;font-size:${size}px;line-height:1.1;letter-spacing:-.02em;text-shadow:0 3px 30px rgba(0,0,0,.7)">${html}</div></div></div>`, f);
+    return f;
+  });
 }
 
-// ---- per-scene clip: Ken Burns photo + scrim + rising caption ------------- //
-function scene(i, photoPath, capPng, secs) {
+// count-up frames for a keynumber: the figure ticks from 0 to its value.
+function countupFrames(value, i) {
+  const m = String(value).match(/^([^\d]*)([\d,.]+)(.*)$/);
+  if (!m) return null;
+  const pre = m[1], suf = m[3], target = parseFloat(m[2].replace(/,/g, ""));
+  if (!Number.isFinite(target)) return null;
+  const dec = (m[2].split(".")[1] || "").length;
+  const steps = 12;
+  return Array.from({ length: steps + 1 }, (_, s) => {
+    const v = (target * s / steps).toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const f = join(tmp, `num${i}_${s}.png`);
+    shot(`<div class="f"><div style="position:absolute;left:84px;right:84px;bottom:560px;color:${MAG};font-size:230px;line-height:.9;letter-spacing:-.04em;text-shadow:0 3px 40px rgba(0,0,0,.6)">${esc(pre + v + suf)}</div></div>`, f);
+    return f;
+  });
+}
+
+// ---- per-scene clip: Ken Burns photo + scrim + sequenced overlays --------- //
+// tracks = [{ frames:[png...], from, to }]  (each frame shown across its slice)
+function scene(i, photoPath, secs, tracks, darken) {
   const clip = join(tmp, `s${i}.mp4`);
   const frames = Math.round(secs * FPS);
-  const fc = [
-    `[0:v]scale=1296:2304,zoompan=z='min(zoom+0.0008,1.12)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},trim=end_frame=${frames},setsar=1[bg]`,
-    `[bg][1:v]overlay=0:0:shortest=1[bs]`,
-    `[2:v]fade=in:st=0:d=0.45:alpha=1[cap]`,
-    `[bs][cap]overlay=0:'max(0,(1-min(t/0.45,1))*90)'[v]`,
-  ].join(";");
-  ff(["-loop", "1", "-i", photoPath, "-loop", "1", "-i", scrim, "-loop", "1", "-i", capPng,
-    "-filter_complex", fc, "-map", "[v]", "-frames:v", String(frames), "-r", String(FPS),
+  const inputs = ["-loop", "1", "-i", photoPath, "-loop", "1", "-i", scrim];
+  const parts = [
+    `[0:v]scale=1296:2304,zoompan=z='min(zoom+0.0008,1.12)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${frames}:s=${W}x${H}:fps=${FPS},trim=end_frame=${frames},setsar=1${darken ? `,colorchannelmixer=rr=.6:gg=.6:bb=.6` : ""}[bg]`,
+    `[bg][1:v]overlay=0:0:shortest=1[v0]`,
+  ];
+  let last = "v0", idx = 2;
+  tracks.forEach((tr) => {
+    const G = tr.frames.length, span = tr.to - tr.from;
+    tr.frames.forEach((f, g) => {
+      inputs.push("-loop", "1", "-i", f);
+      const t0 = (tr.from + (g / G) * span).toFixed(2);
+      const t1 = (g === G - 1 ? secs : tr.from + ((g + 1) / G) * span).toFixed(2);
+      const lbl = `o${idx}`;
+      parts.push(`[${last}][${idx}:v]overlay=0:0:enable='between(t,${t0},${t1})'[${lbl}]`);
+      last = lbl; idx++;
+    });
+  });
+  parts.push(`[${last}]null[v]`);
+  ff([...inputs, "-filter_complex", parts.join(";"), "-map", "[v]", "-frames:v", String(frames), "-r", String(FPS),
     "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", clip]);
   return { clip, secs };
 }
@@ -94,17 +131,24 @@ function scene(i, photoPath, capPng, secs) {
 // ---- assemble ------------------------------------------------------------- //
 const imgs = (sb.images || []).filter(Boolean);
 const slides = sb.slides || [];
+let article = null;
+try { article = JSON.parse(readFileSync(join(ROOT, "content/articles", `${sb.slug}.json`), "utf8")); } catch { /* charts optional */ }
+const chartByTitle = {}; (article?.charts || []).forEach((c) => { chartByTitle[c.title] = c; });
 const scenes = [], voClips = [];
 slides.forEach((sl, i) => {
   const text = String(sl.text || "");
   const end = sl.role === "cta" || i === slides.length - 1;
   const v = narrate(text, i);
-  const secs = Math.round((dur(v) + 0.55) * 100) / 100;
-  const cap = captionPng(text, i, i === 0, end);
+  const secs = Math.round((dur(v) + 0.3) * 100) / 100;
   const photo = imgs[i % imgs.length];
-  scenes.push(scene(i, photo, cap, secs));
+  const chart = sl.chart && chartByTitle[sl.chart];
+  const capTrack = { frames: captionFrames(text, i, end), from: 0, to: Math.min(secs - 0.3, secs * 0.6) };
+  let tracks = [capTrack], darken = false, tag = "";
+  const nums = (chart && chart.kind === "keynumber") ? countupFrames(chart.data?.value, i) : null;
+  if (nums) { tracks = [{ frames: nums, from: 0.1, to: Math.min(1.3, secs * 0.55) }, capTrack]; darken = true; tag = " [count-up]"; }
+  scenes.push(scene(i, photo, secs, tracks, darken));
   voClips.push({ v, secs });
-  process.stdout.write(`  scene ${i + 1}/${slides.length} (${secs}s)\n`);
+  process.stdout.write(`  scene ${i + 1}/${slides.length} (${secs}s)${tag}\n`);
 });
 
 // crossfade-concat the video scenes
@@ -122,10 +166,14 @@ const mixIn = voClips.map((_, i) => `[a${i}]`).join("");
 const voTrack = join(tmp, "vo.m4a");
 ff([...aArgs, "-filter_complex", `${aMaps.join(";")};${mixIn}amix=inputs=${voClips.length}:normalize=0[a]`, "-map", "[a]", voTrack]);
 
-const music = process.env.REEL_MUSIC;
-if (music && existsSync(music)) {
-  ff(["-i", vcur, "-i", voTrack, "-stream_loop", "-1", "-i", music, "-filter_complex", "[2:a]volume=0.10[m];[1:a][m]amix=inputs=2:duration=first[a]", "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-shortest", out]);
-} else {
-  ff(["-i", vcur, "-i", voTrack, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-shortest", out]);
+// music bed: a real track if provided (REEL_MUSIC), else a soft generated ambient pad
+const total = dur(vcur);
+let music = process.env.REEL_MUSIC, vol = 0.11;
+if (!music || !existsSync(music)) {
+  music = join(tmp, "bed.wav"); vol = 0.06;
+  ff(["-f", "lavfi", "-i", `sine=f=130.81:d=${total}`, "-f", "lavfi", "-i", `sine=f=196:d=${total}`, "-f", "lavfi", "-i", `sine=f=261.63:d=${total}`,
+    "-filter_complex", `[0][1][2]amix=inputs=3,tremolo=f=0.16:d=0.5,lowpass=f=620,highpass=f=70,afade=in:st=0:d=1.5,afade=out:st=${(total - 1.5).toFixed(2)}:d=1.5[b]`,
+    "-map", "[b]", music]);
 }
-console.log(`\nReel -> ${out}  (${Math.round(dur(out) * 10) / 10}s, ${KEY ? "OpenAI " + VOICE + " voice" : "say voice"})`);
+ff(["-i", vcur, "-i", voTrack, "-stream_loop", "-1", "-i", music, "-filter_complex", `[2:a]volume=${vol}[m];[1:a][m]amix=inputs=2:duration=first:normalize=0[a]`, "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-shortest", out]);
+console.log(`\nReel -> ${out}  (${Math.round(dur(out) * 10) / 10}s, ${KEY ? "OpenAI " + VOICE + " voice" : "say voice"}, music bed)`);
