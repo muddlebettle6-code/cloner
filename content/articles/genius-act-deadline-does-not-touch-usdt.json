@@ -1,0 +1,602 @@
+{
+  "published": true,
+  "slug": "genius-act-deadline-does-not-touch-usdt",
+  "headline": "The Loudest Stablecoin Deadline Does Not Touch USDT",
+  "deck": "Six US agencies are racing to a July 18, 2026 rulemaking deadline under the GENIUS Act, but a close read of the statute shows that date governs new American issuers, not whether USDT can keep trading. The legal cliff for the roughly $186B offshore giant is July 18, 2028; the one ruling that could spare it runs on a 210-day clock that cannot start until Treasury builds a filing process it has not finished; and the deadline that bites first may be set by exchanges, not regulators.",
+  "takeaways": [
+    "The July 18, 2026 deadline everyone is counting down to sets the rules for permitted US stablecoin issuers. It does not make USDT illegal to trade.",
+    "The date that actually bars US platforms from offering non-compliant foreign stablecoins is July 18, 2028, three years after the law passed.",
+    "USDT's escape hatch is a Treasury reciprocity ruling with a 210-day clock that cannot begin until a complete request is filed through a process Treasury has not yet finalized. The same statute also lets Treasury move quickly against a foreign coin, so it holds both the brake and the accelerator.",
+    "Tether the company is not exempt from 2026: it launched a US-domestic coin, USAT, that operates under exactly these rules. The 2026 deadline spares the USDT coin, not the firm.",
+    "The deadline that bites first may be commercial, not legal. Under Europe's MiCA, Kraken wound down USDT for EEA users in roughly six weeks, and a US exchange could front-run 2028 the same way."
+  ],
+  "glossary": [
+    {
+      "term": "Stablecoin",
+      "definition": "A cryptocurrency designed to hold a steady value, usually one US dollar per coin, by being backed with reserves such as cash and short-term US government debt."
+    },
+    {
+      "term": "Tether",
+      "definition": "The offshore company that issues USDT, the world's largest stablecoin."
+    },
+    {
+      "term": "USDT",
+      "definition": "Tether's dollar-pegged stablecoin, the biggest stablecoin in the world by the amount in circulation."
+    },
+    {
+      "term": "USDC",
+      "definition": "A US-based dollar stablecoin issued by Circle, the second largest and generally seen as more compliance-friendly than USDT."
+    },
+    {
+      "term": "USAT",
+      "definition": "A US-domestic stablecoin Tether launched in January 2026, issued through the federally chartered bank Anchorage, as a hedge in case USDT is shut out of the US market."
+    },
+    {
+      "term": "GENIUS Act",
+      "definition": "The 2025 federal law (bill number S.1582, Public Law 119-27, short for Guiding and Establishing National Innovation for U.S. Stablecoins) that created America's first national rulebook for stablecoins; signed into law on July 18, 2025."
+    },
+    {
+      "term": "Market capitalization",
+      "definition": "The total dollar value of all coins in circulation; for a stablecoin it roughly equals the number of coins times one dollar, while for an ordinary cryptocurrency it is the live price times the supply."
+    },
+    {
+      "term": "Ethereum (ETH)",
+      "definition": "The second-largest cryptocurrency by market value after Bitcoin; USDT briefly edged past it in size on June 26, 2026."
+    },
+    {
+      "term": "Reciprocity determination",
+      "definition": "A Treasury ruling that a foreign country's stablecoin rules are comparable to America's, which would let a foreign coin like USDT keep trading on US platforms."
+    },
+    {
+      "term": "Comparability",
+      "definition": "The legal test inside the reciprocity ruling: whether a foreign country regulates stablecoins to a standard the US treats as equivalent to its own."
+    },
+    {
+      "term": "Section 18",
+      "definition": "The part of the GENIUS Act that governs foreign stablecoin issuers, including the reciprocity ruling and a separate power that lets Treasury declare a foreign coin non-compliant and bar it from US platforms."
+    },
+    {
+      "term": "Secondary market",
+      "definition": "Where coins are bought and sold after they are first issued, for example on an exchange, as opposed to being newly created by the issuer."
+    },
+    {
+      "term": "Digital asset service provider",
+      "definition": "A company that lets people trade or hold crypto, such as an exchange or custodian; these are the firms the law's 2028 ban actually targets."
+    },
+    {
+      "term": "Permitted issuer",
+      "definition": "A stablecoin company that has been approved under the GENIUS Act and is allowed to issue coins in the US."
+    },
+    {
+      "term": "NPRM",
+      "definition": "Notice of Proposed Rulemaking, the draft version of a regulation that an agency publishes so the public can comment before it becomes final."
+    },
+    {
+      "term": "Comment period",
+      "definition": "The window during which the public and industry can send feedback on a proposed rule before the agency finalizes it."
+    },
+    {
+      "term": "Federal Register",
+      "definition": "The official daily journal of the US government where federal agencies publish proposed and final rules."
+    },
+    {
+      "term": "Treasury",
+      "definition": "The US Department of the Treasury, the agency the GENIUS Act puts in charge of the foreign-issuer reciprocity decision."
+    },
+    {
+      "term": "OCC",
+      "definition": "Office of the Comptroller of the Currency, a Treasury bureau that regulates national banks and is one of the agencies writing GENIUS Act rules."
+    },
+    {
+      "term": "Federal Reserve",
+      "definition": "The US central bank, a primary federal regulator for certain payment stablecoin issuers; its own GENIUS Act rule was still pending as of late June 2026."
+    },
+    {
+      "term": "FDIC",
+      "definition": "Federal Deposit Insurance Corporation, the agency that insures bank deposits and is co-writing stablecoin rules."
+    },
+    {
+      "term": "NCUA",
+      "definition": "National Credit Union Administration, the regulator for federally insured credit unions, which is writing the rules for credit-union stablecoin issuers."
+    },
+    {
+      "term": "FinCEN",
+      "definition": "Financial Crimes Enforcement Network, the Treasury unit that writes anti-money-laundering rules."
+    },
+    {
+      "term": "OFAC",
+      "definition": "Office of Foreign Assets Control, the Treasury unit that runs US financial sanctions."
+    },
+    {
+      "term": "MiCA",
+      "definition": "Markets in Crypto-Assets, the European Union's crypto law, which already forced platforms in Europe to drop non-compliant stablecoins such as USDT."
+    },
+    {
+      "term": "Kraken",
+      "definition": "A major US crypto exchange that wound down USDT for its European customers under MiCA in early 2025, steering them toward USDC."
+    },
+    {
+      "term": "EEA",
+      "definition": "European Economic Area, the EU countries plus a few others, the region where MiCA's stablecoin rules apply."
+    },
+    {
+      "term": "Anchorage",
+      "definition": "A US federally chartered crypto bank (Anchorage Digital Bank) that issues Tether's American coin, USAT."
+    },
+    {
+      "term": "Statutory deadline",
+      "definition": "A date written directly into a law by Congress, as opposed to one an agency chooses for itself."
+    },
+    {
+      "term": "SCRC",
+      "definition": "The Stablecoin Certification Review Committee, the panel whose recommendations Treasury must weigh when judging whether a foreign country's rules are comparable to America's."
+    }
+  ],
+  "event": "By late June 2026 the GENIUS Act comment periods had closed (the last in early June 2026), leaving roughly five weeks before the July 18, 2026 statutory rulemaking deadline, while USDT crossed about $186B and briefly passed Ethereum in market value on June 26, 2026.",
+  "question": "When does USDT actually become illegal to offer on US platforms, and is it the July 18, 2026 deadline every headline is counting down to?",
+  "readingMinutes": 9,
+  "tags": [
+    "stablecoins",
+    "GENIUS Act",
+    "Tether",
+    "USDT",
+    "crypto regulation",
+    "Treasury",
+    "MiCA",
+    "stablecoin regulation"
+  ],
+  "leadChartId": "two-clocks",
+  "charts": [
+    {
+      "id": "two-clocks",
+      "kind": "timeline",
+      "title": "Two clocks, one countdown that matters",
+      "subtitle": "The loud 2026 deadline governs US issuers; USDT's binding date is 2028, with an undated determination floating in the gap",
+      "source": "S.1582 (GENIUS Act) and Public Law 119-27, congress.gov; Gibson Dunn and Morgan Lewis client alerts",
+      "period": "2025-2028",
+      "note": "Every dated event plotted here is a real statutory date. The reciprocity ruling and the Section 18 non-compliance power have NO fixed date: they sit in the open gap between 2026 and 2028. The reciprocity 210-day clock cannot start until a complete request is filed, and Treasury has not yet finalized how to file one.",
+      "alt": "A timeline showing four real dates from 2025 to 2028: the GENIUS Act signing, comment periods closing, the 2026 rulemaking deadline, and the 2028 secondary-market ban, with a note that the reciprocity ruling is undated and sits between 2026 and 2028.",
+      "data": {
+        "events": [
+          {
+            "date": "2025-07-18",
+            "title": "GENIUS Act signed",
+            "detail": "One-year clock for rulemaking begins; three-year clock for the secondary-market ban also begins."
+          },
+          {
+            "date": "2026-06-09",
+            "title": "Comment periods close",
+            "detail": "Loud track: public feedback on the proposed rules ends (the OCC's window closed earlier, on May 1)."
+          },
+          {
+            "date": "2026-07-18",
+            "title": "Rulemaking deadline",
+            "detail": "Loud track: rules for permitted US issuers are due. This does NOT bind the existing USDT coin."
+          },
+          {
+            "date": "2028-07-18",
+            "title": "Secondary-market ban takes effect",
+            "detail": "Binding track: US service providers may only offer stablecoins from permitted issuers. This is USDT's real cliff. The undated reciprocity ruling and the Section 18 designation both live in the gap before this date."
+          }
+        ]
+      }
+    },
+    {
+      "id": "three-dates",
+      "kind": "table",
+      "title": "Three dates, three jobs",
+      "subtitle": "Which date does what under the GENIUS Act",
+      "source": "S.1582 (GENIUS Act) and Public Law 119-27, congress.gov; Gibson Dunn and Morgan Lewis client alerts",
+      "alt": "A table mapping each GENIUS Act date to what it actually controls and whether it binds the USDT coin.",
+      "data": {
+        "columns": [
+          "Date",
+          "What it controls",
+          "Binds USDT?"
+        ],
+        "rows": [
+          [
+            "July 18, 2026",
+            "Rules for permitted US issuers must be written",
+            "No"
+          ],
+          [
+            "No statutory deadline",
+            "Reciprocity ruling that could let USDT stay, plus a power that could bar it faster",
+            "Decides USDT, but has no clock"
+          ],
+          [
+            "July 18, 2028",
+            "US platforms barred from offering non-permitted stablecoins",
+            "Yes, this is the real cutoff"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "concentration",
+      "kind": "bar",
+      "title": "USDT dwarfs the field it could be barred from",
+      "subtitle": "Stablecoin market value, snapshot late June 2026",
+      "source": "DefiLlama stablecoins dashboard, snapshot late June 2026",
+      "units": "USD billions",
+      "alt": "A bar chart showing USDT at about 186 billion dollars, USDC at about 74 billion, and all other stablecoins combined at about 61 billion.",
+      "note": "USDC and all-others figures are an approximate late-June 2026 snapshot (total stablecoin market about $321B) and should be re-pulled at publication.",
+      "data": {
+        "bars": [
+          {
+            "label": "USDT (Tether)",
+            "value": 186,
+            "highlight": true
+          },
+          {
+            "label": "USDC (Circle)",
+            "value": 74
+          },
+          {
+            "label": "All others",
+            "value": 61
+          }
+        ],
+        "max": 200
+      }
+    },
+    {
+      "id": "mica-frontrun",
+      "kind": "timeline",
+      "title": "Europe's precedent: the market moved in about six weeks",
+      "subtitle": "How fast a platform can drop USDT once it decides to",
+      "source": "Kraken announcements; contemporaneous MiCA coverage (Cryptobriefing, DL News), early 2025",
+      "period": "Feb-Mar 2025",
+      "note": "Under the EU's MiCA rules, Kraken compressed its EEA wind-down of USDT into roughly six weeks and steered users toward USDC. The phased process ran from mid-February to March 31, 2025.",
+      "alt": "A short timeline showing Kraken restricting and then ending USDT support in Europe over about six weeks in early 2025.",
+      "data": {
+        "events": [
+          {
+            "date": "2025-02-13",
+            "title": "Wind-down begins",
+            "detail": "Kraken sets USDT and other non-MiCA stablecoins to reduce-only, then sell-only, for EEA users."
+          },
+          {
+            "date": "2025-03-31",
+            "title": "Conversion complete",
+            "detail": "USDT support ends for EEA users; remaining balances are converted, largely to USDC."
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The countdown on the wrong clock",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Across Washington this month, a cluster of federal agencies has been racing the same deadline. The comment periods on their proposed stablecoin rules have closed, the last of them in early June 2026, and the Office of the Comptroller of the Currency, the FDIC, the National Credit Union Administration, FinCEN, OFAC and Treasury now have only about five weeks to turn their drafts into final rules before July 18, 2026. (Those six bureaus had each issued a proposed rule; the Federal Reserve, also a primary regulator under the law, had not yet published its own rule as of late June.) That date is exactly one year after the GENIUS Act, America's first federal stablecoin law, was signed, and it is written into the statute itself."
+        },
+        {
+          "type": "p",
+          "text": "A stablecoin, for readers new to the term, is a crypto token engineered to be worth one dollar, backed by reserves of cash and short-term government debt. It is the plumbing of the crypto economy: the dollar people park between trades. And the largest one on Earth, by a wide margin, is USDT, issued by an offshore company called Tether. As of late June 2026 it was worth about $186 billion."
+        },
+        {
+          "type": "p",
+          "text": "On June 26 it briefly grew larger than Ethereum, the second-biggest cryptocurrency of any kind. That milestone is more fragile than it sounds, and it is worth pausing on why. A stablecoin's market value is simply the number of coins outstanding times one dollar; Ethereum's is its price times its supply. So a 'flip' can happen because USDT grew or because Ethereum's price fell, and in late June it was as much the latter as the former: USDT's roughly $186.1 billion narrowly edged Ethereum's roughly $185.7 billion as ETH slid toward the $1,500s. Treat the headline as color, not as evidence that USDT is surging past the rest of crypto."
+        },
+        {
+          "type": "p",
+          "text": "Here is the question worth asking before the headlines declare a reckoning: when, exactly, does USDT become illegal for an American platform to offer? Is it July 18, 2026, the date everyone is counting down to? The statute's own text says no."
+        }
+      ]
+    },
+    {
+      "heading": "The central question",
+      "blocks": [
+        {
+          "type": "pullquote",
+          "text": "The deadline every headline is watching governs who may issue a stablecoin in America. It says nothing about whether you can keep trading the one that already dominates."
+        },
+        {
+          "type": "p",
+          "text": "The GENIUS Act funnels its enforcement design through a single chokepoint: at some point, US digital asset service providers (exchanges, custodians, the firms that let you buy and hold crypto) may only offer stablecoins from issuers the law has blessed. The whole drama of USDT's US future is whether, and when, that chokepoint closes on it. To answer that, you have to separate three different dates that the coverage tends to blur into one."
+        },
+        {
+          "type": "p",
+          "text": "One clarification first, because the loudest headline overreaches. The 2026 deadline does not spare Tether the company. In January 2026 Tether launched a US-domestic coin, USAT, issued through the federally chartered crypto bank Anchorage, precisely so it can operate as a compliant US product, and USAT lives or dies by these very 2026 rules. What the 2026 deadline leaves untouched is the tradability of the existing USDT coin, not the firm behind it."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: three dates, three jobs",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Read against the statute, the GENIUS Act runs on three clocks, not one. We mapped each to the job it actually does."
+        },
+        {
+          "type": "chart",
+          "chartId": "three-dates"
+        },
+        {
+          "type": "p",
+          "text": "The July 18, 2026 deadline is a rulemaking deadline. It requires the agencies to finish writing the rules that permitted US issuers will live under. It is loud, it is near, and it does not reach a foreign coin already changing hands on secondary markets. (The rules themselves take effect a little later, by the earlier of January 18, 2027 or 120 days after they are finalized.)"
+        },
+        {
+          "type": "p",
+          "text": "The date that actually bars US platforms from offering a non-compliant foreign stablecoin is July 18, 2028, three years after enactment. As law firms including Gibson Dunn and Morgan Lewis read the text, until that date a US digital asset service provider may keep offering and selling stablecoins that were not issued by a permitted issuer. After it, the chokepoint closes: a US exchange or custodian may only offer stablecoins from a permitted issuer or from a foreign issuer that has cleared the law's gateway. That, not 2026, is USDT's real cliff."
+        },
+        {
+          "type": "chart",
+          "chartId": "two-clocks"
+        },
+        {
+          "type": "callout",
+          "label": "The point",
+          "text": "The 2026 deadline writes the rulebook. The 2028 deadline is when the door can actually shut on USDT. Everything that decides USDT's fate happens in the two-year gap between them, and that decision has no deadline of its own."
+        }
+      ]
+    },
+    {
+      "heading": "The escape hatch with no start button",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is a legitimate path for USDT to keep trading in America past 2028. Section 18 of the GENIUS Act lets the Treasury Secretary find that a foreign country regulates stablecoins to a standard 'comparable' to the US regime. If Treasury makes that reciprocity determination for the jurisdiction where USDT is issued, and the issuer also registers with the OCC and holds enough reserves in a US financial institution to meet American customers' demands, then the 2028 ban does not slam shut on that coin."
+        },
+        {
+          "type": "p",
+          "text": "Here is the catch, and it is the quiet center of this whole story. The statute gives Treasury 210 days, roughly seven months, to decide a reciprocity request. But that clock starts only when a complete request is actually filed. And the mechanism for filing one, the form, the criteria, the office that receives it, is itself a product of the rulemaking that is not yet final. In plain terms: the timer that could save USDT cannot start until Treasury finishes building the button that starts it. As of late June 2026, that button does not exist."
+        },
+        {
+          "type": "pullquote",
+          "text": "The timer that could save USDT cannot start until Treasury finishes building the button that starts it."
+        },
+        {
+          "type": "p",
+          "text": "So the single most consequential event for USDT's US future, a reciprocity ruling, has no date on any calendar. It floats in the gap between the loud 2026 deadline and the binding 2028 one, waiting on a process Treasury has not yet stood up. Counting down to July 2026 tells you nothing about when, or whether, that clock will start."
+        }
+      ]
+    },
+    {
+      "heading": "The same hand holds the accelerator",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Reciprocity is the brake that could keep USDT in the US market. The same Section 18 gives Treasury an accelerator pointed the other way. If a foreign stablecoin issuer ignores a lawful US order, Treasury can move to designate it non-compliant. The path is fast: after the issuer fails to comply within 30 days of being notified, Treasury publishes a determination in the Federal Register and posts a notice barring US platforms from facilitating secondary-market trading in that coin, with the prohibition taking effect 30 days later."
+        },
+        {
+          "type": "p",
+          "text": "Stack the two powers together and the asymmetry is striking. The route that could protect USDT depends on a filing process that does not yet exist and a 210-day review that has not begun. The route that could shut USDT out can run on a roughly 60-day fuse, entirely at Treasury's initiative, the moment an order is defied. Treasury holds both the brake and the accelerator, and only the accelerator has a working clock."
+        },
+        {
+          "type": "callout",
+          "label": "Why this matters",
+          "text": "USDT's US future is not really pinned to a date. It is pinned to a decision, made by one department, that can be slow-walked in the coin's favor or accelerated against it. The headline countdown to 2026 obscures who actually holds the timer."
+        }
+      ]
+    },
+    {
+      "heading": "The deadline that may bite first is commercial",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is one more clock, and it answers to no statute at all. A US exchange does not have to wait for 2028, or for Treasury, to stop offering USDT. It can simply decide that the regulatory risk is not worth it and pull the coin. Europe already ran this experiment."
+        },
+        {
+          "type": "chart",
+          "chartId": "mica-frontrun"
+        },
+        {
+          "type": "p",
+          "text": "Under the EU's crypto law, MiCA, exchanges had to drop stablecoins that did not meet the new standards. Kraken, a major US-based exchange, wound down USDT for customers in the European Economic Area in a phased process that ran from mid-February to March 31, 2025, roughly six weeks, steering balances toward the compliant USDC. No multi-year runway, no waiting for a regulator to act: a commercial decision, executed in about a month and a half."
+        },
+        {
+          "type": "p",
+          "text": "That is the precedent that should temper any sense of safety drawn from the 2028 date. The legal cliff is two years out, but a US platform watching the rules take shape could front-run it at any time, for its own risk-management reasons. The first real loss of US access for USDT holders may not come from a regulator at all. It may come from an exchange's compliance desk."
+        }
+      ]
+    },
+    {
+      "heading": "What to actually watch",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If you want to track USDT's US fate, July 18, 2026 is the wrong thing to watch. It is a real deadline doing real work, just not this work. Three signals matter more."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Whether Treasury's final rules actually stand up a reciprocity filing process, and when. Until that exists, the 210-day clock that could protect USDT cannot start.",
+            "Any Section 18 enforcement move against a foreign issuer, which can bar a coin from US platforms on roughly a 60-day timeline, far faster than the 2028 statutory cliff.",
+            "Decisions by individual US exchanges. As Kraken showed in Europe, a platform can drop USDT in about six weeks on its own initiative, well before any legal deadline forces the question."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The reckoning, if it comes, will not arrive on the date the headlines have circled. It will arrive whenever Treasury decides to start, or not start, a clock, or whenever the first big US exchange decides it would rather not wait to find out."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Started from the primary text: the GENIUS Act (S.1582) on congress.gov and the enrolled statute (Public Law 119-27), to confirm the enactment date and the one-year and three-year clocks.",
+    "Separated the statute's three operative dates, the 2026 rulemaking deadline, the undated Section 18 reciprocity and non-compliance powers, and the 2028 secondary-market ban, and cross-checked each against law-firm analyses (Gibson Dunn, Morgan Lewis, Cadwalader) that read the same provisions.",
+    "Verified the 210-day reciprocity review window and the roughly 60-day (30 + 30) non-compliance designation pathway against the Section 18 summaries in those alerts and the Treasury and OCC rulemaking documents.",
+    "Confirmed the rulemaking status, which agencies issued proposed rules and when comment periods closed, using the OCC bulletins, a Treasury press release, and the Chapman and Cutler GENIUS Act rulemaking tracker.",
+    "Pulled market figures (USDT about $186B, USDC about $74B, total stablecoin market about $321B) from DefiLlama and contemporaneous coverage of the June 26, 2026 USDT-versus-Ethereum flip, and computed the 'all others' figure as the residual.",
+    "Used contemporaneous reporting on Kraken's MiCA-driven USDT wind-down (Cryptobriefing, DL News) to establish how fast a platform can drop the coin commercially."
+  ],
+  "sources": [
+    {
+      "title": "Text, S.1582, 119th Congress (2025-2026): GENIUS Act",
+      "publisher": "Congress.gov",
+      "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582/text",
+      "kind": "primary"
+    },
+    {
+      "title": "Public Law 119-27 (GENIUS Act), July 18, 2025",
+      "publisher": "Congress.gov / GPO",
+      "url": "https://www.congress.gov/119/plaws/publ27/PLAW-119publ27.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Stablecoin Legislation: An Overview of S. 1582, GENIUS Act of 2025",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/IN12553",
+      "kind": "primary"
+    },
+    {
+      "title": "The GENIUS Act: A New Era of Stablecoin Regulation",
+      "publisher": "Gibson Dunn",
+      "url": "https://www.gibsondunn.com/the-genius-act-a-new-era-of-stablecoin-regulation/",
+      "kind": "secondary"
+    },
+    {
+      "title": "GENIUS Act Passes in US Congress: A Breakdown of the Landmark Stablecoin Law",
+      "publisher": "Morgan Lewis",
+      "url": "https://www.morganlewis.com/pubs/2025/07/genius-act-passes-in-us-congress-a-breakdown-of-the-landmark-stablecoin-law",
+      "kind": "secondary"
+    },
+    {
+      "title": "Operation and Structure of the GENIUS Act of 2025 on Payment Stablecoins",
+      "publisher": "Cadwalader",
+      "url": "https://www.cadwalader.com/resources/clients-friends-memos/operation-and-structure-of-the-genius-act-of-2025-on-payment-stablecoins",
+      "kind": "secondary"
+    },
+    {
+      "title": "How the GENIUS Act Regulates Foreign Issuers and How It Compares to Europe and the UK",
+      "publisher": "Yale Journal on Regulation",
+      "url": "https://www.yalejreg.com/nc/how-the-genius-act-regulates-foreign-issuersand-how-it-compares-to-europe-and-the-uk-by-benedikt-bartylla/",
+      "kind": "academic"
+    },
+    {
+      "title": "GENIUS Act Regulations: Notice of Proposed Rulemaking (Bulletin 2026-3)",
+      "publisher": "Office of the Comptroller of the Currency",
+      "url": "https://occ.treas.gov/news-issuances/bulletins/2026/bulletin-2026-3.html",
+      "kind": "primary"
+    },
+    {
+      "title": "GENIUS Act AML/CFT and Sanctions Compliance: Notice of Proposed Rulemaking (Bulletin 2026-28)",
+      "publisher": "Office of the Comptroller of the Currency",
+      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-28.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Treasury Seeks Public Comment on GENIUS Act NPRM Concerning State-Level Regulatory Regimes",
+      "publisher": "U.S. Department of the Treasury",
+      "url": "https://home.treasury.gov/news/press-releases/sb0428",
+      "kind": "primary"
+    },
+    {
+      "title": "GENIUS Act Rulemaking and Reporting Tracker",
+      "publisher": "Chapman and Cutler LLP",
+      "url": "https://www.chapman.com/publication-genius-act-rulemaking-tracker",
+      "kind": "secondary"
+    },
+    {
+      "title": "Tether surpasses Ethereum in market cap, reaching $186B",
+      "publisher": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/tether-surpasses-ethereum-market-cap/",
+      "kind": "secondary"
+    },
+    {
+      "title": "USDT Flips Ethereum After 7 Years as ETH Market Cap Slips",
+      "publisher": "The Crypto Times",
+      "url": "https://www.cryptotimes.io/2026/06/26/usdt-flips-ethereum-after-7-years-as-eth-market-cap-slips/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Tether, Anchorage Digital Launch US-Focused Stablecoin USAT",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-01-27/tether-anchorage-digital-launch-us-focused-stablecoin-usat",
+      "kind": "secondary"
+    },
+    {
+      "title": "Tether debuts federally regulated USAT stablecoin via Anchorage Digital",
+      "publisher": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/01/27/tether-debuts-federally-regulated-usat-stablecoin-via-anchorage-digital",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kraken to delist USDT and non-MiCA-compliant stablecoins in the EEA by March 31",
+      "publisher": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/kraken-delists-stablecoins-eea/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Kraken shelves Tether USDT, other stablecoins in Europe as MiCA rules take hold",
+      "publisher": "DL News",
+      "url": "https://www.dlnews.com/articles/markets/kraken-delists-tether-usdt-in-europe-as-mica-rules-take-hold/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Stablecoin Market Cap Chart, Supply & Peg Data",
+      "publisher": "DefiLlama",
+      "url": "https://defillama.com/stablecoins",
+      "kind": "data"
+    }
+  ],
+  "limitations": [
+    "The claim that Treasury has not yet built a working reciprocity-filing process is an inference from the state of the rulemaking (final rules were not due until July 18, 2026 and were not yet issued as of late June 2026), not from a Treasury statement that the process is missing.",
+    "Market-cap figures are point-in-time snapshots from a volatile market. USDT (~$186B), USDC (~$74B) and the total (~$321B) should be re-pulled at publication; the 'all others' bar (~$61B) is computed as a residual and shifts with the inputs.",
+    "Exact dates for the close of each agency's comment period vary by rule; we use the OCC's May 1, 2026 close and an early-June close for the last of the others. The single 'last' date should be pinned to a specific rule at publication.",
+    "The 2028 secondary-market reading and the contours of the Section 18 powers rest on the statutory text as interpreted by law firms; final agency rules could clarify or narrow how these provisions operate in practice.",
+    "Kraken's EEA wind-down ran in phases; 'roughly six weeks' describes the mid-February to March 31, 2025 window and rounds over the staged steps within it."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "news-analysis",
+  "secondarySections": [
+    "policy",
+    "regulation"
+  ],
+  "companies": [
+    "Tether",
+    "Kraken",
+    "Anchorage Digital"
+  ],
+  "people": [],
+  "regions": [
+    "United States",
+    "European Union"
+  ],
+  "industries": [
+    "Cryptocurrency",
+    "Digital Assets",
+    "Financial Services",
+    "Crypto Exchanges"
+  ],
+  "assetClasses": [
+    "Stablecoins",
+    "Cryptocurrency"
+  ],
+  "impactTags": [
+    "Regulatory Risk",
+    "Compliance",
+    "Market Access",
+    "Legal Deadline"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 74,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "The July 18, 2026 GENIUS Act deadline is a rulemaking deadline for permitted US stablecoin issuers, not the date USDT becomes illegal to trade on US platforms.",
+    "The binding cliff that bars US platforms from offering non-compliant foreign stablecoins is July 18, 2028, three years after enactment.",
+    "USDT's legal lifeline is a Treasury reciprocity ruling on a 210-day clock that cannot start until Treasury finalizes a filing process that does not yet exist.",
+    "Treasury holds both brake and accelerator: the protective path has no working timer, while a Section 18 enforcement move can bar a coin in roughly 60 days.",
+    "The first real loss of US access could be commercial, not legal, as Kraken showed by winding down USDT for EEA users in about six weeks under MiCA."
+  ],
+  "whyItMatters": "USDT is the roughly $186B settlement layer of the crypto economy, and US exchanges, custodians and traders need to know when it could be pulled from American platforms. The story reframes a widely watched July 2026 countdown as the wrong clock, redirecting attention to a 2028 statutory cliff and an undated Treasury decision that actually determine market access. For investors and compliance desks, the practical risk is that a single department or a single exchange could move on its own timeline, well before any circled deadline.",
+  "whatToWatch": [
+    "Whether and when Treasury's final rules stand up a working reciprocity filing process, since the 210-day protective clock cannot start without it.",
+    "Any Section 18 enforcement action against a foreign issuer, which can bar a coin from US platforms on roughly a 60-day timeline.",
+    "Decisions by individual US exchanges to front-run the 2028 cliff and delist USDT for risk-management reasons, as Kraken did in Europe.",
+    "Adoption and regulatory treatment of Tether's US-domestic coin USAT, which lives under the 2026 rules."
+  ],
+  "primarySection": "banking",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T04:52:14.290Z"
+}
