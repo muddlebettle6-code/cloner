@@ -1,0 +1,602 @@
+{
+  "published": false,
+  "slug": "the-on-ramp-the-rule-now-skips",
+  "headline": "The On-Ramp the Rule Now Skips: The FDIC Wants to Lift the $50 Billion Tripwire on the Stretch the 2023 Banks Climbed Through",
+  "deck": "On June 25, 2026 the FDIC proposed raising its resolution-planning floor from $50 billion back to $100 billion, dropping 16 mid-size banks from coverage. We traced the asset histories of the three banks that triggered the rule and found all three climbed through the now-exempted band on their way up, in about two to four years, on the same order as the three-year filing cycle. The catch the desk has to be honest about: the filing being dropped was so light it would mostly have handed regulators an earlier date stamp, not an early warning.",
+  "takeaways": [
+    "The FDIC board voted unanimously on June 25, 2026 to propose raising the threshold for failure-planning filings from $50 billion to $100 billion, cutting covered banks from 48 to 32 and ending the lighter Group B tier. It is a proposal in a 60-day comment window, not a final rule.",
+    "All three 2023 banks climbed through the now-exempted $50B-$100B band on the way up. It was a transit corridor, not a quiet waypoint: Signature crossed it in about two years, Silicon Valley Bank in about three, and First Republic sat inside it for four years or more.",
+    "Those transit times are on the same order as, or shorter than, the three-year filing cycle. A fast-scaling bank can enter the band, clear it, pass $100 billion and fail within roughly one filing period, so the dropped filing would at best have produced a single, often stale, snapshot.",
+    "The honest counter-case is strong: all three failed above $100 billion, where full resolution plans still apply; the dropped Group B filing was informational only, with no failure scenarios or wind-down strategy; and the Federal Reserve's own post-mortem blamed supervision and risk management, not a missing filing. The thing actually lost is an earlier, regularly scheduled data point, not an early-warning system.",
+    "The people exposed now are the uninsured depositors and the insurance fund standing behind the roughly 16 mid-size banks in or near the band, including Western Alliance, sitting a hair under $100 billion at the start of 2026."
+  ],
+  "glossary": [
+    {
+      "term": "FDIC",
+      "definition": "The Federal Deposit Insurance Corporation, the U.S. agency that insures bank deposits and steps in to seize and wind down failed banks."
+    },
+    {
+      "term": "Resolution plan",
+      "definition": "A pre-written playbook a large bank files describing how regulators could seize and dismantle it over a weekend without sparking a wider panic, in effect, the bank's own obituary written in advance. Also called a 'living will'."
+    },
+    {
+      "term": "Insured depository institution (IDI)",
+      "definition": "A bank whose deposits are insured by the FDIC; the thresholds in this rule are measured at the bank level, not the parent holding company."
+    },
+    {
+      "term": "Notice of proposed rulemaking (NPR)",
+      "definition": "A draft rule an agency publishes for public comment before it becomes final; it signals direction, not a done deal."
+    },
+    {
+      "term": "Comment window",
+      "definition": "The period, here 60 days after the rule is published in the Federal Register, during which the public, banks, and experts can formally argue for or against a proposed rule before the agency finalizes it."
+    },
+    {
+      "term": "Federal Register",
+      "definition": "The U.S. government's official daily journal where agencies publish proposed and final rules; publication there starts the public comment clock."
+    },
+    {
+      "term": "Group A / Group B",
+      "definition": "Under the 2024 rule, Group A banks ($100 billion or more in assets) filed full resolution plans, while Group B banks ($50 billion to just under $100 billion) filed only a lighter informational submission."
+    },
+    {
+      "term": "Informational filing",
+      "definition": "A stripped-down submission with the basic facts about a bank, no failure scenarios, no wind-down strategy, no valuations, meant to give the FDIC a head start, not a full plan."
+    },
+    {
+      "term": "Total assets",
+      "definition": "Everything a bank owns or is owed (loans, securities, cash); the standard yardstick for a bank's size and the trigger for these thresholds."
+    },
+    {
+      "term": "Deposit Insurance Fund (DIF)",
+      "definition": "The pot of money, built from premiums banks pay, that the FDIC uses to repay insured depositors when a bank fails."
+    },
+    {
+      "term": "Reserve ratio",
+      "definition": "The size of the Deposit Insurance Fund measured against the insured deposits it has to protect; a higher ratio means a better-cushioned fund."
+    },
+    {
+      "term": "Statutory minimum",
+      "definition": "A floor set by law, here, the DIF must reach a reserve ratio of 1.35%, which the FDIC is required to rebuild toward after big losses."
+    },
+    {
+      "term": "Restoration Plan",
+      "definition": "The recovery program the FDIC must run when the fund falls below its required level, charging banks extra premiums until the ratio climbs back."
+    },
+    {
+      "term": "Deposit insurance assessment",
+      "definition": "The premium each bank pays the FDIC for deposit insurance; cutting assessments lowers the industry's annual bill."
+    },
+    {
+      "term": "Basis point",
+      "definition": "One hundredth of a percentage point (0.01%); regulators quote small rate changes this way."
+    },
+    {
+      "term": "Uninsured deposits",
+      "definition": "Money in accounts above the $250,000 FDIC insurance cap; these depositors have the most reason to flee at the first sign of trouble, which makes a bank prone to fast runs."
+    },
+    {
+      "term": "Interest-rate (duration) mismatch",
+      "definition": "Holding long-term, fixed-rate assets funded by deposits that can leave at any moment; when rates rise, the assets lose value just as depositors get nervous, a core flaw at Silicon Valley Bank."
+    },
+    {
+      "term": "Bridge bank",
+      "definition": "A temporary institution the FDIC can set up to take over a failed bank's operations and keep them running while it arranges a sale or wind-down."
+    },
+    {
+      "term": "Federal Home Loan Bank (FHLB) borrowing",
+      "definition": "Loans a bank can take from the government-sponsored Federal Home Loan Bank system, often used as emergency funding when deposits are leaving."
+    },
+    {
+      "term": "Material Loss Review (MLR)",
+      "definition": "A mandatory after-the-fact investigation by a regulator's inspector general into why a failure cost the insurance fund a large sum; a reliable public source for a failed bank's year-by-year numbers."
+    },
+    {
+      "term": "Call Report",
+      "definition": "The quarterly financial statement every U.S. bank files with regulators; the standard primary source for a bank's reported total assets."
+    },
+    {
+      "term": "EGRRCPA (S.2155)",
+      "definition": "The 2018 Economic Growth, Regulatory Relief, and Consumer Protection Act, which lifted the asset threshold for the Federal Reserve's toughest oversight from $50 billion toward $250 billion (phased in after 2018)."
+    },
+    {
+      "term": "Enhanced prudential standards",
+      "definition": "Tougher capital, liquidity, and stress-testing rules the Federal Reserve applies to bigger banks, generally kicking in at $100 billion in assets."
+    }
+  ],
+  "event": "On June 25, 2026, the FDIC Board unanimously approved two notices of proposed rulemaking: one raising the resolution-planning threshold from $50 billion to $100 billion (cutting covered banks from 48 to 32 and ending the Group B informational-filing tier), the other cutting deposit-insurance assessments by about $4 billion a year. Both opened 60-day comment windows.",
+  "question": "The FDIC is exempting the $50 billion to $100 billion asset band from resolution-planning filings. Is that the same stretch the 2023 failed banks passed through on their way up, and were the dropped filings, and the cadence at which they were due, the kind of thing that could plausibly have caught the trouble?",
+  "readingMinutes": 8,
+  "tags": [
+    "banking",
+    "regulation",
+    "FDIC",
+    "financial-stability",
+    "deregulation",
+    "SVB",
+    "resolution-planning",
+    "deposit-insurance"
+  ],
+  "leadChartId": "chart-assets-line",
+  "charts": [
+    {
+      "id": "chart-assets-line",
+      "kind": "line",
+      "title": "The on-ramp the rule now skips",
+      "subtitle": "Year-end total assets of the three banks that triggered the 2024 rule. The $50B-$100B band is the tier the June 25, 2026 proposal would exempt.",
+      "source": "Federal Reserve, Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April 2023); FDIC Chief Risk Officer report on Signature Bank (April 2023) and FDIC Office of Inspector General Material Loss Reviews of Signature Bank and First Republic Bank",
+      "units": "$ billions, total assets",
+      "period": "2016-2022 (SVB series begins 2017)",
+      "note": "The $50B-$100B band is the exempted Group B tier. Signature crosses it in about two years and SVB in about three; First Republic enters the chart already inside it and climbs out only in 2019. Year-end snapshots, so crossing years are approximate to within a year. SVB is shown on the basis used in the Fed review; its 2022 point reflects the bank entity, about $209B (the parent holding company was about $212B).",
+      "alt": "Three rising lines of total assets, 2016 to 2022. Silicon Valley Bank goes from 51 in 2017 to 116 in 2020 to 211 in 2021. Signature goes from 39 in 2016 to 51 in 2019 to 118 in 2021. First Republic goes from 73 in 2016 to 116 in 2019 to 213 in 2022. All three pass through the 50 to 100 billion dollar band on the way up.",
+      "data": {
+        "series": [
+          {
+            "name": "Silicon Valley Bank",
+            "points": [
+              {
+                "x": "2017",
+                "y": 51
+              },
+              {
+                "x": "2018",
+                "y": 57
+              },
+              {
+                "x": "2019",
+                "y": 71
+              },
+              {
+                "x": "2020",
+                "y": 116
+              },
+              {
+                "x": "2021",
+                "y": 211
+              },
+              {
+                "x": "2022",
+                "y": 209
+              }
+            ]
+          },
+          {
+            "name": "Signature Bank",
+            "points": [
+              {
+                "x": "2016",
+                "y": 39
+              },
+              {
+                "x": "2017",
+                "y": 43
+              },
+              {
+                "x": "2018",
+                "y": 47
+              },
+              {
+                "x": "2019",
+                "y": 51
+              },
+              {
+                "x": "2020",
+                "y": 74
+              },
+              {
+                "x": "2021",
+                "y": 118
+              },
+              {
+                "x": "2022",
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "First Republic",
+            "points": [
+              {
+                "x": "2016",
+                "y": 73
+              },
+              {
+                "x": "2017",
+                "y": 88
+              },
+              {
+                "x": "2018",
+                "y": 99
+              },
+              {
+                "x": "2019",
+                "y": 116
+              },
+              {
+                "x": "2020",
+                "y": 143
+              },
+              {
+                "x": "2021",
+                "y": 181
+              },
+              {
+                "x": "2022",
+                "y": 213
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "chart-transit-vs-cycle",
+      "kind": "comparison",
+      "title": "How long each bank spent in the band, against the filing cycle",
+      "subtitle": "Years between crossing roughly $50B and roughly $100B, next to the three-year resolution-filing cycle",
+      "source": "Asset crossings derived from year-end totals in the Federal Reserve SVB review (2023) and FDIC OIG Material Loss Reviews; filing cadence from the 2024 final resolution-planning rule (Federal Register, 12 CFR Part 360)",
+      "units": "years",
+      "period": "2014-2021",
+      "note": "Transit times are on the same order as the three-year cycle. Signature cleared the band inside one cycle; SVB took about one full cycle; First Republic stayed inside it for more than one. First Republic crossed $50B in 2015, so its four years is a floor, not a precise count. Crossings are dated from year-end snapshots and are approximate to within a year.",
+      "alt": "Comparison bars in years: Signature about 2, Silicon Valley Bank about 3, First Republic about 4 or more, and the resolution-plan filing cycle 3.",
+      "data": {
+        "max": 5,
+        "bars": [
+          {
+            "label": "Signature: time to cross the band",
+            "value": 2,
+            "highlight": true
+          },
+          {
+            "label": "SVB: time to cross the band",
+            "value": 3,
+            "highlight": true
+          },
+          {
+            "label": "First Republic: years inside the band",
+            "value": 4
+          },
+          {
+            "label": "Resolution-plan filing cycle",
+            "value": 3,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chart-failure-size",
+      "kind": "bar",
+      "title": "Every 2023 failure happened above $100 billion",
+      "subtitle": "Total assets at the moment of failure, all three would still file full plans under the new proposal",
+      "source": "Federal Reserve SVB review (2023); FDIC OIG Material Loss Reviews of Signature and First Republic; FDIC failure announcements (pr23034 and others, March-May 2023)",
+      "units": "$ billions at failure",
+      "period": "2023",
+      "note": "This is the core counter-case: the exempted tier only ever applied to these banks earlier, when they were smaller. At failing size, full resolution plans still apply. SVB shown at about $209B (the bank entity; the parent was about $212B). First Republic's assets rose above its end-2022 level as deposits fled, because it replaced lost deposits with Federal Home Loan Bank and Federal Reserve borrowing; the FDIC put its assets at about $229.1B as of April 13, 2023.",
+      "alt": "Bar chart of assets at failure in 2023: Silicon Valley Bank about 209 billion, Signature about 110 billion, First Republic about 229 billion. All three exceed the 100 billion dollar line.",
+      "data": {
+        "max": 250,
+        "bars": [
+          {
+            "label": "Silicon Valley Bank",
+            "value": 209
+          },
+          {
+            "label": "Signature Bank",
+            "value": 110
+          },
+          {
+            "label": "First Republic",
+            "value": 229
+          }
+        ]
+      }
+    },
+    {
+      "id": "chart-dif-keynumber",
+      "kind": "keynumber",
+      "title": "The fund behind the companion fee cut has recovered past its floor",
+      "subtitle": "DIF reserve ratio at end-2025, against the 1.35% statutory minimum",
+      "source": "FDIC Quarterly Banking Profile, Fourth Quarter 2025; FDIC Quarterly Banking Profile, Second Quarter 2025",
+      "units": "% reserve ratio",
+      "period": "end-2025",
+      "note": "Shown as a single figure rather than a two-point line: the decision-relevant comparison is the level against the 1.35% floor, not a trend. The reserve ratio crossed back above the minimum in mid-2025, and the FDIC stopped operating under its Restoration Plan beginning the third quarter of 2025.",
+      "alt": "A large figure of 1.42 percent, the DIF reserve ratio at end-2025, above the 1.35 percent statutory minimum.",
+      "data": {
+        "value": "1.42%",
+        "label": "DIF reserve ratio at end-2025, above the 1.35% statutory floor",
+        "sub": "DIF balance about $153.9B; the FDIC's Restoration Plan ended in mid-2025"
+      }
+    },
+    {
+      "id": "chart-current-band",
+      "kind": "bar",
+      "title": "Two of the banks sitting in the exempted band right now",
+      "subtitle": "Large regional banks currently inside the $50B-$100B tier the proposal would drop",
+      "source": "Company earnings reports: Western Alliance Bancorporation (first quarter 2026, SEC filing); Zions Bancorporation (fourth quarter 2025)",
+      "units": "$ billions, total assets",
+      "period": "year-end 2025 to first quarter 2026",
+      "note": "Western Alliance ($98.9B, Q1 2026) sits just below the $100B line; Zions (about $89B, year-end 2025) is the next clear case. These are the two largest names in the band with figures pinned to a specific reporting date; the proposal drops 16 banks in total from coverage, and analysts expect several to keep growing toward $100B through 2026. Each bar is labeled with its own as-of date because the two figures are one quarter apart.",
+      "alt": "Bar chart of two banks currently in the band: Western Alliance about 99 billion as of first quarter 2026, Zions about 89 billion as of year-end 2025. Both sit below the 100 billion dollar line.",
+      "data": {
+        "max": 100,
+        "bars": [
+          {
+            "label": "Western Alliance (Q1 2026)",
+            "value": 98.9,
+            "highlight": true
+          },
+          {
+            "label": "Zions (year-end 2025)",
+            "value": 89
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The tripwire the agency just proposed to move",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On June 25, 2026, the board of the Federal Deposit Insurance Corporation voted unanimously to start undoing a rule the agency itself wrote in response to the worst stretch of bank failures since 2008."
+        },
+        {
+          "type": "p",
+          "text": "The change sounds technical, and that is part of why it is worth slowing down for. The FDIC requires large banks to file what amounts to a pre-written obituary: a resolution plan, sometimes called a living will, which is a step-by-step account of how regulators could seize and dismantle the bank over a weekend without lighting a fire under the rest of the system. In 2024, after Silicon Valley Bank, Signature Bank, and First Republic collapsed in the space of a few weeks, the FDIC lowered the size at which a bank had to start engaging with this process to $50 billion in total assets. Banks at or above $100 billion (Group A) filed full plans; banks in the $50 billion to just-under-$100 billion band (Group B) filed only a lighter informational submission, the basic facts, no failure scenarios, no wind-down strategy."
+        },
+        {
+          "type": "p",
+          "text": "The June 25 proposal raises that floor back to $100 billion. It eliminates the Group B tier entirely and, by the FDIC staff's own estimate, cuts the number of banks doing any resolution-planning work from 48 to 32, sixteen mid-size banks dropped from coverage. A companion proposal, voted the same day, would trim deposit-insurance assessments, the premiums banks pay into the insurance fund, by roughly $4 billion a year, about a third of the industry's annual bill. Both are notices of proposed rulemaking with 60-day comment windows: a stated direction, not a finished rule."
+        },
+        {
+          "type": "callout",
+          "label": "What this piece is not",
+          "text": "This is not a verdict on whether the rule is good or bad. It is one narrow factual test of the proposal's central geography: the FDIC is removing oversight from a specific size band, so we asked whether that band is the same stretch the 2023 banks passed through on their way up, and whether the dropped paperwork, and the pace at which it came due, was ever the kind of thing that could have caught the trouble."
+        }
+      ]
+    },
+    {
+      "heading": "How we tested it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The question has a clean factual core, so we treated it like a measurement rather than an argument. A size threshold is just a line on a chart of total assets. If you plot each failed bank's assets year by year, you can see exactly when it crossed $50 billion, when it crossed $100 billion, and how long it spent in between, the stretch the new proposal would now wave through."
+        },
+        {
+          "type": "p",
+          "text": "We pulled the year-by-year totals from the most authoritative public sources on each failure: the Federal Reserve's April 2023 review of its supervision of Silicon Valley Bank, and the FDIC inspector general's Material Loss Reviews of Signature and First Republic. A Material Loss Review is the mandatory autopsy a regulator's internal watchdog writes when a failure costs the insurance fund a lot of money, and it reproduces the bank's own quarterly Call Report figures, the standard, audited measure of size. Then we set those crossing times against one number from the rulebook: how often a covered bank actually has to file. That cadence is roughly three years."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-assets-line"
+        },
+        {
+          "type": "p",
+          "text": "The picture is unambiguous. All three banks rose straight through the $50 billion-to-$100 billion band. None of them parked there; the band was a corridor they drove through, not a rest stop. Signature went from about $51 billion at the end of 2019 to past $100 billion by the third quarter of 2021. Silicon Valley Bank was already at $51 billion at the end of 2017 and blew past $100 billion in 2020, on its way to roughly $209 billion. First Republic is the slow one, and even it only looks slow: it crossed $50 billion back in 2015 and did not clear $100 billion until 2019."
+        }
+      ]
+    },
+    {
+      "heading": "Fast enough to outrun the filing clock",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is why the speed matters. The whole point of a resolution filing is to give regulators a current map of a bank before it gets into trouble. But the band the FDIC is exempting is exactly the stretch these banks crossed in about the time it takes one filing to come due."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-transit-vs-cycle"
+        },
+        {
+          "type": "p",
+          "text": "Line up the transit times against the three-year filing cycle and they are the same order of magnitude. Signature cleared the entire band in about two years, less than one filing cycle. Silicon Valley Bank took about three, roughly one cycle. Only First Republic, in the band for four years or more, would reliably have produced more than a single Group B filing while it was there."
+        },
+        {
+          "type": "pullquote",
+          "text": "A bank can enter the band, clear it, pass $100 billion, and fail inside roughly one filing period. The dropped filing would, at best, have left a single snapshot, and a stale one."
+        },
+        {
+          "type": "p",
+          "text": "So even before we ask whether the filing was any good, the timing alone caps what it could deliver for the fastest movers. For a Signature or an SVB, the exempted band is a place they barely touched on the books. The filing it would have triggered would have been a lone photograph of a bank that had already changed shape by the time anyone read it."
+        }
+      ]
+    },
+    {
+      "heading": "The counter-case the desk has to make against itself",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "And now the honest part, because the geography cuts both ways. The fact that all three banks passed through the band makes a tidy headline. It does not, on its own, mean the dropped filing would have helped. Three things weigh hard against that reading."
+        },
+        {
+          "type": "p",
+          "text": "First, look at where each bank actually died."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-failure-size"
+        },
+        {
+          "type": "p",
+          "text": "Every one of them failed well above $100 billion, SVB around $209 billion, Signature around $110 billion, First Republic around $229 billion after emergency borrowing swelled its balance sheet. At those sizes they sat squarely in Group A, where full resolution plans still apply under the new proposal. The exempted band only ever described these banks years earlier, when they were smaller and not yet in obvious danger. Nothing about raising the floor to $100 billion would have changed what was required of them at the moment they collapsed."
+        },
+        {
+          "type": "p",
+          "text": "Second, the Group B filing being dropped was thin by design. It was informational only: basic facts about the bank's structure and finances, with no failure scenarios, no valuations, and no wind-down strategy. It was meant to give the FDIC a head start, not to flag a bank heading for the rocks. Calling it an early-warning system overstates what it ever was."
+        },
+        {
+          "type": "p",
+          "text": "Third, and most damning for the dramatic version of this story, the official post-mortems did not blame a missing filing. The Federal Reserve's own review of Silicon Valley Bank pinned the failure on weak supervision and the bank's own risk management, in plain terms, supervisors who saw problems and moved too slowly, and a bank running a classic interest-rate mismatch (long-term bonds funded by deposits that could vanish overnight). The warning signs were visible in data regulators already had. The gap was acting on them, not collecting one more form."
+        },
+        {
+          "type": "p",
+          "text": "Put those together and the thing genuinely being lost comes into focus. It is not a tripwire. It is a regularly scheduled, early, and fairly basic data point on a set of fast-growing banks, useful, cheap, but a long way from an alarm. That is a real cost, and a modest one. The desk's job here is to keep it that size and not inflate it."
+        }
+      ]
+    },
+    {
+      "heading": "Who is standing in the band now",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The argument stops being historical the moment you ask who occupies the exempted band today. The proposal does not just rewrite the past; it removes a layer of process from sixteen banks that exist right now."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-current-band"
+        },
+        {
+          "type": "p",
+          "text": "The clearest case is Western Alliance, a Phoenix-based commercial lender that reported $98.9 billion in total assets in the first quarter of 2026, a hair under the new $100 billion line. Zions, at about $89 billion at the end of 2025, is the next name down. Both sit inside the band the FDIC would stop covering, and analysts expect several banks in the group to keep growing toward $100 billion through 2026. The exposure, if one of them stumbles, falls where it always does: on the uninsured depositors who run first, and on the insurance fund that backs everyone else."
+        },
+        {
+          "type": "p",
+          "text": "That fund is the quiet link to the companion proposal voted the same day. Cutting assessments by $4 billion a year is only comfortable if the Deposit Insurance Fund has healed from the 2023 losses, and it has."
+        },
+        {
+          "type": "chart",
+          "chartId": "chart-dif-keynumber"
+        },
+        {
+          "type": "p",
+          "text": "At the end of 2025 the fund's reserve ratio, its balance measured against the insured deposits it protects, stood at 1.42%, back above the 1.35% minimum that law requires. The fund held about $153.9 billion, and the FDIC had already stopped operating under the Restoration Plan it was forced into after 2023, the program that charges banks extra until the ratio recovers. In other words, the regulator is easing off the brakes, lighter filings, lower fees, precisely because the post-2023 emergency, by its own scorecard, is over."
+        },
+        {
+          "type": "p",
+          "text": "Whether that is prudence or short memory is the argument the 60-day comment window now exists to have. The history is settled: the three banks that prompted the rule all climbed through the stretch the rule would now skip, and they did it fast. What that history proves is narrower than the headline wants it to be. The filing the FDIC is dropping would have caught the date, not the disease."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Defined the question as a measurement: a size threshold is a horizontal line on a chart of total assets, so 'did the failed banks pass through the exempted band' becomes 'when did each cross $50B and $100B, and how long did that take.'",
+    "Took year-end total assets for each failed bank from primary autopsies: the Federal Reserve's April 2023 SVB review (Figure 3, drawn from regulatory filings) and the FDIC Office of Inspector General Material Loss Reviews of Signature and First Republic, which reproduce the banks' Call Report figures.",
+    "Cross-checked Signature's totals against the FDIC Chief Risk Officer's April 2023 report (Table 1) and First Republic's against its MLR growth table and company filings; rounded to whole billions for the charts.",
+    "Dated the $50B and $100B crossings from those year-end snapshots, which fixes each crossing to within about a year, and computed time-in-band as the gap between the two crossings.",
+    "Took assets at failure from FDIC failure announcements and the Fed review (SVB about $209B at the bank, Signature about $110B, First Republic about $229.1B as of April 13, 2023).",
+    "Confirmed the rule mechanics, 2024 thresholds, Group A full plans vs Group B informational filings, and the June 25, 2026 proposal's move to a $100B floor, 48-to-32 bank count, three-year cycle, and $4B assessment cut, against FDIC press releases, the 2024 final-rule fact sheet and Federal Register text, and contemporaneous trade-press reporting.",
+    "Verified the present-day band occupants and the fund's health from company earnings reports (Western Alliance Q1 2026, Zions Q4 2025) and the FDIC Quarterly Banking Profile for Q4 2025 and Q2 2025."
+  ],
+  "sources": [
+    {
+      "title": "FDIC Board Approves Proposal to Amend Resolution Submissions by Covered Insured Depository Institutions",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/press-releases/2026/fdic-board-approves-proposal-amend-resolution-submissions-covered-insured",
+      "kind": "primary"
+    },
+    {
+      "title": "FDIC Board Approves Proposal to Revise Deposit Insurance Assessment Thresholds, Rate Schedules, and Adjustments",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/press-releases/2026/fdic-board-approves-proposal-revise-deposit-insurance-assessment",
+      "kind": "primary"
+    },
+    {
+      "title": "FDIC proposes slim resolution plans, lower insurance fees",
+      "publisher": "American Banker",
+      "url": "https://www.americanbanker.com/news/fdic-proposes-slim-resolution-plans-lower-insurance-fees",
+      "kind": "secondary"
+    },
+    {
+      "title": "Fact Sheet: Final Amended Rule on Resolution Planning for IDIs with $100 Billion or More; Informational Filings for IDIs with $50 Billion to under $100 Billion",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/fact-sheets/2024/fact-sheet-final-amended-rule-resolution-planning-insured-depository",
+      "kind": "primary"
+    },
+    {
+      "title": "Resolution Plans Required for IDIs With $100 Billion or More in Total Assets; Informational Filings for IDIs With at Least $50 Billion but Less Than $100 Billion (Final Rule)",
+      "publisher": "Federal Register / FDIC",
+      "url": "https://www.federalregister.gov/documents/2024/07/09/2024-13982/resolution-plans-required-for-insured-depository-institutions-with-100-billion-or-more-in-total",
+      "kind": "primary"
+    },
+    {
+      "title": "Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April 2023)",
+      "publisher": "Board of Governors of the Federal Reserve System",
+      "url": "https://www.federalreserve.gov/publications/files/svb-review-20230428.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "FDIC's Supervision of Signature Bank (Chief Risk Officer report, April 28, 2023)",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/press-releases/2023/pr23033a.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Material Loss Review of Signature Bank of New York (EVAL-24-02)",
+      "publisher": "FDIC Office of Inspector General",
+      "url": "https://www.fdicoig.gov/sites/default/files/reports/2023-10/EVAL-24-02.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Material Loss Review of First Republic Bank (EVAL-24-03)",
+      "publisher": "FDIC Office of Inspector General",
+      "url": "https://www.fdicoig.gov/sites/default/files/reports/2023-12/EVAL-24-03.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "JPMorgan Chase Acquires Substantial Majority of Assets of First Republic Bank (FDIC failure announcement, $229.1B as of April 13, 2023)",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/press-releases/2023/pr23034.html",
+      "kind": "primary"
+    },
+    {
+      "title": "FDIC-Insured Institutions Reported Net Income... (Quarterly Banking Profile, Fourth Quarter 2025; DIF reserve ratio 1.42%, balance $153.9B)",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-124-percent-and-net",
+      "kind": "data"
+    },
+    {
+      "title": "FDIC Quarterly Banking Profile, Second Quarter 2025 (reserve ratio crosses 1.35%; Restoration Plan ends beginning Q3 2025)",
+      "publisher": "FDIC",
+      "url": "https://www.fdic.gov/news/speeches/2025/fdic-quarterly-banking-profile-second-quarter-2025",
+      "kind": "primary"
+    },
+    {
+      "title": "Western Alliance Bancorporation Q1 2026 Earnings Presentation (total assets $98.9B)",
+      "publisher": "Western Alliance Bancorporation / SEC EDGAR",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001212545/000162828026026302/walq12026earningspresent.htm",
+      "kind": "data"
+    },
+    {
+      "title": "Zions Bancorporation Reports Fourth Quarter 2025 Financial Results (total assets about $89B)",
+      "publisher": "Zions Bancorporation",
+      "url": "https://www.prnewswire.com/news-releases/zions-bancorporation-national-association-reports-fourth-quarter-financial-results-302665710.html",
+      "kind": "data"
+    },
+    {
+      "title": "S.2155, Economic Growth, Regulatory Relief, and Consumer Protection Act (2018)",
+      "publisher": "U.S. Congress",
+      "url": "https://www.congress.gov/bill/115th-congress/senate-bill/2155",
+      "kind": "primary"
+    },
+    {
+      "title": "First Republic Bank total assets by year (corroborating 2015-2017 series and $50B crossing)",
+      "publisher": "companiesmarketcap",
+      "url": "https://companiesmarketcap.com/first-republic-bank/total-assets/",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "Asset figures are year-end snapshots, so each $50B and $100B crossing is fixed only to within about a year; the 'transit time' bars are deliberately rounded and labeled as approximate.",
+    "Signature's 2016 figure (about $39B) could not be confirmed in the federal primary sources, whose tables begin in 2017; it is drawn from secondary data and is consistent with the regulators' note that Signature grew from $12B (2010) to $43B (2017), but it is the one chart number not pinned to a primary filing.",
+    "SVB can be measured at the bank or the parent holding company; the two differ by only a few billion. We show the Fed review's series and use about $209B (the bank) at end-2022 and failure, noting the parent was about $212B.",
+    "First Republic's roughly $229B at failure is inflated by emergency Federal Home Loan Bank and Federal Reserve borrowing that replaced fleeing deposits; it is not organic growth, and we say so on the chart.",
+    "The 'three-year filing cycle' is the cadence at which covered banks file; in practice timing, interim supplements, and first-filing dates vary, so it is a benchmark for order-of-magnitude comparison, not an exact schedule.",
+    "Group B's first informational filings were only beginning to come due in 2025-2026, and the same June 25 proposal would also waive upcoming filings, so in practice the exempted band may have produced little or no paperwork yet, which strengthens, rather than weakens, the 'single, often stale snapshot' point.",
+    "The proposal is a notice of proposed rulemaking in a 60-day comment window; the thresholds, bank counts, and assessment math could change before any final rule."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/the-on-ramp-the-rule-now-skips.jpg",
+    "credit": "Photo: Minh Nguyen, CC BY-SA 4.0, via Wikimedia Commons",
+    "caption": "The Silicon Valley Bank monument sign outside its Santa Clara headquarters, photographed on March 13, 2023, as the bank failed; SVB is exactly the kind of fast-growing lender the FDIC's $50 billion resolution tripwire was meant to catch.",
+    "alt": "A low stone monument sign reading Silicon Valley Bank at the edge of a parking lot in front of a corporate office building under a clear sky."
+  },
+  "primarySection": "banking",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research"
+}

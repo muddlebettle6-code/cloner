@@ -1,0 +1,497 @@
+{
+  "published": true,
+  "slug": "may-pce-4-1-percent-oil-roundtrip-fed-hawkish",
+  "headline": "The Oil Spike Behind May's 4.1% Inflation Has Already Round-Tripped. The Fed Turned Hawkish Anyway.",
+  "deck": "May PCE inflation printed 4.1%, the hottest in three years, and eight days earlier the Fed had erased 2026 rate cuts and penciled in hikes. The single force that pushed the headline above core was energy, and the oil that drove it has already fallen from a spring peak above $120 to roughly $72. But strip out food and energy and inflation is still 3.4%, the trimmed mean's most recent month is firming rather than cooling, and falling pump prices tend to lag falling crude, so the case that the Fed over-reacted is real but far from settled.",
+  "takeaways": [
+    "May headline PCE hit 4.1%, the fastest since April 2023, but core PCE (which excludes food and energy) was 3.4%, so energy and food together explain only the 0.7 point gap between the two. The reversing oil price can pull the headline back toward core; it cannot make the 3.4% disappear.",
+    "Brent crude, the global oil benchmark, climbed above $120 a barrel during the Strait of Hormuz crisis that began in late February, then fell to about $72 by late June as shipping resumed. The May inflation data was collected before that drop fed through to gasoline, so the headline still carries a premium the market has already taken back.",
+    "The honest complication: the Dallas Fed trimmed mean (which discards the most extreme price movers) sits at a calm 2.4% over 12 months, but its most recent single month annualizes to roughly 2.8%, above the longer trend. By that read the calm middle is firming, not easing, which supports the Fed rather than the round-trip story.",
+    "Demand looks resilient too: households kept spending in line with income and the saving rate sat at a low 3.0%, meaning people paid the higher prices instead of pulling back. And retail gasoline historically falls more slowly than crude, so the pass-through down to the pump may be partial and late.",
+    "If the round-trip read is right, the Fed is tightening into a disinflation it cannot yet see; if the firming-core read is right, its hawkish turn is justified. The summer prints decide it, and the cost of guessing wrong falls on rate-sensitive borrowers and, if tightening overshoots, on workers."
+  ],
+  "glossary": [
+    {
+      "term": "PCE inflation",
+      "definition": "The Personal Consumption Expenditures price index, the Federal Reserve's preferred inflation gauge; it tracks how fast the prices households actually pay are rising, so 4.1% means the typical basket cost 4.1% more than a year earlier."
+    },
+    {
+      "term": "Headline vs core",
+      "definition": "Headline inflation includes everything; core inflation strips out food and energy because those two jump around so much they can hide the underlying trend."
+    },
+    {
+      "term": "Trimmed mean PCE",
+      "definition": "A version of the inflation gauge that throws away the items with the most extreme price moves each month, both the biggest jumps and the biggest drops, to reveal the calm middle of the price distribution."
+    },
+    {
+      "term": "Level vs momentum",
+      "definition": "Level is how high a measure sits over the past year; momentum is whether the most recent months are running hotter or cooler than that yearly average. A low level with rising momentum means the recent trend is firming even though the annual figure still looks tame."
+    },
+    {
+      "term": "Pass-through",
+      "definition": "The way a change in one upstream price, like crude oil, flows downstream into the prices consumers see, such as gasoline, usually with a lag."
+    },
+    {
+      "term": "Rockets and feathers",
+      "definition": "The well-documented pattern where retail gasoline prices shoot up fast like a rocket when crude rises but drift down slowly like a feather when crude falls, so a crude round-trip does not fully reach the pump right away."
+    },
+    {
+      "term": "Round-trip",
+      "definition": "When a price spikes and then falls back to roughly where it started, so the move reverses itself rather than sticking."
+    },
+    {
+      "term": "Dot plot / Summary of Economic Projections",
+      "definition": "A chart the Fed publishes quarterly showing where each official thinks interest rates should be in the future; each official is one dot."
+    },
+    {
+      "term": "FOMC (Federal Open Market Committee)",
+      "definition": "The Federal Reserve committee that sets US interest rates; it meets roughly every six weeks and publishes a policy statement and, four times a year, economic projections."
+    },
+    {
+      "term": "Fed funds rate",
+      "definition": "The short-term interest rate the Federal Reserve sets, which ripples out to the cost of mortgages, car loans, and business borrowing across the economy."
+    },
+    {
+      "term": "Brent / WTI",
+      "definition": "The two main benchmark prices for crude oil; Brent is the global reference and WTI is the US reference, both quoted in dollars per barrel."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "definition": "A narrow shipping channel between Iran and Oman through which roughly a fifth of the world's seaborne oil passes; closing or reopening it swings the global oil price."
+    },
+    {
+      "term": "Saving rate",
+      "definition": "The share of after-tax income that households do not spend; a saving rate of 3% is low by recent standards and means people are spending most of what they earn."
+    },
+    {
+      "term": "Disposable personal income",
+      "definition": "Income left after taxes, the denominator used to calculate the saving rate; whether the saving rate moves depends on how spending grows relative to this figure, not to pre-tax income."
+    },
+    {
+      "term": "Demand-pull vs cost-push",
+      "definition": "Demand-pull inflation is prices rising because buyers want more than the economy can supply; cost-push is prices rising because an input like oil got more expensive. The first tends to be sticky, the second tends to reverse when the input does."
+    },
+    {
+      "term": "Look-through",
+      "definition": "A central bank's choice to ignore a temporary price spike it expects to reverse, rather than raise rates to fight something that will fade on its own."
+    },
+    {
+      "term": "Basis point",
+      "definition": "One hundredth of a percentage point; a move from 3.4% to 3.8% is 40 basis points."
+    },
+    {
+      "term": "Annualized",
+      "definition": "A single month's price change scaled up to show what inflation would be if that one month's pace continued for a full year; it makes a recent month comparable to an annual rate but is noisier."
+    },
+    {
+      "term": "Year-over-year",
+      "definition": "Comparing a figure to the same month a year earlier, which smooths out seasonal ups and downs."
+    }
+  ],
+  "event": "On 25 June 2026 the Bureau of Economic Analysis reported May headline PCE inflation at 4.1% (core 3.4%), the hottest headline since April 2023. Eight days earlier, on 17 June, the FOMC's Summary of Economic Projections had flipped hawkish, raising the median 2026 fed funds dot to 3.8% from the 3.4% projected in March and showing a bloc of nine officials penciling in at least one hike.",
+  "question": "Of May's 4.1% headline PCE, how much is a mechanical energy effect that is already reversing as Brent's spring-to-June collapse feeds through, versus genuine, sticky strength in core services and firming underlying momentum that will persist, and did the Fed therefore turn hawkish off a number whose main accelerant has already unwound?",
+  "readingMinutes": 11,
+  "tags": [
+    "inflation",
+    "Federal Reserve",
+    "PCE",
+    "monetary policy",
+    "oil",
+    "macro",
+    "round-trip series"
+  ],
+  "leadChartId": "three-measures",
+  "charts": [
+    {
+      "id": "three-measures",
+      "kind": "bar",
+      "title": "One month, three different inflation readings",
+      "subtitle": "May 2026, year-over-year. Energy and food explain only the 0.7 point gap between headline and core; the trimmed mean keeps the calm middle. Dashed reference: the Fed's 2% target.",
+      "source": "BEA, Personal Income and Outlays (May 2026); Dallas Fed trimmed mean PCE",
+      "units": "percent, year-over-year",
+      "period": "May 2026",
+      "note": "Headline includes volatile energy; core excludes food and energy; the trimmed mean discards the most extreme movers in both directions. The 2% target is a reference level, not a category.",
+      "alt": "Bar chart comparing three inflation measures for May 2026: headline PCE at 4.1 percent, core PCE at 3.4 percent, and trimmed mean PCE at 2.4 percent, against a dashed 2 percent target reference.",
+      "data": {
+        "bars": [
+          {
+            "label": "Headline PCE",
+            "value": 4.1,
+            "highlight": true
+          },
+          {
+            "label": "Core PCE",
+            "value": 3.4,
+            "highlight": true
+          },
+          {
+            "label": "Trimmed mean PCE",
+            "value": 2.4
+          }
+        ],
+        "max": 5
+      }
+    },
+    {
+      "id": "brent-roundtrip",
+      "kind": "line",
+      "title": "The accelerant behind the spike had already collapsed",
+      "subtitle": "Brent crude, dollars per barrel, approximate monthly markers. The spring war premium round-tripped before the May inflation data even landed.",
+      "source": "EIA Europe Brent spot price series; EIA Short-Term Energy Outlook; contemporaneous oil reporting, February to June 2026",
+      "units": "USD per barrel",
+      "period": "April to June 2026",
+      "note": "The Strait of Hormuz crisis began on 28 February 2026; Brent surpassed $100 on 12 March and peaked above $120 (about $126) in late March to early April. Prices fell as Hormuz transits resumed. The May PCE data was collected before this decline reached gasoline. Plotted points are approximate month markers, not a daily series.",
+      "alt": "Line chart showing Brent crude falling from about 117 dollars per barrel in April 2026 to about 72 dollars by late June 2026, after an intraday spring peak above 120.",
+      "data": {
+        "series": [
+          {
+            "name": "Brent crude",
+            "points": [
+              {
+                "x": "Apr 2026",
+                "y": 117
+              },
+              {
+                "x": "May 2026",
+                "y": 106
+              },
+              {
+                "x": "Mid-Jun 2026",
+                "y": 88
+              },
+              {
+                "x": "Late Jun 2026",
+                "y": 72
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "trimmed-trend",
+      "kind": "bar",
+      "title": "The calm middle is low in level but firming in momentum",
+      "subtitle": "Dallas Fed trimmed mean PCE, annualized. The most recent single month runs hotter than the 12-month trend, so the underlying pace is ticking up, not down. Dashed reference: 2% target.",
+      "source": "Dallas Fed, PCE trimmed mean (May 2026)",
+      "units": "percent, annualized",
+      "period": "May 2026",
+      "note": "Honest read: the 1-month rate sits ABOVE both the 6- and 12-month, which argues recent underlying momentum is firming. This cuts against the round-trip thesis and is shown deliberately.",
+      "alt": "Bar chart of annualized trimmed mean PCE: 1-month at 2.78 percent (highest), 6-month at 2.49 percent, 12-month at 2.40 percent, against a 2 percent target reference.",
+      "data": {
+        "bars": [
+          {
+            "label": "1-month",
+            "value": 2.78,
+            "highlight": true
+          },
+          {
+            "label": "6-month",
+            "value": 2.49
+          },
+          {
+            "label": "12-month",
+            "value": 2.4
+          }
+        ],
+        "max": 3.5
+      }
+    },
+    {
+      "id": "ceo-confidence",
+      "kind": "bar",
+      "title": "Who bears the risk if the Fed guesses wrong",
+      "subtitle": "Conference Board Measure of CEO Confidence; below 50 signals more pessimism than optimism. Reference line: 50 neutral.",
+      "source": "Conference Board, Measure of CEO Confidence, Q2 2026",
+      "units": "index, 50 = neutral",
+      "period": "Q1 to Q2 2026",
+      "note": "Exposed-group evidence, not a driver of inflation: alongside the drop, a reported 31% of CEOs plan to shrink their workforce versus 28% planning to expand it. If tightening into a fading shock overshoots, these are the firms that cut first.",
+      "alt": "Bar chart showing the Conference Board CEO Confidence Index falling from 59 in the first quarter of 2026 to 47 in the second quarter, below the neutral line of 50.",
+      "data": {
+        "bars": [
+          {
+            "label": "Q1 2026",
+            "value": 59
+          },
+          {
+            "label": "Q2 2026",
+            "value": 47,
+            "highlight": true
+          }
+        ],
+        "max": 70
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The hook: a hot number, a hawkish Fed, and one inconvenient chart",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 25 June 2026, the Bureau of Economic Analysis reported that PCE inflation, the gauge the Federal Reserve watches above all others, had climbed to a 4.1% annual rate in May, the fastest since April 2023. PCE stands for Personal Consumption Expenditures; in plain terms it tracks how fast the prices households actually pay are rising, and 4.1% means the typical basket cost 4.1% more than a year earlier."
+        },
+        {
+          "type": "p",
+          "text": "The Fed had already braced for heat, and it did so before the data arrived. Eight days earlier, on 17 June, it published its quarterly dot plot, the chart where each official marks where they expect interest rates to go. The dots moved hard: the median path for the 2026 fed funds rate jumped to 3.8% from the 3.4% officials had projected in March, and a bloc of nine of the eighteen officials now saw at least one rate hike this year. After a cycle spent debating cuts, the committee had pivoted toward tightening."
+        },
+        {
+          "type": "p",
+          "text": "And yet one chart complicates the story. The single force that pushed the headline above the underlying trend was energy, and energy is also the one input whose price had already collapsed. Brent crude, the global benchmark, had climbed above $120 a barrel during the Strait of Hormuz crisis that began in late February, then fell to roughly $72 by late June as oil tankers resumed transit through the strait. The May data was collected before that drop reached the gas pump. So the headline still carries a premium the market itself has already taken back."
+        },
+        {
+          "type": "chart",
+          "chartId": "brent-roundtrip"
+        },
+        {
+          "type": "p",
+          "text": "Here is the catch, and we will not bury it: removing energy entirely does not make the inflation problem vanish. Strip out food and energy and you are still left with core PCE at 3.4%, well above the Fed's 2% goal. The reversing oil price can pull the headline back down toward that 3.4%; it cannot pull it below the core. Whether inflation is really fading therefore depends on the core, and that is where the evidence genuinely splits."
+        }
+      ]
+    },
+    {
+      "heading": "The central question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This piece asks one narrow thing. Of the 4.1% headline, how much is a mechanical energy effect that will mechanically reverse as cheaper oil feeds through to the pump, and how much is genuine, sticky strength in the prices of everyday services that will persist even after gasoline falls? The answer decides whether the Fed is fighting a real fire or chasing smoke from one that is already out."
+        },
+        {
+          "type": "callout",
+          "label": "The falsifiable claim",
+          "text": "May's 4.1% headline is inflated by an energy accelerant that has already reversed in the oil market, so the headline should fall toward the 3.4% core over the summer. The open question is whether the core itself eases or holds. This resolves two ways. If core decelerates alongside energy in the June and July prints, the Fed over-reacted to a cost-push shock it should have looked through. If core holds near 3.4% and the trimmed mean keeps firming even with Brent back at $72, the hawkish turn was justified and the round-trip framing was a comforting half-truth."
+        }
+      ]
+    },
+    {
+      "heading": "What happened, in dates and actors",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The sequence matters because the policy decision and the data release landed eight days apart, in the wrong order: the Fed turned hawkish before it could see the number everyone cites as the reason."
+        },
+        {
+          "type": "list",
+          "items": [
+            "28 February to early April 2026: A US-Israel air war on Iran and an Iranian blockade of the Strait of Hormuz drive Brent crude past $100 a barrel on 12 March and above $120 (about $126) by late March, loading an energy premium into prices that will reach inflation data with a lag.",
+            "17 June 2026: The FOMC holds rates but its Summary of Economic Projections flips hawkish, raising the median 2026 dot to 3.8% from the 3.4% projected in March and showing nine of eighteen officials penciling in hikes.",
+            "Mid-to-late June 2026: Oil keeps sliding as Hormuz transits resume; by late June, Brent is near $72, its lowest since February and a round-trip of the war premium.",
+            "25 June 2026 (eight days after the dot plot): The BEA's May Personal Income and Outlays report lands at 4.1% headline and 3.4% core, with income and spending both up 0.7% on the month and the saving rate at 3.0%."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What the data says: level versus accelerant",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the most revealing single comparison. The same month produced three different inflation readings depending on how wide you open the lens, and the gaps between them tell the story."
+        },
+        {
+          "type": "chart",
+          "chartId": "three-measures"
+        },
+        {
+          "type": "p",
+          "text": "Read left to right, the three bars answer the same question with three different lenses. Headline PCE, at 4.1%, includes everything households buy, energy very much included. Core PCE, at 3.4%, removes food and energy, the two categories that swing the most. The gap between them, exactly 0.7 of a percentage point, is the combined contribution of food and energy, and energy is the part that has already reversed in the market. The third bar, the Dallas Fed's trimmed mean at 2.4%, throws out whichever items moved most in either direction this month and keeps the calm middle. The spread tells the story in one glance: the more volatile stuff you strip away, the lower and tamer inflation looks, which is exactly what you would expect if a one-off energy shock were doing the heavy lifting at the top."
+        },
+        {
+          "type": "p",
+          "text": "But notice what the trimmed mean cannot do. Even at its tamest reading it is 2.4%, still above the Fed's 2% target, and core at 3.4% is well above it. The round-trip in oil can drag the 4.1% headline down toward 3.4%; nothing in the oil market drags 3.4% down to 2%. That job belongs to services inflation, which the price of a barrel does not control."
+        }
+      ]
+    },
+    {
+      "heading": "The honest complication: the calm middle is firming",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the chart we promised not to hide, because it is the strongest evidence against our own thesis."
+        },
+        {
+          "type": "chart",
+          "chartId": "trimmed-trend"
+        },
+        {
+          "type": "p",
+          "text": "The trimmed mean has two speeds. Over the past 12 months it averaged a calm 2.4%. But take only the single most recent month and annualize it, meaning ask what inflation would be if the economy held that one month's pace for a full year, and you get about 2.78%, faster than both the 6-month pace of 2.49% and the 12-month trend. In plain terms: the calm middle of the price distribution is not cooling, it is warming slightly. If the energy round-trip were the whole story, you would expect the trimmed mean, which already ignores the energy spike, to be drifting down. It is doing the opposite."
+        },
+        {
+          "type": "pullquote",
+          "text": "The round-trip in oil can drag the 4.1% headline toward 3.4%. Nothing in the oil market drags 3.4% down to 2%."
+        },
+        {
+          "type": "p",
+          "text": "That is the case for the Fed. A central bank that looked through a temporary oil spike would still have to reckon with a core stuck at 3.4% and an underlying pace that is, if anything, edging up. The hawkish dot plot is not obviously an over-reaction once you put weight on this chart."
+        }
+      ]
+    },
+    {
+      "heading": "The demand side: people paid, they did not pull back",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The demand side offers the Fed more cover. In May, personal income rose 0.7% and spending rose 0.7%, the same pace, which left the saving rate at 3.0%, low by the standards of recent years. Plainly: households did not flinch at higher prices. They paid them and kept their spending growing in step with their paychecks rather than cutting back. Inflation that buyers absorb without resistance is harder to wave away as a one-off."
+        },
+        {
+          "type": "p",
+          "text": "There is also a timing trap in the round-trip story. Even granting that crude has round-tripped, the relief at the pump arrives slowly. Economists have a name for this, 'rockets and feathers': retail gasoline shoots up like a rocket when crude rises but drifts down like a feather when crude falls. The St. Louis Fed has documented the asymmetry for years. So even the mechanical, supposedly automatic part of the disinflation, cheaper gasoline, may show up later and smaller than a simple read of the Brent chart suggests."
+        }
+      ]
+    },
+    {
+      "heading": "Who bears the risk if the Fed guessed wrong",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "None of this is settled, which is the point. So it is worth asking who pays if the Fed has the call wrong."
+        },
+        {
+          "type": "chart",
+          "chartId": "ceo-confidence"
+        },
+        {
+          "type": "p",
+          "text": "The Conference Board's measure of CEO confidence fell to 47 in the second quarter from 59 in the first, dropping below the 50 line that separates net optimism from net pessimism. Alongside the drop, a reported 31% of surveyed CEOs said they expect to shrink their workforce over the next year, against 28% planning to expand, the cutters now narrowly outnumbering the hirers. This is not a cause of inflation; it is a readout of who is exposed. If the Fed tightens into a shock that is already fading and overshoots, these are the firms that trim payrolls first, and the cost lands on workers."
+        }
+      ]
+    },
+    {
+      "heading": "The verdict: what would settle it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So did the Fed turn hawkish off a number whose main accelerant had already unwound? Partly yes, and that is the honest answer. The 0.7-point wedge between the 4.1% headline and the 3.4% core is food and energy, and the energy half has demonstrably reversed in the market, so the headline should fall toward core over the summer even if the Fed does nothing. To that extent the 4.1% overstates the inflation the Fed actually has to fight."
+        },
+        {
+          "type": "p",
+          "text": "But the round-trip cannot reach the part of inflation the Fed most cares about. Core at 3.4% and a trimmed mean that is firming rather than fading both sit above target, and both are immune to the price of a barrel of oil. The decisive evidence is not in May's data at all; it is in the June and July prints. If core eases as energy washes out, the round-trip read wins and the June dot plot looks like an over-reaction. If core holds near 3.4% with Brent already back at $72, the hawks were early but right. Until then, the most defensible verdict is the uncomfortable one: the Fed reacted to a real signal wrapped inside a misleading number, and the wrapping has come off faster than the signal."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Pulled the BEA Personal Income and Outlays release for May 2026 (published 25 June 2026) for the headline PCE (4.1%), core PCE (3.4%), the 0.7% monthly gains in income, disposable income and spending, and the 3.0% saving rate.",
+    "Computed the headline-minus-core gap (4.1%, 3.4% = 0.7 point) to isolate the combined food-and-energy contribution, then treated energy as the reversible component because it is the input whose market price has round-tripped.",
+    "Read the Federal Reserve's 17 June 2026 Summary of Economic Projections to confirm the median 2026 dot rose to 3.8% from 3.4% (March) and that nine of eighteen officials projected at least one hike.",
+    "Tracked Brent crude through the EIA Europe Brent spot series, the EIA Short-Term Energy Outlook, and contemporaneous reporting to date the crisis (28 February), the rise above $100 (12 March) and $120, and the fall to about $72 by late June.",
+    "Used the Dallas Fed trimmed mean PCE at three horizons (1-month annualized 2.78%, 6-month 2.49%, 12-month 2.40%) to test momentum versus level, deliberately surfacing the reading that argues against the round-trip thesis.",
+    "Cited the Conference Board Measure of CEO Confidence (47 in Q2 from 59 in Q1; 31% plan cuts vs 28% expansion) strictly as exposed-group evidence, not as a cause of inflation.",
+    "Grounded the lagged gasoline pass-through in the established 'rockets and feathers' literature documented by the St. Louis Fed."
+  ],
+  "sources": [
+    {
+      "title": "Personal Income and Outlays, May 2026",
+      "publisher": "U.S. Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026",
+      "kind": "primary"
+    },
+    {
+      "title": "FOMC Summary of Economic Projections, June 17, 2026 (PDF)",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcprojtabl20260617.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "FOMC Projections materials, accessible version, June 17, 2026",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "FOMC statement, June 17, 2026",
+      "publisher": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+      "kind": "primary"
+    },
+    {
+      "title": "Trimmed Mean PCE Inflation Rate, May 2026",
+      "publisher": "Federal Reserve Bank of Dallas",
+      "url": "https://www.dallasfed.org/research/pce",
+      "kind": "data"
+    },
+    {
+      "title": "Europe Brent Spot Price FOB (Dollars per Barrel)",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/dnav/pet/hist/RBRTED.htm",
+      "kind": "data"
+    },
+    {
+      "title": "Crude oil and petroleum product prices increased sharply in the first quarter of 2026",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67424",
+      "kind": "primary"
+    },
+    {
+      "title": "2026 Strait of Hormuz crisis",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil prices: Brent and WTI react to US-Iran deal and Strait of Hormuz shipping recovery",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Brent crude oil price, live chart",
+      "publisher": "Trading Economics",
+      "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+      "kind": "data"
+    },
+    {
+      "title": "Fed interest rate decision June 2026: Fed holds rates steady",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "CEO Confidence Tumbled in Q2 2026",
+      "publisher": "Conference Board / PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/ceo-confidence-tumbled-in-q2-2026-302784178.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "US CEO Confidence",
+      "publisher": "The Conference Board",
+      "url": "https://www.conference-board.org/topics/CEO-Confidence/",
+      "kind": "primary"
+    },
+    {
+      "title": "Rockets and Feathers: Why Don't Gasoline Prices Always Move in Sync With Oil Prices?",
+      "publisher": "Federal Reserve Bank of St. Louis",
+      "url": "https://www.stlouisfed.org/publications/regional-economist/october-2014/rockets-and-feathers-why-dont-gasoline-prices-always-move-in-sync-with-oil-prices",
+      "kind": "academic"
+    },
+    {
+      "title": "Oil and gas prices move together like rockets and feathers",
+      "publisher": "FRED Blog, Federal Reserve Bank of St. Louis",
+      "url": "https://fredblog.stlouisfed.org/2022/06/oil-and-gas-prices-move-together-like-rockets-and-feathers/",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "This rests on a single monthly print. May PCE can be revised, and one month rarely settles a debate about the trend.",
+    "The trimmed mean's 1-month annualized rate (2.78%) is the noisiest of the three horizons; reading momentum off a single month can mislead in either direction.",
+    "We did not decompose the 3.4% core into its services line items (shelter, medical, insurance), so the claim that core strength is 'sticky' is inferred from the trimmed mean's firming rather than itemized.",
+    "The exact timing and size of gasoline pass-through from the Brent collapse is uncertain; 'rockets and feathers' tells us it will be slow and partial, not precisely how slow.",
+    "CEO confidence and layoff intentions are survey sentiment, not realized job cuts, and the Q2 survey was fielded 4-18 May, before the May data landed.",
+    "Brent monthly markers in the chart are approximate; sources differ on the exact peak (roughly $126 on a futures basis, with an intraday spot figure reported as high as $138 in early April)."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/may-pce-4-1-percent-oil-roundtrip-fed-hawkish.jpg",
+    "credit": "Photo: Bernard Spragg. NZ, CC0, via Wikimedia Commons",
+    "caption": "A crude oil tanker at anchor: the war that closed the Strait of Hormuz sent Brent to $126 a barrel, but reopened shipping lanes round-tripped the price back to its pre-war $72 within weeks.",
+    "alt": "A large crude oil tanker ship floating on calm water under a clear sky, viewed from shore."
+  },
+  "primarySection": "economy",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T14:42:09.860Z"
+}
