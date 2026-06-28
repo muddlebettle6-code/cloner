@@ -1,9 +1,9 @@
 # Cumulant Reel Studio (Remotion)
 
-A React/TypeScript motion-graphics system for Cumulant short-form vertical reels (v4: **LIGHT mode** — cream page `#f5f3ee`, ink text, magenta `#ff2d92`). Neue Haas Unica display font, detailed drei 3D objects (product-shot on cream), deep male narration, **one frame per sentence**, synced subtitles, an **original piano music** bed, varied low SFX, flowy transitions. Isolated in `remotion/`; the site is untouched (`remotion/` excluded from the site tsconfig; site typecheck passes).
+A React/TypeScript motion-graphics system for Cumulant short-form vertical reels (v6: **DARK mode** — near-black `#070708` + subtle grid, white text only, magenta `#ff2d92`). Neue Haas Unica, detailed drei 3D objects + charts/tables on **every** sentence, deep male narration, **verbatim word-synced subtitles** (whisper-aligned), an **original dramatic piano + strings** track with a drop, varied low SFX, flowy transitions, a follow-card ending. Isolated in `remotion/`; the site is untouched (`remotion/` excluded from the site tsconfig; site typecheck passes).
 
 ## Output
-- **`out/CumulantReel_v4_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~59 s, H.264 + AAC.
+- **`out/CumulantReel_v6_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~67 s, H.264 + AAC.
 - **`out/cover.png`** — thumbnail.
 
 ## Commands

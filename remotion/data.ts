@@ -7,10 +7,10 @@ export type Bar = { label: string; value: number; disp?: string; hi?: boolean };
 export type Row = { name: string; note: string; hi?: boolean };
 export type Scene = {
   id: string; frames: number; vo: number;
-  cap: string; e?: string;                 // white caption + optional magenta word
+  cap?: string; e?: string;                // (legacy label; subtitle text now comes from CAPTIONS[id])
   object?: "money" | "satellite" | "beam" | "tower" | "phone";
   num?: string;                            // big centered number
-  chart?: Bar[]; table?: Row[]; line?: boolean; waves?: boolean; lines?: Line[];
+  chart?: Bar[]; table?: Row[]; line?: boolean; waves?: boolean; lines?: Line[]; follow?: boolean;
   trans: "zoom" | "push" | "slide" | "wipe" | "fade";
 };
 
@@ -23,7 +23,7 @@ export const reel = {
   url: "cumulant.org/articles/spacex-19-billion-echostar-spectrum-towers-not-airwaves",
 
   scenes: [
-    { id: "s1", frames: 166, vo: 5.376, cap: "SpaceX just paid", object: "money", num: "$19.6B", trans: "zoom" },
+    { id: "s1", frames: 185, vo: 5.376, cap: "SpaceX just paid", object: "money", num: "$19.6B", trans: "zoom" },
     { id: "s2", frames: 35, vo: 1.008, cap: "For airwaves you can't see", e: "airwaves", waves: true, lines: [{ t: "Airwaves.", e: "Airwaves" }], trans: "fade" },
     { id: "s3", frames: 130, vo: 4.2, cap: "Spectrum licenses", table: BANDS, trans: "slide" },
     { id: "s4", frames: 171, vo: 5.544, cap: "Sold straight from Starlink", e: "Starlink", object: "satellite", trans: "zoom" },
@@ -36,8 +36,9 @@ export const reel = {
     { id: "s11", frames: 72, vo: 2.256, cap: "So why pay that much?", object: "money", num: "$19.6B", trans: "push" },
     { id: "s12", frames: 159, vo: 5.16, cap: "Leverage over the carriers", e: "Leverage", table: CARRIERS, trans: "wipe" },
     { id: "s13", frames: 138, vo: 4.44, cap: "A lower phone bill for you", e: "lower", object: "phone", trans: "zoom" },
-    { id: "s14", frames: 61, vo: 1.896, cap: "The airwaves were easy", e: "easy", chart: COST, trans: "fade" },
     { id: "s15", frames: 82, vo: 2.568, cap: "The towers are everything", e: "everything", object: "tower", trans: "slide" },
+    { id: "s16", frames: 130, vo: 4.128, cap: "A network, or a bluff?", object: "money", trans: "push" },
+    { id: "s17", frames: 136, vo: 4.2, cap: "Follow Cumulant", follow: true, trans: "fade" },
   ] as Scene[],
 };
 

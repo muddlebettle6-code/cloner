@@ -1,4 +1,5 @@
-// Reel composition v4 — LIGHT bg + 15 sentence-beats + piano music + varied, quiet SFX.
+// Reel composition v6 — dark + grid, verbatim subtitles, dramatic music with a drop,
+// SFX synced to the animations.
 import React from "react";
 import { AbsoluteFill, Series, Sequence, Audio, staticFile } from "remotion";
 import { Background, Fonts } from "./components";
@@ -10,23 +11,25 @@ const Sfx: React.FC<{ src: string; at: number; vol?: number; dur?: number }> = (
   <Sequence from={Math.max(0, at)} durationInFrames={dur}><Audio src={staticFile(`audio/${src}.mp3`)} volume={vol} /></Sequence>
 );
 
-// one sound per cut — varied so the same swoosh never repeats; all kept low.
+// a different low sound per cut + a DROP after the hook pause + hits on the animations
 const CUES: { src: string; at: number; vol?: number }[] = [
-  { src: "riser", at: 0, vol: 0.28 }, { src: "impact", at: 8, vol: 0.34 },
-  { src: "pop", at: 166, vol: 0.3 },
-  { src: "whoosh_rev", at: 201, vol: 0.24 },
-  { src: "whoosh", at: 331, vol: 0.28 }, { src: "clink", at: 341, vol: 0.22 },
-  { src: "whoosh", at: 502, vol: 0.3 },               // wipe
-  { src: "pop", at: 599, vol: 0.3 },
-  { src: "tick", at: 701, vol: 0.3 },
-  { src: "riser", at: 778, vol: 0.28 }, { src: "ding", at: 792, vol: 0.34 },
-  { src: "whoosh", at: 983, vol: 0.3 }, { src: "clink", at: 993, vol: 0.22 }, // wipe + tower
-  { src: "pop", at: 1134, vol: 0.3 },
-  { src: "impact", at: 1264, vol: 0.3 },
-  { src: "whoosh", at: 1336, vol: 0.3 },              // wipe
-  { src: "whoosh_rev", at: 1495, vol: 0.26 }, { src: "clink", at: 1505, vol: 0.22 },
-  { src: "tick", at: 1633, vol: 0.3 },
-  { src: "subdrop", at: 1694, vol: 0.34 },            // final
+  { src: "riser", at: 0, vol: 0.24 }, { src: "impact", at: 10, vol: 0.3 },
+  { src: "subdrop", at: 181, vol: 0.44 }, { src: "impact", at: 185, vol: 0.4 }, // the DROP
+  { src: "whoosh", at: 185, vol: 0.26 },
+  { src: "pop", at: 224, vol: 0.28 }, { src: "pop", at: 231, vol: 0.28 }, { src: "pop", at: 238, vol: 0.28 },
+  { src: "whoosh", at: 350, vol: 0.28 }, { src: "clink", at: 359, vol: 0.22 },
+  { src: "whoosh", at: 521, vol: 0.3 }, { src: "pop", at: 527, vol: 0.28 }, { src: "pop", at: 533, vol: 0.28 }, { src: "pop", at: 539, vol: 0.28 }, { src: "pop", at: 545, vol: 0.3 },
+  { src: "whoosh", at: 618, vol: 0.28 }, { src: "tick", at: 626, vol: 0.3 }, { src: "tick", at: 634, vol: 0.3 },
+  { src: "tick", at: 720, vol: 0.28 },
+  { src: "whoosh", at: 797, vol: 0.3 }, { src: "ding", at: 812, vol: 0.34 },
+  { src: "whoosh", at: 1002, vol: 0.3 }, { src: "clink", at: 1011, vol: 0.22 },
+  { src: "subdrop", at: 1185, vol: 0.36 }, // the line crashes
+  { src: "whoosh", at: 1283, vol: 0.28 }, { src: "impact", at: 1293, vol: 0.34 },
+  { src: "whoosh", at: 1355, vol: 0.3 }, { src: "pop", at: 1361, vol: 0.28 }, { src: "pop", at: 1367, vol: 0.28 }, { src: "pop", at: 1373, vol: 0.28 }, { src: "pop", at: 1379, vol: 0.3 },
+  { src: "whoosh", at: 1514, vol: 0.28 }, { src: "clink", at: 1523, vol: 0.22 },
+  { src: "whoosh", at: 1652, vol: 0.28 },
+  { src: "impact", at: 1734, vol: 0.3 },
+  { src: "ding", at: 1866, vol: 0.32 },
 ];
 
 export const Reel: React.FC = () => {
@@ -48,8 +51,8 @@ export const Reel: React.FC = () => {
         </Sequence>
       ))}
 
-      {/* original piano music bed (looped to cover the reel) */}
-      <Audio src={staticFile("audio/music.mp3")} volume={0.4} loop />
+      {/* dramatic original piano + strings + drop */}
+      <Audio src={staticFile("audio/music.mp3")} volume={0.4} />
 
       {CUES.map((c, i) => <Sfx key={i} {...c} />)}
     </AbsoluteFill>

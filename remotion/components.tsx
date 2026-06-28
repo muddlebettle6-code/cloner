@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame, continueRender, delayRender } from "remotion";
 import { C, F, E } from "./theme";
 import { NEUE_WOFF2, MONO_WOFF2 } from "./fonts";
+import { CAPTIONS } from "./captions";
 
 export const Fonts: React.FC = () => {
   const [handle] = useState(() => delayRender("fonts"));
@@ -60,15 +61,41 @@ export const SceneWrap: React.FC<{ frames: number; trans: "zoom" | "push" | "sli
   );
 };
 
-// ---- top caption (the only running text — white, clean) -------------------- //
-export const Caption: React.FC<{ text: string; e?: string; start?: number }> = ({ text, e, start = 4 }) => {
+// ---- verbatim subtitle: each word reveals at its actual spoken time --------- //
+export const Subtitle: React.FC<{ id: string; centerY?: number }> = ({ id, centerY = 1470 }) => {
   const f = useCurrentFrame();
-  const p = rev(f, start, 12, E.smoothOut);
+  const words = CAPTIONS[id] || [];
   return (
-    <div style={{ position: "absolute", left: 90, right: 90, top: 296, textAlign: "center", opacity: p, transform: `translateY(${(1 - p) * 14}px)` }}>
-      <span style={{ fontFamily: F.display, fontSize: 50, letterSpacing: "-0.015em", color: C.white }}>
-        {emph(text, e).map((s, k) => <span key={k} style={{ color: s.toLowerCase() === (e || "").toLowerCase() && e ? C.mag : C.white }}>{s}</span>)}
-      </span>
+    <div style={{ position: "absolute", left: 100, right: 100, top: centerY, transform: "translateY(-50%)", textAlign: "center" }}>
+      <div style={{ fontFamily: F.display, fontSize: 54, lineHeight: 1.2, letterSpacing: "-0.012em", color: C.white }}>
+        {words.map((wd, i) => {
+          const p = rev(f, wd.t * 30, 6, E.fastReveal);
+          if (p <= 0.01) return null;
+          const num = /[\d$]/.test(wd.w);
+          return <span key={i} style={{ opacity: p, color: num ? C.mag : C.white }}>{wd.w}{" "}</span>;
+        })}
+      </div>
+    </div>
+  );
+};
+
+// ---- Cumulant mark (distribution curve) + follow-card ending --------------- //
+export const Mark: React.FC<{ size?: number; draw?: number }> = ({ size = 200, draw = 1 }) => (
+  <svg width={size} height={size * 0.8} viewBox="0 0 30 24" fill="none">
+    <path d="M2.5 18.6H27.5" stroke={C.white} strokeOpacity={0.4} strokeWidth={1.2} strokeLinecap="round" />
+    <path d="M3.5 18.6C8.6 18.6 10 5.6 15 5.6C20 5.6 21.4 18.6 26.5 18.6" stroke={C.white} strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
+    <circle cx={23.4} cy={15} r={2} fill={C.mag} opacity={draw > 0.85 ? 1 : 0} />
+  </svg>
+);
+
+export const FollowCard: React.FC = () => {
+  const f = useCurrentFrame();
+  const wm = interpolate(rev(f, 8, 16, E.softOvershoot), [0, 1], [0.82, 1]);
+  return (
+    <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+      <Mark size={210} draw={rev(f, 2, 26)} />
+      <div style={{ marginTop: 28, opacity: rev(f, 8, 16), transform: `scale(${wm})`, fontFamily: F.display, fontSize: 128, letterSpacing: "-0.035em", color: C.white }}>Cumulant<span style={{ color: C.mag }}>.</span></div>
+      <div style={{ marginTop: 32, opacity: rev(f, 22, 16), fontFamily: F.display, fontSize: 56, lineHeight: 1.25, color: C.white, textAlign: "center" }}>Follow for the analysis<br />behind the headlines</div>
     </div>
   );
 };
