@@ -89,14 +89,15 @@ export const Mark: React.FC<{ size?: number; draw?: number }> = ({ size = 200, d
   </svg>
 );
 
+// visual-only logo end — the mark draws in, the wordmark settles. No words about
+// Cumulant spoken; the visual carries it.
 export const FollowCard: React.FC = () => {
   const f = useCurrentFrame();
-  const wm = interpolate(rev(f, 8, 16, E.softOvershoot), [0, 1], [0.82, 1]);
+  const wm = interpolate(rev(f, 10, 18, E.softOvershoot), [0, 1], [0.8, 1]);
   return (
     <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-      <Mark size={210} draw={rev(f, 2, 26)} />
-      <div style={{ marginTop: 28, opacity: rev(f, 8, 16), transform: `scale(${wm})`, fontFamily: F.display, fontSize: 128, letterSpacing: "-0.035em", color: C.white }}>Cumulant<span style={{ color: C.mag }}>.</span></div>
-      <div style={{ marginTop: 32, opacity: rev(f, 22, 16), fontFamily: F.display, fontSize: 56, lineHeight: 1.25, color: C.white, textAlign: "center" }}>Follow for the analysis<br />behind the headlines</div>
+      <Mark size={280} draw={rev(f, 4, 30)} />
+      <div style={{ marginTop: 34, opacity: rev(f, 12, 18), transform: `scale(${wm})`, fontFamily: F.display, fontSize: 150, letterSpacing: "-0.04em", color: C.white }}>Cumulant<span style={{ color: C.mag }}>.</span></div>
     </div>
   );
 };

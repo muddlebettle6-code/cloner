@@ -2,13 +2,13 @@
 
 ## Editorial sources (facts)
 All facts come from the Cumulant article and its cited reporting. Nothing invented.
-- **Article:** cumulant.org/articles/spacex-19-billion-echostar-spectrum-towers-not-airwaves (Cumulant, AI-assisted, source-backed)
-- SEC / EDGAR — SpaceX–EchoStar spectrum deal terms (~$19.6B)
-- FCC — spectrum license records (AWS-4 / H-block / AWS-3)
-- Financial Times, CNBC / Morningstar — deal + carrier-reaction reporting
-- US Mobile / independent telecom measurement — Starlink direct-to-cell throughput (2–4 Mbps/beam)
+- **Article:** cumulant.org/articles/may-pce-4-1-percent-oil-roundtrip-fed-hawkish (Cumulant, AI-assisted, source-backed)
+- U.S. Bureau of Economic Analysis — May PCE: headline 4.1%, core 3.4%
+- Federal Reserve — the June projections (2026 cuts erased, hikes penciled)
+- Federal Reserve Bank of Dallas — trimmed-mean PCE (~2.4%)
+- U.S. Energy Information Administration — Brent crude ($120+ during the Hormuz crisis, then round-tripped)
 
-We cite and report; we do not republish their content or use their branded charts.
+We cite and report; we do not republish their content or use their branded charts. Balanced framing; no investment advice.
 
 ## Assets used (all original or owned)
 | Asset | Source | License | Where used |
@@ -18,7 +18,7 @@ We cite and report; we do not republish their content or use their branded chart
 | 3D objects (satellite, cell tower, phone) | original `three.js` + drei primitives in `objects3d.tsx` | original work — no external model | scenes 4, 9, 13 |
 | Big numbers / statements / subtitles / spectrum waves | original Remotion components | original work | all scenes (no end card / logo) |
 | Background (glow / grid / grain / vignette) | original procedural (CSS + inline SVG) | original work | all scenes |
-| Voiceover | OpenAI `gpt-4o-mini-tts`, voice **`onyx`** (deep) | generated via the project's OpenAI key; output owned per OpenAI terms; not a cloned real person | narration (one clip per sentence) |
+| Voiceover | OpenAI `gpt-4o-mini-tts`, voice **`nova`** (warm female) | generated via the project's OpenAI key; output owned per OpenAI terms; not a cloned real person | narration (one clip per sentence) |
 | Music (original piano piece) | **composed here** — numpy synthesis, minor-key arpeggio (Am–F–C–G), Succession-vein. NOT the copyrighted Succession theme. | original, royalty-free | full reel |
 | SFX palette (boom, clink, ding, swoosh up/down, flash, subdrop, riser, whoosh, tick) | procedurally synthesized (ffmpeg noise/sine) | original, royalty-free (created here) | matched to motion + 3D objects |
 

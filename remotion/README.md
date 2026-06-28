@@ -3,7 +3,8 @@
 A React/TypeScript motion-graphics system for Cumulant short-form vertical reels (**DARK mode** — near-black `#070708` + subtle grid, white text only, magenta `#ff2d92`). Neue Haas Unica, detailed drei 3D objects + charts/tables on **every** sentence, deep male narration, **verbatim word-synced subtitles** (whisper-aligned) with a **smooth word-by-word reveal** (slide + focus-in), varied low SFX synced to the animations, cinematic flowy transitions + a slow **3D camera drift**, a follow-card ending. Music is optional (v8 ships **without** music per request — VO + SFX only; drop a licensed MP3 at `public/audio/music.mp3` + re-add the `<Audio>` to use one). Isolated in `remotion/`; the site is untouched (excluded from the site tsconfig; site typecheck passes).
 
 ## Output
-- **`out/CumulantReel_v8_aibubble_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~75 s, H.264 + AAC. (v8: "Is AI a bubble?" — glossy iridescent bubble + chip + data center, smooth captions, no music.)
+- **`out/CumulantReel_v10_oilinflation_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~79 s, H.264 + AAC. (v10: May's 4.1% oil-inflation — **warm female VO**, human script, thermometer/barrel/flame(extinguishes)/gas-pump 3D, varied per-transition SFX, **visual-only logo ending**, no music.)
+- Prior finished reels: `CumulantReel_v9_aibubble_4k.mp4` (AI bubble, deep male VO, bubble-burst), `CumulantReel_v7_4k.mp4` (SpaceX spectrum).
 - **`out/cover.png`** — thumbnail.
 
 > ⚠️ When regenerating VO, NEVER `rm public/audio/s*.mp3` — that glob also deletes `subdrop.mp3` (and `swoosh_*`). Use `rm public/audio/s[0-9]*.mp3`.

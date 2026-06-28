@@ -1,36 +1,38 @@
-// Story data (v8) — the AI bubble explainer. DARK mode, plain language, one frame per
-// sentence; the bubble is the recurring motif. Subtitle text comes from CAPTIONS[id].
+// Story data (v9) — the oil-spike / May-4.1%-inflation story. DARK mode, human
+// conversational script (female VO). One frame per sentence; subtitle from CAPTIONS[id].
+// Ends on a VISUAL-ONLY logo (no spoken outro).
 
 export type Bar = { label: string; value: number; disp?: string; hi?: boolean };
 export type Scene = {
   id: string; frames: number; vo: number;
-  object?: "bubble" | "bubbleburst" | "chip" | "datacenter" | "money";
-  chart?: Bar[]; line?: boolean; flow?: boolean; follow?: boolean;
+  object?: "barrel" | "thermometer" | "flame" | "gaspump" | "money";
+  level?: number;            // thermometer mercury level
+  num?: string; chart?: Bar[]; line?: boolean; follow?: boolean;
   trans: "zoom" | "push" | "slide" | "wipe" | "fade";
 };
 
-const SPEND: Bar[] = [{ label: "SPENDING ON AI", value: 100, disp: "HUGE", hi: true }, { label: "PROFIT FROM AI", value: 7, disp: "TINY" }];
+const READINGS: Bar[] = [{ label: "HEADLINE", value: 4.1, disp: "4.1%", hi: true }, { label: "CORE", value: 3.4, disp: "3.4%" }, { label: "CALM MIDDLE", value: 2.4, disp: "2.4%" }];
 
 export const reel = {
-  title: "Is AI a bubble — and how could it burst?",
-  url: "cumulant.org",
+  title: "The Oil Spike Behind May's 4.1% Inflation Has Already Round-Tripped. The Fed Turned Hawkish Anyway.",
+  url: "cumulant.org/articles/may-pce-4-1-percent-oil-roundtrip-fed-hawkish",
 
   scenes: [
-    { id: "s1", frames: 152, vo: 4.344, object: "bubble", trans: "zoom" },
-    { id: "s2", frames: 179, vo: 5.832, object: "datacenter", trans: "wipe" },
-    { id: "s3", frames: 184, vo: 5.976, object: "chip", trans: "zoom" },
-    { id: "s4", frames: 133, vo: 4.296, flow: true, trans: "push" },
-    { id: "s5", frames: 147, vo: 4.752, flow: true, trans: "fade" },
-    { id: "s6", frames: 137, vo: 4.416, object: "bubble", trans: "slide" },
-    { id: "s7", frames: 204, vo: 6.648, chart: SPEND, trans: "wipe" },
-    { id: "s8", frames: 148, vo: 4.776, object: "bubble", trans: "zoom" },
-    { id: "s9", frames: 138, vo: 4.464, line: true, trans: "push" },
-    { id: "s10", frames: 172, vo: 5.568, object: "bubbleburst", trans: "fade" },
-    { id: "s12", frames: 156, vo: 5.064, object: "money", trans: "wipe" },
-    { id: "s13", frames: 159, vo: 5.16, object: "bubble", trans: "slide" },
-    { id: "s14", frames: 129, vo: 4.152, line: true, trans: "push" },
-    { id: "s15", frames: 73, vo: 2.28, object: "bubble", trans: "zoom" },
-    { id: "s16", frames: 130, vo: 3.84, follow: true, trans: "fade" },
+    { id: "s1", frames: 213, vo: 6.48, object: "thermometer", level: 0.9, trans: "zoom" },
+    { id: "s2", frames: 121, vo: 3.888, object: "barrel", trans: "push" },
+    { id: "s3", frames: 125, vo: 4.032, object: "barrel", trans: "fade" },
+    { id: "s4", frames: 142, vo: 4.584, object: "barrel", num: "$120", trans: "slide" },
+    { id: "s5", frames: 179, vo: 5.808, line: true, trans: "wipe" },
+    { id: "s6", frames: 192, vo: 6.24, object: "gaspump", trans: "zoom" },
+    { id: "s7", frames: 125, vo: 4.032, chart: READINGS, trans: "push" },
+    { id: "s8", frames: 165, vo: 5.352, line: true, trans: "slide" },
+    { id: "s9", frames: 171, vo: 5.544, object: "thermometer", level: 0.45, num: "2.4%", trans: "fade" },
+    { id: "s10", frames: 79, vo: 2.472, object: "thermometer", level: 0.42, trans: "zoom" },
+    { id: "s11", frames: 233, vo: 7.608, object: "money", trans: "wipe" },
+    { id: "s12", frames: 112, vo: 3.6, object: "flame", trans: "push" },
+    { id: "s13", frames: 213, vo: 6.936, object: "money", trans: "slide" },
+    { id: "s14", frames: 208, vo: 6.792, object: "thermometer", level: 0.6, trans: "zoom" },
+    { id: "s15", frames: 90, vo: 0, follow: true, trans: "fade" },
   ] as Scene[],
 };
 

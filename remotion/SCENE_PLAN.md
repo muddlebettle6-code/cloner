@@ -1,23 +1,22 @@
-# Cumulant Reel — Scene Plan (v8, "Is AI a bubble?")
+# Cumulant Reel — Scene Plan (v10 — May's 4.1% oil-inflation)
 
-Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~75 s (2241 frames)**, H.264. **DARK mode** — near-black + subtle grid, **white text only**, magenta accent. Neue Haas Unica. **One frame per sentence** (15 beats). **No music** — deep VO + synced SFX. **Smooth, flowy captions** (each word eases up + focuses in, not chopped). **Cinematic transitions** (longer eases) + a slow **3D camera drift**. The **bubble is the recurring 3D motif**.
+Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~79 s (2368 frames)**, H.264. **DARK mode** — near-black + subtle grid, white text only, magenta accent. Neue Haas Unica. **Warm female VO** (nova), human/conversational. **One frame per sentence** (14 beats) + a **visual-only logo ending**. **No music** — VO + varied synced SFX (a different sound per transition type). Smooth word-synced captions. Slow 3D camera drift.
 
 | # | Beat | Visual | SFX |
 |---|---|---|---|
-| 1 | hook — "what if it's a bubble?" | **glossy iridescent bubble** (3D) | riser + chime, then a **drop** after the hook pause |
-| 2 | record spending | **3D data center** (server racks) | whoosh |
-| 3 | Nvidia, chip-seller | **3D AI chip** (glowing die + gold pins) | whoosh + clink |
-| 4 | money moves in circles | **circular-flow** diagram (AI Co. ↔ $ ↔ Chips) | whoosh + node pops |
-| 5 | invest in each other | circular flow (builds) | tick |
-| 6 | demand looks bigger | **bubble** (inflating) | whoosh + riser |
-| 7 | spending huge, profit tiny | **bar chart**: SPENDING = HUGE vs PROFIT = TINY | whoosh + ticks |
-| 8 | "that gap is a bubble" | **bubble** (tense) | whoosh + chime |
-| 9 | dot-com crash, 2000 | **line chart** (up then crash) | whoosh + **down** sweep |
-| 10 | prices ran ahead, **crashed** | **the bubble BURSTS** into iridescent fragments (3D, on "crashed") | shimmer in, **bubble-pop + boom** on the burst |
-| 11 | the twist — spenders are profitable | **3D coin stack** | whoosh + coin |
-| 12 | may deflate, not pop | **bubble** (slowly shrinking) | whoosh + soft down |
-| 13 | watch: spending stops growing | line chart | whoosh + tick |
-| 14 | "A new era? Or the next bubble?" | **bubble** (question) | whoosh + chime |
-| 15 | follow card | Cumulant mark + "Follow…" | chime |
+| 1 | "inflation hit 4.1%… scary, right?" | **3D thermometer**, mercury rising hot | riser + ding, then a **drop** after the hook pause |
+| 2–3 | "what drove it… Oil." | **3D oil barrel** | snap + clink |
+| 4 | "crude past $120" | barrel + big **$120** | swoosh-down + impact |
+| 5 | "crisis near Hormuz, tankers" | **line chart** (Brent spiking) | glitch + riser |
+| 6 | "leaks into everything… gas" | **3D gas pump** | swish + clink |
+| 7 | "headline looked ugly… twist" | **bar chart** — HEADLINE 4.1% / CORE 3.4% / CALM MIDDLE 2.4% | snap + ticks |
+| 8 | "the spike's already gone, round-tripped" | **line chart** (up then back **down**) | swoosh-down + **down** sweep |
+| 9 | "calm core ~2.4%" | big **2.4%** + thermometer (cool) | shimmer + down |
+| 10 | "basically normal" | thermometer (cool) | swish |
+| 11 | "the Fed got tougher… scrapped cuts, hinted hikes" | **3D coin stack** | glitch + coin |
+| 12 | "fighting a fire that's already out" | **3D flame flickers then EXTINGUISHES into smoke** | snap, then **swoosh-down + down** as it goes out |
+| 13 | "your mortgage, car loan, savings hinge on the Fed" | coin stack | swoosh-down + coin |
+| 14 | "number says hot, oil says cooling… who's right" | thermometer | swish + ding |
+| — | *visual only* | **Cumulant mark + wordmark** (no narration) | shimmer + ding |
 
-**3D (4 detailed models):** iridescent bubble (meshPhysical + iridescence/clearcoat), AI chip, data center, coin stack — drei environment reflections + slow camera drift. **Charts:** circular flow, spending-vs-profit bar, dot-com line. **Audio:** deep onyx VO + a **varied SFX palette with a different sound per transition type** (zoom→swish, push→snap, slide→swoosh-down, wipe→glitch, fade→shimmer) — never the same whoosh twice — plus event hits (coin, descending sweep on the crashes, node pops, **bubble-pop + boom on the burst**, boom on the drop). **No music.** Captions are the exact spoken words, smoothly word-synced. New SFX this pass: bubblepop, shimmer, swish, glitch, boom, snap.
+**3D (5 detailed):** oil barrel, thermometer (rising mercury), flame (flickers + extinguishes), gas pump, coin stack — drei reflections, slow camera drift. **Charts:** Brent line (spike → round-trip), inflation-readings bar. **Audio:** warm female VO + a **per-transition-type SFX** scheme (zoom→swish, push→snap, slide→swoosh-down, wipe→glitch, fade→shimmer) plus events (mercury rise, $120 hit, round-trip down, the flame fizzle, coin). **No music. No spoken outro.**
