@@ -1,19 +1,28 @@
-# Cumulant Reel — Narration Script (v3)
+# Cumulant Reel — Narration Script (v4)
 
-**Story:** The AI memory shock is regressive — where memory is most of the machine, the price jumps most.
-**Article:** cumulant.org/articles/ai-memory-shock-regressive-device-prices
-**Voice:** OpenAI `gpt-4o-mini-tts`, voice **`onyx`** (deep), **speed 1.18** (faster).
-**Runtime:** ~28.7 s voice / ~29.4 s video · plain English, strong hook, no end card.
+**Story:** SpaceX Paid $19.6 Billion for the Airwaves Dish Couldn't Turn Into a Network. The Towers Are the Hard Part.
+**Article:** cumulant.org/articles/spacex-19-billion-echostar-spectrum-towers-not-airwaves
+**Voice:** OpenAI `gpt-4o-mini-tts`, voice **`onyx`** (deep), speed 1.12 — warm, human, documentary delivery.
+**Runtime:** ~57 s voice / ~59 s video · LIGHT mode · one frame per sentence (15 beats).
 
-> Checked against the source article. Each line maps to a fact + cited reporting (9to5Mac, MacRumors, Reuters, CNBC, Gartner figures).
+> Human, flowing narration with **transition words** and **rhetorical questions**; explains the situation, **what Cumulant found**, and **what it means for the viewer**. Facts from the article + cited reporting (SEC/EDGAR, FCC, FT, CNBC/Morningstar, telecom measurement studies).
 
-| # | Scene | Narration | Fact basis |
-|---|---|---|---|
-| 1 | Hook (chip) | "The AI boom just showed up on your shopping receipt." | The AI build-out's first clearly visible consumer cost. |
-| 2 | Context (phone) | "On June 25th, Apple and Microsoft raised prices, and blamed memory." | 25 Jun 2026: Apple lifted US list prices mid-cycle; Microsoft lifted Xbox; both cited memory. |
-| 3 | Number (+92%) | "AI data centers are buying up the world's memory chips. Wholesale prices jumped ninety-two percent." | DRAM contract prices +92% QoQ, Q1 2026, driven by data-center DRAM/NAND demand. |
-| 4 | Chart (regressive) | "And it hits the cheapest gadgets hardest. The Apple TV jumped fifty-four percent." | Regressive: fixed $/GB is a bigger % of a cheap device. Apple TV +54%, Xbox Series S +25–33%, iPad +29%. |
-| 5 | Number (23%) | "Memory is now nearly a quarter of a new PC's cost. Up from a sixth." | Gartner: memory 16% of a PC's bill of materials in 2025 → projected 23% in 2026. |
-| 6 | Close | "Chip prices always fall back. Your receipts won't." | Contract memory is cyclical and round-trips; retail stickers stay sticky. |
+| Beat | Sentence | Role |
+|---|---|---|
+| 1 | "SpaceX just paid $19.6 billion for something you can't even see." | hook |
+| 2 | "Airwaves." | punch / reveal |
+| 3 | "These are spectrum licenses. The right to broadcast wireless signals." | explain |
+| 4 | "And SpaceX hinted it could sell you a phone plan, straight from Starlink." | stakes |
+| 5 | "A fourth phone company, finally?" | **rhetorical question** |
+| 6 | "Well, here's what we found when we dug into the numbers." | **Cumulant's analysis** |
+| 7 | "Buying the airwaves was the easy part." | turn |
+| 8 | "One Starlink beam shares just 2 to 4 megabits, across an area hundreds of miles wide." | evidence (number) |
+| 9 | "To turn that into real coverage, you need thousands of cell towers on the ground." | mechanism |
+| 10 | "And that is exactly what bankrupted the last company that tried. Dish." | precedent |
+| 11 | "So why pay $19.6 billion?" | **rhetorical question** |
+| 12 | "It may be leverage, to squeeze a cheaper deal out of the carriers it's now threatening." | analysis |
+| 13 | "But a real fourth competitor could mean a lower phone bill for you." | **audience impact** |
+| 14 | "The airwaves were easy." | recap |
+| 15 | "The towers are the whole game." | close |
 
-**Disclosure:** AI-assisted, source-backed; no investment advice; no outcome stated as certain. Numbers spoken in words, shown as digits/`+92%`/`23%` on screen. No end-card branding (per direction).
+Transition words used: *And, Well, So, But, exactly.* No investment advice; nothing stated as certain ("may be," "could"). Numbers spoken in words, shown as digits on screen.

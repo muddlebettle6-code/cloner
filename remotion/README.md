@@ -1,9 +1,9 @@
 # Cumulant Reel Studio (Remotion)
 
-A React/TypeScript motion-graphics system for Cumulant short-form vertical reels. Black cinematic environment, magenta `#ff2d92` + white, approved fonts (Neue Haas Unica + Akkurat Mono), Vox-style explanatory charts, one 3D scene, natural male narration, synced captions, restrained sound design. Isolated in `remotion/`; the existing site and article pipeline are untouched (`remotion/` is excluded from the site tsconfig; site typecheck passes).
+A React/TypeScript motion-graphics system for Cumulant short-form vertical reels (v4: **LIGHT mode** — cream page `#f5f3ee`, ink text, magenta `#ff2d92`). Neue Haas Unica display font, detailed drei 3D objects (product-shot on cream), deep male narration, **one frame per sentence**, synced subtitles, an **original piano music** bed, varied low SFX, flowy transitions. Isolated in `remotion/`; the site is untouched (`remotion/` excluded from the site tsconfig; site typecheck passes).
 
 ## Output
-- **`out/CumulantReel_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~40.8 s, H.264 + AAC.
+- **`out/CumulantReel_v4_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~59 s, H.264 + AAC.
 - **`out/cover.png`** — thumbnail.
 
 ## Commands
@@ -11,7 +11,7 @@ Run from the project root.
 
 **Render at 4K** (`--scale=2` doubles the 1080×1920 comp to 2160×3840; `--gl=angle` is required for the 3D):
 ```bash
-npx remotion render remotion/index.ts CumulantReel remotion/out/CumulantReel_4k.mp4 \
+npx remotion render remotion/index.ts CumulantReel remotion/out/CumulantReel_v4_4k.mp4 \
   --public-dir=remotion/public --gl=angle --scale=2 --codec=h264 --audio-codec=aac --crf=18
 ```
 (Drop `--scale=2` for a faster 1080p preview render.)

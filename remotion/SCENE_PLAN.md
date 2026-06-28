@@ -1,14 +1,23 @@
-# Cumulant Reel — Scene Plan (v3, "0x100x" style)
+# Cumulant Reel — Scene Plan (v4, LIGHT mode)
 
-Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~29.4 s (881 frames)**, H.264. **Pure black** (no grid) + a single soft magenta glow. Font: **Neue Haas Unica**. Each scene = a small **running top caption** + a **big focal element** (3D object / huge number / statement), flowy **zoom-through** transitions (each scene flies past the camera into the next). **No end card.**
+Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~59 s (1776 frames)**, H.264. **LIGHT mode** — soft cream page (`#f5f3ee`), ink text (`#17140f`), magenta accent (`#ff2d92`), product-shot soft shadows. Font: **Neue Haas Unica**. **One frame per sentence** (15 beats): related beats shift subtly, new ideas cut to a fresh visual. Each visual beat carries a **synced subtitle**. Transitions vary in the visuals (zoom / push / slide / **magenta wipe** / fade).
 
-| # | Frames | Top caption | Focal element | Motion | Transition | Sound |
-|---|---|---|---|---|---|---|
-| 1 | 0–116 | "The chip inside everything" | **3D memory module** + "The AI boom just hit your **wallet**." | chip rotates + bobs, camera drift | zoom-in | whoosh-in + soft impact |
-| 2 | 116–266 | "June 25, 2026" | **3D phone** (glossy, magenta screen) + "Apple and Microsoft raised prices. They blamed **memory**." | phone rotates + bobs | push-in | whoosh + pop |
-| 3 | 266–450 | "AI data centers are eating the supply" | huge **+92%** + "WHOLESALE MEMORY, ONE QUARTER" | overshoot scale-in | whoosh + riser | riser + **impact** on the number |
-| 4 | 450–595 | "The cheapest gadgets jumped the most" | **3D bars** (magenta +54%, white +33%, +29%) + labels APPLE TV / XBOX S / IPAD | bars grow, camera drift | zoom-in | whoosh + 3 **pops** (labels) |
-| 5 | 595–762 | "Inside your next computer" | huge **23%** + "OF THE COST IS MEMORY — UP FROM 16%" | overshoot scale-in | push-in | whoosh + impact |
-| 6 | 762–881 | "The catch" | "Chip prices always fall back. Your receipts **won't**." | line reveal | whoosh | whoosh + **subdrop** on "won't" |
+| # | Beat (sentence) | Focal visual | Transition |
+|---|---|---|---|
+| 1 | $19.6B hook | huge **$19.6B** + subtitle | zoom-in |
+| 2 | "Airwaves." | the word + **spectrum waves** | fade |
+| 3 | spectrum licenses | statement + waves | slide |
+| 4 | sell you a phone plan | **3D satellite** (Starlink) + subtitle | zoom-in |
+| 5 | a fourth carrier? | **question** (magenta) | magenta **wipe** |
+| 6 | here's what we found | statement (Cumulant) | push |
+| 7 | the easy part | statement | fade |
+| 8 | 2–4 Mbps | huge **2-4** + subtitle | zoom-in |
+| 9 | thousands of towers | **3D cell tower** + subtitle | magenta **wipe** |
+| 10 | bankrupted Dish | statement | slide |
+| 11 | so why pay $19.6B? | **question** | push |
+| 12 | leverage over carriers | statement | magenta **wipe** |
+| 13 | a lower phone bill for you | **3D phone** + subtitle | zoom-in |
+| 14 | the airwaves were easy | statement | fade |
+| 15 | the towers are the whole game | statement (close) | slide |
 
-**3D objects (3, detailed):** memory module, phone, 3D bars — all with **drei environment reflections + contact shadows**, white key + magenta rim. **Audio:** deep onyx VO (speed 1.18) dominant + a present pulsing music bed (pad + sub pulse + shimmer) + a swept-whoosh / impact / pop / riser / subdrop SFX palette matched to the motion. **Accessibility:** big text carries the narration; one magenta emphasis per beat (also the key term); eased motion, no strobing.
+**3D objects (3):** satellite, cell tower, phone — drei bright environment + soft contact shadows on the cream page. **Audio:** deep onyx VO (one clip per sentence) + an **original minor-key piano piece** (arpeggiated, Succession-vein, composed here) + a **varied, quiet SFX palette** (riser, pop, tick, whoosh, clink, ding, impact, subdrop) — a different sound per cut, none repeated, mixed low. **No end card.** Subtitles keep it readable without sound.

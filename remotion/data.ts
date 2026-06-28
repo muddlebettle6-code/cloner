@@ -1,47 +1,42 @@
-// Story data (v3) — 0x100x language: pure black, a running top caption + a big focal
-// statement / number / 3D object per beat, flowy transitions, no end card.
-// Topic: the AI memory shock (article facts only). Faster, ~29.4s.
+// Story data (v4) — LIGHT mode, one frame per sentence (~15 beats). Each beat has a
+// focal visual + a synced subtitle (the spoken sentence). Transitions vary; related
+// beats shift subtly, new ideas cut to a fresh visual. Topic: SpaceX spectrum.
 
 export type Line = { t: string; e?: string };
 export type Scene = {
   id: string;
   frames: number;
   vo: number;
-  kind: "object" | "statement" | "number" | "chart";
-  object?: "chip" | "phone" | "bars";
-  trans: "zoom" | "push" | "whoosh"; // entrance transition style
-  cap: string;           // running top caption (the connective idea)
-  lines?: Line[];        // big centered statement
-  num?: { value: string; sub: string }; // big number beat
+  kind: "number" | "statement" | "question" | "word" | "object";
+  object?: "satellite" | "tower" | "phone";
+  num?: { v: string; sub: string };
+  lines?: Line[];
+  waves?: boolean;
+  trans: "zoom" | "push" | "slide" | "wipe" | "fade";
+  sub: string; // subtitle = the spoken sentence
 };
 
 export const reel = {
-  title: "The AI memory shock is regressive: where memory is most of the machine, the price jumps most",
-  url: "cumulant.org/articles/ai-memory-shock-regressive-device-prices",
+  title: "SpaceX Paid $19.6 Billion for the Airwaves Dish Couldn't Turn Into a Network",
+  url: "cumulant.org/articles/spacex-19-billion-echostar-spectrum-towers-not-airwaves",
 
   scenes: [
-    { id: "s1", frames: 116, vo: 3.744, kind: "object", object: "chip", trans: "zoom",
-      cap: "The chip inside everything", lines: [{ t: "The AI boom just hit" }, { t: "your wallet.", e: "wallet" }] },
-    { id: "s2", frames: 150, vo: 4.896, kind: "object", object: "phone", trans: "push",
-      cap: "June 25, 2026", lines: [{ t: "Apple and Microsoft raised prices." }, { t: "They blamed memory.", e: "memory" }] },
-    { id: "s3", frames: 184, vo: 6.024, kind: "number", trans: "whoosh",
-      cap: "AI data centers are eating the supply", num: { value: "+92%", sub: "WHOLESALE MEMORY, ONE QUARTER" } },
-    { id: "s4", frames: 145, vo: 4.728, kind: "chart", trans: "zoom",
-      cap: "The cheapest gadgets jumped the most", lines: [] },
-    { id: "s5", frames: 167, vo: 5.448, kind: "number", trans: "push",
-      cap: "Inside your next computer", num: { value: "23%", sub: "OF THE COST IS MEMORY — UP FROM 16%" } },
-    { id: "s6", frames: 119, vo: 3.84, kind: "statement", trans: "whoosh",
-      cap: "The catch", lines: [{ t: "Chip prices always fall back." }, { t: "Your receipts won't.", e: "won't" }] },
+    { id: "s1", frames: 166, vo: 5.376, kind: "number", num: { v: "$19.6B", sub: "FOR AIRWAVES YOU CAN'T SEE" }, trans: "zoom", sub: "SpaceX just paid $19.6 billion for something you can't even see." },
+    { id: "s2", frames: 35, vo: 1.008, kind: "word", lines: [{ t: "Airwaves.", e: "Airwaves" }], waves: true, trans: "fade", sub: "Airwaves." },
+    { id: "s3", frames: 130, vo: 4.2, kind: "statement", lines: [{ t: "The right to broadcast" }, { t: "wireless signals.", e: "wireless signals" }], waves: true, trans: "slide", sub: "These are spectrum licenses. The right to broadcast wireless signals." },
+    { id: "s4", frames: 171, vo: 5.544, kind: "object", object: "satellite", trans: "zoom", sub: "And SpaceX hinted it could sell you a phone plan, straight from Starlink." },
+    { id: "s5", frames: 97, vo: 3.096, kind: "question", lines: [{ t: "A fourth phone" }, { t: "company?", e: "fourth" }], trans: "wipe", sub: "A fourth phone company, finally?" },
+    { id: "s6", frames: 102, vo: 3.264, kind: "statement", lines: [{ t: "Here's what" }, { t: "we found.", e: "found" }], trans: "push", sub: "Here's what we found when we dug into the numbers." },
+    { id: "s7", frames: 77, vo: 2.424, kind: "statement", lines: [{ t: "The airwaves were" }, { t: "the easy part.", e: "easy" }], trans: "fade", sub: "Buying the airwaves was the easy part." },
+    { id: "s8", frames: 205, vo: 6.672, kind: "number", num: { v: "2-4", sub: "MEGABITS, SHARED ACROSS HUNDREDS OF MILES" }, trans: "zoom", sub: "One Starlink beam shares just 2 to 4 megabits, across an area hundreds of miles wide." },
+    { id: "s9", frames: 151, vo: 4.872, kind: "object", object: "tower", trans: "wipe", sub: "To turn that into real coverage, you need thousands of cell towers on the ground." },
+    { id: "s10", frames: 130, vo: 4.176, kind: "statement", lines: [{ t: "It bankrupted" }, { t: "Dish.", e: "Dish" }], trans: "slide", sub: "And that is exactly what bankrupted the last company that tried. Dish." },
+    { id: "s11", frames: 72, vo: 2.256, kind: "question", lines: [{ t: "So why pay" }, { t: "$19.6 billion?", e: "$19.6 billion" }], trans: "push", sub: "So why pay $19.6 billion?" },
+    { id: "s12", frames: 159, vo: 5.16, kind: "statement", lines: [{ t: "Leverage over" }, { t: "the carriers.", e: "Leverage" }], trans: "wipe", sub: "It may be leverage, to squeeze a cheaper deal out of the carriers it's now threatening." },
+    { id: "s13", frames: 138, vo: 4.44, kind: "object", object: "phone", trans: "zoom", sub: "But a real fourth competitor could mean a lower phone bill for you." },
+    { id: "s14", frames: 61, vo: 1.896, kind: "statement", lines: [{ t: "The airwaves" }, { t: "were easy.", e: "easy" }], trans: "fade", sub: "The airwaves were easy." },
+    { id: "s15", frames: 82, vo: 2.568, kind: "statement", lines: [{ t: "The towers are" }, { t: "the whole game.", e: "whole game" }], trans: "slide", sub: "The towers are the whole game." },
   ] as Scene[],
-
-  evidence: {
-    bars: [
-      { label: "APPLE TV", value: 54, hi: true },
-      { label: "XBOX SERIES S", value: 33 },
-      { label: "IPAD", value: 29 },
-    ],
-    unit: "%",
-  },
 };
 
 export const TOTAL_FRAMES = reel.scenes.reduce((a, s) => a + s.frames, 0);
