@@ -1,0 +1,493 @@
+{
+  "published": true,
+  "slug": "dst-tariff-incidence-who-pays",
+  "headline": "Who really pays a digital services tax, and who would pay the tariff against it",
+  "deck": "On 26 June 2026 President Trump threatened a 100% tariff on any country that taxes US tech firms' digital revenue. The best available incidence evidence, drawn from millions of Amazon marketplace prices, shows local sellers and shoppers bear most of that tax rather than US shareholders. If the tariff is ever collected instead of merely threatened, it would fall on American importers, meaning the policy could tax Americans to answer a tax foreigners largely levy on themselves.",
+  "takeaways": [
+    "A digital services tax is billed to platforms like Google and Amazon, but on Amazon's marketplace the evidence shows independent sellers and their customers pay most of it through higher prices.",
+    "For the marketplace fees studied in France, Spain and the UK, buyers bore roughly 1.1 to 2.7 times the tax actually collected, a pattern economists call over-shifting.",
+    "On paper, only about 23 percent of Canada's digital tax was remitted by US-based firms, that is who is billed and not necessarily who ultimately bears it, before Canada repealed the tax under this same threat; the repeal got royal assent on 26 March 2026.",
+    "A 100 percent tariff is paid at the US border by American importers, so if imposed it would tax Americans to defend against a tax foreigners largely pay themselves.",
+    "But so far the threat has mostly worked as deterrence at zero tariff collected, so the cost-to-Americans case holds only if a tariff is actually triggered."
+  ],
+  "glossary": [
+    {
+      "term": "Digital services tax (DST)",
+      "definition": "A tax a government charges on the revenue a large online platform earns from users inside that country, regardless of where the company books its profits."
+    },
+    {
+      "term": "Tariff",
+      "definition": "A tax a government charges on imported goods, paid to the importing country's customs authority by the company bringing the goods in."
+    },
+    {
+      "term": "Tax incidence",
+      "definition": "Who actually ends up out of pocket from a tax, which can be different from who is legally billed for it."
+    },
+    {
+      "term": "Legal remittance",
+      "definition": "Who is formally required to file and hand the tax over to the government, which is not the same as who bears the economic cost."
+    },
+    {
+      "term": "Pass-through",
+      "definition": "The share of a tax that a company shifts onto its customers through higher prices rather than absorbing itself."
+    },
+    {
+      "term": "Over-shifting",
+      "definition": "When a company raises prices by more than the tax it owes, so customers pay more than the government collects."
+    },
+    {
+      "term": "Net of VAT",
+      "definition": "A price with value-added sales tax stripped out, so you are comparing the underlying cost rather than the checkout total."
+    },
+    {
+      "term": "VAT (value-added tax)",
+      "definition": "A broad sales tax added at each step of production and ultimately paid by the final shopper, common across Europe."
+    },
+    {
+      "term": "Fulfilled by Amazon (FBA)",
+      "definition": "A service in which independent sellers ship inventory to Amazon, and Amazon stores, packs and delivers it for a fee."
+    },
+    {
+      "term": "Third-party seller",
+      "definition": "An independent merchant who sells goods on a marketplace like Amazon rather than the marketplace selling the item itself."
+    },
+    {
+      "term": "Advertising channel",
+      "definition": "The slice of a digital tax that falls on online ad sales, the main business of Google and Meta, as opposed to marketplace sales."
+    },
+    {
+      "term": "Natural experiment",
+      "definition": "A real-world event that switches a policy on at a known date, letting researchers compare before and after as if it were a controlled test."
+    },
+    {
+      "term": "IEEPA",
+      "definition": "The International Emergency Economic Powers Act, a 1977 US law that lets a president regulate certain economic transactions during a declared national emergency."
+    },
+    {
+      "term": "Section 301",
+      "definition": "A US trade-law tool that lets the government investigate and retaliate against foreign practices it deems unfair, often with tariffs."
+    },
+    {
+      "term": "OECD Pillar One",
+      "definition": "A stalled global agreement that would reallocate where the world's largest firms pay tax, intended as a replacement for unilateral digital taxes."
+    },
+    {
+      "term": "Royal assent",
+      "definition": "The final formal approval that turns a bill passed by a Commonwealth parliament, such as Canada's, into law."
+    },
+    {
+      "term": "Own resource (EU budget)",
+      "definition": "A revenue stream, such as a proposed bloc-wide tax, that flows directly to the European Union's central budget rather than to a single member state."
+    },
+    {
+      "term": "Truth Social",
+      "definition": "The social-media platform President Trump uses to post public statements."
+    },
+    {
+      "term": "Deterrence",
+      "definition": "Using the threat of a penalty to stop someone from doing something, where the goal is to change behavior rather than to collect the penalty."
+    }
+  ],
+  "event": "On 26 June 2026 President Trump posted on Truth Social a threat of an immediate 100% tariff on goods from any country that imposes a digital services tax on US technology firms, saying it would supersede existing trade deals.",
+  "question": "A digital services tax is billed to a platform on its gross local revenue, but on the marketplace channel we can actually measure, who ends up paying it, and if the answer is mostly local sellers and shoppers rather than US shareholders, who would bear a 100% tariff imposed to defend those same US firms?",
+  "readingMinutes": 9,
+  "tags": [
+    "trade",
+    "tariffs",
+    "digital services tax",
+    "tax incidence",
+    "US-EU",
+    "technology",
+    "tax policy",
+    "digital-services-tax"
+  ],
+  "leadChartId": "pass-through",
+  "charts": [
+    {
+      "id": "pass-through",
+      "kind": "range",
+      "title": "How much buyers bear per unit of marketplace digital tax collected",
+      "subtitle": "Pass-through ratio on Amazon's marketplace; 1.0 means buyers pay exactly the tax collected",
+      "source": "Langenmayr and Muddasani, 'Navigating the Amazon: The Incidence of Digital Service Taxes' (2025)",
+      "units": "ratio of consumer cost to government revenue",
+      "note": "The France/Spain/UK band is the spread of those three countries' point estimates, not a single statistical confidence interval. Anything to the right of 1.0 is over-shifting: buyers pay more than the government collects. Italy's response was weak and not clearly different from no change. This covers the marketplace channel only, not digital advertising.",
+      "alt": "A range chart showing a pass-through ratio of about 1.1 to 2.7 across France, Spain and the UK, and a weaker 0.2 to 1.1 for Italy, with 1.0 marking full pass-through.",
+      "data": {
+        "items": [
+          {
+            "label": "France, Spain, UK",
+            "low": 1.1,
+            "mid": 1.9,
+            "high": 2.7
+          },
+          {
+            "label": "Italy",
+            "low": 0.2,
+            "mid": 0.65,
+            "high": 1.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "canada-split",
+      "kind": "comparison",
+      "title": "Who actually remitted Canada's 'tax on American companies'",
+      "subtitle": "Legal remittance before repeal, by type of filer (who is billed, not who ultimately bears it)",
+      "source": "Canada Revenue Agency figures reported by The Globe and Mail (2026)",
+      "units": "C$ million",
+      "note": "This is the legal remittance split only. The marketplace pass-through evidence pushes the real economic burden even further off the platforms and onto local sellers and buyers.",
+      "alt": "A bar comparison showing about C$148 million of Canada's digital tax was remitted by US-based firms versus about C$499 million by all other filers, out of roughly C$647 million total.",
+      "data": {
+        "bars": [
+          {
+            "label": "US-based firms (about 23%)",
+            "value": 148
+          },
+          {
+            "label": "All other filers (about 77%)",
+            "value": 499,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "scoreboard",
+      "kind": "table",
+      "title": "Is the threat actually halting the digital-tax trend?",
+      "subtitle": "Where each target stands as of late June 2026",
+      "source": "The Globe and Mail; Tax Foundation Europe; GOV.UK; European Commission",
+      "note": "The threat moves the rate on larger partners and has killed one tax outright, but it has not reversed the overall direction of travel.",
+      "alt": "A table summarizing how Canada, France, the UK and the EU each responded to the tariff threat and where their digital taxes stand now.",
+      "data": {
+        "columns": [
+          "Country or bloc",
+          "What the threat did",
+          "Where the tax stands now"
+        ],
+        "rows": [
+          [
+            "Canada",
+            "Announced intent to repeal in June 2025, one day before the first payment; repeal received royal assent 26 March 2026",
+            "Tax dead; CRA refunding about C$647 million collected"
+          ],
+          [
+            "France",
+            "An Assembly vote to double the rate to 6% died when the budget's revenue section was rejected",
+            "Base 3% tax kept; still collecting roughly 680 million euros a year"
+          ],
+          [
+            "UK",
+            "Kept its 2% DST through the 2025 US-UK trade talks",
+            "Receipts at a record near 800 million pounds in 2024-25"
+          ],
+          [
+            "EU (27)",
+            "Commission floated a bloc-wide 3% DST in late May 2026 as an EU budget own resource for 2028-2034",
+            "Proposed, estimated near 5 billion euros a year, not yet adopted"
+          ]
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A threat aimed at the wrong injury",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On Friday 26 June 2026, President Trump posted on Truth Social that any country imposing a digital services tax on American technology firms would face a 100% tariff on its goods, a duty that 'will supersede Trade Deals made with the Country, whether implemented, signed, or not.' Those tariffs, he wrote, would be imposed immediately. It was, almost word for word, the threat that pushed Canada to abandon its own digital tax in June 2025, one day before the first cheque was due."
+        },
+        {
+          "type": "p",
+          "text": "The stated logic is protective. A digital services tax, or DST, is a charge a government levies on the local revenue a big platform earns inside its borders. Think of it as a 2% or 3% toll on what firms like Google, Amazon, Meta and Apple book in a given country, designed to catch companies that sell heavily somewhere without leaving much taxable profit there. Washington's position is that these taxes single out American champions, and that a tariff is a fair shield."
+        },
+        {
+          "type": "p",
+          "text": "That framing rests on a hidden assumption: that the people hurt by a digital tax are US tech shareholders. If that were true, a retaliatory tariff would at least be aimed at the right injury. So we asked one narrow question and chased the data until it answered."
+        },
+        {
+          "type": "pullquote",
+          "text": "Who actually ends up paying a digital services tax? And if it is mostly local sellers and shoppers, who would bear a 100% tariff imposed to defend US firms?"
+        },
+        {
+          "type": "p",
+          "text": "The short answer, which the rest of this piece walks through step by step: on the one channel where we can measure prices to the penny, the foreigners the tariff claims to protect Americans from are largely taxing themselves. And a tariff to defend US tech, if it is ever actually collected, would be a tax on Americans. Both halves of that sentence come with caveats, and we will be explicit about them."
+        }
+      ]
+    },
+    {
+      "heading": "Step 1: Follow one tax through to a price tag",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The cleanest evidence on who pays a digital tax comes from a 2025 study with an unglamorous but exact method. In 'Navigating the Amazon: The Incidence of Digital Service Taxes,' economists Dominika Langenmayr and Rohit Reddy Muddasani tracked prices on Amazon's marketplace before and after several countries switched on their digital taxes. It is a natural experiment: the policy flips on at a known date, so you can compare the same products just before and just after."
+        },
+        {
+          "type": "p",
+          "text": "Here is why that setting is so useful. When a country turns on a digital tax, Amazon does something it announced openly: it adds a separate fee to the bill of the third-party sellers who use its marketplace, naming the tax as the reason. (A third-party seller is an independent merchant who lists goods on Amazon rather than Amazon selling the item itself.) The researchers then watched what those sellers did next: swallow the fee, or pass it to shoppers? Because millions of near-identical products carry timestamped prices, you can measure the answer to the penny."
+        },
+        {
+          "type": "p",
+          "text": "What they found: after the tax went live, the consumer price net of VAT (that is, with sales tax stripped out so you are comparing the underlying cost, not the checkout total) rose in France, Spain and the UK. In Italy the response was weak and not clearly distinguishable from no change at all. The sellers, in other words, did not eat the fee. They moved it down the line to shoppers."
+        },
+        {
+          "type": "callout",
+          "label": "How this claim could be wrong",
+          "text": "This is one channel, not the whole tax. The study measures Amazon marketplace seller prices. A DST also taxes digital advertising, the core business of Google and Meta, and sometimes data and intermediation services. Nothing here proves the advertising slice behaves the same way, and France's tax in particular leans heavily on advertising. We treat the advertising channel separately below, and we do not extend the marketplace finding to it without separate evidence."
+        }
+      ]
+    },
+    {
+      "heading": "Step 2: From over-shifting to who actually bears it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Rising prices alone do not tell you the size of the shift. So the researchers compared the extra amount buyers paid against the tax the government actually collected. That ratio is the pass-through. A pass-through of 1.0 means buyers cover the tax exactly. Below 1.0, the platform and its sellers absorb part of it. Above 1.0 is the striking case economists call over-shifting: buyers pay more than the state takes in."
+        },
+        {
+          "type": "chart",
+          "chartId": "pass-through"
+        },
+        {
+          "type": "p",
+          "text": "Across France, Spain and the UK the marketplace pass-through landed roughly between 1.1 and 2.7. In plain terms, for every euro or pound the government collected, buyers paid somewhere between about 1.10 and 2.70. A useful analogy: imagine a corner shop told it owes a new 10-cent levy on a tin of beans, and it quietly rounds the shelf price up by 20 cents, using the tax as cover to take a little extra. The customer pays the levy and then some; the shop is no worse off and may be slightly better off."
+        },
+        {
+          "type": "p",
+          "text": "Now connect that to who bears the tax, because over-shifting does not by itself prove the platform pays nothing. The chain is this. The tax is billed to the platform on its local revenue. The platform passes the named fee to its third-party sellers. Those sellers, the study shows, raise net-of-VAT prices by as much as or more than the fee. So the money is recovered from sellers and shoppers, and sometimes more than recovered. That leaves the platform's shareholders a small slice of the burden, and in the over-shifting cases possibly none. The tax meant to hit Silicon Valley is, on this channel, paid by people in Lyon and Leeds."
+        },
+        {
+          "type": "p",
+          "text": "The advertising channel points the same way, though it is not in this study. When the first DSTs took effect, Google publicly added itemized DST surcharges to advertiser invoices, for example a 2% fee on UK ads, telling advertisers the tax was the reason. A surcharge named on the bill is pass-through in its plainest form: the advertiser, often a local business, pays it. That is consistent with the marketplace finding, but it is a separate fact and we flag it as needing its own confirmation rather than folding it into the headline number."
+        }
+      ]
+    },
+    {
+      "heading": "Step 3: Canada's 'tax on American companies'",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Canada offers a second angle, this time on legal remittance, which is who is billed and hands the money over, as opposed to who ultimately bears it. Canada's DST was sold politically as a charge on US tech giants. When the Canada Revenue Agency tallied what had been collected before the tax was killed, the split was telling."
+        },
+        {
+          "type": "chart",
+          "chartId": "canada-split"
+        },
+        {
+          "type": "p",
+          "text": "Of roughly C$647 million collected, about C$148 million, near 23 percent, was remitted by US-based firms. The other 77 percent came from everyone else: Canadian and other non-US filers. And remember, this is only the legal split, who wrote the cheque. The marketplace incidence evidence from Step 2 says the economic burden slides even further off the platforms, because the firms that did remit recover much of it from their local customers. A tax framed as falling on American companies was, even on its own paperwork, mostly remitted by others, and in real economic terms more so."
+        },
+        {
+          "type": "p",
+          "text": "Canada then folded under the tariff threat. It announced in June 2025, one day before the first payment was due, that it would scrap the tax, and the repeal received royal assent on 26 March 2026. The CRA is now refunding the roughly C$647 million it had collected. Hold that fact; it is also the strongest argument against this article's own thesis, and we come back to it."
+        }
+      ]
+    },
+    {
+      "heading": "Then who pays the tariff?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A tariff is the mirror image of a DST when it comes to who is billed. It is collected at the US border, from the American company importing the goods. A 100% tariff on French goods is not a charge Paris pays. It is paid by the US importer, who generally passes it to American buyers, exactly the pass-through mechanism we just watched work in reverse."
+        },
+        {
+          "type": "p",
+          "text": "Make it concrete. A 100% tariff on French goods lands first on importers and buyers of French wine and champagne, luxury leather and cosmetics, and aircraft and aircraft parts, three of the larger US import lines from France, along with some pharmaceuticals. Double the border price and either the importer absorbs it or, more likely, the shelf price climbs and American consumers pay. And because the EU has a record of matching US tariffs with its own, US exporters, from bourbon distillers to farm and machinery firms, would face retaliation in Europe. The injury the policy claims to answer is largely borne abroad by foreigners; the cost of the answer is largely borne at home."
+        },
+        {
+          "type": "p",
+          "text": "We deliberately do not put a single ratio on that mismatch. An earlier draft compared France's annual DST take against total US imports from France, but those are different currencies, different years, and a tax-revenue figure against a gross-trade-flow figure, not comparable quantities. An honest like-for-like number, DST actually borne by US firms versus tariff cost actually borne by US importers, would require data we could not verify for this piece. So we make the direction claim, not a magnitude claim."
+        }
+      ]
+    },
+    {
+      "heading": "The strongest counterargument: what if the threat is the point?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the objection that does the most damage to our own thesis. If the tariff is never collected because the threat alone makes countries back down, then 'it would tax Americans' is conditional, and the realized cost to Americans may be close to zero. That is not hypothetical. It is what happened in Canada, where the threat killed the tax before a single tariff dollar was charged. The glossary entry for deterrence is doing real work here: the goal of a threat is to change behavior, not to collect the penalty."
+        },
+        {
+          "type": "chart",
+          "chartId": "scoreboard"
+        },
+        {
+          "type": "p",
+          "text": "But the scoreboard cuts both ways. The threat killed Canada's tax and capped France's attempt to double its rate. It did not remove France's existing 3% tax, did not touch the UK's 2% DST, now at record receipts near 800 million pounds, and did not stop the European Commission from floating a bloc-wide 3% digital tax in late May 2026. So the deterrent is partial: it moves the rate on larger partners and can kill a tax not yet in force, but it has not reversed the trend. The fair conclusion is narrow. If the tariff stays a threat that works, it is cheap for Americans and our cost framing does not bite. If a country holds firm, as the UK and the EU so far have, and the tariff is actually imposed, then the cost falls on American importers and buyers, to defend US firms from a tax those firms largely do not bear."
+        }
+      ]
+    },
+    {
+      "heading": "Why countries levy these taxes anyway",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is worth steelmanning the other side, because the incidence finding is not the same as saying DSTs are pointless. The standard case for them is that the largest platforms book enormous local sales while reporting little taxable profit in those same countries, by routing profit elsewhere. A DST is a blunt attempt to tax that local activity directly. Some pass-through is expected for any tax on a business, just as a corporate tax or a fuel tax partly reaches consumers; the fact that buyers bear much of a DST does not, on its own, make it a bad tax, any more than it makes VAT a bad tax."
+        },
+        {
+          "type": "p",
+          "text": "What the evidence does undercut is the specific political story on both sides: the story that a DST is a clean hit on foreign tech shareholders, and the mirror story that a tariff 'defending' those shareholders is costless to the home country. Both claims fail the incidence test. The OECD's Pillar One was meant to replace this messy unilateral fight with a shared rule on where the biggest firms pay tax, but it remains stalled, which is why the tariff-versus-DST standoff keeps recurring."
+        },
+        {
+          "type": "p",
+          "text": "So the finding is not that one side is righteous. It is that the same overlooked mechanic, pass-through, governs both the tax and the tariff, and both political slogans ignore it. A tax sold as hitting foreigners is largely paid by locals; a tariff sold as protecting Americans would, if charged, be largely paid by Americans."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Framed one narrow, falsifiable question: on the channel where prices are observable, who bears a DST, and by extension who would bear a retaliatory tariff.",
+    "Drew the core price evidence from a natural experiment: Langenmayr and Muddasani compare net-of-VAT Amazon marketplace prices just before and after DSTs switched on in France, Spain, the UK and Italy, using Amazon's openly announced seller fee as the shock.",
+    "Distinguished three concepts throughout: legal remittance (who is billed), pass-through (the share moved to customers), and incidence (who ultimately bears the cost).",
+    "Used Canada's CRA remittance split as separate evidence on legal remittance, and explicitly labeled it as remittance rather than incidence.",
+    "Scoped the marketplace finding to the marketplace channel; treated the advertising channel separately via Google's published DST surcharge practice and flagged it as needing independent confirmation.",
+    "Tested the thesis against its strongest counterargument, deterrence, using the scoreboard of how Canada, France, the UK and the EU actually responded.",
+    "Cut two charts from the prior draft (per-item prices in mixed currencies, and a tax-revenue-versus-trade-flow comparison) as not comparable, and made the magnitude claim a direction claim only.",
+    "Could not run live web verification this session because WebSearch and WebFetch permission was not granted; figures are carried from prior reporting and are flagged for desk re-verification before publication."
+  ],
+  "sources": [
+    {
+      "title": "Trump threatens 100% tariff over digital services taxes on US tech (26 June 2026 post)",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/26/trump-tariff-trade-tech-tax.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump threatens new tariffs over digital services taxes",
+      "publisher": "CBS News",
+      "url": "https://www.cbsnews.com/news/trump-digital-services-tax-tariff-europe/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Navigating the Amazon: The Incidence of Digital Service Taxes (2025)",
+      "publisher": "Langenmayr and Muddasani (working paper)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4848319",
+      "kind": "academic"
+    },
+    {
+      "title": "Ottawa to refund digital services tax collected before repeal; CRA remittance split",
+      "publisher": "The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/business/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Digital Services Tax Act repeal, royal assent 26 March 2026",
+      "publisher": "Parliament of Canada / Department of Finance Canada",
+      "url": "https://www.canada.ca/en/department-finance.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Digital Services Tax revenue, France",
+      "publisher": "Information Technology and Innovation Foundation (ITIF)",
+      "url": "https://itif.org/publications/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Digital Services Tax statistics and receipts, 2024-25",
+      "publisher": "GOV.UK / HM Revenue and Customs",
+      "url": "https://www.gov.uk/government/statistics/digital-services-tax-statistics",
+      "kind": "primary"
+    },
+    {
+      "title": "Proposal for a bloc-wide digital levy as an EU own resource (May 2026)",
+      "publisher": "European Commission",
+      "url": "https://commission.europa.eu/index_en",
+      "kind": "primary"
+    },
+    {
+      "title": "DST cost surcharges added to Google Ads invoices (regulatory operating cost)",
+      "publisher": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/9750227",
+      "kind": "primary"
+    },
+    {
+      "title": "Digital services taxes in Europe tracker",
+      "publisher": "Tax Foundation Europe",
+      "url": "https://taxfoundation.org/data/all/eu/digital-tax-europe/",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "The core price evidence covers the Amazon marketplace channel only. The advertising and intermediation channels of a DST are inferred from Google's surcharge practice, not directly measured here.",
+    "The 1.1 to 2.7 pass-through figure is the spread of France, Spain and UK point estimates from one study, not a single statistical confidence interval, and per-country precision is not shown.",
+    "The 23 percent Canada figure is legal remittance (who is billed), not economic incidence; the move from remittance to incidence relies on the marketplace pass-through evidence.",
+    "DST revenue figures and trade figures span different years and currencies, so the piece makes a direction claim about who bears each charge, not a magnitude claim about the ratio.",
+    "The cost of the tariff to Americans is conditional on the tariff actually being imposed; as a pure deterrent its realized cost may be near zero, as in Canada.",
+    "Two charts from the prior draft (mixed-currency per-item prices, and a DST-revenue-versus-import-flow comparison) were removed as not comparable."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/dst-tariff-incidence-who-pays.jpg",
+    "credit": "Photo: Anthony Quintano, CC BY 2.0, via Wikimedia Commons",
+    "caption": "A Google logo at the company's Silicon Valley headquarters, where US tech giants face new digital services taxes abroad and Washington has threatened retaliatory tariffs.",
+    "alt": "Exterior sign bearing the multicolored Google logo at the company's corporate headquarters campus"
+  },
+  "articleType": "news-analysis",
+  "secondarySections": [
+    "technology",
+    "policy"
+  ],
+  "companies": [
+    "Amazon",
+    "Google",
+    "Meta",
+    "Apple"
+  ],
+  "people": [
+    "Donald Trump",
+    "Dominika Langenmayr",
+    "Rohit Reddy Muddasani"
+  ],
+  "regions": [
+    "United States",
+    "Canada",
+    "France",
+    "United Kingdom",
+    "Spain",
+    "Italy",
+    "European Union"
+  ],
+  "industries": [
+    "Technology",
+    "E-commerce",
+    "Digital Advertising",
+    "Retail"
+  ],
+  "assetClasses": [
+    "Equities"
+  ],
+  "impactTags": [
+    "tariffs",
+    "tax-incidence",
+    "tax-policy",
+    "trade-retaliation",
+    "consumer-prices"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 78,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "Trump's 26 June 2026 threat of a 100% tariff on countries that levy digital services taxes on US tech firms rests on the assumption that those taxes hurt US shareholders.",
+    "Amazon marketplace price evidence shows independent sellers and shoppers, not US shareholders, bear most of a DST, with pass-through of roughly 1.1 to 2.7 (over-shifting) in France, Spain and the UK.",
+    "Only about 23% of Canada's C$647M DST was remitted by US-based firms before Canada repealed the tax under the same tariff threat (royal assent 26 March 2026).",
+    "A 100% tariff is paid at the US border by American importers, so collecting it would tax Americans to answer a tax foreigners largely levy on themselves.",
+    "The threat has so far worked mainly as deterrence at zero tariff collected, so the cost-to-Americans case holds only if a tariff is actually triggered."
+  ],
+  "whyItMatters": "The piece reframes a high-profile trade threat by tracing tax incidence: a duty pitched as defending US tech could instead raise costs for US importers and consumers of goods like French wine, luxury and aircraft parts, while inviting EU retaliation against US exporters. For investors and businesses it clarifies that the economic burden of digital taxes falls largely on local sellers and advertisers abroad, not Silicon Valley shareholders. The deterrence dynamic also shapes whether multiple countries keep, drop or expand digital taxes, affecting cross-border tech and trade exposure.",
+  "whatToWatch": [
+    "Whether any 100% tariff is actually triggered and collected, or remains a deterrent threat.",
+    "Fate of the European Commission's floated bloc-wide 3% digital tax and France's existing 3% DST.",
+    "UK DST receipts (near 800 million pounds) and any move to repeal or raise rates under US pressure.",
+    "EU retaliation risk against US exporters such as bourbon, farm and machinery firms."
+  ],
+  "primarySection": "trade",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T17:54:43.653Z"
+}
