@@ -1,15 +1,14 @@
-# Cumulant Reel — Scene Plan (v2)
+# Cumulant Reel — Scene Plan (v3, "0x100x" style)
 
-Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~40.8 s (1223 frames)**, H.264. Black / magenta `#ff2d92` / white. Fonts: **Neue Haas Unica** display only (all small text removed). A persistent magenta-glow background runs under every scene; foreground content uses varied transitions (flash / scale / blur). **Big centered text only**; beats swap in sync with the deep voice.
+Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~29.4 s (881 frames)**, H.264. **Pure black** (no grid) + a single soft magenta glow. Font: **Neue Haas Unica**. Each scene = a small **running top caption** + a **big focal element** (3D object / huge number / statement), flowy **zoom-through** transitions (each scene flies past the camera into the next). **No end card.**
 
-| # | Frames | Visual | Beats (big, centered) | Motion | Transition | Sound |
+| # | Frames | Top caption | Focal element | Motion | Transition | Sound |
 |---|---|---|---|---|---|---|
-| 1 Hook | 0–181 | **3D globe** (magenta wireframe, spins, scales up) | "The worst oil scare in years just **vanished**." → "But the barrels **never came back**." | object scale-in + text stamp | scale-in | swoosh-up + boom (globe lands) |
-| 2 Context | 181–413 | **3D barrel** (dark metal, magenta rim, rotates) | "A US strike shut the Strait of **Hormuz**." → "A **fifth** of the world's oil." | barrel rise + spin | **flash cut** | flash + boom + metallic clink |
-| 3 Number | 413–581 | **3D coin** + huge **$72** count-up | "BRENT, A BARREL" | coin spin + number count-up (overshoot) | scale-in | swoosh + clink + **bell ding** on land |
-| 4 Evidence | 581–777 | **Bar chart** PRICE 100 (magenta) · EXPORTS 75 · HORMUZ 35 | "Price recovered. Oil **didn't**." | bars grow (chartEase), values count | blur-in | riser + 3 ticks (bars) |
-| 5 Why | 777–937 | big centered text | "A ceasefire calmed the **fear**." → "The shortage **never ended**." | beat swap | **flash cut** | flash + **subdrop** on the consequence |
-| 6 What next | 937–1068 | big centered text | "A calm price on a fragile supply" → "can **snap back fast**." | beat swap (fast) | scale-in | swoosh + impact on "snap back fast" |
-| 7 Outro | 1068–1223 | **Cumulant mark** line-draws + wordmark | "Beyond the Norm. Beneath the Headlines." | stroke draw + overshoot | blur-in | whoosh, music fades |
+| 1 | 0–116 | "The chip inside everything" | **3D memory module** + "The AI boom just hit your **wallet**." | chip rotates + bobs, camera drift | zoom-in | whoosh-in + soft impact |
+| 2 | 116–266 | "June 25, 2026" | **3D phone** (glossy, magenta screen) + "Apple and Microsoft raised prices. They blamed **memory**." | phone rotates + bobs | push-in | whoosh + pop |
+| 3 | 266–450 | "AI data centers are eating the supply" | huge **+92%** + "WHOLESALE MEMORY, ONE QUARTER" | overshoot scale-in | whoosh + riser | riser + **impact** on the number |
+| 4 | 450–595 | "The cheapest gadgets jumped the most" | **3D bars** (magenta +54%, white +33%, +29%) + labels APPLE TV / XBOX S / IPAD | bars grow, camera drift | zoom-in | whoosh + 3 **pops** (labels) |
+| 5 | 595–762 | "Inside your next computer" | huge **23%** + "OF THE COST IS MEMORY — UP FROM 16%" | overshoot scale-in | push-in | whoosh + impact |
+| 6 | 762–881 | "The catch" | "Chip prices always fall back. Your receipts **won't**." | line reveal | whoosh | whoosh + **subdrop** on "won't" |
 
-**3D objects (3):** globe, barrel, coin — each white key + magenta rim on black, with a soft contact shadow; SFX matched to each object's motion. **Audio:** deep onyx VO (dominant) + pulsing music bed + 10-clip SFX palette. **Accessibility:** big text mirrors the narration on every scene; one magenta emphasis per beat (also the key term, not color-only); eased motion, no strobing; no sudden audio spikes.
+**3D objects (3, detailed):** memory module, phone, 3D bars — all with **drei environment reflections + contact shadows**, white key + magenta rim. **Audio:** deep onyx VO (speed 1.18) dominant + a present pulsing music bed (pad + sub pulse + shimmer) + a swept-whoosh / impact / pop / riser / subdrop SFX palette matched to the motion. **Accessibility:** big text carries the narration; one magenta emphasis per beat (also the key term); eased motion, no strobing.

@@ -1,46 +1,47 @@
-// Structured story data (v2): minimal, big-text-only, centered, faster. Each scene
-// shows one or two big centered beats synced to the deep VO. Content from the article.
+// Story data (v3) — 0x100x language: pure black, a running top caption + a big focal
+// statement / number / 3D object per beat, flowy transitions, no end card.
+// Topic: the AI memory shock (article facts only). Faster, ~29.4s.
 
-export type Beat = { t: string; e?: string }; // e = the word emphasized in magenta
+export type Line = { t: string; e?: string };
 export type Scene = {
   id: string;
   frames: number;
   vo: number;
-  kind: "text" | "object" | "number" | "chart" | "outro";
-  object?: "globe" | "barrel" | "coin";
-  trans: "flash" | "scale" | "blur"; // entrance transition style
-  beats: Beat[];
+  kind: "object" | "statement" | "number" | "chart";
+  object?: "chip" | "phone" | "bars";
+  trans: "zoom" | "push" | "whoosh"; // entrance transition style
+  cap: string;           // running top caption (the connective idea)
+  lines?: Line[];        // big centered statement
+  num?: { value: string; sub: string }; // big number beat
 };
 
 export const reel = {
-  title: "The Oil War Premium Round-Tripped in 17 Weeks. The Barrels Did Not.",
-  url: "cumulant.org/articles/oil-premium-roundtripped-barrels-did-not",
+  title: "The AI memory shock is regressive: where memory is most of the machine, the price jumps most",
+  url: "cumulant.org/articles/ai-memory-shock-regressive-device-prices",
 
   scenes: [
-    { id: "s1", frames: 181, vo: 5.928, kind: "object", object: "globe", trans: "scale",
-      beats: [{ t: "The worst oil scare in years just vanished.", e: "vanished" }, { t: "But the barrels never came back.", e: "never came back" }] },
-    { id: "s2", frames: 232, vo: 7.608, kind: "object", object: "barrel", trans: "flash",
-      beats: [{ t: "A US strike shut the Strait of Hormuz.", e: "Hormuz" }, { t: "A fifth of the world's oil.", e: "fifth" }] },
-    { id: "s3", frames: 168, vo: 5.472, kind: "number", object: "coin", trans: "scale",
-      beats: [{ t: "Right back where it started.", e: "started" }] },
-    { id: "s4", frames: 196, vo: 6.432, kind: "chart", trans: "blur",
-      beats: [{ t: "Price recovered. Oil didn't.", e: "didn't" }] },
-    { id: "s5", frames: 160, vo: 5.208, kind: "text", trans: "flash",
-      beats: [{ t: "A ceasefire calmed the fear.", e: "fear" }, { t: "The shortage never ended.", e: "never ended" }] },
-    { id: "s6", frames: 131, vo: 4.248, kind: "text", trans: "scale",
-      beats: [{ t: "A calm price on a fragile supply", e: "" }, { t: "can snap back fast.", e: "snap back fast" }] },
-    { id: "s7", frames: 155, vo: 5.064, kind: "outro", trans: "blur", beats: [] },
+    { id: "s1", frames: 116, vo: 3.744, kind: "object", object: "chip", trans: "zoom",
+      cap: "The chip inside everything", lines: [{ t: "The AI boom just hit" }, { t: "your wallet.", e: "wallet" }] },
+    { id: "s2", frames: 150, vo: 4.896, kind: "object", object: "phone", trans: "push",
+      cap: "June 25, 2026", lines: [{ t: "Apple and Microsoft raised prices." }, { t: "They blamed memory.", e: "memory" }] },
+    { id: "s3", frames: 184, vo: 6.024, kind: "number", trans: "whoosh",
+      cap: "AI data centers are eating the supply", num: { value: "+92%", sub: "WHOLESALE MEMORY, ONE QUARTER" } },
+    { id: "s4", frames: 145, vo: 4.728, kind: "chart", trans: "zoom",
+      cap: "The cheapest gadgets jumped the most", lines: [] },
+    { id: "s5", frames: 167, vo: 5.448, kind: "number", trans: "push",
+      cap: "Inside your next computer", num: { value: "23%", sub: "OF THE COST IS MEMORY — UP FROM 16%" } },
+    { id: "s6", frames: 119, vo: 3.84, kind: "statement", trans: "whoosh",
+      cap: "The catch", lines: [{ t: "Chip prices always fall back." }, { t: "Your receipts won't.", e: "won't" }] },
   ] as Scene[],
 
-  number: { value: 72, prefix: "$", decimals: 0, caption: "BRENT, A BARREL" },
   evidence: {
     bars: [
-      { label: "PRICE", value: 100, hi: true },
-      { label: "EXPORTS", value: 75 },
-      { label: "HORMUZ", value: 35 },
+      { label: "APPLE TV", value: 54, hi: true },
+      { label: "XBOX SERIES S", value: 33 },
+      { label: "IPAD", value: 29 },
     ],
+    unit: "%",
   },
-  outro: { wordmark: "Cumulant", tagline: "Beyond the Norm. Beneath the Headlines." },
 };
 
 export const TOTAL_FRAMES = reel.scenes.reduce((a, s) => a + s.frames, 0);

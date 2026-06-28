@@ -2,11 +2,11 @@
 
 ## Editorial sources (facts)
 All facts come from the Cumulant article and its cited reporting. Nothing invented.
-- **Article:** cumulant.org/articles/oil-premium-roundtripped-barrels-did-not (Cumulant, AI-assisted, source-backed)
-- OilPrice.com — Brent close / price levels
-- Al Jazeera — strike, Hormuz, ceasefire reporting
-- CNBC — tanker / Hormuz throughput
-- Euronews — Brent price reporting
+- **Article:** cumulant.org/articles/ai-memory-shock-regressive-device-prices (Cumulant, AI-assisted, source-backed)
+- 9to5Mac / MacRumors — Apple US price changes (25 Jun 2026)
+- Reuters via Investing.com — DRAM/NAND wholesale moves
+- CNBC / The Motley Fool — memory-shortage context
+- Gartner — memory as a share of a PC's bill of materials (16% → 23%)
 
 We cite and report; we do not republish their content or use their branded charts.
 
@@ -15,8 +15,8 @@ We cite and report; we do not republish their content or use their branded chart
 |---|---|---|---|
 | Neue Haas Unica (display) | `public/fonts/NeueHaasUnica-Regular.woff2` | Cumulant's existing licensed brand font (used site-wide) | all headlines, captions, wordmark |
 | Akkurat Mono (data) | `public/fonts/Akkurat-Mono.woff2` | Cumulant's existing licensed brand font | labels, source lines, topic chips |
-| 3D objects (globe, barrel, coin) | original `three.js` primitives in `objects3d.tsx` | original work — no external model | scenes 1, 2, 3 |
-| Chart / counter / logo mark / big text | original Remotion components | original work | scenes 3,4,7 + all |
+| 3D objects (memory module, phone, 3D bars) | original `three.js` + drei primitives in `objects3d.tsx` | original work — no external model | scenes 1, 2, 4 |
+| Big numbers / big statements / bar labels | original Remotion components | original work | all scenes (no end card / logo) |
 | Background (glow / grid / grain / vignette) | original procedural (CSS + inline SVG) | original work | all scenes |
 | Voiceover | OpenAI `gpt-4o-mini-tts`, voice **`onyx`** (deep) | generated via the project's OpenAI key; output owned per OpenAI terms; not a cloned real person | narration |
 | Music bed (pulsing pad) | procedurally synthesized (ffmpeg chord + sub pulse) | original, royalty-free (created here) | full reel |
