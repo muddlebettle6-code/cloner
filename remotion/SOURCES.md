@@ -2,11 +2,11 @@
 
 ## Editorial sources (facts)
 All facts come from the Cumulant article and its cited reporting. Nothing invented.
-- **Article:** cumulant.org/articles/may-pce-4-1-percent-oil-roundtrip-fed-hawkish (Cumulant, AI-assisted, source-backed)
-- U.S. Bureau of Economic Analysis — May PCE: headline 4.1%, core 3.4%
-- Federal Reserve — the June projections (2026 cuts erased, hikes penciled)
-- Federal Reserve Bank of Dallas — trimmed-mean PCE (~2.4%)
-- U.S. Energy Information Administration — Brent crude ($120+ during the Hormuz crisis, then round-tripped)
+- **Article:** cumulant.org/articles/dst-tariff-incidence-who-pays (Cumulant, AI-assisted, source-backed)
+- CNBC / CBS News — Trump's 26 Jun 2026 100% tariff threat
+- Langenmayr & Muddasani (working paper) — Amazon-marketplace DST pass-through (~1.1–2.7× onto buyers)
+- Parliament of Canada / Dept. of Finance — Canada's C$647M DST, ~23% remitted by US firms, then repealed
+- ITIF, GOV.UK / HMRC — DST design + collection context
 
 We cite and report; we do not republish their content or use their branded charts. Balanced framing; no investment advice.
 

@@ -1,37 +1,36 @@
-// Story data (v9) — the oil-spike / May-4.1%-inflation story. DARK mode, human
-// conversational script (female VO). One frame per sentence; subtitle from CAPTIONS[id].
-// Ends on a VISUAL-ONLY logo (no spoken outro).
+// Story data (v10) — DST "who really pays" (most recent article). DARK mode, human
+// female script. One frame per sentence; subtitle from CAPTIONS[id]. Visual-only ending.
 
 export type Bar = { label: string; value: number; disp?: string; hi?: boolean };
 export type Scene = {
   id: string; frames: number; vo: number;
-  object?: "barrel" | "thermometer" | "flame" | "gaspump" | "money";
-  level?: number;            // thermometer mercury level
-  num?: string; chart?: Bar[]; line?: boolean; follow?: boolean;
+  object?: "gate" | "laptop" | "cart" | "money";
+  num?: string; chart?: Bar[]; follow?: boolean;
   trans: "zoom" | "push" | "slide" | "wipe" | "fade";
 };
 
-const READINGS: Bar[] = [{ label: "HEADLINE", value: 4.1, disp: "4.1%", hi: true }, { label: "CORE", value: 3.4, disp: "3.4%" }, { label: "CALM MIDDLE", value: 2.4, disp: "2.4%" }];
+const PASS: Bar[] = [{ label: "THE TAX", value: 100, disp: "1×" }, { label: "WHAT YOU PAY", value: 270, disp: "2.7×", hi: true }];
+const REMIT: Bar[] = [{ label: "US FIRMS", value: 23, disp: "23%", hi: true }, { label: "EVERYONE ELSE", value: 77, disp: "77%" }];
 
 export const reel = {
-  title: "The Oil Spike Behind May's 4.1% Inflation Has Already Round-Tripped. The Fed Turned Hawkish Anyway.",
-  url: "cumulant.org/articles/may-pce-4-1-percent-oil-roundtrip-fed-hawkish",
+  title: "Who really pays a digital services tax, and who would pay the tariff against it",
+  url: "cumulant.org/articles/dst-tariff-incidence-who-pays",
 
   scenes: [
-    { id: "s1", frames: 213, vo: 6.48, object: "thermometer", level: 0.9, trans: "zoom" },
-    { id: "s2", frames: 121, vo: 3.888, object: "barrel", trans: "push" },
-    { id: "s3", frames: 125, vo: 4.032, object: "barrel", trans: "fade" },
-    { id: "s4", frames: 142, vo: 4.584, object: "barrel", num: "$120", trans: "slide" },
-    { id: "s5", frames: 179, vo: 5.808, line: true, trans: "wipe" },
-    { id: "s6", frames: 192, vo: 6.24, object: "gaspump", trans: "zoom" },
-    { id: "s7", frames: 125, vo: 4.032, chart: READINGS, trans: "push" },
-    { id: "s8", frames: 165, vo: 5.352, line: true, trans: "slide" },
-    { id: "s9", frames: 171, vo: 5.544, object: "thermometer", level: 0.45, num: "2.4%", trans: "fade" },
-    { id: "s10", frames: 79, vo: 2.472, object: "thermometer", level: 0.42, trans: "zoom" },
-    { id: "s11", frames: 233, vo: 7.608, object: "money", trans: "wipe" },
-    { id: "s12", frames: 112, vo: 3.6, object: "flame", trans: "push" },
-    { id: "s13", frames: 213, vo: 6.936, object: "money", trans: "slide" },
-    { id: "s14", frames: 208, vo: 6.792, object: "thermometer", level: 0.6, trans: "zoom" },
+    { id: "s1", frames: 191, vo: 5.76, object: "gate", num: "100%", trans: "zoom" },
+    { id: "s2", frames: 136, vo: 4.392, object: "laptop", trans: "push" },
+    { id: "s3", frames: 174, vo: 5.64, object: "money", trans: "fade" },
+    { id: "s4", frames: 146, vo: 4.728, object: "laptop", trans: "slide" },
+    { id: "s5", frames: 82, vo: 2.568, object: "cart", trans: "wipe" },
+    { id: "s6", frames: 156, vo: 5.064, object: "cart", trans: "fade" },
+    { id: "s7", frames: 203, vo: 6.624, chart: PASS, trans: "push" },
+    { id: "s8", frames: 189, vo: 6.144, object: "cart", trans: "slide" },
+    { id: "s9", frames: 156, vo: 5.064, object: "gate", num: "100%", trans: "zoom" },
+    { id: "s10", frames: 118, vo: 3.792, object: "gate", trans: "push" },
+    { id: "s11", frames: 247, vo: 8.088, object: "money", trans: "wipe" },
+    { id: "s12", frames: 63, vo: 1.944, chart: REMIT, trans: "fade" },
+    { id: "s13", frames: 213, vo: 6.936, num: "$0", trans: "slide" },
+    { id: "s14", frames: 177, vo: 5.76, object: "money", trans: "zoom" },
     { id: "s15", frames: 90, vo: 0, follow: true, trans: "fade" },
   ] as Scene[],
 };

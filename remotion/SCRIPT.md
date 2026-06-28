@@ -1,27 +1,30 @@
-# Cumulant Reel — Narration Script (v10 — May's 4.1% oil-inflation)
+# Cumulant Reel — Narration Script (v11 — DST "who really pays")
 
-**Story:** The oil spike behind May's 4.1% inflation has already round-tripped — and the Fed turned hawkish anyway.
-**Article:** cumulant.org/articles/may-pce-4-1-percent-oil-roundtrip-fed-hawkish
-**Voice:** OpenAI `gpt-4o-mini-tts`, voice **`nova`** (warm, expressive **female**), speed 1.06 — conversational, witty, *human* (not a narrator).
-**Runtime:** ~79 s · DARK mode · one frame per sentence (14 beats) + a **visual-only logo ending** (nothing spoken about Cumulant). **No music** — VO + synced SFX.
+**Story:** Who really pays a digital services tax — and who would pay the 100% tariff against it. (Most recent article, 28 Jun 2026.)
+**Article:** cumulant.org/articles/dst-tariff-incidence-who-pays
+**Voice:** OpenAI `gpt-4o-mini-tts`, voice **`nova`** (warm female), speed 1.06 — conversational, wry, *human*.
+**Runtime:** ~78 s · DARK mode · 14 beats + a **visual-only logo ending** (no spoken outro). **No music** — VO + synced SFX.
 
-> Human, casual delivery ("a little scary, right?", "but hold on", "here's the twist"). Balanced: the inflation scare looks real on the headline, but the oil that drove it already reversed — yet the Fed got tough days earlier; framed as an open tension, no investment advice. Facts from the article (BEA, Federal Reserve, Dallas Fed, EIA). Captions = exact spoken words, smoothly word-synced.
+> The "who really pays" hook (tax incidence). Balanced + accurate; framed around the irony, no investment advice. Facts from the article (CNBC, Langenmayr & Muddasani working paper, Parliament of Canada, ITIF, GOV.UK/HMRC). Captions = exact spoken words, word-synced.
 
 ## Beats
-1 "So, inflation just hit 4.1%. The highest in three years. A little scary, right?"
-2 "But hold on. Before you panic, look at what actually drove it."
-3 "Almost the whole jump came from one thing. Oil."
-4 "Back in the spring, crude shot past $120 a barrel."
-5 "There was a real crisis near the Strait of Hormuz. Tankers, threats, the whole thing."
-6 "And when oil gets pricey, it leaks into everything. Your gas, your groceries, shipping."
-7 "So yeah, the headline number looked ugly. But here's the twist."
-8 "That oil spike? It's already gone. Prices round-tripped, right back down."
-9 "And if you ignore the energy noise, the calm core of inflation is sitting around 2.4%."
-10 "Which is, basically, normal."
-11 "But the Fed didn't wait. Days earlier, they got tougher. Scrapped this year's rate cuts. Even hinted at hikes."
-12 "So they might be fighting a fire that's already out." *(the flame extinguishes)*
-13 "And that's not just abstract. Your mortgage, your car loan, your savings, they all hinge on what the Fed does next."
-14 "The number says hot. The oil says it's cooling. Now we find out who's right." *(grounded close — no corny question)*
-— *visual only:* the Cumulant mark + wordmark, no narration.
+1 "So, Trump just threatened a 100% tariff on any country that taxes American tech."
+2 "Sounds like he's sticking up for Google and Amazon, right?"
+3 "But here's the thing about taxes. Whoever gets billed isn't always who actually pays."
+4 "Take a digital services tax. On paper, it hits the big platforms."
+5 "But the receipts tell a different story."
+6 "Researchers checked millions of Amazon prices, in France, Spain, and the UK."
+7 "And shoppers ended up paying way more than the tax itself. Up to 2.7 times more."
+8 "So that tax on Big Tech? It mostly lands on local sellers, and you, the shopper."
+9 "Now flip it around. The 100% tariff to fight back?"
+10 "That gets paid at the US border. By American importers."
+11 "So it taxes Americans, on things like French wine and airplane parts, to fight a tax foreigners mostly pay themselves."
+12 "Wild, right?"
+13 "And here's the kicker. The threat alone already worked. Canada just scrapped its tax. Zero tariff collected."
+14 "So the real question was never who's targeted. It's who actually pays."
+— *visual only:* the Cumulant mark + wordmark.
 
-**Facts:** headline PCE 4.1% (hottest since Apr 2023); core 3.4%; Dallas Fed trimmed mean ~2.4%; Brent > $120 during the Hormuz crisis, then round-tripped; the Fed erased 2026 cuts + penciled hikes ~8 days before the print.
+**Facts:** Trump's 26 Jun 2026 threat of a 100% tariff; Amazon-marketplace pass-through of ~1.1–2.7× of the DST onto buyers (France/Spain/UK); only ~23% of Canada's C$647M DST remitted by US-based firms; the tariff is collected at the US border from American importers; Canada repealed its DST under the threat, with zero tariff actually collected.
+
+## 3D / visuals
+Border gate (the tariff), laptop (Big Tech), shopping cart (the shopper who pays), coin stacks; charts: THE TAX 1× vs WHAT YOU PAY 2.7×, and US FIRMS 23% vs EVERYONE ELSE 77%; big numbers 100% and $0.
