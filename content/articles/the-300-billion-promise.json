@@ -1,0 +1,682 @@
+{
+  "published": true,
+  "slug": "the-300-billion-promise",
+  "headline": "The $300 Billion Promise: Iran's Reconstruction Headline Meets the Historical Base Rate",
+  "deck": "On 17 June a US-Iran memorandum pledged 'at least $300 billion' to rebuild Iran, and markets banked the windfall before a single funder was named. The historical record of pledges-versus-money-delivered, and the deal's own fine print, suggest less than a quarter of it is likely to arrive within two to three years.",
+  "takeaways": [
+    "The 17 June US-Iran memorandum pledges 'at least USD 300 billion' for reconstruction, but names no country, no fund, and does not define whether the money is grants, loans, equity, or unfrozen Iranian assets, only a 60-day clock to settle the 'mechanism.'",
+    "Reconstruction headlines historically deliver a fraction of their announced size; the best modern cases (Haiti 2010, Gaza 2014) got roughly half of the money out within about three years, the worst (Lebanon 2018, Gaza 2025-26) close to nothing.",
+    "Iran already ran this experiment: after the 2015 nuclear deal, foreign direct investment peaked at about $5 billion in 2017 against a hope of $30-50 billion a year, barely a tenth of the plan, then fell by more than half when sanctions were reimposed.",
+    "As of late June no Gulf state has confirmed a financial commitment; Qatar's government called the fund 'aspirational' and denied pledging money, and only one concrete legal authorization (an OFAC oil license that expires 21 August 2026) is actually live.",
+    "Market prices moved, Brent crude round-tripped to about $72, the rial strengthened about 13%, but that is expectations repricing, not capital deployed, and the legal relief so far is temporary and revocable."
+  ],
+  "glossary": [
+    {
+      "term": "Memorandum of Understanding (MoU)",
+      "definition": "A signed statement of intent between parties that records what they have agreed to work toward; it is not a binding contract that forces anyone to hand over money."
+    },
+    {
+      "term": "Reconstruction fund",
+      "definition": "A pool of money meant to rebuild a country's economy and infrastructure after a war or disaster."
+    },
+    {
+      "term": "Pledge-to-disbursement gap",
+      "definition": "The well-documented difference between money that is publicly promised ('pledged') and money that actually arrives and gets spent ('disbursed')."
+    },
+    {
+      "term": "Foreign direct investment (FDI)",
+      "definition": "Money that a company or investor in one country puts directly into building or buying a business in another country, as opposed to just buying its stocks or bonds."
+    },
+    {
+      "term": "Disbursement",
+      "definition": "The point at which promised money is actually paid out and reaches the recipient, rather than merely being announced."
+    },
+    {
+      "term": "JCPOA",
+      "definition": "The Joint Comprehensive Plan of Action, the 2015 nuclear deal under which Iran limited its nuclear program in exchange for sanctions relief; the US withdrew in 2018."
+    },
+    {
+      "term": "Sanctions",
+      "definition": "Government penalties that restrict or ban trade and financial dealings with a country, company, or person."
+    },
+    {
+      "term": "Snapback",
+      "definition": "A built-in mechanism that lets previously lifted sanctions be quickly reimposed if one side believes the other has broken the deal."
+    },
+    {
+      "term": "Secondary sanctions",
+      "definition": "US penalties aimed not at Iran directly but at foreign banks and firms that do business with Iran, which is why global banks often avoid Iran even when their own country allows it."
+    },
+    {
+      "term": "OFAC chill",
+      "definition": "The documented tendency of banks and companies to steer clear of a sanctioned market even after rules are loosened, for fear of accidentally triggering US penalties, named after the US Office of Foreign Assets Control."
+    },
+    {
+      "term": "OFAC",
+      "definition": "The US Treasury's Office of Foreign Assets Control, the agency that writes and enforces US economic sanctions."
+    },
+    {
+      "term": "General License",
+      "definition": "A public OFAC authorization that permits a specific category of otherwise-banned transactions, often for a limited time, without each party needing its own individual approval."
+    },
+    {
+      "term": "Sovereign wealth fund",
+      "definition": "A large investment fund owned by a national government, typically built from oil revenue or trade surpluses, such as those of the UAE, Saudi Arabia, or Qatar."
+    },
+    {
+      "term": "GCC",
+      "definition": "The Gulf Cooperation Council, a bloc of six Gulf Arab states: Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain, and Oman."
+    },
+    {
+      "term": "IRGC",
+      "definition": "Iran's Islamic Revolutionary Guard Corps, a powerful military and economic force inside Iran that the US designates as a terrorist organization, which complicates investing in much of Iran's economy."
+    },
+    {
+      "term": "Brent crude",
+      "definition": "The main international benchmark price for a barrel of oil, widely used to track the global oil market."
+    },
+    {
+      "term": "Risk premium",
+      "definition": "The extra price markets attach to something because of perceived danger, here, the higher oil price caused by fear of war disrupting supply."
+    },
+    {
+      "term": "Round-trip",
+      "definition": "When a price spikes on news and then returns to roughly where it started, ending up about where it began."
+    },
+    {
+      "term": "Rial",
+      "definition": "Iran's national currency, whose exchange rate against the US dollar is a closely watched gauge of confidence in Iran's economy."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "definition": "The narrow sea passage at the mouth of the Persian Gulf through which a large share of the world's oil is shipped; closing or reopening it moves global oil prices."
+    },
+    {
+      "term": "Prospective relief",
+      "definition": "Sanctions easing that is promised for the future and conditional on further steps, rather than already in force."
+    },
+    {
+      "term": "Marshall Plan",
+      "definition": "The large US program that helped rebuild Western Europe after World War II, often used as the yardstick for big reconstruction efforts; it cost about $13 billion at the time, worth far more in today's money."
+    },
+    {
+      "term": "Board of Peace",
+      "definition": "The US-led body set up in late 2025 to oversee and fund Gaza's reconstruction; its official fund had received almost no money as of mid-2026."
+    },
+    {
+      "term": "CEDRE",
+      "definition": "A 2018 international donor conference in Paris that pledged over $11 billion, mostly in loans, to Lebanon on the condition of reforms that were never carried out."
+    },
+    {
+      "term": "Madrid conference (2003)",
+      "definition": "An international donor meeting that gathered pledges to rebuild Iraq after the US-led invasion."
+    },
+    {
+      "term": "Basic point / base rate",
+      "definition": "The historical average outcome for a type of event, used as a starting expectation, here, how much of a typical reconstruction pledge actually gets delivered."
+    }
+  ],
+  "event": "On 17 June 2026 the US and Iran signed a 14-point memorandum of understanding, mediated by Pakistan (the 'Islamabad Memorandum'), that pledges 'at least USD 300 billion' for Iran's reconstruction, with the implementation mechanism to be finalised within 60 days. As of late June no funder has been named, Qatar has called the figure 'aspirational,' and only a single temporary OFAC oil license is in force.",
+  "question": "When a reconstruction headline like the $300 billion pledged to Iran is announced, how much of it actually arrives as deployed capital, and what does the historical track record predict for this number?",
+  "readingMinutes": 12,
+  "tags": [
+    "Iran",
+    "sanctions",
+    "reconstruction finance",
+    "geopolitics",
+    "oil",
+    "FDI",
+    "Middle East",
+    "macro"
+  ],
+  "leadChartId": "delivery-base-rate",
+  "charts": [
+    {
+      "id": "delivery-base-rate",
+      "kind": "bar",
+      "title": "Headlines pledged, money delivered",
+      "subtitle": "Share of the announced reconstruction headline that actually reached the ground within about three years",
+      "source": "Haiti: NPR/Office of the Special Envoy (48.2% of $10.4bn disbursed by the two-year mark); Gaza 2014: Brookings (51% of $5.4bn by end-2016); Iraq: GAO-08-365R ($1.8bn of $10.85bn in loans accessed by 2007); Iran post-JCPOA: UNCTAD World Investment Reports and Tehran Times; Lebanon CEDRE: France24 and OECD; Gaza 2025-26: Euronews and UN report S/2026/418",
+      "units": "% of headline delivered",
+      "period": "various, each measured ~3 years after the pledge",
+      "note": "Iran's 2026 fund has no funder named and a 60-day clock still running, so its delivery is 'TBD.' The Iraq bar shows the loan portion of the Madrid pledges, of which only about a sixth was even put under agreement by 2007. Cases differ in structure (grants vs loans vs private investment), so this is a base rate, not a like-for-like ranking.",
+      "alt": "Horizontal bar chart showing the share of reconstruction headlines actually delivered within about three years: Haiti 2010 about 48 percent by 2012, Gaza 2014 about 51 percent by 2016, Iraq Madrid non-US loans about 17 percent by 2007, Iran post-JCPOA FDI about 12 percent of plan, Lebanon CEDRE near 1 percent, Gaza 2025-26 near 1 percent, and the 2026 Iran reconstruction fund marked TBD at zero.",
+      "data": {
+        "max": 100,
+        "bars": [
+          {
+            "label": "Gaza, Cairo conf. (2014, by 2016)",
+            "value": 51
+          },
+          {
+            "label": "Haiti donor conf. (2010, by 2012)",
+            "value": 48
+          },
+          {
+            "label": "Iraq, Madrid non-US loans (2003, by 2007)",
+            "value": 17
+          },
+          {
+            "label": "Iran post-JCPOA FDI (2016-18 vs plan)",
+            "value": 12,
+            "highlight": true
+          },
+          {
+            "label": "Lebanon CEDRE (2018, ~93% loans)",
+            "value": 1
+          },
+          {
+            "label": "Gaza recovery fund (2025-26)",
+            "value": 1
+          },
+          {
+            "label": "Iran reconstruction fund (2026 MoU)",
+            "value": 0,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "iran-fdi",
+      "kind": "line",
+      "title": "Iran's 'wall of money' that never came",
+      "subtitle": "Foreign direct investment into Iran after the 2015 nuclear deal lifted sanctions, against a hope of $30-50 billion a year",
+      "source": "UNCTAD World Investment Reports (compiled); Tehran Times citing UNCTAD (2017 inflow of about $5bn, up nearly 50% on 2016); UNCTAD 2020 report (2018 inflow about $2.4bn)",
+      "units": "USD billions, annual FDI inflow",
+      "period": "2015-2018",
+      "note": "Iran's development plans implied roughly $40-50 billion a year in foreign financing and investment. The 2017 peak of about $5 billion was little more than a tenth of that hope; inflows then fell by more than half in 2018 as the US prepared to exit the deal and reimpose sanctions.",
+      "alt": "Line chart of annual foreign direct investment into Iran rising from about 2.05 billion dollars in 2015 to 3.4 billion in 2016 and a peak of about 5.02 billion in 2017, then falling by more than half to about 2.4 billion in 2018.",
+      "data": {
+        "series": [
+          {
+            "name": "Iran FDI inflow ($bn)",
+            "points": [
+              {
+                "x": "2015",
+                "y": 2.05
+              },
+              {
+                "x": "2016",
+                "y": 3.4
+              },
+              {
+                "x": "2017",
+                "y": 5.02
+              },
+              {
+                "x": "2018",
+                "y": 2.4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "market-reaction",
+      "kind": "comparison",
+      "title": "The price moved; the capital did not",
+      "subtitle": "The rial strengthened from above 1.8 million to about 1.57 million per dollar, roughly 13%, while Brent crude round-tripped to about $72. Both are expectations repricing, not money on the ground.",
+      "source": "Iran International, 17-20 June (rial); Al Jazeera, 25 June (Brent crude back to pre-war levels, about $72, lowest since 27 February)",
+      "units": "'000 rial per US dollar (lower = stronger rial)",
+      "period": "17-26 June 2026",
+      "note": "Brent is omitted from the bars because at about $72 it would be invisible next to figures in the millions; it is described in the subtitle instead. The rial figures are free-market rates. A stronger currency and a cheaper barrel both reflect hope that money and oil are coming, not capital that has arrived.",
+      "alt": "Comparison of the Iranian rial's free-market exchange rate showing the dollar falling from above 1.8 million rials during the conflict to about 1.57 million rials after the agreement, a strengthening of roughly 13 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "Rial before deal ('000s per $)",
+            "value": 1800
+          },
+          {
+            "label": "Rial after deal, ~13% stronger ('000s per $)",
+            "value": 1570,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "deal-timeline",
+      "kind": "timeline",
+      "title": "From signature to a clock with no funder",
+      "source": "Reuters/Iran International, NPR, Al Jazeera, PolitiFact, OFAC, Jerusalem Post, Express Tribune, CNN",
+      "alt": "Timeline of June 2026 events from the leaked memorandum text to the live OFAC oil license and Gulf states declining to commit money.",
+      "data": {
+        "events": [
+          {
+            "date": "16 Jun 2026",
+            "title": "Reuters: a 'private investment fund'",
+            "detail": "Reuters reports more than half of the $300bn is 'already committed' to a private vehicle, citing one anonymous source with direct knowledge of the deal."
+          },
+          {
+            "date": "17 Jun 2026",
+            "title": "Memorandum signed remotely",
+            "detail": "The US and Iran sign a 14-point memorandum mediated by Pakistan; Trump signs at a Versailles dinner, Pezeshkian in Tehran. The text pledges 'at least USD 300 billion.'"
+          },
+          {
+            "date": "18 Jun 2026",
+            "title": "Al Jazeera: 'no countries have yet confirmed'",
+            "detail": "Sovereign money has not materialized; the rial rallies and Iranian stocks climb on the news."
+          },
+          {
+            "date": "19 Jun 2026",
+            "title": "Gulf states hold back",
+            "detail": "No GCC state confirms a financial commitment; the UAE signals conditions and Saudi Arabia waits for proof of changed Iranian conduct."
+          },
+          {
+            "date": "22 Jun 2026",
+            "title": "OFAC General License X; PolitiFact can't verify funders",
+            "detail": "One concrete authorization goes live, permitting Iranian oil sales through 21 August; fact-checkers find no named funders for the $300bn."
+          },
+          {
+            "date": "24 Jun 2026",
+            "title": "Qatar calls it 'aspirational'; Gulf allies alarmed",
+            "detail": "Qatar's government denies pledging money and calls the figure 'aspirational'; CNN reports Gulf allies privately see the deal as a 'disastrous turning point.'"
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A headline that does the heavy lifting",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 17 June, in a 14-point document negotiated through Pakistan and signed remotely, by the US president at a Versailles dinner with Emmanuel Macron, and by Iran's president Masoud Pezeshkian in Tehran, one number did the heavy lifting. The United States, the text reads, 'undertakes with regional partners to develop a definitive, mutually agreed plan with at least USD 300 billion, for the reconstruction and economic development of the Islamic Republic of Iran.' The mechanism, the same clause adds, is to be finalised within 60 days."
+        },
+        {
+          "type": "p",
+          "text": "Three hundred billion dollars. It is one of the largest reconstruction headlines ever attached to a single country, larger than the Marshall Plan in today's money, and several times what the international community pledged to rebuild Iraq in 2003. It is also the plank carrying the most weight in the whole agreement: Iran's incentive to hold the ceasefire and constrain its nuclear program is tied to the windfall it expects."
+        },
+        {
+          "type": "p",
+          "text": "Markets have already banked that windfall. Brent crude round-tripped to about $72 a barrel by 26 June, its lowest since 27 February, effectively back to where it sat before the war began, on the assumption that the barrels and the money are both on their way. The rial strengthened by roughly 13% against the dollar. None of that is the same thing as capital arriving. Holding those two ideas apart, a price moving on expectations versus money actually deployed, is the whole job here."
+        },
+        {
+          "type": "callout",
+          "label": "The central question",
+          "text": "When a reconstruction headline like this is announced, how much of it actually arrives as deployed capital within two to three years, and what does the historical track record predict for the $300 billion? Our answer, grounded in the base rate and the deal's own legal text: probably less than a quarter of it, and quite possibly far less."
+        }
+      ]
+    },
+    {
+      "heading": "A contradiction worth a thousand words",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with a seam that opened the moment the number went public. On 16 June, Reuters reported that the $300 billion would take the form of 'a private investment fund,' with 'more than half of the sum already committed,' citing a single source 'with direct knowledge of the deal.' One day later, Al Jazeera reported the opposite mood: 'No countries have yet confirmed financial commitments to the plan.'"
+        },
+        {
+          "type": "p",
+          "text": "Half-committed, or nobody's committed? Resolving that is the first reporting step, because the two statements are not actually in conflict. Reuters' 'more than half committed' refers to a private pool of companies and rests on one anonymous source; 'committed' there means pledged to a vehicle, not wired to a project. Al Jazeera's 'no countries have confirmed' refers to sovereign money, which is what the memorandum's 'regional partners' language actually calls for. One source says private money is lining up. The on-the-record reality is that no state has put its name down."
+        },
+        {
+          "type": "p",
+          "text": "And the on-the-record reality has only hardened. As of 19 June, no GCC state had publicly confirmed a financial commitment; the UAE set conditions without naming a figure, and Saudi Arabia signaled it is waiting for proof that Tehran's conduct will change. By 24 June, Qatar's foreign ministry had explicitly denied that Doha had pledged any money, and Qatar's prime minister called the $300 billion an 'aspirational number' that Gulf states might help finance only if Iran reaches a final settlement. The same day, CNN reported that Gulf allies privately regard the agreement as a 'disastrous turning point.'"
+        },
+        {
+          "type": "p",
+          "text": "Even the US president has muddied the picture, insisting 'There is no $300 Billion Dollar payment to Iran by the U.S.' and that not a cent of American taxpayer money will go to Iran, while the text he signed commits Washington to 'undertake' the fund. PolitiFact, reviewing the claim on 22 June, found no public information on which specific entities have pledged investments. The frozen-asset relief mentioned elsewhere in the memorandum is a separate provision, not part of the $300 billion. In other words: a giant number, a 60-day clock, and not one named funder."
+        },
+        {
+          "type": "chart",
+          "chartId": "deal-timeline"
+        }
+      ]
+    },
+    {
+      "heading": "What the historical record predicts",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The honest way to forecast a number like this is not to argue about Iran's intentions but to ask what usually happens. Reconstruction conferences have a long, well-documented track record, and it has a name among aid economists: the pledge-to-disbursement gap, the chronic distance between money promised on a podium and money that actually shows up. So we collected the best-measured modern cases and asked one question of each: of the headline announced, what share had actually reached the ground roughly three years later?"
+        },
+        {
+          "type": "p",
+          "text": "The answer is sobering even for the success stories. After Haiti's 2010 earthquake, donors pledged about $10.4 billion for recovery; at the two-year mark, only about 48% had been disbursed, and far less reached Haitian hands. After the 2014 Gaza war, the Cairo conference pledged $5.4 billion; by the end of 2016, about 51% had been paid out. Those are the good cases: roughly half, and slowly."
+        },
+        {
+          "type": "p",
+          "text": "Below them, the record drops off a cliff. Of the loans pledged to Iraq at the 2003 Madrid conference, government auditors found that only about a sixth, some $1.8 billion of $10.85 billion, had even been put under agreement by 2007, let alone spent. Lebanon's 2018 CEDRE conference produced over $11 billion in pledges, more than 90% of them loans tied to reforms Beirut never enacted; years later, almost none of it had been disbursed. And the freshest cautionary tale is next door: the Gaza recovery fund created under the 2025 ceasefire collected roughly $17 billion in pledges, yet by mid-May 2026 only about 1% had actually been transferred, and the official fund the World Bank administers sat empty."
+        },
+        {
+          "type": "chart",
+          "chartId": "delivery-base-rate"
+        },
+        {
+          "type": "pullquote",
+          "text": "The good cases delivered about half, slowly. The bad cases delivered almost nothing. None delivered the headline."
+        },
+        {
+          "type": "p",
+          "text": "A fair objection: these cases differ. Some were grants, some loans, some sovereign, and Iran's is pitched as private investment. That is exactly why this is a base rate and not a prediction, a starting expectation drawn from how these announcements actually play out. But the structure of Iran's deal points to the bottom of the range, not the top. Private money is more skittish than government grants, not less; loans and investment require a borrower or a project to absorb them; and Iran carries a sanctions overhang that none of these other cases did."
+        }
+      ]
+    },
+    {
+      "heading": "Iran already ran this experiment",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is one case that matches Iran almost perfectly, because it is Iran. After the 2015 nuclear deal lifted sanctions, the expectation was a 'wall of money': Iran's own development plans implied something like $40-50 billion a year in foreign financing and investment, and Western firms from France's Total to China's CNPC queued up for its oil and gas."
+        },
+        {
+          "type": "p",
+          "text": "Here is what the wall actually looked like. Foreign direct investment, money put directly into building or buying businesses, the kind that creates jobs and capacity, rose from about $2 billion in 2015 to roughly $3.4 billion in 2016 and peaked near $5 billion in 2017, according to UN trade data. That peak was little more than a tenth of the annual hope. Then the US announced it would leave the deal, and inflows fell by more than half in 2018, to about $2.4 billion. The capital did not so much arrive as briefly knock on the door and leave."
+        },
+        {
+          "type": "chart",
+          "chartId": "iran-fdi"
+        },
+        {
+          "type": "p",
+          "text": "The reason matters for 2026, because it was not mainly about Iran's economy. It was about the global banks and corporations that decide where money goes. They live in fear of US secondary sanctions, penalties aimed not at Iran but at any foreign firm that deals with it, and of the 'OFAC chill,' the documented habit of steering clear of a sanctioned market even after the rules loosen, because the cost of a mistake is being locked out of the dollar. Add the Revolutionary Guard's grip on swathes of the Iranian economy, which makes clean deals hard to structure, and you have a market that repriced on hope in 2015 and was empty by 2018. The 2026 promise asks the same investors to believe a temporary, revocable easing this time."
+        }
+      ]
+    },
+    {
+      "heading": "The price moved; the capital did not",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So what exactly did move? Two prices, and only prices. Brent crude, which had carried a war 'risk premium', the extra cost markets attach to oil when they fear supply will be cut, gave that premium back as the Strait of Hormuz reopened and Gulf exports resumed, round-tripping to about $72 by 26 June. And the rial, which had sunk above 1.8 million to the dollar during the fighting, strengthened to about 1.57 million afterward, a gain of roughly 13%."
+        },
+        {
+          "type": "chart",
+          "chartId": "market-reaction"
+        },
+        {
+          "type": "p",
+          "text": "Both moves are real, and both are expectations repricing, traders betting that oil will flow and that Iran's economy will breathe easier. Neither is a dollar of reconstruction capital. A cheaper barrel and a firmer rial are what you see when a market believes money is coming; they are not the money. Iranian economists quoted in local media made the same point bluntly: a deal, as one former central-bank deputy put it, 'is a necessary condition for economic improvement, but it is not a sufficient condition.' The state's own structural problems, budget deficits, runaway money growth, banking strains, inflation that has run above 80%, do not get fixed by a headline."
+        }
+      ]
+    },
+    {
+      "heading": "One revocable license, expiring in August",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If you want to see how much real legal change has actually happened, ignore the $300 billion and look at the one document with teeth. On 22 June, OFAC issued General License X, which authorizes the production, sale, and delivery of Iranian-origin oil and petroleum products. It is the first concrete piece of sanctions relief, and it is genuinely meaningful: for the first time it even permits importing Iranian crude into the US."
+        },
+        {
+          "type": "p",
+          "text": "But read the title to the end. The license runs only 'through August 21, 2026', 12:01 a.m. Eastern, to be precise. It is temporary by design, timed to cover the 60-day window for talks, and it can be withdrawn. It says nothing about the reconstruction fund, names no funder, and authorizes no investment. This is what economists mean by prospective relief: easing that is promised for later and conditional on further steps, not a permanent change a board can underwrite a 20-year project against. An oil license that may lapse in August is a thin foundation for $300 billion in patient capital."
+        },
+        {
+          "type": "pullquote",
+          "text": "The headline is $300 billion. The only thing actually in force is an oil license that expires on 21 August."
+        }
+      ]
+    },
+    {
+      "heading": "So how much actually arrives?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Put the pieces together. The base rate says even well-run, government-backed reconstruction efforts deliver about half their headline within three years, and poorly structured ones deliver almost nothing. Iran's own 2015-18 experiment delivered barely a tenth of the hoped-for investment before reversing. The 2026 deal is structured as private money, the skittish kind, on top of a sanctions regime only temporarily and revocably eased, with no funder named and a 60-day clock still running."
+        },
+        {
+          "type": "p",
+          "text": "That is why our answer to the central question is: probably less than a quarter of the $300 billion arrives as deployed capital within two to three years, and plausibly far less. Less than a quarter would still be tens of billions of dollars, not nothing. But it is a fraction of the number markets celebrated, and it depends on a permanent deal that, as of late June, does not yet exist. The honest headline is not '$300 billion to rebuild Iran.' It is a promise, a clock, and one oil license that expires in August."
+        },
+        {
+          "type": "p",
+          "text": "The useful discipline here is the one this desk keeps returning to: separate the price that moved from the money that did not. Brent and the rial repriced on a story. Whether the story becomes capital is a question the next 60 days, and a named funder, will answer, or fail to."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "We confirmed the event against the signed text. NPR published the full memorandum; we quoted the $300 billion clause and the 60-day mechanism directly from it, and cross-checked the signing details (Versailles, Tehran, Pakistani mediation, 14 points) against CNN, CNBC, Fox and the Islamabad Memorandum record.",
+    "For the central finding we built a base rate. We selected modern reconstruction headlines with documented disbursement data, Haiti 2010, Gaza 2014, Iraq (Madrid 2003), Lebanon (CEDRE 2018), and the 2025-26 Gaza fund, and for each computed money-out as a share of the headline at roughly the three-year mark, using the primary or most authoritative source available for each (GAO for Iraq, Brookings for Gaza 2014, the special-envoy/NPR figure for Haiti, UN and Euronews reporting for Gaza 2025-26, France24/OECD for Lebanon).",
+    "For the closest analogue, Iran after the 2015 deal, we compiled annual FDI inflows from UNCTAD's World Investment Reports (2017 peak near $5bn confirmed via Tehran Times citing UNCTAD; 2018 near $2.4bn via the 2020 report) and compared them with the $30-50bn-a-year financing implied by Iran's development plans.",
+    "We separated market reaction from capital. Brent's round-trip to about $72 (Al Jazeera, 25 June) and the rial's move from above 1.8m to about 1.57m per dollar (Iran International) were treated as expectations repricing, explicitly distinct from disbursed funds.",
+    "We checked what relief is actually live by reading OFAC's General License X and law-firm analyses, confirming it authorizes only oil transactions and expires 21 August 2026."
+  ],
+  "sources": [
+    {
+      "title": "Read the full text of the US-Iran memorandum of understanding",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/06/18/nx-s1-5863027/us-iran-trump-memorandum-of-understanding-full-text",
+      "kind": "primary"
+    },
+    {
+      "title": "Who would pay for Trump's proposed $300 billion Iran reconstruction fund?",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2026/06/23/nx-s1-5866577/iran-trump-deal-300-billion-obama",
+      "kind": "secondary"
+    },
+    {
+      "title": "Fact-checking Trump on the $300 billion fund for Iran",
+      "publisher": "PolitiFact",
+      "url": "https://www.politifact.com/article/2026/jun/22/trump-iran-300-billion-fund/",
+      "kind": "secondary"
+    },
+    {
+      "title": "MoU's $300bn Iran reconstruction fund becomes US political flashpoint",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/18/mous-300bn-iran-reconstruction-fund-becomes-us-political-flashpoint",
+      "kind": "secondary"
+    },
+    {
+      "title": "Will a US-Iran deal unlock $300bn in investment fund for Tehran?",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/16/will-a-us-iran-deal-unlock-300bn-in-investment-fund-for-tehran",
+      "kind": "secondary"
+    },
+    {
+      "title": "Iran-US deal includes $300 billion investment fund, over half committed (Reuters)",
+      "publisher": "Iran International",
+      "url": "https://www.iranintl.com/en/202606162883",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil prices fall, stocks rally as US, Iran sign framework to end war",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/6/18/oil-prices-fall-stocks-rally-as-us-iran-sign-framework-to-end-war",
+      "kind": "secondary"
+    },
+    {
+      "title": "Oil prices back to pre-war levels on rising Middle East supply",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/6/25/oil-prices-back-to-pre-war-levels-on-rising-middle-east-supply",
+      "kind": "secondary"
+    },
+    {
+      "title": "Iran markets rally on US deal hopes, but economists warn relief is no cure",
+      "publisher": "Iran International",
+      "url": "https://www.iranintl.com/en/202606174024",
+      "kind": "secondary"
+    },
+    {
+      "title": "Iran may get a lifeline, but major obstacles remain",
+      "publisher": "Iran International",
+      "url": "https://www.iranintl.com/en/202606204644",
+      "kind": "secondary"
+    },
+    {
+      "title": "Qatar says proposed $300B Iran reconstruction fund remains 'aspirational'",
+      "publisher": "The Express Tribune",
+      "url": "https://tribune.com.pk/story/2614867/qatar-says-proposed-300b-iran-reconstruction-fund-remains-aspirational",
+      "kind": "secondary"
+    },
+    {
+      "title": "Gulf states hesitant to fund $300b Iran reconstruction",
+      "publisher": "The Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/article-899829",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump's Gulf allies fear his Iran agreement is a 'disastrous turning point'",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/06/24/middleeast/trumps-gulf-allies-iran-agreement-disastrous-intl",
+      "kind": "secondary"
+    },
+    {
+      "title": "One week in, what exactly are America and Iran getting from their agreement?",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/06/26/business/america-iran-agreement-one-week-later",
+      "kind": "secondary"
+    },
+    {
+      "title": "US authorizes sale of Iranian oil for 60 days (General License X)",
+      "publisher": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/06/us-authorizes-sale-of-iranian-oil-for-60-days",
+      "kind": "primary"
+    },
+    {
+      "title": "New General License for Iranian-origin oil exports is first step in broader relief",
+      "publisher": "Akin Gump",
+      "url": "https://www.akingump.com/en/insights/alerts/new-general-license-for-iranian-origin-oil-exports-is-first-step-in-broader-sanctions-relief-described-in-preliminary-us-iran-deal-but-significant-risks-remain",
+      "kind": "secondary"
+    },
+    {
+      "title": "Iran Sanctions program (recent actions and general licenses)",
+      "publisher": "US Treasury OFAC",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+      "kind": "primary"
+    },
+    {
+      "title": "5 Years After Haiti's Earthquake, Where Did the $13.5 Billion Go?",
+      "publisher": "NPR (Goats and Soda)",
+      "url": "https://www.npr.org/sections/goatsandsoda/2015/01/12/376138864/5-years-after-haiti-s-earthquake-why-aren-t-things-better",
+      "kind": "secondary"
+    },
+    {
+      "title": "Still in ruins: Reviving the stalled reconstruction of Gaza",
+      "publisher": "Brookings Institution",
+      "url": "https://www.brookings.edu/articles/reviving-the-stalled-reconstruction-of-gaza/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Billions pledged at Paris (CEDRE) conference to boost Lebanon's economy",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/en/20180406-lebanon-france-11-billion-pledged-paris-conference-attempt-boost-economy",
+      "kind": "secondary"
+    },
+    {
+      "title": "Rebuilding Iraq: International Donor Pledges for Reconstruction Efforts in Iraq (GAO-08-365R)",
+      "publisher": "US Government Accountability Office",
+      "url": "https://govinfo.gov/content/pkg/GAOREPORTS-GAO-08-365R/html/GAOREPORTS-GAO-08-365R.htm",
+      "kind": "data"
+    },
+    {
+      "title": "FDI inflows to Iran up nearly 50% in 2017: UNCTAD",
+      "publisher": "Tehran Times",
+      "url": "https://www.tehrantimes.com/news/424270/FDI-inflows-to-Iran-up-nearly-50-in-2017-UNCTAD",
+      "kind": "data"
+    },
+    {
+      "title": "World Investment Report 2018",
+      "publisher": "UNCTAD",
+      "url": "https://unctad.org/publication/world-investment-report-2018",
+      "kind": "data"
+    },
+    {
+      "title": "Trump's Board of Peace official Gaza reconstruction fund is empty, source says",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2026/05/27/trump-board-of-peaces-official-gaza-reconstruction-fund-is-empty-source-says",
+      "kind": "secondary"
+    },
+    {
+      "title": "Implementation of UN Security Council Resolution 2803 (2025): Report of the Board of Peace (S/2026/418)",
+      "publisher": "United Nations",
+      "url": "https://www.un.org/unispal/document/implementation-of-united-nations-security-council-resolution-2803-2025-report-of-the-board-of-peace-through-the-office-of-the-high-representative-for-gaza-s-2026-418/",
+      "kind": "primary"
+    },
+    {
+      "title": "The 60-Day Test: What Iran's Agreement with the United States Really Means",
+      "publisher": "TIME",
+      "url": "https://time.com/article/2026/06/19/iran-united-states-agreement-nuclear-program-war-israel-lebanon/",
+      "kind": "secondary"
+    },
+    {
+      "title": "June 17, 2026, Trump signs US-Iran agreement (live coverage)",
+      "publisher": "CNN",
+      "url": "https://www.cnn.com/2026/06/17/world/live-news/iran-war-g7-summit",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "The 2026 Iran fund's delivery is genuinely unknown: no funder is named and the 60-day mechanism window was still open at publication, so its bar is marked TBD, not zero on the merits.",
+    "The base-rate cases are not like-for-like. Haiti and Gaza were largely grants and humanitarian funds; Iraq and Lebanon were mostly loans; Iran's is pitched as private investment. They are comparable only as a rough guide to how reconstruction headlines convert into cash.",
+    "Disbursement horizons differ slightly by case (Haiti measured at two years, Gaza 2014 at about two years, Iraq and Gaza 2025-26 at the dates data exist), so the chart is 'about three years,' not a precise common cutoff.",
+    "Iran's 2015 FDI figure (~$2.05bn) is drawn from compiled UNCTAD data and is the least independently corroborated point in the FDI series; the 2017 peak (~$5bn) and 2018 decline (~$2.4bn) are directly sourced.",
+    "'Less than a quarter' is an analytical estimate synthesized from the base rate and the deal's structure, not a forecast with a confidence interval; a durable final deal could push delivery higher, and a collapse could push it to near zero."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/the-300-billion-promise.jpg",
+    "credit": "Photo: Mohammad Barno / Avash Media, CC BY 4.0, via Wikimedia Commons",
+    "caption": "A strike on areas north of Tehran during the 2026 war, the damage that the Islamabad Memorandum's $300 billion fund is meant to help rebuild.",
+    "alt": "Damage and smoke in the hills north of Tehran following a strike during the 2026 Iran war."
+  },
+  "articleType": "data-story",
+  "secondarySections": [
+    "commodities",
+    "economy"
+  ],
+  "companies": [
+    "TotalEnergies",
+    "CNPC",
+    "World Bank",
+    "OFAC"
+  ],
+  "people": [
+    "Masoud Pezeshkian",
+    "Emmanuel Macron"
+  ],
+  "regions": [
+    "Iran",
+    "United States",
+    "Qatar",
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Pakistan",
+    "Gulf States"
+  ],
+  "industries": [
+    "Oil & Gas",
+    "Reconstruction & Infrastructure",
+    "Banking & Finance"
+  ],
+  "assetClasses": [
+    "Commodities",
+    "Currencies"
+  ],
+  "impactTags": [
+    "Sanctions",
+    "Geopolitical Risk",
+    "Reconstruction Finance",
+    "Foreign Direct Investment",
+    "Oil Prices"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 82,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "The 17 June US-Iran 'Islamabad Memorandum' pledges 'at least $300 billion' for reconstruction but names no funder, no fund structure, and no money type, leaving only a 60-day clock to settle the mechanism.",
+    "Reconstruction pledges historically deliver a fraction of the headline: the best modern cases (Haiti 2010, Gaza 2014) got roughly half out in about three years; the worst (Lebanon 2018 CEDRE, Gaza 2025-26) delivered close to nothing.",
+    "Iran already ran this experiment after 2015: FDI peaked near $5 billion in 2017 versus a $40-50 billion-a-year hope, then more than halved once US sanctions returned.",
+    "As of late June no Gulf state has confirmed money; Qatar called the figure 'aspirational' and denied pledging, and the only live legal relief is OFAC General License X, which expires 21 August 2026.",
+    "Brent round-tripped to about $72 and the rial firmed roughly 13%, but those are expectations repricing, not deployed capital, and the relief so far is temporary and revocable."
+  ],
+  "whyItMatters": "A $300 billion reconstruction headline is anchoring oil prices, the Iranian rial, and the durability of a fragile ceasefire, yet the base rate and the deal's own fine print suggest less than a quarter of it is likely to arrive within two to three years. Conflating the market's relief rally with actual capital deployment risks mispricing both Iranian risk and the regional oil supply outlook. For Gulf states, global banks, and energy traders, the gap between pledge and disbursement determines whether the deal reshapes the region or fades like the 2015 'wall of money.'",
+  "whatToWatch": [
+    "Whether the 60-day mechanism deadline (mid-August 2026) produces any named sovereign or private funder and a defined money type (grant, loan, equity, or unfrozen assets).",
+    "Whether OFAC General License X is renewed or allowed to lapse on 21 August 2026, the only concrete, revocable piece of sanctions relief now in force.",
+    "Confirmed financial commitments from GCC states, especially Saudi Arabia, the UAE, and Qatar, versus continued 'aspirational' hedging.",
+    "Actual FDI and capital inflows into Iran versus the headline, watching for a repeat of the 2018 'OFAC chill' reversal."
+  ],
+  "primarySection": "geopolitics",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T16:43:25.040Z"
+}
