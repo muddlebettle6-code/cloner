@@ -1,0 +1,527 @@
+{
+  "published": true,
+  "slug": "florida-insurance-reversal-relief-for-whom",
+  "headline": "Florida's 8.7% Insurance Cut Lands on Under 5% of the Market. Most Homeowners' Bills Are Still Rising.",
+  "deck": "Florida says its reforms worked: the state insurer of last resort shrank to a record low and cut rates 8.7 percent. But that cut applies only to Citizens' depopulated book, while the statewide average premium is projected to keep climbing. This is a composition story, not a relief story.",
+  "takeaways": [
+    "The celebrated 8.7 percent cut is a Citizens-specific approved average, not a statewide all-carrier average. Citizens now covers just 278,662 policies, down from a peak of about 1.41 million in October 2023.",
+    "The cut applies to Citizens' remaining book, less than 5 percent of Florida's residential market. Roughly 1.1 million policies have left Citizens since its 2023 peak, many pushed into private carriers that can legally charge up to 20 percent more for 'comparable' coverage.",
+    "The independent tracker Insurify pegs Florida's average homeowners premium at $8,292 in 2025, rising to a projected $8,458 by end-2026, flat-to-higher, and still the highest in the nation.",
+    "Reinsurance (the wholesale cost that drives premiums) fell sharply this June, down 15 to 20 percent across the market and about 29 percent for Citizens, yet the retail bill the homeowner pays has not followed it down.",
+    "Citizens hit a similar 'record low' near 420,000 policies in 2019 before re-inflating to 1.41 million by 2023. Depopulation lows have historically been cyclical, not permanent."
+  ],
+  "glossary": [
+    {
+      "term": "Citizens Property Insurance",
+      "definition": "Florida's state-created insurance company that sells home coverage to people who cannot find or afford it from a private company; it is meant to be the option of last resort."
+    },
+    {
+      "term": "Insurer of last resort",
+      "definition": "A government-backed insurer that exists to cover people the private market will not, so no one is left with zero options."
+    },
+    {
+      "term": "Depopulation",
+      "definition": "A program that moves policies off Citizens and into private insurers, shrinking the state insurer's book of business."
+    },
+    {
+      "term": "Takeout",
+      "definition": "When a private insurer offers to assume a policy currently held by Citizens; if the homeowner accepts (or is required to switch), the policy is 'taken out' of Citizens."
+    },
+    {
+      "term": "20 percent rule",
+      "definition": "A Florida eligibility rule: if a private insurer offers comparable coverage at a price within 20 percent of your Citizens premium, you lose Citizens eligibility and must take the private policy, even if it costs more."
+    },
+    {
+      "term": "Premium",
+      "definition": "The amount a homeowner pays for an insurance policy, usually quoted per year."
+    },
+    {
+      "term": "Reinsurance",
+      "definition": "Insurance that insurers buy to protect themselves; it covers part of their losses after a big disaster. Its cost is a large share of what a Florida homeowner ultimately pays."
+    },
+    {
+      "term": "June 1 renewal",
+      "definition": "The date each year when most Florida insurers renew their reinsurance contracts, making it the key annual signal for whether wholesale costs are rising or falling."
+    },
+    {
+      "term": "Catastrophe program",
+      "definition": "The bundle of reinsurance and similar protection an insurer assembles specifically to pay claims after a major hurricane or other catastrophe."
+    },
+    {
+      "term": "Catastrophe bond",
+      "definition": "A financial instrument that lets an insurer raise disaster money from investors; if a big hurricane hits, the insurer keeps the cash instead of repaying it, so it works like reinsurance bought from the capital markets."
+    },
+    {
+      "term": "Rate-on-line",
+      "definition": "The price of reinsurance expressed as cents paid per dollar of coverage; a lower rate-on-line means cheaper protection. A drop from 11.95 percent to 8.46 percent, as Citizens saw, means each dollar of cover got markedly cheaper."
+    },
+    {
+      "term": "Soft market",
+      "definition": "A period when insurance is relatively cheap and easy to buy because insurers are competing and their own costs have fallen."
+    },
+    {
+      "term": "Approved rate filing",
+      "definition": "An insurer's request to change its prices, reviewed and approved by the state regulator; the approved percentage is the official rate change."
+    },
+    {
+      "term": "Office of Insurance Regulation (OIR)",
+      "definition": "The Florida agency that reviews and approves insurers' rate changes and oversees the market."
+    },
+    {
+      "term": "In-force premium",
+      "definition": "The premium on policies actually active right now, as opposed to a quoted or projected price, it reflects what people are really paying."
+    },
+    {
+      "term": "Composition effect",
+      "definition": "When an average changes not because individual prices moved but because the mix of who is being counted changed; here, the average shifts as people move between Citizens and private insurers."
+    },
+    {
+      "term": "Clearinghouse",
+      "definition": "A system that checks whether a private insurer will cover a homeowner before Citizens can write or renew the policy, used to push business toward private carriers."
+    },
+    {
+      "term": "Market share",
+      "definition": "The slice of all policies in a market that one insurer holds; Citizens' share has fallen below 5 percent of Florida's residential policies as it sheds business."
+    },
+    {
+      "term": "Assignment of benefits (AOB)",
+      "definition": "A document that lets a contractor or vendor collect insurance payments directly from the insurer; Florida curbed it in 2022-2023 because it had fueled costly lawsuits."
+    },
+    {
+      "term": "One-way attorney fees",
+      "definition": "A former Florida rule that made insurers pay a policyholder's legal fees when the policyholder won a claims dispute, but not the reverse; its repeal in 2022-2023 sharply cut insurance litigation."
+    }
+  ],
+  "event": "On 23 June 2026, Florida announced that Citizens Property Insurance had fallen to a record-low 278,662 policies and that an 8.7 percent average rate cut had taken effect, framed by the governor's office as proof the state's insurance reforms had ended the crisis.",
+  "question": "Did Florida's 8.7 percent cut deliver broad premium relief, or did it apply to a shrinking minority still on Citizens while the typical homeowner, increasingly pushed into the private market, saw a premium that is flat or still rising?",
+  "readingMinutes": 9,
+  "tags": [
+    "insurance",
+    "florida",
+    "housing",
+    "reinsurance",
+    "hurricanes",
+    "climate-risk",
+    "data-journalism"
+  ],
+  "leadChartId": "who-got-cut",
+  "charts": [
+    {
+      "id": "who-got-cut",
+      "kind": "comparison",
+      "title": "The cut landed on the minority that stayed",
+      "subtitle": "Citizens policies still on the books vs. policies that left Citizens since its 2023 peak",
+      "source": "Florida Trend (23 Jun 2026); Citizens Property Insurance market share and policy reports",
+      "units": "policies",
+      "period": "Oct 2023, Jun 2026",
+      "note": "About 1.1 million policies left Citizens since its October 2023 peak of 1.41 million; many moved into private carriers through takeouts. The state says the 8.7% cut reaches more than 330,000 Citizens policyholders as policies renew through 2026.",
+      "alt": "A bar chart showing 278,662 Citizens policies still on the books receive the 8.7 percent cut, while about 1,100,000 policies that left Citizens since 2023 did not.",
+      "data": {
+        "bars": [
+          {
+            "label": "Still on Citizens (covered by the 8.7% cut)",
+            "value": 278662,
+            "highlight": true
+          },
+          {
+            "label": "Left Citizens since the 2023 peak",
+            "value": 1100000
+          }
+        ],
+        "max": 1200000
+      }
+    },
+    {
+      "id": "florida-vs-us",
+      "kind": "bar",
+      "title": "Florida's average premium, depending on who's counting",
+      "subtitle": "Reported average annual homeowners premium by tracker",
+      "source": "Insurify (2025 figure and 2026 projection); Insurance.com (2026, $300k dwelling); MoneyGeek (2026, $250k dwelling); U.S. average via Insurify",
+      "units": "USD per year",
+      "period": "2025-2026",
+      "note": "Trackers disagree by roughly $3,300, from about $7,100 to about $10,400, mostly because they assume different coverage limits and weight quotes differently. But every reputable tracker agrees Florida is the most expensive state, far above the U.S. average.",
+      "alt": "Bar chart comparing Florida average premiums: MoneyGeek shows about $10,384, Insurify projects about $8,458 for 2026 and $8,292 for 2025, Insurance.com shows about $7,136, and the U.S. average is about $2,948.",
+      "data": {
+        "bars": [
+          {
+            "label": "Florida (MoneyGeek, $250k cover)",
+            "value": 10384
+          },
+          {
+            "label": "Florida 2026 (Insurify, projected)",
+            "value": 8458,
+            "highlight": true
+          },
+          {
+            "label": "Florida 2025 (Insurify)",
+            "value": 8292
+          },
+          {
+            "label": "Florida (Insurance.com, $300k cover)",
+            "value": 7136
+          },
+          {
+            "label": "U.S. average (Insurify)",
+            "value": 2948
+          }
+        ],
+        "max": 11000
+      }
+    },
+    {
+      "id": "wholesale-vs-retail",
+      "kind": "bar",
+      "title": "Wholesale costs fell. The statewide bill did not.",
+      "subtitle": "2026 approved or observed percentage changes across the insurance chain",
+      "source": "Guy Carpenter via The Insurer and Artemis (May-Jun 2026); Insurance Business (Citizens reinsurance); State Farm newsroom; Citizens / Florida OIR (premium); Insurify (statewide average)",
+      "units": "% change, year over year",
+      "period": "2026",
+      "note": "Reinsurance got cheaper across the board and several carriers cut rates, yet the independent statewide average premium is projected up about 2 percent. That is the round-trip gap between wholesale relief and the retail bill.",
+      "alt": "Bar chart of 2026 year-over-year changes: Citizens' reinsurance cost down about 29 percent, broad-market reinsurance down about 17.5 percent, State Farm premium down 10.1 percent, Citizens premium down 8.7 percent, and the statewide average premium up about 2 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "Citizens reinsurance cost",
+            "value": -29.2
+          },
+          {
+            "label": "Reinsurance, broad market",
+            "value": -17.5
+          },
+          {
+            "label": "State Farm premium",
+            "value": -10.1
+          },
+          {
+            "label": "Citizens premium",
+            "value": -8.7,
+            "highlight": true
+          },
+          {
+            "label": "Statewide avg premium (Insurify)",
+            "value": 2,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "citizens-cycle",
+      "kind": "line",
+      "title": "Citizens has hit a 'record low' before",
+      "subtitle": "Citizens Property Insurance policy count, with depopulation lows flagged",
+      "source": "Florida Realtors / ClickOrlando (2019 low); Florida Trend (2012 peak and 2026 low); Citizens Property Insurance",
+      "units": "thousands of policies",
+      "period": "2012-2026",
+      "note": "The ~420k low in 2019 was also hailed as a record before the book re-inflated to 1.41 million by late 2023. Lows have been cyclical, not permanent.",
+      "alt": "Line chart of Citizens policy count in thousands: about 1,480 in 2012, down to about 420 in 2019, back up to about 1,410 in 2023, and down to 279 in 2026. The 2019 and 2026 points are flagged as record lows.",
+      "data": {
+        "series": [
+          {
+            "name": "Citizens policies (thousands)",
+            "points": [
+              {
+                "x": 2012,
+                "y": 1480
+              },
+              {
+                "x": 2019,
+                "y": 420
+              },
+              {
+                "x": 2023,
+                "y": 1410
+              },
+              {
+                "x": 2026,
+                "y": 279
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The headline that declared the crisis over",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 23 June 2026, with the 2026 Atlantic hurricane season underway, Florida delivered the news it had been waiting years to give: Citizens Property Insurance, the state-created insurer of last resort, had shrunk to a record-low 278,662 policies, and an 8.7 percent average rate cut had taken effect. The governor's office framed it as vindication, the 2022 and 2023 reforms had worked, the market was healing, the insurance crisis was ending."
+        },
+        {
+          "type": "p",
+          "text": "It is a clean, quotable number. It is also a number about the wrong company. Citizens is no longer the center of Florida's home insurance market; it is a deliberately shrinking sliver of it. As of late 2025 it had already lost its place as the state's largest property insurer, and its market share has fallen below 5 percent. A rate cut on a sliver is not the same thing as relief for the state."
+        },
+        {
+          "type": "callout",
+          "label": "The number behind the headline",
+          "text": "8.7 percent is a Citizens-specific approved average rate change. It is not a statewide, all-carrier average. It applies to Citizens' remaining book, 278,662 policies as of 20 June 2026, down from about 1.41 million in October 2023. The state says more than 330,000 Citizens policyholders will see a decrease as their policies renew through the year."
+        }
+      ]
+    },
+    {
+      "heading": "The question the cheering skips",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Strip away the politics and a precise, answerable question remains. Did the 8.7 percent cut actually lower what a typical Florida homeowner pays? Or did it apply to a depopulated minority still on Citizens, while the typical homeowner, increasingly pushed into private insurers, saw a premium that is flat or still rising?"
+        },
+        {
+          "type": "p",
+          "text": "This is what statisticians call a composition question. An average can move not because any single price changed, but because the mix of who is being counted changed. If you move a million policies out of one bucket, the average left in that bucket can fall even if no individual got a discount. To know whether Floridians got relief, you have to look at the whole market, not the bucket that got the favorable headline."
+        },
+        {
+          "type": "chart",
+          "chartId": "who-got-cut"
+        }
+      ]
+    },
+    {
+      "heading": "What happened, and when",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Citizens was built to be the option of last resort. By design it is supposed to shed policies to private carriers when the market can absorb them, a process called depopulation, in which private insurers make 'takeout' offers for policies Citizens currently holds."
+        },
+        {
+          "type": "p",
+          "text": "Since the legal reforms of 2022 and 2023, that machine has run hard. Citizens peaked at about 1.41 million policies in October 2023. By 23 June 2026 it reported 278,662, a fall of more than a million policies, or roughly 1.1 million off the state book, much of it absorbed by private carriers. (In 2025 alone, the depopulation program transferred more than 546,000 policies.) On the same day, Citizens confirmed it had secured its catastrophe program for the 2026 hurricane season, and the state highlighted the 8.7 percent rate reduction."
+        },
+        {
+          "type": "p",
+          "text": "Two reforms make the depopulation push more than voluntary. A clearinghouse checks whether a private insurer will cover a homeowner before Citizens can renew them. And the '20 percent rule' says that if a private insurer offers comparable coverage within 20 percent of your Citizens premium, you lose Citizens eligibility and must take the private policy. In plain terms: you can be required to leave the cheaper state insurer for a private one that costs up to a fifth more, and still be counted as 'comparable.'"
+        },
+        {
+          "type": "callout",
+          "label": "The mechanism in one line",
+          "text": "The same rule that produces a record-low Citizens policy count can legally move a homeowner onto pricier private coverage, up to 20 percent more, and still call it comparable."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the wholesale input. Reinsurance, the insurance that insurers buy, and a large share of any Florida premium, genuinely got cheaper this year. At the all-important June 1 renewals, broker Guy Carpenter reported Florida reinsurance rates down 15 to 20 percent. Citizens did even better: it renewed a $2.82 billion catastrophe program at roughly 29 percent lower cost, with the price of new coverage (its net rate-on-line) falling from 11.95 percent to 8.46 percent. Individual carriers cut too: Citizens at 8.7 percent, State Farm's Florida homeowners book at 10.1 percent."
+        },
+        {
+          "type": "p",
+          "text": "Now the retail output, what households actually pay. Here the picture refuses to match the headline. The independent tracker Insurify puts Florida's average homeowners premium at $8,292 in 2025, rising to a projected $8,458 by the end of 2026. That is flat-to-higher, roughly 2.8 times the U.S. average, and still the highest in the nation, the next-priciest state, Louisiana, averages just over $5,050."
+        },
+        {
+          "type": "chart",
+          "chartId": "wholesale-vs-retail"
+        },
+        {
+          "type": "p",
+          "text": "That is the round-trip in one chart: the wholesale cost fell hard, several carriers cut, and yet the independent statewide average is projected up about 2 percent. Wholesale relief round-tripped down. The household's bill stuck."
+        }
+      ]
+    },
+    {
+      "heading": "What the headline misses",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The intellectual center of this story is the denominator. '8.7 percent' is true, and it is also unrepresentative, because the population it describes has been engineered down to a fraction of the market, now under 5 percent of Florida's residential policies. Reading it as everyone's relief is like a city celebrating that the rent in its last rent-controlled building fell, while quietly moving most tenants into market-rate units next door that cost more."
+        },
+        {
+          "type": "pullquote",
+          "text": "A rate cut on a shrinking pool is not the same as relief for the state. The same program that produces the record low can move people onto pricier coverage."
+        },
+        {
+          "type": "p",
+          "text": "There is also a measurement fog that should make everyone cautious. Trackers disagree on Florida's level: Insurance.com puts the average near $7,100 (assuming $300,000 of dwelling coverage), Insurify near $8,300, and MoneyGeek near $10,400 (assuming $250,000 of coverage). That roughly $3,300 spread is not a rounding difference; it reflects whether a tracker weights by quotes or in-force policies, which coverage limits it assumes, and whether it captures the high-cost coastal book. But note which way the fog cuts: every reputable tracker still places Florida as the most expensive state in the country, by a wide margin. No serious measure shows broad relief."
+        },
+        {
+          "type": "chart",
+          "chartId": "florida-vs-us"
+        }
+      ]
+    },
+    {
+      "heading": "Competing explanations",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There are two honest readings of the same facts, and a careful answer has to weigh both."
+        },
+        {
+          "type": "p",
+          "text": "The optimistic reading is structural. The 2022 and 2023 reforms really did attack the cost driver everyone agreed on: litigation. Florida had accounted for a wildly outsized share of the country's homeowners-insurance lawsuits, and curbing one-way attorney fees and assignment-of-benefits abuse cut that litigation sharply. Loss results improved, reinsurers came back, more than ten new insurers entered since 2023, and reinsurance prices fell. In this view, retail premiums lag wholesale costs by a year or two, and the cuts now showing up at Citizens and State Farm are the leading edge of relief that will broaden as competition works through the system."
+        },
+        {
+          "type": "p",
+          "text": "The skeptical reading is compositional and cyclical. The record-low Citizens count is partly engineered by rules that push people into pricier private coverage, so a shrinking Citizens book tells you little about what the median homeowner pays. And Florida has been here before: Citizens hit a 'record low' near 420,000 policies in 2019, hailed at the time, before the book re-inflated to 1.41 million by 2023. A single major hurricane, or a hard reinsurance market two renewals from now, could reverse the depopulation just as it did last time."
+        },
+        {
+          "type": "chart",
+          "chartId": "citizens-cycle"
+        },
+        {
+          "type": "p",
+          "text": "These readings are not mutually exclusive. The reforms plausibly lowered insurers' costs; the open question is whether and when that reaches households. What the 2026 data shows is that, so far, it has not reached the statewide average bill."
+        }
+      ]
+    },
+    {
+      "heading": "The bottom line",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Back to the question. Did the 8.7 percent cut deliver broad premium relief? On the evidence available in June 2026, no, not yet, and not for the typical homeowner. The cut is real but narrow, landing on a Citizens book that now covers under 5 percent of the market. The wholesale costs that drive premiums fell substantially, but the independent statewide average is projected to edge up, and Florida remains the most expensive state in the nation by any reputable measure."
+        },
+        {
+          "type": "p",
+          "text": "That is not the same as saying the reforms failed. It is saying that 'the crisis is over' is a claim about the whole market, and the 8.7 percent figure is a claim about a sliver of it. The honest verdict is narrower than the headline and more demanding: relief will have shown up when the statewide average premium, measured on a consistent basis, across all carriers, actually falls. It has not done that yet."
+        },
+        {
+          "type": "p",
+          "text": "Byline: Cumulant Research."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Separated the 8.7 percent figure (a Citizens-specific approved average rate change, per the Florida Office of Insurance Regulation and Citizens) from any statewide all-carrier average, which it is not.",
+    "Treated the question as a composition problem: an average can move because the mix of who is counted changes, not because individual prices change. Compared the population receiving the cut (Citizens' ~279,000 policies) against the policies that have left Citizens since its 2023 peak (~1.1 million).",
+    "Distinguished wholesale costs (reinsurance, measured at the June 1 renewals via broker Guy Carpenter and Citizens' own placement) from the retail premium households pay (independent trackers).",
+    "Used Insurify as the primary independent statewide-premium series for year-over-year direction, then cross-checked the level against Insurance.com and MoneyGeek to test how sensitive 'Florida's average' is to coverage and weighting assumptions.",
+    "Grounded the cyclicality point in Citizens' own history: the ~420,000 low in 2019 and the re-inflation to ~1.41 million by 2023.",
+    "Every number in the charts and text traces to a source listed below; figures that could not be confirmed against a reputable source were corrected or removed."
+  ],
+  "sources": [
+    {
+      "title": "Citizens Policy Count Hits All-Time Low",
+      "publisher": "Florida Trend",
+      "url": "https://www.floridatrend.com/articles/2026/06/23/citizens-policy-count-hits-all-time-low/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Florida's Citizens Property Insurance announces 8.7% average rate cut",
+      "publisher": "Insurance Business",
+      "url": "https://www.insurancebusinessmag.com/us/news/property/floridas-citizens-property-insurance-announces-8-7-average-rate-cut-561781.aspx",
+      "kind": "secondary"
+    },
+    {
+      "title": "Citizens Recommends Rate Cuts for Most Policyholders (statewide average 8.7%, more than 330,000 policyholders, county detail)",
+      "publisher": "Citizens Property Insurance Corporation",
+      "url": "https://www.citizensfla.com/-/20251210-citizens-recommends-rate-cuts-for-most-policyholders",
+      "kind": "primary"
+    },
+    {
+      "title": "Florida reinsurance rates down 15% to 20% at June renewals: Guy Carpenter",
+      "publisher": "The Insurer",
+      "url": "https://www.theinsurer.com/ti/news/florida-reinsurance-rates-down-15-to-20-at-june-renewals-guy-carpenter-2026-05-28/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Florida renewal risk-adjusted pricing down 15% to 20% across many layers: Guy Carpenter",
+      "publisher": "Artemis.bm",
+      "url": "https://www.artemis.bm/news/florida-renewal-risk-adjusted-pricing-down-15-to-20-across-many-layers-guy-carpenter/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Florida reinsurance rates fall 30% for Citizens as capital floods the market (net rate-on-line 8.46% vs 11.95%; ~$2.816B program)",
+      "publisher": "Insurance Business",
+      "url": "https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/florida-reinsurance-rates-fall-30-for-citizens-as-capital-floods-the-market-579777.aspx",
+      "kind": "secondary"
+    },
+    {
+      "title": "Florida Home Insurance Costs Spiked 18% in 2025 ($8,292 in 2025, $8,458 projected 2026; highest in nation; ~2.8x U.S. average of $2,948)",
+      "publisher": "Insurify",
+      "url": "https://insurify.com/homeowners-insurance/news/florida-2026-home-insurance-report/",
+      "kind": "data"
+    },
+    {
+      "title": "Insurify Projects Home Insurance Rates Will Rise for the 5th Consecutive Year",
+      "publisher": "Insurify",
+      "url": "https://insurify.com/homeowners-insurance/report/home-insurance-price-projections/",
+      "kind": "data"
+    },
+    {
+      "title": "Average Cost of Home Insurance in Florida 2026 ($10,384, $250k dwelling)",
+      "publisher": "MoneyGeek",
+      "url": "https://www.moneygeek.com/insurance/homeowners/average-cost-home-insurance-florida/",
+      "kind": "data"
+    },
+    {
+      "title": "Average homeowners insurance rates by state in 2026 (Florida $7,136 at $300k dwelling; U.S. $2,543)",
+      "publisher": "Insurance.com",
+      "url": "https://www.insurance.com/home-and-renters-insurance/home-insurance-basics/average-homeowners-insurance-rates-by-state",
+      "kind": "data"
+    },
+    {
+      "title": "State Farm Florida Cuts Home Insurance Rates (-10.1%)",
+      "publisher": "State Farm Newsroom",
+      "url": "https://newsroom.statefarm.com/state-farm-florida-cuts-home-insurance-rates/",
+      "kind": "primary"
+    },
+    {
+      "title": "Understanding Florida's Citizens Insurance 20 Percent Rule",
+      "publisher": "Choice One Insurance",
+      "url": "https://choiceoneinsurance.net/understanding_florida_citizens_insurance_20_percent_rule/",
+      "kind": "secondary"
+    },
+    {
+      "title": "2022A Special Session Bill Summary (SB 2A: claims, reinsurance, eligibility reforms)",
+      "publisher": "The Florida Senate",
+      "url": "https://www.flsenate.gov/Committees/BillSummaries/2022A/html/2",
+      "kind": "primary"
+    },
+    {
+      "title": "Governor Ron DeSantis Announces Major Insurance Rate Relief as Florida's Reforms Deliver Results",
+      "publisher": "Executive Office of the Governor of Florida",
+      "url": "https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-announces-major-insurance-rate-relief-floridas-reforms",
+      "kind": "primary"
+    },
+    {
+      "title": "Citizens Policies Fewest Since 2019 (2019 low ~419,475)",
+      "publisher": "Florida Realtors",
+      "url": "https://www.floridarealtors.org/news-media/news-articles/2025/11/citizens-policies-fewest-2019",
+      "kind": "secondary"
+    },
+    {
+      "title": "Citizens Property Insurance drops to its lowest number of policies since 2019",
+      "publisher": "ClickOrlando / News 6",
+      "url": "https://www.clickorlando.com/news/florida/2025/11/25/citizens-property-insurance-drops-to-its-lowest-number-of-policies-since-2019/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Don't Look Now, But Citizens Is No Longer the Largest Property Insurer in Florida (market share under 10% at ~560k policies)",
+      "publisher": "Insurance Journal",
+      "url": "https://www.insurancejournal.com/news/southeast/2025/11/03/846101.htm",
+      "kind": "secondary"
+    },
+    {
+      "title": "Depopulation program overview",
+      "publisher": "Citizens Property Insurance Corporation",
+      "url": "https://www.citizensfla.com/depopulation",
+      "kind": "primary"
+    }
+  ],
+  "limitations": [
+    "There is no single official 'statewide all-carrier average premium' series; the analysis relies on independent trackers (Insurify primary, cross-checked with Insurance.com and MoneyGeek), which differ by roughly $3,300 because of coverage and weighting assumptions. The direction (flat-to-up) is more robust than any single dollar level.",
+    "The ~1.1 million figure is the net decline in Citizens' book since its 2023 peak; not every departing policy went to a private carrier (some homes were sold or non-renewed), though depopulation takeouts account for a large share.",
+    "Citizens' 'under 5 percent' market share is inferred: the Office of Insurance Regulation cited a share below 10 percent when Citizens held ~560,000 policies in late 2025, and the book has since roughly halved. The exact current share was not independently confirmed from the latest market-share report.",
+    "The 8.7 percent cut is an approved statewide average for Citizens; individual policyholders see more or less (some counties near 14 percent), and the cut phases in as policies renew through 2026, so the count receiving it (more than 330,000 policyholders) differs from the snapshot policy count of 278,662.",
+    "Insurify's 2026 figure is a projection, not a realized average, and could move with the hurricane season."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/florida-insurance-reversal-relief-for-whom.jpg",
+    "credit": "Photo: PCHS-NJROTC, CC BY-SA 4.0, via Wikimedia Commons",
+    "caption": "A blue tarp covers the storm-battered roof of a single-family home in Deep Creek, Florida, after Hurricane Ian, the kind of repeated wind damage driving the state's soaring homeowners insurance premiums.",
+    "alt": "A single-story suburban Florida house with a blue tarp over its hurricane-damaged roof and damaged furniture piled at the curb, with neighboring homes visible down the street."
+  },
+  "primarySection": "personal-finance",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T10:09:02.824Z"
+}
