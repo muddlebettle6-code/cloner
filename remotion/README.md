@@ -3,8 +3,10 @@
 A React/TypeScript motion-graphics system for Cumulant short-form vertical reels (v6: **DARK mode** — near-black `#070708` + subtle grid, white text only, magenta `#ff2d92`). Neue Haas Unica, detailed drei 3D objects + charts/tables on **every** sentence, deep male narration, **verbatim word-synced subtitles** (whisper-aligned), an **original dramatic piano + strings** track with a drop, varied low SFX, flowy transitions, a follow-card ending. Isolated in `remotion/`; the site is untouched (`remotion/` excluded from the site tsconfig; site typecheck passes).
 
 ## Output
-- **`out/CumulantReel_v6_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~67 s, H.264 + AAC.
+- **`out/CumulantReel_v7_4k.mp4`** — **2160×3840 (4K)**, 9:16, 30 fps, ~67 s, H.264 + AAC. (v7: plain-language script, lower music, coin/graph-down SFX.)
 - **`out/cover.png`** — thumbnail.
+
+> ⚠️ When regenerating VO, NEVER `rm public/audio/s*.mp3` — that glob also deletes `subdrop.mp3` (and `swoosh_*`). Use `rm public/audio/s[0-9]*.mp3`.
 
 ## Commands
 Run from the project root.
