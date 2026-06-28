@@ -67,6 +67,18 @@ Target set: **Instagram, LinkedIn, Facebook, Reddit, X.** Cater each post to the
 platform's norms (see captions). Posting modules activate only when their
 credentials are present.
 
+## Reels (9:16 video) — `scripts/social-reel.mjs`
+
+A reel is built from a deck's saved `storyboard.json` (the carousel writes it), so
+it tells the SAME story. Keep it **~30-35s**: trim to the strongest ~6 beats (hook
+-> count-up/proof -> payoff -> CTA). Style: full-color photos with **Ken Burns**
+motion; **white word-group captions** that pop in synced to the voice (pink is
+reserved for the count-up numbers and the mark); **keynumber beats count up** from
+0 to the figure; **crossfade** cuts; a soft **music bed** under the voice. The
+voiceover is a **natural OpenAI TTS** voice (gpt-4o-mini-tts, nova) - never robotic
+`say`. NEVER clip copyrighted news footage; reels are motion graphics from our
+licensed images only. Drop a royalty-free track at `REEL_MUSIC` for real music.
+
 ## Brand context (applies everywhere)
 
 - Logo / favicon: the **distribution curve + magenta dot**, transparent background.
