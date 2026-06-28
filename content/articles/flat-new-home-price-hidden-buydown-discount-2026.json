@@ -1,0 +1,497 @@
+{
+  "published": true,
+  "slug": "flat-new-home-price-hidden-buydown-discount-2026",
+  "headline": "The New-Home Price That Won't Move: How Builders Are Cutting 13% Without Touching the Sticker",
+  "deck": "The Census median new-home price was statistically flat in May 2026 even as supply hit 10.3 months and builder sentiment stayed buried. Cumulant's analysis finds the flatness is largely a measurement artifact: paid prices have fallen by roughly 13% through mortgage-rate buydowns the contract price never records, a hidden cut worth about $48,000 on a large builder's average home, and one that is now quietly shrinking.",
+  "takeaways": [
+    "New single-family home sales fell to a 580,000 annual pace in May 2026 (down 7.3% from April), supply rose to 10.3 months, yet the median price held at $424,900 versus $424,800 a year earlier.",
+    "That flat headline hides a real discount: builders are clearing inventory with mortgage-rate buydowns and incentives the Census contract price cannot subtract, so the effective price a buyer pays has dropped while the sticker has not.",
+    "Lennar's reported incentive load was 12.9% of sale price in its fiscal second quarter, against a 4-6% historical norm, implying roughly $48,000 of hidden price cut on its $371,000 average home.",
+    "The twist: that hidden discount is now cresting, not peaking. Lennar's incentive load fell from 14.5% to 14.1% to 12.9% over three quarters, so true prices may be firming just as the flat headline registers neither the earlier cut nor the new firming.",
+    "In 2008, builders cut list prices outright and the median fell; in 2026 they are holding the headline and discounting through financing instead. Same supply stress, opposite price optics."
+  ],
+  "glossary": [
+    {
+      "term": "Median new-home price",
+      "definition": "The middle price in the month's new-home sales, half sold for more and half for less; the figure Census reports as the headline price."
+    },
+    {
+      "term": "Contract price",
+      "definition": "The gross price written into a new-home sales contract before any cash incentives or financing perks are subtracted; what Census records."
+    },
+    {
+      "term": "SAAR (seasonally adjusted annual rate)",
+      "definition": "A monthly sales figure stretched to a yearly pace and smoothed for seasonal swings, so a '580,000 pace' means sales would total that many homes if the month repeated all year."
+    },
+    {
+      "term": "Months of supply",
+      "definition": "How long it would take to sell every home for sale at the current sales pace; 10.3 months means the market is well oversupplied, with about six months considered balanced."
+    },
+    {
+      "term": "Mortgage-rate buydown",
+      "definition": "A builder pays cash upfront to a lender to lower a buyer's mortgage interest rate, cutting the monthly payment without lowering the home's listed price."
+    },
+    {
+      "term": "Sales incentive",
+      "definition": "Any sweetener a builder gives to close a deal, such as a rate buydown, closing-cost help, or free upgrades, counted as a share of the sale price."
+    },
+    {
+      "term": "Incentive load",
+      "definition": "Industry shorthand for total sales incentives expressed as a percentage of the sale price; a 12.9% load means incentives equal 12.9% of the price."
+    },
+    {
+      "term": "Effective price",
+      "definition": "Cumulant's estimate of what a buyer truly pays after the cash value of incentives is subtracted from the listed price; not a Census-published series."
+    },
+    {
+      "term": "Gross margin",
+      "definition": "The share of each sales dollar left after the direct cost of building the home; a falling margin means builders are keeping less per sale."
+    },
+    {
+      "term": "ASP (average selling price)",
+      "definition": "The average price across a builder's closings in a period, used in earnings reports."
+    },
+    {
+      "term": "NAHB/Wells Fargo HMI (Housing Market Index)",
+      "definition": "A monthly builder-confidence gauge from 0 to 100; above 50 means more builders see conditions as good than poor, so a reading of 35 signals widespread pessimism."
+    },
+    {
+      "term": "Mix shift",
+      "definition": "A change in the kind of homes being sold, such as more small or stripped-down floorplans, that can move the average price without any single home changing price."
+    },
+    {
+      "term": "Price per square foot",
+      "definition": "A home's price divided by its floor area, used to compare value when homes differ in size."
+    },
+    {
+      "term": "Shelter CPI",
+      "definition": "The housing piece of the Consumer Price Index, the official inflation measure; it leans on rents and owners' implied rents rather than new-home transaction prices."
+    },
+    {
+      "term": "Disinflation",
+      "definition": "A slowing in the rate of price increases (prices still rise, just more slowly), distinct from outright falling prices."
+    },
+    {
+      "term": "Comparable sales (comps)",
+      "definition": "Recent nearby sale prices used by appraisers and agents to value a home; a flat headline price keeps comps looking steady."
+    },
+    {
+      "term": "8-K / 10-Q",
+      "definition": "Standardized financial reports public US companies file with the SEC, an 8-K for material events and a 10-Q for quarterly results."
+    },
+    {
+      "term": "Basis point",
+      "definition": "One hundredth of a percentage point, so a drop in margin from 19.0% to 15.5% is 350 basis points."
+    }
+  ],
+  "event": "The Census Bureau and HUD's May 2026 Monthly New Residential Sales release (June 24, 2026) showed new-home sales falling to a 580,000 annual pace and supply rising to 10.3 months while the median price stayed flat at $424,900.",
+  "question": "With months of supply at a 16-year-style high, is the new-home market clearing through hidden price cuts that the flat Census median never nets out, and how large is that concealed discount?",
+  "readingMinutes": 9,
+  "tags": [
+    "housing",
+    "homebuilders",
+    "new-home-sales",
+    "mortgage-rates",
+    "inflation",
+    "Lennar",
+    "data-journalism",
+    "new-home sales"
+  ],
+  "leadChartId": "effective-vs-headline",
+  "charts": [
+    {
+      "id": "effective-vs-headline",
+      "kind": "line",
+      "title": "The flat price that isn't",
+      "subtitle": "Headline Census median (flat) vs Cumulant's incentive-adjusted effective price, indexed to 100 in 2023",
+      "source": "Cumulant Research estimate built on Census Monthly New Residential Sales (median price) and reported builder incentive shares (NAHB/Wells Fargo HMI; Lennar Q2 FY2026 results). The effective line is an estimate, not a Census series.",
+      "units": "index, 2023 = 100",
+      "period": "2023 to May 2026",
+      "note": "Effective line = headline median x (1, incentive share); incentive share rises from about 6% (2023) toward about 13% (2026). The widening gap is the hidden discount.",
+      "alt": "Two lines from 2023 to 2026. The headline median holds near 99-100 the whole way. The effective price line falls from 94 to 86, so the gap between them widens from about 6 points to about 13 points.",
+      "data": {
+        "series": [
+          {
+            "name": "Headline Census median",
+            "points": [
+              {
+                "x": "2023",
+                "y": 100
+              },
+              {
+                "x": "2024",
+                "y": 99
+              },
+              {
+                "x": "2025",
+                "y": 99
+              },
+              {
+                "x": "May 2026",
+                "y": 99
+              }
+            ]
+          },
+          {
+            "name": "Effective price (Cumulant est.)",
+            "points": [
+              {
+                "x": "2023",
+                "y": 94
+              },
+              {
+                "x": "2024",
+                "y": 91
+              },
+              {
+                "x": "2025",
+                "y": 88
+              },
+              {
+                "x": "May 2026",
+                "y": 86
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hidden-cut",
+      "kind": "keynumber",
+      "title": "The discount the sticker can't show",
+      "source": "Cumulant Research, applying Lennar's 12.9% Q2 FY2026 incentive load to its $371,000 average selling price (Lennar Reports Second Quarter 2026 Results).",
+      "alt": "A single large figure of about 48,000 dollars, the estimated hidden price cut on a large builder's average new home.",
+      "data": {
+        "value": "~$48,000",
+        "label": "Estimated hidden cut on Lennar's average home",
+        "sub": "12.9% incentive load on a $371,000 average selling price, roughly 13% off the paid price while the sticker holds"
+      }
+    },
+    {
+      "id": "lennar-incentive-cresting",
+      "kind": "bar",
+      "title": "The hidden discount is cresting, not peaking",
+      "subtitle": "Lennar sales incentives as a share of sale price, by quarter",
+      "source": "Lennar quarterly results, Q4 FY2025 through Q2 FY2026.",
+      "units": "% of sale price",
+      "note": "A 4-6% load is the historical norm management cites. The load is elevated but has fallen three quarters running, the first such narrowing in three years.",
+      "alt": "Three bars. Q4 fiscal 2025 at 14.5%, Q1 fiscal 2026 at 14.1%, Q2 fiscal 2026 at 12.9%, stepping down each quarter, all far above the 4-6% norm.",
+      "data": {
+        "bars": [
+          {
+            "label": "Q4 FY25",
+            "value": 14.5
+          },
+          {
+            "label": "Q1 FY26",
+            "value": 14.1
+          },
+          {
+            "label": "Q2 FY26",
+            "value": 12.9,
+            "highlight": true
+          }
+        ],
+        "max": 16
+      }
+    },
+    {
+      "id": "price-optics-2008-2026",
+      "kind": "comparison",
+      "title": "Same supply stress, opposite price optics",
+      "subtitle": "How the new-home price reads in two double-digit-supply downturns",
+      "source": "Census/HUD via NBC News (Dec 2007 median $219,200, down 10.4% year over year); Census Monthly New Residential Sales (May 2026 median, flat); Cumulant effective-price estimate for 2026.",
+      "units": "% change year over year",
+      "note": "In 2008 builders cut list prices and the headline fell. In 2026 the headline is flat while the effective price falls through financing.",
+      "alt": "Bars comparing year-over-year price change. December 2007 headline down 10.4%. May 2026 headline 0%. May 2026 effective price an estimated down 13%.",
+      "data": {
+        "bars": [
+          {
+            "label": "Dec 2007 headline",
+            "value": -10.4
+          },
+          {
+            "label": "May 2026 headline",
+            "value": 0
+          },
+          {
+            "label": "May 2026 effective (est.)",
+            "value": -13,
+            "highlight": true
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "A glut, a slump, and a price that won't budge",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The June 24 release from the Census Bureau and HUD landed with a contradiction baked in. New single-family home sales slid to a 580,000 seasonally adjusted annual rate in May 2026, down 7.3% from April and 6.8% from a year earlier. The supply of new homes for sale climbed to 10.3 months, up from 9.7 a year ago and the kind of double-digit overhang the market last saw in the foreclosure era. Builder confidence, measured by the NAHB/Wells Fargo Housing Market Index, sat at 35 in June, its 14th straight month below 40, deep in pessimistic territory."
+        },
+        {
+          "type": "p",
+          "text": "And yet the headline price did not move. The median new-home price was $424,900 in May, statistically identical to $424,800 a year earlier. A double-digit supply glut and the worst builder mood in years, paired with a price that looks like a flat line. That tension is the story."
+        },
+        {
+          "type": "chart",
+          "chartId": "effective-vs-headline"
+        },
+        {
+          "type": "callout",
+          "label": "The setup",
+          "text": "When a market is this oversupplied and this gloomy, prices are supposed to fall. The new-home median didn't. Either builders have quiet pricing power, or the price we are all looking at is not measuring what we think it is."
+        }
+      ]
+    },
+    {
+      "heading": "The question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the narrow question this piece answers: when supply hits a 16-year-style high but the Census median holds flat, is the new-home market actually clearing through hidden price cuts that the headline never subtracts, and how large is that concealed discount today?"
+        },
+        {
+          "type": "p",
+          "text": "The method a reader can follow in one sentence: take the headline price, subtract the documented incentive load that builders themselves report, and watch the two lines separate. The gap between them is the discount the sticker cannot show."
+        }
+      ]
+    },
+    {
+      "heading": "What happened, and who did it",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On June 24, 2026, Census and HUD published the May Monthly New Residential Sales report: 580,000 SAAR, the 10.3-month supply, the flat $424,900 median, and an average price up 5.0% from a year earlier to $540,600. (When the average rises while the median holds, it is a hint that the high end is still selling; hold that thought for the mix-shift debate below.) The standing inventory was about 496,000 homes for sale, only 1.4% below a year earlier even as the sales pace dropped, so each home now sits longer before it clears, which is how the supply figure pushed up to 10.3 months."
+        },
+        {
+          "type": "p",
+          "text": "A week earlier, on June 18, the NAHB had released its June builder survey. It showed 62% of builders using sales incentives, the 15th straight month at or above 60%, with 35% reporting outright price cuts averaging 6%. And on June 11, Lennar, the second-largest US homebuilder, had reported its fiscal second-quarter results, the clearest dollar-level read on what those incentives are actually worth."
+        },
+        {
+          "type": "p",
+          "text": "Three public sources, stacked: Census gives the headline price and the inventory, the NAHB survey gives the breadth of discounting, and the builder filings give the magnitude. Lay them on top of one another and the flat median starts to look less like resilience and more like a recording convention."
+        }
+      ]
+    },
+    {
+      "heading": "What the data says",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the mechanism. A mortgage-rate buydown is the lever here. Instead of dropping a home's price from $425,000 to $375,000, a builder hands cash to the lender to push the buyer's mortgage rate down, say from near 7% to something with a 4 or 5 in front. The buyer's monthly payment falls just as it would after a price cut, but the contract price, the number Census records, stays at $425,000. The discount is real money. It simply travels through the financing instead of the sticker."
+        },
+        {
+          "type": "p",
+          "text": "Now the magnitude. Lennar reported sales incentives running at 12.9% of sale price in its fiscal second quarter, against a long-run norm its leadership puts at 4 to 6%. Apply that 12.9% to Lennar's $371,000 average selling price and you get roughly $48,000 of value handed to the buyer that the contract price never nets out. That is a 13%-ish cut hiding behind a flat number."
+        },
+        {
+          "type": "chart",
+          "chartId": "hidden-cut"
+        },
+        {
+          "type": "p",
+          "text": "The breadth confirms it is not one builder. With 62% of all builders using incentives for over a year straight, and a third cutting prices outright by an average 6%, the discounting is industry-wide. The flat median is sitting on top of a market that is, by the builders' own disclosures, paying less than it appears to."
+        },
+        {
+          "type": "pullquote",
+          "text": "The discount is real money. It simply travels through the financing instead of the sticker."
+        }
+      ]
+    },
+    {
+      "heading": "What the headline misses",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This is the intellectual center, and it has two layers. The first is the one above: the flat $424,900 is largely a measurement artifact. Census captures gross contract price, so a discount delivered as a buydown is invisible to it by construction. Read the median literally and you conclude builders have pricing power. Read the filings and you find the opposite, paid prices down by high single digits to low double digits while the headline holds."
+        },
+        {
+          "type": "p",
+          "text": "The second layer is the one most coverage misses entirely: the hidden discount is cresting, not peaking. Lennar's incentive load did not just stay high, it fell three quarters running, from 14.5% to 14.1% to 12.9%. Management framed that narrowing as the first in three years. So the true price of a Lennar home may now be firming, very slightly, even as the headline median, still flat, registers neither the earlier steep discount nor the new firming."
+        },
+        {
+          "type": "chart",
+          "chartId": "lennar-incentive-cresting"
+        },
+        {
+          "type": "callout",
+          "label": "The non-obvious point",
+          "text": "The official price series is blind in both directions. It missed the hidden cut on the way down, and it will miss the hidden firming on the way back up. A flat line can hide a market in motion."
+        }
+      ]
+    },
+    {
+      "heading": "Competing explanations",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two stories could plausibly explain a flat median in a glutted market, and both deserve a fair hearing before we lean on the hidden-discount reading."
+        },
+        {
+          "type": "p",
+          "text": "The first is mix shift, a change in the kind of homes being sold. The average price rose 5.0% to $540,600 in May while the median stayed put. When the average climbs faster than the median, it usually means the top of the market is doing the selling: pricier, larger homes make up a bigger slice of closings, which can prop up the headline even if no single home holds its price. But mix shift and buydowns are not rivals; they stack. Mix shift explains why the listed median looks steady. The incentive data explains why the price actually paid is lower than any listed figure. One is about which homes sell; the other is about what buyers really hand over."
+        },
+        {
+          "type": "p",
+          "text": "The second is genuine pricing discipline. Builders may refuse to cut list prices because land and construction costs set a floor, and because a public list-price cut would drag down the comparable sales, the comps, that appraisers use on every other home in a community. A financing incentive is surgical: it lowers one buyer's cost without resetting the whole neighborhood's paper value. That is true, but it is a reason builders discount through financing, not evidence that they are not discounting. The proof shows up in the margin. Lennar's homebuilding gross margin came in at a thin 15.6% in Q2, with net earnings down sharply from a year earlier, exactly what you would expect if real prices, net of those incentives, are under pressure."
+        },
+        {
+          "type": "callout",
+          "label": "The verdict",
+          "text": "Neither alternative survives as a substitute for the discount story. Mix shift props up the listed median; cost floors explain why the cut hides in the financing. Both leave the central finding intact: the paid price has fallen further than the sticker admits."
+        }
+      ]
+    },
+    {
+      "heading": "What it means",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For a buyer, the lesson is that in this market the sticker is the wrong place to look. The real negotiating happens at the rate lock, where a builder's cash can shave tens of thousands off the lifetime cost of the loan without ever showing up as a lower price. For inflation-watchers, the flat median quietly understates the disinflation already running through new homes, though the effect is muted in the official numbers: shelter CPI leans on rents and owners' implied rents, not new-home transaction prices, so this particular mismeasurement does not flow straight into headline inflation."
+        },
+        {
+          "type": "p",
+          "text": "And the turn matters most of all. With Lennar's incentive load stepping down three quarters running, the deepest discounts may already be in the rear-view mirror. A buyer waiting for the official price to fall before jumping in could find that the best deals, the richest buydowns, have quietly come and gone, even though the Census line never showed them arriving and will not show them leaving."
+        },
+        {
+          "type": "pullquote",
+          "text": "In this market the sticker is the wrong place to look. The real negotiating happens at the rate lock."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Pulled the headline figures (sales pace, months' supply, median and average price, inventory) from the Census Bureau and HUD Monthly New Residential Sales release for May 2026, published June 24, 2026.",
+    "Took the breadth of discounting (share of builders using incentives, share cutting prices, average cut) from the NAHB/Wells Fargo Housing Market Index for June 2026, released June 18, 2026.",
+    "Took the dollar magnitude (12.9% incentive load, $371,000 average selling price, the three-quarter step-down, gross margin) from Lennar's fiscal second-quarter 2026 results, reported June 11, 2026, and the accompanying earnings call.",
+    "Estimated the effective price as listed price x (1, incentive share), and the dollar discount as 12.9% x $371,000, which rounds to about $48,000.",
+    "Built the 2023-2026 index chart by assuming an incentive share rising from about 6% (2023) to about 13% (2026); this is an illustration of the widening gap, not a Census-published series.",
+    "Cross-checked the 2008-versus-2026 comparison against the Census/HUD December 2007 median ($219,200, down 10.4% year over year) as reported at the time."
+  ],
+  "sources": [
+    {
+      "title": "Monthly New Residential Sales, May 2026",
+      "publisher": "U.S. Census Bureau and HUD",
+      "url": "https://www.census.gov/construction/nrs/pdf/newressales.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Median and Average Sales Prices of New Homes Sold (historical time series)",
+      "publisher": "U.S. Census Bureau",
+      "url": "https://www2.census.gov/programs-surveys/nrs/tables/time-series/historical-nrs/uspricemon.pdf",
+      "kind": "data"
+    },
+    {
+      "title": "New Home Sales Slide to Multi-Year Lows",
+      "publisher": "Mortgage News Daily",
+      "url": "https://www.mortgagenewsdaily.com/news/06262026-new-home-sales",
+      "kind": "secondary"
+    },
+    {
+      "title": "Lennar Reports Second Quarter 2026 Results",
+      "publisher": "Lennar Corporation (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/lennar-reports-second-quarter-2026-results-302798539.html",
+      "kind": "primary"
+    },
+    {
+      "title": "Lennar Reports Second Quarter 2026 Results",
+      "publisher": "Lennar Newsroom",
+      "url": "https://newsroom.lennar.com/2026-06-11-Lennar-Reports-Second-Quarter-2026-Results",
+      "kind": "primary"
+    },
+    {
+      "title": "Lennar (LEN) Q2 2026 Earnings Call Transcript",
+      "publisher": "The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/06/12/lennar-len-q2-2026-earnings-transcript/",
+      "kind": "secondary"
+    },
+    {
+      "title": "NAHB/Wells Fargo Housing Market Index",
+      "publisher": "National Association of Home Builders",
+      "url": "https://www.nahb.org/news-and-economics/housing-economics/indices/housing-market-index",
+      "kind": "primary"
+    },
+    {
+      "title": "Builder Confidence Remains Subdued (June 2026 HMI)",
+      "publisher": "Mortgage News Daily",
+      "url": "https://www.mortgagenewsdaily.com/news/06182026-builder-confidence-nahb-hmi",
+      "kind": "secondary"
+    },
+    {
+      "title": "New home sales fell by record amount in 2007",
+      "publisher": "NBC News / Associated Press",
+      "url": "https://www.nbcnews.com/id/wbna22880294",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "The effective-price line and the 2023-2026 index are Cumulant estimates built on assumed incentive shares, not a Census-published series; they illustrate the direction and rough size of the gap, not a precise paid-price level.",
+    "The roughly $48,000 figure applies Lennar's company-wide incentive load to its company-wide average price; it characterizes one large builder, not the whole market, and individual deals vary widely.",
+    "Incentive shares differ across builders, price points, and regions; the NAHB survey measures how widespread discounting is, not its dollar magnitude.",
+    "A rate buydown lowers monthly payments, but its cash value to a buyer depends on how long the loan is held; treating the full incentive as an equivalent price cut is an approximation.",
+    "The breakdown of inventory by stage of construction was omitted because it could not be independently confirmed from a primary source at publication.",
+    "Census monthly new-home estimates carry wide margins of error and are frequently revised; the month-over-month and year-over-year moves should be read as estimates."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "secondarySections": [
+    "economy",
+    "company-analysis"
+  ],
+  "companies": [
+    "Lennar",
+    "Wells Fargo",
+    "NAHB (National Association of Home Builders)"
+  ],
+  "people": [],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "Homebuilding",
+    "Residential Construction",
+    "Mortgage Lending",
+    "Real Estate"
+  ],
+  "assetClasses": [
+    "Real Estate",
+    "Equities",
+    "Fixed Income"
+  ],
+  "impactTags": [
+    "Housing Supply Glut",
+    "Hidden Discounting",
+    "Mortgage-Rate Buydowns",
+    "Price Measurement Artifact",
+    "Builder Margins"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 72,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "New single-family home sales fell to a 580,000 annual pace in May 2026 (down 7.3% from April) and supply rose to 10.3 months, yet the median price held flat at $424,900.",
+    "The flat Census median is largely a measurement artifact: builders are clearing inventory with mortgage-rate buydowns and incentives that the gross contract price never subtracts.",
+    "Lennar's incentive load hit 12.9% of sale price in fiscal Q2, versus a 4-6% historical norm, implying roughly $48,000 of hidden discount on its $371,000 average home.",
+    "The hidden discount is cresting, not peaking: Lennar's incentives fell from 14.5% to 14.1% to 12.9% over three quarters, so true prices may be firming even as the headline stays flat.",
+    "Competing explanations (mix shift and pricing discipline) stack with rather than replace the discount story, which is corroborated by Lennar's thin 15.6% gross margin."
+  ],
+  "whyItMatters": "The official new-home price series is blind to financing-based discounts, so a headline that looks like builder resilience actually sits atop a market clearing through roughly 13% concealed price cuts. That gap distorts how buyers, investors, and inflation-watchers read housing: buyers should negotiate at the rate lock rather than the sticker, equity investors should weigh compressed builder margins over flat reported prices, and the disinflation already running through new homes is understated even if it does not flow directly into shelter CPI. With the deepest buydowns apparently already past, the timing of any housing recovery looks different than the headline suggests.",
+  "whatToWatch": [
+    "Whether Lennar and peer builders report further declines in incentive load in upcoming quarters, signaling true prices firming.",
+    "The next NAHB survey for shifts in the share of builders using incentives and cutting list prices.",
+    "Whether months of supply eases from the 10.3-month overhang or continues climbing as the sales pace slows.",
+    "Builder gross margins as a real-time gauge of whether net-of-incentive prices remain under pressure."
+  ],
+  "primarySection": "real-estate",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T07:51:22.736Z"
+}
