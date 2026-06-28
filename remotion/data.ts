@@ -1,65 +1,47 @@
-// Structured story data for the test reel. Content is separated from presentation
-// so Cumulant agents can later supply this object and the system renders the video.
-// Facts taken ONLY from the source article; nothing invented.
+// Structured story data (v2): minimal, big-text-only, centered, faster. Each scene
+// shows one or two big centered beats synced to the deep VO. Content from the article.
 
-export type Caption = { t: string; e?: string }; // e = the one word/number emphasized in magenta
+export type Beat = { t: string; e?: string }; // e = the word emphasized in magenta
 export type Scene = {
   id: string;
-  role: "hook" | "context" | "number" | "evidence" | "why" | "next" | "outro";
-  frames: number; // = ceil(vo*30)+6
-  vo: number; // voiceover seconds
-  captions: Caption[];
+  frames: number;
+  vo: number;
+  kind: "text" | "object" | "number" | "chart" | "outro";
+  object?: "globe" | "barrel" | "coin";
+  trans: "flash" | "scale" | "blur"; // entrance transition style
+  beats: Beat[];
 };
 
 export const reel = {
   title: "The Oil War Premium Round-Tripped in 17 Weeks. The Barrels Did Not.",
   url: "cumulant.org/articles/oil-premium-roundtripped-barrels-did-not",
-  topic: "ENERGY · CRUDE OIL",
-  date: "26 JUNE 2026",
-  sources: ["OilPrice.com", "Al Jazeera", "CNBC", "Euronews"],
 
   scenes: [
-    { id: "s1", role: "hook", frames: 166, vo: 5.328, captions: [{ t: "On paper, the oil crisis is over" }, { t: "The shortage is not", e: "not" }] },
-    { id: "s2", role: "context", frames: 229, vo: 7.416, captions: [{ t: "A US strike shut the Strait of Hormuz" }, { t: "the world's top oil chokepoint" }, { t: "Oil spiked", e: "spiked" }] },
-    { id: "s3", role: "number", frames: 196, vo: 6.312, captions: [{ t: "By late June, Brent crude round-tripped" }, { t: "back to about $72", e: "$72" }] },
-    { id: "s4", role: "evidence", frames: 190, vo: 6.12, captions: [{ t: "The price recovered faster than the oil" }, { t: "Exports run near 75% of normal", e: "75%" }] },
-    { id: "s5", role: "why", frames: 205, vo: 6.624, captions: [{ t: "A ceasefire cut the odds of another blockade" }, { t: "not because the oil returned", e: "not" }] },
-    { id: "s6", role: "next", frames: 196, vo: 6.312, captions: [{ t: "A calm price on a fragile supply" }, { t: "can snap back fast", e: "fast" }] },
-    { id: "s7", role: "outro", frames: 148, vo: 4.728, captions: [] },
+    { id: "s1", frames: 181, vo: 5.928, kind: "object", object: "globe", trans: "scale",
+      beats: [{ t: "The worst oil scare in years just vanished.", e: "vanished" }, { t: "But the barrels never came back.", e: "never came back" }] },
+    { id: "s2", frames: 232, vo: 7.608, kind: "object", object: "barrel", trans: "flash",
+      beats: [{ t: "A US strike shut the Strait of Hormuz.", e: "Hormuz" }, { t: "A fifth of the world's oil.", e: "fifth" }] },
+    { id: "s3", frames: 168, vo: 5.472, kind: "number", object: "coin", trans: "scale",
+      beats: [{ t: "Right back where it started.", e: "started" }] },
+    { id: "s4", frames: 196, vo: 6.432, kind: "chart", trans: "blur",
+      beats: [{ t: "Price recovered. Oil didn't.", e: "didn't" }] },
+    { id: "s5", frames: 160, vo: 5.208, kind: "text", trans: "flash",
+      beats: [{ t: "A ceasefire calmed the fear.", e: "fear" }, { t: "The shortage never ended.", e: "never ended" }] },
+    { id: "s6", frames: 131, vo: 4.248, kind: "text", trans: "scale",
+      beats: [{ t: "A calm price on a fragile supply", e: "" }, { t: "can snap back fast.", e: "snap back fast" }] },
+    { id: "s7", frames: 155, vo: 5.064, kind: "outro", trans: "blur", beats: [] },
   ] as Scene[],
 
-  // the hero stat (count-up)
-  number: { value: 71.99, prefix: "$", decimals: 2, label: "BRENT CLOSE · 26 JUN 2026", note: "round-trip from a $126 peak", source: "OILPRICE · AL JAZEERA" },
-
-  // the evidence bar chart (price recovered, barrels did not)
+  number: { value: 72, prefix: "$", decimals: 0, caption: "BRENT, A BARREL" },
   evidence: {
-    title: "Price recovered. The barrels did not.",
-    units: "% OF PRE-WAR NORMAL",
     bars: [
-      { label: "Brent price", value: 100, hi: true },
-      { label: "Gulf exports", value: 75 },
-      { label: "Hormuz flow", value: 35 },
+      { label: "PRICE", value: 100, hi: true },
+      { label: "EXPORTS", value: 75 },
+      { label: "HORMUZ", value: 35 },
     ],
-    source: "OILPRICE · CNBC",
   },
-
-  // the context object scene
-  context: { object: "Crude barrel", note1: "STRAIT OF HORMUZ", note2: "~20% of seaborne oil", spike: "+75% peak" },
-
-  // the cause -> effect chain
-  why: { cause: "18 JUN CEASEFIRE", mid: "BLOCKADE ODDS FELL", effect: "PRICE FELL", contrast: "Supply never confirmed back" },
-
-  // what to watch
-  next: { line1: "Oil → gasoline · inflation · rates", watch: "WATCH: HORMUZ FLOWS" },
-
   outro: { wordmark: "Cumulant", tagline: "Beyond the Norm. Beneath the Headlines." },
 };
 
-export const TOTAL_FRAMES = reel.scenes.reduce((a, s) => a + s.frames, 0); // 1330 ≈ 44.3s
-
-// cumulative start frame of each scene (for audio placement)
-export const sceneStarts: number[] = (() => {
-  const out: number[] = []; let f = 0;
-  for (const s of reel.scenes) { out.push(f); f += s.frames; }
-  return out;
-})();
+export const TOTAL_FRAMES = reel.scenes.reduce((a, s) => a + s.frames, 0);
+export const sceneStarts: number[] = (() => { const o: number[] = []; let f = 0; for (const s of reel.scenes) { o.push(f); f += s.frames; } return o; })();

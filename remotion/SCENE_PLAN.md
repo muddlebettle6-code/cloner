@@ -1,15 +1,15 @@
-# Cumulant Reel — Scene Plan
+# Cumulant Reel — Scene Plan (v2)
 
-Format **1080×1920, 9:16, 30 fps, ~44.3 s (1330 frames)**, H.264. Black / magenta `#ff2d92` / white. Fonts: **Neue Haas Unica** (display) + **Akkurat Mono** (data/labels). A persistent background (radial magenta glow + fine grid + grain + vignette) runs under every scene so the deck is one continuous environment; foreground content cross-dissolves (fade + blur + subtle scale).
+Format **2160×3840 (4K via `--scale=2`), 9:16, 30 fps, ~40.8 s (1223 frames)**, H.264. Black / magenta `#ff2d92` / white. Fonts: **Neue Haas Unica** display only (all small text removed). A persistent magenta-glow background runs under every scene; foreground content uses varied transitions (flash / scale / blur). **Big centered text only**; beats swap in sync with the deep voice.
 
-| # | Frames | Type | Narration | Main visual | Supporting | Animation | Transition | Sound | Source |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 Hook | 0–166 | Text | "On paper, the oil crisis is over. The shortage is not." | Knockout headline "A fifth of the world's oil is still missing." (magenta "still missing") | Topic label ENERGY · CRUDE OIL · 26 JUN | Line-by-line mask reveal (cinematicScale) | In: fade/blur | music in, soft riser | deck/takeaways |
-| 2 Context | 166–395 | Object (3D) | "A US strike shut the Strait of Hormuz… Oil spiked." | **3D crude barrel**, slow spin, white key + magenta rim | STRAIT OF HORMUZ · ~20% of seaborne oil; +75% peak | Barrel eases up + rotates; labels reveal; spike number counts | crossfade + whoosh | whoosh on cut | timeline/keyPoints |
-| 3 Number | 395–591 | Data | "Brent crude round-tripped back to about $72." | **DataCounter $0→$71.99** (magenta, glow) | BRENT CLOSE · 26 JUN; "round-trip from a $126 peak"; source | Count-up (chartEase) + scale-in; label fade | crossfade + whoosh | whoosh + soft impact on land | keynumber chart |
-| 4 Evidence | 591–781 | Chart | "The price recovered faster than the oil. Exports near 75%." | **Bar chart**: Brent 100 (magenta) · Gulf exports 75 · Hormuz 35 | Title, % of pre-war normal, source | Bars grow (chartEase), values count | crossfade + riser in | whoosh + riser | bar chart |
-| 5 Why | 781–986 | Flow | "A ceasefire cut blockade odds, not because the oil returned." | **Cause→effect chain**: 18 JUN CEASEFIRE → BLOCKADE ODDS FELL → PRICE FELL (magenta) | "Supply never confirmed back" | Boxes reveal + magenta connector draws | crossfade + whoosh | whoosh | keyPoints |
-| 6 What next | 986–1182 | Text | "A calm price on a fragile supply can snap back fast." | Headline (magenta "snap back fast") | Oil → gasoline · inflation · rates; pulsing WATCH: HORMUZ FLOWS chip | Mask reveal + pulsing indicator | crossfade + whoosh | whoosh | takeaways |
-| 7 Outro | 1182–1330 | Logo | "Cumulant. Beyond the norm, beneath the headlines." | **Cumulant mark** (distribution curve) line-draws + wordmark | Tagline (mono) | Stroke draw + reveals | crossfade | music fade out | brand |
+| # | Frames | Visual | Beats (big, centered) | Motion | Transition | Sound |
+|---|---|---|---|---|---|---|
+| 1 Hook | 0–181 | **3D globe** (magenta wireframe, spins, scales up) | "The worst oil scare in years just **vanished**." → "But the barrels **never came back**." | object scale-in + text stamp | scale-in | swoosh-up + boom (globe lands) |
+| 2 Context | 181–413 | **3D barrel** (dark metal, magenta rim, rotates) | "A US strike shut the Strait of **Hormuz**." → "A **fifth** of the world's oil." | barrel rise + spin | **flash cut** | flash + boom + metallic clink |
+| 3 Number | 413–581 | **3D coin** + huge **$72** count-up | "BRENT, A BARREL" | coin spin + number count-up (overshoot) | scale-in | swoosh + clink + **bell ding** on land |
+| 4 Evidence | 581–777 | **Bar chart** PRICE 100 (magenta) · EXPORTS 75 · HORMUZ 35 | "Price recovered. Oil **didn't**." | bars grow (chartEase), values count | blur-in | riser + 3 ticks (bars) |
+| 5 Why | 777–937 | big centered text | "A ceasefire calmed the **fear**." → "The shortage **never ended**." | beat swap | **flash cut** | flash + **subdrop** on the consequence |
+| 6 What next | 937–1068 | big centered text | "A calm price on a fragile supply" → "can **snap back fast**." | beat swap (fast) | scale-in | swoosh + impact on "snap back fast" |
+| 7 Outro | 1068–1223 | **Cumulant mark** line-draws + wordmark | "Beyond the Norm. Beneath the Headlines." | stroke draw + overshoot | blur-in | whoosh, music fades |
 
-**Accessibility:** captions mirror the narration on every scene; chart bars + counter are labeled with values + units; one magenta emphasis per caption (not color-only — the word is also the key term); motion is eased (no strobing/flashing); audio has no sudden spikes.
+**3D objects (3):** globe, barrel, coin — each white key + magenta rim on black, with a soft contact shadow; SFX matched to each object's motion. **Audio:** deep onyx VO (dominant) + pulsing music bed + 10-clip SFX palette. **Accessibility:** big text mirrors the narration on every scene; one magenta emphasis per beat (also the key term, not color-only); eased motion, no strobing; no sudden audio spikes.
