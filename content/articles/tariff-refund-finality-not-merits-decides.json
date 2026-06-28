@@ -1,0 +1,559 @@
+{
+  "published": true,
+  "slug": "tariff-refund-finality-not-merits-decides",
+  "headline": "The Tariff Refund Where Finality, Not the Merits, Decides Who Gets Paid",
+  "deck": "The Supreme Court voided about $166 billion of IEEPA tariffs for every importer, and U.S. Customs is paying most of it back through a streamlined claims system that does not require a lawsuit. The analysis finds the real fight is over a smaller, finally-liquidated slice, and that whether it is recoverable turns on liquidation timing and who filed suit, not on the law, which is now the same for everyone.",
+  "takeaways": [
+    "The Supreme Court struck down about $166B of IEEPA tariffs as unlawful for all importers, not only those who sued. Customs is paying most of it back through its CAPE system, which an importer or its broker accesses by filing a simple electronic claim (a list of entry numbers), no lawsuit needed. About $130B sits in the Phase 1 and Phase 2 pipeline, and roughly $23B has actually reached Treasury so far, about one dollar in seven.",
+    "The genuinely contested money is a smaller slice: 'finally liquidated' entries, where Customs has formally closed the books. Finally-liquidated entries are part of the roughly 37% of affected entries (by count) that fell outside the fast Phase 1 process; Foley & Lardner estimates the finally-liquidated dollar value the government is fighting over at roughly $30B or more.",
+    "For that slice the government's position is binary: importers who filed a lawsuit at the trade court preserve a claim, while those who did not may have to sue or wait, with some exposed to a two-year statute-of-limitations clock.",
+    "Two honest readings compete. One: recovery is rationed by liquidation date and legal capacity, a regressive outcome that favors firms able to afford early counsel. The other: it follows a real statutory line, liquidation finality, that the government says Customs cannot cross on its own, only a court can.",
+    "Most of the unpaid $166B is pipeline, not refusal: CAPE phases roll out through end-July, and the bulk of refunds flow without anyone suing. The truly contested money is the finally-liquidated, never-sued bucket, not the full gap between collected and disbursed."
+  ],
+  "glossary": [
+    {
+      "term": "IEEPA",
+      "definition": "The International Emergency Economic Powers Act, a 1977 law that lets the president regulate certain commerce during a declared national emergency; it was the legal basis for the tariffs the Supreme Court struck down."
+    },
+    {
+      "term": "Tariff",
+      "definition": "A tax a government charges on imported goods, paid by the importer when the goods cross the border."
+    },
+    {
+      "term": "CBP",
+      "definition": "U.S. Customs and Border Protection, the federal agency that collects tariffs at the border and is now processing the refunds."
+    },
+    {
+      "term": "CAPE",
+      "definition": "Consolidated Administration and Processing of Entries, the CBP system rolling out in phases to refund the struck-down tariffs; an importer or its broker claims a refund by filing a simple electronic list of entry numbers, so most importers do not have to sue."
+    },
+    {
+      "term": "ACE Portal",
+      "definition": "The Automated Commercial Environment, the online system importers and brokers use to file shipments and deal with CBP; CAPE claims are filed inside it."
+    },
+    {
+      "term": "Entry",
+      "definition": "The customs paperwork for a single shipment; tariffs are charged entry by entry, and refunds are processed the same way."
+    },
+    {
+      "term": "Liquidation",
+      "definition": "CBP's final accounting of what was owed on an entry. Once an entry is liquidated, the books on that shipment are closed."
+    },
+    {
+      "term": "Finally liquidated",
+      "definition": "An entry whose duties were finalized long enough ago that CBP treats the account as legally closed; reopening it generally takes a court. These are the contested entries in this story."
+    },
+    {
+      "term": "Liquidation finality (19 U.S.C. 1514)",
+      "definition": "The statutory rule that a liquidation becomes final and conclusive unless it is timely protested or challenged in court; it is the legal hook the government uses to treat closed entries differently from open ones."
+    },
+    {
+      "term": "Reconciliation entry",
+      "definition": "A special customs filing that lets an importer flag certain figures (such as value) as estimates and true them up later; CAPE Phase 2 covers entries tied to this process that have not yet been trued up."
+    },
+    {
+      "term": "Antidumping/countervailing duties (AD/CVD)",
+      "definition": "Separate extra duties charged to offset unfairly low-priced or subsidized imports; entries held open under these orders are one reason some shipments fall outside the fast refund track."
+    },
+    {
+      "term": "Section 1581(i) suit",
+      "definition": "A lawsuit filed under section 1581(i) of the U.S. code at the Court of International Trade; the government says importers with finally-liquidated entries must go through this door to be repaid."
+    },
+    {
+      "term": "Court of International Trade (CIT)",
+      "definition": "The specialized federal court for customs and trade disputes; it issued the broad refund order the government is appealing."
+    },
+    {
+      "term": "Federal Circuit",
+      "definition": "The U.S. Court of Appeals for the Federal Circuit, the appeals court one level above the CIT, where the government's appeal of the broad refund order, filed in early June 2026, is now pending."
+    },
+    {
+      "term": "Universal injunction",
+      "definition": "A court order that applies to everyone affected, not just the people who sued; the government argues the refund order is an improper universal injunction."
+    },
+    {
+      "term": "Trump v. CASA",
+      "definition": "A 2025 Supreme Court decision (from the birthright-citizenship dispute) that courts should not hand relief to people who were not parties to the case; the government cites it to argue non-litigants are not automatically owed court-ordered refunds."
+    },
+    {
+      "term": "Disbursement",
+      "definition": "The actual paying-out of money; here, refund dollars approved by CBP and transmitted to Treasury to reach importers."
+    },
+    {
+      "term": "Harbor Maintenance Tax (HMT)",
+      "definition": "A federal cargo fee that, when charged on exports, the Supreme Court ruled unconstitutional in 1998; its refund history is the closest precedent for this story."
+    },
+    {
+      "term": "Statute of limitations",
+      "definition": "A legal deadline after which a claim can no longer be brought; in refund cases it can leave money owed but unrecoverable for those who file too late. Suits at the trade court generally face a two-year deadline."
+    },
+    {
+      "term": "Regressive",
+      "definition": "An outcome that lands harder on smaller or less-resourced parties than on larger ones; here, where legal capacity rather than the law could decide who actually gets repaid."
+    }
+  ],
+  "event": "On 23 June 2026 CBP confirmed in an ACE message that Phase 2 of its CAPE refund system deploys on 29 June 2026, covering about $28.7B across roughly 2.8 million additional entries and lifting combined Phase 1 and 2 coverage to about $130B of the $166B struck down. Phases 1 and 2 reach importers who never filed suit. Earlier in June the government took the fight the other way: on 2 June the Justice Department appealed Senior Judge Richard Eaton's broad Court of International Trade refund order to the Federal Circuit, arguing that finally-liquidated importers who never sued must each go to court to be repaid; at a 9 June CIT hearing CBP said its Phase 3 system for finally-liquidated entries would be ready by the end of July, but, under the government's position, would pay only importers who filed their own lawsuits.",
+  "question": "Now that the IEEPA tariffs are unlawful for everyone, is the roughly $30B-plus 'finally liquidated' slice recoverable in practice mainly by importers who filed suit, and is the line that decides this drawn by the merits, by liquidation timing and legal capacity, or by a statutory finality rule the government says it cannot cross on its own?",
+  "readingMinutes": 11,
+  "tags": [
+    "tariffs",
+    "IEEPA",
+    "trade",
+    "customs",
+    "refunds",
+    "litigation",
+    "CBP",
+    "Supreme Court"
+  ],
+  "leadChartId": "money-split",
+  "charts": [
+    {
+      "id": "money-split",
+      "kind": "bar",
+      "title": "Where the $166B refund splits: claims pipeline vs contested",
+      "subtitle": "The IEEPA tariff unwind, in $ billions of duties",
+      "source": "CBP CAPE filings as reported by Thompson Hine SmarTrade and Holland & Knight; Foley & Lardner (contested-dollar estimate)",
+      "units": "$B of duties",
+      "period": "as of late June 2026",
+      "note": "The two bars are dollars and sum to roughly $166B. 'CAPE pipeline' is the Phase 1+2 amount CBP refunds without anyone suing, though an importer or broker must still file a simple electronic CAPE claim. 'Phase 3 / contested remainder' is the rest, of which Foley & Lardner estimates roughly $30B or more is finally-liquidated entries the government wants gated on litigation.",
+      "alt": "A horizontal bar chart from a zero axis splitting about $166B of duties into two parts that sum to the whole: roughly $130B in the Phase 1+2 CAPE pipeline that pays without a lawsuit, and about $36B in the Phase 3 or contested bucket, of which roughly $30B or more is the finally-liquidated slice the government wants paid only to litigants.",
+      "data": {
+        "bars": [
+          {
+            "label": "CAPE pipeline (Phases 1+2), no suit needed",
+            "value": 130
+          },
+          {
+            "label": "Phase 3 / contested remainder",
+            "value": 36,
+            "highlight": true
+          }
+        ],
+        "max": 166
+      }
+    },
+    {
+      "id": "disbursed-so-far",
+      "kind": "keynumber",
+      "title": "How much has actually reached Treasury",
+      "subtitle": "Approved and transmitted, of $166B struck down",
+      "source": "CBP CAPE filings as reported by BDO and Thompson Hine SmarTrade",
+      "units": "$B",
+      "period": "as of mid-to-late June 2026",
+      "note": "About one dollar in seven. Most of the remaining gap is in the CAPE phase rollout, not withheld on principle; the genuinely contested money is the finally-liquidated bucket, not the full difference. CBP told the trade court about $20.6B had reached Treasury by 26 May, rising to roughly $23B by mid-June.",
+      "alt": "A single key number: about $23 billion approved and sent to Treasury so far, out of $166 billion struck down, roughly one dollar in seven.",
+      "data": {
+        "value": "$23B",
+        "label": "approved and sent to Treasury so far",
+        "sub": "about 1 in 7 of the $166B; most of the rest is pipeline, not refusal"
+      }
+    },
+    {
+      "id": "entry-reach",
+      "kind": "bar",
+      "title": "What puts an entry outside the fast Phase 1 refund",
+      "subtitle": "Share of affected IEEPA entries, by entry count (not dollars)",
+      "source": "CBP 31 March 2026 court filing, as reported by the Cato Institute; Holland & Knight",
+      "units": "% of affected entries (count)",
+      "note": "This is a count of entries, not a dollar share, and import value is far more concentrated, so the dollar split differs. The 37% is the bucket Phase 1 could not process at launch, finally-liquidated entries (more than ~80 days past liquidation), entries suspended under antidumping/countervailing-duty orders (about $2.9B across ~166,000 entries), and other special cases. Only the finally-liquidated, never-sued part of it is the truly contested money.",
+      "alt": "A two-bar chart from a zero axis: about 63% of affected entries by count could be processed by CAPE Phase 1, while about 37% fell outside it, a bucket that includes finally-liquidated entries, AD/CVD-suspended entries, and other special cases.",
+      "data": {
+        "bars": [
+          {
+            "label": "Phase 1 can process",
+            "value": 63
+          },
+          {
+            "label": "Outside Phase 1 (incl. finally liquidated)",
+            "value": 37,
+            "highlight": true
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "refund-timeline",
+      "kind": "timeline",
+      "title": "From ruling to refund: the key dates",
+      "subtitle": "The IEEPA tariff unwind, February to July 2026",
+      "source": "Supreme Court slip opinion; CIT and Federal Circuit dockets; CBP CSMS messages; BDO, Foley & Lardner and Thompson Hine analyses",
+      "alt": "A timeline from the 20 February 2026 Supreme Court ruling, through the 20 April CAPE Phase 1 launch, the late-May processing milestone, the 2 June government appeal, the 9 June trade-court hearing, the 29 June Phase 2 launch, and an end-of-July Phase 3 for finally-liquidated entries.",
+      "data": {
+        "events": [
+          {
+            "date": "20 Feb 2026",
+            "title": "Supreme Court strikes the tariffs",
+            "detail": "Learning Resources, Inc. v. Trump, 6-3, voids about $166B of IEEPA tariffs for all importers and sends the refund mechanics back to the lower courts."
+          },
+          {
+            "date": "20 Apr 2026",
+            "title": "CAPE Phase 1 launches",
+            "detail": "CBP opens its electronic refund-claim system for unliquidated entries and those within about 80 days of liquidation."
+          },
+          {
+            "date": "26 May 2026",
+            "title": "About $85B accepted, $20.6B to Treasury",
+            "detail": "Per CBP's rolling filing at the trade court; millions of entries cleared validation."
+          },
+          {
+            "date": "2 Jun 2026",
+            "title": "Government appeals the broad order",
+            "detail": "DOJ appeals Senior Judge Richard Eaton's universal refund order to the Federal Circuit, arguing finally-liquidated, never-sued importers must each file suit."
+          },
+          {
+            "date": "9 Jun 2026",
+            "title": "Trade court presses CBP",
+            "detail": "At a CIT hearing, CBP says Phase 3 (finally-liquidated entries) will be ready by end of July; Judge Eaton presses the agency on its slow rollout of Phase 2 and beyond."
+          },
+          {
+            "date": "29 Jun 2026",
+            "title": "CAPE Phase 2 deploys",
+            "detail": "Adds about $28.7B across roughly 2.8M entries (reconciliation-related), without anyone suing, lifting Phase 1+2 to about $130B."
+          },
+          {
+            "date": "End of Jul 2026",
+            "title": "CAPE Phase 3 slated",
+            "detail": "Covers finally-liquidated entries; under the government's position, refunds flow only to importers who filed suit, and the rest stays tied to the Federal Circuit appeal."
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news hook: a refund switch flips this week",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On 23 June 2026, U.S. Customs and Border Protection, CBP, the agency that collects tariffs at the border, told the trade community that Phase 2 of its refund engine goes live on 29 June. The engine is called CAPE, for Consolidated Administration and Processing of Entries, and its job is to pay back the tariffs the Supreme Court ruled in February were never lawfully owed. Phase 2 alone covers about $28.7 billion across roughly 2.8 million shipments, lifting combined Phase 1 and 2 coverage to about $130 billion of the $166 billion struck down."
+        },
+        {
+          "type": "p",
+          "text": "Here is the part worth slowing down for. That $130 billion flows to importers who never set foot in court. To claim it, an importer or its customs broker files a simple electronic form in CBP's online system, essentially a list of the entry numbers it wants refunded, and CBP strips out the unlawful duty and pays the difference back. There is paperwork, but there is no lawsuit. So for most importers the refund is not gated on hiring litigation counsel. That is the first thing the headline-grabbing version of this story gets wrong."
+        },
+        {
+          "type": "p",
+          "text": "But June carried a second development that points the other way. On 2 June, the government appealed the broad refund order issued by the Court of International Trade, the specialized customs court, to the Federal Circuit appeals court. Its argument: a particular set of importers, owed money under the identical ruling, should not be paid through the automatic system at all. Those importers, the government says, must each file their own lawsuit first. The dispute is not about whether the money is owed. It is about who has to go to court to collect it."
+        },
+        {
+          "type": "callout",
+          "label": "The event, as reported",
+          "text": "CBP's 23 June ACE message set Phase 2 for 29 June 2026 (about $28.7B across roughly 2.8M entries, lifting Phase 1+2 to about $130B). The tariffs fell in Learning Resources, Inc. v. Trump, a 6-3 Supreme Court decision on 20 February 2026. On 2 June the DOJ appealed Senior Judge Richard Eaton's broad refund order to the Federal Circuit; that appeal is pending, with no oral argument yet scheduled as of late June. At a 9 June CIT hearing, CBP said Phase 3 (finally-liquidated entries) would be ready by end of July. As of CBP's latest filings, about $23B has been approved and transmitted to Treasury. These 2026 figures come from court filings and client analyses cited below and should be checked against the live dockets, which move weekly."
+        },
+        {
+          "type": "chart",
+          "chartId": "refund-timeline"
+        }
+      ]
+    },
+    {
+      "heading": "The central question",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Everyone now agrees the tariff was unlawful, and the Court said so for all importers, not only the ones who sued. So the live question is no longer whether the money is owed. It is who actually gets it back, and on what basis. Our narrow, testable question: is the roughly $30-billion-plus finally-liquidated slice recoverable in practice mainly by importers who filed suit, and is the line that decides this the merits, liquidation timing and legal capacity, or a statutory finality rule the government says it cannot cross on its own?"
+        },
+        {
+          "type": "pullquote",
+          "text": "The law is now uniform. The remedy is not, and the dividing line is a date stamp, not the merits."
+        }
+      ]
+    },
+    {
+      "heading": "What happened: one ruling, two machines",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The whole dispute turns on a single customs word: liquidation. Tariffs are charged shipment by shipment, and each shipment, called an entry, has its own small life cycle. When the goods arrive, CBP records an estimate of what is owed. Some time later, CBP performs a final accounting, it liquidates the entry, and the books on that shipment close. Think of it like a credit-card statement that posts, then finalizes: before it finalizes you can still dispute a charge through the normal channel; after it finalizes you generally need a more formal process to claw money back."
+        },
+        {
+          "type": "p",
+          "text": "That timing is the fault line. CBP's CAPE system can quickly handle entries that are still legally open, either not yet liquidated, or liquidated recently enough that CBP can still reopen them on its own authority. That is most of the money. In a 31 March court filing, CBP estimated that its first phase could process about 63% of affected entries by count. The other roughly 37% fell outside that fast track."
+        },
+        {
+          "type": "p",
+          "text": "It is worth being precise about that 37%, because the easy version of the story gets it wrong. The 37% is not all 'finally liquidated.' It lumps together three things: entries liquidated more than about 80 days ago (the genuinely finally-liquidated group), entries frozen under separate antidumping or countervailing-duty orders (roughly $2.9 billion across about 166,000 entries), and other special cases. Only the finally-liquidated, never-sued part of that bucket is the money the government is actually fighting over. And because a handful of large importers account for an outsized share of the dollars, a 37% share of entries by count does not translate into a 37% share of the dollars, which is why the count figure and the roughly $30-billion dollar estimate are different measures, not the same number twice.",
+          "label": null
+        },
+        {
+          "type": "chart",
+          "chartId": "entry-reach"
+        },
+        {
+          "type": "p",
+          "text": "So picture two machines fed by one ruling. The first is administrative: file a short electronic claim, and CAPE pays. CBP rolled it out in waves, Phase 1 on 20 April for open and recently-liquidated entries, Phase 2 on 29 June for reconciliation-related entries (shipments whose figures were filed as estimates and not yet trued up), and a Phase 3 slated for end of July aimed at the finally-liquidated group. The second machine is judicial: for finally-liquidated entries where the importer never sued, the government says no administrative refund is owed at all until a court orders one."
+        },
+        {
+          "type": "chart",
+          "chartId": "money-split"
+        }
+      ]
+    },
+    {
+      "heading": "The contested slice: finally liquidated, never sued",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the government's position in plain terms. Once an entry is finally liquidated, a statute, 19 U.S.C. 1514, makes that accounting 'final and conclusive' on everyone unless it was challenged in time, either by a protest or by a lawsuit. CBP argues it has no power to reopen a finally-closed entry on its own; only a court can. So the importers who filed a lawsuit at the Court of International Trade, the government cites a figure of roughly 4,000 such plaintiffs, have a live claim a court can vindicate. The importers who did not are, on the government's reading, holders of accounts the law has already shut."
+        },
+        {
+          "type": "p",
+          "text": "The trade court saw it differently. Senior Judge Richard Eaton ordered CBP to refund the unlawful duties broadly, not just to the plaintiffs in front of him, reasoning that the court's nationwide jurisdiction over customs and the Constitution's requirement that duties be uniform support a remedy that reaches everyone. The government's appeal leans on a different Supreme Court decision, Trump v. CASA, from the 2025 birthright-citizenship fight, for the proposition that courts should not hand relief to people who were not parties to the case. That, in a sentence, is the legal engine of the whole fight: an unlawful tax that everyone agrees was unlawful, and a remedy the government wants to ration to those who showed up in court."
+        },
+        {
+          "type": "p",
+          "text": "The stakes for the never-sued are not only delay. Lawsuits at the trade court generally must be filed within two years (under 28 U.S.C. 2636(i)). An importer who waits for the appeal to resolve, assuming the automatic system will eventually reach its finally-liquidated entries, could in principle watch that window close. Foley & Lardner, the firm whose client alerts have tracked the contested figure most closely, puts the finally-liquidated money the government is fighting over at roughly $30 billion or more.",
+          "label": null
+        },
+        {
+          "type": "pullquote",
+          "text": "An unlawful tax everyone agrees was unlawful, and a remedy the government wants to ration to those who showed up in court."
+        }
+      ]
+    },
+    {
+      "heading": "Two honest readings",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "You can tell this story two ways, and an honest account has to hold both."
+        },
+        {
+          "type": "p",
+          "text": "The first reading is that the remedy is regressive. The law is now identical for every importer, yet whether you actually get your money back can turn on when your entries happened to liquidate and on whether you could afford to file a protective lawsuit early, before anyone knew how the case would end. A large importer with standing counsel filed suit as insurance; a small one without a trade lawyer may have done nothing, and may now be told the door is closed. On this view, the deciding line is not the merits but legal capacity and a calendar."
+        },
+        {
+          "type": "p",
+          "text": "The second reading is that the line is a real statutory rule, not an accident. Liquidation finality is not invented for this case; it is the ordinary mechanism that lets the government and importers treat closed entries as closed, in both directions. The government's claim is narrow and, on its own terms, modest about agency power: CBP says it cannot reopen a finally-liquidated entry by itself, and that only a court can. If that is right, the gating is not the executive choosing winners; it is the executive declining to do something it says it lacks authority to do, and pointing finally-liquidated importers to the courthouse the statute already names."
+        },
+        {
+          "type": "p",
+          "text": "Which reading wins is exactly what the Federal Circuit will decide. Note what is not in dispute on either reading: the tariff was unlawful, and the dividing line among importers is not who has the better legal argument on the tariff. It is a date stamp, when the entry liquidated, and a procedural fact, whether the importer sued."
+        }
+      ]
+    },
+    {
+      "heading": "The precedent: a tax struck down before",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "This is not the first time the government has had to unwind a charge the courts found it never should have collected. In 1998 the Supreme Court, in United States v. United States Shoe Corp., held the Harbor Maintenance Tax unconstitutional as applied to exports, because the Constitution's Export Clause bars taxing goods leaving the country. CBP then had to refund years of payments, and it built a process to do so from its own records."
+        },
+        {
+          "type": "p",
+          "text": "The HMT episode is the closest map we have for what comes next, and it cuts both ways. On the encouraging side, it shows CBP can run a mass refund off its own data without forcing every payer into court. On the cautionary side, the HMT refunds were governed by filing deadlines and procedure, they were not simply mailed to everyone who had ever paid. The lesson for an importer sitting on finally-liquidated entries is the unglamorous one: in refund fights, the calendar and the paperwork often decide as much as the constitutional principle."
+        }
+      ]
+    },
+    {
+      "heading": "What to watch",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Three things will tell you which way this resolves. First, the Federal Circuit: whether it upholds the broad, everyone-gets-paid order or accepts the government's universal-injunction argument and confines court-ordered refunds to those who sued. Second, the shape of Phase 3 at end of July, whether CBP, as a technical matter, processes finally-liquidated entries for non-litigants too, or only opens the door to plaintiffs as its appeal position implies. Third, the statute-of-limitations clock: every week the appeal runs, more never-sued importers approach the two-year deadline to file their own protective suit."
+        },
+        {
+          "type": "list",
+          "label": "The bottom line",
+          "items": [
+            "The law is uniform: the tariff is unlawful for everyone, litigant or not.",
+            "The remedy is not uniform: most of the $166B flows back through CAPE without a lawsuit, but the finally-liquidated, never-sued slice (roughly $30B-plus) is gated on litigation under the government's position.",
+            "The deciding line is liquidation timing plus who sued, not the merits, though the government frames that line as a statutory finality rule it cannot cross alone.",
+            "Most of the unpaid money is pipeline, not refusal. Do not confuse the gap between $166B collected and ~$23B disbursed with the genuinely contested amount."
+          ]
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "Started from the load-bearing legal fact, the Supreme Court's 20 February 2026 decision in Learning Resources, Inc. v. Trump, and confirmed the 6-3 vote, the $166B figure, and the holding that IEEPA does not authorize tariffs against the slip opinion and multiple reputable summaries.",
+    "Separated 'market/headline reaction' from 'mechanics' by tracing the actual CBP refund process (CAPE) through the agency's own page and CSMS messages plus law-firm and accounting-firm client alerts that quote CBP's rolling filings at the Court of International Trade.",
+    "Cross-checked every dollar figure against at least two sources: the $130B Phase 1+2 pipeline, the $28.7B / ~2.8M-entry Phase 2, and the ~$23B transmitted to Treasury trace to CBP filings reported by Thompson Hine, BDO and Holland & Knight; the ~$30B-plus contested finally-liquidated estimate traces to Foley & Lardner.",
+    "Verified the litigation posture, the 2 June 2026 appeal of Judge Richard Eaton's order, the Trump v. CASA universal-injunction argument, and the Section 1581(i) / two-year statute-of-limitations point, against Holland & Knight, Foley & Lardner, Hogan Lovells and SCOTUSblog.",
+    "Corrected the 63%/37% entry split to its true meaning, CBP's 31 March 2026 court filing estimate of what Phase 1 could process, with the 37% comprising finally-liquidated, AD/CVD-suspended and special-case entries, rather than treating 37% as 'finally liquidated' alone.",
+    "Removed a claim, present in the draft, that the Federal Circuit heard oral argument on 18 June 2026; no source supports any oral argument, and the appeal was only filed in early June, so the date was treated as unverifiable and cut."
+  ],
+  "sources": [
+    {
+      "title": "Learning Resources, Inc. v. Trump, slip opinion (24-1287)",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Supreme Court Rules Against Tariffs Imposed Under IEEPA (LSB11398)",
+      "publisher": "Congressional Research Service / Congress.gov",
+      "url": "https://www.congress.gov/crs-product/LSB11398",
+      "kind": "primary"
+    },
+    {
+      "title": "International Emergency Economic Powers Act (IEEPA) Duty Refunds",
+      "publisher": "U.S. Customs and Border Protection",
+      "url": "https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds",
+      "kind": "primary"
+    },
+    {
+      "title": "CSMS # 68340863, UPDATE, Consolidated Administration and Processing of Entries (CAPE) for IEEPA Refunds",
+      "publisher": "U.S. Customs and Border Protection",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/412cc7f",
+      "kind": "primary"
+    },
+    {
+      "title": "Supreme Court Strikes Down IEEPA Tariffs: What Importers Need to Know Now",
+      "publisher": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/02/supreme-court-strikes-down-ieepa-tariffs",
+      "kind": "secondary"
+    },
+    {
+      "title": "CAPE Has Arrived: A Guide to Navigating the Next Phase of IEEPA Duty Refunds",
+      "publisher": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/04/cape-has-arrived-navigating-the-next-phase-of-ieepa-duty-refunds",
+      "kind": "secondary"
+    },
+    {
+      "title": "CBP Announces Phases 2 and 3 of the IEEPA Tariff Refund Process",
+      "publisher": "Thompson Hine SmarTrade",
+      "url": "https://www.thompsonhinesmartrade.com/2026/06/cbp-announces-phases-2-and-3-of-the-ieepa-tariff-refund-process/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump Administration Appeals CIT's IEEPA Tariff Refund Order",
+      "publisher": "Thompson Hine SmarTrade",
+      "url": "https://www.thompsonhinesmartrade.com/2026/06/trump-administration-appeals-cits-ieepa-tariff-refund-order/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Update on CBP IEEPA Refund Progress and New Orders from the U.S. Court of International Trade",
+      "publisher": "BDO",
+      "url": "https://www.bdo.com/insights/tax/update-on-cbp-ieepa-refund-progress-and-new-orders-from-the-us-court-of-international-trade",
+      "kind": "secondary"
+    },
+    {
+      "title": "IEEPA Tariff Refund Update: Government Appeals CIT Refund Order and the Road Ahead for Importers",
+      "publisher": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/06/ieepa-tariff-refund-update-government-appeals",
+      "kind": "secondary"
+    },
+    {
+      "title": "What Every Multinational Should Know About ... The Government's IEEPA Federal Circuit Appeal",
+      "publisher": "Foley & Lardner",
+      "url": "https://www.foley.com/insights/publications/2026/06/what-every-multinational-should-know-about-the-governments-ieepa-federal-circuit-appeal/",
+      "kind": "secondary"
+    },
+    {
+      "title": "What Every Multinational Should Know About ... the Government's Appeal of Judge Eaton's Universal IEEPA Tariff Refunds Order",
+      "publisher": "Foley & Lardner",
+      "url": "https://www.foley.com/insights/publications/2026/06/what-every-multinational-should-know-about-the-governments-appeal-of-judge-eatons-universal-ieepa-tariff-refunds-order-and-why-it-is-claiming-it-can-keep-billions-of-dolla/",
+      "kind": "secondary"
+    },
+    {
+      "title": "The U.S. Government pushes back on judicial authority to order some IEEPA tariff refunds",
+      "publisher": "Hogan Lovells",
+      "url": "https://www.hoganlovells.com/en/publications/the-us-government-pushes-back-on-judicial-authority-to-order-some-ieepa-tariff-refunds",
+      "kind": "secondary"
+    },
+    {
+      "title": "A brewing tariff refund battle",
+      "publisher": "SCOTUSblog",
+      "url": "https://www.scotusblog.com/2026/06/a-brewing-tariff-refund-battle/",
+      "kind": "secondary"
+    },
+    {
+      "title": "IEEPA Tariff Refunds Are Far from Ideal, and Could Get Farther",
+      "publisher": "Cato Institute",
+      "url": "https://www.cato.org/blog/ieepa-tariff-refunds-are-far-ideal-could-get-farther",
+      "kind": "secondary"
+    },
+    {
+      "title": "CAPE Phase 3 for IEEPA Tariff Refunds On Track for End of July as Federal Circuit Appeal Continues",
+      "publisher": "Green Worldwide Shipping",
+      "url": "https://www.greenworldwide.com/cape-phase-3-for-ieepa-tariff-refunds-on-track-for-end-of-july-as-federal-circuit-appeal-continues/",
+      "kind": "secondary"
+    },
+    {
+      "title": "United States v. United States Shoe Corp., 523 U.S. 360 (1998)",
+      "publisher": "U.S. Supreme Court / Justia",
+      "url": "https://supreme.justia.com/cases/federal/us/523/360/",
+      "kind": "primary"
+    },
+    {
+      "title": "Amended Procedure for Refunds of Harbor Maintenance Fees Paid on Exports of Merchandise",
+      "publisher": "Federal Register",
+      "url": "https://www.federalregister.gov/documents/2001/03/28/01-7603/amended-procedure-for-refunds-of-harbor-maintenance-fees-paid-on-exports-of-merchandise",
+      "kind": "primary"
+    }
+  ],
+  "limitations": [
+    "The dollar figures are moving targets. CBP files updates at the trade court roughly weekly, so the ~$130B pipeline, ~$28.7B Phase 2, and ~$23B transmitted-to-Treasury figures are point-in-time as of late June 2026 and will be stale soon; treat them as orders of magnitude, not final tallies.",
+    "The ~$30B-plus contested figure for finally-liquidated entries is a law-firm estimate (Foley & Lardner), not an official CBP accounting, and different firms quote somewhat different numbers.",
+    "The 37% 'outside Phase 1' share is a count of entries from CBP's 31 March 2026 filing, not a dollar share; because import value is concentrated in large importers, the corresponding dollar figure is different and not precisely public.",
+    "The case outcome is unresolved. The Federal Circuit had not ruled, and no oral-argument date was confirmed, as of late June 2026; the legal characterization here describes the parties' positions, not a settled holding.",
+    "Definitions of 'finally liquidated' vary slightly by source (for example, ~80 days under CAPE versus the formal 180-day protest window); we use the general concept and flag the threshold where it matters."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "leadImage": {
+    "src": "/images/articles/tariff-refund-finality-not-merits-decides.jpg",
+    "credit": "Photo: James R. Tourtellotte / U.S. Customs and Border Protection, Public Domain, via Wikimedia Commons",
+    "caption": "Imported containers stacked at the Port of Miami, one of the U.S. ports of entry where CBP collects the tariffs now subject to refunds.",
+    "alt": "Aerial photograph of a busy container terminal at the Port of Miami, with thousands of stacked shipping containers, gantry cranes, and cargo ships at the docks."
+  },
+  "articleType": "news-analysis",
+  "secondarySections": [
+    "policy",
+    "politics"
+  ],
+  "companies": [
+    "U.S. Customs and Border Protection",
+    "U.S. Department of Justice",
+    "Foley & Lardner",
+    "Learning Resources, Inc."
+  ],
+  "people": [
+    "Richard Eaton",
+    "Donald Trump"
+  ],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "International trade",
+    "Customs brokerage and logistics",
+    "Legal services",
+    "Import-dependent retail and consumer goods"
+  ],
+  "assetClasses": [],
+  "impactTags": [
+    "tariffs",
+    "tariff-refunds",
+    "trade-policy",
+    "litigation-risk",
+    "regulatory-action",
+    "working-capital"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 80,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "The Supreme Court voided about $166B of IEEPA tariffs as unlawful for all importers, not just those who sued; CBP is refunding most of it through its CAPE system, which requires only a simple electronic claim and no lawsuit.",
+    "About $130B sits in the Phase 1 and Phase 2 pipeline (Phase 2 goes live 29 June 2026), but only roughly $23B, about one dollar in seven, has actually reached Treasury so far.",
+    "The genuinely contested money is the smaller 'finally liquidated, never sued' slice, estimated by Foley & Lardner at roughly $30B or more, where CBP says it cannot reopen closed entries on its own.",
+    "The government's appeal (filed 2 June) argues finally-liquidated importers who never sued must each file suit to be repaid, while the trade court ordered broad refunds for everyone.",
+    "Two honest readings compete: recovery rationed by liquidation date and legal capacity (regressive), versus a real statutory finality rule (19 U.S.C. 1514) only a court can cross."
+  ],
+  "whyItMatters": "Tens of billions of dollars in working capital are at stake for thousands of U.S. importers, and the dividing line for repayment is liquidation timing and whether a firm filed a protective lawsuit, not the now-uniform merits. Smaller importers without standing trade counsel risk being shut out by a two-year statute-of-limitations clock even though the tariff is unlawful for them too. The outcome shapes how much cash flows back into import-dependent retail and consumer supply chains and tests how far courts can extend relief to non-parties.",
+  "whatToWatch": [
+    "Whether CBP's Phase 3 system for finally-liquidated entries actually deploys by end of July and whom it pays.",
+    "The Federal Circuit's handling of the DOJ appeal of Judge Eaton's broad refund order, including any oral-argument scheduling.",
+    "How fast approved refunds convert into actual Treasury disbursements beyond the current ~$23B.",
+    "Whether never-sued importers file protective suits before their two-year filing window under 28 U.S.C. 2636(i) closes."
+  ],
+  "primarySection": "trade",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-28T06:30:46.584Z"
+}
