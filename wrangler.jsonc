@@ -1,0 +1,9 @@
+jsonc
+  {
+    "name": "cloner",
+    "compatibility_date": "2025-09-23",
+    "assets": {
+      "directory": "./out",
+      "not_found_handling": "404-page"
+    }
+  }
