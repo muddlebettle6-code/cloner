@@ -1,0 +1,544 @@
+{
+  "published": true,
+  "slug": "save-offramp-rap-lowest-bill-auto-sweep-cliff",
+  "headline": "The SAVE borrowers who open the mail get the lowest bill. The ones who don't get the cliff.",
+  "deck": "Starting around July 1, 2026, the roughly 7.5 million borrowers parked in the SAVE plan's forbearance begin getting notices to pick a new student-loan plan within at least 90 days, or be swept onto a higher-payment plan automatically. Built from the statute, the math inverts the popular framing: among the plans this group can actually choose, the new Repayment Assistance Plan carries the lowest monthly payment, and the costly outcome is the one that requires no decision at all. The catch is that RAP's low payment buys cash-flow relief at the price of the longest payoff.",
+  "takeaways": [
+    "Around July 1 servicers begin a notice clock of at least 90 days for the roughly 7.5 million borrowers still in SAVE's forbearance; do nothing and you are auto-swept onto a higher-payment Standard or Tiered Standard plan.",
+    "For a typical borrower ($35,000 balance, $50,000 AGI, single, no dependents), actively choosing RAP costs about $167 a month, lower than IBR (about $221), Tiered Standard (about $295) or Standard (about $389).",
+    "Cheapest monthly is not cheapest overall: RAP stretches forgiveness to 30 years, so its low bill can mean paying longer, and more in total interest, than the 10-year Standard plan. The bargain is a cash-flow bargain, not a lifetime-cost one.",
+    "RAP is the only option that shrinks the balance even when the payment misses interest, because unpaid interest is waived and the law adds up to $50 a month of principal. Sitting in forbearance is the only path under which the debt grows.",
+    "The people most exposed by inaction are not the average borrower but PSLF-track public servants (the new Tiered Standard plan earns zero forgiveness credit); the lowest earners, for whom RAP's $10 floor exceeds SAVE's $0; and anyone ED's unspecified default lands on the costlier plan."
+  ],
+  "glossary": [
+    {
+      "term": "SAVE plan",
+      "definition": "The Saving on a Valuable Education plan, a low-payment income-driven repayment program created in 2023 and later blocked by federal courts, which is why its enrollees were parked in a payment pause."
+    },
+    {
+      "term": "Forbearance",
+      "definition": "A temporary pause on required loan payments; here, SAVE borrowers owe $0 a month, but interest has been adding to their balance again since August 1, 2025."
+    },
+    {
+      "term": "Income-driven repayment (IDR)",
+      "definition": "Any plan that sets your monthly student-loan payment based on what you earn rather than on a fixed schedule, and cancels any leftover balance after a set number of years."
+    },
+    {
+      "term": "RAP (Repayment Assistance Plan)",
+      "definition": "A new income-based plan created by the 2025 budget law that charges a flat percentage of your whole income, with the percentage rising as income rises, rather than a percentage of income above a threshold."
+    },
+    {
+      "term": "IBR (Income-Based Repayment)",
+      "definition": "An older income-driven plan, still available to this cohort, that for newer borrowers charges 10% of income above 150% of the poverty line and forgives the rest after 20 years."
+    },
+    {
+      "term": "Tiered Standard plan",
+      "definition": "A new fixed-term plan where the payoff period is set by how much you owe (10, 15, 20 or 25 years) rather than by your income; it does not count toward Public Service Loan Forgiveness."
+    },
+    {
+      "term": "Standard Repayment Plan",
+      "definition": "The traditional 10-year fixed-payment federal student-loan plan."
+    },
+    {
+      "term": "PSLF (Public Service Loan Forgiveness)",
+      "definition": "A program that wipes out the remaining balance after 120 qualifying monthly payments for people in government or nonprofit jobs; only payments made on certain plans count toward it."
+    },
+    {
+      "term": "Auto-sweep",
+      "definition": "The automatic enrollment of a borrower who does not actively choose a plan within the notice window; ED says non-responders go to 'either' the Standard or the Tiered Standard plan."
+    },
+    {
+      "term": "Loan servicer",
+      "definition": "The private company the government hires to send your bills, collect payments and handle plan changes; it is who mails the notices described here."
+    },
+    {
+      "term": "AGI (adjusted gross income)",
+      "definition": "Your total income for tax purposes after certain deductions; this is the income figure RAP uses to set your payment."
+    },
+    {
+      "term": "Discretionary income",
+      "definition": "Income above a protected floor (225% of the poverty line for SAVE, 150% for IBR); these plans set payments off this slice, while RAP uses your whole income."
+    },
+    {
+      "term": "Principal",
+      "definition": "The amount you originally borrowed and still owe, separate from the interest charged on top of it."
+    },
+    {
+      "term": "Accrue",
+      "definition": "To build up over time; interest 'accrues' when it keeps being added to what you owe, even during a payment pause."
+    },
+    {
+      "term": "Negative amortization",
+      "definition": "When your payment is smaller than the monthly interest, so the unpaid interest would normally swell the balance; RAP waives that unpaid interest instead."
+    },
+    {
+      "term": "Capitalization",
+      "definition": "When unpaid interest gets added to your principal, so you then owe interest on the interest."
+    },
+    {
+      "term": "Amortization",
+      "definition": "Spreading a loan into equal monthly payments over a set number of years; a longer term means a lower monthly payment but more total interest."
+    },
+    {
+      "term": "On-ramp",
+      "definition": "The 12-month grace period after the 2023 restart, which ran through September 30, 2024, during which missed payments were not reported to credit bureaus; it has since expired, so missed payments now hit credit scores."
+    },
+    {
+      "term": "Delinquency (90-plus days)",
+      "definition": "Being three or more months behind on a payment; at this point the lateness is reported to credit bureaus and damages your credit score."
+    },
+    {
+      "term": "P.L. 119-21",
+      "definition": "Public Law 119-21, the 2025 budget reconciliation law (the 'One Big Beautiful Bill') that created RAP and the Tiered Standard plan and set their parameters."
+    },
+    {
+      "term": "Poverty guideline",
+      "definition": "An annual income figure published by the federal government (HHS) used to decide eligibility and payment sizes for many programs; in 2025 it is $15,650 for a single-person household in the contiguous states."
+    }
+  ],
+  "event": "Around July 1, 2026, the U.S. Department of Education and its servicers begin sending notices, each giving at least 90 days, to the roughly 7.5 million borrowers still in the SAVE plan's forbearance, requiring them to choose the new Repayment Assistance Plan or another income-driven plan, or be auto-swept into a Standard or Tiered Standard plan as the forbearance is wound down through the third quarter of 2026.",
+  "question": "For a typical SAVE borrower, is actively choosing RAP the expensive move, or is doing nothing the expensive move?",
+  "readingMinutes": 10,
+  "tags": [
+    "student loans",
+    "SAVE plan",
+    "RAP",
+    "consumer credit",
+    "Department of Education",
+    "household debt",
+    "personal finance",
+    "Repayment Assistance Plan"
+  ],
+  "leadChartId": "repayment-ladder",
+  "charts": [
+    {
+      "id": "repayment-ladder",
+      "kind": "bar",
+      "title": "The repayment ladder",
+      "subtitle": "Monthly payment for one archetype: $35,000 balance, $50,000 AGI, single, no dependents. The borrower pays $0 today in forbearance; SAVE-as-designed is shown only as a reference, not a plan you can land on.",
+      "source": "Author's calculation from P.L. 119-21, the RAP payment schedule, ED plan terms, and the 2025 HHS poverty guidelines, amortized at 6%",
+      "units": "USD per month",
+      "note": "Among the plans this cohort can actually choose, RAP is the cheapest monthly bill, below IBR and well below either auto-sweep destination. The top SAVE bar is a reference point, not a destination.",
+      "alt": "Horizontal bars: SAVE as designed (reference) $62, RAP $167 highlighted, IBR $221, Tiered Standard 15-year $295, Standard 10-year $389.",
+      "data": {
+        "bars": [
+          {
+            "label": "SAVE as designed (reference, not a choice)",
+            "value": 62
+          },
+          {
+            "label": "RAP (active choice)",
+            "value": 167,
+            "highlight": true
+          },
+          {
+            "label": "IBR (active choice)",
+            "value": 221
+          },
+          {
+            "label": "Tiered Standard, 15-yr (possible sweep)",
+            "value": 295
+          },
+          {
+            "label": "Standard, 10-yr (possible sweep)",
+            "value": 389
+          }
+        ],
+        "max": 420
+      }
+    },
+    {
+      "id": "forgiveness-horizon",
+      "kind": "bar",
+      "title": "The cheap monthly payment has a long tail",
+      "subtitle": "Years until the loan is paid off or forgiven, for each plan a SAVE borrower can choose or be swept into",
+      "source": "Plan terms from P.L. 119-21 and ED published repayment-plan rules",
+      "units": "years to payoff or forgiveness",
+      "note": "RAP wins on monthly cash flow precisely because it spreads the debt over the longest horizon. Low bill, long road, the opposite of the 10-year Standard plan.",
+      "alt": "Bars of years to payoff or forgiveness: Standard 10, Tiered Standard 15, IBR 20, RAP 30.",
+      "data": {
+        "bars": [
+          {
+            "label": "Standard",
+            "value": 10
+          },
+          {
+            "label": "Tiered Standard (this balance)",
+            "value": 15
+          },
+          {
+            "label": "IBR (new-borrower terms)",
+            "value": 20
+          },
+          {
+            "label": "RAP",
+            "value": 30,
+            "highlight": true
+          }
+        ],
+        "max": 32
+      }
+    },
+    {
+      "id": "balance-year-one",
+      "kind": "bar",
+      "title": "What happens to a $35,000 balance in the first year",
+      "subtitle": "Signed change in balance over year one (negative means the balance shrinks), amortized at 6%",
+      "source": "Author's calculation at 6%; RAP interest waiver and principal match per P.L. 119-21; forbearance interest accrual per ED",
+      "units": "USD change, year 1",
+      "note": "Zero-centered because the values are signed. Forbearance is the only option under which the debt grows. RAP shrinks it even though its $167 payment does not cover the interest, because unpaid interest is waived and up to $50 a month of principal is added. The Standard plan shrinks it fastest.",
+      "alt": "Diverging bars from zero: SAVE forbearance plus $2,100 (grows), RAP minus $600, Tiered Standard minus $1,490, Standard 10-year minus $2,600.",
+      "data": {
+        "bars": [
+          {
+            "label": "SAVE forbearance (status quo)",
+            "value": 2100
+          },
+          {
+            "label": "RAP ($167/mo)",
+            "value": -600,
+            "highlight": true
+          },
+          {
+            "label": "Tiered Standard ($295/mo)",
+            "value": -1490
+          },
+          {
+            "label": "Standard 10-yr ($389/mo)",
+            "value": -2600
+          }
+        ]
+      }
+    },
+    {
+      "id": "bracket-cliffs",
+      "kind": "bar",
+      "title": "The $1 that costs $500 a year",
+      "subtitle": "Annual RAP payment by AGI, the rate applies to your entire income, not just the dollars over the line, so each band boundary is a true cliff",
+      "source": "Author's calculation from P.L. 119-21 and the published RAP payment schedule",
+      "units": "USD per year",
+      "note": "Earning one dollar over $50,000 reprices the whole AGI from the 4% band to the 5% band, jumping the annual bill from $2,000 to about $2,500. This is the opposite of how income tax brackets work, where only the dollars above the line are taxed at the higher rate.",
+      "alt": "Bars of annual RAP payment: $40,000 income (3% band) $1,200, $50,000 income (4% band) $2,000, $50,001 income (5% band) $2,500, $60,000 income (5% band) $3,000.",
+      "data": {
+        "bars": [
+          {
+            "label": "$40,000 AGI (3% band)",
+            "value": 1200
+          },
+          {
+            "label": "$50,000 AGI (4% band)",
+            "value": 2000
+          },
+          {
+            "label": "$50,001 AGI (5% band)",
+            "value": 2500,
+            "highlight": true
+          },
+          {
+            "label": "$60,000 AGI (5% band)",
+            "value": 3000
+          }
+        ],
+        "max": 3200
+      }
+    },
+    {
+      "id": "contested-sweep",
+      "kind": "comparison",
+      "title": "The contested top bar, and the PSLF trap inside it",
+      "subtitle": "Monthly auto-sweep payment for a $35,000 balance, by the destination ED has not yet specified",
+      "source": "Author's calculation at 6%; ED 'either Standard or Tiered Standard' language; PSLF qualifying-plan rules",
+      "units": "USD per month",
+      "note": "ED says non-responders go to 'either' plan, so the penalty for inaction is itself uncertain by about $94 a month. The deeper stake is forgiveness: the legacy 10-year Standard plan counts toward PSLF (though it pays the loan off in exactly 120 months, leaving nothing extra to forgive), while the new Tiered Standard plan does not count toward PSLF at all, so a public servant swept onto it earns zero credit toward forgiveness.",
+      "alt": "Two bars: Tiered Standard 15-year $295 versus Standard 10-year $389.",
+      "data": {
+        "bars": [
+          {
+            "label": "Tiered Standard, 15-yr",
+            "value": 295
+          },
+          {
+            "label": "Standard, 10-yr",
+            "value": 389
+          }
+        ],
+        "max": 420
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The notice clock starts in days, not months",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Around July 1, days from now, federal loan servicers begin sending notices to the roughly 7.5 million borrowers still parked in the SAVE plan's forbearance (about 8 million were enrolled at the peak), instructing each to exit the court-blocked plan and pick a legal one. Each notice opens a window of at least 90 days to choose, and the department has signaled the forbearance will be wound down across the third quarter of 2026. The notices are expected in waves, longest-enrolled borrowers first."
+        },
+        {
+          "type": "p",
+          "text": "The same transition stands up two new plans created by the 2025 budget law: the income-based Repayment Assistance Plan (RAP) and a fixed-term Tiered Standard plan. Borrowers who do nothing within their window get automatically enrolled into, in the Department of Education's own framing, 'either the Standard Repayment Plan, or the new Tiered Standard Plan.'"
+        },
+        {
+          "type": "callout",
+          "label": "Why this matters now",
+          "text": "This is among the largest cohorts the federal system has tried to move in one motion, roughly one in six of all federal student-loan borrowers, and it lands on an economy where student-loan trouble was already mounting: by February 2025 more than one in five borrowers with a payment due (20.5%) were seriously delinquent, meaning at least 90 days past due, and that share climbed to about one in three (31%) by April, according to TransUnion. The forbearance also stopped being interest-free on August 1, 2025: interest resumed while payments stayed paused, so millions have been quietly accruing balance for nearly a year before the first bill arrives. And unlike the 2023 restart, there is no 12-month on-ramp this time to keep missed payments off credit reports, the cushion that masked the last delinquency wave expired at the end of September 2024."
+        }
+      ]
+    },
+    {
+      "heading": "Two ways to read the same transition",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Much of the coverage frames RAP as the costly new regime that replaces a generous one. That reading is not wrong: measured against the $0 these borrowers pay today, every plan is an increase, and RAP at about $167 a month is a real cash shock. We wanted to test a narrower, more consequential question, holding the baseline fixed at the set of plans a borrower can actually land on."
+        },
+        {
+          "type": "pullquote",
+          "text": "For a typical SAVE borrower, is the act of choosing RAP the expensive move, or is the expensive move doing nothing at all?"
+        },
+        {
+          "type": "p",
+          "text": "The answer, built up from the statute, is that within the choice set the popular framing is backwards. The borrower who opens the envelope and actively picks RAP lands on the lowest monthly payment available to this group. The borrower who ignores it gets swept onto a higher one. Both readings are true at once because they use different baselines: 'RAP is more than SAVE' compares to a $0 payment that was always temporary, while 'RAP is the cheapest choice' compares to the plans you can be put on now. This piece is about the second baseline."
+        },
+        {
+          "type": "chart",
+          "chartId": "repayment-ladder"
+        }
+      ]
+    },
+    {
+      "heading": "How we got the number",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "We built the payment ladder for one concrete, defensible archetype and derived every rung from the underlying rules rather than from secondary calculators, which often disagree with each other. The archetype: a $35,000 balance, $50,000 adjusted gross income (AGI), single, no dependents, close to the median federal borrower. We amortize fixed-term plans at 6% throughout, meaning we spread each one into equal monthly payments at a single 6% interest rate so the plans can be compared on the same footing."
+        },
+        {
+          "type": "p",
+          "text": "Step 1, what SAVE was paying. SAVE set undergraduate payments at 5% of 'discretionary income,' meaning income above 225% of the federal poverty line. For a household of one in 2025 the poverty guideline is $15,650, so 225% is $35,213. That leaves $14,788 of discretionary income, times 5%, divided by 12: about $62 a month as designed. But SAVE is in forbearance, so the borrower actually pays $0 today, while interest has accrued again since August 1, 2025."
+        },
+        {
+          "type": "p",
+          "text": "Step 2, what RAP charges. RAP is not a percentage of discretionary income. It is a flat percentage of total AGI, divided by 12, minus $50 per dependent, with a $10 monthly minimum. The percentage climbs by income band: it is 1% on AGI from $10,001 to $20,000 and rises one point per $10,000 of income, reaching 10% above $100,000. Our $50,000 earner sits in the $40,001-to-$50,000 band, which is taxed at 4%. So 4% of $50,000 is $2,000 a year, or about $167 a month. With no dependents, nothing is subtracted."
+        },
+        {
+          "type": "p",
+          "text": "Step 3, the other rungs. IBR charges 10% of income above 150% of the poverty line ($23,475 for a household of one), which is $26,525 of discretionary income times 10%, or about $221 a month. The 10-year Standard plan amortizes the full $35,000 at 6% into 120 payments of about $389. The Tiered Standard plan sets the term by balance, 15 years for a $25,000-to-$50,000 balance, which at 6% works out to about $295 a month. Lined up, RAP is the lowest bill a SAVE borrower can choose, and both auto-sweep destinations sit above it."
+        },
+        {
+          "type": "chart",
+          "chartId": "bracket-cliffs"
+        },
+        {
+          "type": "p",
+          "text": "That band structure has a sharp edge. Because the rate applies to your whole income rather than only the dollars above a line, crossing a band boundary reprices everything. Earn $50,000 and you pay 4%, or $2,000 a year. Earn one dollar more and the whole $50,001 is charged at 5%, jumping the annual bill to about $2,500. That is a $500 swing from a single dollar of income, the opposite of how income-tax brackets work, where only the dollars above the line face the higher rate."
+        }
+      ]
+    },
+    {
+      "heading": "Cheapest monthly is not cheapest overall",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "RAP wins the monthly contest for a reason that is also its catch: it spreads the debt over the longest horizon of any option here. RAP forgives whatever is left after 30 years. Standard clears the loan in 10, Tiered Standard in 15 for this balance, and IBR forgives after 20 for newer borrowers. A lower bill stretched over three decades can mean paying longer, and more in total interest, than the 10-year plan. The RAP bargain is a cash-flow bargain, more money in your pocket each month, not a lifetime-cost bargain."
+        },
+        {
+          "type": "chart",
+          "chartId": "forgiveness-horizon"
+        }
+      ]
+    },
+    {
+      "heading": "The one place the balance still shrinks",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There is a twist that makes RAP unusual. Its $167 payment does not even cover the monthly interest on $35,000 at 6%, which runs about $175. Under most plans, that shortfall would swell the balance, the phenomenon called negative amortization. RAP handles it two ways the law spells out: the unpaid interest is waived rather than added, and if your payment does not reduce principal by at least $50 in a month, the government chips in a subsidy so the principal falls by $50 anyway. The result is that a RAP borrower's balance shrinks by roughly $600 in year one, even while paying less than the interest."
+        },
+        {
+          "type": "p",
+          "text": "Set against the alternatives, the contrast is stark. Sitting in forbearance is the only path on which the debt actually grows, by about $2,100 in a year as interest piles on with no payment against it. Tiered Standard cuts the balance by roughly $1,490 in year one and the Standard plan by about $2,600, because their higher payments pay down principal faster. Inaction is not a neutral hold; it is the single option that leaves you owing more."
+        },
+        {
+          "type": "chart",
+          "chartId": "balance-year-one"
+        }
+      ]
+    },
+    {
+      "heading": "Who actually gets hurt by doing nothing",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The averages hide where the real damage lands. Start with public servants chasing PSLF, which cancels the balance after 120 qualifying payments for people in government or nonprofit work. Only payments made on certain plans count. RAP qualifies. The new Tiered Standard plan does not count at all, so a teacher or nurse swept onto it earns zero credit toward forgiveness while believing they are paying their loans down. The legacy 10-year Standard plan technically qualifies, but it clears the loan in exactly 120 months, leaving nothing extra to forgive. For a PSLF-track borrower, the auto-sweep is the worst outcome on the board, and it is the default."
+        },
+        {
+          "type": "chart",
+          "chartId": "contested-sweep"
+        },
+        {
+          "type": "p",
+          "text": "Next, the lowest earners. RAP carries a $10 monthly minimum even for someone earning almost nothing, whereas SAVE could put a low-income borrower's payment at $0. For a household living paycheck to paycheck, the move from $0 to a required $10, with the credit-reporting consequences of missing it, is not trivial. And finally, everyone caught by ED's own vagueness: the department says non-responders go to 'either' the Standard or the Tiered Standard plan without saying which, a roughly $94-a-month difference for this archetype that the borrower does not get to pick."
+        },
+        {
+          "type": "p",
+          "text": "The throughline is that the cost of inaction is concentrated, not average. The median borrower who ignores the notice ends up on a pricier plan than they had to. But the public servant, the lowest earner and anyone with a thin cash cushion can lose something harder to recover than a few dollars a month: forgiveness credit, a clean credit report, or simply the choice itself."
+        }
+      ]
+    },
+    {
+      "heading": "The bottom line",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Framed against the $0 of forbearance, RAP looks like the expensive new world. Framed against the plans a SAVE borrower can actually be put on this summer, it is the cheapest monthly bill, and the costly outcome is the one that requires no decision at all. The honest caveat is that RAP's low payment is bought with the longest payoff, so cheap-per-month and cheap-overall are not the same thing. But the practical instruction is simple: the borrower who opens the mail and chooses gets the lowest bill and keeps every option open. The borrower who does not gets the cliff."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "We answer one narrow question, is choosing RAP or doing nothing the expensive move, for a single archetype: $35,000 balance, $50,000 AGI, single, no dependents, close to the median federal borrower. Every payment is derived from the underlying statute and plan rules, not from third-party calculators.",
+    "RAP payment: 4% of $50,000 AGI (the $40,001-$50,000 band) divided by 12, no dependent reduction, equals about $167. Bands and features (1%-10% of total AGI by $10,000 step, $10 minimum, minus $50 per dependent, unpaid-interest waiver, $50 principal match, 30-year forgiveness) are taken from P.L. 119-21 as summarized by the Congressional Research Service and the published RAP payment schedule.",
+    "SAVE-as-designed: 5% of discretionary income above 225% of the 2025 poverty guideline ($15,650 for a household of one), about $62/month, shown only as a reference, since the plan is court-blocked and the borrower actually pays $0 in forbearance.",
+    "IBR: 10% of income above 150% of the poverty line ($23,475), about $221/month, using new-borrower terms (20-year forgiveness). Standard: $35,000 amortized at 6% over 120 months, about $389. Tiered Standard: 15-year term for a $25,000-$50,000 balance at 6%, about $295.",
+    "Year-one balance change uses a 6% rate throughout. Forbearance grows the balance by roughly the annual interest (~$2,100). RAP's principal falls about $600 (the $50/month statutory match net of the waived shortfall). Tiered Standard and Standard fall by the principal portion of their amortizing payments (~$1,490 and ~$2,600).",
+    "The auto-sweep destination is reported by ED only as 'either the Standard Repayment Plan or the new Tiered Standard Plan'; we show both and flag the unresolved difference and the PSLF consequences."
+  ],
+  "sources": [
+    {
+      "title": "U.S. Department of Education Announces Next Steps for Borrowers Enrolled in the Unlawful SAVE Plan",
+      "publisher": "U.S. Department of Education",
+      "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-next-steps-borrowers-enrolled-unlawful-save-plan",
+      "kind": "primary"
+    },
+    {
+      "title": "The Repayment Assistance Plan (RAP) in P.L. 119-21, the FY2025 Reconciliation Law (IF13075)",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/IF13075",
+      "kind": "primary"
+    },
+    {
+      "title": "What Is the New Repayment Assistance Plan (RAP) for Student Loans?",
+      "publisher": "NerdWallet",
+      "url": "https://www.nerdwallet.com/student-loans/learn/what-is-the-new-repayment-assistance-plan-rap-for-student-loans",
+      "kind": "secondary"
+    },
+    {
+      "title": "Department of Ed Will Begin July 1 Exit Plan for 7 Million SAVE Plan Borrowers",
+      "publisher": "The College Investor",
+      "url": "https://thecollegeinvestor.com/81538/save-plan-forbearance-ends-borrower-reminders/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Interest is accruing again for student loan borrowers on the SAVE plan",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2025/08/01/interest-accruing-again-for-student-loan-borrowers-on-save-plan.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "As Federal Collections Activity Resumes, More Than One in Five Federal Student Loan Borrowers With a Payment Due are Seriously Delinquent (Feb 2025 data)",
+      "publisher": "TransUnion",
+      "url": "https://newsroom.transunion.com/may-2025-student-loan-update/",
+      "kind": "data"
+    },
+    {
+      "title": "Following the Resumption of Federal Collection Activities, Nearly One in Three Federal Student Loan Borrowers Find Themselves at Risk for Default (April 2025 data)",
+      "publisher": "TransUnion",
+      "url": "https://newsroom.transunion.com/june-2025-student-loan-update/",
+      "kind": "data"
+    },
+    {
+      "title": "One Big Beautiful Bill Act: Paying Back Your Loans (Tiered Standard terms by balance)",
+      "publisher": "PHEAA",
+      "url": "https://www.pheaa.org/tools-resources/how-obbba-impacts-student-loans/repayment-and-forgiveness",
+      "kind": "secondary"
+    },
+    {
+      "title": "PSLF Repayment Plans: Which Qualify, Which Don't (2026)",
+      "publisher": "Student Loan Sherpa",
+      "url": "https://studentloansherpa.com/all-repayment-plans-eligible-for-pslf-plus-tips-and-strategy/",
+      "kind": "secondary"
+    },
+    {
+      "title": "PSLF qualifying repayment plan",
+      "publisher": "Federal Student Aid (studentaid.gov)",
+      "url": "https://studentaid.gov/help-center/answers/article/qualifying-repayment-plan-for-pslf",
+      "kind": "primary"
+    },
+    {
+      "title": "Student loan borrowers will have two new repayment options come July 1. Here's how to pick one",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/29/student-loan-borrowers-new-repayment-plans.html",
+      "kind": "secondary"
+    },
+    {
+      "title": "HHS Poverty Guidelines for 2025",
+      "publisher": "U.S. Department of Health and Human Services (ASPE)",
+      "url": "https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines",
+      "kind": "data"
+    }
+  ],
+  "limitations": [
+    "All figures are for one archetype ($35,000 balance, $50,000 AGI, single, no dependents). The ranking of plans can shift for other balances, incomes, family sizes, or interest rates, especially for very low earners (where RAP's $10 floor and IBR's $0 can diverge) and high earners.",
+    "We assume a single 6% interest rate for comparability; an individual borrower's blended rate may be higher or lower, which changes the year-one balance figures and the Standard/Tiered Standard payments.",
+    "IBR is modeled on new-borrower terms (10% of discretionary income, 20-year forgiveness). Borrowers whose first loans predate July 1, 2014 face older IBR terms (15% and 25 years), raising both the payment and the horizon.",
+    "The auto-sweep destination is genuinely unspecified by ED ('either' Standard or Tiered Standard), so the exact penalty for inaction cannot be pinned to a single number; we show the range.",
+    "RAP's 30-year forgiveness, $50 principal match, and interest waiver are written into P.L. 119-21, but operational details and servicer implementation are still being finalized and could differ at the margin from the statute as summarized here.",
+    "Total lifetime-cost comparisons (rather than year-one and monthly figures) would depend on future income paths and are not modeled."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "secondarySections": [
+    "policy",
+    "economy"
+  ],
+  "companies": [
+    "U.S. Department of Education",
+    "TransUnion"
+  ],
+  "people": [],
+  "regions": [
+    "United States"
+  ],
+  "industries": [
+    "Student lending",
+    "Higher education",
+    "Public sector employment"
+  ],
+  "assetClasses": [
+    "Consumer credit",
+    "Student loans"
+  ],
+  "impactTags": [
+    "household-cash-flow",
+    "consumer-debt",
+    "credit-delinquency",
+    "loan-forgiveness",
+    "default-risk"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Short-Term",
+  "newsScore": 82,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "Around July 1, 2026 servicers begin a 90-day-plus notice clock for roughly 7.5 million borrowers still in SAVE's forbearance; non-responders are auto-swept onto a higher-payment Standard or Tiered Standard plan.",
+    "For a typical borrower ($35,000 balance, $50,000 AGI, single), actively choosing the new Repayment Assistance Plan costs about $167/month, the lowest available option, below IBR (~$221), Tiered Standard (~$295) and Standard (~$389).",
+    "Cheapest monthly is not cheapest overall: RAP stretches forgiveness to 30 years, so its low bill can mean more total interest than the 10-year Standard plan, a cash-flow bargain, not a lifetime-cost one.",
+    "RAP is the only plan that shrinks the balance even when the payment misses interest (unpaid interest waived plus up to $50/month of principal); staying in forbearance is the only path on which the debt grows (~$2,100 in year one).",
+    "Inaction hits specific groups hardest: PSLF-track public servants (Tiered Standard earns zero forgiveness credit), the lowest earners (RAP's $10 floor exceeds SAVE's $0), and anyone ED's unspecified default lands on the costlier plan."
+  ],
+  "whyItMatters": "This is one of the largest single-motion borrower transitions the federal student-loan system has attempted, about one in six federal borrowers, landing on an economy where serious delinquency had already climbed toward one in three borrowers with a payment due by April 2025. Because interest resumed in August 2025 and there is no on-ramp shielding missed payments from credit reports, the choice borrowers make this summer directly affects household cash flow, consumer-credit quality, and forgiveness eligibility for millions. The counterintuitive finding, that doing nothing is the expensive move, reframes the practical guidance for borrowers and the delinquency risk for lenders and servicers.",
+  "whatToWatch": [
+    "Whether the Department of Education specifies which default plan (Standard vs. Tiered Standard) non-responders land on, a roughly $94/month difference for the typical archetype.",
+    "Delinquency and default trends as the first real bills hit through Q3 2026, with no credit-report on-ramp this time.",
+    "How quickly the 7.5 million borrowers respond to notices and what share actively elect RAP versus getting auto-swept.",
+    "Treatment of PSLF-track public servants swept onto Tiered Standard, which earns zero forgiveness credit, and any corrective guidance."
+  ],
+  "primarySection": "personal-finance",
+  "date": "2026-06-29",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-29T18:41:33.697Z"
+}

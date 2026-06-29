@@ -1,0 +1,582 @@
+{
+  "published": false,
+  "slug": "fifty-percent-american-car-usmca",
+  "headline": "The '50 Percent American' Car That Barely Exists",
+  "deck": "With the USMCA's 1 July review deadline days away, US negotiators have reportedly asked that half of every North American vehicle's value come specifically from the United States, with Canadian parts no longer counting toward that share. On the only public per-car content data, the most American mass-market car tops out near 80 percent, and even that figure still counts Canada.",
+  "takeaways": [
+    "In USMCA talks with Mexico that opened on 28 May 2026, US negotiators have reportedly floated requiring that 50 percent of a vehicle's value come specifically from the United States, with Canadian parts not credited toward that share, a country-specific floor today's bloc-wide 75 percent rule does not have.",
+    "The only official per-car content data (the window-sticker numbers NHTSA publishes) lumps US and Canadian parts into one figure; even on that generous combined measure, the most American mass-market model tops out near 80 percent.",
+    "Because combined US-plus-Canada content is a ceiling on US-only content, any model below 50 percent combined cannot clear a 50 percent US-only bar, and that rules out most of the market before Canada is even subtracted.",
+    "Assembly location is not content: by the Detroit Three's own trade-group figures, American-brand cars average about 50 percent combined content (so below the line once Canada is removed), while foreign brands average about a third, and plenty of the failing models are assembled inside the United States.",
+    "Failing the bar means losing tariff-free treatment, not a sales ban, and a separate 25 percent Section 232 auto tariff already taxes the non-US content of even compliant cars, pushing the auto sector's effective rate to roughly 15 percent in early 2026. That makes the 232 tariff, not the 50 percent figure, look like the binding lever, and the 50 percent number more like a negotiating anchor than a live rule."
+  ],
+  "glossary": [
+    {
+      "term": "USMCA",
+      "definition": "The United States-Mexico-Canada Agreement, the trade pact that took effect on 1 July 2020 and replaced NAFTA, governing tariff-free trade across North America."
+    },
+    {
+      "term": "Rules of origin",
+      "definition": "The criteria that decide whether a product counts as 'made in' a trade bloc and therefore qualifies for tariff-free treatment."
+    },
+    {
+      "term": "Regional value content (RVC)",
+      "definition": "The share of a product's value that must come from within the trade bloc for it to qualify as regional; for cars under USMCA it is currently 75 percent."
+    },
+    {
+      "term": "Country-specific floor",
+      "definition": "A rule requiring a minimum share of value from one named country (here, the US alone) rather than from the bloc as a whole."
+    },
+    {
+      "term": "AALA",
+      "definition": "The American Automobile Labeling Act of 1992, which requires every new car's window sticker to list the percentage of combined US-and-Canadian parts content, plus where it was assembled and where its engine and transmission came from."
+    },
+    {
+      "term": "NHTSA",
+      "definition": "The National Highway Traffic Safety Administration, the US agency that collects and publishes the per-model AALA content data each year."
+    },
+    {
+      "term": "Content by value",
+      "definition": "The share of a car's parts cost (not its weight or part count) that comes from a given place."
+    },
+    {
+      "term": "Final assembly",
+      "definition": "The plant where a vehicle is bolted together; it can be in a different country from where the engine, transmission and parts were made."
+    },
+    {
+      "term": "Upper bound",
+      "definition": "A ceiling a number cannot exceed; here, US-only content can never be higher than combined US-and-Canada content, so the combined figure caps the US-only figure."
+    },
+    {
+      "term": "Sales-weighted average",
+      "definition": "An average that counts high-selling models more heavily than low-selling ones, so it reflects the cars people actually buy."
+    },
+    {
+      "term": "Section 232",
+      "definition": "A US trade-law provision that lets the president impose tariffs on imports deemed a national-security risk; it is being used for a 25 percent tariff on imported autos, separate from USMCA."
+    },
+    {
+      "term": "MFN tariff",
+      "definition": "The 'most-favored-nation' tariff, the default rate a country charges any trading partner that gets no special deal, for passenger cars, 2.5 percent (light trucks are 25 percent)."
+    },
+    {
+      "term": "Effective tariff rate",
+      "definition": "The tariff actually paid as a share of an import's value after exemptions, which can be far below the headline statutory rate."
+    },
+    {
+      "term": "Detroit Three",
+      "definition": "Stellantis (the US arm of the former Chrysler/FCA), Ford and General Motors, the traditional American automakers."
+    },
+    {
+      "term": "USTR",
+      "definition": "The Office of the US Trade Representative, the federal agency that negotiates trade agreements."
+    },
+    {
+      "term": "Penn Wharton Budget Model",
+      "definition": "A nonpartisan University of Pennsylvania research group that estimates the economic effects of tax and trade policy, including how much tariff is actually collected."
+    },
+    {
+      "term": "AAPC",
+      "definition": "The American Automotive Policy Council, the Washington trade group that represents the Detroit Three."
+    },
+    {
+      "term": "Cars.com American-Made Index",
+      "definition": "An annual ranking that scores vehicles on a broad composite, assembly location, parts content, engine and transmission origin, and US factory jobs, so it is not the same as the AALA parts-content number."
+    },
+    {
+      "term": "Sunset / joint review",
+      "definition": "USMCA's clause requiring the three countries to review the pact in 2026 and either extend it 16 years or move to annual reviews that can let it lapse, possibly in 2036."
+    },
+    {
+      "term": "Tariff preference",
+      "definition": "The benefit of paying a lower or zero tariff, granted here to vehicles that meet USMCA's content rules; losing it means the vehicle can still be sold but pays the tariff."
+    }
+  ],
+  "event": "As of 28 June 2026, the US-Mexico-Canada trade pact faces a 1 July review deadline that is widely expected to pass without a clean 16-year extension, tipping the USMCA toward an open-ended annual review. In the first formal bilateral round with Mexico, held 28-29 May, US negotiators have reportedly proposed raising required North American auto content from 75 to 82 percent and adding a new 50 percent floor for US-specific content that would not credit Canadian parts. Days earlier, on 23 June, Cars.com named the US-built Tesla Model 3 the most American vehicle for a sixth straight year on its broader composite index.",
+  "question": "Of the vehicles built in North America today, how many would actually clear a 50 percent US-content bar, and how many of the failures are cars assembled inside the United States?",
+  "readingMinutes": 9,
+  "tags": [
+    "trade",
+    "autos",
+    "USMCA",
+    "tariffs",
+    "manufacturing",
+    "supply chains",
+    "North America",
+    "Section 232 tariffs"
+  ],
+  "leadChartId": "most-american",
+  "charts": [
+    {
+      "id": "most-american",
+      "kind": "bar",
+      "title": "The most American car still counts Canada",
+      "subtitle": "Share of a vehicle's value from the US plus Canada combined, selected models. There is no public per-car figure for the US alone; whatever each car's US-only share is, it must be lower than the combined bar shown here.",
+      "source": "Carscoops reading of NHTSA MY2025 AALA window-sticker data; GM Authority (GMC Terrain MY2026)",
+      "units": "% of value (US + Canada combined)",
+      "period": "MY2025-2026",
+      "note": "Bars combine US and Canadian content; the proposed 50 percent test counts the US alone, so the real bar is harsher than these numbers suggest. Model years are mixed: the Terrain figure is MY2026, the rest MY2025. The Kia EV6's 80 percent applies to its Georgia-built variants; the GT trim is still built in Korea and carries different content.",
+      "alt": "Bar chart of combined US-and-Canada parts content: Kia EV6 80 percent, Tesla Model 3 75 percent, Tesla Model Y 70 percent, Honda Ridgeline 70 percent, Acura MDX 70 percent, Ford Mustang Mach-E 13 percent, GMC Terrain 11 percent, Lincoln Nautilus 5 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "Kia EV6 (US, Georgia)",
+            "value": 80,
+            "highlight": true
+          },
+          {
+            "label": "Tesla Model 3 (US, Calif.)",
+            "value": 75
+          },
+          {
+            "label": "Tesla Model Y (US, Calif.)",
+            "value": 70
+          },
+          {
+            "label": "Honda Ridgeline (US, Alabama)",
+            "value": 70
+          },
+          {
+            "label": "Acura MDX (US, Ohio)",
+            "value": 70
+          },
+          {
+            "label": "Ford Mustang Mach-E (Mexico)",
+            "value": 13
+          },
+          {
+            "label": "GMC Terrain (Mexico)",
+            "value": 11
+          },
+          {
+            "label": "Lincoln Nautilus (China)",
+            "value": 5
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "brand-group-content",
+      "kind": "comparison",
+      "title": "The average American-brand car is already at the line, counting Canada",
+      "subtitle": "Sales-weighted domestic (US + Canada) content by brand group. Both bars still include Canada, so both fall once Canadian parts are stripped out; the figures come from the Detroit Three's own trade association.",
+      "source": "American Automotive Policy Council (the Detroit Three's trade group); industry-reported, not independently audited",
+      "units": "% of value (US + Canada combined)",
+      "alt": "Comparison bars: Detroit Three average 50 percent combined US-and-Canada content; foreign-brand automakers 33 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "Detroit Three (Stellantis/Ford/GM)",
+            "value": 50,
+            "highlight": true
+          },
+          {
+            "label": "Foreign-brand automakers",
+            "value": 33
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "review-timeline",
+      "kind": "timeline",
+      "title": "How a deadline became a decade-long question",
+      "subtitle": "Key moments in the USMCA auto-content story",
+      "source": "Compiled from USTR materials, Congressional Research Service reports, and trade-press reporting of the 28-29 May 2026 round; Cars.com (23 June 2026)",
+      "alt": "Timeline: July 2020 USMCA enters force with a 75 percent auto content rule; April 2025 a 25 percent Section 232 auto tariff takes effect; 28 May 2026 US-Mexico talks open and the US floats 82 percent plus a 50 percent US-only floor; 23 June 2026 Cars.com names the Tesla Model 3 most American for a sixth year; 1 July 2026 the review deadline.",
+      "data": {
+        "events": [
+          {
+            "date": "Jul 2020",
+            "title": "USMCA enters force",
+            "detail": "Replaces NAFTA; auto regional-value-content rule phases up toward 75 percent."
+          },
+          {
+            "date": "Apr 2025",
+            "title": "Section 232 auto tariff",
+            "detail": "A 25 percent national-security tariff on imported vehicles takes effect (parts follow in May), separate from USMCA."
+          },
+          {
+            "date": "28-29 May 2026",
+            "title": "US-Mexico talks open",
+            "detail": "US reportedly floats raising content to 82 percent and adding a 50 percent US-only floor that does not credit Canadian parts; Canada is not at the table."
+          },
+          {
+            "date": "23 Jun 2026",
+            "title": "Cars.com index",
+            "detail": "US-built Tesla Model 3 named most American vehicle for a sixth straight year on a broad composite."
+          },
+          {
+            "date": "1 Jul 2026",
+            "title": "Review deadline",
+            "detail": "Widely expected to pass without a clean 16-year extension, opening an annual-review process."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tariff-232",
+      "kind": "comparison",
+      "title": "What the 25 percent auto tariff actually collects",
+      "subtitle": "US Section 232 auto tariff in early 2026: the headline statutory rate versus the effective rate actually paid on vehicle imports, after the exemption that taxes only each vehicle's non-US content.",
+      "source": "Penn Wharton Budget Model (effective tariff rates, March 2026); Congressional Research Service (exemption mechanism)",
+      "units": "% tariff",
+      "period": "Jan 2026",
+      "note": "The exemption applies the 25 percent only to the non-US content of USMCA-compliant vehicles, so the more US content a car has, the less it pays. The roughly 15 percent figure is the auto sector average across all vehicle imports, not a single compliant model; cars with very high US content pay much less.",
+      "alt": "Comparison bars: statutory Section 232 rate 25 percent; effective rate actually paid on auto imports about 15 percent.",
+      "data": {
+        "bars": [
+          {
+            "label": "Statutory Section 232 rate",
+            "value": 25,
+            "highlight": true
+          },
+          {
+            "label": "Effective rate paid on auto imports",
+            "value": 15
+          }
+        ],
+        "max": 100
+      }
+    },
+    {
+      "id": "exemption-share",
+      "kind": "keynumber",
+      "title": "Almost everything already qualifies under today's rule",
+      "source": "Penn Wharton Budget Model",
+      "period": "Jan 2026",
+      "alt": "Key number: nearly 85 percent of January 2026 imports from Canada and Mexico claimed a USMCA exemption.",
+      "data": {
+        "value": "~85%",
+        "label": "of January 2026 imports from Canada and Mexico claimed a USMCA exemption (all goods, not autos alone)",
+        "sub": "across all goods that pushed the effective US tariff below 5 percent; autos specifically still ran near 15 percent, because their US content is lower, which is exactly why a tougher, US-only rule would bite"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news, and a correction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A correction before the argument, because it matters. The trade press has begun writing as though the United States, Mexico and Canada have already missed the 1 July deadline to settle the future of their trade pact, the USMCA. They have not. As of today, 28 June, that deadline is three days away, and the honest framing is the one the trade bar is actually using: a clean 16-year extension by 1 July looks unlikely, and the review is widely expected to spill past it into a longer, messier process."
+        },
+        {
+          "type": "p",
+          "text": "Missing the date does not blow up the agreement. Under USMCA's joint-review clause, the three governments either all agree to extend the pact 16 years or, if any one of them declines, the deal shifts into a mandatory annual review that can grind on year by year and then simply lapse, possibly on 1 July 2036."
+        },
+        {
+          "type": "p",
+          "text": "Into that uncertainty Washington has reportedly dropped a very specific number. In the first formal bilateral round with Mexico City, which ran 28 to 29 May, US negotiators are said to have proposed raising the share of a vehicle that must be built in North America from 75 percent to 82 percent and, this is the new part, requiring that 50 percent of a vehicle's value come specifically from the United States, with Canadian parts not counted toward that American share. We flag the sourcing plainly: these figures come from trade-press accounts of a bilateral negotiation (Canada was not in the room), not a published US Trade Representative text, and the specifics may move. Today's rule, by contrast, has no such country-specific floor: a dollar of Canadian content and a dollar of American content are treated identically."
+        },
+        {
+          "type": "chart",
+          "chartId": "review-timeline"
+        },
+        {
+          "type": "callout",
+          "label": "The question",
+          "text": "Of the vehicles built in North America today, how many would actually clear a 50 percent US-content bar, and how many of the failures are cars assembled inside the United States?"
+        },
+        {
+          "type": "p",
+          "text": "The short answer, our main finding: almost none clear it cleanly, the rule is far harsher than its own round number sounds, and 'assembled in America' turns out to have remarkably little to do with whether a car is half American by value. One caution up front, failing this bar does not ban a car from the showroom. It strips the vehicle of tariff-free treatment, so it pays a tariff. Whether that tariff actually hurts is a separate question we come back to at the end."
+        }
+      ]
+    },
+    {
+      "heading": "How to read a car's nationality",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Every new vehicle sold in the US carries a window sticker, mandated by the 1992 American Automobile Labeling Act (AALA), listing the percentage of its parts content, by value, sourced from the United States and Canada, lumped together as one number, plus where it was finally assembled and where its engine and transmission came from. NHTSA publishes the full per-model table each year."
+        },
+        {
+          "type": "p",
+          "text": "That single design choice is the whole story. The only official, per-vehicle content figure that exists in America already bundles Canada in with the US. The proposed rule wants to do the reverse: measure the US alone and throw Canada out. So there is no public dataset that directly answers the question being negotiated. We have to get at it sideways."
+        },
+        {
+          "type": "p",
+          "text": "That sideways route gives us a clean, conservative test, what a statistician would call a bound. Whatever a car's US-only content is, it cannot be higher than its combined US-and-Canada content. Think of the combined number as a ceiling and the US-only number as something that must sit at or below it. If the ceiling is under 50, the floor cannot reach 50 either. The car fails."
+        },
+        {
+          "type": "pullquote",
+          "text": "Any vehicle below 50 percent on the generous combined measure is mathematically incapable of clearing 50 percent on the US-only measure."
+        },
+        {
+          "type": "p",
+          "text": "We do not need to estimate each car's Canadian slice to know which ones fail. The only cars even in contention are those above 50 percent combined, and even they lose ground the moment Canada is stripped out. So the combined window-sticker numbers are not the answer, but they are a hard filter: everything below the line is already eliminated, and everything above it is merely a candidate, not a pass."
+        }
+      ]
+    },
+    {
+      "heading": "Which cars are even in contention",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the candidates, the handful of mass-market models that clear 50 percent on the combined measure. Even here the field is thin. On the most recent AALA data, the highest combined US-and-Canada content for a high-volume model belongs to the Georgia-built Kia EV6 at 80 percent. The US-built Tesla Model 3 sits at 75 percent, with the Model Y, Honda Ridgeline and Acura MDX clustered at 70. Those are the standouts, the most American cars in America, and every one of those figures still has Canada folded inside it."
+        },
+        {
+          "type": "chart",
+          "chartId": "most-american"
+        },
+        {
+          "type": "p",
+          "text": "Now apply the proposed test. Take the Tesla Model 3 at 75 percent combined. To pass a 50 percent US-only bar, no more than 25 of those 75 points can be Canadian. That is plausible for a California-built car, but it is not guaranteed, and crucially we cannot confirm it from any public figure, the data simply does not break it out. For the cars at 70 percent combined, the margin is tighter still: up to 20 points of Canadian content and they slip under. The point is not that these specific models fail; several of them probably pass. The point is that the comfortable-looking 70-to-80 percent numbers are not the numbers the rule would actually measure, and the true US-only figures are unknowable from the public record, and necessarily lower."
+        },
+        {
+          "type": "p",
+          "text": "Below that small cluster, the market falls off a cliff. The Ford Mustang Mach-E, assembled in Mexico, carries just 13 percent combined US-and-Canada content. The Mexico-built GMC Terrain is at 11 percent. The Lincoln Nautilus, now built in China, is at 5 percent. These are not edge cases; they are ordinary models on ordinary lots, and they fail the combined test by such a wide margin that no accounting of Canadian content could rescue them."
+        }
+      ]
+    },
+    {
+      "heading": "Assembly is not nationality",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is where the question's second half, how many failures are built inside the United States, turns the intuition inside out. It is tempting to assume an American-assembled car is an American car by content. It is not. Final assembly is one plant bolting parts together; content is the value of those parts, which can come from anywhere. A vehicle can be screwed together in Michigan out of largely Mexican components, or in Mexico out of largely American ones."
+        },
+        {
+          "type": "p",
+          "text": "The Detroit Three's own trade group, the American Automotive Policy Council, puts hard numbers on this. Across their fleets, sales-weighted, American-brand cars average 50 percent combined US-and-Canada content. Foreign brands average 33 percent. Read that carefully: the home team sits exactly on the 50 percent line, on the generous measure that still counts Canada. Strip Canada out, as the proposal would, and the average American-brand car drops below the bar."
+        },
+        {
+          "type": "chart",
+          "chartId": "brand-group-content"
+        },
+        {
+          "type": "p",
+          "text": "Because that 50 percent is an average, roughly half of American-brand volume sits below it even before Canada is removed, and the Detroit Three assemble enormous numbers of those vehicles inside the United States. So the answer to the second half of our question is blunt: a large share of the cars that would fail a 50 percent US-only test are built in America. Assembly location, the thing most people mean when they call a car American, is close to silent on whether the car is half American by value. The Cars.com American-Made Index, which crowned the US-built Tesla Model 3 the most American vehicle for a sixth straight year on 23 June, captures something real, but it is a broad composite of assembly, jobs, engine and transmission origin and parts, not the single US-only content figure the rule would turn on."
+        }
+      ]
+    },
+    {
+      "heading": "Does failing even matter?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "So most of the market fails the proposed bar, and much of the failing market is American-built. The natural next thought is that this would be catastrophic. It might not be, and the reason exposes the 50 percent figure for what it probably is."
+        },
+        {
+          "type": "p",
+          "text": "Failing the content test does not bar a car from sale. It costs the car its tariff preference, meaning it pays a tariff instead of crossing the border free. But look at what a non-compliant car actually pays today. There is already a 25 percent Section 232 tariff on imported autos, imposed in April 2025 on national-security grounds and entirely separate from USMCA. That is the headline rate. The rate actually collected is far lower, because the exemption built into it taxes only the non-US content of a vehicle, and because the great majority of North American trade still qualifies for relief: by the Penn Wharton Budget Model's reading of customs data, nearly 85 percent of January 2026 imports from Canada and Mexico claimed a USMCA exemption, pushing the effective US tariff across all goods below 5 percent. Autos, with their lower US content, ran higher, around 15 percent effective, but still well under the 25 percent headline."
+        },
+        {
+          "type": "chart",
+          "chartId": "tariff-232"
+        },
+        {
+          "type": "chart",
+          "chartId": "exemption-share"
+        },
+        {
+          "type": "p",
+          "text": "That reframes everything. The lever already squeezing the auto industry is the 25 percent Section 232 tariff and its US-content exemption, which rewards American parts directly and is collecting real money, roughly 15 cents on the dollar of imported-car value, right now. A new 50 percent US-only content floor inside USMCA would be a second, slower instrument pointed at the same target. Set against a tariff that is already biting, the 50 percent number reads less like a rule expected to take effect on a near-empty field of compliant cars and more like a negotiating anchor: a deliberately stiff opening demand that gives Washington something to trade down from. The math says almost no mass-market car clears it cleanly. The politics suggest almost no one expects them to have to."
+        },
+        {
+          "type": "callout",
+          "label": "The finding",
+          "text": "On the only public data, the most American mass-market car tops out near 80 percent combined, and even that counts Canada. Strip Canada out and the average American-brand car falls below 50 percent. Most of the cars that would fail a US-only test are built in the United States, which is why 'assembled in America' is nearly useless as a measure of content, and why a 50 percent floor looks more like an opening bid than a binding rule."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "The core logic is a one-sided bound. The proposed rule measures US-only content, but the only public per-car data (AALA window-sticker figures) reports US and Canadian content combined. Because US-only content can never exceed the combined figure, any model below 50 percent combined cannot reach 50 percent US-only and necessarily fails; models above 50 percent combined are candidates whose pass or fail cannot be confirmed from public data.",
+    "Per-model content figures are AALA window-sticker percentages for model year 2025 (model year 2026 for the GMC Terrain), as published by NHTSA and reported by Carscoops and GM Authority. We selected the highest- and lowest-content mass-market models to bracket the range; this is illustrative, not a full census of every vehicle sold.",
+    "Brand-group averages (Detroit Three 50 percent, foreign brands 33 percent, sales-weighted, combined US-and-Canada content) come from the American Automotive Policy Council, the Detroit Three's own trade association. They are industry-reported and not independently audited; we flag them as such.",
+    "Tariff figures come from the Congressional Research Service (the 25 percent Section 232 rate, its April 2025 effective date, and the non-US-content exemption mechanism) and the Penn Wharton Budget Model (the roughly 85 percent USMCA-exemption share for January 2026 imports from Canada and Mexico, the sub-5 percent effective rate across all goods, and the roughly 15 percent effective rate for autos specifically).",
+    "Negotiation terms (the reported 75-to-82 percent regional-value-content increase and the new 50 percent US-only floor) come from trade-press accounts of the 28-29 May 2026 bilateral round, not from a published USTR text. We treat them as reported proposals that may change."
+  ],
+  "sources": [
+    {
+      "title": "USMCA Joint Review: Process and Role of Congress (R48787)",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/R48787",
+      "kind": "primary"
+    },
+    {
+      "title": "The United States-Mexico-Canada Agreement (USMCA)",
+      "publisher": "Office of the US Trade Representative",
+      "url": "https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement",
+      "kind": "primary"
+    },
+    {
+      "title": "USMCA: Automotive Rules of Origin (IF12082)",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/IF12082",
+      "kind": "primary"
+    },
+    {
+      "title": "United States and Mexico Conclude First Bilateral Round Related to the Joint Review of the USMCA",
+      "publisher": "Office of the US Trade Representative",
+      "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/united-states-and-mexico-conclude-first-bilateral-round-related-joint-review-usmca",
+      "kind": "primary"
+    },
+    {
+      "title": "Tracking US-Mexico Talks on the USMCA Review",
+      "publisher": "Americas Society / Council of the Americas",
+      "url": "https://www.as-coa.org/articles/tracking-us-mexico-talks-usmca-review",
+      "kind": "secondary"
+    },
+    {
+      "title": "Canada sidelined in USMCA renegotiations as domestic economy dips",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/economy/2026/5/29/canada-sidelined-in-usmca-renegotiations-as-domestic-economy-dips",
+      "kind": "secondary"
+    },
+    {
+      "title": "US seeks tougher USMCA auto rules: 50% US content",
+      "publisher": "Mexico Business News",
+      "url": "https://mexicobusiness.news/automotive/news/us-seeks-tougher-usmca-auto-rules-50-us-content",
+      "kind": "secondary"
+    },
+    {
+      "title": "USMCA Review 2026: Six Scenarios for North America's Future",
+      "publisher": "Center for Strategic and International Studies",
+      "url": "https://www.csis.org/analysis/usmca-review-2026-six-scenarios-north-americas-future",
+      "kind": "secondary"
+    },
+    {
+      "title": "Part 583 American Automobile Labeling Act Reports",
+      "publisher": "NHTSA",
+      "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports",
+      "kind": "data"
+    },
+    {
+      "title": "49 CFR Part 583 (American Automobile Labeling Act)",
+      "publisher": "Electronic Code of Federal Regulations",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-583",
+      "kind": "primary"
+    },
+    {
+      "title": "MY2025 AALA content percentages",
+      "publisher": "NHTSA",
+      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-01/MY2025-AALA-Percentage-1.17.25.pdf",
+      "kind": "data"
+    },
+    {
+      "title": "MY2026 AALA content percentages",
+      "publisher": "NHTSA",
+      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-10/MY2026-AALA-Percentage-10-8-25.pdf",
+      "kind": "data"
+    },
+    {
+      "title": "How Much Of Your Car Is Really Made In The USA?",
+      "publisher": "Carscoops",
+      "url": "https://www.carscoops.com/2025/03/how-much-of-your-car-is-really-made-in-the-usa/",
+      "kind": "secondary"
+    },
+    {
+      "title": "2026 GMC Terrain built with fewer US and Canadian parts",
+      "publisher": "GM Authority",
+      "url": "https://gmauthority.com/blog/2026/02/2026-gmc-terrain-built-with-fewer-u-s-and-canadian-parts/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Trump Administration Tariff Actions on Automobiles and Auto Parts (IN12545)",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/IN12545",
+      "kind": "primary"
+    },
+    {
+      "title": "Effective Tariff Rates and Revenues (updated March 16, 2026)",
+      "publisher": "Penn Wharton Budget Model",
+      "url": "https://budgetmodel.wharton.upenn.edu/p/2026-03-16-effective-tariff-rates-and-revenues-updated-march-16-2026/",
+      "kind": "academic"
+    },
+    {
+      "title": "Domestic Content",
+      "publisher": "American Automotive Policy Council",
+      "url": "https://www.americanautomakers.org/domestic-content",
+      "kind": "primary"
+    },
+    {
+      "title": "2026 Cars.com American-Made Index: Which Cars Are the Most American?",
+      "publisher": "Cars.com",
+      "url": "https://www.cars.com/articles/2026-cars-com-american-made-index-which-cars-are-the-most-american-526147/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Tesla tops American-Made Index for sixth consecutive year",
+      "publisher": "Teslarati",
+      "url": "https://www.teslarati.com/tesla-tops-american-made-index-for-sixth-consecutive-year/",
+      "kind": "secondary"
+    }
+  ],
+  "limitations": [
+    "No public dataset reports US-only per-car content. Our analysis can only bound the answer from above using the combined US-and-Canada AALA figure; it cannot say with certainty which candidate models (those above 50 percent combined) would actually pass a US-only test.",
+    "Because the AALA figure includes Canada, the true share of vehicles failing a US-only bar is higher than the combined data alone shows, our conclusion is conservative in that direction.",
+    "We do not have a model-by-model census, so we cannot give an exact count of how many US-assembled vehicles would fail. We infer the scale from the Detroit Three's sales-weighted average (50 percent combined content) and the large US-assembled volume that sits at or below it.",
+    "The negotiation terms (82 percent regional content, 50 percent US-only floor) come from trade-press reporting of a bilateral round, not a published USTR text, and could change or be dropped.",
+    "AALA percentages vary by model year and trim. The Kia EV6's 80 percent applies to Georgia-built variants, not the Korea-built GT; the Terrain figure is model year 2026 while the others are 2025.",
+    "The American Automotive Policy Council figures are produced by the Detroit Three's own trade group and are not independently audited.",
+    "The roughly 15 percent effective auto tariff is a sector-wide average across all vehicle imports, including non-compliant ones; an individual highly compliant car pays less, and we cannot compute a precise per-model effective rate without US-only content data."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "secondarySections": [
+    "policy",
+    "business"
+  ],
+  "companies": [
+    "Tesla",
+    "Ford",
+    "General Motors",
+    "Kia",
+    "Honda",
+    "Cars.com",
+    "American Automotive Policy Council"
+  ],
+  "people": [],
+  "regions": [
+    "United States",
+    "Mexico",
+    "Canada",
+    "North America",
+    "China"
+  ],
+  "industries": [
+    "automotive",
+    "auto manufacturing",
+    "auto parts",
+    "trade"
+  ],
+  "assetClasses": [
+    "equities"
+  ],
+  "impactTags": [
+    "tariffs",
+    "trade-policy",
+    "rules-of-origin",
+    "supply-chain",
+    "auto-content"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 71,
+  "confidenceLevel": "medium",
+  "keyPoints": [
+    "US negotiators have reportedly proposed a new 50 percent US-specific auto-content floor (with Canadian parts not credited) plus a higher 82 percent North American threshold, ahead of the 1 July USMCA review deadline.",
+    "The only official per-car data (AALA window stickers via NHTSA) combines US and Canadian content, so it can only bound, not directly measure, US-only content, any model below 50 percent combined cannot clear a 50 percent US-only bar.",
+    "Even the most American mass-market models top out near 80 percent combined (Kia EV6 at 80, Tesla Model 3 at 75), and those figures still include Canada.",
+    "American-brand cars average just 50 percent combined US-plus-Canada content (foreign brands about 33 percent), so the average US-brand vehicle falls below the bar once Canada is stripped out, and many failing models are assembled inside the US.",
+    "Failing only strips tariff-free treatment, and a separate 25 percent Section 232 auto tariff (about 15 percent effective in early 2026) is already the binding lever, making the 50 percent figure look more like a negotiating anchor."
+  ],
+  "whyItMatters": "The proposed 50 percent US-only content floor would reshape which North American-built vehicles qualify for tariff-free treatment, hitting automakers, parts suppliers and workers on both sides of the US borders. Because assembly location is nearly silent on by-value content, even US-assembled cars from the Detroit Three could lose preferences, raising costs that flow through to vehicle prices. For investors and the auto industry, the real squeeze is the existing Section 232 tariff, so the negotiating outcome shapes margins and sourcing decisions across the sector.",
+  "whatToWatch": [
+    "Whether the 1 July review passes without a clean 16-year extension and tips USMCA into an open-ended annual review.",
+    "Publication of an actual USTR text confirming whether the 50 percent US-only floor and 82 percent threshold are formal proposals or negotiating anchors.",
+    "How the 25 percent Section 232 auto tariff and its US-content exemption evolve, since that is the lever already collecting revenue.",
+    "Automaker responses on sourcing and assembly shifts, plus Canada's position once it joins the negotiation."
+  ],
+  "primarySection": "trade",
+  "date": "2026-06-28",
+  "byline": "Cumulant Research"
+}
