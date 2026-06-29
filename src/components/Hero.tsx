@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative w-full overflow-hidden bg-cream px-[15px] pb-[24px] pt-[100px] md:px-[30px] md:pb-[36px] md:pt-[116px]"
+      className="relative w-full overflow-hidden bg-cream px-[15px] pb-[28px] pt-[128px] md:px-[30px] md:pb-[40px] md:pt-[184px]"
     >
       <div className="enter" style={{ animationDelay: "120ms" }}>
         <h1

@@ -167,3 +167,16 @@ export function ListRow({ a, first }: { a: Article; first?: boolean }) {
     </Link>
   );
 }
+
+/** Text-led story for a newspaper-style side column (headline + dek, no image). */
+export function TextStory({ a, first }: { a: Article; first?: boolean }) {
+  return (
+    <Link href={`/articles/${a.slug}`} className={cn("group block py-[20px]", !first && "border-t border-clay")}>
+      <SectionTag slug={a.primarySection} />
+      <h3 className="mt-[8px] text-[21px] font-medium leading-[1.14] tracking-[-0.5px] text-ink transition-colors group-hover:text-smoke md:text-[23px]">
+        {a.headline}
+      </h3>
+      <p className="mt-[8px] line-clamp-3 text-[15px] leading-[1.45] text-smoke">{a.summary ?? a.deck}</p>
+    </Link>
+  );
+}
