@@ -38,7 +38,7 @@ export function Methods() {
             const isOpen = expanded[i];
             return (
               <div key={phase.title} className="flex flex-col">
-                <div className="rounded-full border border-clay bg-white py-[14px] text-center font-mono text-[11px] uppercase tracking-[0.04em] text-ink">
+                <div className="rounded-full border border-clay bg-paper py-[14px] text-center font-mono text-[11px] uppercase tracking-[0.04em] text-ink">
                   {phase.title}
                 </div>
 
@@ -47,7 +47,7 @@ export function Methods() {
                   className="mx-auto hidden h-[28px] w-px border-l border-dashed border-clay md:block"
                 />
 
-                <div className="flex flex-1 flex-col rounded-[12px] border border-clay bg-white p-[20px]">
+                <div className="flex flex-1 flex-col rounded-[12px] border border-clay bg-paper p-[20px]">
                   <div className="flex flex-col">
                     {phase.stages.map((stage) => (
                       <div key={stage.n} className="border-t border-clay py-[12px] first:border-t-0 first:pt-0">

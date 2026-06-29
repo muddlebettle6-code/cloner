@@ -22,7 +22,7 @@ function Frame({ chart, children }: { chart: ArticleChart; children: React.React
         <p className="mt-[6px] text-[17px] font-medium leading-[1.3] text-ink md:text-[18px]">{chart.title}</p>
         {chart.subtitle && <p className="mt-[3px] text-[14px] leading-[1.4] text-smoke">{chart.subtitle}</p>}
       </figcaption>
-      <div className="rounded-[6px] border border-clay bg-white p-[18px] md:p-[22px]">{children}</div>
+      <div className="rounded-[6px] border border-clay bg-paper p-[18px] md:p-[22px]">{children}</div>
       {chart.note && <p className="mt-[10px] text-[13px] leading-[1.5] text-smoke">{chart.note}</p>}
       {meta && <p className="mt-[8px] font-mono text-[10px] uppercase tracking-[0.04em] text-smoke">{meta}</p>}
     </figure>

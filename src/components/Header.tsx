@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NAV, ORG } from "@/lib/site-data";
 import { MenuIcon, CloseIcon, CumulantMark } from "@/components/icons";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 /** Wordmark — custom distribution mark + Cumulant text (inherits currentColor). */
 function Wordmark() {
@@ -49,24 +50,24 @@ export function Header({ solid = false }: { solid?: boolean }) {
         className={cn(
           "fixed left-0 top-0 z-50 h-[60px] w-full transition-colors duration-500 ease-[var(--ease-standard)]",
           darkText ? "text-ink" : "text-white",
-          solid ? "border-b border-clay bg-cream" : scrolled ? "bg-white" : "bg-transparent"
+          solid ? "border-b border-clay bg-cream" : scrolled ? "bg-cream" : "bg-transparent"
         )}
       >
-        <div className="mx-auto flex h-full max-w-[1600px] items-center justify-between px-[15px] md:px-[30px]">
+        <div className="flex h-full w-full items-center justify-between px-[15px] md:px-[30px]">
           <Link href="/" aria-label={ORG.name} className="enter transition-opacity duration-300 hover:opacity-70" style={{ animationDelay: "0ms" }}>
             <Wordmark />
           </Link>
 
-          {/* Right: desktop nav + mobile menu trigger */}
-          <div className="enter flex items-center" style={{ animationDelay: "120ms" }}>
-            <nav className="hidden items-center gap-[26px] md:flex">
+          {/* Right: desktop nav + theme toggle + mobile menu trigger */}
+          <div className="enter flex items-center gap-[18px] md:gap-[24px]" style={{ animationDelay: "120ms" }}>
+            <nav className="hidden items-center gap-[24px] md:flex lg:gap-[28px]">
               {NAV.map((item) => (
                 <Link
                   key={item.target}
                   href={item.route}
                   className="flex flex-col items-center transition-opacity duration-300 hover:opacity-70"
                 >
-                  <span className="text-[13px] uppercase leading-none tracking-[-0.01em]">{item.label}</span>
+                  <span className="whitespace-nowrap text-[13px] uppercase leading-none tracking-[-0.01em]">{item.label}</span>
                   <span
                     className={cn(
                       "mt-[4px] h-[3px] w-[3px] rounded-full bg-current transition-opacity duration-300",
@@ -76,6 +77,8 @@ export function Header({ solid = false }: { solid?: boolean }) {
                 </Link>
               ))}
             </nav>
+
+            <ThemeToggle className="-mr-[5px]" />
 
             <button className="md:hidden" aria-label="open menu" onClick={() => setMenuOpen(true)}>
               <MenuIcon className="h-[22px] w-[22px] text-current" />
@@ -103,12 +106,15 @@ export function Header({ solid = false }: { solid?: boolean }) {
             ))}
           </nav>
 
-          <a
-            href={`mailto:${ORG.email}`}
-            className="font-mono text-[12px] uppercase tracking-[0.04em] text-smoke"
-          >
-            {ORG.email}
-          </a>
+          <div className="flex items-center justify-between">
+            <a
+              href={`mailto:${ORG.email}`}
+              className="font-mono text-[12px] uppercase tracking-[0.04em] text-smoke"
+            >
+              {ORG.email}
+            </a>
+            <ThemeToggle />
+          </div>
         </div>
       )}
     </>

@@ -10,12 +10,13 @@
   --font-mono: var(--font-akkurat), ui-monospace, monospace;
   --font-serif: "Times New Roman", Times, serif;
 
-  /* Cumulant palette */
-  --color-cream: #ffffff; /* page background — constant white */
-  --color-ink: #000000;
-  --color-smoke: #909090;
-  --color-clay: #e0e0e0;
-  --color-stone: #f5f5f5;
+  /* Cumulant palette — reference runtime vars so they flip under .dark */
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-smoke: var(--smoke);
+  --color-clay: var(--clay);
+  --color-stone: var(--stone);
+  --color-paper: var(--paper);
 
   /* shadcn token bridges */
   --color-background: var(--background);
@@ -47,6 +48,15 @@
 }
 
 :root {
+  color-scheme: light;
+  /* Cumulant palette — light */
+  --cream: #ffffff;
+  --ink: #000000;
+  --smoke: #909090;
+  --clay: #e0e0e0;
+  --stone: #f5f5f5;
+  --paper: #ffffff;
+
   --background: #ffffff;
   --foreground: #000000;
   --card: #ffffff;
@@ -75,6 +85,40 @@
   --dur-ui: 300ms;
   --dur-reveal: 600ms;
   --dur-drawer: 500ms;
+}
+
+/* Dark theme — toggled by adding .dark to <html>. Magenta accent is unchanged. */
+.dark {
+  color-scheme: dark;
+  --cream: #0b0d10;   /* page background */
+  --ink: #f0f0f1;     /* primary text */
+  --smoke: #8b9097;   /* muted text */
+  --clay: #2a2e35;    /* hairline borders */
+  --stone: #131519;   /* subtle surface */
+  --paper: #181b21;   /* elevated cards */
+
+  --background: #0b0d10;
+  --foreground: #f0f0f1;
+  --card: #181b21;
+  --card-foreground: #f0f0f1;
+  --popover: #181b21;
+  --popover-foreground: #f0f0f1;
+  --primary: #f0f0f1;
+  --primary-foreground: #0b0d10;
+  --secondary: #131519;
+  --secondary-foreground: #f0f0f1;
+  --muted: #131519;
+  --muted-foreground: #8b9097;
+  --accent: #131519;
+  --accent-foreground: #f0f0f1;
+  --border: #2a2e35;
+  --input: #2a2e35;
+  --ring: #8b9097;
+}
+.dark ::selection { background: #f0f0f1; color: #0b0d10; }
+/* Ease the switch (kept off transform/opacity so reveals aren't affected). */
+body, header, section, aside, [class*="bg-cream"], [class*="bg-stone"], [class*="bg-paper"] {
+  transition: background-color 0.3s var(--ease-standard), border-color 0.3s var(--ease-standard);
 }
 
 @layer base {

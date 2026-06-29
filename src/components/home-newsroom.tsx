@@ -70,7 +70,7 @@ export function HomeNewsroom() {
       <div className="mt-[44px] flex justify-center">
         <Link
           href="/articles"
-          className="group inline-flex items-center gap-[10px] rounded-full border border-clay bg-white px-[26px] py-[14px] font-mono text-[11px] uppercase tracking-[0.04em] text-ink transition-colors duration-300 hover:bg-ink hover:text-cream"
+          className="group inline-flex items-center gap-[10px] rounded-full border border-clay bg-paper px-[26px] py-[14px] font-mono text-[11px] uppercase tracking-[0.04em] text-ink transition-colors duration-300 hover:bg-ink hover:text-cream"
         >
           View more stories <ArrowIcon className="h-[12px] w-[12px] transition-transform duration-300 group-hover:translate-x-[3px]" />
         </Link>
