@@ -41,28 +41,27 @@ export const Background: React.FC = () => {
   );
 };
 
-// ---- flowy transitions: entrance varies; full-change beats fly through ------ //
+// In-only animation: each scene snaps in fast (~0.3s), then stays FULL until the
+// hard cut. No fade-to-black between scenes (that dark gap was the "glitch"). Snappy.
 export const SceneWrap: React.FC<{ frames: number; trans: "zoom" | "push" | "slide" | "wipe" | "fade"; children: React.ReactNode }> = ({ frames, trans, children }) => {
   const f = useCurrentFrame();
-  const inP = interpolate(f, [0, 18], [0, 1], { extrapolateRight: "clamp", easing: E.cinematicScale });
-  const outP = interpolate(f, [frames - 14, frames], [1, 0], { extrapolateLeft: "clamp", easing: E.smoothInOut });
+  const inP = interpolate(f, [0, 8], [0, 1], { extrapolateRight: "clamp", easing: E.cinematicScale });
   let scale = 1, x = 0, blur = 0;
-  if (trans === "zoom") { scale = interpolate(inP, [0, 1], [1.22, 1]); blur += (1 - inP) * 10; }
-  if (trans === "push") { scale = interpolate(inP, [0, 1], [0.82, 1]); blur += (1 - inP) * 8; }
-  if (trans === "slide") x = interpolate(inP, [0, 1], [240, 0]);
-  if (trans === "fade") blur += (1 - inP) * 7;
-  const strong = trans === "zoom" || trans === "wipe" || trans === "push";
-  if (strong) { scale *= interpolate(outP, [0, 1], [1.24, 1]); blur += (1 - outP) * 13; } else { x += interpolate(outP, [0, 1], [-150, 0]); blur += (1 - outP) * 7; }
+  if (trans === "zoom") { scale = interpolate(inP, [0, 1], [1.13, 1]); blur += (1 - inP) * 3; }
+  if (trans === "push") { scale = interpolate(inP, [0, 1], [0.9, 1]); blur += (1 - inP) * 2.5; }
+  if (trans === "slide") x = interpolate(inP, [0, 1], [165, 0]);
+  if (trans === "fade") blur += (1 - inP) * 1.5;
+  if (trans === "wipe") scale = interpolate(inP, [0, 1], [1.08, 1]);
   return (
     <>
-      <AbsoluteFill style={{ opacity: Math.min(inP, outP), filter: blur > 0.3 ? `blur(${blur}px)` : undefined, transform: `translateX(${x}px) scale(${scale})` }}>{children}</AbsoluteFill>
-      {trans === "wipe" && <AbsoluteFill style={{ background: C.mag, transform: `translateX(${interpolate(inP, [0, 1], [-1080, 1180], { easing: E.cinematicScale })}px)` }} />}
+      <AbsoluteFill style={{ opacity: interpolate(f, [0, 4], [0.4, 1], { extrapolateRight: "clamp" }), filter: blur > 0.3 ? `blur(${blur}px)` : undefined, transform: `translateX(${x}px) scale(${scale})` }}>{children}</AbsoluteFill>
+      {trans === "wipe" && <AbsoluteFill style={{ background: C.mag, opacity: 0.9, transform: `translateX(${interpolate(inP, [0, 1], [-1080, 1180], { easing: E.cinematicScale })}px)` }} />}
     </>
   );
 };
 
 // ---- verbatim subtitle: each word reveals at its actual spoken time --------- //
-export const Subtitle: React.FC<{ id: string; centerY?: number }> = ({ id, centerY = 1470 }) => {
+export const Subtitle: React.FC<{ id: string; centerY?: number }> = ({ id, centerY = 470 }) => {
   const f = useCurrentFrame();
   const words = CAPTIONS[id] || [];
   return (

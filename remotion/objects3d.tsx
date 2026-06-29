@@ -1,88 +1,81 @@
-// 3D objects (v10) — DST "who really pays" set. Border gate (tariff), laptop (Big
-// Tech), shopping cart (the shopper), coin stack. drei env + camera drift.
+// 3D objects (v11 / housing) — a house (white, pops on black), a row of houses for
+// "supply piling up", a SOLD rider. New for this story. drei env + camera behaviour.
 import React from "react";
 import { ThreeCanvas } from "@remotion/three";
 import { Environment, Lightformer, RoundedBox } from "@react-three/drei";
-import { useCurrentFrame, useVideoConfig } from "remotion";
+import { useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import { E } from "./theme";
 
-const easeIn = (frame: number, dur = 18) => E.softOvershoot(Math.min(1, frame / dur));
+const easeIn = (frame: number, dur = 10) => E.softOvershoot(Math.min(1, frame / dur));
 const MAG = "#ff2d92";
 
-// border / customs barrier — a striped arm that lowers shut (the tariff)
-const Gate: React.FC<{ frame: number }> = ({ frame }) => {
-  const s = 0.6 + easeIn(frame) * 0.32;
-  const close = interpolate0(frame); // arm lowers
-  return (
-    <group scale={s} rotation={[0.1, -0.25 + frame * 0.005, 0]} position={[-0.2, -0.4, 0]}>
-      <mesh position={[-1.25, 0.45, 0]}><cylinderGeometry args={[0.12, 0.15, 2.1, 18]} /><meshStandardMaterial color="#2a2c33" metalness={0.75} roughness={0.28} /></mesh>
-      <mesh position={[-1.25, -0.65, 0]}><boxGeometry args={[0.55, 0.22, 0.55]} /><meshStandardMaterial color="#1a1c22" metalness={0.6} roughness={0.4} /></mesh>
-      <group position={[-1.25, 1.05, 0]} rotation={[0, 0, close]}>
-        {[0, 1, 2, 3, 4, 5].map((i) => <mesh key={i} position={[0.32 + i * 0.42, 0, 0]}><boxGeometry args={[0.4, 0.17, 0.17]} /><meshStandardMaterial color={i % 2 ? "#f4f1ea" : MAG} emissive={i % 2 ? "#000" : MAG} emissiveIntensity={i % 2 ? 0 : 0.5} metalness={0.4} roughness={0.4} /></mesh>)}
+const HouseMesh: React.FC<{ lit?: boolean; sold?: boolean }> = ({ lit = true, sold = false }) => (
+  <group>
+    {/* body — light, so it reads as the focal subject on black */}
+    <RoundedBox args={[2.2, 1.5, 1.8]} radius={0.04} smoothness={3} position={[0, -0.05, 0]}><meshStandardMaterial color="#ece8df" metalness={0.05} roughness={0.62} /></RoundedBox>
+    {/* gable roof — two slanted charcoal planes */}
+    <mesh position={[-0.62, 0.95, 0]} rotation={[0, 0, 0.62]}><boxGeometry args={[1.55, 0.12, 1.96]} /><meshStandardMaterial color="#2a2a30" metalness={0.3} roughness={0.5} /></mesh>
+    <mesh position={[0.62, 0.95, 0]} rotation={[0, 0, -0.62]}><boxGeometry args={[1.55, 0.12, 1.96]} /><meshStandardMaterial color="#2a2a30" metalness={0.3} roughness={0.5} /></mesh>
+    {/* door */}
+    <mesh position={[0, -0.35, 0.92]}><boxGeometry args={[0.42, 0.8, 0.04]} /><meshStandardMaterial color="#1d1d22" metalness={0.3} roughness={0.5} /></mesh>
+    {/* windows — magenta-lit */}
+    {[[-0.68, 0.18], [0.68, 0.18]].map((w, i) => (
+      <mesh key={i} position={[w[0], w[1], 0.92]}><boxGeometry args={[0.42, 0.42, 0.03]} /><meshStandardMaterial color={MAG} emissive={MAG} emissiveIntensity={lit ? 0.7 : 0.0} metalness={0.2} roughness={0.3} /></mesh>
+    ))}
+    {/* chimney */}
+    <mesh position={[0.55, 1.35, -0.4]}><boxGeometry args={[0.22, 0.5, 0.22]} /><meshStandardMaterial color="#23232a" metalness={0.3} roughness={0.5} /></mesh>
+    {sold && (
+      <group position={[-0.7, -0.95, 0.95]} rotation={[0, 0, -0.06]}>
+        <mesh position={[0, 0.5, 0]}><boxGeometry args={[0.05, 1.0, 0.05]} /><meshStandardMaterial color="#3a3a42" metalness={0.6} roughness={0.4} /></mesh>
+        <RoundedBox args={[1.0, 0.42, 0.05]} radius={0.04} position={[0.45, 0.85, 0]}><meshStandardMaterial color={MAG} emissive={MAG} emissiveIntensity={0.5} metalness={0.3} roughness={0.4} /></RoundedBox>
       </group>
-    </group>
-  );
-};
-const interpolate0 = (f: number) => -0.25 - Math.min(0.6, Math.max(0, (f - 24) / 60)) * 0.55;
+    )}
+  </group>
+);
 
-// a laptop (Big Tech) — glowing magenta screen
-const Laptop: React.FC<{ frame: number }> = ({ frame }) => {
-  const s = 0.66 + easeIn(frame) * 0.34;
+const House: React.FC<{ frame: number; sold?: boolean }> = ({ frame, sold }) => {
+  const s = 0.7 + easeIn(frame) * 0.38;
   return (
-    <group scale={s} rotation={[0.05, -0.4 + frame * 0.006, 0]} position={[0, -0.1 + Math.sin(frame / 28) * 0.05, frame * 0.003]}>
-      <RoundedBox args={[2.2, 0.12, 1.5]} radius={0.04} smoothness={3} position={[0, -0.5, 0.25]}><meshStandardMaterial color="#1c1e25" metalness={0.82} roughness={0.24} /></RoundedBox>
-      <mesh position={[0, -0.43, 0.35]}><boxGeometry args={[1.85, 0.02, 1.0]} /><meshStandardMaterial color="#121319" metalness={0.5} roughness={0.5} /></mesh>
-      <group position={[0, -0.5, -0.45]} rotation={[-0.46, 0, 0]}>
-        <RoundedBox args={[2.2, 1.45, 0.08]} radius={0.05} smoothness={3} position={[0, 0.72, 0]}><meshStandardMaterial color="#0a0b0e" metalness={0.6} roughness={0.2} /></RoundedBox>
-        <mesh position={[0, 0.72, 0.05]}><boxGeometry args={[2.0, 1.25, 0.01]} /><meshStandardMaterial color={MAG} emissive={MAG} emissiveIntensity={0.7} /></mesh>
-      </group>
+    <group scale={s} rotation={[0.12, -0.45 + frame * 0.004, 0]} position={[0, Math.sin(frame / 30) * 0.04, frame * 0.004]}>
+      <HouseMesh sold={sold} />
     </group>
   );
 };
 
-// a shopping cart (the shopper who actually pays)
-const Cart: React.FC<{ frame: number }> = ({ frame }) => {
-  const s = 0.62 + easeIn(frame) * 0.34;
+// supply piling up: a receding row of houses
+const HouseRow: React.FC<{ frame: number }> = ({ frame }) => {
+  const positions: [number, number][] = [[0, 0], [-2.4, -0.5], [2.4, -0.5], [-4.6, -1.0], [4.6, -1.0]];
   return (
-    <group scale={s} rotation={[0.16, -0.4 + frame * 0.007, 0]} position={[0, -0.25 + Math.sin(frame / 26) * 0.05, frame * 0.003]}>
-      <mesh position={[0, 0.32, 0]}><boxGeometry args={[1.7, 1.0, 1.15]} /><meshStandardMaterial color="#3a3c44" metalness={0.6} roughness={0.4} wireframe /></mesh>
-      <mesh position={[0, -0.16, 0]} rotation={[0, 0, 0]}><boxGeometry args={[1.6, 0.06, 1.05]} /><meshStandardMaterial color={MAG} emissive={MAG} emissiveIntensity={0.35} metalness={0.5} roughness={0.4} /></mesh>
-      <mesh position={[-0.9, 0.65, 0]} rotation={[0, 0, 0.35]}><cylinderGeometry args={[0.055, 0.055, 1.1, 14]} /><meshStandardMaterial color="#42454d" metalness={0.85} roughness={0.28} /></mesh>
-      {[[0.62, 0.45], [0.62, -0.45], [-0.62, 0.45], [-0.62, -0.45]].map((w, i) => <mesh key={i} position={[w[0], -0.6, w[1]]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.14, 0.14, 0.08, 18]} /><meshStandardMaterial color="#16171c" metalness={0.5} roughness={0.5} /></mesh>)}
+    <group rotation={[0.18, -0.2 + frame * 0.003, 0]} position={[0, -0.2, 0]}>
+      {positions.map((p, i) => {
+        const pop = E.softOvershoot(Math.min(1, Math.max(0, (frame - 1 - i * 3) / 12)));
+        return (
+          <group key={i} position={[p[0], p[1], -i * 1.2]} scale={(0.55 + i * 0.04) * pop}><HouseMesh lit={i === 0} /></group>
+        );
+      })}
     </group>
   );
 };
 
-const MoneyStack: React.FC<{ frame: number }> = ({ frame }) => {
-  const s = 0.5 + easeIn(frame) * 0.32;
-  return (
-    <group scale={s} rotation={[0.32, -0.35 + frame * 0.008, 0]} position={[0, -0.2 + Math.sin(frame / 28) * 0.05, 0]}>
-      {[-1.25, 0, 1.25].map((x, si) => Array.from({ length: 5 + si }).map((_, i) => (
-        <mesh key={`${si}-${i}`} position={[x, -0.9 + i * 0.17, 0]}><cylinderGeometry args={[0.56, 0.56, 0.15, 44]} /><meshStandardMaterial color={i % 2 ? "#e0bb55" : "#c9a23f"} metalness={0.95} roughness={0.22} /></mesh>
-      )))}
-    </group>
-  );
-};
-
-export const Object3D: React.FC<{ kind: "gate" | "laptop" | "cart" | "money"; frames?: number; level?: number }> = ({ kind }) => {
+export const Object3D: React.FC<{ kind: "house" | "houseSold" | "supply"; frames?: number; level?: number }> = ({ kind }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
-  const camX = Math.sin(frame / 70) * 0.45;
-  const camY = 0.3 + Math.sin(frame / 95) * 0.22;
+  // camera PUSH-IN over the scene (real camera behaviour, not just object drift)
+  const z = interpolate(frame, [0, 90], [9.2, 7.6], { extrapolateRight: "clamp", easing: E.slowDrift });
+  const camY = 0.5 + Math.sin(frame / 80) * 0.12;
   return (
-    <ThreeCanvas width={width} height={height} style={{ position: "absolute", inset: 0 }} camera={{ position: [camX, camY, 8], fov: 32 }} gl={{ antialias: true, alpha: true }}>
-      <ambientLight intensity={0.32} />
+    <ThreeCanvas width={width} height={height} style={{ position: "absolute", inset: 0 }} camera={{ position: [0, camY, z], fov: 34 }} gl={{ antialias: true, alpha: true }}>
+      <ambientLight intensity={0.42} />
       <pointLight position={[5, 7, 8]} intensity={150} color="#ffffff" decay={2} />
-      <pointLight position={[-6, 0, 3]} intensity={200} color={MAG} decay={2} />
+      <pointLight position={[-6, 1, 3]} intensity={150} color={MAG} decay={2} />
       <Environment resolution={160}>
-        <Lightformer form="rect" intensity={3.5} color="#ffffff" position={[4, 5, 6]} scale={[8, 8, 1]} />
-        <Lightformer form="rect" intensity={3} color={MAG} position={[-5, -1, 3]} scale={[5, 9, 1]} />
-        <Lightformer form="circle" intensity={2} color="#9fd0ff" position={[2, -3, -5]} scale={[5, 5, 1]} />
+        <Lightformer form="rect" intensity={3.5} color="#ffffff" position={[4, 6, 6]} scale={[9, 9, 1]} />
+        <Lightformer form="rect" intensity={2.6} color={MAG} position={[-5, -1, 3]} scale={[5, 9, 1]} />
+        <Lightformer form="circle" intensity={2} color="#cfe0ff" position={[2, -3, -5]} scale={[5, 5, 1]} />
       </Environment>
-      {kind === "gate" && <Gate frame={frame} />}
-      {kind === "laptop" && <Laptop frame={frame} />}
-      {kind === "cart" && <Cart frame={frame} />}
-      {kind === "money" && <MoneyStack frame={frame} />}
+      {kind === "house" && <House frame={frame} />}
+      {kind === "houseSold" && <House frame={frame} sold />}
+      {kind === "supply" && <HouseRow frame={frame} />}
     </ThreeCanvas>
   );
 };
