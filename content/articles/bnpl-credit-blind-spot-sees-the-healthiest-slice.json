@@ -1,0 +1,726 @@
+{
+  "published": true,
+  "slug": "bnpl-credit-blind-spot-sees-the-healthiest-slice",
+  "headline": "The Credit System Is Racing to See Buy-Now-Pay-Later. It Can Only See the Healthiest Slice.",
+  "deck": "Across 2025 and 2026, FICO, HUD and the US Senate have all moved to wire buy-now-pay-later into credit scores and mortgage math, each assuming the credit file can already see it. Our analysis finds the file sees only a minority of US pay-in-4, and the slice it sees is the most heavily underwritten and lowest-loss part (Affirm's), while the grocery-financing, loan-stacking, increasingly-late slice that is growing fastest stays dark. So the file is built to register household stress late and faintly for the people least able to absorb it.",
+  "takeaways": [
+    "Only one major US provider, Affirm, furnishes its full pay-in-4 book to credit bureaus, and even it reaches just two of the three (Experian and TransUnion, not Equifax). Other big pay-in-4 originators, including Afterpay and PayPal's US arm, furnish nothing by default.",
+    "Even that furnished data is currently shown to the consumer only and is not yet fed into mainstream FICO scores, so the gap is wider than 'who reports': it is 'who reports and gets scored'.",
+    "The gap runs the wrong way. The visible book is the healthiest part (Affirm's pay-in-4 losses appear to run well under 1% of dollars), while the only stress gauge available for the rest, borrower surveys, is deteriorating. The two numbers cannot be placed on one axis, and that incomparability is itself the finding: for the visible book we have hard loss data, for the fastest-growing slice we have only surveys.",
+    "FICO's 2025 BNPL scores are a model, not a data feed. They can only sharpen loans already furnished, so they cannot close the furnishing gap.",
+    "The popular 'private credit is fueling the risk' frame is a red herring: the marquee KKR pipe is European, and Affirm is heavily fund-financed yet furnishes everything. The real lever is simply furnish-or-don't.",
+    "A caveat that cuts the other way: the economic danger looks small (pay-in-4 is fast-clearing with low, falling losses), and visibility is not free either. Reporting short-lived pay-in-4 loans can actually lower the scores of the thin-file borrowers the system says it wants to protect."
+  ],
+  "glossary": [
+    {
+      "term": "Buy-now-pay-later (BNPL)",
+      "definition": "A way to split a purchase into several smaller payments over time instead of paying all at once, often with no interest."
+    },
+    {
+      "term": "Pay-in-4",
+      "definition": "The most common form of BNPL: a purchase split into four equal, interest-free payments spread over roughly six weeks."
+    },
+    {
+      "term": "Credit bureau",
+      "definition": "A company (Experian, Equifax or TransUnion) that collects records of how people borrow and repay, and packages them into the credit report lenders read."
+    },
+    {
+      "term": "Furnish",
+      "definition": "The industry term for a lender actively sending loan data to a credit bureau. A bureau can only show a loan if the lender chooses to furnish it."
+    },
+    {
+      "term": "Credit file / credit report",
+      "definition": "The record a bureau keeps on each borrower, listing their loans and payment history, used to judge whether they are a safe bet to lend to."
+    },
+    {
+      "term": "FICO score",
+      "definition": "The most widely used credit score in the US, a three-digit number lenders use to gauge how risky a borrower is."
+    },
+    {
+      "term": "FICO Score 10 BNPL",
+      "definition": "A 2025 version of the FICO score designed to take buy-now-pay-later loans into account, but only for loans a lender has already put in the credit file."
+    },
+    {
+      "term": "Tradeline",
+      "definition": "A single account as it appears on a credit report, for example one loan or credit card, with its balance and payment record."
+    },
+    {
+      "term": "Charge-off",
+      "definition": "The point at which a lender gives up on collecting a loan and writes it off as a loss. The charge-off rate is the share of dollars lost this way."
+    },
+    {
+      "term": "Net loss rate",
+      "definition": "The share of loan volume a lender ultimately loses after subtracting any money it later recovers."
+    },
+    {
+      "term": "Delinquency / late payment",
+      "definition": "A payment made after its due date. Rising delinquency is an early warning sign of household financial stress."
+    },
+    {
+      "term": "Thin-file borrower",
+      "definition": "Someone with little credit history on record, so a single new loan moves their score a lot. Often the young or first-time borrowers BNPL attracts."
+    },
+    {
+      "term": "Private credit",
+      "definition": "Loans made by investment funds rather than deposit-taking banks, a fast-growing and lightly-disclosed corner of finance."
+    },
+    {
+      "term": "Forward-flow agreement",
+      "definition": "A deal where a buyer commits in advance to keep purchasing newly-made loans from a lender as they are originated."
+    },
+    {
+      "term": "Warehouse facility",
+      "definition": "A revolving credit line a lender uses to fund loans temporarily before selling or refinancing them."
+    },
+    {
+      "term": "Securitization",
+      "definition": "Bundling many loans together and selling them to investors as tradable bonds, a common way BNPL lenders raise funding."
+    },
+    {
+      "term": "Receivables",
+      "definition": "Money a company is owed by its customers; here, the outstanding balances on BNPL loans."
+    },
+    {
+      "term": "Originations",
+      "definition": "The total value of new loans made over a period, as opposed to the balance still outstanding at a single point in time."
+    },
+    {
+      "term": "Self-liquidating",
+      "definition": "A loan that pays itself off quickly and predictably, leaving no long-lasting balance to build up."
+    },
+    {
+      "term": "Loan stacking",
+      "definition": "Holding several BNPL loans at once, often across different apps, so no single lender sees the borrower's full obligations."
+    },
+    {
+      "term": "Underwriting",
+      "definition": "The process a lender uses to assess and price a borrower's risk before approving a loan."
+    },
+    {
+      "term": "Metro 2",
+      "definition": "The standard data format lenders use to report accounts to credit bureaus; it was not built with pay-in-4 loans in mind."
+    },
+    {
+      "term": "Debt-to-income ratio",
+      "definition": "A borrower's monthly debt payments divided by their monthly income, a key number mortgage lenders use to decide how much someone can afford."
+    },
+    {
+      "term": "RFI (Request for Information)",
+      "definition": "A formal call by a government agency asking the public for input on an issue before it decides whether to act."
+    },
+    {
+      "term": "HUD / FHA",
+      "definition": "The Department of Housing and Urban Development and its Federal Housing Administration, which insures mortgages for many first-time and lower-income buyers."
+    },
+    {
+      "term": "CFPB",
+      "definition": "The Consumer Financial Protection Bureau, the US federal agency that oversees consumer lending."
+    },
+    {
+      "term": "CRS",
+      "definition": "The Congressional Research Service, a nonpartisan body that writes briefing reports for members of the US Congress."
+    }
+  ],
+  "event": "Across 2025 and 2026 the US credit machinery has converged on BNPL as a sequence rather than a single event: FICO unveiled two BNPL-aware scores (23 June 2025, with availability from Fall 2025 and lender uptake continuing into 2026), HUD opened a request for information on hidden BNPL debt in FHA mortgages (24 June 2025), and on 4 May 2026 four Democratic senators (Elizabeth Warren, Tammy Duckworth, Richard Blumenthal and Mazie Hirono) pressed the three bureaus on how they handle pay-in-4. Each step assumes the credit file can already see pay-in-4.",
+  "question": "As the system rushes to fold pay-in-4 into credit reports and mortgage math, how much of it can the credit file actually see today, and is that visible share moving toward household stress or away from it?",
+  "readingMinutes": 9,
+  "tags": [
+    "BNPL",
+    "consumer credit",
+    "credit bureaus",
+    "FICO",
+    "private credit",
+    "financial stability",
+    "data journalism",
+    "household debt"
+  ],
+  "leadChartId": "furnish-map",
+  "charts": [
+    {
+      "id": "furnish-map",
+      "kind": "table",
+      "title": "Who the credit file can actually see",
+      "subtitle": "Whether each major US BNPL provider furnishes pay-in-4 data to the core credit file that mainstream FICO scores read",
+      "source": "Affirm-Experian announcement (19 Mar 2025); Affirm-TransUnion announcement (22 Apr 2025); Klarna, Afterpay, PayPal, Zip and Sezzle disclosures; 4 May 2026 Senate Banking letter",
+      "note": "Exactly one major player, Affirm, furnishes its full pay-in-4 book, and only to two of three bureaus. Klarna furnishes only its longer financing plans, not interest-free pay-in-4. Crucially, even Affirm's and Klarna's furnished data is currently visible to the consumer only and is not yet factored into traditional credit scores. Sezzle reports through its free 'Sezzle Up' feature, but only for borrowers who actively opt in, so it is not a default. Furnishing postures shift, so each cell should be reconfirmed against the named primary source before publication.",
+      "alt": "A table of six US BNPL providers showing only Affirm furnishes its full pay-in-4 book, to Experian and TransUnion but not Equifax, while Klarna furnishes only longer installment plans, Sezzle reports only for opt-in users, and Afterpay, PayPal US and Zip furnish nothing by default.",
+      "data": {
+        "columns": [
+          "Provider (US)",
+          "Experian",
+          "TransUnion",
+          "Equifax",
+          "What it furnishes"
+        ],
+        "rows": [
+          [
+            "Affirm",
+            "Yes (loans from Apr 2025)",
+            "Yes (loans from May 2025)",
+            "No",
+            "Full pay-over-time book, including interest-free pay-in-4; consumer-visible only, not yet scored"
+          ],
+          [
+            "Klarna",
+            "Installments only",
+            "Installments only",
+            "No",
+            "Longer 'pay over time' plans; interest-free pay-in-4 stays off the file"
+          ],
+          [
+            "Afterpay (Block)",
+            "No",
+            "No",
+            "No",
+            "Does not furnish to bureaus by default"
+          ],
+          [
+            "PayPal Pay in 4 (US)",
+            "No",
+            "No",
+            "No",
+            "US book unreported; the European book sits in a separate regime"
+          ],
+          [
+            "Zip (US)",
+            "No",
+            "No",
+            "No",
+            "Standard pay-in-4 not furnished to the core file"
+          ],
+          [
+            "Sezzle",
+            "Opt-in (Sezzle Up)",
+            "Opt-in (Sezzle Up)",
+            "Opt-in (Sezzle Up)",
+            "Free opt-in feature reports to all three bureaus, but only for enrolled users; not a default"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "late-payments-trend",
+      "kind": "bar",
+      "title": "The only stress gauge for the dark book is deteriorating",
+      "subtitle": "Share of US BNPL users who say they paid late in the past year (industry-wide, not just the invisible book)",
+      "source": "LendingTree BNPL surveys, successive annual waves through March 2026 (2026 wave n=2,060, fielded 17-23 March 2026)",
+      "units": "% of BNPL users",
+      "period": "2024-2026",
+      "note": "This is a self-report survey of all BNPL users, including Affirm's furnished prime borrowers; it does not separate furnished from unfurnished loans. The three figures are successive LendingTree waves asking the same question on comparable nonprobability samples of roughly 2,000 US adults.",
+      "alt": "A bar chart showing the share of US BNPL users who said they paid late rising from 34% in 2024 to 41% in 2025 to 47% in 2026.",
+      "data": {
+        "max": 50,
+        "bars": [
+          {
+            "label": "2024",
+            "value": 34
+          },
+          {
+            "label": "2025",
+            "value": 41
+          },
+          {
+            "label": "2026",
+            "value": 47,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "groceries-share",
+      "kind": "bar",
+      "title": "What BNPL is increasingly buying",
+      "subtitle": "Share of all US BNPL users using it to buy groceries",
+      "source": "LendingTree BNPL survey, March 2026",
+      "units": "% of all users",
+      "note": "Shown as an all-user trend on one consistent measure. Among Gen Z the 2026 figure is higher, about 38%. Using BNPL for groceries is a sign of financing essentials rather than discretionary purchases.",
+      "alt": "A bar chart showing BNPL use for groceries among all users roughly doubling, from 14% two years ago to 29% in 2026.",
+      "data": {
+        "max": 30,
+        "bars": [
+          {
+            "label": "All users, 2024",
+            "value": 14
+          },
+          {
+            "label": "All users, 2026",
+            "value": 29,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "loan-stacking",
+      "kind": "bar",
+      "title": "Loan stacking is invisible without furnishing",
+      "subtitle": "BNPL borrowers holding more than one loan at a time",
+      "source": "CFPB report 'Consumer Use of Buy Now, Pay Later and Other Unsecured Debt' (published Jan 2025, using 2022 loan-level data)",
+      "units": "% of BNPL borrowers",
+      "note": "These are 2022 figures, the latest loan-level data the CFPB has released, published in January 2025; they should not be read as 2026 levels. Stacking across multiple apps is exactly the pattern no single furnisher, and therefore no credit file, can assemble.",
+      "alt": "A horizontal bar chart showing 63% of BNPL borrowers in 2022 held multiple BNPL loans at once and 33% held simultaneous loans across multiple firms.",
+      "data": {
+        "max": 70,
+        "bars": [
+          {
+            "label": "Held multiple BNPL loans at once (2022)",
+            "value": 63,
+            "highlight": true
+          },
+          {
+            "label": "Simultaneous loans across different firms (2022)",
+            "value": 33
+          }
+        ]
+      }
+    },
+    {
+      "id": "low-losses",
+      "kind": "bar",
+      "title": "The counter-finding: realized losses are low and falling",
+      "subtitle": "Industry BNPL charge-off rate, share of dollars written off",
+      "source": "CFPB Buy Now, Pay Later Market Report (published Dec 2025, charge-offs for 2022 and 2023)",
+      "units": "% of volume",
+      "note": "Both bars come from the same December 2025 CFPB report. Affirm's own pay-in-4 net loss appears to run under 1% of volume, but it is deliberately not plotted: Affirm does not disclose a standalone pay-in-4 loss figure, and drawing a bar for an unknown value would invent a data point. As a reference, the CFPB pegs industry pay-in-4 charged-off dollars at about 0.92% of volume in 2023. Note also that this realized-dollar-loss measure is not directly comparable to the self-reported late-payment survey above.",
+      "alt": "A bar chart showing the industry BNPL charge-off rate falling from 2.63% of volume in 2022 to 1.83% in 2023.",
+      "data": {
+        "max": 3,
+        "bars": [
+          {
+            "label": "Industry charge-off, 2022",
+            "value": 2.63
+          },
+          {
+            "label": "Industry charge-off, 2023",
+            "value": 1.83,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "contested-size",
+      "kind": "bar",
+      "title": "Even the size is contested",
+      "subtitle": "US pay-in-4 origination estimates that try to measure the same thing",
+      "source": "CFPB Dec 2025 market report (2023 actual); CRS R48858, Feb 2026 (2025 est.); Richmond Fed economic brief (2025 est.)",
+      "units": "$bn",
+      "note": "These three estimates all aim at pay-in-4 and already span roughly 1.5x. The $45.2bn for 2023 is the CFPB's own December 2025 figure; the CRS and the Federal Reserve cite an earlier CFPB vintage of $43.9bn for the same year, so the base itself is contested. Widen the definition to all BNPL products and a June 2026 Federal Reserve FEDS Note reaches about $160bn ($156.7bn) for 2025, not plotted here because it measures a different thing. What you count, not just how you measure it, drives the headline number, and that ambiguity is part of the story.",
+      "alt": "A horizontal bar chart of US pay-in-4 origination estimates: CFPB 2023 actual at $45.2bn, CRS 2025 estimate at $63.3bn, and Richmond Fed 2025 estimate at $70bn.",
+      "data": {
+        "max": 80,
+        "bars": [
+          {
+            "label": "CFPB 2023 actual (pay-in-4)",
+            "value": 45.2
+          },
+          {
+            "label": "CRS est. for 2025 (pay-in-4)",
+            "value": 63.3
+          },
+          {
+            "label": "Richmond Fed est. for 2025 (pay-in-4)",
+            "value": 70,
+            "highlight": true
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The news hook",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In the span of a year, three different arms of the American credit machine decided that buy-now-pay-later (BNPL) could no longer stay invisible. FICO, the company behind the score most US lenders rely on, built two new credit scores to read it (FICO, 23 June 2025). The Department of Housing and Urban Development (HUD) asked whether hidden BNPL debt is quietly inflating the mortgages it insures (HUD request for information, 24 June 2025). And on 4 May 2026, four Democratic senators pressed Experian, Equifax and TransUnion to explain how they handle it (Senate Banking Committee letters, 4 May 2026)."
+        },
+        {
+          "type": "p",
+          "text": "These are not one news event; they are a convergence. FICO's new scores became available from late 2025 and are working their way to lenders through 2026, so this is the stretch when the plumbing actually gets connected. All three efforts rest on a single assumption: that the credit file can see BNPL. So we asked one narrow, falsifiable question, and the answer is not the one the system is counting on."
+        }
+      ]
+    },
+    {
+      "heading": "The one question",
+      "blocks": [
+        {
+          "type": "pullquote",
+          "text": "As the system rushes to fold pay-in-4 into credit reports and mortgage math, how much of it can the file actually see today, and is that visible share moving toward household stress or away from it?"
+        },
+        {
+          "type": "p",
+          "text": "The short answer: the gauge reads only a minority of US pay-in-4, and the visible part is the healthy part. The slice growing fastest, and showing the most strain in the limited data we have, is the slice that stays dark. We will walk through exactly how we reached that, and where the comparison has to be made carefully rather than overstated."
+        }
+      ]
+    },
+    {
+      "heading": "What \"invisible\" actually means",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "BNPL's \"pay-in-4\" splits a purchase into four interest-free payments over about six weeks. Because there is no interest and often no hard credit check, for years it left no trace on a credit report. The loan was real, but to a bureau it did not exist."
+        },
+        {
+          "type": "p",
+          "text": "A loan appears on your file only if the lender chooses to send the data, an act the industry calls \"furnishing.\" For pay-in-4, furnishing is voluntary, and most of the largest originators decline. So the first thing to measure is not how the loans behave, but simply who reports them at all."
+        }
+      ]
+    },
+    {
+      "heading": "Who the file can actually see",
+      "blocks": [
+        {
+          "type": "chart",
+          "chartId": "furnish-map"
+        },
+        {
+          "type": "p",
+          "text": "We built the table above by reading each provider's own furnishing disclosures and the bureaus' announcements. The pattern is stark. Exactly one major US player, Affirm, furnishes its full pay-in-4 book, and even Affirm reaches only two of the three bureaus: Experian (for loans issued from 1 April 2025, announced 19 March 2025) and TransUnion (for loans issued from 1 May 2025, announced 22 April 2025), but not Equifax."
+        },
+        {
+          "type": "p",
+          "text": "Everyone else either reports nothing by default or reports something other than pay-in-4. Klarna furnishes only its longer 'pay over time' financing plans, not its interest-free pay-in-4. Afterpay (owned by Block), PayPal's US Pay in 4, and Zip's standard pay-in-4 do not furnish to the bureaus at all. Sezzle reports through a free feature called 'Sezzle Up,' and it does reach all three bureaus, but only for borrowers who actively sign up, so it is an opt-in rather than a default."
+        },
+        {
+          "type": "callout",
+          "label": "The twist within the twist",
+          "text": "Even the data Affirm and Klarna do furnish is, for now, shown to the consumer only. The bureaus confirmed to the Senate in May 2026 that they are still at 'various phases' of folding BNPL into the products lenders actually buy, and that mainstream FICO scores do not yet read these tradelines. So the visible book is not just small, it is largely unscored. The gap is not only 'who reports,' it is 'who reports and gets counted.'"
+        }
+      ]
+    },
+    {
+      "heading": "FICO is a lens, not a floodlight",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is tempting to read FICO's two new scores, FICO Score 10 BNPL and FICO Score 10 T BNPL, as the moment the lights come on. They are not. A score is a model: a recipe for weighing data that is already in the file. FICO does not furnish anything itself. If a lender never sends a loan to a bureau, no FICO model, however clever, can see it."
+        },
+        {
+          "type": "p",
+          "text": "FICO's genuine innovation is narrower: it teaches the score to recognize when a borrower has opened several BNPL loans in a short window, a behavior older models mishandled. Useful, but it only sharpens the picture of loans already furnished. It cannot conjure the dark book into view."
+        }
+      ]
+    },
+    {
+      "heading": "The gap runs the wrong way",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If the invisible book were the safest part of the market, none of this would matter much. It is the opposite. The clearest signs of strain sit precisely where the file cannot see."
+        },
+        {
+          "type": "chart",
+          "chartId": "late-payments-trend"
+        },
+        {
+          "type": "p",
+          "text": "The share of US BNPL users who admit paying late has climbed from 34% in 2024 to 41% in 2025 to 47% in 2026, on LendingTree's recurring survey of roughly 2,000 adults. This covers all BNPL users, including Affirm's prime, furnished borrowers, so if anything it understates the strain in the unfurnished, lower-quality book."
+        },
+        {
+          "type": "chart",
+          "chartId": "groceries-share"
+        },
+        {
+          "type": "p",
+          "text": "And what people are financing has shifted toward essentials. The share using BNPL to buy groceries has roughly doubled, from 14% two years ago to 29% in 2026 (and about 38% among Gen Z). Splitting a sofa into four payments is discretionary; splitting the weekly food shop is a sign of a stretched budget."
+        },
+        {
+          "type": "chart",
+          "chartId": "loan-stacking"
+        },
+        {
+          "type": "p",
+          "text": "Then there is loan stacking. In the CFPB's most recent loan-level data (2022, published January 2025), 63% of BNPL borrowers held more than one BNPL loan at the same time, and 33% held loans across different firms at once. This is the single pattern furnishing is supposed to expose, and the single pattern voluntary, partial furnishing structurally cannot: if borrower X has one Affirm loan and three unfurnished loans elsewhere, the file shows one. The credit report is not just incomplete; it is systematically biased toward looking calmer than reality."
+        }
+      ]
+    },
+    {
+      "heading": "Why the two numbers can't share an axis",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Here is the honest difficulty at the center of this story. For the visible book we have hard data: realized dollar losses. For the dark book we have only soft data: people telling a survey they paid late. These are not the same kind of number, and we refuse to draw them as one trend line, because that would fake a precision we do not have."
+        },
+        {
+          "type": "chart",
+          "chartId": "low-losses"
+        },
+        {
+          "type": "p",
+          "text": "On the hard-data side, the picture is reassuring. The industry's charge-off rate, the share of dollars lenders give up on, actually fell from 2.63% in 2022 to 1.83% in 2023 (CFPB, December 2025 report). Affirm does not break out its pay-in-4 loss rate, but every signal points to it running well under 1% of volume, consistent with the CFPB's roughly 0.92% industry pay-in-4 charge-off for 2023. The visible book is genuinely well-behaved."
+        },
+        {
+          "type": "p",
+          "text": "So the finding is not 'a hidden crisis is showing up in the losses.' It is subtler and, we think, more important: the one book with trustworthy loss data is the healthiest one, while the books showing rising late payments, grocery financing and stacking are the ones with no comparable loss data at all. The incomparability is the point. The system is wiring itself to the gauge that reads clean, and is blind to the gauge that reads stressed."
+        }
+      ]
+    },
+    {
+      "heading": "Even the size is contested",
+      "blocks": [
+        {
+          "type": "chart",
+          "chartId": "contested-size"
+        },
+        {
+          "type": "p",
+          "text": "How big is the thing we are arguing about? Even that is unsettled. Three serious attempts to size US pay-in-4 originations span from about $45bn (CFPB, 2023 actual) to $63bn (Congressional Research Service, estimate for 2025) to $70bn (Richmond Fed, estimate for 2025), a 1.5x spread. Widen the lens to all BNPL products and a June 2026 Federal Reserve note puts 2025 originations near $160bn. The base year itself is disputed: the CFPB's own December 2025 report says $45.2bn for 2023, while the CRS and the Fed cite an earlier CFPB figure of $43.9bn. When the experts cannot agree on the size to within a third, the case for measuring it properly, rather than guessing, gets stronger, not weaker."
+        }
+      ]
+    },
+    {
+      "heading": "The private-credit red herring",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A popular worry holds that private credit, loans funded by investment funds rather than banks, is secretly inflating BNPL risk. The marquee example is KKR's deal to buy BNPL receivables. But that pipe is European: the 2023 KKR agreement covers PayPal 'Pay Later' loans originated in France, Germany, Italy, Spain and the UK, not the US. It tells us nothing about American credit files."
+        },
+        {
+          "type": "p",
+          "text": "And the logic runs backwards anyway. Affirm is heavily fund- and market-financed, through warehouse lines and securitizations, yet it is the one player that furnishes its whole book. Funding structure does not determine visibility. The only lever that determines whether a loan shows up is whether the originator chooses to furnish it. That is the whole game, and it is a choice, not a market force."
+        }
+      ]
+    },
+    {
+      "heading": "The caveat that cuts the other way",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Honesty requires holding two things at once. The first half of this piece argues the file is dangerously blind. The second half admits that blindness may not be a disaster, and that the cure has its own side effects."
+        },
+        {
+          "type": "p",
+          "text": "Pay-in-4 is small, fast-clearing and low-loss. A six-week, interest-free loan that pays itself off rarely festers into the kind of balance that sinks a household. So the economic stakes of invisibility are probably modest today. And forcing visibility is not free. Reporting a tiny, short-lived loan can actually lower the score of a thin-file borrower, someone with little credit history, because a brand-new account and a fresh credit check ding exactly the young, first-time borrowers BNPL most attracts. HUD's own concern with FHA mortgages is the mirror image: there, invisible BNPL debt may let buyers look more affordable than they are, inflating the mortgages the government insures."
+        },
+        {
+          "type": "p",
+          "text": "So the policy question is not simply 'turn the lights on.' It is 'light up the right book, in the right way, without punishing the people the system says it wants to protect.' What our analysis shows is narrower and, we hope, durable: as currently wired, the credit file sees the healthiest slice of pay-in-4 and misses the stressed one, and it does so by design, because furnishing is a voluntary choice the safest lender happens to be making and the rest are not."
+        }
+      ]
+    }
+  ],
+  "methodology": [
+    "We defined a loan as 'visible' only if its originator furnishes pay-in-4 tradelines to at least one of the three national bureaus. We read each major provider's own furnishing disclosures (Affirm, Klarna, Afterpay, PayPal, Zip, Sezzle) and the bureaus' announcements, and cross-checked against the 4 May 2026 Senate Banking letter, which asked each bureau which BNPL firms furnish to it.",
+    "We separated furnishing from scoring. Using FICO's June 2025 release and the bureaus' May 2026 responses, we confirmed that even furnished Affirm and Klarna data is currently consumer-visible and not yet incorporated into mainstream FICO scores, so 'visible on the file' overstates what lenders actually see.",
+    "For household stress we deliberately used two non-comparable gauges and kept them apart: realized dollar losses (CFPB industry charge-offs; Affirm disclosures) for the prime, visible book, and self-reported late payments (LendingTree recurring surveys) for the whole market. We did not place them on one axis.",
+    "For market size we triangulated three independent pay-in-4 estimates (CFPB, CRS, Richmond Fed) and flagged the all-BNPL Federal Reserve figure separately because it measures a wider product set.",
+    "Where a value was undisclosed (Affirm's standalone pay-in-4 loss rate), we declined to plot it and instead anchored to the closest disclosed proxy (CFPB industry pay-in-4 charge-offs)."
+  ],
+  "sources": [
+    {
+      "title": "Affirm Expands Credit Reporting With Experian to Include All Pay-Over-Time Products",
+      "publisher": "Experian",
+      "url": "https://www.experianplc.com/newsroom/press-releases/2025/affirm-expands-credit-reporting-with-experian-to-include-all-pay",
+      "kind": "primary"
+    },
+    {
+      "title": "Affirm Expands Credit Reporting With Experian (investor release)",
+      "publisher": "Affirm",
+      "url": "https://investors.affirm.com/news-releases/news-release-details/affirm-expands-credit-reporting-experian-include-all-pay-over",
+      "kind": "primary"
+    },
+    {
+      "title": "Affirm Expands Credit Reporting With TransUnion to All Pay-Over-Time Products",
+      "publisher": "TransUnion",
+      "url": "https://newsroom.transunion.com/affirm-expands-credit-reporting-with-transunion-to-all-pay-over-time-products/",
+      "kind": "primary"
+    },
+    {
+      "title": "Does Klarna report to credit bureaus?",
+      "publisher": "Klarna",
+      "url": "https://www.klarna.com/us/customer-service/does-klarna-report-to-credit-bureaus/",
+      "kind": "primary"
+    },
+    {
+      "title": "Does Afterpay conduct credit checks?",
+      "publisher": "Afterpay",
+      "url": "https://help.afterpay.com/hc/en-us/articles/4487846176793-Does-Afterpay-conduct-credit-checks",
+      "kind": "primary"
+    },
+    {
+      "title": "Klarna, Afterpay and the coming BNPL credit-score reckoning",
+      "publisher": "Axios",
+      "url": "https://www.axios.com/2025/08/05/credit-score-klarna-afterpay",
+      "kind": "secondary"
+    },
+    {
+      "title": "Does PayPal Pay in 4 report to credit bureaus?",
+      "publisher": "The Credit People",
+      "url": "https://www.thecreditpeople.com/bureaus/does-paypal-pay-in-4-report-to-credit-bureaus",
+      "kind": "secondary"
+    },
+    {
+      "title": "Does using BNPL affect your credit score?",
+      "publisher": "Zip",
+      "url": "https://zip.co/us/zip-insights/does-using-bnpl-affect-your-credit-score",
+      "kind": "primary"
+    },
+    {
+      "title": "How does Sezzle Up impact my credit?",
+      "publisher": "Sezzle",
+      "url": "https://shopper-help.sezzle.com/hc/en-us/articles/360046679912-How-does-Sezzle-Up-impact-my-credit",
+      "kind": "primary"
+    },
+    {
+      "title": "FICO Unveils Groundbreaking Credit Scores to Incorporate Buy Now, Pay Later Data",
+      "publisher": "FICO",
+      "url": "https://www.fico.com/en/newsroom/fico-unveils-groundbreaking-credit-scores-incorporate-buy-now-pay-later-data",
+      "kind": "primary"
+    },
+    {
+      "title": "FICO to launch credit scores that incorporate BNPL data",
+      "publisher": "PYMNTS",
+      "url": "https://www.pymnts.com/buy-now-pay-later/2025/fico-launch-credit-scores-that-incorporate-bnpl-data/",
+      "kind": "secondary"
+    },
+    {
+      "title": "Request for Information Regarding Buy Now Pay Later Unsecured Debt",
+      "publisher": "HUD / Federal Register (doc 2025-11575)",
+      "url": "https://www.federalregister.gov/documents/2025/06/24/2025-11575/request-for-information-regarding-buy-now-pay-later-unsecured-debt",
+      "kind": "primary"
+    },
+    {
+      "title": "Senate Banking Committee letter to TransUnion on BNPL loans (4 May 2026)",
+      "publisher": "US Senate Committee on Banking, Housing, and Urban Affairs",
+      "url": "https://www.banking.senate.gov/imo/media/doc/20260504lettertotransunionrebnplloans2.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Experian, Equifax Questioned by Warren About Buy Now, Pay Later",
+      "publisher": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-06/experian-equifax-questioned-by-warren-about-buy-now-pay-later",
+      "kind": "secondary"
+    },
+    {
+      "title": "Buy Now, Pay Later Loan Statistics",
+      "publisher": "LendingTree",
+      "url": "https://www.lendingtree.com/personal/buy-now-pay-later-loan-statistics/",
+      "kind": "data"
+    },
+    {
+      "title": "Consumer Use of Buy Now, Pay Later and Other Unsecured Debt (2022 loan-level data)",
+      "publisher": "CFPB",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_BNPL_Report_2025_01.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "The Buy Now, Pay Later Market (market report, December 2025)",
+      "publisher": "CFPB",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_bnpl-market-report_2025-12.pdf",
+      "kind": "primary"
+    },
+    {
+      "title": "Buy Now, Pay Later: Policy Issues and Options for Congress (R48858)",
+      "publisher": "Congressional Research Service",
+      "url": "https://www.congress.gov/crs-product/R48858",
+      "kind": "primary"
+    },
+    {
+      "title": "Buy Now, Pay Later: Market Impact and Policy Considerations (Economic Brief No. 25-03)",
+      "publisher": "Federal Reserve Bank of Richmond",
+      "url": "https://www.richmondfed.org/publications/research/economic_brief/2025/eb_25-03",
+      "kind": "academic"
+    },
+    {
+      "title": "'Buy Now, Pay Later' Beyond 'Pay in 4': A Comprehensive Product Overview (FEDS Note, 5 June 2026)",
+      "publisher": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/buy-now-pay-later-beyond-pay-in-4-a-comprehensive-product-overview-20260605.html",
+      "kind": "academic"
+    },
+    {
+      "title": "Affirm Q3 FY2026 financial results supplement (quarter ended 31 March 2026)",
+      "publisher": "Affirm",
+      "url": "https://investors.affirm.com/static-files/5ab1e081-9f0b-447f-8ae1-dc34f7349fd4",
+      "kind": "primary"
+    },
+    {
+      "title": "PayPal and KKR Announce Exclusive Multi-Year Relationship for European Pay Later Receivables",
+      "publisher": "PayPal",
+      "url": "https://newsroom.paypal-corp.com/2023-06-20-PayPal-and-KKR-Announce-Exclusive-Multi-Year-Relationship-for-European-Pay-Later-Receivables",
+      "kind": "primary"
+    }
+  ],
+  "limitations": [
+    "The late-payment and grocery figures are self-reported LendingTree survey data drawn from nonprobability samples of roughly 2,000 US adults; they mix furnished and unfurnished loans and cannot isolate the dark book on their own.",
+    "The loan-stacking figures (63% / 33%) are from 2022 loan-level data, the most recent the CFPB has published, and may understate or overstate 2026 behavior.",
+    "Affirm does not disclose a standalone pay-in-4 net loss rate; 'under 1%' is a characterization anchored to the CFPB's industry pay-in-4 charge-off proxy, not a reported company figure.",
+    "Furnishing postures change. Sezzle, Klarna and others have shifted their reporting over time, and the bureaus are mid-stream on incorporating BNPL into scored products; the furnishing table should be reconfirmed against primary sources before any further use.",
+    "Even the size of US pay-in-4 is contested across the CFPB, CRS and Richmond Fed, with the base 2023 figure differing between CFPB report vintages ($45.2bn vs $43.9bn)."
+  ],
+  "honesty": [
+    "This is AI-assisted analysis under stated assumptions; it is not investment advice or a price target.",
+    "Figures are as of the publication date and trace to the cited sources; markets and disclosures change."
+  ],
+  "articleType": "data-story",
+  "secondarySections": [
+    "personal-finance",
+    "policy"
+  ],
+  "companies": [
+    "Affirm",
+    "FICO",
+    "Experian",
+    "Equifax",
+    "TransUnion",
+    "Klarna",
+    "Afterpay",
+    "Block",
+    "PayPal",
+    "Zip",
+    "Sezzle",
+    "KKR"
+  ],
+  "people": [
+    "Elizabeth Warren",
+    "Tammy Duckworth",
+    "Richard Blumenthal",
+    "Mazie Hirono"
+  ],
+  "regions": [
+    "United States",
+    "Europe"
+  ],
+  "industries": [
+    "Consumer Credit",
+    "Fintech",
+    "Credit Reporting",
+    "Mortgage Lending",
+    "Banking"
+  ],
+  "assetClasses": [
+    "Consumer Credit",
+    "Private Credit",
+    "Asset-Backed Securities"
+  ],
+  "impactTags": [
+    "credit-visibility-gap",
+    "household-debt-stress",
+    "voluntary-furnishing",
+    "regulatory-scrutiny",
+    "thin-file-borrowers"
+  ],
+  "readerLevel": "Intermediate",
+  "timeHorizon": "Medium-Term",
+  "newsScore": 72,
+  "confidenceLevel": "high",
+  "keyPoints": [
+    "Only Affirm furnishes its full US pay-in-4 book, and only to two of three bureaus (Experian and TransUnion, not Equifax); Afterpay, PayPal's US Pay in 4, and Zip furnish nothing by default.",
+    "Even the data that is furnished is shown to the consumer only and is not yet read by mainstream FICO scores, so the visible book is both small and largely unscored.",
+    "The visibility gap runs the wrong way: the file sees the healthiest, lowest-loss slice (Affirm's losses appear under 1% of dollars) while the fastest-growing, increasingly-late, grocery-financing, loan-stacking slice stays dark.",
+    "FICO's 2025 BNPL scores are a model, not a data feed; they sharpen already-furnished loans but cannot close the furnishing gap.",
+    "The 'private credit is fueling the risk' frame is a red herring (the KKR pipe is European); the only real lever for visibility is whether an originator chooses to furnish."
+  ],
+  "whyItMatters": "FICO, HUD and the US Senate are all wiring buy-now-pay-later into credit scores and mortgage underwriting on the assumption the credit file can already see it, but the file registers only a minority of pay-in-4 and is biased toward the healthiest borrowers. That means lenders, mortgage insurers and regulators are building decisions on a gauge that reads household stress late and faintly precisely for the thin-file, grocery-financing borrowers most likely to be overextended. The fix is not new models but a furnishing standard, and even that carries a cost, since reporting short-lived loans can lower the scores of the very borrowers the system aims to protect.",
+  "whatToWatch": [
+    "Whether the three bureaus move BNPL tradelines from consumer-only display into the scored products lenders actually buy, and whether non-Affirm originators (Afterpay, PayPal, Zip) begin furnishing by default.",
+    "Lender uptake of FICO Score 10 BNPL and 10 T BNPL through 2026 and whether it changes approval or pricing for thin-file borrowers.",
+    "HUD's next step after its FHA request for information on hidden BNPL debt, and any CFPB or Senate Banking action following the 4 May 2026 letters.",
+    "LendingTree late-payment and grocery-financing survey trends plus updated CFPB charge-off and origination data to confirm whether the dark book is genuinely deteriorating."
+  ],
+  "primarySection": "banking",
+  "date": "2026-06-29",
+  "byline": "Cumulant Research",
+  "publishedAt": "2026-06-29T19:51:01.779Z"
+}
