@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { HomeNewsroom } from "@/components/home-newsroom";
 import { QuoteBlock } from "@/components/quote-block";
 import { MediaBand } from "@/components/media-band";
 import { Intro } from "@/components/Intro";
@@ -20,9 +21,10 @@ import { BAND_VIDEO, BAND_POSTER, BAND_CAPTION, BAND_RELATION, PIPELINE_BAND } f
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header solid />
       <main className="w-full overflow-x-hidden">
         <Hero />
+        <HomeNewsroom />
         <QuoteBlock statement={POSITIONING} />
         <VideoBand src={BAND_VIDEO} poster={BAND_POSTER} caption={BAND_CAPTION} relation={BAND_RELATION} height="h-[360px] md:h-[576px]" />
         <Intro />

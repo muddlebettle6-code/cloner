@@ -28,39 +28,25 @@ export function Parallax({
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let raf = 0;
-    let running = false;
-    let target = 0;
-    let cur = 0;
-    const computeTarget = () => {
+    let ticking = false;
+    // Bind transform DIRECTLY to scroll position (no lerp). The old easing chased
+    // the scroll a frame behind, which read as floaty/glitchy; 1:1 tracking is
+    // crisp and smooth on both mobile and desktop.
+    const apply = () => {
+      ticking = false;
       const r = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      if (r.bottom < -100 || r.top > vh + 100) return;
+      if (r.bottom < -120 || r.top > vh + 120) return;
       const center = r.top + r.height / 2;
-      // p ~ [-1, 1]: positive when the element sits below the viewport centre.
-      target = Math.max(-1, Math.min(1, (center - vh / 2) / (vh / 2 + r.height / 2)));
-    };
-    // Lerp toward the target so parallax eases instead of snapping 1:1 to scroll.
-    const tick = () => {
-      cur += (target - cur) * 0.09;
-      box.style.transform = `translate3d(0, ${(-cur * strength).toFixed(3)}%, 0)`;
-      if (Math.abs(target - cur) > 0.0004) {
-        raf = requestAnimationFrame(tick);
-      } else {
-        cur = target;
-        box.style.transform = `translate3d(0, ${(-cur * strength).toFixed(3)}%, 0)`;
-        running = false;
-      }
+      const p = Math.max(-1, Math.min(1, (center - vh / 2) / (vh / 2 + r.height / 2)));
+      box.style.transform = `translate3d(0, ${(-p * strength).toFixed(3)}%, 0)`;
     };
     const onScroll = () => {
-      computeTarget();
-      if (!running) {
-        running = true;
-        raf = requestAnimationFrame(tick);
-      }
+      if (ticking) return;
+      ticking = true;
+      raf = requestAnimationFrame(apply);
     };
-    computeTarget();
-    cur = target;
-    box.style.transform = `translate3d(0, ${(-cur * strength).toFixed(3)}%, 0)`;
+    apply();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
     return () => {

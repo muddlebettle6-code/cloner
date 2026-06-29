@@ -29,6 +29,7 @@ export default function ArticlesPage() {
       {lead && (
         <section className="grid gap-[36px] py-[36px] lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-[48px]">
           <Reveal>
+            <p className="mb-[14px] font-mono text-[11px] uppercase tracking-[0.1em] text-smoke">Top story</p>
             <LeadCard a={lead} />
           </Reveal>
           <Reveal className="lg:border-l lg:border-clay lg:pl-[40px]">

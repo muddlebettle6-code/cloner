@@ -105,12 +105,15 @@
 @layer utilities {
   /* Scroll-reveal: invisible until .is-visible is added by IntersectionObserver.
      Subtle fade + lift, matching Seed Health's GSAP-style section reveals. */
+  /* GPU-composited during the transition (translate3d), then cleaned up to a
+     flat layer at rest (transform: none) — no permanent will-change, which was
+     promoting dozens of layers at once and causing mobile/PC jank. */
   .reveal {
     opacity: 0;
-    transform: translateY(22px);
+    transform: translate3d(0, 20px, 0);
     transition: opacity var(--dur-reveal) var(--ease-out),
       transform var(--dur-reveal) var(--ease-out);
-    will-change: opacity, transform;
+    backface-visibility: hidden;
   }
   .reveal.is-visible {
     opacity: 1;
@@ -125,11 +128,11 @@
   }
   .reveal[data-stagger] > * {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translate3d(0, 16px, 0);
     transition: opacity var(--dur-reveal) var(--ease-out),
       transform var(--dur-reveal) var(--ease-out);
-    transition-delay: calc(var(--i, 0) * var(--stagger-step, 90ms));
-    will-change: opacity, transform;
+    transition-delay: calc(var(--i, 0) * var(--stagger-step, 80ms));
+    backface-visibility: hidden;
   }
   .reveal[data-stagger].is-visible > * {
     opacity: 1;
