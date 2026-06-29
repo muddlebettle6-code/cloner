@@ -1,26 +1,35 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { cn } from "@/lib/utils";
 
-/** Light/dark toggle. The actual class is set pre-paint by a script in the
- *  layout; this reads it on mount, then flips `.dark` on <html> + persists. */
-export function ThemeToggle({ className }: { className?: string }) {
-  const [dark, setDark] = useState(false);
-  const [ready, setReady] = useState(false);
+// Subscribe to theme changes (our own toggle dispatches "themechange"; other
+// tabs fire "storage"). getSnapshot reads the live <html> class.
+function subscribe(cb: () => void) {
+  window.addEventListener("themechange", cb);
+  window.addEventListener("storage", cb);
+  return () => {
+    window.removeEventListener("themechange", cb);
+    window.removeEventListener("storage", cb);
+  };
+}
+const getSnapshot = () => document.documentElement.classList.contains("dark");
+const getServerSnapshot = () => false;
 
-  useEffect(() => {
-    setDark(document.documentElement.classList.contains("dark"));
-    setReady(true);
-  }, []);
+/** Light/dark toggle. The class is set pre-paint by a script in the layout;
+ *  this reflects it and flips `.dark` on <html> + persists to localStorage. */
+export function ThemeToggle({ className }: { className?: string }) {
+  const dark = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const toggle = () => {
     const next = !document.documentElement.classList.contains("dark");
     document.documentElement.classList.toggle("dark", next);
     try {
       localStorage.setItem("theme", next ? "dark" : "light");
-    } catch {}
-    setDark(next);
+    } catch {
+      /* ignore */
+    }
+    window.dispatchEvent(new Event("themechange"));
   };
 
   return (
@@ -34,8 +43,7 @@ export function ThemeToggle({ className }: { className?: string }) {
         className
       )}
     >
-      {/* show the icon for the mode you'll switch TO; default to moon pre-hydration */}
-      {ready && dark ? (
+      {dark ? (
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="4" />
           <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
